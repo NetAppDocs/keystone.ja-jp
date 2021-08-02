@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_buckets.html 
+keywords: netapp, keystone, create, buckets, 
+summary: Keystone がバケットを作成 
+---
+= バケットを作成する
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+バケットはサブテナントの下に作成されます。
+
+
+
+=== 手順
+
+. を表示します link:sewebiug_view_buckets.html#view-buckets["バケットリスト"] で、バケットを作成するサブテナントを選択します。
+. [ * バケットの作成 * ] をクリックします。
+. Create Bucket （バケットの作成）ダイアログボックスで、新しいバケットの名前を入力し、 * Create * （作成）をクリックします。これにより、バケットを作成するジョブが作成されます。
+
+
+
+
+=== 完了後
+
+バケットの作成は非同期ジョブとして実行されます。可能です
+
+* ジョブリストでジョブのステータスを確認します。
+* ジョブが完了したら、バケットリストでサーバのステータスを確認します。
+

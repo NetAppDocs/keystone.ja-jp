@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_performance.html 
+keywords: netapp, keystone, performance, 
+summary: Keystone Flex サブスクリプションのパフォーマンス 
+---
+= パフォーマンスサービスレベル
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）は、事前定義されたパフォーマンスレベルで容量を提供します。
+
+各パフォーマンスサービスレベルは、 I/O 密度によって定義されます。これは、パフォーマンス（ 1 秒あたりの入出力処理数（ IOPS ））と使用済みストレージ（ TiB あたりの格納データ）の比率で、単位は IOPS/ TiB です。
+
+Flex サブスクリプションサービスで管理される各ボリュームは、パフォーマンスサービスレベルに関連付けられます。各ボリュームで使用されるすべての I/O 処理と使用済みストレージは、ボリュームの I/O 密度の計算に考慮されます。
+
+次の図は、パフォーマンスサービスレベルを定義したものです。
+
+image:nkfsosm_image5.png["エラー：グラフィックイメージがありません"]
+
+ボリュームレベルでの I/O 密度の計算結果は、過去 1 週間のピーク I/O 密度を示すようにレポートされます。ピークパフォーマンスは 1 時間間隔で決定されます。ボリュームごとの I/O 密度レポートは、各サービスレベルの準拠状況を判断するために毎月生成されます。

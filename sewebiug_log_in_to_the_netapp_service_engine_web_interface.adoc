@@ -1,0 +1,106 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_log_in_to_the_netapp_service_engine_web_interface.html 
+keywords: netapp, keystone, log, in, netapp, service, engine, web, interface, 
+summary: NetApp サービスエンジン Web インターフェイスにログインします 
+---
+= NetApp Service Engine Web インターフェイスにログインします
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Service Engine Web インターフェイスを使用するには、アカウントが必要です。アカウントには、権限を決定するために NetApp Service Engine 管理者が実行できる 1 つ以上のロールが割り当てられます。このロールによって、 NetApp Service Engine ポータルで実行できるアクティビティが決まります。
+
+NetApp Service Engine では、次のクレデンシャルを使用してログインできます。
+
+* ユーザ名とパスワード（を参照） link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-in-with-user-name-and-password["ユーザ名とパスワードを使用してログインします"])
+* NetApp SSO （を参照 link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-in-with-netapp-sso["NetApp SSO を使用してログインします"])
++
+NetApp Service Engine 管理者に、 NetApp Service Engine インスタンスで使用されているサインインオプションを確認します。
+
+
+
+
+
+=== ロールベースアクセス制御
+
+次の表に、ロールベースアクセスの説明を示します。
+
+|===
+| ロール | にアクセスします 
+
+
+| パートナー管理者 / アカウント所有者 | テナントとそのサブスクリプションを管理するすべてのタスクを実行できます。詳細については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html["リンクをクリックしてください"]。 
+
+
+| お客様 / テナント管理者 | お客様やテナントの管理者は、サブテナントの管理に関連するすべての操作を実行できます。詳細については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html["リンクをクリックしてください"]。 
+
+
+| ネットアップ管理者（読み取り） | すべてのコンポーネントに対する読み取り専用アクセス。 
+
+
+| ネットアップ管理者 | NetApp Keystone Flex サブスクリプションを管理するための NetApp Service Engine Web ポータルですべての機能を実行するためのフルアクセスおよび権限、およびパートナーとテナントの管理に対するすべてのアクティビティ。 
+|===
+
+
+=== ユーザ名とパスワードを使用してログインします
+
+ユーザ名とパスワードを使用してログインするには、次のものが必要です。
+
+* NetApp Service Engine Web インターフェイスのユーザ名とパスワード
+* NetApp Service Engine ポータルへの URL
+* Web ブラウザ
+
+
+
+
+==== 手順
+
+. Web ブラウザで、 NetApp Service Engine ポータルの URL にアクセスします。ログインページが表示されます。
+. 「 * ローカルユーザーサインイン * 」を選択します。
+. NetApp Keystone へのログインページで、ユーザー名とパスワードを入力し、 * ログイン * をクリックします。
+. ログインに成功すると、 NetApp Service Engine Web インターフェイスがロードされ、ダッシュボードで開きます。GUI の概要については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["NetApp Service Engine Web インターフェイスの概要"]。
+
+
+
+NOTE: ログインに成功してもダッシュボードが表示されない場合は、 NetApp Service Engine ポータルの管理者に問い合わせて、 NetApp Service Engine ポータルアカウントに正しいロールが割り当てられていることを確認してください。
+
+
+
+=== NetApp SSO を使用してログインします
+
+NetApp SSO でログインするには、次のものが必要です。
+
+* NetApp SSO アカウント。アカウントはネットアップサポートサイトで申請できます。ログイン画面で、 * Create NetApp SSO account * を選択して次の手順を実行します。
+* NetApp Service Engine ポータルへの URL 。
+* Web ブラウザ。
+
+
+
+
+==== 手順
+
+. Web ブラウザで、 NetApp Service Engine ポータルの URL にアクセスします。ログインページが表示されます。
+. NetApp SSO を選択します。
+. SSO ログインページで、ユーザー名とパスワードを入力し、 * サインイン * をクリックします。
++
+ログインに成功すると、 NetApp Service Engine Web インターフェイスがロードされ、 Flex Subscription ダッシュボードが表示されます。GUI の概要については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["NetApp Service Engine Web インターフェイスの概要"]。
+
+
+
+
+
+=== NetApp Service Engine Web インターフェイスからログアウトします
+
+
+
+==== 手順
+
+. インターフェイスからログアウトするには、ユーザーアイコンをクリックし、 * サインアウト * をクリックします。
+
+
+image:sewebiug_image7.png["エラー：グラフィックイメージがありません"]

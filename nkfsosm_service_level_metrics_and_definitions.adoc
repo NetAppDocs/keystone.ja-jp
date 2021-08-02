@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_service_level_metrics_and_definitions.html 
+keywords: netapp, keystone, service, level, metrics, definitions, 
+summary: Keystone のサービスレベルの指標と定義 
+---
+= サービスレベルの指標と定義
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Keystone Flex Subscription （ Flex サブスクリプション）サービスでは、次の用語と定義が使用されます。
+
+* * GiB 、 TiB 、 PiB 。 * 1024 バイトをベースとしたデータストレージ容量の測定値（ 1GiB = 1024^3^ バイト、 1TiB = 1024^4^ バイト、 1PiB = 1024^5^ バイト）。
+* * IOPS/ TiB 。 * アプリケーションが要求した 1 秒あたりのプロトコル処理数を、割り当てられたボリュームの論理サイズで割った値です。
+* * 可用性 * は、サービスが正常に応答した I/O 要求の割合として、サービスの境界で測定された、サービスの合計 I/O 要求数を割った値です。サービスのダウンタイムや必要な設備の利用不可を含みません。 お客様が提供するネットワークまたはその他のサービス。
+* * 耐久性 * は、顧客が原因で行った削除や破損を除き、忠実性を損なうことなくアクセスされるデータの割合です。
+* * TiB あたりのターゲット IOPS 。 * しきい値に達する前にボリュームに送信されたすべての I/O 要求の保証 IOPS 。ボリュームのパフォーマンスが選択した TiB あたりの IOPS に制限されます。
+
+
+
+NOTE: TiB あたりのターゲット IOPS パフォーマンス指標は、 TiB 単位での論理使用容量に基づいて計算されます。
+
+* * レイテンシ。 * クライアントから受信した I/O 要求の処理にかかる時間。サービスの分離（ストレージコントローラの I/O ポート）で測定されます。
+

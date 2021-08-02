@@ -1,0 +1,270 @@
+---
+sidebar: sidebar 
+permalink: seapiref_subtenants.html 
+keywords: netapp, keystone, subtenants, 
+summary: Keystone サブテナント 
+---
+= サブテナント
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+次の表に示すメソッドを使用して、サブテナントを取得、作成、変更、および削除します。
+
+|===
+| HTTP メソッド | パス | 説明 
+
+
+| 「 GET 」 | 「 /v2.1/subtenants 」のようになります | サブテナントを取得します。 
+
+
+| 「 GET 」 | `/v2.1/subtenants /{id}` | サブテナント ID でサブテナントを取得します。 
+
+
+| 「 POST 」 | 「 /v2.1/subtenants 」 | 新しいサブテナントを作成します。 
+
+
+| 「 PUT 」 | `/v2.1/subtenants /{id}` | サブテナントの詳細を変更します。サブテナントの名前を変更できます。 
+
+
+| 「削除」 | `/v2.1/subtenants /{id}` | サブテナントを削除します。 
+|===
+
+
+=== サブテナントの属性
+
+次の表に、サブテナントの属性を示します。
+
+|===
+| 属性 | を入力します | 説明 
+
+
+| 「 id` 」 | 文字列 | サブテナントの一意の識別子。 
+
+
+| 「 name 」 | 文字列 | サブテナント名。 
+
+
+| 「 code 」 | 文字列 | サブテナントを表す顧客指定の（またはデフォルトの）コード。 
+
+
+| 「 tenant_id 」 | 文字列 | サブテナントが属しているテナントの識別子。 
+|===
+
+
+=== すべてのサブテナントを取得します
+
+次の表に示すメソッドを使用して、すべてのサブテナントまたはすべてのサブテナントを取得します。「 tenant_id 」を指定すると、そのテナントに属するサブテナントだけが返されます。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「 GET 」 | 「 /v2.1/subtenants 」のようになります | サブテナントを取得します。 | `tenant_id ` ：（任意）指定したテナントに属するサブテナントを返します。オフセットと制限–を参照してください 
+|===
+要求本文の必須属性 : 「なし」
+
+* 要求本文の例： *
+
+....
+none
+....
+* 応答本文の例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 2 records.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 2,
+    "total_records": 202,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 0,
+    "limit": 2,
+    "records": [      {
+        "id": "5e7c3af8aab46c00014ce878",
+        "description": "",
+        "name": "MySubtenant",
+        "code": "mysubtenant",
+        "tenant_id": "5e7c3af7aab46c00014ce877",
+        "tenant": "MyTenant"
+      },
+      {
+        "id": "5d9144f3869caefed0f39f82",
+        "description": "",
+        "name": "Mysubtenant2",
+        "code": "myothersubtenant",
+        "tenant_id": "5d914499869caefed0f39eee",
+        "tenant": "MyTenant"
+      }
+    ]
+  }
+}
+....
+
+
+=== ID でサブテナントを取得します
+
+次の表に示すメソッドを使用して、サブテナントの ID を取得します。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「 GET 」 | `/v2.1/subtenants /{id}` | ID で指定されているサブテナントを取得します。 | `id (string) ` ：サブテナントの一意の識別子。 
+|===
+要求本文の必須属性 : 「なし」
+
+* 要求本文の例： *
+
+....
+none
+....
+* 応答本文の例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5e7c3af8aab46c00014ce878",
+        "description": "",
+        "name": "MySubtenant",
+        "code": "subtenantcode",
+        "tenant_id": "5e7c3af7aab46c00014ce877",
+        "tenant": "MyTenant"
+      }
+    ]
+  }
+}
+....
+
+
+=== サブテナントを作成します
+
+次の表に示すメソッドを使用して、サブテナントを作成します。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「 POST 」 | 「 /v2.1/subtenants 」のようになります | 新しいサブテナントを作成します。 | なし 
+|===
+要求本文に必要な属性は 'name'`code'tenant_id です
+
+* 要求本文の例： *
+
+....
+{
+  "name": "MySubtenant",
+  "code": "mynewsubtenant",
+  "tenant_id": "5ed5ac802c356a0001a735af"
+}
+....
+* 応答本文の例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. New resource created.",
+    "verbose_message": "",
+    "code": 201
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ecefbbef418b40001f20bd6",
+        "description": "",
+        "name": "MyNewSubtenant",
+        "code": "mynewsubtenant",
+        "tenant_id": "5e7c3af7aab46c00014ce877",
+        "tenant": "MyTenant"
+      }
+    ]
+  }
+}
+....
+
+
+=== サブテナントの ID を変更します
+
+次の表に示すメソッドを使用して、サブテナントの ID を変更します。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「 PUT 」 | `/v2.1/subtenants /{id}` | ID で指定されているサブテナントを変更します。サブテナント名は変更できます。 | `id (string) ` ：サブテナントの一意の識別子。 
+|===
+要求本文の必須属性 : 'name
+
+* 要求本文の例： *
+
+....
+{
+  "name": "MyModifiedSubtenant"
+}
+....
+* 応答本文の例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ecefbbef418b40001f20bd6",
+        "description": "",
+        "name": "MyNewSubtenant",
+        "code": "mynewsubtenant",
+        "tenant_id": "5e7c3af7aab46c00014ce877",
+        "tenant": "MyTenant"
+      }
+    ]
+  }
+}
+....
+
+
+=== ID でサブテナントを削除します
+
+次の表に示すメソッドを使用して、サブテナントの ID を削除します。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「削除」 | `/v2.1/subtenants /{id}` | ID で指定されているサブテナントを削除します。 | `id (string) ` ：サブテナントの一意の識別子。 
+|===
+要求本文の必須属性 : 「なし」
+
+* 要求本文の例： *
+
+....
+none
+....
+* 応答本文の例： *
+
+....
+No content for succesful delete
+....

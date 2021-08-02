@@ -1,0 +1,247 @@
+---
+sidebar: sidebar 
+permalink: seapiref_zones.html 
+keywords: netapp, keystone, zones, 
+summary: Keystone ゾーン 
+---
+= ゾーン
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+次の表に示すメソッドを使用して、ゾーンを作成、変更、および削除します。ゾーンを取得できる API については、（コンシューマ）管理 API を参照してください。
+
+|===
+| HTTP メソッド | パス | 説明 
+
+
+| 「 POST 」 | 「 /v2.1/zones 」のようになります | 新しいゾーンを作成します。 
+
+
+| 「 PUT 」 | `/v2.1/zones /{name}` | ゾーンの詳細を変更します。 
+
+
+| 「削除」 | `/v2.1/zones /{name}` | ゾーンを削除します。 
+|===
+
+
+=== ゾーン属性
+
+次の表に、ゾーンの属性を示します。
+
+|===
+| 属性 | を入力します | 説明 
+
+
+| 「 id` 」 | 文字列 | ゾーンの一意の識別子。 
+
+
+| 「 name 」 | 文字列 | ゾーン名。 
+
+
+| 概要 | 文字列 | ゾーンの概要。 
+
+
+| '`re Gion_name` | 文字列 | ゾーンが存在するリージョンの名前。 
+|===
+
+
+=== すべてのゾーンを取得します
+
+次の表に示すメソッドを使用して、すべてのゾーンまたはゾーンのサブセットを取得します。リージョンを指定すると、そのテナントに属するブロックストアのみが返されます。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「 GET 」 | 「 /v2.1/zones 」のようになります | ゾーンを取得します。 | （任意）リージョン名（文字列）「 offset 」および「 limit 」–を参照してください link:seapiref_netapp_service_engine_rest_apis.html#pagination>["共通ページ付け"] 
+|===
+要求本文の必須属性 : 「なし」
+
+* 要求本文の例： *
+
+....
+none
+....
+* 応答本文の例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "total_records": 5,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 2,
+    "limit": 1,
+    "records": [
+      {
+        "id": "5ce5d919b68d3b82dc34bef2",
+        "name": "au-west1-a",
+        "description": "au-west1-a",
+        "region": "au-west1"
+      }
+    ]
+  }
+....
+
+
+=== ゾーンを名前で取得します
+
+次の表に示す方法を使用して、ゾーン名でゾーンを取得します。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「 GET 」 | `/v2.1/zones /{name}` | ゾーンを名前で取得します。 | 'Name (string) `: ゾーン名 
+|===
+要求本文の必須属性 : 「なし」
+
+* 要求本文の例： *
+
+....
+none
+....
+* 応答本文の例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ce5d919b68d3b82dc34bef2",
+        "name": "au-west1-a",
+        "description": "au-west1-a",
+        "region": "au-west1"
+      }
+    ]
+  }
+}
+....
+
+
+=== ゾーンを作成します
+
+次の表に示す方法を使用して、ゾーンを作成します。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「 POST 」 | 「 /v2.1/zones 」のようになります | リージョン内に新しいゾーンを作成します。 | なし 
+|===
+要求本文の必須属性は 'name''' 概要 '`re Gion_name' です
+
+* 要求本文の例： *
+
+....
+{
+  "name": "MyZoneName",
+  "description": "DescriptionOfMyZone",
+  "region_name": "MyRegionName"
+}
+....
+* 応答本文の例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. New resource created.",
+    "verbose_message": "",
+    "code": 201
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e61741c9b64790001fe9663",
+        "name": "MyZoneName",
+        "description": "DescriptionOfMyZone",
+        "region": "MyRegionName"
+      }
+    ]
+  }
+}
+....
+
+
+=== ゾーンを変更します
+
+ゾーンを変更するには、次の表に示す方法を使用します。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「 PUT 」 | `/v2.1/zones {name}` | 名前で識別されたゾーンを変更します。 | `name (string) ` : ゾーンの名前。 
+|===
+要求本文の必須属性 : 「なし」
+
+* 要求本文の例： *
+
+....
+{
+  "name": "MyZoneName",
+  "description": "NewDescriptionOfMyZone"
+}
+....
+* 応答本文の例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e61741c9b64790001fe9663",
+        "name": "MyZoneName",
+        "description": "NewDescriptionOfMyZone",
+        "region": "MyRegionName"
+      }
+    ]
+  }
+}
+....
+
+
+=== ゾーンを削除します
+
+次の表に示す方法を使用して、ゾーンを削除します。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「削除」 | `/v2.1/zones {name}` | 名前で識別された単一のゾーンを削除します。最初に、ゾーン内のすべてのストレージリソースを削除する必要があります。 | `name (string) ` : ゾーンの名前。 
+|===
+要求本文の必須属性 : 「なし」
+
+* 要求本文の例： *
+
+....
+none
+....
+* 応答本文の例： *
+
+削除に成功した場合に返す内容がありません。

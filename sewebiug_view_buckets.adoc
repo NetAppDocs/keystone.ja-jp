@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_view_buckets.html 
+keywords: netapp, keystone, view, buckets, 
+summary: Keystone ビューのバケット 
+---
+= バケットを表示します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+バケットリストには、選択したサブテナントの既存のバケットが表示されます。
+
+. リストを表示するには、メニューからオブジェクトストレージ > バケットを選択します。
+. 必要に応じて、サブテナントドロップダウンメニューを使用して別のサブテナントを選択します。
++
+各バケットの単純な情報が表示されます。次に例を示します。
+
++
+** 名前
+** 作成日
+** 使用方法
++
+リストの機能の使用方法の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["リストビュー"]。
+
+
+
+

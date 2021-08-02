@@ -1,0 +1,14 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_working_with_object_storage.html 
+keywords: netapp, keystone, working, object, storage, 
+summary: Keystone とオブジェクトストレージの連携 
+---
+= オブジェクトストレージの使用
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

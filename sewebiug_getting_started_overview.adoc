@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_getting_started_overview.html 
+keywords: netapp, keystone, getting, started, overview, 
+summary: Keystone の概要 
+---
+= 概要
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+このセクションでは、 NetApp Service Engine ポータルを使用して作業を開始する方法について説明します。次のものが含まれます
+
+* NetApp Service Engine Web インターフェイスにログインします。
++
+** ユーザ名とパスワードを使用してログインします
+** NetApp SSO を使用してログインします
+** NetApp Service Engine Web インターフェイスからログアウトします
+
+
+* テナントを選択します
+* NetApp Service Engine Web インターフェイスの概要
+

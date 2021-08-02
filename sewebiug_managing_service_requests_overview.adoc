@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_service_requests_overview.html 
+keywords: netapp, keystone, managing, service, requests, overview, 
+summary: Keystone サービスリクエストの管理の概要 
+---
+= 概要
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+サービスリクエストの対象：
+
+* バックアップのリストア
+* ディザスタリカバリフェイルオーバー
+* NetApp Service Engine を使用したテクニカル問題
+* このセクションでは説明しないその他の問題について説明します。
+* サービスリクエストを発行する方法
+* サービスリクエストを追跡する方法
+* サービスリクエストプロセス
+

@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_object_storage_user.html 
+keywords: netapp, keystone, create, object, storage, user, 
+summary: Keystone オブジェクトストレージユーザを作成 
+---
+= Create Object Storage User の略
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+
+
+=== 作業を開始する前に
+
+オブジェクトストレージユーザはオブジェクトストレージグループに属しているため、ユーザを作成する前にオブジェクトストレージグループが存在している必要があります。
+
+
+
+=== 手順
+
+. を表示します link:sewebiug_view_a_list_of_users.html#view-a-list-of-users["ユーザリスト"]。
+. 正しいサブテナントが選択されていること、および表示にユーザ（グループではない）が表示されていることを確認します。
+. [ ユーザーの作成 ] をクリックします。
+. Create User ダイアログボックスで、次の手順を実行します。
++
+.. ユーザ名を入力します。
+.. メンバーが属するグループを選択します。
+
+
+. [ 作成（ Create ） ] をクリックします。指定した設定でユーザーを作成するジョブが作成されます。
+
+
+
+
+=== 完了後
+
+ユーザーの作成は非同期ジョブとして実行されます。可能です
+
+* ジョブリストでジョブのステータスを確認します。
+* ジョブが完了したら、「ユーザ」リストで共有のステータスを確認します。
+

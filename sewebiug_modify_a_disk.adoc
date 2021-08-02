@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_modify_a_disk.html 
+keywords: netapp, keystone, modify, disk, 
+summary: Keystone によってディスクが変更される 
+---
+= ディスクを変更します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ディスク名、ホストグループマッピング、パフォーマンスサービスレベル、容量、および Snapshot ポリシーを変更できます。この方法を使用すると、ディスクを別のサービスレベルに移動できます（使用可能な場合）。
+
+
+
+=== 作業を開始する前に
+
+ディスクが動作状態である必要があります。ボリュームのステータスとそれらを運用するための手順については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html["ディスクを表示します"] および 
+
+
+
+=== 手順
+
+. を表示します link:sewebiug_view_disks.html#view-disks["ディスクのリスト"]。
+. リストからディスクを探し、そのディスクの Edit アイコンをクリックします。（リスト内の項目の操作の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["リストビューアクションをリスト表示します"]）。
+. 必要に応じて変更します。を参照してください link:sewebiug_create_a_new_disk.html["新しいディスクを作成します"] を参照してください。
+. [ 完了（ Done ） ] をクリックします。ディスクを変更するジョブが作成されます。
+
+
+
+
+=== 完了後
+
+ディスクの変更は非同期ジョブとして実行されます。可能です
+
+* ジョブリストでジョブのステータスを確認します。ジョブの追跡については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。
+* ジョブが完了したら、ディスクリストでディスクのステータスを確認します。
+

@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_modify_a_file_share.html 
+keywords: netapp, keystone, modify, file, share, 
+summary: Keystone がファイル共有を変更する 
+---
+= ファイル共有を変更する
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+共有名、共有の種類（ CIFS 、 NFS 、マルチプロトコル）、サービスレベル、容量、 Snapshot ポリシー、エクスポートポリシー、アクセス制御リスト（ ACL ）、およびタグ
+
+
+NOTE: この方法を使用すると、可能な場合は共有を別のパフォーマンスレベルに移動できます。共有タイプを変更できるのは、サーバがそれぞれのサービスをサポートしている場合のみです。
+
+
+
+=== 作業を開始する前に
+
+ファイル共有が動作状態である必要があります。ボリュームのステータスとそれらを運用するための手順については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html["ディスクを表示します"] および 
+
+
+
+=== 手順
+
+. を表示します link:sewebiug_view_shares.html#view-shares["共有リスト"]。
+. リストから共有を探し、その共有の編集アイコンをクリックします。（リスト内の項目の操作の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["リストビューアクションをリスト表示します"]）。
+. 必要に応じて変更します。フィールドの説明については、を参照してください link:sewebiug_create_a_new_file_share.html["新しいファイル共有を作成します"]。
+. [ 完了（ Done ） ] をクリックします。共有を変更するジョブが作成されます。
+
+
+
+
+=== 完了後
+
+Modify share は非同期ジョブとして実行されます。可能です
+
+* ジョブリストでジョブのステータスを確認します。ジョブの追跡については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。
+* ジョブが完了したら、 [ 共有 ] リストで共有のステータスを確認します。
+

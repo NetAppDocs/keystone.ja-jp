@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: index.html 
+keywords: netapp, keystone, service, offering, 
+summary: Keystone ドキュメントポータルへようこそ。 
+---
+= NetApp Keystone Flex サブスクリプションのドキュメント
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+NetApp Keystone Flex サブスクリプションは、 NetApp Keystone サービスの一部です。NetApp Keystone は、オンプレミスの CAPEX （設備投資）サービスを提供するポートフォリオで、 NetApp Keystone Flex Pay や NetApp Keystone Flex Subscription サービスなど、クラウドへの移行をスムーズに進めることができます。
+
+* * NetApp Keystone Flex Pay * - NetApp Keystone Flex Pay （フレックスペイ）は、従来のファイナンス、リース、固定 / 可変オプションなど、お客様のキャッシュフローニーズに合わせた柔軟なファイナンスオプションのポートフォリオです。
+* * NetApp Keystone Flex サブスクリプション * - NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）は、成長に合わせて拡張できる成果ベースのサブスクリプションサービスで、オンプレミスのクラウドレベルのエクスペリエンスを実現します。
+
+
+image:nkfsosm_image1.png["エラー：グラフィックイメージがありません"]
+
+
+
+== Flex サブスクリプション
+
+Flex サブスクリプションは、成果ベースのオンプレミスサブスクリプションサービスモデルです。予測不可能な容量の増加に対処し、複雑な調達サイクルを実施するという課題を解消することで、価値創出までの時間を短縮できます。Flex サブスクリプションを使用すると、経済性と運用をビジネスの優先事項に合わせることができます。
+
+image:nkfsosm_image2.png["エラー：グラフィックイメージがありません"]
+
+Flex サブスクリプションは、ネットアップ、パートナー、またはお客様が運用可能な、ブロック、ファイル、オブジェクトの各データタイプ用のストレージ容量を事前定義されたパフォーマンスサービスレベルで提供するサブスクリプションベースのサービスです。Flex サブスクリプションが提供する基本サービスに加えて、追加料金でアドオンサービスを選択できます。これらのサービスについては、次の図で説明します。
+
+* * Data Protection Basic * サービスは、 NetApp SnapMirror と NetApp SnapVault の機能をデフォルト設定で提供します。
+* * データ保護の詳細 * は、 NetApp MetroCluster の機能を活用して、 RPO=0 の SLA を提供します。
+
+
+
+NOTE: Flex Subscription では、バックアップ操作に SnapVault テクノロジを使用し、ディザスタリカバリに SnapMirror を使用してデータをリモートでレプリケートします。アプリケーションのフェイルオーバーとリストアは自動的に行われません。
+
+image:nkfsosm_image3.png["エラー：グラフィックイメージがありません"]
+
+
+
+=== Flex サブスクリプションの利点
+
+Flex サブスクリプションには、次の利点があります。
+
+* 複雑なストレージ関連タスクから IT 担当者を解放し、アプリケーション管理に集中できるようにします
+* 初期投資を削減します
+* オーバープロビジョニングを行わずにお客様のニーズに対応できます
+* データストレージのコストをビジネスニーズやアクティビティに合わせて調整
+* 複雑な組織調達手順を省略することで、インフラのプロビジョニングを簡易化
+* データのセキュリティをオンプレミスで維持
+* コンプライアンス、パフォーマンス、セキュリティを適切に管理できます
+
+
+image:nkfsosm_image4.png["エラー：グラフィックイメージがありません"]

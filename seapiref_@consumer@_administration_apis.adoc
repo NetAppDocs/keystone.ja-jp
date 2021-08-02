@@ -1,0 +1,270 @@
+---
+sidebar: sidebar 
+permalink: seapiref_@consumer@_administration_apis.html 
+keywords: netapp, keystone, consumer, administration, apis, 
+summary: Keystone （コンシューマ）管理 API 
+---
+= （コンシューマ）管理 API
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+（コンシューマ）管理 API は、次のタスクを実行できるメソッドで構成されます。
+
+* サインインし、パスワードを設定し、認証トークンを更新します。
+* ジョブを取得してジョブの詳細を表示します。
++
+を参照してください link:seapiref_jobs.html#retrieve-jobs["ジョブを取得します"] および 。
+
+* リージョンを読み出します。
++
+を参照してください link:seapiref_regions.html#retrieve-regions["リージョンを読み出します"] および 。
+
+* サービスレベルを取得します。
++
+を参照してください link:seapiref_service_levels.html#retrieve-service-levels["サービスレベルを取得します"] および 。
+
+* サブテナントを操作する。
++
+を参照してください
+
++
+** link:seapiref_subtenants.html#retrieve-all-subtenants["すべてのサブテナントを取得します"]
+** link:seapiref_subtenants.html#retrieve-a-subtenant-by-id["ID でサブテナントを取得します"]
+** link:seapiref_subtenants.html#modify-a-subtenant-by-id["サブテナントを変更します"]
+** link:seapiref_subtenants.html#delete-a-subtenant-by-id["ID でサブテナントを削除します"]
+
+
+* サブテナントを操作する。
++
+を参照してください
+
++
+** link:seapiref_tenants.html#retrieve-all-tenants["すべてのテナントを取得します"]
+** link:seapiref_tenants.html#retrieve-a-tenant-by-id["ID を使用してテナントを取得します"]
+** link:seapiref_tenants.html#create-a-tenant["テナントを作成します"]
+** link:seapiref_tenants.html#modify-the-tenant["テナントを変更します"]
+** link:seapiref_tenants.html#delete-the-tenant["テナントを削除します"]
+
+
+* ユーザを取得します。
++
+link:seapiref_users.html#retrieve-all-users["すべてのユーザを取得します"]、 および 。
+
+* ゾーンを取得します。
++
+を参照してください link:seapiref_zones.html#retrieve-all-zones["すべてのゾーンを取得します"] および 
+
+
+
+次の表に、このセクションで説明しているコンシューマ API を示します。
+
+|===
+| HTTP メソッド | パス | 説明 
+
+
+| 「 POST 」 | 「 /v2.1/auth/password 」を入力します | ユーザのパスワードを設定します。 
+
+
+| 「 POST 」 | 「 /v2.1/auth/password 」を入力します | 認証 JWT を更新します。 
+
+
+| 「 POST 」 | 「 /v2.1/auth/signin 」 | サインインします。 
+
+
+| 「 GET 」 | 「 /v2.1/auth/regions 」のように指定します | リージョンを読み出します。 
+
+
+| 「 GET 」 | `/v2.1/auth/regions/{name}` | リージョンを名前で取得します。 
+
+
+| 「 GET 」 | 「 /v2.1/auth/zones 」のようになります | ゾーンを取得します。 
+
+
+| 「 GET 」 | `/v2.1/auth/zones /{name}` | ゾーンを名前で取得します。 
+
+
+| 「 GET 」 | 「 /v2.1/jobs/` 」 | ジョブを取得します。 
+
+
+| 「 GET 」 | `/v2.1/jobs/{id}` | ID を使用してジョブを取得します。 
+|===
+
+
+=== ユーザパスワードをリセットします
+
+次の表に示す方法を使用して、ユーザパスワードをリセットします。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「 POST 」 | 「 /v2.1/auth/password 」を入力します | パスワードをリセットします。 | なし 
+|===
+要求本文の必須属性 : 'username`(string) 、 'new_password` (string)
+
+* 要求本文の例： *
+
+....
+{
+  "username": "MyName",
+  "old_password": "oldPassword",
+  "new_password": "newPassword"
+}
+....
+* 応答本文の例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "user": {
+          "id": "5e61aa814559c20001df1a5f",
+          "username": "MyName",
+          "firstName": "MyFirstName",
+          "lastName": "MySurname",
+          "displayName": "CallMeMYF",
+          "email": "user@example.com",
+          "tenancies": [
+            {
+              "id": "5e5f1c4f253c820001877839",
+              "name": "MyTenant",
+              "code": "testtenantmh",
+              "role": "user"
+            }
+          ]
+        },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik15TmFtZSIsImV4cCI6MTU4MzgxNjg3MX0.ZuRXjDPVtc2pH-e9wqgmszVKCBYS2PLqux2YwQ5uoAM"
+      }
+    ]
+  }
+}
+....
+
+
+=== 認証トークンをリフレッシュします
+
+次の表に示す方法を使用して、認証トークンを更新します。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「 POST 」 | `/v2.1/auth/refresh` | 認証トークンをリフレッシュします。 | なし 
+|===
+要求本文の必須属性 : 「なし」
+
+* 要求本文の例： *
+
+....
+none
+....
+* 応答本文の例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "user": {
+          "id": "5d914547869caefed0f3a00c",
+          "username": "myusername",
+          "firstName": "myfirstname",
+          "lastName": "",
+          "displayName": "Myfirstname Mysurname",
+          "email": "",
+          "tenancies": [
+            {
+              "id": "5d914499869caefed0f39eee",
+              "name": "MyOrg",
+              "code": "myorg",
+              "role": "admin"
+            },
+            {
+              "id": "5d9417aa869caefed0f7b4f9",
+              "name": "ABCsafe",
+              "code": "abcsafe",
+              "role": "admin"
+            }
+          ]
+        },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImVsbGlvdCIsImV4cCI6MTU4MzgxNzA2N30.FdKD3QhPoNdWdbMfZ0bzCMTHluIt6HNP311F482K9AY"
+      }
+    ]
+  }
+}
+....
+
+
+=== サインインします
+
+次の表に示す方法でサインインします。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「 POST 」 | 「 /v2.1/auth/signin 」 | ユーザとしてログインします。 | なし 
+|===
+要求本文の必須属性 : 'username`(string) 、 'new_password` (string)
+
+* 要求本文の例： *
+
+....
+{
+  "username": "MyName",
+  "password": "newPassword"
+}
+....
+* 応答本文の例： *
+
+....
+{
+  "status": {
+    "user_message": "Authentication succeeeded.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "user": {
+          "id": "5e61aa814559c20001df1a5f",
+          "username": "MyName",
+          "firstName": "MyFirstName",
+          "lastName": "MySurname",
+          "displayName": "CallMeMYF",
+          "email": "user@example.com",
+          "tenancies": [
+            {
+              "id": "5e5f1c4f253c820001877839",
+              "name": "MyTenant",
+              "code": "testtenantmh",
+              "role": "user"
+            }
+          ]
+        },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik15TmFtZSIsImV4cCI6MTU4MzgxNzQwMH0._u_UyYrzg_RewF-9ClIGoKQhfZYWrixZYBrsj1kh1hI"
+      }
+    ]
+  }
+}
+....

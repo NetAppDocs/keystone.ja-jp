@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_modify_an_object_storage_group.html 
+keywords: netapp, keystone, modify, object, storage, group 
+summary: Keystone がオブジェクトストレージグループを変更する 
+---
+= オブジェクトストレージグループを変更する
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+このメソッドを使用して、グループ名や S3 ポリシーなど、オブジェクトストレージグループの詳細を変更します。
+
+
+
+=== 手順
+
+. を表示します link:sewebiug_view_host_groups.html#view-host-groups["グループリスト（ Groups List ）"]。
+. 正しいサブテナントが選択されていること、および表示にグループが表示されている（ユーザではない）ことを確認します。
+. リストでグループを探し、そのグループの [ 編集 ] アイコンをクリックします。
++
+リスト内の項目の操作の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["リストビューアクションをリスト表示します"]。
+
+. Edit Group ダイアログボックスで、ユーザ名を入力します。
+. 変更したグループを環境する S3 ポリシーを選択します。
+. [ 作成（ Create ） ] をクリックします。指定した設定でグループを変更するジョブが作成されます。
+

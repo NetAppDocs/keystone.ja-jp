@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_delete_a_subscribed_service.html 
+keywords: netapp, keystone, delete, subscribed, service, 
+summary: Keystone は、サブスクライブしたサービスを削除します 
+---
+= サブスクライブしたサービスを削除します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+このメソッドを使用して、 NetApp Service Engine Web ポータルから CVS サブスクリプションを削除します。
+
+
+
+=== 手順
+
+. メニューから [ サブスクライブ済みサービス ]>[ サブスクライブ済みサービス ] を選択します。
+. リストで登録済みサービスを見つけ、 [ 削除 ] アイコンをクリックします。
+. [ 削除の確認 ] ダイアログボックスで、削除する登録済みサービスの名前を入力します。
+. [* 確認 *] をクリックします。
+

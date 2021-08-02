@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: seapiref_administrator_apis_overview.html 
+keywords: netapp, keystone, administrator, apis, overview, 
+summary: Keystone 管理 API の概要 
+---
+= 概要
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ここでは、次の管理者 API について説明します。
+
+* テナント
+* サブテナント
+* ユーザ
++
+ユーザパスワードのリセット、トークンの更新、ユーザとしてのログインなどのアクティビティは、 Consumer API スイートの一部として利用できます。（コンシューマ）管理 API を参照してください。
+
+* ゾーン
+* リージョン
+* ONTAP クラスタ
+* StorageGRID インスタンス
+* サービスレベル
+* サービスリクエスト
+* ジョブ
+

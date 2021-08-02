@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_gcp_cvs.html 
+keywords: netapp, keystone, managing CVS for GCP, gcp, Google Cloud Volume, CVS, Cloud Volumes Service 
+summary: Google Cloud Platform でのクラウドボリュームサブスクリプションの管理 
+---
+= Cloud Volumes Service for GCP を管理する
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes Service for Google Cloud Platform （ GCP ）へのサブスクリプションは、テナントの特定のサブテナントに関連付けられます。サブテナントは、 1 つの Google Cloud サービスに登録されています。テナントやサブテナント用にサブスクライブしたサービス（ Google Cloud インスタンス）を作成および管理したり、テナントの使用期間に基づいて Google Cloud でストレージをプロビジョニングしたりできます。NetApp Service Engine を使用して Google Cloud インスタンスを管理するには、テナントとサブテナントの Cloud Volumes Service アカウントを事前に設定しておく必要があります。GCP 上の Cloud Volumes Service の詳細については、を参照してください https://docs.netapp.com/us-en/occm/concept_cvs_gcp.html["Cloud Volumes Service for Google Cloud の詳細をご覧ください"]。
+
+
+NOTE: テナントとサブテナントの Cloud Volumes Service アカウントが GCP 用に設定されている必要があります。サービスアカウントの詳細については、サポートにお問い合わせください。Google Cloud Volume を管理するには、顧客管理者アクセス権が必要です。
+
+
+
+== GCP でのサブスクライブ済みサービスの管理
+
+左のナビゲーションペインの * 登録サービス * メニューから、 Google Cloud で登録したサービスを管理できます。[ サブスクライブ済みサービス（ Subscribed Services ） ] ページには、選択したテナントのすべてのサブテナントに対するサブスクライブ済みサービスがすべて表示されます。このページでは、サブスクライブしたサービスを表示、変更、および削除できます。次の手順に従って、新しいサービスを追加することもできます。
+
+
+
+=== 作業を開始する前に
+
+次の点を確認する必要があります。
+
+* サブテナントが Google Cloud サービスに登録されている。
+* 加入者のサービスアカウントの JSON ファイルが必要です。 Google Cloud インスタンスに関連付けられている GCP プロジェクト番号を確認しておきます。
+* Cloud Volumes Service for GCP がすでに Cloud Manager でサポートチームによって設定されていることを確認します。詳細については、を参照してください https://docs.netapp.com/us-en/occm/task_setup_cvs_gcp.html["Cloud Volumes Service for Google Cloud をセットアップします"]。
+
+
+
+
+==== 手順
+
+. メニューから [ サブスクライブ済みサービス（ Subscribed services ） ] を選択します。
+. [ * 作成 ] をクリックし、 [* Google Cloud * ] をクリックします。
+. Google Cloud の [ サブスクライブ済みサービスの作成（ Create Subscribed Service ） ] ページで、サービスを作成するサブテナントを選択し、名前と GCP プロジェクト番号を追加します。
+. Google Cloud Credentials セクションで、サービスアカウントのクレデンシャルを指定して JSON ファイルをアップロードします。
+. 必要に応じて、サービスにタグを追加します。
+. [ 作成（ Create ） ] をクリックします。作成されたサービスの状態は、 [ 登録済みサービス ] ページの [ 割り当て済み ] に変わります。
+
+
+
+
+== GCP でのボリュームの管理
+
+GCP で Cloud Volume を管理する前に、テナントの Cloud Volumes Service アカウントを作成し、そのアカウントを Cloud Volume に登録する必要があります。これらの手順が完了したことを確認するには、サポートにお問い合わせください。
+
+GCP のサブテナントのボリュームは、左側のナビゲーションペインで、 * file services > GCP Volumes * から管理できます。[GCP Volumes] ページには、選択したサブテナントおよび対応するリージョン用に GCP で作成された既存の Cloud Volume が一覧表示されます。このページで既存のボリュームを表示、変更、および削除できます。新しいクラウドボリュームをプロビジョニングする手順は次のとおりです。
+
+
+
+==== 手順
+
+. メニューから * file services > GCP Volumes * を選択します。
+. [ 作成（ Create ） ] をクリックします。[Create GCP Volume] ページが表示されます。
+. ボリュームを作成するサブテナントを選択します。
+. リージョンとネットワークを選択します。このリストは、 GCP のサブテナントの Cloud Volumes Service アカウントに基づいてフィルタリングされます。
+. ボリュームの名前を追加します。
+. 適切なサービスレベルを選択します。
+. 作成トークンとしてボリュームのファイルパスを入力します。
+. ボリュームクォータをバイト単位で割り当てます。
+. 必要に応じて、ボリュームのタグを追加します。
+. [ 作成（ Create ） ] をクリックします。作成されると、 GCP Volumes （ GCP ボリューム）ページのボリュームの状態が「 ucceeded 」に変わります。
+
+
+次のビデオでは、 Cloud Volumes Service と NetApp Service Engine を使用して GCP でボリュームを作成する方法を説明しています。
+
+video::Crq5a1zi1Vg[youtube, width=750,height=400]

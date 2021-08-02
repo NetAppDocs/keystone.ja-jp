@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_subscribed_services_overview.html 
+keywords: netapp, keystone, managing, subscribed, services, overview, 
+summary: Keystone 管理サブスクライブされたサービスの概要 
+---
+= 概要
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Service Engine に登録すると、 NetApp Service Engine Web ポータルを使用して Cloud Volume サービス（ CVS ）を管理できます。これには、次のもの
+
+* Azure NetApp ファイル（ ANF ）
+* （今後） Amazon Web Services （ AWS ）
+* （今後） Google Cloud Platform （ GCP ）
++
+既存の CVS サブスクリプションのみを NetApp Service Engine に登録できます。新しいサブスクリプションを作成するには、通常の方法で CVS サブスクリプションを作成し、サブスクリプションクレデンシャルを使用して NetApp Service Engine に登録します。
+
++
+このセクションでは、サブスクライブされたサービスを管理する方法について説明します
+
+
+
+
+NOTE: サブスクライブされたサービスを管理するには、顧客管理者アクセス権が
+
+可能です
+
+* サブスクライブしたサービスのリストを表示します
+* サブスクライブ済みサービスを追加します
+* サブスクライブ済みサービスの詳細を変更します
+* サブスクライブしたサービスを削除します
+

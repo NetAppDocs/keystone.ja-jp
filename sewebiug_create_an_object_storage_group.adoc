@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_an_object_storage_group.html 
+keywords: netapp, keystone, create, object, storage, group, 
+summary: Keystone がオブジェクトストレージグループを作成する 
+---
+= オブジェクトストレージグループを作成する
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+新しいオブジェクトストレージグループを作成するには、このメソッドを使用します。
+
+
+
+=== 手順
+
+. を表示します link:sewebiug_view_a_list_of_users.html#view-a-list-of-users["ユーザリスト"]。
+. 正しいサブテナントが選択されていること、および表示にグループが表示されている（ユーザではない）ことを確認します。
+. [ グループの作成 *] をクリックします。
+. Create Group ダイアログボックスで、グループ名を入力します。
+. リストから S3 ポリシーを選択します。
+. [ 作成（ Create ） ] をクリックします。指定した設定でグループを作成するジョブが作成されます。
+
+
+
+
+=== 完了後
+
+オブジェクトストレージグループの作成は非同期ジョブとして実行されます。ジョブリストでジョブのステータスを確認できます。ジョブの追跡については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。

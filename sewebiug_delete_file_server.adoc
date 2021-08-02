@@ -1,0 +1,52 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_delete_file_server.html 
+keywords: netapp, keystone, delete, file, server, 
+summary: Keystone ファイルサーバを削除する 
+---
+= ファイルサーバを削除します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+* 注意： * ファイルサーバを削除すると、次の項目も削除されます。
+
+* ファイルサーバに関連付けられているすべてのバックアップ
+* ファイルサーバに関連付けられた災害復旧複製コピーサーバの削除を元に戻すことはできません。
+
+
+
+
+=== 作業を開始する前に
+
+ファイルサーバを削除するには、先にサーバ上の共有をすべて削除する必要があります。
+
+
+
+=== 手順
+
+. を表示します link:sewebiug_view_servers.html#view-servers["[ ファイルサーバ ] リスト"]。
+. リスト内でサーバーを見つけ、そのサーバーの [ 削除 ] アイコンをクリックします。（リスト内の項目の操作の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["リストビューアクションをリスト表示します"]）。
+. [ 削除の確認 ] ダイアログボックスで、ファイルサーバ名を入力して、ファイルサーバを削除することを確認します。
++
+image:sewebiug_image21.png["エラー：グラフィックイメージがありません"]
+
+. [* 確認 *] をクリックします。サーバを削除するジョブが作成されます。
+
+
+
+
+=== 完了後
+
+* CIFS 対応のファイルサーバを削除しても、 Active Directory コンピュータオブジェクトは削除されません。Active Directory 管理者に、削除したファイルサーバのコンピュータオブジェクトを手動で Active Directory から削除するよう依頼します。
+* Delete Server は非同期ジョブとして実行されます。可能です
++
+** ジョブリストでジョブのステータスを確認します。ジョブの追跡については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。
+** ジョブが完了したら、サーバーがサーバーリストから削除されていることを確認します。
+
+
+

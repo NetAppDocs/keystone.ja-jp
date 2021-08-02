@@ -1,0 +1,386 @@
+---
+sidebar: sidebar 
+permalink: seapiref_tenants.html 
+keywords: netapp, keystone, tenants, 
+summary: Keystone テナント 
+---
+= テナント
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+次の表に示すメソッドを使用して、テナントを取得、作成、変更、および削除します。
+
+|===
+| HTTP メソッド | パス | 説明 
+
+
+| 「 GET 」 | 「 /v2.1/tenants 」のようになります | すべてのテナントのリストを取得します。 
+
+
+| 「 GET 」 | `/v2.1/tenants /{id}` | テナント ID を使用してテナントを取得します。 
+
+
+| 「 POST 」 | 「 /v2.1/tenants 」のようになります | 新しいテナントを作成します。 
+
+
+| 「 PUT 」 | `/v2.1/tenants /{id}` | テナントの詳細を変更します。 
+
+
+| 「削除」 | `/v2.1/tenants /{id}` | テナントを削除する 
+|===
+
+
+=== テナント属性
+
+次の表に、テナントの属性を示します。
+
+|===
+| 属性 | を入力します | 説明 
+
+
+| 「 id` 」 | 文字列 | テナントの一意の識別子。 
+
+
+| 「 code 」 | 文字列 | テナントを表すお客様指定の（またはデフォルトの）コード。この属性には、小文字のアルファベット、数字、アンダースコアを使用できます。 
+
+
+| 「 name 」 | 文字列 | テナント名。 
+
+
+| 'Zuora_account_name' | 文字列 | 課金アカウント名： Zuora でのサブスクリプションの名前。 
+
+
+| 'Zuora_account_number | 文字列 | 請求アカウント番号： Zuora のサブスクリプション番号。 
+
+
+| 概要 | 文字列 | テナントの概要。 
+
+
+| 「使用法」 | – | テナントに適用されるサービスとサービスの詳細。各サービスレベルについて、次の属性が表示されます。 * name ： * Service level name * Used_size_GB ： * Service level name * role_name ： * User role （ user 、 admin 、 read 、 partner 、または root ） 
+|===
+
+
+=== すべてのテナントを取得します
+
+次の表に示すメソッドを使用して、すべてのテナントまたはすべてのテナントの一部を取得します。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「 GET 」 | 「 /v2.1/tenants 」のようになります | すべてのテナントを取得します。 | 「 offset 」および「 limit 」 - を参照してください link:seapiref_netapp_service_engine_rest_apis.html#pagination>["共通ページ付け"] 
+|===
+要求本文の必須属性 : 「なし」
+
+* 要求本文の例： *
+
+....
+none
+....
+* 応答本文の例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 2 records.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 2,
+    "total_records": 23,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 0,
+    "limit": 2,
+    "records": [
+      {
+        "id": "5e7c3af7aab46c00014ce877",
+        "name": "MyTenant",
+        "zuora_account_name": "MyAccount",
+        "zuora_account_number": "A00000415",
+        "description": "",
+        "code": "mytenantcode",
+        "usage": {
+          "A-S00003875": [
+            {
+              "service_level": "extreme",
+              "consumed": 0,
+              "committed": 10,
+              "burst": 0
+            },
+            {
+              "service_level": "standard",
+              "consumed": 1.94,
+              "committed": 30,
+              "burst": 0
+            }
+          ],
+          "A-S00004566": [
+            {
+              "service_level": "object",
+              "consumed": 3.31,
+              "committed": 300,
+              "burst": 0
+            }
+          ]
+        }
+      },
+      {
+        "id": "5d914499869caefed0f39eee",
+        "name": "MyOrg",
+        "zuora_account_name": "MyOrg Inc",
+        "zuora_account_number": "A00000415",
+        "description": "",
+        "code": "myorg",
+        "usage": {
+          "A-S00003875": [
+            {
+              "service_level": "standard",
+              "consumed": 12.33,
+              "committed": 30,
+              "burst": 0
+            },
+            {
+              "service_level": "object",
+              "consumed": 0,
+              "committed": 40,
+              "burst": 0
+            }
+          ],
+          "A-S00003969": [
+            {
+              "service_level": "extreme",
+              "consumed": 0,
+              "committed": 5,
+              "burst": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+....
+
+
+=== ID を使用してテナントを取得します
+
+次の表に示すメソッドを使用して、 ID 別にテナントを取得します。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「 GET 」 | `/v2.1/tenants /{id}` | ID で指定されたテナントを取得します。 | `id (string) ` ：テナントの一意の識別子。 
+|===
+要求本文の必須属性 : 「なし」
+
+要求の本文の例：
+
+....
+none
+....
+* 応答本文の例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5e7c3af7aab46c00014ce877",
+        "name": "MyTenant",
+        "zuora_account_name": "MyAccount",
+        "zuora_account_number": "A00000415",
+        "description": "",
+        "code": "mytenantcode",
+        "usage": {
+          "A-S00003875": [
+            {
+              "service_level": "extreme",
+              "consumed": 0,
+              "committed": 10,
+              "burst": 0
+            },
+            {
+              "service_level": "premium",
+              "consumed": 2.4,
+              "committed": 20,
+              "burst": 0
+            },
+            {
+              "service_level": "standard",
+              "consumed": 1.94,
+              "committed": 30,
+              "burst": 0
+            },
+            {
+              "service_level": "object",
+              "consumed": 0,
+              "committed": 40,
+              "burst": 0
+            }
+          ],
+          "A-S00003969": [
+            {
+              "service_level": "extreme",
+              "consumed": 0,
+              "committed": 5,
+              "burst": 0
+            },
+            {
+              "service_level": "standard",
+              "consumed": 0,
+              "committed": 30,
+              "burst": 0
+            }
+          ],
+          "A-S00004566": [
+            {
+              "service_level": "object",
+              "consumed": 3.31,
+              "committed": 300,
+              "burst": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+....
+
+
+=== テナントを作成します
+
+次の表に示すメソッドを使用してテナントを作成します。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「 POST 」 | 「 /v2.1/tenants 」のようになります | 新しいテナントを作成します。 | なし 
+|===
+要求される本文属性 : 'code'`name'Zuora_account_name'Zuora_account_number
+
+* 要求本文の例： *
+
+....
+{
+  "name": "MyNewTenant",
+  "code": "mytenant",
+  "zuora_account_name": "string",
+  "zuora_account_number": "A00000415",
+  "description": "DescriptionOfMyTenant"
+}
+....
+* 応答本文の例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. New resource created.",
+    "verbose_message": "",
+    "code": 201
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed5ac802c356a0001a735af",
+        "name": "MyNewTenant",
+        "zuora_account_name": "string",
+        "zuora_account_number": "A00000415",
+        "description": "DescriptionOfMyTenant",
+        "code": "mytenant",
+        "usage": null
+      }
+    ]
+  }
+}
+....
+
+
+=== テナントを変更します
+
+テナントを変更するには、次の表に示すメソッドを使用します。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「 PUT 」 | `/v2.1/tenants /{id}` | ID で指定されたテナントを変更します。名前、 Zuora サブスクリプションの詳細（アカウント名またはサブスクリプション番号）、およびテナントの概要を変更できます。 | `id (string) ` ：テナントの一意の識別子。 
+|===
+要求本文の必須属性 : 「 code
+
+* 要求本文の例： *
+
+....
+{
+  "name": "MyNewTenant",
+  "code": "mytenant",
+  "zuora_account_name": "string",
+  "zuora_account_number": "A00000415",
+  "description": "New description of my tenant"
+}
+....
+* 応答本文の例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed5ac802c356a0001a735af",
+        "name": "MyNewTenant",
+        "zuora_account_name": "string",
+        "zuora_account_number": "A00000415",
+        "description": "New description of my tenant",
+        "code": "mytenant",
+        "usage": null
+      }
+    ]
+  }
+}
+....
+
+
+=== テナントを削除します
+
+次の表に示すメソッドを使用して、テナントを削除します。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「削除」 | `/v2.1/tenants /{id}` | ID で指定されたテナントを削除します。 | `id (string) ` ：テナントの一意の識別子。 
+|===
+要求本文の必須属性 : 「なし」
+
+* 要求本文の例： *
+
+....
+none
+....
+* 応答本文の例： *
+
+....
+No content for successful delete
+....

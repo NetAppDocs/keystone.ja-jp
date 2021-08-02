@@ -1,0 +1,97 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_azure_netapp_accounts.html 
+keywords: netapp, keystone, managing, azure, accounts, 
+summary: Azure NetApp アカウントの管理 
+---
+= Azure NetApp アカウントの管理
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+このセクションでは、 Azure NetApp アカウントの管理方法について説明します。
+
+
+NOTE: Azure NetApp アカウントを管理するには、顧客管理者アクセスが必要です。
+
+このセクションの内容は次のとおりです
+
+* Azure NetApp アカウントのリストを表示します
+* Azure NetApp アカウントを追加します
+* Azure NetApp アカウントの詳細を変更します
+* Azure NetApp アカウントを削除します
+
+
+
+
+=== Azure NetApp アカウントのリストを表示します
+
+Azure NetApp アカウントリストには、ログインしているユーザがアクセスできる期間中に Azure NetApp アカウントがすべて表示されます。リストを表示するには、メニューから * Administration > Azure NetApp Accounts * を選択します。
+
+このリストには、各 Azure NetApp アカウントに関する単純な情報が表示されます。各 Azure NetApp アカウントの横にある操作アイコンを使用して、 Azure NetApp アカウントを変更または削除できます。
+
+
+
+=== Azure NetApp アカウントを追加します
+
+このセクションでは、 Azure NetApp アカウントを追加する方法について説明します。
+
+
+
+=== 作業を開始する前に
+
+次のものが必要です。
+
+* Azure NetApp アカウントが属するサブテナント
+* ANF インスタンス
+* Azure の場所（リージョン）
+* Azure リソースグループ
+* アカウントの名前
+
+
+
+
+==== 手順
+
+. メニューから * Administration > Azure NetApp Accounts * を選択します。
+. [ 作成（ Create ） ] をクリックします。
+. Create Azure NetApp Account ダイアログボックスで、サブテナント、 Azure の場所（リージョン）、 Azure リソースグループ、および Azure NetApp アカウントの名前を指定します。
+. 必要に応じて、アカウントにタグを追加します。
+. [ 作成（ Create ） ] をクリックします。作成が完了すると、アカウントの状態が「 Succeeded 」になります（ Azure NetApp アカウントリストに表示可能）。
+
+
+
+
+=== Azure NetApp アカウントのタグを変更します
+
+Azure NetApp アカウントに関連付けられているタグを変更するには、このメソッドを使用します。
+
+
+
+==== 手順
+
+. メニューから * Administration > Azure NetApp Accounts * を選択します。
+. リストで Azure NetApp アカウントを探し、編集アイコンをクリックします。
+. Azure NetApp アカウントの管理ダイアログボックスで、必要に応じてタグを追加、削除、または編集します。
+. [ 更新（ Update ） ] をクリックします。
+
+
+
+
+=== Azure NetApp アカウントを削除します
+
+Azure NetApp アカウントを削除するには、このメソッドを使用します。
+
+
+
+==== 手順
+
+. メニューから * Administration > Azure NetApp Accounts * を選択します。
+. リストから Azure NetApp アカウントを探し、削除アイコンをクリックします。
+. 削除の確認ダイアログボックスで、削除する Azure NetApp アカウントの名前を入力します。
+. [* 確認 *] をクリックします。
+

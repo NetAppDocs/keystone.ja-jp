@@ -1,0 +1,52 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_overview.html 
+keywords: netapp, service, engine, web, portal, 
+summary: ネットアップサービスエンジン Web ポータルの概要 
+---
+= NetApp Service Engine Web インターフェイス
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Service Engine Web ポータルでは、 NetApp Keystone Flex Subscription （ Flex サブスクリプション）サービスを管理および監視できます。ポータルは、次のコンポーネントで構成されています。
+
+* 監視とストレージの簡易プロビジョニングをサポートするグラフィカルユーザインターフェイス（ NetApp Service Engine Web インターフェイス）。ユーザインターフェイス（ UI ）のメニューオプションは、テナントおよびサブテナントのサービスとサブスクリプションに基づいています。
+* より高度なセットアップ操作とストレージ管理操作を可能にする一連の REST API 。このガイドでは、 NetApp Service Engine Web インターフェイスの使用方法について説明します。REST API でのみ使用できる機能については、このドキュメントでは説明していません。
+
+
+このセクションでは、 NetApp Service Engine の概念と要素について説明します。
+
+
+
+=== NetApp Service Engine の主な概念
+
+NetApp Service Engine は、リージョンとゾーンの概念をサポートしています。リージョンはデータセンターまたはサイトを表し、ゾーンはリージョン内のストレージサブユニット（つまり、データセンターまたはサイト内のクラスタ）を表します。複数のゾーンでデータの可用性とデータ保護（ DP ）機能がサポートされます。
+
+image:sewebiug_image1.png["エラー：グラフィックイメージがありません"]
+
+1 つの NetApp Service Engine インスタンスで 1 つ以上のテナントをサポートできます。NetApp Service Engine は、テナントおよびサブテナントの概念を、ストレージサービスを所有または管理する階層エンティティとして使用します。
+
+テナントには、顧客、パートナー、または請求先のエンティティを指定できます。テナントは、 Flex サブスクリプションサービスへのサブスクリプション（または複数のサブスクリプション）を保持します。
+
+サブテナントは、テナント内の完全なエンティティです。この情報は、ショーバックやセキュリティの分離などに使用できます。
+
+ストレージ項目はサブテナントごとに作成されます。各サブテナントは、そのサブテナントに適したタイプおよび番号の複数のストレージ項目を保持できます。
+
+NetApp Service Engine は、次のタイプのストレージをサポートします。
+
+* ブロックストアおよびディスクのブロックストレージ
+* ファイルサーバとファイル共有内のファイルストレージ
+* バケット内のオブジェクトストレージ
+* Cloud Volume Services for Google Cloud Platform と Azure NetApp Files
+
+
+
+
+=== サブスクリプションに基づいて提供される機能
+
+NetApp Service Engine の運用モデルでは、サブスクリプション、テナンシー、およびロールに基づいて、機能とオプション（画面とタブ）を使用できます。詳細については、「サービスプロバイダとお客様」、および運用モデル、役割、責任」を参照してください。

@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_add_a_subscribed_service.html 
+keywords: netapp, keystone, add, subscribed, service, 
+summary: Keystone はサブスクライブ済みサービスを追加します 
+---
+= サブスクライブ済みサービスを追加します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+このセクションでは、サブスクライブされたサービスを追加する方法について説明します。
+
+NetApp Service Engine は Azure NetApp Files をサポートしています。
+
+
+
+=== 作業を開始する前に
+
+サービスに接続するためのクレデンシャルなど、サブスクライブされたサービスに関する情報が必要です。情報は、サブスクライブされたサービスタイプによって異なります。
+
+
+
+=== 手順
+
+. メニューから「サービスを購読」を選択します。
+. [ 作成（ Create ） ] をクリックします。
+. [ サブスクライブ済みサービスの作成（ Create Subscribed Service ） ] ページでクラウドサービスタイプを選択し、そのサービスタイプに関連する情報を入力します。
++
+* Azure ： *
+
++
+.. サブテナントを選択します。
+.. サービス用に作成する OCCM Working Environment の名前を入力します。
+.. Azure Directory （テナント） ID 、 Azure Client ID 、 Azure Client Secret 、およびサブスクライブするサービスの名前を入力します。
+
+
+. 必要に応じて、サービスのタグを指定します。
+. [ 作成（ Create ） ] をクリックします。
+

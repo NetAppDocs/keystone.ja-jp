@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_file_share_from_snapshot.html 
+keywords: netapp, keystone, create, file share, Snapshot 
+summary: Snapshot からファイル共有を作成します 
+---
+= Snapshot からファイル共有を作成します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+既存の Snapshot から新しいファイル共有を作成できます。Snapshot からクローニングされた新しいファイル共有には、 Snapshot の作成元のファイル共有と同じプロパティが含まれます。
+
+.手順
+. 左側のナビゲーションペインで * ファイルサービス * を選択し、 * 共有 * を選択します。
+. Create Share （共有の作成） * をクリックし、 * Clone from snapshot （スナップショットからのクローン） * を選択しますテナントのすべてのファイル共有が表示された * 共有の選択 * 画面が表示されます。ファイル共有は、リージョン、ゾーン、およびサブテナントでフィルタできます。動作状態の任意のファイル共有を選択できます。
+. 目的のファイル共有の横にあるチェックボックスをオンにし、 * Next * （次へ）をクリックします。Select Snapshot * （スナップショットの選択）画面が開き、ファイル共有のすべてのスナップショットが表示されます。
++
+
+NOTE: 選択したファイル共有の SnapCenter 環境に NetApp Service Engine 以外の場所に作成された Snapshot がある場合、それらの Snapshot がインポートされ、選択した Snapshot のリストに表示されます。インポートされたこれらの Snapshot を選択し、そこから新しいファイル共有のクローンを作成できます。
+
++
+特定の Snapshot を検索するか、スケジュールタイプを選択して Snapshot をフィルタリングできます。
+
+. クローンを作成するスナップショットの横にあるチェックボックスをオンにし、 * 次へ * をクリックします。新しいファイル共有には、選択した Snapshot のプロパティが継承されます。
+. 名前 * と * 共有パス * を追加します。サービスレベル * の割り当てなどの他の設定を更新し、 [*Create] をクリックします。
+
+
+.完了後
+* CIFS タイプの共有の場合のみ：ホスト名で共有を使用できるようにするには、ドメイン管理者が DNS レコードを CIFS サーバ名および IP アドレスで更新する必要があります。それ以外の場合、共有には IP アドレスを使用してのみアクセスできます。例：
++
+** DNS レコードが更新されたら、ホスト名または IP を使用して共有にアクセスします。例 file://hostname/share["\\ ホスト名 \ 共有"^] または
+** DNS レコードを更新しない場合は、 IP アドレスを使用して共有にアクセスする必要があります file://IP/share["\\ IP \ 共有"^]
+
+
+* * 共有の作成 * は非同期ジョブとして実行されます。可能です
++
+** ジョブリストでジョブのステータスを確認します。ジョブの追跡については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。
+** ジョブが完了したら、共有リスト * で共有のステータスを確認します。
+
+
+

@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_delete_a_file_share.html 
+keywords: netapp, keystone, delete, file, share, 
+summary: Keystone はファイル共有を削除します 
+---
+= ファイル共有を削除します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+このセクションでは、ファイル共有を削除する方法について説明します。
+
+* 注意 :*
+
+* 共有の削除を元に戻すことはできません。削除したデータはリカバリできません。
+* プライマリファイル共有を削除すると、関連付けられているすべてのバックアップが削除されます
+
+
+
+
+=== 手順
+
+. を表示します link:sewebiug_view_shares.html#view-shares["共有リスト"]。
+. リストから共有を選択し、その共有の削除アイコンをクリックします。（リスト内の項目の操作の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["リストビューアクションをリスト表示します"]）。
+. 削除の確認ダイアログボックスで、ファイル共有名を入力して、ファイル共有を削除することを確認します。
++
+image:sewebiug_image25.png["エラー：グラフィックイメージがありません"]
+
+. [* 確認 *] をクリックします。共有を削除するジョブが作成されます。
+
+
+
+
+=== 完了後
+
+共有の削除は非同期ジョブとして実行されます。可能です
+
+* ジョブリストでジョブのステータスを確認します。ジョブの追跡については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。
+* ジョブが完了したら、共有リストから共有が削除されていることを確認します。
+

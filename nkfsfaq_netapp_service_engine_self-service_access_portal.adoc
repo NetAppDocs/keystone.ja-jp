@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: nkfsfaq_netapp_service_engine_self-service_access_portal.html 
+keywords: netapp, keystone, service, engine, self-service, acess, portal, 
+summary: NetApp Service Engine / Self-Service Access Portal 
+---
+= NetApp Service Engine / セルフサービスアクセスポータル
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+次の FAQ ：環境 NetApp Service Engine
+
+
+
+=== NetApp Service Engine とは
+
+NetApp Service Engine は、ネットアップが運用するモデルのセルフサービスポータルで、 NetApp Keystone Flex サブスクリプションサービスに基づいてストレージにログインしてプロビジョニングできます。また、このツールでは、サブスクリプションに対する消費レベルに関するレポートを作成し、サービスリクエストやサブスクリプションの変更を開始できます。
+
+
+
+=== お客様が運用するモデルには NetApp Service Engine が必要ですか。
+
+お客様が運用するモデルでは、 NetApp Service Engine が必要です。消費の詳細に関する基本的なレポートを提供し、請求情報の収集と報告を行う必要があります。
+
+
+
+=== NetApp Service Engine のインストール先
+
+ネットアップが運用するモデルでは、 NetApp Service Engine はネットアップが提供するコンピューティングリソース上にローカルにインストールされます。お客様が運用するモデルでは、 NetApp Service Engine がお客様のコンピューティングリソースにインストールされている。
+
+
+
+=== NetApp Service Engine にログインできるユーザ
+
+ユーザは、 NetApp SSO または NetApp Service Engine で設定されたローカルユーザに対して認証されます。
+
+
+
+=== アクセスはどのように制御されますか。
+
+NetApp Service Engine にはロールベースアクセス制御（ RBAC ）が用意されており、各ユーザをロールに関連付けることで実行できるアクションを定義できます。RBAC の割り当ては、 NetApp Service Engine を使用しているお客様が行います。
+
+
+
+=== どのようなアクセスコントロールが利用できますか？
+
+次のアクセス制御を使用できます。
+
+* * パートナー管理者 * テナントの作成と管理、テナントのサブスクリプション管理、使用状況レポートの表示、ストレージの技術的な管理を行う権限を持つパートナー側の管理者。
+* * お客様 / テナント管理者 * サブスクリプションの変更のリクエスト、新しいユーザとサブテナントの作成、ファイル共有、ディスク、バケットの作成と表示を行う権限を持つ、お客様側の管理者。
+* * ネットアップ管理者（お読みください）。 Web ポータルのすべてのコンポーネントにアクセスでき、すべての NetApp Keystone Flex サブスクリプション、パートナーとテナントのサブスクリプション、ストレージなどの詳細をすべて表示できるネットアップ管理者。ただし、このユーザには、作成、編集、または削除する権限はありません。
+* * ネットアップ管理者 * このユーザには、 NetApp Keystone フレックスサブスクリプションを管理するための NetApp Service Engine Web ポータルですべての機能を実行するためのフルアクセス権限と、パートナーとテナントの管理に関するすべてのアクティビティが付与されます。
+

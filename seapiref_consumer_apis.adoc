@@ -1,0 +1,14 @@
+---
+sidebar: sidebar 
+permalink: seapiref_consumer_apis.html 
+keywords: netapp, keystone, consumer, apis, 
+summary: Keystone コンシューマ API 
+---
+= コンシューマ API
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

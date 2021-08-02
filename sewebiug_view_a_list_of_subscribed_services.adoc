@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_view_a_list_of_subscribed_services.html 
+keywords: netapp, keystone, view, list, subscribed, services, 
+summary: Keystone サブスクライブしたサービスのリストを確認する 
+---
+= サブスクライブしたサービスのリストを表示します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+[ サブスクライブ済みサービス（ Subscribed Services ） ] リストには、選択したテナンシー内のすべてのサブスクライブ済みサービスのリストが表示されます。
+
+リストを表示するには、メニューから [ サブスクライブ済みサービス ]>[ サブスクライブ済みサービス ] を選択します。
+
+リストには、サブスクライブされた各サービスに関する簡単な情報が表示されます。
+
+サブスクライブした各サービスの横にあるアクションアイコンを使用して、サブスクライブしたサービスを変更または削除できます。

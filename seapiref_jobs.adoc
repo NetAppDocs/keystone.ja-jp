@@ -1,0 +1,201 @@
+---
+sidebar: sidebar 
+permalink: seapiref_jobs.html 
+keywords: netapp, keystone, jobs, 
+summary: Keystone ジョブ API 
+---
+= ジョブ
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ジョブの API を使用してジョブの詳細を確認します。ジョブの操作の詳細については、「ジョブオブジェクト API 」および「非同期プロセス」を参照してください。
+
+
+
+=== ジョブを取得します
+
+次の表に示す方法を使用して、すべてのジョブまたはジョブのサブセットを取得します。「 tenant_id 」を指定すると、そのテナントに属するジョブだけが返されます。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「 GET 」 | 「 /v2.1/jobs 」 | ジョブを取得します。 | `tenant_id ` ：（任意）指定したテナントに属するブロックストアを返します。「 offset 」および「 limit 」 - を参照してください link:seapiref_netapp_service_engine_rest_apis.html#pagination>["共通ページ付け"] 
+|===
+要求本文の必須属性 : 「なし」
+
+* 要求本文の例： *
+
+....
+none
+....
+* 応答本文の例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "total_records": 2625,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 0,
+    "limit": 1,
+    "records": [
+      {
+        "id": "5ed72c8c6342e90001439d54",
+        "action": "create",
+        "job_summary": "Create request is successfully submitted",
+        "created": "2020-06-03T04:52:28.478Z",
+        "updated": "2020-06-03T04:52:32.636Z",
+        "object_id": "5ed72c8c6342e90001439d55",
+        "object_type": "sg_buckets",
+        "object_name": "test1234",
+        "status": "successful",
+        "status_detail": "Creation of s3 bucket 'test1234' completed successfully.",
+        "last_error": "",
+        "user_id": "5e85225af038943eb4b74684",
+        "job_tasks": [
+          {
+            "id": "5ed72c8c6342e90001439d57",
+            "job_id": "5ed72c8c6342e90001439d54",
+            "action": "create",
+            "driver": "storagegrid_ansible",
+            "object_id": "5ed72c8c6342e90001439d55",
+            "object_type": "sg_buckets",
+            "resource_type": "sg_bucket",
+            "status": "successful",
+            "status_detail": "Worker completed task successfully.",
+            "last_error": "",
+            "user_id": "5e85225af038943eb4b74684",
+            "request_payload": {
+              "grid_account_id": "05336917559886003354",
+              "grid_admin_base_url": "https://sggmi-dev.dev.ausngs.netapp.au/api/v3",
+              "org_password": "netapp01",
+              "org_username": "root",
+              "s3_bucket_name": "test1234"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+==== ジョブ ID でジョブを取得します
+
+次の表に示すメソッドを使用して、 ID 別にジョブを取得します。
+
+|===
+| HTTP メソッド | パス | 説明 | パラメータ 
+
+
+| 「 GET 」 | `/v2.1/jobs/{id}` | ID を使用してジョブを取得します。 | `id (string) ` : ジョブの一意の識別子。 
+|===
+要求本文の必須属性 : 「ジョブ識別子」
+
+* 要求本文の例： *
+
+....
+none
+....
+* 応答本文の例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e66f18e09a74c0001b89640",
+        "action": "create",
+        "job_summary": "Create S3 bucket for Sub Tenant",
+        "created": "2020-03-10T01:46:54.097Z",
+        "updated": "2020-03-10T01:46:57.664Z",
+        "object_id": "5e66f18e09a74c0001b89641",
+        "object_type": "sg_buckets",
+        "status": "successful",
+        "status_detail": "Creation of s3 bucket 'mys3bucket' completed successfully.",
+        "last_error": "",
+        "user_id": "5bbee380a2df7a04d43acaee",
+        "job_tasks": [
+          {
+            "id": "5e66f18e09a74c0001b89642",
+            "job_id": "5e66f18e09a74c0001b89640",
+            "action": "create",
+            "driver": "storagegrid_ansible",
+            "object_id": "5e66f18e09a74c0001b89641",
+            "object_type": "sg_buckets",
+            "resource_type": "sg_bucket",
+            "status": "successful",
+            "status_detail": "Worker completed task successfully.",
+            "last_error": "",
+            "user_id": "5bbee380a2df7a04d43acaee",
+            "request_payload": {
+              "grid_account_id": "47490102387197219062",
+              "grid_admin_base_url": "https://sggmi-dev.dev.ausngs.netapp.au/api/v3",
+              "org_password": "netapp01",
+              "org_username": "root",
+              "s3_bucket_name": "mys3bucket"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+=== ジョブオブジェクト API と非同期プロセス
+
+一部の API 呼び出し、特にリソースの追加や変更に使用される API 呼び出しは、他の呼び出しよりも完了に時間がかかることがあります。NetApp Service Engine は、これらの長時間実行されている要求を非同期的に処理します。
+
+非同期的に実行される API 呼び出しを行うと、 HTTP 応答コード 202 が返されます。この応答コードは、要求が正常に検証され受け入れられたものの、まだ完了していないことを示します。要求はバックグラウンドタスクとして処理され、クライアントへの最初の HTTP 応答後も引き続き実行されます。応答には、要求に対応するジョブオブジェクトと、その一意の識別子が含まれます。
+
+
+
+==== API 要求に関連付けられたジョブオブジェクトの照会
+
+HTTP 応答で返されるジョブオブジェクトには、いくつかのプロパティが含まれています。状態プロパティを照会して、要求が正常に完了したかどうかを確認できます。ジョブオブジェクトは次のいずれかの状態になります。
+
+* 正常
+* 警告
+* partial_failures です
+* エラー
+
+
+ジョブオブジェクトをポーリングするときに、タスクの終了状態（成功または失敗）を検出するために使用できる 2 つの方法があります。
+
+* 標準のポーリング要求：現在のジョブの状態がすぐに返されます。
+* ロングポーリング要求：ジョブの状態が NORMAL 、 ERROR 、または PARTIALL_FAILURES に移行したときに応答が返されます。
+
+
+
+
+==== 非同期要求の手順
+
+非同期 API 呼び出しを完了する大まかな手順を次に示します。
+
+. 問題：非同期 API 呼び出し。
+. 要求が正常に受け取られたことを示す HTTP 応答 202 を受信します。
+. 応答の本文からジョブオブジェクトの識別子を抽出します。
+. ループ内で、ジョブオブジェクトが NORMAL 、 ERROR 、または PARTIALL_FAILURES いずれかの最終状態になるまで待ちます。
+. ジョブの終了状態を確認し、ジョブの結果を取得します。
+

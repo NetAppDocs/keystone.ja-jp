@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_modify_the_subscribed_service_details.html 
+keywords: netapp, keystone, modify, subscribed, service, details, 
+summary: Keystone は、サブスクライブするサービスの詳細を変更します 
+---
+= サブスクライブしたサービスの詳細を変更します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+このメソッドを使用して、サブスクライブしたサービスの詳細を変更します。可能です
+
+* 次の表に示すように、各サービスの詳細を変更します。
+* サービスのタグを追加または削除します。
+
+
+|===
+| クラウドプラットフォーム | 次の項目を変更できます。 
+
+
+| Azure | Azure クライアント ID 、 Azure クライアントシークレット、および名前 
+
+
+| Azure 米国政府機関 | 未定 
+
+
+| GCP | 未定 
+
+
+| AWS | 未定 
+|===
+
+
+=== 手順
+
+. メニューから [ サブスクライブ済みサービス ]>[ サブスクライブ済みサービス ] を選択します。
+. リストで登録済みサービスを見つけ、 [ 編集 ] アイコンをクリックします。
+. [ 登録サービスの更新 ] ダイアログボックスで、必要に応じて変更を行います。
+. [ 更新（ Update ） ] をクリックします。
+

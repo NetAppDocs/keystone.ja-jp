@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_view_disks.html 
+keywords: netapp, keystone, view, buckets, 
+summary: Keystone によってディスクが表示される 
+---
+= ディスクを表示します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ディスクリストには、選択したテナントに属するディスクが表示されます。リストを表示するには、メニューから * block storage > Disks * を選択します。
+
+既存の環境にすでに含まれていて、 NetApp Service Engine で設定されている Storage VM に属するディスクは、この画面で確認し、 NetApp Keystone Flex Subscription （ Flex サブスクリプション）サービスの一部として管理することもできます。NetApp Service Engine 以外でプロビジョニングされたディスクは定期的にインポートされ、該当するステータスコードがこのページに表示されます。
+
+インポートしたディスクが NetApp Service Engine の許容可能な標準規格に準拠している場合、つまり、ディスクを動作可能にするために必要なすべてのパラメータが使用可能であれば、ディスクは「 Operational 」ステータスでインポートされ、 NetApp Service Engine から直接管理できます。ただし、一部のディスクは NetApp Service Engine 上の既存のディスクと同じ標準に含まれていない場合があります。インポート後、これらのディスクは「 Imported 」または「 Non-Standard 」ステータスで分類されます。ディスクのステータスおよびステータスを稼働させるための手順については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states["オブジェクトの状態"]
+
+ディスクリストで、単純な情報を表示します。リストの機能の使用方法の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["リストビュー"]。
+
+* ディスク名
+* ディスクへのパス
+* ディスクサイズ
+* プロトコル
+* ディスクが属するサブテナント
+* ディスクが存在するゾーン
+* 動作状態
+
