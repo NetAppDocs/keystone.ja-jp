@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: sewebiug_modify_the_subscribed_service_details.html 
-keywords: netapp, keystone, modify, subscribed, service, details, 
-summary: Keystone は、サブスクライブするサービスの詳細を変更します 
+keywords: netapp, keystone, modify, cloud, service, details, 
+summary: Keystone がクラウドサービスの詳細を変更 
 ---
-= サブスクライブしたサービスの詳細を変更します
+= クラウドサービスの詳細を変更します
 :hardbreaks:
 :nofooter: 
 :icons: font
@@ -13,7 +13,7 @@ summary: Keystone は、サブスクライブするサービスの詳細を変�
 
 
 [role="lead"]
-このメソッドを使用して、サブスクライブしたサービスの詳細を変更します。可能です
+クラウドサービスの詳細を変更するには、このメソッドを使用します。可能です
 
 * 次の表に示すように、各サービスの詳細を変更します。
 * サービスのタグを追加または削除します。
@@ -38,8 +38,8 @@ summary: Keystone は、サブスクライブするサービスの詳細を変�
 
 === 手順
 
-. メニューから [ サブスクライブ済みサービス ]>[ サブスクライブ済みサービス ] を選択します。
-. リストで登録済みサービスを見つけ、 [ 編集 ] アイコンをクリックします。
-. [ 登録サービスの更新 ] ダイアログボックスで、必要に応じて変更を行います。
+. メニューから * クラウドサービス * > * クラウドサービス * を選択します。
+. リストからクラウドサービスを探し、 [ 編集 ] アイコンをクリックします。
+. [ クラウドサービスの更新 ] ダイアログボックスで、必要に応じて変更を行います。
 . [ 更新（ Update ） ] をクリックします。
 

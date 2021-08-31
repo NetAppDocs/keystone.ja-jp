@@ -13,16 +13,16 @@ summary: Google Cloud Platform でのクラウドボリュームサブスクリ�
 
 
 [role="lead"]
-Cloud Volumes Service for Google Cloud Platform （ GCP ）へのサブスクリプションは、テナントの特定のサブテナントに関連付けられます。サブテナントは、 1 つの Google Cloud サービスに登録されています。テナントやサブテナント用にサブスクライブしたサービス（ Google Cloud インスタンス）を作成および管理したり、テナントの使用期間に基づいて Google Cloud でストレージをプロビジョニングしたりできます。NetApp Service Engine を使用して Google Cloud インスタンスを管理するには、テナントとサブテナントの Cloud Volumes Service アカウントを事前に設定しておく必要があります。GCP 上の Cloud Volumes Service の詳細については、を参照してください https://docs.netapp.com/us-en/occm/concept_cvs_gcp.html["Cloud Volumes Service for Google Cloud の詳細をご覧ください"]。
+Cloud Volumes Service for Google Cloud Platform （ GCP ）へのサブスクリプションは、テナントの特定のサブテナントに関連付けられます。サブテナントは、 1 つの Google Cloud サービスに登録されています。テナントやサブテナント用にクラウドサービス（ Google Cloud インスタンス）を作成して管理したり、テナントの使用期間に基づいて Google Cloud でストレージをプロビジョニングしたりできます。NetApp Service Engine を使用して Google Cloud インスタンスを管理するには、テナントとサブテナントの Cloud Volumes Service アカウントを事前に設定しておく必要があります。GCP 上の Cloud Volumes Service の詳細については、を参照してください https://docs.netapp.com/us-en/occm/concept_cvs_gcp.html["Cloud Volumes Service for Google Cloud の詳細をご覧ください"]。
 
 
 NOTE: テナントとサブテナントの Cloud Volumes Service アカウントが GCP 用に設定されている必要があります。サービスアカウントの詳細については、サポートにお問い合わせください。Google Cloud Volume を管理するには、顧客管理者アクセス権が必要です。
 
 
 
-== GCP でのサブスクライブ済みサービスの管理
+== GCP でのクラウドサービスの管理
 
-左のナビゲーションペインの * 登録サービス * メニューから、 Google Cloud で登録したサービスを管理できます。[ サブスクライブ済みサービス（ Subscribed Services ） ] ページには、選択したテナントのすべてのサブテナントに対するサブスクライブ済みサービスがすべて表示されます。このページでは、サブスクライブしたサービスを表示、変更、および削除できます。次の手順に従って、新しいサービスを追加することもできます。
+左のナビゲーションペインの * クラウドサービス * メニューから、 Google Cloud でクラウドサービスを管理できます。クラウドサービスページには、選択したテナントのすべてのサブテナントに対するすべてのクラウドサービスが表示されます。このページでクラウドサービスを表示、変更、および削除できます。次の手順に従って、新しいサービスを追加することもできます。
 
 
 
@@ -39,12 +39,12 @@ NOTE: テナントとサブテナントの Cloud Volumes Service アカウント
 
 ==== 手順
 
-. メニューから [ サブスクライブ済みサービス（ Subscribed services ） ] を選択します。
+. メニューから * クラウドサービス * を選択します。
 . [ * 作成 ] をクリックし、 [* Google Cloud * ] をクリックします。
-. Google Cloud の [ サブスクライブ済みサービスの作成（ Create Subscribed Service ） ] ページで、サービスを作成するサブテナントを選択し、名前と GCP プロジェクト番号を追加します。
+. Google Cloud のクラウドサービスの作成ページで、サービスを作成するサブテナントを選択し、名前と GCP プロジェクト番号を追加します。
 . Google Cloud Credentials セクションで、サービスアカウントのクレデンシャルを指定して JSON ファイルをアップロードします。
 . 必要に応じて、サービスにタグを追加します。
-. [ 作成（ Create ） ] をクリックします。作成されたサービスの状態は、 [ 登録済みサービス ] ページの [ 割り当て済み ] に変わります。
+. [ 作成（ Create ） ] をクリックします。作成されると、クラウドサービスページのサービス状態が「成功」に変わります。
 
 
 

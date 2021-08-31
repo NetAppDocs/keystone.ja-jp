@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: sewebiug_view_a_list_of_subscribed_services.html 
-keywords: netapp, keystone, view, list, subscribed, services, 
-summary: Keystone サブスクライブしたサービスのリストを確認する 
+keywords: netapp, keystone, view, list, cloud, services, 
+summary: Keystone クラウドサービスのリストを確認する 
 ---
-= サブスクライブしたサービスのリストを表示します
+= クラウドサービスのリストを表示します
 :hardbreaks:
 :nofooter: 
 :icons: font
@@ -13,10 +13,10 @@ summary: Keystone サブスクライブしたサービスのリストを確認�
 
 
 [role="lead"]
-[ サブスクライブ済みサービス（ Subscribed Services ） ] リストには、選択したテナンシー内のすべてのサブスクライブ済みサービスのリストが表示されます。
+クラウドサービスリストには、選択したテナンシー内のすべてのクラウドサービスのリストが表示されます。
 
-リストを表示するには、メニューから [ サブスクライブ済みサービス ]>[ サブスクライブ済みサービス ] を選択します。
+リストを表示するには、メニューから * クラウドサービス * > * クラウドサービス * を選択します。
 
-リストには、サブスクライブされた各サービスに関する簡単な情報が表示されます。
+リストには、各クラウドサービスに関する単純な情報が表示されます。
 
-サブスクライブした各サービスの横にあるアクションアイコンを使用して、サブスクライブしたサービスを変更または削除できます。
+各クラウドサービスの横にある操作アイコンを使用して、クラウドサービスを変更または削除できます。

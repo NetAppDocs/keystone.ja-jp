@@ -2,7 +2,6 @@
 <blocks>
   <block id="bbf5c00a5a74c975684f1ea9625170dc" category="summary">NetApp Service Engine の既知の問題</block>
   <block id="df2d7d810d56e2ac1424497ce621a5b4" category="doc">NetApp Service Engine の既知の問題</block>
-  <block id="169b34e4ab011706634f67c10f307535" category="paragraph">このリリースの NetApp Service Engine で報告されている既知の問題を次に示します。</block>
   <block id="7a80ca9b8510ef9ffe2e1220e504556f" category="cell">Known 問題の略</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">説明</block>
   <block id="7aebfa1e2291377e040de92d7f7f335f" category="cell">回避策</block>
@@ -24,7 +23,6 @@
   <block id="068bb1be1378596135e3a28692966278" category="cell">すべてのプライマリボリュームとレプリケーション関係が削除されます。ただし、ディザスタリカバリオブジェクトは削除されません。このオブジェクトは容量もネットワークも消費しません。</block>
   <block id="c8d49ad83dee61f7445c0ee8241f314a" category="cell">この問題には回避策はありません。</block>
   <block id="15af90465a6fa17b3d45e4a04546e02d" category="cell">ボリューム上のバックアップの無効化に関する制限事項</block>
-  <block id="0333cfff0270b7dbba3cc836e02be62d" category="cell">ネットワークサブネットの削除に関する制限</block>
   <block id="da13c6df8ee6f220a7fd4e875de9a14d" category="cell">お客様はネットワークサブネットを削除できません。</block>
   <block id="43b8342b3b270185be758f3c753f9ebf" category="cell">API を使用した VLAN の削除に関する制限事項</block>
   <block id="1fe5fd82c9e1426b6bfefaacca18c158" category="cell">サブネットが関連付けられている VLAN を削除すると、 UI にサブネットスタブは空になります。</block>
@@ -369,9 +367,7 @@
   <block id="43639e8f38adc48b4a422a080cb873c2" category="paragraph">NetApp Service Engine Web インターフェイスを使用している場合、表示されるデータと実行するアクティビティは、選択したテナントに関連します。以下に示すように、画面の上部にテナントを表示できます。</block>
   <block id="3dfcfbfe54ce542f048931777f79fd53" category="paragraph"><block ref="3dfcfbfe54ce542f048931777f79fd53" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3646933fa9f46e9d9198d0dfb5745d1f" category="paragraph">NetApp Service Engine のほとんどの Web インターフェイスユーザは、 1 つのテナントにしかアクセスできません。ただし、複数のテナントにアクセスできる場合は、 Tenant フィールドで別のテナントを選択してテナントを変更できます。</block>
-  <block id="9327006006e30b46442f35de3b114e84" category="summary">Keystone は、サブスクライブするサービスの詳細を変更します</block>
   <block id="4c449a34cd08a335e390682a36b43ce9" category="doc">サブスクライブしたサービスの詳細を変更します</block>
-  <block id="7482169f51f5b143aeb3890c57ccb7ee" category="paragraph">このメソッドを使用して、サブスクライブしたサービスの詳細を変更します。可能です</block>
   <block id="536462d0f7ddd1195bced7308b8d1230" category="list-text">次の表に示すように、各サービスの詳細を変更します。</block>
   <block id="7677ce2933ef947f8f4af0164e8fca52" category="list-text">サービスのタグを追加または削除します。</block>
   <block id="56d18ab06f7cb000f46d437e9c0abda0" category="cell">クラウドプラットフォーム</block>
@@ -382,9 +378,6 @@
   <block id="a03c78cae8453f4dd95563e5741aaf4c" category="cell">未定</block>
   <block id="c731f72e1d22a7c5e01a7cb789a8885e" category="cell">GCP</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="cell">AWS</block>
-  <block id="a34f67ae3248c17e1c9279e0f1b57544" category="list-text">メニューから [ サブスクライブ済みサービス ]&gt;[ サブスクライブ済みサービス ] を選択します。</block>
-  <block id="916f9f905708e8edc17ec2f8c4f72921" category="list-text">リストで登録済みサービスを見つけ、 [ 編集 ] アイコンをクリックします。</block>
-  <block id="373fafe4f97d398d1a1acc165e5e59ee" category="list-text">[ 登録サービスの更新 ] ダイアログボックスで、必要に応じて変更を行います。</block>
   <block id="04252e4e5460971d7f33943bd841f366" category="list-text">[ 更新（ Update ） ] をクリックします。</block>
   <block id="8f1ca7f38c49eb1efb82277e92a1a867" category="summary">Keystone （コンシューマ）管理 API</block>
   <block id="2655746c323f42776e54553d63680ec0" category="doc">（コンシューマ）管理 API</block>
@@ -459,12 +452,7 @@
   <block id="b6d4223e60986fa4c9af77ee5f7149c5" category="section-title">サインインします</block>
   <block id="722eb3eb47bc62367a535bee7ba9ee4f" category="paragraph">次の表に示す方法でサインインします。</block>
   <block id="1bc67190391b40360ccefe940a662840" category="cell">ユーザとしてログインします。</block>
-  <block id="626634f88519b7ff6ed01c797bd1eb07" category="summary">Keystone サブスクライブしたサービスのリストを確認する</block>
   <block id="1c4ff4148966375bdb9755ebc24f8cf9" category="doc">サブスクライブしたサービスのリストを表示します</block>
-  <block id="dc4903fc98537c2f31ba1a8a31d0fc2f" category="paragraph">[ サブスクライブ済みサービス（ Subscribed Services ） ] リストには、選択したテナンシー内のすべてのサブスクライブ済みサービスのリストが表示されます。</block>
-  <block id="ffad6faffc7317f6bc8469406caecba6" category="paragraph">リストを表示するには、メニューから [ サブスクライブ済みサービス ]&gt;[ サブスクライブ済みサービス ] を選択します。</block>
-  <block id="2d5989606547c01316f0f94c7984dcca" category="paragraph">リストには、サブスクライブされた各サービスに関する簡単な情報が表示されます。</block>
-  <block id="5f163459a55ce6d568973d04a70cefdc" category="paragraph">サブスクライブした各サービスの横にあるアクションアイコンを使用して、サブスクライブしたサービスを変更または削除できます。</block>
   <block id="4d76839da96d12ecc14c456cf5c67834" category="summary">Keystone のサービスレベル</block>
   <block id="1b4db106b3929030e7743e9c5a745ee1" category="paragraph">次の表に示すメソッドを使用して、サービスレベルを取得、作成、変更、および削除します。</block>
   <block id="2a4df15c0eac68c58729cdbad5afb7b9" category="cell">「 /v2.1/serviclevel 」を参照してください</block>
@@ -544,17 +532,13 @@
   <block id="83d51fe62088359eb316a0f39dcbbddf" category="list-text">* TiB あたりのターゲット IOPS 。 * しきい値に達する前にボリュームに送信されたすべての I/O 要求の保証 IOPS 。ボリュームのパフォーマンスが選択した TiB あたりの IOPS に制限されます。</block>
   <block id="e102db89251a6f1bdb1ab702ee3f9027" category="admonition">TiB あたりのターゲット IOPS パフォーマンス指標は、 TiB 単位での論理使用容量に基づいて計算されます。</block>
   <block id="93df9c79daa24b389866d9bf40848977" category="list-text">* レイテンシ。 * クライアントから受信した I/O 要求の処理にかかる時間。サービスの分離（ストレージコントローラの I/O ポート）で測定されます。</block>
-  <block id="5f48143908a154ad3ec3c1d634efcd9e" category="summary">Keystone 管理サブスクライブされたサービスの概要</block>
   <block id="623bec026d6b13afc9c7789ea2ed556f" category="paragraph">NetApp Service Engine に登録すると、 NetApp Service Engine Web ポータルを使用して Cloud Volume サービス（ CVS ）を管理できます。これには、次のもの</block>
   <block id="8f53b5241aa3284f9058318dcbc2504d" category="list-text">Azure NetApp ファイル（ ANF ）</block>
   <block id="ada188510a75b5e28d9e93f26a76b501" category="list-text">（今後） Amazon Web Services （ AWS ）</block>
   <block id="77c2b5f917c02d295d63df419dff3f65" category="list-text">（今後） Google Cloud Platform （ GCP ）</block>
   <block id="6a4b2ec816a251ff33a3ce5d497f2552" category="paragraph">既存の CVS サブスクリプションのみを NetApp Service Engine に登録できます。新しいサブスクリプションを作成するには、通常の方法で CVS サブスクリプションを作成し、サブスクリプションクレデンシャルを使用して NetApp Service Engine に登録します。</block>
-  <block id="738b338bb84acc4c4204c2d29f48ffb4" category="paragraph">このセクションでは、サブスクライブされたサービスを管理する方法について説明します</block>
-  <block id="920d6a950bea4ef5e162b5f6f8032b30" category="admonition">サブスクライブされたサービスを管理するには、顧客管理者アクセス権が</block>
   <block id="e083dcb18268eb01dbd74355540847c7" category="paragraph">可能です</block>
   <block id="107e5a722744b136c2b64b3b9f34ba3d" category="list-text">サブスクライブ済みサービスを追加します</block>
-  <block id="e49b84edf465fa4b9336fed5afb92a31" category="list-text">サブスクライブ済みサービスの詳細を変更します</block>
   <block id="bc32a38186dae6ec37fbc645cf6beafc" category="list-text">サブスクライブしたサービスを削除します</block>
   <block id="44b0b983528d36c638cfe11e34569844" category="summary">Keystone オブジェクトストレージユーザを作成</block>
   <block id="086935e12a9a16e561e3fea09863edd0" category="doc">Create Object Storage User の略</block>
@@ -766,21 +750,8 @@
   <block id="61af5d59426d1e9c60b178c39f9f8bce" category="list-text">ディスクのアドホックスナップショットを作成します</block>
   <block id="e8f221d15eb31d00b8a988529a3e2527" category="summary">Keystone がサービスリクエストを発行します</block>
   <block id="811f26bd987ce6c5ae16ef3f82a0e54b" category="doc">サービスリクエストを提出します</block>
-  <block id="e57af5ab7df82b45d41bfc20223416c2" category="list-text">メニューから [ サポート ]&gt;[ サービスリクエスト ] を選択し、 [ 新しいサービスリクエスト ] をクリックします。</block>
-  <block id="08f3f4f6177db96386af8ca23fca7f79" category="paragraph"><block ref="08f3f4f6177db96386af8ca23fca7f79" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f2dcdabaded22e13ec16edb510458300" category="list-text">[ 新しいサービスリクエスト ] ページで、リクエストのカテゴリと優先度を選択し、 [ 次へ ] をクリックします。</block>
-  <block id="21b5448bfc34cc61b5a4c357b38acead" category="paragraph"><block ref="21b5448bfc34cc61b5a4c357b38acead" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="90bea45dea632917afc7280a8bb84807" category="list-text">サブテナントとサービスタイプを選択します。[ ゾーン ] フィールドが使用可能な場合は、ゾーンを選択します。</block>
-  <block id="bc59f2ae222ee320d0e4ca9255598014" category="paragraph"><block ref="bc59f2ae222ee320d0e4ca9255598014" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8d6b1f0f2bb0ecf6fb34e4d7097bed28" category="list-text">リクエストの簡単な概要を入力します。大きなテキストフィールドに、要求の完全な概要を追加します。次に、 [ * 次へ * ] をクリックします。</block>
-  <block id="0b3ee0a9ce828a3fe36315d1d99a2cfa" category="paragraph"><block ref="0b3ee0a9ce828a3fe36315d1d99a2cfa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="721b8bc2578cf4a3290ff3e1ae267444" category="list-text">リクエストの詳細を確認します。修正する場合は、 [ 戻る ] ボタンを使用して前のページに戻り、詳細を修正します。すべての詳細が正しい場合は、 [* 送信 ] をクリックします。</block>
-  <block id="024c98cf6793f9857a1af318294f6746" category="paragraph"><block ref="024c98cf6793f9857a1af318294f6746" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="da32f5bf301e7caf88dbb8794e2abc68" category="list-text">NetApp Service Engine がサービス要求を作成します。サービスリクエスト番号が画面に表示され、サービスリクエストも [ サービスリクエスト ] リストに表示されます。</block>
-  <block id="9839653419674983654f0014ffdcef62" category="paragraph"><block ref="9839653419674983654f0014ffdcef62" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7df4bcdd1bdcb669377eb4a2168cb7ce" category="list-text">リクエストのステータスを表示します。新しくオープンしたサービスリクエストのステータスは [ 新規 ] になります。</block>
-  <block id="f6fcd40c2cf22da3d068f820ae4e5c93" category="list-text">リクエストの詳細を表示するには、 [ 表示 ] アイコンをクリックします。[*Close*]( 閉じる ) をクリックして、サービスリクエストリストに戻ります。</block>
-  <block id="a959233f3b2d3402e97d070c9ad9b26f" category="paragraph"><block ref="a959233f3b2d3402e97d070c9ad9b26f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="385907468665e91a15044c37c13e9d76" category="list-text">リクエストが作成されたことを示す E メールがリクエスト者に送信されます。この E メールは、要求元の NetApp Service Engine ユーザに登録されている E メールアドレスに送信されます。</block>
   <block id="742ef9f3b9cf3b40d63f3f7a076f1fc7" category="summary">Keystone サブスクリプションを管理する</block>
   <block id="0ab18403e50bd7c93f06357102158121" category="paragraph">サブスクリプションの管理には、 NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）サービスとテナントサブスクリプションサービスへのサービスレベルの割り当て、または NetApp Service Engine インターフェイスを使用したサービスレベルへの容量の割り当てと変更が含まれます。</block>
@@ -1120,19 +1091,6 @@
   <block id="7beff930d10499c66cc25c8911fe65dd" category="list-text">[ 完了（ Done ） ] をクリックします。共有を変更するジョブが作成されます。</block>
   <block id="4f6cfcf670602d0d3965cdfad9003301" category="paragraph">Modify share は非同期ジョブとして実行されます。可能です</block>
   <block id="c65f438b154be9ea4bf677eda0f12729" category="list-text">ジョブが完了したら、 [ 共有 ] リストで共有のステータスを確認します。</block>
-  <block id="23c633c723864ccbcd0cdb7bfc301f14" category="summary">Keystone がサブスクライブ済みサービス容量を確認</block>
-  <block id="80223cea2bb61f755be632e0605e95b4" category="paragraph">ダッシュボードページには、特定のサブスクリプション番号のストレージサブスクリプションに関する情報が表示されます。選択したサブスクリプションについて、ダッシュボードには選択したサブスクリプションを構成するサービス階層が表示されます。また、サービスレベルごとの使用容量、およびデータ保護や高度な保護などのアドオンサービスについても、別のタブに表示されます。</block>
-  <block id="9c6d0304bad1a79eb549b1fac2e06aba" category="paragraph"><block ref="9c6d0304bad1a79eb549b1fac2e06aba" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="254c244a50ec9f15268d1c91ba1b12b0" category="section-title">サービスプロバイダのダッシュボードビュー</block>
-  <block id="82ad6b25175af4800de40b164bcc00ff" category="paragraph">ダッシュボードには、 NetApp Keystone フレックスサブスクリプションの概要が表示されます。サービスプロバイダ / パートナー様は、各サブスクリプションの下にあるサブスクリプションとテナントサービスのサービスレベルを表示できます。各テナントのデータ使用量（バーストデータなど）を表示したり、特定のテナントに基づいて使用量をフィルタリングしたりすることもできます（右上から特定のテナントを選択）。</block>
-  <block id="b9c11fa3eca29b1c11f4610f8d9f59c2" category="admonition">データ保護基本サービスおよび高度なデータ保護サービスに登録している場合は、消費の詳細がデータ保護タブおよび高度な保護タブに表示されます。</block>
-  <block id="1a1247b901cd0fe72cc64d217270a5ce" category="paragraph"><block ref="1a1247b901cd0fe72cc64d217270a5ce" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="278455adabb96ea28282c5bf5e5adef4" category="paragraph">サービスプロバイダーとしてサブスクライブした各サービスは、 4 つの同心リングで構成された円で表されます。リングはサービスに関連する容量を表し、外部リングはテナントにコミットされた容量を表します。中央の青いリングは、そのサブスクリプションの下のテナントが実際に消費している容量を示しています。内側のリングは、バースト容量の使用状況を示します（赤色）。最も内側の領域には、加入している Flex Subscription サービスの総容量の概要が表示されます。リングにカーソルを合わせると、関連する容量が表示されます。</block>
-  <block id="32b913b5f11fde879cd215a6a2aea579" category="paragraph"><block ref="32b913b5f11fde879cd215a6a2aea579" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9061748572741e851e0dae9879678107" category="paragraph">サービスプロバイダーに複数のサブスクリプションがある場合は、スクロールダウンして、他のサブスクリプションのサブスクライブ済みサービスを表示できます。</block>
-  <block id="32b271a9fb0ad660eced012a1b7825c8" category="section-title">テナントのダッシュボードビュー</block>
-  <block id="f3fa8c8c0e30465c73e726bd8c609f09" category="paragraph">テナント管理者は、テナントのすべてのテナントサブスクリプションの現在の詳細、つまりサブスクリプションのサービスレベル、および他のタブのアドオンサービスのみを表示できます。</block>
-  <block id="47d13487c42559d109436170e55bd627" category="paragraph">テナントとしてサブスクライブした各サービスは、 4 つの同心円リングで構成された円で表されます。リングはサービスに関連する容量を表し、外部リングはテナントにコミットされた容量を表します。中央の青いリングは、そのサブスクリプションの下のテナントが実際に消費している容量を示しています。内側のリングは、バースト容量の使用状況を示します（赤色）。最も内側の領域には、加入している Flex Subscription サービスの総容量の概要が表示されます。リングにカーソルを合わせると、関連する容量が表示されます。</block>
   <block id="91ddc16de769a9f97aed8824a94f4eff" category="summary">Keystone がブロックストレージで機能</block>
   <block id="378550b5a79b735cc6584d4de45ce11c" category="doc">ブロックストレージの使用</block>
   <block id="e69a67ee29567c85d079a5da92e0021d" category="summary">Keystone によってディスクが変更される</block>
@@ -1497,10 +1455,7 @@
   <block id="89e91545d4b526e8e4482562b627b0c3" category="paragraph">このセクションでは、次のコンシューマ API について説明します。</block>
   <block id="e675507781d5853607199f12b9a7e82b" category="list-text">クラウドオーケストレーション API</block>
   <block id="a4e463ed28163125af79067c4522a375" category="list-text">（利用者向け）管理 API</block>
-  <block id="fa220bbdf3f70bf42098deac255b63f4" category="summary">Keystone は、サブスクライブしたサービスを削除します</block>
   <block id="c8cf175a50e08f37c84843196b2ccbcb" category="paragraph">このメソッドを使用して、 NetApp Service Engine Web ポータルから CVS サブスクリプションを削除します。</block>
-  <block id="1ec15421ef71e6849140bd732f19c51b" category="list-text">リストで登録済みサービスを見つけ、 [ 削除 ] アイコンをクリックします。</block>
-  <block id="b21ecaf6300af9ec9f05017e18ac5be9" category="list-text">[ 削除の確認 ] ダイアログボックスで、削除する登録済みサービスの名前を入力します。</block>
   <block id="153134fefaef2b8b8167bd48ae5b7439" category="summary">Keystone サービスリクエストの管理の概要</block>
   <block id="0750d1d0068b321d8ce20396636f1eaf" category="paragraph">サービスリクエストの対象：</block>
   <block id="e1b769719ccb6a19b5da0f54a9ce124a" category="list-text">バックアップのリストア</block>
@@ -1518,7 +1473,6 @@
   <block id="906dd567228b70ab6daba9a2c4b157ed" category="list-text">ユーザがアクセスできる各テナンシーでのユーザのロールを変更します。</block>
   <block id="0ca6560aa88bd22fa1b3bb69d8594555" category="section-title">手順</block>
   <block id="ce94f5b2a91b358093abc8743e47b67d" category="list-text">リスト内でユーザを探し、 [ 編集 ] アイコンをクリックします。</block>
-  <block id="ffcbce480a9477988f79d47bbb410870" category="list-text">[ ユーザーの編集 ] ダイアログボックスで、必要に応じて変更を行います。</block>
   <block id="7c0a8133d524d744dc1d309ff2d635de" category="list-text">テナンシー内のユーザのロールを変更するには、テナンシーリストでテナントを検索し、新しいロールを選択します。</block>
   <block id="560da9d680f7592a9fd4dc57688710e5" category="list-text">ユーザに別のテナンシーへのアクセスを許可するには、 [ * テナンシーの追加 ] をクリックし、新しいエントリフィールドでテナントとユーザのロールを選択します。</block>
   <block id="40e31965143342f756d5d254e77a2687" category="list-text">テナンシーへのユーザーのアクセスを削除するには、テナンシーリストでテナンシーを探し、削除アイコンを選択します。</block>
@@ -2060,16 +2014,10 @@
   <block id="a28f80082e126b6575c142147d151fd0" category="paragraph">グラフには、ストレージのパフォーマンスが時々表示されます。可能です</block>
   <block id="23a0be47be6dab4fd91f2a39b6ad9beb" category="list-text">期間フィルタを選択して表示する期間を選択するか、グラフをクリックしてドラッグします。</block>
   <block id="e27a750275bddf265e26181ce3f4ba0e" category="list-text">グラフの特定のポイントにカーソルを合わせると、そのポイントに関する詳細が表示されます。</block>
-  <block id="8fbb260bef8cbc3909bb1276c5102a0f" category="summary">Keystone はサブスクライブ済みサービスを追加します</block>
-  <block id="e5e6a711fd7fe30a05a914169cee6678" category="paragraph">このセクションでは、サブスクライブされたサービスを追加する方法について説明します。</block>
   <block id="aaa767a3abe004c8aa9b69f47e39a4e0" category="paragraph">NetApp Service Engine は Azure NetApp Files をサポートしています。</block>
-  <block id="96b9d9c0fbdbb28f9c6c23b686c373ff" category="paragraph">サービスに接続するためのクレデンシャルなど、サブスクライブされたサービスに関する情報が必要です。情報は、サブスクライブされたサービスタイプによって異なります。</block>
-  <block id="dbc3fd058700159c8c1f6d9904fa8965" category="list-text">メニューから「サービスを購読」を選択します。</block>
-  <block id="be46110a0c7ba0b9a231dd57db7ccd42" category="list-text">[ サブスクライブ済みサービスの作成（ Create Subscribed Service ） ] ページでクラウドサービスタイプを選択し、そのサービスタイプに関連する情報を入力します。</block>
   <block id="cef25a9a965091c290f0d22966a12d36" category="paragraph">* Azure ： *</block>
   <block id="114e3d2d5bc790998a4ea6ae57984b84" category="list-text">サブテナントを選択します。</block>
   <block id="fe8e2b404735f8580cee598d230d6e2e" category="list-text">サービス用に作成する OCCM Working Environment の名前を入力します。</block>
-  <block id="1ee08254f3cbb81d5d75246ed66f25b3" category="list-text">Azure Directory （テナント） ID 、 Azure Client ID 、 Azure Client Secret 、およびサブスクライブするサービスの名前を入力します。</block>
   <block id="bb86c3b26f64c63dbc8f2d5c13f9c813" category="list-text">必要に応じて、サービスのタグを指定します。</block>
   <block id="7eddfc78b8a9dd933570c6b9a9131fc9" category="summary">Keystone のサービスリクエストプロセス</block>
   <block id="f940797ffa9c017dbbeaa4b7e0c12a85" category="doc">サービスリクエストプロセス</block>
@@ -2298,21 +2246,15 @@
   <block id="e84417b811d892cfabeb4dbee529c832" category="summary">Google Cloud Platform でのクラウドボリュームサブスクリプションの管理</block>
   <block id="d2b2c18fa0ca629c1ca61a9d48a4cb2b" category="doc">Cloud Volumes Service for GCP を管理する</block>
   <block id="e946962d2bea46b9a982a912efacd934" category="inline-link">Cloud Volumes Service for Google Cloud の詳細をご覧ください</block>
-  <block id="fbbec27b83e78cfe7447b9c71835b015" category="paragraph">Cloud Volumes Service for Google Cloud Platform （ GCP ）へのサブスクリプションは、テナントの特定のサブテナントに関連付けられます。サブテナントは、 1 つの Google Cloud サービスに登録されています。テナントやサブテナント用にサブスクライブしたサービス（ Google Cloud インスタンス）を作成および管理したり、テナントの使用期間に基づいて Google Cloud でストレージをプロビジョニングしたりできます。NetApp Service Engine を使用して Google Cloud インスタンスを管理するには、テナントとサブテナントの Cloud Volumes Service アカウントを事前に設定しておく必要があります。GCP 上の Cloud Volumes Service の詳細については、を参照してください<block ref="192f77308acf6a52f09939ce57413739" category="inline-link-rx"></block>。</block>
   <block id="5f10f16fcab268512f1148f3db048605" category="admonition">テナントとサブテナントの Cloud Volumes Service アカウントが GCP 用に設定されている必要があります。サービスアカウントの詳細については、サポートにお問い合わせください。Google Cloud Volume を管理するには、顧客管理者アクセス権が必要です。</block>
-  <block id="2401b1a9f37271c12dda4f1cb2aa14f1" category="section-title">GCP でのサブスクライブ済みサービスの管理</block>
-  <block id="a77d81abea2e167840e2feb4b104cc26" category="paragraph">左のナビゲーションペインの * 登録サービス * メニューから、 Google Cloud で登録したサービスを管理できます。[ サブスクライブ済みサービス（ Subscribed Services ） ] ページには、選択したテナントのすべてのサブテナントに対するサブスクライブ済みサービスがすべて表示されます。このページでは、サブスクライブしたサービスを表示、変更、および削除できます。次の手順に従って、新しいサービスを追加することもできます。</block>
   <block id="8a8d2ece11ef7b6dc9f7d3f2f1d7c44d" category="paragraph">次の点を確認する必要があります。</block>
   <block id="6be9adc0bb5eb38197744a6ba6770654" category="list-text">サブテナントが Google Cloud サービスに登録されている。</block>
   <block id="b22f259a7845cf612bcf5a7d485a6137" category="list-text">加入者のサービスアカウントの JSON ファイルが必要です。 Google Cloud インスタンスに関連付けられている GCP プロジェクト番号を確認しておきます。</block>
   <block id="b3ae8c33b08587c2b6be6031629d0de3" category="inline-link">Cloud Volumes Service for Google Cloud をセットアップします</block>
   <block id="084cafb5240ee412a1336b10f1e95d54" category="list-text">Cloud Volumes Service for GCP がすでに Cloud Manager でサポートチームによって設定されていることを確認します。詳細については、を参照してください<block ref="1956ecad31d7ae695fe28eacaf067e5e" category="inline-link-rx"></block>。</block>
-  <block id="f0c3d1eab63af43c565c08693cb2c9ad" category="list-text">メニューから [ サブスクライブ済みサービス（ Subscribed services ） ] を選択します。</block>
   <block id="300a306a4df8277005591f8c37dca4ad" category="list-text">[ * 作成 ] をクリックし、 [* Google Cloud * ] をクリックします。</block>
-  <block id="8247dc806b4b4495248c3384069971f8" category="list-text">Google Cloud の [ サブスクライブ済みサービスの作成（ Create Subscribed Service ） ] ページで、サービスを作成するサブテナントを選択し、名前と GCP プロジェクト番号を追加します。</block>
   <block id="d3e4adc8f56c48d2cb91db12131aa538" category="list-text">Google Cloud Credentials セクションで、サービスアカウントのクレデンシャルを指定して JSON ファイルをアップロードします。</block>
   <block id="fc5127bbf11e334554718f2fe100b9f3" category="list-text">必要に応じて、サービスにタグを追加します。</block>
-  <block id="170396590512a7ec803f2220578339aa" category="list-text">[ 作成（ Create ） ] をクリックします。作成されたサービスの状態は、 [ 登録済みサービス ] ページの [ 割り当て済み ] に変わります。</block>
   <block id="9839af59beb0900e8a867ca422a1df5b" category="section-title">GCP でのボリュームの管理</block>
   <block id="80adafe0fefeca7302f270fb7669ca67" category="paragraph">GCP で Cloud Volume を管理する前に、テナントの Cloud Volumes Service アカウントを作成し、そのアカウントを Cloud Volume に登録する必要があります。これらの手順が完了したことを確認するには、サポートにお問い合わせください。</block>
   <block id="90be185cb77d53282f9802339ca11d1e" category="paragraph">GCP のサブテナントのボリュームは、左側のナビゲーションペインで、 * file services &gt; GCP Volumes * から管理できます。[GCP Volumes] ページには、選択したサブテナントおよび対応するリージョン用に GCP で作成された既存の Cloud Volume が一覧表示されます。このページで既存のボリュームを表示、変更、および削除できます。新しいクラウドボリュームをプロビジョニングする手順は次のとおりです。</block>
@@ -2381,8 +2323,6 @@
   <block id="6aabc28e97e5b07ba5874eb058e7c779" category="paragraph">Azure ボリュームを削除するには、このメソッドを使用します。</block>
   <block id="d473b43cbc289b5d22f96515d63627bd" category="list-text">リストから Azure ボリュームを探して、削除アイコンをクリックします。</block>
   <block id="b88fffaac19d5aeb6ed0d2a1b5b615d8" category="list-text">削除の確認ダイアログボックスで、削除する Azure ボリュームの名前を入力します。</block>
-  <block id="fda1f69e782d722db9bbce152f443a0d" category="summary">Keystone サブスクライブ済みサービスを管理する</block>
-  <block id="f1676af3a7ecf91e417ac9be1165e1fa" category="doc">サブスクライブ済みサービスの管理</block>
   <block id="5b2f0bd4fc7bb59187f107fcb9a848fa" category="summary">Keystone サービス要求を管理する</block>
   <block id="cbf99d0314c4530c4f7c8155643e7e2d" category="doc">サービスリクエストの管理</block>
   <block id="57ca22f6724957bd8f72afe27628993a" category="summary">Keystone 管理ユーザの概要</block>
@@ -2753,7 +2693,6 @@
   <block id="6baf7bb4c3a662abfd85e87f87fc45c3" category="summary">ネットアップサービスエンジン Web インターフェイスの概要</block>
   <block id="03ff7aa314c102c91de1cacb464b1cb6" category="paragraph">次の図は、 NetApp Service Engine Web インターフェイスの例です。次のコンポーネントで構成されます。</block>
   <block id="95e473080304dfcb95988f4c8e7d89d7" category="list-text">* 表示エリア。 * これは画面の主な作業エリアであり、次の 2 つのビューがあります。</block>
-  <block id="4452d6734a6e71259d6d48381418f254" category="list-text">ダッシュボードビュー：ストレージの使用状況とパフォーマンスを監視するためのさまざまなツールが表示されます。</block>
   <block id="5fbd15d2f317cfb600352444a1a26a96" category="list-text">リストビュー：ナビゲートしてソートできる項目のリストが表示されます（詳細については後述します）。</block>
   <block id="80f1a75781fb74e72995d365b05b4268" category="list-text">* メニュー。 * メニューを使用して、ストレージ項目の表示と管理、レポートの表示、およびサポートへのアクセスを行います。</block>
   <block id="b813eb54648754143314737391e83723" category="list-text">* NetApp のロゴ。 * これをクリックすると、いつでもダッシュボードビューに戻ります。</block>
@@ -2762,11 +2701,7 @@
   <block id="1a7329d747cecb967d7d9480931c66cf" category="inline-link-macro">ジョブおよびジョブステータスインジケータ</block>
   <block id="d8cde4e37ff1a1302038c73b5ac8511a" category="list-text">* ジョブ。 * クリックすると、最新のプロビジョニングジョブのステータスが表示されます。アイコンの色が変わり、設定ジョブのステータスが表示されます。詳細については、を参照してください <block ref="08ab40cd728ae5bfe16832c715077c4e" category="inline-link-macro-rx"></block>。</block>
   <block id="45fe389621c6ad8c79f04be5299b6bf3" category="list-text">* ユーザーログイン。 * 現在ログインしているユーザーの名前を表示します。サインアウトするには、このアイコンをクリックします。詳細については、を参照してください <block ref="e34eb35f8b60dac9d35bfebfa7fbdc61" category="inline-link-macro-rx"></block>。</block>
-  <block id="1906c6225fa7fdabbca286f0ebc20461" category="paragraph"><block ref="1906c6225fa7fdabbca286f0ebc20461" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c9d69eb1d1f9b81e3744508094bca2f6" category="section-title">ダッシュボードビュー</block>
-  <block id="e503352230447a9974d67b8b9854c9eb" category="inline-link-macro">サブスクライブ済みサービス容量を表示します</block>
-  <block id="e8b91e65e7b13726311bfcbd753f0dc0" category="paragraph">ダッシュボードビューには、サブスクライブされたサービスに関する情報が表示されます。これは、最初に画面にログインしたときのデフォルトビューです。サブスクライブしたサービス容量の表示方法については、を参照してください <block ref="2a04d49cddf12fd8a051bf4559fba190" category="inline-link-macro-rx"></block>。</block>
-  <block id="4678c020edc4afe21b2d30e3d6061d3d" category="admonition">ダッシュボードビューに戻るには、画面の左上にあるネットアップアイコンをクリックします。</block>
   <block id="b12346088b66b082e71918ca323fef01" category="paragraph">リストビューは、オブジェクトのリストを表示するために使用します。たとえば、次のスクリーンショットに示すように、サブスクリプション内のファイル共有をサポートするサーバのリストがリストビューに表示されます。</block>
   <block id="dba859b4b475b5e4f3ccada40f327fdd" category="paragraph">リストビューでは、次の操作を実行できます。</block>
   <block id="4737288f6cd847fd2e974f8f19ba95f6" category="list-text">リスト内の項目に対してアクションを実行します。を参照してください <block ref="4a0d19ebe9aa0f2533119e3056a7b078" category="inline-link-macro-rx"></block>。</block>
@@ -2867,7 +2802,6 @@
   <block id="145d95205a14e251671b34c73807092e" category="sidebar">Snapshot からファイル共有を作成します</block>
   <block id="cf073e83f3900e4116bf15fa47e252a1" category="sidebar">Snapshot からディスクを作成します</block>
   <block id="9aa8ff5deefebf063dcc15ad6c56e6f2" category="sidebar">オブジェクトストレージの操作</block>
-  <block id="7a21da91904fd6f35a09267b2b84392f" category="sidebar">サブスクライブしたサービスを管理します</block>
   <block id="1783e449724614e360999417e8b10901" category="sidebar">Azure NetApp Files の管理</block>
   <block id="17bcffb3afe645d6c1ca30ac89fadb75" category="sidebar">『 Managing Cloud Volumes Service for Google Cloud Platform 』を参照してください</block>
   <block id="2b3328083f206d967cbcd7831dc1e1b2" category="sidebar">バックアップの操作</block>
@@ -2878,4 +2812,117 @@
   <block id="2f12e5ae44c9cf77ed83b5e5e83ea318" category="sidebar">ネットワークを管理します</block>
   <block id="2bd05dd0cbc467a7641e108606fa1c5a" category="sidebar">NetApp Service Engine API リファレンス』を参照してください</block>
   <block id="ab4eeed97074daacb19be5e9f701fc55" category="sidebar">API を使用してサブネットを作成する</block>
+  <block id="f1e15aa54b6335c950ebc7c78df7f652" category="paragraph">以下の既知の問題が NetApp Service Engine で報告されています。ストレージを Flex サブスクリプションの一部としてプロビジョニングまたは使用する場合、これらの問題が発生することがあります。</block>
+  <block id="0ccf0b892d14cafd61224e166f1d19d9" category="cell">ネットワークサブネットの削除に関する制限</block>
+  <block id="54b6e42090cc9528c4b9e8c1ae20d482" category="cell">標準以外のサブネットを使用して Storage VM をインポートする場合の制限事項</block>
+  <block id="378a9be6f9eb4298ff0de63717b05df4" category="cell">NetApp Service Engine の外部で作成された Storage VM （ SVM ）は、標準外のサブネットが原因で動作できません。Storage VM は ' サポートに連絡したというステータスでインポートされます</block>
+  <block id="c5e6bc3afe6a04316b0a8fd822d236d2" category="cell">ネットアップが管理する環境では、容量レポートや請求レポートが不正確になる可能性があります</block>
+  <block id="16ab12b85a2a088ff1c2d6aea60c6e81" category="cell">ネットアップが管理する環境では、バックアップボリュームに LUN サイズの指標やサービスレベルが設定されていないことが原因で、 UI から生成された容量レポートや請求レポートに影響する可能性があります。</block>
+  <block id="387d94b48f6e34eb9f5d76e4b5c34fa6" category="summary">Keystone がクラウドサービスの詳細を変更</block>
+  <block id="b737fcde1a9b42a49be2af9921837940" category="doc">クラウドサービスの詳細を変更します</block>
+  <block id="8680c26030b9a27c21af17a744eac5b4" category="paragraph">クラウドサービスの詳細を変更するには、このメソッドを使用します。可能です</block>
+  <block id="cee1b7f6ebd6638e6c144f4fb1eba5c9" category="list-text">メニューから * クラウドサービス * &gt; * クラウドサービス * を選択します。</block>
+  <block id="86e73338f3df8ab014a2c65ecee4d4dc" category="list-text">リストからクラウドサービスを探し、 [ 編集 ] アイコンをクリックします。</block>
+  <block id="b89124ba309cdf3df8d74a737109270c" category="list-text">[ クラウドサービスの更新 ] ダイアログボックスで、必要に応じて変更を行います。</block>
+  <block id="203fef1952cfe950b24a1aadbcddf128" category="summary">Keystone クラウドサービスのリストを確認する</block>
+  <block id="1664dd3a08b79e5924b879ef24394c8d" category="doc">クラウドサービスのリストを表示します</block>
+  <block id="f9b400812a92a105de5e6e834b6fee73" category="paragraph">クラウドサービスリストには、選択したテナンシー内のすべてのクラウドサービスのリストが表示されます。</block>
+  <block id="575b8fc63fae5448b8cfc34430f9236f" category="paragraph">リストを表示するには、メニューから * クラウドサービス * &gt; * クラウドサービス * を選択します。</block>
+  <block id="f8632d33aefd3cc704d0bb4c2bcdcfe7" category="paragraph">リストには、各クラウドサービスに関する単純な情報が表示されます。</block>
+  <block id="20f6417872058a1c3c3d444dc165b5fa" category="paragraph">各クラウドサービスの横にある操作アイコンを使用して、クラウドサービスを変更または削除できます。</block>
+  <block id="72462f0bbc0c2ed541318b8613865933" category="summary">Keystone 管理クラウドサービスの概要</block>
+  <block id="f7dd1ff7874f77047bb2a8d874adac56" category="paragraph">このセクションでは、クラウドサービスの管理方法について説明します</block>
+  <block id="3ffdee1f3bfaec259b253c679cc88b78" category="admonition">クラウドサービスを管理するには、顧客管理者アクセスが必要です。</block>
+  <block id="4118b451733eaaba4a001e64e2793edd" category="list-text">クラウドサービスを追加</block>
+  <block id="0f83de51ee3f98244525029c39dd344f" category="list-text">クラウドサービスの詳細を変更</block>
+  <block id="2c8f81e62f64aa238546fbbb6c76f311" category="list-text">クラウドサービスを削除します</block>
+  <block id="cd7a86fe2c68638edfc590d0348e2ac6" category="section-title">NetApp Service Engine 2.2 で導入された機能</block>
+  <block id="d10191cc409a22b097fadfc82b9dc423" category="paragraph">このリリースの新機能では、課金、容量利用率、サービスリクエスト、アラートに関する新しいウィジェットのダッシュボードが改良されています。また、このリリースには、課金およびアラート管理用の新しい画面や、 [ 登録済みサービス ] メニューの名前をクラウドサービスに変更する機能も含まれています。</block>
+  <block id="7e65194cd4a857baedc63512c62ee99a" category="section-title">ダッシュボードビューが強化されました</block>
+  <block id="38a7d0cf0ace34d391c73209f8c3e560" category="paragraph">NetApp Service Engine ダッシュボードが再設計され、サブスクライブしたサービスの使用済み容量を確認するための「 * Capacity Utilization * 」という新しいコンポーネントが追加されました。* 月額料金 ( 請求 )* すべての月額プランの合計月額料金を表示します。* 警告 * ：環境内の最新のアラートの概要を表示します。* サービスリクエスト * ：環境内で生成された最新のサービスリクエストのリストを表示します。詳細については、を参照してください <block ref="51b99950f96aebac50d3a68ee27b3fbd" category="inline-link-macro-rx"></block></block>
+  <block id="02d61b8c4c5f7e969d94e2a3bbbddda9" category="section-title">新しい請求画面</block>
+  <block id="559c46ea5c53176aa95f7f853382e6ae" category="paragraph">請求履歴データを簡単に確認して計算できるように、新しい * 請求先 * 画面が追加されました。画面には、すべての加入サービスに関連する月額料金の全体像が表示されます。</block>
+  <block id="6248db19c2de1402d7d089733e1d2bc8" category="inline-link-macro">請求を表示します</block>
+  <block id="da5db10e4737b04c684d7faaed6ace01" category="paragraph">ダッシュボードの * 月額料金 * ウィジェットまたは * Administration &gt; Billing * からこの画面に移動して、すべての加入サービスの月額サブスクリプションレベルの内訳を表示します。請求データは、コミット済み容量とバースト時の使用容量に基づいており、過去数カ月間の使用状況に応じて提供されます。詳細については、を参照してください <block ref="ff5019e651b45dce6edea337a584798f" category="inline-link-macro-rx"></block></block>
+  <block id="a43ab2a03163297cf69e7df55101858b" category="section-title">［ 新しいアラート ］ 画面</block>
+  <block id="2ae145e579555cbdc76abe246b780993" category="inline-link-macro">アラートを作成および管理します</block>
+  <block id="73090ce7a860b524974661c8d2109693" category="paragraph">このリリースでは、システムで生成されたアラートとユーザーが生成したアラートをすべて一覧表示する新しい * Alerts * 画面が導入されています。この画面では、環境に関する重要なイベントに対するカスタムのアラートメッセージを作成して、他のユーザに通知することもできます。アラートは必要に応じて表示および却下できます。詳細については、を参照してください <block ref="0496064ad24390fb53c5f07bbecacf07" category="inline-link-macro-rx"></block></block>
+  <block id="41e171bf0ff077a4168d47bccb4e4cb6" category="section-title">強化されたユーザーインターフェイス</block>
+  <block id="a444de99116173decf32c9f244b0d673" category="paragraph">NetApp Service Engine のユーザインターフェイスでは、次の機能が強化されています。 * 左側のナビゲーションペインにある * ダッシュボード * メニューから、わかりやすいナビゲーションポイントからダッシュボードにアクセスできます。* 左側のナビゲーションペインの * 登録サービス * メニューの名前が * クラウドサービス * に変更されました。</block>
+  <block id="711953faa9bb8cc628e913011d0e5b33" category="paragraph">[Service Requests] 画面では、自分のサポートチームまたは NetApp GSSC が担当する新しいサービスリクエストを発行できます。</block>
+  <block id="0db330634d2013b5c1d235072b61db84" category="paragraph">ダッシュボードの * サービスリクエスト * ウィジェットで、最新のサービスリクエストの概要を優先度と作成時間でソートして表示できます。また、 [ サービスリクエスト ] 画面に移動して、環境内で発生したすべてのサービスリクエストの詳細を検索して表示することもできます。</block>
+  <block id="51eb35cbb4e3a4cefea470dcb9610124" category="paragraph">新しいサービスリクエストを作成するには、次の手順に従います。</block>
+  <block id="9187ea14b0030339be001019f5b66e57" category="list-text">メニューから *support &gt; Service Requests * を選択し、 * New Service Request * をクリックします。</block>
+  <block id="1bacea68b531028513d23df48579f200" category="list-text">[ 詳細 ] 画面のフィールドは、選択したカテゴリに応じて変わります。必要な詳細情報を入力します。「 * 次へ * 」をクリックします。</block>
+  <block id="563d16503074b1783f0c64fc34fa990c" category="list-text">サービスリクエストが作成され、 ［ サービスリクエスト ］ 画面に表示されます。新しくオープンしたサービスリクエストのステータスは「 New 」です。</block>
+  <block id="57c38af73404a7e13785e8f986b2da22" category="paragraph">アラートは、環境内の重要なイベントに関する情報を共有するために、自動でトリガーされるか手動で作成されるメッセージです。</block>
+  <block id="3f09a903d787fca86c90e74203656523" category="paragraph">ストレージをプロビジョニングすると、次の場合に自動アラートがトリガーされます。</block>
+  <block id="dbd67d97469be64bad383073cc51077b" category="list-text">新しいディスクまたはファイル共有によって、サブスクリプションがバーストにプッシュされます</block>
+  <block id="42d2093b66e19fcd702a59fa298c0dac" category="list-text">新しいディスクまたはファイル共有は、新しいサブスクリプションでプロビジョニングされます</block>
+  <block id="6b6d04779a2615a6ad545bd1344e0775" category="list-text">サブスクリプション内の使用済み容量がしきい値を超えたか、またはコミット済み容量に近づいています</block>
+  <block id="c5f56157127b0993af867064958cb51d" category="paragraph">[* アラート * （ * Alerts * ） ] 画面を使用すると、システムで生成されたアラートとユーザーが生成したアラートを環境内で表示できます。</block>
+  <block id="ea5e1c6f1f14a32489f92a4e85aef2dd" category="paragraph">また、カスタムアラートを作成して他のユーザに表示することもできます。必要に応じて、自分自身および他のユーザのテナント内のアラートを表示および却下できます。</block>
+  <block id="c4f32b1e62976a4372a6aa346fd5c4cc" category="section-title">マルチテナント環境でアラートを作成します</block>
+  <block id="c08b1ed500f185e3a35b776d072bc70d" category="paragraph">パートナー管理者は、アラートを手動で作成し、 1 つまたは環境内のすべてのテナントに送信できます。</block>
+  <block id="aa5c57e4bd8621ad6b24f96a1b931758" category="admonition">作成したアラートを却下することができます。ただし、まだ表示していないテナントに対してのみ却下されます。</block>
+  <block id="708abbcb0c629c843808068695507a3c" category="list-text">メニューから * Administration * &gt; * Alerts * を選択します。</block>
+  <block id="437b04b5bb6618f1b52d645d58bb2c5d" category="list-text">［ * アラートの作成 * ］ をクリックします。</block>
+  <block id="6ef17bdaaf22bf0655e8785436d04735" category="list-text">［ * アラートの作成 * ］ 画面で、アラートの送信先となるステータスとテナントを選択し、メッセージを追加します。</block>
+  <block id="a817d2bc7c7b25f6893846bdcc1ce71d" category="admonition">環境内のすべてのテナントにアラートを送信する場合は、「すべて」を選択します。</block>
+  <block id="aa6dadd33882662adb8f910200748877" category="list-text">[ 作成（ Create ） ] をクリックします。新しいアラートが作成されます。</block>
+  <block id="ebe71ffe38c2fc9d447af0c1f5bb43ef" category="section-title">テナンシーにアラートを作成します</block>
+  <block id="e50c8a15c343af7fa03f2ed9b23a8c61" category="paragraph">テナント管理者の場合は、環境内のすべてのユーザに手動でアラートを作成して送信できます。</block>
+  <block id="5c3b1ce8c68bc11a43f573fd025f4b39" category="admonition">作成したアラートを却下することができます。ただし、まだ表示していないユーザに対してのみ却下されます。</block>
+  <block id="5d6fae0b4b2770bfc19fcf10f0ec7bb7" category="list-text">［ * アラートの作成 * ］ 画面でステータスを選択し、メッセージを追加します。</block>
+  <block id="1081f948afa2d143c87d6da7211a035b" category="summary">請求書の詳細を表示およびダウンロードします</block>
+  <block id="4b05f54a57f365f5b3a9cf1c15167df8" category="paragraph">Keystone Flex サブスクリプション（ Flex サブスクリプション）で、サブスクライブされているすべてのサービスの月額料金を確認できます。</block>
+  <block id="791dbdaded77a63f96c45e9ea5d1d43d" category="paragraph">過去 1 カ月間に NetApp Keystone のすべての登録済みサービスについて、課金の詳細を表示できます。毎月のバースト時の容量に対する請求が強調表示されます。</block>
+  <block id="58a63b8f702f92fd3245851e54a6c44c" category="admonition">サブスクリプションのいずれかが年間請求された場合、請求書には実際の月次請求書金額ではなく、比例配分された金額が反映されます。</block>
+  <block id="2b09ac5055682c23d8ba4e6a14e9f967" category="paragraph">テーブル内のデータを月でソートして、任意の月のすべてのストレージサブスクリプションのリストを表示できます。</block>
+  <block id="9688bae6343916e20e0218a59bd2f60d" category="list-text">メニューから * Administration * &gt; * Billing * を選択します。</block>
+  <block id="817f3b83b5cf8d6998d86253d328cfa8" category="admonition">また、ダッシュボードの「月額料金 * 」ウィジェットの右上にある矢印またはウィジェットの任意のバーをクリックして、「請求」ページを表示することもできます。選択した月のすべての月額プランが表示されます。</block>
+  <block id="8e694bf2e1747edf7543b2e2df0bf434" category="list-text">必要に応じて、月を表すバーにカーソルを合わせると詳細が表示されます。</block>
+  <block id="2f5581d8cc6f970e6c70eac91215546f" category="list-text">表に表示されている任意の月を選択します。その月のすべてのサブスクリプションと、関連付けられた課金がテーブルに表示されます。料金は、コミット済み容量とバースト使用量に応じて分割されます。</block>
+  <block id="fe3173f25be041d3c6b308be02a46d9c" category="paragraph">ダッシュボードには、 NetApp Keystone ストレージサブスクリプションの概要が表示されます。使用済み容量、使用状況に対する請求、最新のアラートとサービス要求に関する情報が表示されます。</block>
+  <block id="f9ed75da3555257ca938c77e189c07a4" category="paragraph">ダッシュボードには、以下のウィジェットの重要な情報が表示されます。各ウィジェットをクリックすると、詳細な分析が可能です。</block>
+  <block id="af0bb0722f05fcc5cad936bc276df6a9" category="list-text">* 容量利用率： * Keystone Flex Subscription 、 Keystone Flex Utility 、クラウドサービスなど、サブスクライブするサービスの容量利用率が表示されます。バーグラフにカーソルを合わせると、使用済み容量の内訳が表示されます。コミット済み容量と使用済み容量、およびバースト時の容量を表示して、サブスクリプションに容量を追加する必要があるかどうかを判断できます。棒グラフをクリックすると、サブスクライブしたサービスのすべてのサブスクリプションが新しいポップアップで表示されます。このポップアップのサブスクリプショングラフをクリックすると、サービスレベルごとの使用容量の内訳が表示されます。必要に応じて、データ保護や高度な保護など、アドオンサービスの利用容量を確認することもできます。</block>
+  <block id="33c8c200b16895b7c3c094f7a7212c8e" category="list-text">* 月額料金（請求）： * すべての月額プランの合計月額料金が表示されます。過去 3 か月間の請求詳細を表示できます。グラフにカーソルを合わせると、コミット済みの使用状況とバースト時の使用状況に応じて料金が分割されて表示されます。サブスクリプションサービスのサブスクリプションが複数ある場合は、 1 か月の棒グラフをクリックすると、 [ 請求 ] 画面にサブスクリプションリストが表示されます。課金の詳細については、を参照してください <block ref="ff5019e651b45dce6edea337a584798f" category="inline-link-macro-rx"></block>。</block>
+  <block id="fb994140e833b58c3ba599dee0fa679b" category="list-text">* アラート：ステータス、メッセージ、作成日時など、最新のアラートの概要が表示されます。アラートの詳細については、を参照してください <block ref="0496064ad24390fb53c5f07bbecacf07" category="inline-link-macro-rx"></block>。</block>
+  <block id="c0def6fc0af1233163f1454da45f3c7d" category="list-text">* サービスリクエスト： * 最新のサービスリクエストのサマリーが、優先度と作成日時でソートされて表示されます。サービスリクエストの詳細については、を参照してください <block ref="afc02109994a487037ec15ea835679fe" category="inline-link-macro-rx"></block>。</block>
+  <block id="d783979237c7ea92de545879f7a32381" category="inline-image-macro">NSE ダッシュボード -1</block>
+  <block id="1009c6bd1106a6330629df68b3ad1564" category="paragraph"><block ref="1009c6bd1106a6330629df68b3ad1564" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="94732c2ea4ec914af226b88a9a3b8572" category="inline-image-macro">NSE ダッシュボード -2</block>
+  <block id="094bd937ff6187998d5dba676a812eff" category="paragraph"><block ref="094bd937ff6187998d5dba676a812eff" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad4d1829005dd03f7cf9ab881abe5ea6" category="section-title">マルチテナンシーのサービスプロバイダのダッシュボードビュー</block>
+  <block id="fa88a38bcd21fdecbef74c2036b327e0" category="paragraph">マルチテナント環境のパートナー管理者の場合は、ダッシュボードに、 NetApp Keystone 向けにサブスクライブされているすべてのサービスの概要が表示されます。容量利用率や課金の詳細などのウィジェットデータは、ネットアップとのサブスクリプションや課金関係を表します。</block>
+  <block id="f177e1a19970ff5e25307154c24a4391" category="paragraph">右上から特定のテナントを選択して、各テナントの容量利用率を表示することもできます。容量利用率ウィジェットのデータは選択したテナントのデータ使用量を表し、他のすべてのウィジェットのデータは一定のままでストレージサブスクリプションを表します。</block>
+  <block id="089e685563941e94026d37cb86934aed" category="section-title">マルチテナンシー内のテナント用のダッシュボードビュー</block>
+  <block id="130df011efb540e36544c1adf704710b" category="paragraph">マルチテナント環境でテナント管理者として使用している場合は、テナントの容量利用率、最新のアラート、サービス要求を表示し、ウィジェットをクリックして詳細を確認できます。請求先の詳細については、サービスプロバイダにお問い合わせください。</block>
+  <block id="615bcb1a7f65784ea979b216e8a51154" category="summary">Keystone がクラウドサービスを削除</block>
+  <block id="83f9c0fb0871c4b2f47270c917a7214c" category="list-text">リストからクラウドサービスを探し、削除アイコンをクリックします。</block>
+  <block id="df0de48df3265aa36019bc064c118aad" category="list-text">削除の確認ダイアログボックスで、削除するクラウドサービスの名前を入力します。</block>
+  <block id="c5befc20aabc78db19577c59986d177d" category="list-text">[ 管理 ]&gt;[ ユーザー *] を選択します。</block>
+  <block id="692d021adef35b5b0845d5d5e1d07417" category="list-text">[ ユーザーの編集 ] ダイアログボックスで、必要に応じて変更を行います。</block>
+  <block id="1065aefe268f1d48a7b1c69e6a2b98a7" category="summary">Keystone がクラウドサービスを追加</block>
+  <block id="0878d7da2674cb02eec5cd01ad1511fc" category="paragraph">このセクションでは、クラウドサービスを追加する方法について説明します。</block>
+  <block id="0546cab66a20c893a9882186a4b62d7c" category="paragraph">サービスに接続するためのクレデンシャルなど、クラウドサービスに関する情報が必要です。情報はクラウドサービスのタイプによって異なります。</block>
+  <block id="82c258770e146727924b1c33a7733179" category="list-text">メニューから * クラウドサービス * を選択します。</block>
+  <block id="91ded82e2417c7b5674b680ce1ae887f" category="list-text">クラウドサービスの作成ページでクラウドサービスタイプを選択し、そのサービスタイプに関連する情報を入力します。</block>
+  <block id="8a7493d74ba9fec9ac2e08e9d13d7a7e" category="list-text">Azure Directory （テナント） ID 、 Azure Client ID 、 Azure Client Secret 、およびクラウドサービス名を入力します。</block>
+  <block id="e37a2645be9da94babc088481594660a" category="paragraph">Cloud Volumes Service for Google Cloud Platform （ GCP ）へのサブスクリプションは、テナントの特定のサブテナントに関連付けられます。サブテナントは、 1 つの Google Cloud サービスに登録されています。テナントやサブテナント用にクラウドサービス（ Google Cloud インスタンス）を作成して管理したり、テナントの使用期間に基づいて Google Cloud でストレージをプロビジョニングしたりできます。NetApp Service Engine を使用して Google Cloud インスタンスを管理するには、テナントとサブテナントの Cloud Volumes Service アカウントを事前に設定しておく必要があります。GCP 上の Cloud Volumes Service の詳細については、を参照してください<block ref="192f77308acf6a52f09939ce57413739" category="inline-link-rx"></block>。</block>
+  <block id="4617d6cb5f047282f7ea1d3b1879ed18" category="section-title">GCP でのクラウドサービスの管理</block>
+  <block id="66a33122a12b0ecf446b3303baf610ea" category="paragraph">左のナビゲーションペインの * クラウドサービス * メニューから、 Google Cloud でクラウドサービスを管理できます。クラウドサービスページには、選択したテナントのすべてのサブテナントに対するすべてのクラウドサービスが表示されます。このページでクラウドサービスを表示、変更、および削除できます。次の手順に従って、新しいサービスを追加することもできます。</block>
+  <block id="d900b34f4ec7d4c5aedb24b1b84b6642" category="list-text">メニューから * クラウドサービス * を選択します。</block>
+  <block id="b9ff3c79bce6a74407aef38bc921b4d6" category="list-text">Google Cloud のクラウドサービスの作成ページで、サービスを作成するサブテナントを選択し、名前と GCP プロジェクト番号を追加します。</block>
+  <block id="304a1797d3d8fe020002005a39cf8fd1" category="list-text">[ 作成（ Create ） ] をクリックします。作成されると、クラウドサービスページのサービス状態が「成功」に変わります。</block>
+  <block id="09d86387c57736659bbab38839c5f2da" category="summary">Keystone がクラウドサービスを管理する</block>
+  <block id="27ee5c08c2a81e9de81aff03196f5e43" category="doc">クラウドサービスの管理</block>
+  <block id="ff73f07d33b95ca8cfc1150265940594" category="section-title">使用状況に対する請求はどこで確認できますか？</block>
+  <block id="91c4b877df1393baf62833e39a8a1140" category="paragraph">過去 3 か月間の月額プランの合計月額料金は、ダッシュボードの * 月額料金 * ウィジェットで確認できます。詳細な請求情報を表示するには、ウィジェットをクリックするか、 * Administration * &gt; * Billing * に移動します。</block>
+  <block id="6f3775f5739b5cdd88b89ba7d8a013e2" category="list-text">ダッシュボードビュー：使用状況、請求、アラート、およびサービスリクエストを監視するさまざまなツールが表示されます。</block>
+  <block id="a076faa5a9987e9b4759e761e7de52c4" category="paragraph">ダッシュボードには、 NetApp Keystone ストレージのサブスクリプションに関する情報が表示されます。これには、使用済み容量、使用状況に対する請求、最新のアラートやサービス要求などの情報が含まれます。これは、 NetApp Service Engine に初めてログインしたときのデフォルトビューです。ダッシュボードの詳細については、を参照してください <block ref="51b99950f96aebac50d3a68ee27b3fbd" category="inline-link-macro-rx"></block>。</block>
+  <block id="9fb2c96c2b07eeb85651af0dd0232553" category="sidebar">クラウドサービスを管理します</block>
+  <block id="60961ff996ca5668ec37fbe666117adc" category="sidebar">クラウドサービスの管理</block>
+  <block id="e38bf2476e8d2e225da1a053aacfd12c" category="sidebar">管理タスクを実行</block>
+  <block id="1d02064d5ee1a5a4a8455f06dacb6b1f" category="sidebar">アラートを表示および管理します</block>
 </blocks>

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: sewebiug_delete_a_subscribed_service.html 
-keywords: netapp, keystone, delete, subscribed, service, 
-summary: Keystone は、サブスクライブしたサービスを削除します 
+keywords: netapp, keystone, delete, cloud, service, 
+summary: Keystone がクラウドサービスを削除 
 ---
-= サブスクライブしたサービスを削除します
+= クラウドサービスを削除します
 :hardbreaks:
 :nofooter: 
 :icons: font
@@ -19,8 +19,8 @@ summary: Keystone は、サブスクライブしたサービスを削除しま�
 
 === 手順
 
-. メニューから [ サブスクライブ済みサービス ]>[ サブスクライブ済みサービス ] を選択します。
-. リストで登録済みサービスを見つけ、 [ 削除 ] アイコンをクリックします。
-. [ 削除の確認 ] ダイアログボックスで、削除する登録済みサービスの名前を入力します。
+. メニューから * クラウドサービス * > * クラウドサービス * を選択します。
+. リストからクラウドサービスを探し、削除アイコンをクリックします。
+. 削除の確認ダイアログボックスで、削除するクラウドサービスの名前を入力します。
 . [* 確認 *] をクリックします。
 

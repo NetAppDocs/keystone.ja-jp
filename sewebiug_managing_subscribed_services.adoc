@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: sewebiug_managing_subscribed_services.html 
-keywords: netapp, keystone, managing, subscribed, services, 
-summary: Keystone サブスクライブ済みサービスを管理する 
+keywords: netapp, keystone, managing, cloud, services, 
+summary: Keystone がクラウドサービスを管理する 
 ---
-= サブスクライブ済みサービスの管理
+= クラウドサービスの管理
 :hardbreaks:
 :nofooter: 
 :icons: font

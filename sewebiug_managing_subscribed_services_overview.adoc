@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: sewebiug_managing_subscribed_services_overview.html 
-keywords: netapp, keystone, managing, subscribed, services, overview, 
-summary: Keystone 管理サブスクライブされたサービスの概要 
+keywords: netapp, keystone, managing, cloud, services, overview, 
+summary: Keystone 管理クラウドサービスの概要 
 ---
 = 概要
 :hardbreaks:
@@ -22,17 +22,17 @@ NetApp Service Engine に登録すると、 NetApp Service Engine Web ポータ�
 既存の CVS サブスクリプションのみを NetApp Service Engine に登録できます。新しいサブスクリプションを作成するには、通常の方法で CVS サブスクリプションを作成し、サブスクリプションクレデンシャルを使用して NetApp Service Engine に登録します。
 
 +
-このセクションでは、サブスクライブされたサービスを管理する方法について説明します
+このセクションでは、クラウドサービスの管理方法について説明します
 
 
 
 
-NOTE: サブスクライブされたサービスを管理するには、顧客管理者アクセス権が
+NOTE: クラウドサービスを管理するには、顧客管理者アクセスが必要です。
 
 可能です
 
-* サブスクライブしたサービスのリストを表示します
-* サブスクライブ済みサービスを追加します
-* サブスクライブ済みサービスの詳細を変更します
-* サブスクライブしたサービスを削除します
+* クラウドサービスのリストを表示します
+* クラウドサービスを追加
+* クラウドサービスの詳細を変更
+* クラウドサービスを削除します
 
