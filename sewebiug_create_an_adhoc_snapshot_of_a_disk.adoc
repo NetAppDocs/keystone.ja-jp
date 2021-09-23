@@ -15,17 +15,10 @@ summary: Keystone は、ディスクのアドホックスナップショット�
 [role="lead"]
 ここでは、ディスクのアドホックスナップショットを作成する方法について説明します。
 
-
-
-=== 手順
-
+.手順
 . を表示します link:sewebiug_view_disks.html#view-disks["ディスクのリスト"]。
 . リストからディスクを探し、そのディスクの Snapshot アイコンをクリックします。（リスト内の項目の操作の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview#list-view["リストビューアクションをリスト表示します"]）。
 . スナップショットの作成（ Create Snapshot ）ダイアログボックスで、スナップショットの名前を入力し、 * 作成 * （ Create * ）をクリックします。
 
-
-
-
-=== 完了後
 
 Snapshot が使用可能になるまでに数分かかることがあります。

@@ -23,19 +23,12 @@ summary: ファイルサーバを変更します
 
 NOTE: 非同期ディザスタリカバリがすでに有効になっている場合は、無効にすることはできません。詳細については、を参照してください link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["ディザスタリカバリ"]。
 
-
-
-=== 手順
-
+.手順
 . を表示します link:sewebiug_view_servers.html#view-servers["[ ファイルサーバ ] リスト"]。
 . リスト内のサーバを探し、そのサーバの [Edit] アイコンをクリックします。（リスト内の項目の操作の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["リストビューアクションをリスト表示します"]）。
 . 必要に応じて変更します。を参照してください link:sewebiug_create_a_file_server.html["ファイルサーバを作成します"] を参照してください。
 . [ 完了（ Done ） ] をクリックします。これにより、サーバを変更するジョブが作成されます。
 
-
-
-
-=== 完了後
 
 Modify Server は非同期ジョブとして実行されます。可能です
 

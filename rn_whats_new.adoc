@@ -25,7 +25,13 @@ summary: NetApp Service Engine の新機能
 
 === ダッシュボードビューが強化されました
 
-NetApp Service Engine ダッシュボードが再設計され、サブスクライブしたサービスの使用済み容量を確認するための「 * Capacity Utilization * 」という新しいコンポーネントが追加されました。* 月額料金 ( 請求 )* すべての月額プランの合計月額料金を表示します。* 警告 * ：環境内の最新のアラートの概要を表示します。* サービスリクエスト * ：環境内で生成された最新のサービスリクエストのリストを表示します。詳細については、を参照してください link:sewebiug_dashboard.html["Flex サブスクリプションダッシュボードを表示します"]
+NetApp Service Engine ダッシュボードが再設計され、次の新しいコンポーネントが追加されました。
+
+* * 容量利用率 * 。サブスクライブしたサービスの使用容量を表示します。
+* * 月額料金 ( 請求 )* すべての月額プランの合計月額料金を表示します。
+* * アラート * ：環境内の最新のアラートの概要を表示します。
+* * サービスリクエスト * ：環境内で生成された最新のサービスリクエストのリストを表示します。詳細については、を参照してください link:sewebiug_dashboard.html["Flex サブスクリプションダッシュボードを表示します"]。
+
 
 
 
@@ -33,19 +39,23 @@ NetApp Service Engine ダッシュボードが再設計され、サブスクラ�
 
 請求履歴データを簡単に確認して計算できるように、新しい * 請求先 * 画面が追加されました。画面には、すべての加入サービスに関連する月額料金の全体像が表示されます。
 
-ダッシュボードの * 月額料金 * ウィジェットまたは * Administration > Billing * からこの画面に移動して、すべての加入サービスの月額サブスクリプションレベルの内訳を表示します。請求データは、コミット済み容量とバースト時の使用容量に基づいており、過去数カ月間の使用状況に応じて提供されます。詳細については、を参照してください link:sewebiug_billing.html["請求を表示します"]
+ダッシュボードの * 月額料金 * ウィジェットまたは * Administration > Billing * からこの画面に移動して、すべての加入サービスの月額サブスクリプションレベルの内訳を表示します。請求データは、コミット済み容量とバースト時の使用容量に基づいており、過去数カ月間の使用状況に応じて提供されます。詳細については、を参照してください link:sewebiug_billing.html["請求を表示します"]。
 
 
 
 === ［ 新しいアラート ］ 画面
 
-このリリースでは、システムで生成されたアラートとユーザーが生成したアラートをすべて一覧表示する新しい * Alerts * 画面が導入されています。この画面では、環境に関する重要なイベントに対するカスタムのアラートメッセージを作成して、他のユーザに通知することもできます。アラートは必要に応じて表示および却下できます。詳細については、を参照してください link:sewebiug_alerts.html["アラートを作成および管理します"]
+このリリースでは、システムで生成されたアラートとユーザーが生成したアラートをすべて一覧表示する新しい * Alerts * 画面が導入されています。この画面では、環境に関する重要なイベントに対するカスタムのアラートメッセージを作成して、他のユーザに通知することもできます。アラートは必要に応じて表示および却下できます。詳細については、を参照してください link:sewebiug_alerts.html["アラートを作成および管理します"]。
 
 
 
 === 強化されたユーザーインターフェイス
 
-NetApp Service Engine のユーザインターフェイスでは、次の機能が強化されています。 * 左側のナビゲーションペインにある * ダッシュボード * メニューから、わかりやすいナビゲーションポイントからダッシュボードにアクセスできます。* 左側のナビゲーションペインの * 登録サービス * メニューの名前が * クラウドサービス * に変更されました。
+NetApp Service Engine のユーザインターフェイスでは、次の機能拡張が行われています。
+
+* 左側のナビゲーションペインの * ダッシュボード * メニューには、ダッシュボードにアクセスするための直感的なナビゲーションポイントが表示されます。
+* 左側のナビゲーションペインの * 登録サービス * メニューの名前が * クラウドサービス * に変更されました。
+
 
 ====
 
@@ -70,7 +80,16 @@ NetApp Service Engine で、サービスプロバイダによるマルチテナ�
 * API のサポート : このリリースでは '/tenants /{tenant_id }/zones/{ zone_id}/subnets'/{ zone_id}/subnets/{id}/tags' API が提供され ' サブテナント用のサブネットを作成および表示することができます
 
 
-この機能の詳細については、次のリンクを参照してください。 * link:nkfsosm_overview.html["運用モデル、役割、担当業務"]* * * * * * 
+この機能の詳細については、次のリンクを参照してください。
+
+* link:nkfsosm_overview.html["運用モデル、役割、担当業務"]
+* link:nkfsosm_tenancy_overview.html["Flex サブスクリプションのテナンシーとマルチテナンシー"]
+* link:sewebiug_dashboard.html["Flex サブスクリプションダッシュボードを表示します"]
+* link:sewebiug_working_with_reports.html["レポートを表示します"]
+* link:sewebiug_managing_subscriptions.html["サブスクリプションの管理"]
+* link:sewebiug_managing_tenants_and_subtenants.html["テナントとサブテナントを管理する"]
+* link:sewebiug_define_network_configurations.html["テナントとサブテナントのネットワークを定義する"]
+
 
 
 
@@ -84,7 +103,11 @@ NetApp Keystone Flex サブスクリプションサービスに、 NetApp Fabric
 * ブロックストア API
 
 
-詳細については、次のリンクを参照してください。 * link:nkfsosm_tiering.html["階層化"]* 
+詳細については、次のリンクを参照してください。
+
+* link:nkfsosm_tiering.html["階層化"]
+* link:nkfsosm_performance.html["パフォーマンスサービスレベル"]
+
 
 ====
 
@@ -126,7 +149,7 @@ SnapCenter と NetApp Service Engine の統合の一環として、 SnapCenter �
 
 === CIFS 共有でのユーザアクセスを制限するためのプロビジョニング
 
-CIFS （ SMB ）またはマルチプロトコルの共有でユーザアクセスを制限する ACL を指定できるようになりました。ACL に追加する Active Directory （ AD ）の設定に基づいて Windows ユーザまたはグループを指定できます。link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps["詳細はこちら。"]
+CIFS （ SMB ）またはマルチプロトコルの共有でユーザアクセスを制限する ACL を指定できるようになりました。ACL に追加する Active Directory （ AD ）の設定に基づいて Windows ユーザまたはグループを指定できます。link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps["詳細はこちら。"]。
 
 ====
 
@@ -178,19 +201,19 @@ NetApp Service Engine では、ホストグループの使用がサポートさ�
 
 ==== 提案された変更によってバースト容量が使用される場合に通知します
 
-原因 a サブスクリプションをバースト状態にするために、提示されたプロビジョニングの変更を表示する通知。ユーザーは、サブスクリプションをバーストにするか、アクションを続行しないかを選択して、続行することを選択できます。link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["詳細はこちら。"]
+原因 a サブスクリプションをバースト状態にするために、提示されたプロビジョニングの変更を表示する通知。ユーザーは、サブスクリプションをバーストにするか、アクションを続行しないかを選択して、続行することを選択できます。link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["詳細はこちら。"]。
 
 
 
 ==== サブスクリプションがバースト状態になったときの通知
 
-通知バナーは、サブスクリプションがバースト状態のときに表示されます。link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["詳細はこちら。"]
+通知バナーは、サブスクリプションがバースト状態のときに表示されます。link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["詳細はこちら。"]。
 
 
 
 ==== Capacity レポートには、バースト使用状況が表示されます
 
-容量レポート：サブスクリプションがバースト状態になってからの日数と使用済みバースト容量が表示されます。link:sewebiug_working_with_reports.html#capacity-usage["詳細はこちら。"]
+容量レポート：サブスクリプションがバースト状態になってからの日数と使用済みバースト容量が表示されます。link:sewebiug_working_with_reports.html#capacity-usage["詳細はこちら。"]。
 
 
 

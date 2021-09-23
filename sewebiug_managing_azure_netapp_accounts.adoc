@@ -40,10 +40,6 @@ Azure NetApp アカウントリストには、ログインしているユーザ�
 
 このセクションでは、 Azure NetApp アカウントを追加する方法について説明します。
 
-
-
-=== 作業を開始する前に
-
 次のものが必要です。
 
 * Azure NetApp アカウントが属するサブテナント
@@ -53,10 +49,7 @@ Azure NetApp アカウントリストには、ログインしているユーザ�
 * アカウントの名前
 
 
-
-
-==== 手順
-
+.手順
 . メニューから * Administration > Azure NetApp Accounts * を選択します。
 . [ 作成（ Create ） ] をクリックします。
 . Create Azure NetApp Account ダイアログボックスで、サブテナント、 Azure の場所（リージョン）、 Azure リソースグループ、および Azure NetApp アカウントの名前を指定します。
@@ -70,10 +63,7 @@ Azure NetApp アカウントリストには、ログインしているユーザ�
 
 Azure NetApp アカウントに関連付けられているタグを変更するには、このメソッドを使用します。
 
-
-
-==== 手順
-
+.手順
 . メニューから * Administration > Azure NetApp Accounts * を選択します。
 . リストで Azure NetApp アカウントを探し、編集アイコンをクリックします。
 . Azure NetApp アカウントの管理ダイアログボックスで、必要に応じてタグを追加、削除、または編集します。
@@ -86,10 +76,7 @@ Azure NetApp アカウントに関連付けられているタグを変更する�
 
 Azure NetApp アカウントを削除するには、このメソッドを使用します。
 
-
-
-==== 手順
-
+.手順
 . メニューから * Administration > Azure NetApp Accounts * を選択します。
 . リストから Azure NetApp アカウントを探し、削除アイコンをクリックします。
 . 削除の確認ダイアログボックスで、削除する Azure NetApp アカウントの名前を入力します。

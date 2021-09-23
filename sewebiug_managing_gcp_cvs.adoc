@@ -24,10 +24,6 @@ NOTE: テナントとサブテナントの Cloud Volumes Service アカウント
 
 左のナビゲーションペインの * クラウドサービス * メニューから、 Google Cloud でクラウドサービスを管理できます。クラウドサービスページには、選択したテナントのすべてのサブテナントに対するすべてのクラウドサービスが表示されます。このページでクラウドサービスを表示、変更、および削除できます。次の手順に従って、新しいサービスを追加することもできます。
 
-
-
-=== 作業を開始する前に
-
 次の点を確認する必要があります。
 
 * サブテナントが Google Cloud サービスに登録されている。
@@ -35,10 +31,7 @@ NOTE: テナントとサブテナントの Cloud Volumes Service アカウント
 * Cloud Volumes Service for GCP がすでに Cloud Manager でサポートチームによって設定されていることを確認します。詳細については、を参照してください https://docs.netapp.com/us-en/occm/task_setup_cvs_gcp.html["Cloud Volumes Service for Google Cloud をセットアップします"]。
 
 
-
-
-==== 手順
-
+.手順
 . メニューから * クラウドサービス * を選択します。
 . [ * 作成 ] をクリックし、 [* Google Cloud * ] をクリックします。
 . Google Cloud のクラウドサービスの作成ページで、サービスを作成するサブテナントを選択し、名前と GCP プロジェクト番号を追加します。
@@ -55,10 +48,7 @@ GCP で Cloud Volume を管理する前に、テナントの Cloud Volumes Servi
 
 GCP のサブテナントのボリュームは、左側のナビゲーションペインで、 * file services > GCP Volumes * から管理できます。[GCP Volumes] ページには、選択したサブテナントおよび対応するリージョン用に GCP で作成された既存の Cloud Volume が一覧表示されます。このページで既存のボリュームを表示、変更、および削除できます。新しいクラウドボリュームをプロビジョニングする手順は次のとおりです。
 
-
-
-==== 手順
-
+.手順
 . メニューから * file services > GCP Volumes * を選択します。
 . [ 作成（ Create ） ] をクリックします。[Create GCP Volume] ページが表示されます。
 . ボリュームを作成するサブテナントを選択します。

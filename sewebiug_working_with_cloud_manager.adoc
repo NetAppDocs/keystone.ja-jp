@@ -23,10 +23,6 @@ NetApp Service Engine は NetApp Cloud Manager に接続できます。このセ
 
 === Cloud Manager に接続します
 
-
-
-==== 作業を開始する前に
-
 次のものが必要です。
 
 * Cloud Manager API エンドポイントの URL
@@ -34,10 +30,7 @@ NetApp Service Engine は NetApp Cloud Manager に接続できます。このセ
 * Cloud Manager SaaS サービスの更新トークン
 
 
-
-
-==== 手順
-
+.手順
 . メニューから Administration > OCCM Connection を選択します。
 . OCCM API エンドポイントの URL を指定します
 . クライアント ID を入力します。
