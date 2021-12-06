@@ -21,10 +21,18 @@ sidebar:
         url: "/nkfsosm_performance.html"
       - title: サービスレベルの指標と定義
         url: "/nkfsosm_service_level_metrics_and_definitions.html"
+      - title: 課金
+        url: "/nkfsosm_kfs_billing.html"
       - title: データ保護
         url: "/nkfsosm_data_protection.html"
       - title: 階層化
         url: "/nkfsosm_tiering.html"
+      - title: 返却不要ディスクではありません
+        url: "/nkfsosm_nrd.html"
+      - title: 米国市民サポート
+        url: "/nkfsosm_uscs.html"
+      - title: Flex サブスクリプションおよび Equinix
+        url: "/nkfsosm_equinix.html"
     - title: 運用モデルと担当業務
       url: "/nkfsosm_overview.html"
     - title: テナンシーとマルチテナンシー
@@ -35,6 +43,8 @@ sidebar:
       url: "/nkfsosm_site_requirements.html"
     - title: 処理
       url: "/nkfsosm_netapp_global_services_and_support_center_@gssc@.html"
+    - title: Flex サブスクリプションと Active IQ
+      url: "/nkfsosm-keystone-and-aiq.html"
   - title: リリースノート
     entries:
     - title: 新機能

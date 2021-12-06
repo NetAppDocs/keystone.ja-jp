@@ -1,0 +1,18 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_uscs.html 
+keywords: netapp, keystone, US citizen support, USCS 
+summary: Keystone Flex サブスクリプションのパフォーマンス 
+---
+= 米国市民サポート（ USCS ）
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）は、ネットアップのグローバルサービスおよびサポートセンター（ GSSC ）を通じて、 US Citizen Support （ USCS ）サービスを継続的に監視、サポートします。
+
+GSSC は、地理的に分散したチームで、さまざまなネットアップのお客様にサービスを提供しています。Flex Subscription のための USCS サービスは、 Flex Subscription サービスの監視とサポートが米国内の米国市民によって確実に提供されるようにします。システムのメンテナンスに必要なオンサイトサポートとトラブルシューティングも含まれます。

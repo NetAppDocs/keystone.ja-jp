@@ -13,8 +13,37 @@ summary: NetApp Service Engine の新機能
 
 
 [role="lead"]
-このリリースの NetApp Keystone Flex Subscription （ Flex サブスクリプション）サービスでは、次の機能と機能拡張が導入されています。
+NetApp Service Engine 2.7 では、 NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）の拡張サービスをサポートするために次の機能が導入されました。
 
+
+
+== NetApp Service Engine 2.7 で導入された機能
+
+このリリースの新機能は次のとおりです。
+
+
+
+=== Flex サブスクリプションを使用して Cloud Volumes ONTAP の使用状況と請求を表示する機能
+
+NetApp Keystone Flex サブスクリプションのお客様で、 Cloud Volumes ONTAP サブスクリプションもお持ちの場合は、 Cloud Volume の使用状況と請求を Flex サブスクリプションで表示できます。Cloud Manager で Flex Subscriptions の詳細を検出し、 Cloud Manager インターフェイスに表示できるようになりました。[ すべてのサービス ] 、 [ デジタルウォレット ] 、 [ Keystone Flex サブスクリプション *] タブをクリックすると、次のアクティビティを実行できます。
+
+* ようこそ画面を表示すると、 Flex Subscription 管理者に Cloud Manager のユーザ ID と Flex Subscription のユーザ ID を関連付けるよう依頼できます。これにより、 * Keystone Flex Subscription * タブにアクセスできます。
+* オンプレミスシステムおよび Cloud Volumes ONTAP で、サブスクライブされているサービスのコミット済み容量および使用済み容量の消費データを表示します。
+* Cloud Manager アカウントに関連付けられている Flex サブスクリプションの詳細を表示します。コミット済み容量、消費済み容量、バースト時の容量などの詳細が表示されます。
+* Cloud Volumes ONTAP アカウントを Flex サブスクリプション ID にリンクして、課金および容量使用状況のレポート用にアカウントを関連付けます。
+* サブスクライブ済み Flex サブスクリプションサービスのコミット済み容量の増加または減少を要求します。
+* リンクされた Flex サブスクリプション ID を表示して、 Cloud Volumes ONTAP 消費の課金方法として使用します（リンクされた ID のみ）。
+
+
+詳細については、 Cloud Manager のドキュメントにある次のリンクを参照してください。link:https://docs.netapp.com/us-en/occm/concept_licensing.html#keystone-flex-subscription["Keystone Flex サブスクリプション"]
+
+
+
+NOTE: NetApp Keystone Flex サブスクリプション 2.7 のリリースバージョンは、リリース 2.2 以降のメジャーリリースです。2.2 から 2.7 までの内部リリースには、軽微な修正のみが含まれています。
+
+====
+
+====
 
 
 == NetApp Service Engine 2.2 で導入された機能
@@ -114,7 +143,7 @@ NetApp Keystone Flex サブスクリプションサービスに、 NetApp Fabric
 ====
 
 
-== NetApp Keystone Flex サブスクリプション 2.0.1 で導入された機能
+== NetApp Service Engine 2.0.1 で導入された機能
 
 
 
@@ -156,7 +185,7 @@ CIFS （ SMB ）またはマルチプロトコルの共有でユーザアクセ�
 ====
 
 
-== NetApp Keystone Flex サブスクリプション 2.0 で導入された機能
+== NetApp Service Engine 2.0 で導入された機能
 
 
 
