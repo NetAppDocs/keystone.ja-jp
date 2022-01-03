@@ -1,0 +1,1952 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head class="at-element-marker">
+  <title>課金アカウント、サブスクリプション、サービス、およびパフォーマンス</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="課金アカウント、サブスクリプション、サービス、およびパフォーマンス" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/ja-jp/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" />
+	<meta property="og:description" content="Keystone 請求アカウント、サブスクリプション、サービス、パフォーマンス" />
+  <meta property="og:image" content="https://docs.netapp.com/ja-jp/keystone/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/>
+  
+  <meta name="description" content="Keystone 請求アカウント、サブスクリプション、サービス、パフォーマンス">
+  <meta name="keywords" content=" netapp, keystone, billing, accounts, subscriptions, services, performance,">
+  
+  
+
+  <!-- Icons -->
+  <link rel="icon" href="/ja-jp/keystone/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed -->
+  
+
+  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/ja-jp/keystone/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/ja-jp/keystone/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/ja-jp/keystone/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/ja-jp/keystone/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/ja-jp/keystone/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/ja-jp/keystone/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/ja-jp/keystone/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/ja-jp/keystone/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/ja-jp/keystone/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/ja-jp/keystone/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/ja-jp/keystone/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/ja-jp/keystone/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/ja-jp/keystone/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/ja-jp/keystone/css/tabbed-blocks.css" type="text/css">
+  <link rel="stylesheet" href='/ja-jp/keystone/css/product-family.css' type="text/css">
+  
+
+  
+  <link rel='stylesheet' href='/ja-jp/keystone/css/na-feature.css' type='text/css'>
+  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+  
+    <script src='/ja-jp/keystone/js/na-search.js'></script>
+  
+
+  
+  <script src='/ja-jp/keystone/js/na-pagenav.js'></script>
+  
+
+  <link rel='stylesheet' href='/ja-jp/keystone/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/ja-jp/keystone/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/ja-jp/keystone/js/na-utility.js'></script>
+  <script src='/ja-jp/keystone/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/ja-jp/keystone/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/ja-jp/keystone/js/toc.js'></script>
+  <script src='/ja-jp/keystone/js/customscripts.js'></script>
+
+  <script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+  <script src='/ja-jp/keystone/js/version-dropdown.js'></script>
+  <script src='/ja-jp/keystone/js/product-family.js'></script>
+  <script src='/ja-jp/keystone/js/FileSaver.min.js'></script>
+  <script src='/ja-jp/keystone/js/jszip-utils.min.js'></script>
+  <script src='/ja-jp/keystone/js/jszip.min.js'></script>
+  <script src='/ja-jp/keystone/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">製品とソリューション</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">サポートとトレーニング</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">コミュニティ</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">ブログ</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">ユーザ事例</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/ja-jp/keystone/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/ja-jp/keystone/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/ja-jp/keystone/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/ja-jp/keystone/search.html"
+          data-type="widget" 
+          data-placeholder="ドキュメントを検索" 
+          data-no-results-found="{query}に該当する結果はありません" 
+          data-did-you-mean="{suggestion} を検索" 
+          data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?" 
+          data-results-found="{hitCount} 件見つかりました"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/keystone/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">日本語</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/keystone/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/de-de/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" >
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>利用可能なPDF<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        <a target="_blank" href="/ja-jp/keystone/pdfs/fullsite-sidebar/NetApp_Keystone_Flex_サブスクリプションのドキュメント.pdf" >
+          <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>このドキュメントサイトのPDF</a>
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/keystone/pdfs/sidebar/NetApp_Keystone_フレックスサブスクリプション.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>
+            NetApp Keystone フレックスサブスクリプション
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/keystone/pdfs/sidebar/サービス利用規約と概要.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>
+            サービス利用規約と概要
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/keystone/pdfs/sidebar/リリースノート.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>
+            リリースノート
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/keystone/pdfs/sidebar/Flex_サブスクリプション_FAQ.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>
+            Flex サブスクリプション FAQ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/keystone/pdfs/sidebar/NetApp_Service_Engine_Web_インターフェイス.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>
+            NetApp Service Engine Web インターフェイス
+          </a>
+          
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/ja-jp/keystone/pdfs/pages/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.pdf" >
+    <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/keystone/pdfs/sidebar/はじめに.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>
+            はじめに
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/keystone/pdfs/sidebar/ファイルサービスを操作します.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>
+            ファイルサービスを操作します
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/keystone/pdfs/sidebar/ブロックストレージの操作.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>
+            ブロックストレージの操作
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/keystone/pdfs/sidebar/オブジェクトストレージの操作.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>
+            オブジェクトストレージの操作
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/keystone/pdfs/sidebar/クラウドサービスを管理します.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>
+            クラウドサービスを管理します
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/keystone/pdfs/sidebar/クラウドサービスの管理.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>
+            クラウドサービスの管理
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/keystone/pdfs/sidebar/Azure_NetApp_Files_の管理.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>
+            Azure NetApp Files の管理
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/keystone/pdfs/sidebar/サービスリクエストを管理します.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>
+            サービスリクエストを管理します
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/keystone/pdfs/sidebar/管理タスクを実行.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>
+            管理タスクを実行
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/keystone/pdfs/sidebar/ユーザを管理します.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>
+            ユーザを管理します
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/keystone/pdfs/sidebar/NetApp_Service_Engine_API_リファレンス_を参照してください.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>
+            NetApp Service Engine API リファレンス』を参照してください
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/keystone/pdfs/sidebar/コンシューマ_API.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>
+            コンシューマ API
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/keystone/pdfs/sidebar/管理者_API.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf.png" width="16" height="16"/>
+            管理者 API
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/ja-jp/keystone/images/pdf-zip.png" width="16" height="16"/>
+      <pre>個別のPDFドキュメントのコレクション<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/ja-jp/keystone/index.html">
+        <div class="na-navbar-padding"> NetApp Keystone フレックスサブスクリプション</div>
+      </a>
+      <ul><li class="subfolders "><a href="/ja-jp/keystone/nkfsosm_service_terms_and_description_overview.html">
+        <div class="na-navbar-padding"> サービス利用規約と概要</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/nkfsosm_keystone_service_capacity_definitions.html">
+        サービス容量の定義
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/nkfsosm_performance.html">
+        パフォーマンスサービスレベル
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/nkfsosm_service_level_metrics_and_definitions.html">
+        サービスレベルの指標と定義
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/nkfsosm_kfs_billing.html">
+        課金
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/nkfsosm_data_protection.html">
+        データ保護
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/nkfsosm_tiering.html">
+        階層化
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/nkfsosm_nrd.html">
+        返却不要ディスクではありません
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/nkfsosm_uscs.html">
+        米国市民サポート
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/nkfsosm_equinix.html">
+        Flex サブスクリプションおよび Equinix
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/nkfsosm_overview.html">
+        運用モデルと担当業務
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/nkfsosm_tenancy_overview.html">
+        テナンシーとマルチテナンシー
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/nkfsosm_keystone_service_delivery_architecture_overview.html">
+        Flex サブスクリプションインフラストラクチャ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/nkfsosm_site_requirements.html">
+        サイト要件
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/nkfsosm_netapp_global_services_and_support_center_@gssc@.html">
+        処理
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/nkfsosm-keystone-and-aiq.html">
+        Flex サブスクリプションと Active IQ
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> リリースノート</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/rn_whats_new.html">
+        新機能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/rn_known_issues.html">
+        既知の問題
+      </a></li></ul></li><li class="subfolders "><a href="/ja-jp/keystone/nkfsfaq_overview.html">
+        <div class="na-navbar-padding"> Flex サブスクリプション FAQ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/nkfsfaq_keystone_subscription.html">
+        Flex サブスクリプション
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/nkfsfaq_service_offer_details.html">
+        サービス提供の詳細
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/nkfsfaq_operating_models.html">
+        動作モデル
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/nkfsfaq_netapp_service_engine_self-service_access_portal.html">
+        NetApp Service Engine / セルフサービスアクセスポータル
+      </a></li></ul></li><li class="subfolders "><a href="/ja-jp/keystone/sewebiug_overview.html">
+        <div class="na-navbar-padding"> NetApp Service Engine Web インターフェイス</div>
+      </a>
+      <ul><li class="  active "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html">
+        課金アカウント、サブスクリプション、サービス、およびパフォーマンス
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> はじめに</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_getting_started_overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_log_in_to_the_netapp_service_engine_web_interface.html">
+        ログインします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_partner_service_provider.html">
+        サービスプロバイダと顧客の役割と運用
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_select_tenant.html">
+        テナントを選択します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_netapp_service_engine_web_interface_overview.html">
+        NetApp Service Engine Web インターフェイスを表示します
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_dashboard.html">
+        Flex サブスクリプションダッシュボードを表示します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_billing.html">
+        請求を表示します
+      </a></li><li class="subfolders "><a href="/ja-jp/keystone/sewebiug_working_with_file_services_overview.html">
+        <div class="na-navbar-padding"> ファイルサービスを操作します</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_view_servers.html">
+        サーバを表示します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_create_a_file_server.html">
+        ファイルサーバを作成します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_modify_file_server.html">
+        ファイルサーバを変更します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_delete_file_server.html">
+        ファイルサーバを削除します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_view_shares.html">
+        共有を表示します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_create_a_new_file_share.html">
+        ファイル共有を作成します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_create_file_share_from_snapshot.html">
+        Snapshot からファイル共有を作成します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_modify_a_file_share.html">
+        ファイル共有を変更する
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_delete_a_file_share.html">
+        ファイル共有を削除します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_create_adhoc_snapshot_of_a_file_share.html">
+        ファイル共有のアドホックスナップショットを作成します
+      </a></li></ul></li><li class="subfolders "><a href="/ja-jp/keystone/sewebiug_working_with_block_storage_overview.html">
+        <div class="na-navbar-padding"> ブロックストレージの操作</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_view_host_groups.html">
+        ホストグループを操作する
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_view_disks.html">
+        ディスクを表示します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_create_a_new_disk.html">
+        ディスクを作成します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_create_a_disk_from_a_snapshot.html">
+        Snapshot からディスクを作成します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_modify_a_disk.html">
+        ディスクを変更します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_delete_a_disk.html">
+        ディスクを削除します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_create_an_adhoc_snapshot_of_a_disk.html">
+        ディスクのアドホックスナップショットを作成します
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> オブジェクトストレージの操作</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_working_with_object_storage_overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_view_buckets.html">
+        バケットを表示します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_initialize_object_storage.html">
+        オブジェクトストレージを初期化
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_create_buckets.html">
+        バケットを作成する
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_view_the_object_storage_group_and_users.html">
+        オブジェクトストレージグループとユーザを表示します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_create_an_object_storage_group.html">
+        オブジェクトストレージグループを作成する
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_modify_an_object_storage_group.html">
+        オブジェクトストレージグループを変更する
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_delete_an_object_storage_group.html">
+        オブジェクトストレージグループを削除する
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_create_object_storage_user.html">
+        Create Object Storage User の略
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_modify_an_object_storage_user.html">
+        オブジェクトストレージユーザを変更する
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_create_an_s3_key_for_a_user.html">
+        ユーザの S3 キーを作成します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_delete_an_s3_key_for_a_user.html">
+        ユーザの S3 キーを削除します
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> クラウドサービスを管理します</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> クラウドサービスの管理</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_managing_subscribed_services_overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_view_a_list_of_subscribed_services.html">
+        サブスクライブしたサービスのリストを表示します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_add_a_subscribed_service.html">
+        サブスクライブ済みサービスを追加します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_modify_the_subscribed_service_details.html">
+        サブスクライブしたサービスの詳細を変更します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_delete_a_subscribed_service.html">
+        サブスクライブしたサービスを削除します
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Azure NetApp Files の管理</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_managing_azure_netapp_accounts.html">
+        Azure NetApp アカウントの管理
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_managing_azure_capacity_pools.html">
+        Azure 容量プールの管理
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_managing_azure_volumes.html">
+        Azure ボリュームの管理
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_managing_gcp_cvs.html">
+        『 Managing Cloud Volumes Service for Google Cloud Platform 』を参照してください
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_working_with_reports.html">
+        レポートを表示します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_back_up_file_shares_and_disks.html">
+        バックアップの操作
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_managing_subscriptions.html">
+        サブスクリプションを管理します
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> サービスリクエストを管理します</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_managing_service_requests_overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_raise_a_service_request.html">
+        サービスリクエストを提出します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_track_a_service_request.html">
+        サービスリクエストを追跡します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_service_request_process.html">
+        サービスリクエストプロセス
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理タスクを実行</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> ユーザを管理します</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_view_a_list_of_users.html">
+        ユーザのリストを表示します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_add_a_user.html">
+        ユーザを追加します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_modify_user_details.html">
+        ユーザの詳細を変更します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_delete_a_user.html">
+        ユーザを削除します
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_managing_tenants_and_subtenants.html">
+        テナントとサブテナントを管理します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_alerts.html">
+        アラートを表示および管理します
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/sewebiug_define_network_configurations.html">
+        ネットワークを管理します
+      </a></li></ul></li><li class="subfolders "><a href="/ja-jp/keystone/seapiref_overview_of_netapp_service_engine_apis.html">
+        <div class="na-navbar-padding"> NetApp Service Engine API リファレンス』を参照してください</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_authorization_and_authentication.html">
+        許可と認証
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_netapp_service_engine_rest_apis.html">
+        NetApp Service Engine REST API
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> コンシューマ API</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_consumer_apis_overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_cloud_orchestration_apis.html">
+        クラウドオーケストレーション API
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_block_storage_apis.html">
+        ブロックストレージ API
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_file_services_apis.html">
+        ファイルサービス API
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_object_storage_apis.html">
+        オブジェクトストレージ API
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_backups_apis.html">
+        バックアップ API
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_reporting_apis.html">
+        レポート用 API
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_subnets_apis.html">
+        API を使用してサブネットを作成する
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_@consumer@_administration_apis.html">
+        （コンシューマ）管理 API
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理者 API</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_administrator_apis_overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_tenants.html">
+        テナント
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_subtenants.html">
+        サブテナント
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_users.html">
+        ユーザ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_zones.html">
+        ゾーン
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_regions.html">
+        リージョン
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_ontap_clusters.html">
+        ONTAP クラスタ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_storagegrid_instances.html">
+        StorageGRID インスタンス
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_service_levels.html">
+        サービスレベル
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_service_requests.html">
+        サービスリクエスト
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/keystone/seapiref_jobs.html">
+        ジョブ
+      </a></li></ul></li></ul></li></ul>
+</div>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container -->
+    <article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://www.netapp.com">ホーム</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">ドキュメント</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/ja-jp/keystone/">Keystone</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          課金アカウント、サブスクリプション、サービス、およびパフォーマンス
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/ja-jp/keystone/common/svg/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> 日本語は機械翻訳による参考訳です。内容に矛盾や不一致があった場合には、英語の内容が優先されます。 </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">課金アカウント、サブスクリプション、サービス、およびパフォーマンス</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2021-08-03 14:06:07 +0000">08/03/2021</time>
+    
+  
+
+<span>寄稿者
+  <a target="_blank" href="https://github.com/ciarm">
+    <img  class="avatar avatar-small"
+          alt="ciarm"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/68733805?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/netapp-manini">
+    <img  class="avatar avatar-small"
+          alt="netapp-manini"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/59729581?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/netapp-reenu">
+    <img  class="avatar avatar-small"
+          alt="netapp-reenu"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/64952629?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/dmp-netapp">
+    <img  class="avatar avatar-small"
+          alt="dmp-netapp"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/50704017?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
+
+
+</p>
+
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>サブスクリプションストレージサービスには課金アカウントが使用されます。各課金アカウントはテナントにリンクされます。請求アカウントには、 1 つ以上の月額プランを課金できます。</p>
+</div>
+<div class="paragraph">
+<p>サブスクリプションとは、 1 つのパッケージとして登録および課金されるストレージサービスのグループのことです。サブスクリプション：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ストレージサービスが 1 つ以上あります</p>
+</li>
+<li>
+<p>サブスクリプションの終了日が指定された期間です</p>
+</li>
+<li>
+<p>サブスクリプションに関連付けられているアドオンを使用できます</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="注記">
+</td>
+<td class="content">
+複数のデータセンターにストレージが必要な場合は、データセンターごとに個別の契約が必要です。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>ストレージサービスは、関連付けられたパフォーマンスレベルで、コミット済みストレージ容量にサブスクライブされます。NetApp Service Engine は、極端な階層化、プレミアム、プレミアム階層化、標準的なパフォーマンスレベルでファイルストレージとブロックストレージを提供し、オブジェクトのパフォーマンスサービスレベルでオブジェクトストレージを提供します。</p>
+</div>
+<div class="paragraph">
+<p>階層化の卓越したパフォーマンスレベルとプレミアムなパフォーマンスレベルにより、コールドデータや非アクティブデータを監視して低コストのオブジェクトストレージ階層に階層化することで、ストレージの設置面積と関連コストを削減できます。階層化ポリシーは auto に設定されており、 31 日間非アクティブだったデータはデフォルトで階層化されています。この期間は 3 日から 61 日までの任意の日数に変更できます。</p>
+</div>
+<div class="paragraph">
+<p>ファイルストレージ項目とブロックストレージ項目は、作成時にパフォーマンスレベルに関連付けられます。要件の変化に応じて、パフォーマンスサービスレベル間でワークロードを移動できます。卓越した階層化、プレミアム、プレミアム階層化、標準のパフォーマンスレベルは、さまざまなレベルの I/O パフォーマンス（ IOPS ）とスループット（ MBps ）を提供するため、ストレージを要件に合わせて調整できます。</p>
+</div>
+<div class="paragraph">
+<p>バースト使用は、特定の時点までのサービスで許可されます。バースト使用は、（サブスクリプションで定義されているとおりに）別の料金で監視および課金されます。容量と使用状況の詳細については、を参照してください <a href="sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#committed,-consumed,-and-burst-capacity,-and-excess-usage">"コミット済み、消費済み、バースト時の容量、過剰な使用状況"</a>。バックアップとディザスタリカバリをサポートする DP サービスも提供されています。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="コミット済み消費済みバースト時の容量過剰な使用状況">コミット済み、消費済み、バースト時の容量、過剰な使用状況</h3>
+<div class="paragraph">
+<p>使用済み容量は、割り当て済みの容量です（ただし必ずしも使用されているとは限りません）。コミット済み容量とは、サブスクリプションでコミットされる容量のことです。加入者には、使用量に関係なく、コミット済み容量に対して一定のレートで課金されます。</p>
+</div>
+<div class="paragraph">
+<p>バースト容量は、割り当てられたコミット済み容量を上回る容量です。</p>
+</div>
+<div class="paragraph">
+<p>バースト時の容量 = 使用済み容量–コミット済み容量</p>
+</div>
+<div class="paragraph">
+<p>NetApp Service Engine は、使用済み容量を監視し、使用状況をサブスクリプションに照らしてチェックし、サブスクリプションで指定されたバーストレートでコミット済み容量を超える使用済み容量を課金します。使用量は 5 分単位で取得され、 1 日ごとの要約が課金エンジンに送信されてバースト課金計算が行われます。（請求時間は、 NetApp Service Engine インストールの基盤となるインフラの現地時間に基づきます。)</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="注記">
+</td>
+<td class="content">
+スナップショット ' バックアップ ' 災害復旧レプリカなどの機能は ' プライマリ・ストレージに加えて ' 使用率の計算にも使用されます
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="バースト使用の通知">バースト使用の通知</h3>
+<div class="paragraph">
+<p>バースト時の使用によって追加のコストが発生すると、 NetApp Service Engine GUI には次の情報が表示されます。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>プロビジョニングに変更が提案された場合に、バースト容量が使用されることを通知します。</p>
+</li>
+<li>
+<p>サブスクリプションがバースト使用に移行した場合の顧客管理者への通知。</p>
+</li>
+<li>
+<p>容量レポートで、サービスに使用されているバースト時の使用日数と数量。詳細については、を参照してください <a href="sewebiug_working_with_reports.html#capacity-usage">"容量の使用状況"</a>。</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="提案された変更によってバースト容量が使用される場合の通知">提案された変更によってバースト容量が使用される場合の通知</h4>
+<div class="paragraph">
+<p>次の図原因は、プロビジョニングの変更提案によってサブスクリプションがバーストになる場合に表示される通知の例を示しています。サブスクリプションがバーストになることを確認して続行するか、アクションを続行しないことを選択できます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/sewebiug_image2.png" alt="エラー：グラフィックイメージがありません"></span></p>
+</div>
+<div class="paragraph">
+<p>次の表に、このようなバースト通知が表示されるタイミングを示します。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">アクション</th>
+<th class="tableblock halign-left valign-top">ソースでの影響</th>
+<th class="tableblock halign-left valign-top">デスティネーションでの影響</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">共有 / ディスクを作成またはサイズ変更します。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ゾーンのサービスレベルに対するコミットメントを超えています。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">該当なし</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">共有 / ディスクを新しいサービスレベルに移動します。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ゾーンのサービスレベルに対するコミットメントを超えています。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">該当なし</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ディザスタリカバリを有効にして、ファイルサーバ / ブロックストア上の共有 / ディスクの作成またはサイズ変更を行います。</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>ゾーンのサービスレベルに対するコミットメントを超えています</p>
+</li>
+<li>
+<p>ゾーンの DP のコミットメントを超過しています</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">デスティネーションの共有 / ディスクが自動的に作成されるため、デスティネーションゾーンのサービスレベルに対するコミットメントを超過しています。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ディザスタリカバリが有効になっているファイルサーバ / ブロックストアで、共有 / ディスクを新しいサービスレベルに移動します。</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>ゾーンのサービスレベルに対するコミットメントを超えています。</p>
+</li>
+<li>
+<p>ゾーンの DP のコミットメントを超過しています。</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">再配置されたデスティネーション共有 / ディスクによって、デスティネーションゾーンのサービスレベルに対するコミットメントを超過しています。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">共有 / ディスクのバックアップを有効にします。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DP のコミットメントを超えています。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">デスティネーションの共有 / ディスクが自動的に作成されるため、デスティネーションゾーンのサービスレベルに対するコミットメントを超過しています。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">新しいオブジェクトストアテナンシーを作成します。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">オブジェクトの容量に対するコミットメントを超える可能性があります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">該当なし</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">オブジェクトストアのテナンシーのクォータを増やします</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">オブジェクトの容量に対するコミットメントを超える可能性があります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">該当なし</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="サブスクリプションがバースト状態になったときの通知">サブスクリプションがバースト状態になったときの通知</h4>
+<div class="paragraph">
+<p>サブスクリプションがバースト状態の場合は、次の通知バナーが表示されます。この通知は、テナンシーに関するお客様管理者に表示され、確認が完了するまで表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/sewebiug_image3.png" alt="エラー：グラフィックイメージがありません"></span></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="データ保護">データ保護</h3>
+<div class="paragraph">
+<p>DP は、データのバックアップをサポートする方法、および必要に応じてデータをリカバリする方法です。</p>
+</div>
+<div class="paragraph">
+<p>NetApp Service Engine DP には次の機能があります。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ディスクと共有のスナップショット</p>
+</li>
+<li>
+<p>ディスクおよび共有のバックアップ（サブスクリプションに DP サービスが含まれている必要があります）</p>
+</li>
+<li>
+<p>ディスクおよび共有のディザスタリカバリ（サブスクリプションには DP または DP Advanced サービスが必要）</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="snapshot">Snapshot</h4>
+<div class="paragraph">
+<p>Snapshot は、データのポイントインタイムコピーです。Snapshot をクローニングして新しいディスクを作成したり、同じ機能や類似の機能を使用して共有したりできます。</p>
+</div>
+<div class="paragraph">
+<p>Snapshot は、アドホックで作成することも、 Snapshot ポリシーの定義に従ってスケジュールに自動的に作成することもできます。Snapshot ポリシーは、 Snapshot をキャプチャするタイミングと保持する期間を決定します。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="注記">
+</td>
+<td class="content">
+Snapshot は、サービスの消費容量を表します。
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="バックアップ">バックアップ</h4>
+<div class="paragraph">
+<p>バックアップとは、項目のコピーを作成してレプリケートし、元のゾーンとは別のゾーンにコピーを格納することを意味します。このゾーンでは各プロトコルが有効になっており（ブロックストレージの場合のみ）、 MetroCluster 以外は有効になっています。NetApp Service Engine では、ファイルおよびブロックストレージでバックアップを実行できます（サブスクリプションには DP サービスが必要）。共有 / ディスクのバックアップは、サブスクリプションで最も低コストのパフォーマンス階層（ Standard ）にあるバックアップゾーンに保存されます。</p>
+</div>
+<div class="paragraph">
+<p>バックアップは、新しい共有 / ディスクの作成時に設定するか、またはあとで既存の共有 / ディスクに追加できます。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>注： *</p>
+</li>
+<li>
+<p>バックアップは 0 ： 00 UTC 前後の固定時間に実行されます。</p>
+</li>
+<li>
+<p>バックアップは、共有 / ディスクに対して設定されたバックアップポリシーに従って実行されます。バックアップポリシーによって、次のことが決まります。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>バックアップが有効になっている</p>
+</li>
+<li>
+<p>バックアップがレプリケートされるゾーン。バックアップゾーンは、元の共有またはディスクが存在するゾーン以外の NetApp Service Engine 内の任意のゾーンで、それぞれのプロトコルが有効になっており（ブロックストレージのみの場合）、 MetroCluster が有効になっていません。一度設定すると、バックアップゾーンを変更できません。</p>
+</li>
+<li>
+<p>各間隔（日単位、週単位、または月単位）の保持（保持）するバックアップの数。</p>
+<div class="paragraph">
+<p>スケジュールされたバックアップは定期的に作成され、削除できませんが、保持ポリシーに基づいて古いバックアップが作成されます。</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>バックアップのレプリケーションは毎日実行されます。</p>
+</li>
+<li>
+<p>ディスクまたは共有のバックアップを、ゾーンが 1 つだけの NetApp Service Engine インスタンスで設定することはできません。</p>
+</li>
+<li>
+<p>プライマリ共有またはディスクを削除すると、関連付けられているすべてのバックアップが削除されます。</p>
+</li>
+<li>
+<p>バックアップは合計消費容量に影響します。また、 DP サブスクリプションレートでバックアップにかかるコストも発生します。も参照してください <a href="sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection,-consumed-capacity,-and-charges">"データ保護、使用容量、料金"</a>。</p>
+</li>
+<li>
+<p>バックアップからのリストア：バックアップから共有またはディスクをリストアするサービス要求を生成します。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ディザスタリカバリ">ディザスタリカバリ</h3>
+<div class="paragraph">
+<p>ディザスタリカバリとは、災害発生時に通常運用時にリカバリする機能のことです。</p>
+</div>
+<div class="paragraph">
+<p>NetApp Service Engine は、非同期と同期の 2 種類のディザスタリカバリをサポートしています。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="注記">
+</td>
+<td class="content">
+ディザスタリカバリをサポートするかどうかは、 NetApp Service Engine インスタンスでサポートされているインフラによって決まります。
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="ディザスタリカバリ非同期">ディザスタリカバリ：非同期</h4>
+<div class="paragraph">
+<p>NetApp Service Engine は、次の機能を提供することで非同期ディザスタリカバリをサポートします。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>プライマリボリュームをディザスタリカバリゾーンに非同期でレプリケートします</p>
+</li>
+<li>
+<p>フェイルオーバー / フェイルバック（サービス要求でのみ使用可能）</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>非同期ディザスタリカバリは、ファイルストレージおよびブロックストレージで使用でき、サブスクリプションには DP サービスが必要です。</p>
+</div>
+<div class="paragraph">
+<p>ディザスタリカバリゾーンは、プライマリボリュームが作成されるゾーンとは異なる NetApp Service Engine 内のゾーンにする必要があります。ソースゾーンが MetroCluster に対応している場合、 MetroCluster パートナーにはなりません。共有 / ディスクのディザスタリカバリレプリカは、元の共有 / ディスクと同じパフォーマンス階層にあるディザスタリカバリゾーンに格納されます。</p>
+</div>
+<div class="paragraph">
+<p>プライマリボリュームの非同期ディザスタリカバリレプリケーションを有効にするには、次のものが必要です。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ディザスタリカバリをサポートするための、ボリュームが配置されているファイルサーバまたはブロックストアの設定</p>
+</li>
+<li>
+<p>ファイル共有またはディスクのディザスタリカバリレプリケーションを有効または無効にします。ディザスタリカバリが設定されている場合、デフォルトでは、共有とディスクのディザスタリカバリレプリケーションが有効になります。</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="非同期のディザスタリカバリをサポートするようにファイルサーバまたはブロックストアを設定します">非同期のディザスタリカバリをサポートするようにファイルサーバまたはブロックストアを設定します</h5>
+<div class="paragraph">
+<p>ファイルサーバまたはブロックストアの作成時またはあとから、非同期のディザスタリカバリを有効にします。有効にしたディザスタリカバリを無効にすることはできず、ディザスタリカバリゾーンを変更することはできません。ディザスタリカバリスケジュールは、ディザスタリカバリロケーション（毎時、毎時 4 回、または毎日）にデータをレプリケートする頻度を指定します。</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="ファイル共有またはディスクで非同期のディザスタリカバリを有効にします">ファイル共有またはディスクで非同期のディザスタリカバリを有効にします</h5>
+<div class="paragraph">
+<p>非同期のディザスタリカバリレプリケーションを設定できるのは、親ファイルサーバまたはブロックストアが最初に非同期のディザスタリカバリ用に設定されている場合のみです。デフォルトでは、親でレプリケーションが有効になっている場合、親ホストとなるファイル共有またはディスクでレプリケーションが有効になります。特定の共有またはディスクのレプリケーションを除外するには、その共有 / ディスクのディザスタリカバリを無効にします。これらの共有 / ディスクでレプリケーションを有効または無効に切り替えることができます。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>注： *</p>
+</li>
+<li>
+<p>プライマリファイルサーバまたはブロックストアを削除すると、ディザスタリカバリ用にレプリケートされたコピーがすべて削除されます。</p>
+</li>
+<li>
+<p>ディザスタリカバリゾーンは、ファイルサーバまたはブロックストアごとに 1 つだけ設定できます。</p>
+</li>
+<li>
+<p>ディザスタリカバリコピーは、使用済み容量の合計につながります。また、ディザスタリカバリのサブスクリプション料金も発生します。も参照してください <a href="sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection,-consumed-capacity,-and-charges">"データ保護、使用容量、料金"</a>。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ディザスタリカバリ同期">ディザスタリカバリ—同期</h4>
+<div class="paragraph">
+<p>MetroCluster は、別々の場所または障害ドメインにある 2 つの異なるゾーン間でデータと設定を同期的にレプリケートする DP 機能です。一方のサイトで災害が発生したときは、管理者がサバイバーサイトからデータを提供できます。</p>
+</div>
+<div class="paragraph">
+<p>MetroCluster で構成された NetApp Service Engine で管理されるサイトは、次の方法でファイルストレージおよびブロックストレージの同期ディザスタリカバリをサポートできます。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>同期ディザスタリカバリをサポートするようにゾーンを設定できます。</p>
+</li>
+<li>
+<p>これらのゾーンで作成されたディスクまたは共有は、ディザスタリカバリゾーンに同期的にレプリケートされます。</p>
+</li>
+<li>
+<p>注： *</p>
+</li>
+<li>
+<p>同期ディザスタリカバリは、同期ディザスタリカバリサブスクリプション料金で発生します。も参照してください <a href="sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection,-consumed-capacity,-and-charges">"データ保護、使用容量、料金"</a>。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="データ保護使用済み容量および料金">データ保護、使用済み容量、および料金</h3>
+<div class="paragraph">
+<p>このセクションの図は、 DP 料金の計算方法を示しています。</p>
+</div>
+<div class="sect3">
+<h4 id="ディザスタリカバリ-2">ディザスタリカバリ</h4>
+<div class="sect4">
+<h5 id="非同期のディザスタリカバリ">非同期のディザスタリカバリ</h5>
+<div class="paragraph">
+<p>非同期ディザスタリカバリでは、使用量とコストは次の料金で構成されます。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>元のボリューム容量は、配置されているパフォーマンス階層で課金されます。</p>
+</li>
+<li>
+<p>ディザスタリカバリコピーは、デスティネーションまたはディザスタリカバリゾーンの同じパフォーマンス階層で課金されます（ディザスタリカバリコピーは同じ階層に格納されます）。</p>
+</li>
+<li>
+<p>DP サービスの料金（元のボリュームの容量に対する料金）。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/sewebiug_image4.png" alt="エラー：グラフィックイメージがありません"></span></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="同期ディザスタリカバリ">同期ディザスタリカバリ</h5>
+<div class="paragraph">
+<p>同期ディザスタリカバリでは、使用量とコストは次の料金で構成されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/sewebiug_image5.png" alt="エラー：グラフィックイメージがありません"></span></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="バックアップ-2">バックアップ</h4>
+<div class="paragraph">
+<p>バックアップでは、使用量とコストは次の料金で構成されています。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>元のボリューム容量は、配置されているパフォーマンス階層で課金されます。</p>
+</li>
+<li>
+<p>バックアップボリュームは、使用可能な最も低いパフォーマンス階層で課金されます（バックアップコピーは、使用可能な最も低コストの階層に格納されます）。</p>
+</li>
+<li>
+<p>DP サービスの料金（元のボリュームの容量に対する料金）。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/sewebiug_image6.png" alt="エラー：グラフィックイメージがありません"></span></p>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/keystone/issues/new?body=Page%3A%20[課金アカウント、サブスクリプション、サービス、およびパフォーマンス](https://docs.netapp.com/ja-jp/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/keystone/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/keystone/blob/main/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/keystone/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/keystone/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">このページ</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <div style="clear: both"></div><!-- Main needs to have height -->
+</div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/keystone/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/keystone/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/keystone/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/keystone/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/keystone/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/keystone/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/keystone/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">Web サイトについてのフィードバックを<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">お寄せください</a>
+  <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">お知らせ</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div>
+
+      <!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/ja-jp/keystone/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/ja-jp/keystone/js/prism.js'></script>
+      <script type="text/javascript" src='/ja-jp/keystone/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/ja-jp/keystone/js/www-ntap.js'></script>
+    <script src='/ja-jp/keystone/js/tabbed-blocks.js'></script>
+  </body>
+
+  
+</html>
