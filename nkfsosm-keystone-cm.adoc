@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm-keystone-cm.html 
+keywords: netapp, keystone, cloud manager, keystone customers, CVO, cloud volumes ontap, cloud volumes ontap cvo billing 
+summary: Keystone と Cloud Manager の統合 
+---
+= Cloud Volumes ONTAP の使用において、 Flex サブスクリプションの利点はどのようになりますか
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）サービスへのサブスクリプションは、 Cloud Volumes ONTAP の使用状況と課金のニーズを促進します。NetApp Keystone Flex サブスクリプションをお持ちで、 Cloud Volumes ONTAP サブスクリプションもお持ちの場合は、 Flex サブスクリプションを使用して Cloud Volumes ONTAP の使用量を課金し、課金と消費の詳細を表示できます。

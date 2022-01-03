@@ -13,24 +13,18 @@ summary: NetApp Service Engine の新機能
 
 
 [role="lead"]
-NetApp Service Engine 2.7 では、 NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）の拡張サービスをサポートするために次の機能が導入されました。
+このリリースノートでは、 NetApp Keystone Flex Subscription （ Flex サブスクリプション）サービスで導入された新機能と機能拡張、および既知の制限事項と修正について説明します。
 
 
 
-== NetApp Service Engine 2.7 で導入された機能
+== Cloud Volumes ONTAP の使用状況と課金の表示（ 2021 年 12 月 5 日）
 
-このリリースの新機能は次のとおりです。
-
-
-
-=== Flex サブスクリプションを使用して Cloud Volumes ONTAP の使用状況と請求を表示する機能
-
-NetApp Keystone Flex サブスクリプションのお客様で、 Cloud Volumes ONTAP サブスクリプションもお持ちの場合は、 Cloud Volume の使用状況と請求を Flex サブスクリプションで表示できます。Cloud Manager で Flex Subscriptions の詳細を検出し、 Cloud Manager インターフェイスに表示できるようになりました。[ すべてのサービス ] 、 [ デジタルウォレット ] 、 [ Keystone Flex サブスクリプション *] タブをクリックすると、次のアクティビティを実行できます。
+NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）のお客様で、 Cloud Volumes ONTAP サブスクリプションもお持ちの場合は、 Flex サブスクリプションを使用して Cloud Volumes ONTAP の使用量を課金し、請求および消費の詳細を表示できます。Cloud Manager で Flex サブスクリプションアカウントを検出し、 Cloud Manager インターフェイスに詳細を表示できるようになりました。[ すべてのサービス ] 、 [ デジタルウォレット ] 、 [ Keystone Flex サブスクリプション *] タブをクリックすると、次のアクティビティを実行できます。
 
 * ようこそ画面を表示すると、 Flex Subscription 管理者に Cloud Manager のユーザ ID と Flex Subscription のユーザ ID を関連付けるよう依頼できます。これにより、 * Keystone Flex Subscription * タブにアクセスできます。
 * オンプレミスシステムおよび Cloud Volumes ONTAP で、サブスクライブされているサービスのコミット済み容量および使用済み容量の消費データを表示します。
 * Cloud Manager アカウントに関連付けられている Flex サブスクリプションの詳細を表示します。コミット済み容量、消費済み容量、バースト時の容量などの詳細が表示されます。
-* Cloud Volumes ONTAP アカウントを Flex サブスクリプション ID にリンクして、課金および容量使用状況のレポート用にアカウントを関連付けます。
+* Cloud Volumes ONTAP アカウントを Flex サブスクリプション ID にリンクして、課金レポートおよび容量使用状況レポート用にアカウントを関連付けます。
 * サブスクライブ済み Flex サブスクリプションサービスのコミット済み容量の増加または減少を要求します。
 * リンクされた Flex サブスクリプション ID を表示して、 Cloud Volumes ONTAP 消費の課金方法として使用します（リンクされた ID のみ）。
 
@@ -38,12 +32,8 @@ NetApp Keystone Flex サブスクリプションのお客様で、 Cloud Volumes
 詳細については、 Cloud Manager のドキュメントにある次のリンクを参照してください。link:https://docs.netapp.com/us-en/occm/concept_licensing.html#keystone-flex-subscription["Keystone Flex サブスクリプション"]
 
 
+｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝ ： NetApp Keystone フレキシブルサブスクリプション（ Flex サブスクリプション）で提供される拡張機能をサポートするために、ネットアップサービスエンジンのさまざまなリリースで次の機能が導入されています。
 
-NOTE: NetApp Keystone Flex サブスクリプション 2.7 のリリースバージョンは、リリース 2.2 以降のメジャーリリースです。2.2 から 2.7 までの内部リリースには、軽微な修正のみが含まれています。
-
-====
-
-====
 
 
 == NetApp Service Engine 2.2 で導入された機能
@@ -83,12 +73,9 @@ NetApp Service Engine ダッシュボードが再設計され、次の新しい�
 NetApp Service Engine のユーザインターフェイスでは、次の機能拡張が行われています。
 
 * 左側のナビゲーションペインの * ダッシュボード * メニューには、ダッシュボードにアクセスするための直感的なナビゲーションポイントが表示されます。
-* 左側のナビゲーションペインの * 登録サービス * メニューの名前が * クラウドサービス * に変更されました。
+* 左側のナビゲーションペインの * 登録サービス * メニューの名前が * クラウドサービス * に変更されました。++
 
 
-====
-
-====
 
 
 == NetApp Service Engine 2.1 で導入された機能
@@ -138,12 +125,13 @@ NetApp Keystone Flex サブスクリプションサービスに、 NetApp Fabric
 * link:nkfsosm_performance.html["パフォーマンスサービスレベル"]
 
 
-====
+｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝
 
-====
 
 
 == NetApp Service Engine 2.0.1 で導入された機能
+
+このリリースの新機能は次のとおりです。
 
 
 
@@ -180,12 +168,11 @@ SnapCenter と NetApp Service Engine の統合の一環として、 SnapCenter �
 
 CIFS （ SMB ）またはマルチプロトコルの共有でユーザアクセスを制限する ACL を指定できるようになりました。ACL に追加する Active Directory （ AD ）の設定に基づいて Windows ユーザまたはグループを指定できます。link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps["詳細はこちら。"]。
 
-====
-
-====
 
 
 == NetApp Service Engine 2.0 で導入された機能
+
+このリリースの新機能は次のとおりです。
 
 
 

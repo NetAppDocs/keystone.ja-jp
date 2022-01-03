@@ -12,11 +12,11 @@ summary: Keystone ドキュメントポータルへようこそ。
 :imagesdir: ./media/
 
 
-NetApp Keystone Flex サブスクリプションは、 NetApp Keystone サービスの一部です。NetApp Keystone は、オンプレミスの CAPEX （設備投資）サービスを提供するポートフォリオで、 NetApp Keystone Flex Pay や NetApp Keystone Flex Subscription サービスなど、クラウドへの移行をスムーズに進めることができます。
+NetApp Keystone Flex サブスクリプションは、 NetApp Keystone サービスの一部です。NetApp Keystone は、オンプレミスの CAPEX （設備投資）サービスを提供するポートフォリオで、 NetApp Keystone Flex Pay や NetApp Keystone Flex Subscription サービスなど、クラウドへの移行をスムーズに進めることができます。NetApp Keystone は、オンプレミスとクラウドにわたってストレージサービスを提供することで、シームレスなハイブリッドクラウドエクスペリエンスを実現します。NetApp Keystone の詳細については、を参照してください link:https://www.netapp.com/services/subscriptions/keystone/["NetApp Keystone"]
 
-* * NetApp Keystone Flex Pay * - NetApp Keystone Flex Pay （フレックスペイ）は、従来のファイナンス、リース、固定 / 可変オプションなど、お客様のキャッシュフローニーズに合わせた柔軟なファイナンスオプションのポートフォリオです。
-* * NetApp Keystone Flex サブスクリプション * - NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）は、成長に合わせて拡張できる成果ベースのサブスクリプションサービスで、オンプレミスのクラウドレベルのエクスペリエンスを実現します。
+NetApp Keystone Flex サブスクリプションの詳細については、を参照してください link:https://www.netapp.com/services/subscriptions/keystone/flex-subscription["Keystone Flex サブスクリプション"]
 
+Flex サブスクリプションは、オンプレミスシステムでクラウドと同等のエクスペリエンスを提供し、思いどおりのクラウド接続を実現する、ストレージサービスです。* NetApp Keystone Flex Pay * - NetApp Keystone Flex Pay （フレックスペイ）は、従来のファイナンス、リース、固定 / 可変オプションなど、お客様のキャッシュフローニーズに合わせた柔軟なファイナンスオプションのポートフォリオです。* NetApp Keystone Flex サブスクリプション * - NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）は、成長に合わせて拡張できる成果ベースのサブスクリプションサービスで、オンプレミスのクラウドレベルのエクスペリエンスを実現します。
 
 image:nkfsosm_image1.png["エラー：グラフィックイメージがありません"]
 
@@ -24,7 +24,7 @@ image:nkfsosm_image1.png["エラー：グラフィックイメージがありま
 
 == Flex サブスクリプション
 
-Flex サブスクリプションは、成果ベースのオンプレミスサブスクリプションサービスモデルです。予測不可能な容量の増加に対処し、複雑な調達サイクルを実施するという課題を解消することで、価値創出までの時間を短縮できます。Flex サブスクリプションを使用すると、経済性と運用をビジネスの優先事項に合わせることができます。
+Flex サブスクリプションは、成長に応じて購入できるサブスクリプションベースのサービスモデルです。運用コストの消費モデルを希望するお客様に、設備投資（ CapEx ）やリース（ CapEx ）などのシームレスなハイブリッドクラウドエクスペリエンスを提供します。予測不可能な容量の増加に対処し、複雑な調達サイクルを実施するという課題を解消することで、価値創出までの時間を短縮できます。Flex サブスクリプションを使用すると、経済性と運用をビジネスの優先事項に合わせることができます。
 
 image:nkfsosm_image2.png["エラー：グラフィックイメージがありません"]
 

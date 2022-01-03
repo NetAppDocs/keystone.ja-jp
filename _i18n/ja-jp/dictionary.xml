@@ -1616,12 +1616,8 @@
   <block id="edea9398bafcc918142f79d91b628f61" category="list-text">もう一度 * Close * をクリックして Manage S3 Keys ダイアログを閉じます。</block>
   <block id="e4355ea354829ede276c4aa44fe13eb2" category="summary">Keystone ドキュメントポータルへようこそ。</block>
   <block id="70b7e76ada1def06c1f069b092352192" category="doc">NetApp Keystone Flex サブスクリプションのドキュメント</block>
-  <block id="75154c1c7433b00eeb604286d9a29cf1" category="paragraph">NetApp Keystone Flex サブスクリプションは、 NetApp Keystone サービスの一部です。NetApp Keystone は、オンプレミスの CAPEX （設備投資）サービスを提供するポートフォリオで、 NetApp Keystone Flex Pay や NetApp Keystone Flex Subscription サービスなど、クラウドへの移行をスムーズに進めることができます。</block>
-  <block id="e49cf55687c692a556892a0f614ce9bf" category="list-text">* NetApp Keystone Flex Pay * - NetApp Keystone Flex Pay （フレックスペイ）は、従来のファイナンス、リース、固定 / 可変オプションなど、お客様のキャッシュフローニーズに合わせた柔軟なファイナンスオプションのポートフォリオです。</block>
-  <block id="cf7ec62445091377db24ebd1c9fd2d93" category="list-text">* NetApp Keystone Flex サブスクリプション * - NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）は、成長に合わせて拡張できる成果ベースのサブスクリプションサービスで、オンプレミスのクラウドレベルのエクスペリエンスを実現します。</block>
   <block id="3799607edcd82b379d62cf94110a1f1a" category="paragraph"><block ref="3799607edcd82b379d62cf94110a1f1a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fdba3cae37eccb96c4307e07af690784" category="section-title">Flex サブスクリプション</block>
-  <block id="0e8fe1ec8af71b797b941560e704d2f7" category="paragraph">Flex サブスクリプションは、成果ベースのオンプレミスサブスクリプションサービスモデルです。予測不可能な容量の増加に対処し、複雑な調達サイクルを実施するという課題を解消することで、価値創出までの時間を短縮できます。Flex サブスクリプションを使用すると、経済性と運用をビジネスの優先事項に合わせることができます。</block>
   <block id="fb2c4a4567f19f497aa52f4fa9fe5ad4" category="paragraph"><block ref="fb2c4a4567f19f497aa52f4fa9fe5ad4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="af401326a6f27af7fc3bb2ff21b788dc" category="paragraph">Flex サブスクリプションは、ネットアップ、パートナー、またはお客様が運用可能な、ブロック、ファイル、オブジェクトの各データタイプ用のストレージ容量を事前定義されたパフォーマンスサービスレベルで提供するサブスクリプションベースのサービスです。Flex サブスクリプションが提供する基本サービスに加えて、追加料金でアドオンサービスを選択できます。これらのサービスについては、次の図で説明します。</block>
   <block id="173cfa01f909dadb1cc7bb7d43b24a2e" category="list-text">* Data Protection Basic * サービスは、 NetApp SnapMirror と NetApp SnapVault の機能をデフォルト設定で提供します。</block>
@@ -2891,7 +2887,6 @@
   <block id="78c10cb50c4cd8e6713eccd09451bc7b" category="paragraph">このリリースでは、システムで生成されたアラートとユーザーが生成したアラートをすべて一覧表示する新しい * Alerts * 画面が導入されています。この画面では、環境に関する重要なイベントに対するカスタムのアラートメッセージを作成して、他のユーザに通知することもできます。アラートは必要に応じて表示および却下できます。詳細については、を参照してください <block ref="0496064ad24390fb53c5f07bbecacf07" category="inline-link-macro-rx"></block>。</block>
   <block id="5edd9100af263950a47e74c117e19f7c" category="paragraph">NetApp Service Engine のユーザインターフェイスでは、次の機能拡張が行われています。</block>
   <block id="787b14bb23fa38c0a9cf37fcf840abf0" category="list-text">左側のナビゲーションペインの * ダッシュボード * メニューには、ダッシュボードにアクセスするための直感的なナビゲーションポイントが表示されます。</block>
-  <block id="d462ad78106f749467b02f63cf18f585" category="list-text">左側のナビゲーションペインの * 登録サービス * メニューの名前が * クラウドサービス * に変更されました。</block>
   <block id="f617d7068a52e45a25c2eac0d3e8f1db" category="paragraph">この機能の詳細については、次のリンクを参照してください。</block>
   <block id="6c1babef94ecdfe13ce1038b7eabf5ab" category="list-text"><block ref="6c1babef94ecdfe13ce1038b7eabf5ab" category="inline-link-macro-rx"></block></block>
   <block id="3a337ffb28bf0d116cc65c4b009401e6" category="list-text"><block ref="3a337ffb28bf0d116cc65c4b009401e6" category="inline-link-macro-rx"></block></block>
@@ -2923,11 +2918,7 @@
   <block id="463c3a95787ac56f36c227feeb7bd389" category="list-text">* お客様が運用するモデル * ：次の表は、サービスライフサイクル全体のモデルと、お客様が運用する環境におけるサービスライフサイクルモデルに関連する役割と責任をまとめたものです。</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">タスク</block>
   <block id="cfaa375bf6c7f9fcc1bc04d4f30c9154" category="cell">ネットアップ</block>
-  <block id="f65fb766c7d030aa6abd4c295a31c4c0" category="cell">インストールと関連タスク * インストール * 構成 * Deploy * オンボード</block>
   <block id="244f78a4e039400f39e0eb94595bdc02" category="cell"><block ref="244f78a4e039400f39e0eb94595bdc02" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0a42ace755e3b3ce6cac106e8608f0b5" category="cell">管理と監視 * Monitor * Report * 管理タスクの実行 * Alert</block>
-  <block id="28d3eeb3a2cb3e9bf8861c7bae6f4266" category="cell">運用と最適化 * 容量の管理 * パフォーマンスの管理 * SLA の管理</block>
-  <block id="830a98b50bf596db55a80460163ac880" category="cell">サポート * お客様のサポート * ハードウェア障害修正 * ソフトウェア・サポート * アップグレードとパッチ</block>
   <block id="7feb8545e008b64a43a24668068761be" category="summary">お客様が Active IQ で目にする可能性があるキーストーン</block>
   <block id="262343e94e4c53e68a3899e4036dbba5" category="doc">Flex サブスクリプションのお客様は Active IQ で何を表示できますか。</block>
   <block id="902acbb4ec533e7ef722d0120abac953" category="paragraph">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）サービスに登録している場合は、 Active IQ デジタルアドバイザダッシュボードに使用状況レポートとグラフを表示できます。</block>
@@ -2943,8 +2934,6 @@
   <block id="a47468120853c1eae9253fff2798d8d6" category="paragraph">次の表に、パフォーマンスサービスレベルを示します。</block>
   <block id="ae14ae08bc11163da49596ed847fb224" category="section-title">異なるストレージタイプのパフォーマンスサービスレベル</block>
   <block id="28307c52fb9de3f0b2b26086b89eb8f3" category="paragraph">ファイル、ブロック、オブジェクトストレージのサービスレベルを次に示します。</block>
-  <block id="c2d47b6bc95c845ff73e9809734fad1a" category="section-title">ファイル共有</block>
-  <block id="af2d7929bc6a3f27f8ef1349af16d6bb" category="paragraph">* サポートされているプロトコル * ： NFS 、 CIFS</block>
   <block id="079bbc110741f438dfb37f32218c4c21" category="cell">* サービスレベル *</block>
   <block id="cdf0cc519fabc4c14999e89090d33dc1" category="cell">* エクストリーム *</block>
   <block id="153a19d482de580ce84c77ac52c6f907" category="cell">* プレミアム *</block>
@@ -2994,7 +2983,6 @@
   <block id="346ddf53d2d569d0bb73eb7826cf95d8" category="cell">メディアリポジトリ、アーカイブ</block>
   <block id="29de402441037919e9b47a4ad8a12baa" category="cell">500TiB ^3^</block>
   <block id="f1dae87d14ba76423e263dc9a79acdd7" category="paragraph">次の表は、ネットアップが運用する運用モデル、パートナーが運用する運用モデル、お客様が運用する運用モデルの 3 つの概要を示しています。</block>
-  <block id="b2e00d582e399129fd88a8c0f4a49c24" category="cell">アイコン： [] をオンにします。</block>
   <block id="10288ddd3c9dd46deaa222ee129df3fb" category="doc">米国市民サポート（ USCS ）</block>
   <block id="b705fe2f9502ab5e1421d02eae05ad9f" category="paragraph">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）は、ネットアップのグローバルサービスおよびサポートセンター（ GSSC ）を通じて、 US Citizen Support （ USCS ）サービスを継続的に監視、サポートします。</block>
   <block id="437e64ea2377702ad2881edf8040c7c0" category="paragraph">GSSC は、地理的に分散したチームで、さまざまなネットアップのお客様にサービスを提供しています。Flex Subscription のための USCS サービスは、 Flex Subscription サービスの監視とサポートが米国内の米国市民によって確実に提供されるようにします。システムのメンテナンスに必要なオンサイトサポートとトラブルシューティングも含まれます。</block>
@@ -3025,7 +3013,6 @@
   <block id="4b894cf74c19de19660a5ffeee9a97ec" category="paragraph">Equinix が提供する Flex サブスクリプションは、標準の Flex サブスクリプションサービスから変更されていません。</block>
   <block id="bc54a58207fd4d61b1d1879b8e83baf5" category="paragraph">Flex サブスクリプションの標準サービスに加えて、 Flex サブスクリプション機器をホストする Equinix データセンターを選択する必要があります。</block>
   <block id="6b75063f02ddd200c4e0552e16617253" category="summary">Keystone Flex サブスクリプションの課金</block>
-  <block id="64dd6ef1863bf8e7223bfb0b6a76dc35" category="paragraph">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）の請求は、コミット済み容量とバースト消費に基づいています。</block>
   <block id="cb89411dcf9eebdd80bb208fdd32b0ca" category="paragraph">▽コミット済み容量およびバースト時の使用容量については、を参照してください。△ <block ref="a5de5e295217718375a90b1ecd6ab5f8" category="inline-link-macro-rx"></block>。</block>
   <block id="fc741d08744d3f762b0e8f40143e0c9f" category="paragraph">課金情報の詳細を表示する方法については、を参照してください <block ref="ff5019e651b45dce6edea337a584798f" category="inline-link-macro-rx"></block>。</block>
   <block id="da0abce09003b51065ed5b06d06021f1" category="section-title">コミット済み容量に基づく請求</block>
@@ -3055,22 +3042,16 @@
   <block id="c84b839ec902b06b55455b45091db81d" category="paragraph">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）で登録したすべてのサービスの月額料金を、 NetApp Service Engine のダッシュボードと請求画面で確認できます。</block>
   <block id="bb75d5742f3f8cd7ea2b3326b4ead1a8" category="paragraph">過去 1 カ月間のすべての加入済み Flex サブスクリプションの課金情報を表示できます。毎月のバースト時の容量に対する請求が強調表示されます。</block>
   <block id="61813b3866df19ca76d72405fbac5ce9" category="paragraph">詳細については、を参照してください <block ref="eb5228f75c5e56b970f5ae0448055097" category="inline-link-macro-rx"></block></block>
-  <block id="2a56bee7f3b19653c23e02991c687747" category="paragraph">NetApp Service Engine 2.7 では、 NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）の拡張サービスをサポートするために次の機能が導入されました。</block>
-  <block id="d935429310d3dd0ed962c755740fb123" category="section-title">NetApp Service Engine 2.7 で導入された機能</block>
   <block id="6100897489646888867118f23efef503" category="paragraph">このリリースの新機能は次のとおりです。</block>
-  <block id="0678836712433ff7db78b2ffd5f26af1" category="section-title">Flex サブスクリプションを使用して Cloud Volumes ONTAP の使用状況と請求を表示する機能</block>
-  <block id="7f7472103c50a9845b3d7cebcb44330e" category="paragraph">NetApp Keystone Flex サブスクリプションのお客様で、 Cloud Volumes ONTAP サブスクリプションもお持ちの場合は、 Cloud Volume の使用状況と請求を Flex サブスクリプションで表示できます。Cloud Manager で Flex Subscriptions の詳細を検出し、 Cloud Manager インターフェイスに表示できるようになりました。[ すべてのサービス ] 、 [ デジタルウォレット ] 、 [ Keystone Flex サブスクリプション *] タブをクリックすると、次のアクティビティを実行できます。</block>
   <block id="5238fb622db8670699adbf5b482678e6" category="list-text">ようこそ画面を表示すると、 Flex Subscription 管理者に Cloud Manager のユーザ ID と Flex Subscription のユーザ ID を関連付けるよう依頼できます。これにより、 * Keystone Flex Subscription * タブにアクセスできます。</block>
   <block id="c1a093259dea21d070b755503e96dcdf" category="list-text">オンプレミスシステムおよび Cloud Volumes ONTAP で、サブスクライブされているサービスのコミット済み容量および使用済み容量の消費データを表示します。</block>
   <block id="85d3d7bdabae93d4846321bc050d6645" category="list-text">Cloud Manager アカウントに関連付けられている Flex サブスクリプションの詳細を表示します。コミット済み容量、消費済み容量、バースト時の容量などの詳細が表示されます。</block>
-  <block id="ca42416279e3cfdb651eeba1f68765de" category="list-text">Cloud Volumes ONTAP アカウントを Flex サブスクリプション ID にリンクして、課金および容量使用状況のレポート用にアカウントを関連付けます。</block>
   <block id="88f141f3566ea09da3443b01f7f089fb" category="list-text">サブスクライブ済み Flex サブスクリプションサービスのコミット済み容量の増加または減少を要求します。</block>
   <block id="b20b42d4f6cb65fa8e788ec44f8341a5" category="list-text">リンクされた Flex サブスクリプション ID を表示して、 Cloud Volumes ONTAP 消費の課金方法として使用します（リンクされた ID のみ）。</block>
   <block id="a47bcecd4f4a1f89ad4e82bca88975ab" category="inline-link-macro">Keystone Flex サブスクリプション</block>
   <block id="46172ce69f0d69dc6b2a28ea9573950b" category="inline-link-macro">Keystone Flex Subscriptions を管理します</block>
   <block id="dd8bfc39d1b97c46fd88e0e7b3533909" category="paragraph">詳細については、 Cloud Manager のドキュメントにある次のリンクを参照してください。<block ref="4f790696e8e1be6ca66a4737e5e654e6" category="inline-link-macro-rx"></block>
 <block ref="1e99115c1a8b1bdb052bb8f16835e10f" category="inline-link-macro-rx"></block></block>
-  <block id="6505b63ebb98715b5081b2c13c7f1f62" category="admonition">NetApp Keystone Flex サブスクリプション 2.7 のリリースバージョンは、リリース 2.2 以降のメジャーリリースです。2.2 から 2.7 までの内部リリースには、軽微な修正のみが含まれています。</block>
   <block id="44f95b8178b2bd2c0cde2f2b9c0f84c8" category="section-title">NetApp Service Engine 2.0.1 で導入された機能</block>
   <block id="d2f339d731af47b666b5930ce1c2a0ec" category="section-title">NetApp Service Engine 2.0 で導入された機能</block>
   <block id="780c462e85ba4399a5d42e88f69a15ca" category="sidebar">課金</block>
@@ -3078,4 +3059,57 @@
   <block id="0e0fe605239796a7018441e65fa28979" category="sidebar">米国市民サポート</block>
   <block id="c2c19492d8278f541b461dfa6849c504" category="sidebar">Flex サブスクリプションおよび Equinix</block>
   <block id="6b9cddec4dacfc2b279a47aff83fcc02" category="sidebar">Flex サブスクリプションと Active IQ</block>
+  <block id="faf37da472ffd232f9810c360b4c1f18" category="paragraph">インストールと関連タスク</block>
+  <block id="349838fb1d851d3e2014b9fe39203275" category="list-text">をインストールします</block>
+  <block id="f1206f9fadc5ce41694f69129aecac26" category="list-text">設定</block>
+  <block id="507a3a88cebc46603ce2be8eaa924eee" category="list-text">導入</block>
+  <block id="79b7581616a6892a33647af8676f7c45" category="list-text">オンボード</block>
+  <block id="b407d85189fae6568411d1e0477e1a61" category="paragraph">管理と監視</block>
+  <block id="d2986ac8cb6bd55892099c1ffd6b1f6f" category="list-text">モニタ</block>
+  <block id="4b1b4dc8cf38b3c64b1d657da8f5ac8c" category="list-text">レポート</block>
+  <block id="b92071d61c88498171928745ca53078b" category="list-text">アラート</block>
+  <block id="c22aff68d4c151984d3e3059f7389289" category="paragraph">運用と最適化</block>
+  <block id="29930ffab2df479b4c9daf785d967075" category="list-text">容量の管理</block>
+  <block id="c34138e317002ec9728d2c9e157799ee" category="list-text">パフォーマンスを管理</block>
+  <block id="07de8c2f393655cba5ee3012e3689412" category="list-text">SLA を管理します</block>
+  <block id="db5eb84117d06047c97c9a0191b5fffe" category="paragraph">サポート</block>
+  <block id="b932b332a780d244d163d8aeaa1cc82e" category="list-text">お客様をサポート</block>
+  <block id="550340cfbad3ac61a634336458de3119" category="list-text">ハードウェア障害の修正</block>
+  <block id="9f65492afee4fdfba75618fed6d0f9dd" category="list-text">ソフトウェアサポート</block>
+  <block id="e59aa159238c2e5f491468dabdfd0b62" category="list-text">アップグレードとパッチ</block>
+  <block id="e674e65192e6527dabaf52c23f514da4" category="section-title">ファイルサービス</block>
+  <block id="73cf2790a3f92d26764722174d70cf34" category="paragraph">* サポートされているプロトコル * ： NFS 、 CIFS 、 iSCSI 、 FC</block>
+  <block id="c5ffad16a8fef3a87dd99f3ee19c48b2" category="summary">Keystone と Cloud Manager の統合</block>
+  <block id="86ab31ff62a64b275109761b712760ae" category="doc">Cloud Volumes ONTAP の使用において、 Flex サブスクリプションの利点はどのようになりますか</block>
+  <block id="12ab7d2a453cfba801dd3a48030aa11a" category="paragraph">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）サービスへのサブスクリプションは、 Cloud Volumes ONTAP の使用状況と課金のニーズを促進します。NetApp Keystone Flex サブスクリプションをお持ちで、 Cloud Volumes ONTAP サブスクリプションもお持ちの場合は、 Flex サブスクリプションを使用して Cloud Volumes ONTAP の使用量を課金し、課金と消費の詳細を表示できます。</block>
+  <block id="bc9d99b4b5c353814419ac4f3a7bcbb9" category="inline-link-macro">NetApp Keystone</block>
+  <block id="6365a10673e69e63960434eee08936a3" category="paragraph">NetApp Keystone Flex サブスクリプションは、 NetApp Keystone サービスの一部です。NetApp Keystone は、オンプレミスの CAPEX （設備投資）サービスを提供するポートフォリオで、 NetApp Keystone Flex Pay や NetApp Keystone Flex Subscription サービスなど、クラウドへの移行をスムーズに進めることができます。NetApp Keystone は、オンプレミスとクラウドにわたってストレージサービスを提供することで、シームレスなハイブリッドクラウドエクスペリエンスを実現します。NetApp Keystone の詳細については、を参照してください <block ref="17e1729d4a77db88a0bc2ee74a2207b1" category="inline-link-macro-rx"></block></block>
+  <block id="84df3063bf7c9a845b2944da17dc7ada" category="paragraph">NetApp Keystone Flex サブスクリプションの詳細については、を参照してください <block ref="dd62aedd4673206c815c56eddc5536f2" category="inline-link-macro-rx"></block></block>
+  <block id="ac6330b2ef35ed0beec99df3fdccc9e2" category="paragraph">Flex サブスクリプションは、オンプレミスシステムでクラウドと同等のエクスペリエンスを提供し、思いどおりのクラウド接続を実現する、ストレージサービスです。* NetApp Keystone Flex Pay * - NetApp Keystone Flex Pay （フレックスペイ）は、従来のファイナンス、リース、固定 / 可変オプションなど、お客様のキャッシュフローニーズに合わせた柔軟なファイナンスオプションのポートフォリオです。* NetApp Keystone Flex サブスクリプション * - NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）は、成長に合わせて拡張できる成果ベースのサブスクリプションサービスで、オンプレミスのクラウドレベルのエクスペリエンスを実現します。</block>
+  <block id="60e9d00fe6da3c4a7ff384bed342bf02" category="paragraph">Flex サブスクリプションは、成長に応じて購入できるサブスクリプションベースのサービスモデルです。運用コストの消費モデルを希望するお客様に、設備投資（ CapEx ）やリース（ CapEx ）などのシームレスなハイブリッドクラウドエクスペリエンスを提供します。予測不可能な容量の増加に対処し、複雑な調達サイクルを実施するという課題を解消することで、価値創出までの時間を短縮できます。Flex サブスクリプションを使用すると、経済性と運用をビジネスの優先事項に合わせることができます。</block>
+  <block id="dc9a1eb62617a53e09590e225defee14" category="paragraph">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）を使用すると、ストレージサブスクリプションの予測可能な先行購入価格を設定できます。</block>
+  <block id="b1abcf87d81cee786e5ff7efba9f8162" category="paragraph">設備投資（ CapEx ）やリースに運用コスト（ OpEx ）の消費モデルを希望する場合は、柔軟でスケーラブルな消費ニーズに合わせて、柔軟に拡張できる Flex サブスクリプションの従量課金制モデルを選択できます。</block>
+  <block id="b9d67fd7da1429660d7fcfc1925f1beb" category="paragraph">Flex サブスクリプションでは、以下の請求先施設をご利用いただけます。</block>
+  <block id="70eb65f810b8fa33ab14a55587c9dce5" category="list-text">IOPS とレイテンシのコミット済み容量に基づいて料金を支払うことで、さまざまなワークロードのニーズに対応できます。さまざまなパフォーマンスサービスレベル - Extreme 、 Premium 、 Standard 、 Value が用意されているため、購入した Flex サブスクリプションのサービスレベルに基づいてストレージを管理できます。</block>
+  <block id="5866f5199f36da24870932aa9db6ab49" category="list-text">また、容量の利用状況に応じて、コミット済み容量と従量課金制の容量を予測可能で提示します。</block>
+  <block id="a40d52252bf8cd6939e9352eeffb837b" category="list-text">ハードウェア、コア OS 、サポートのバンドル価格を 1TiB 価格で選択できます。ストレージタイプ、ファイル、ブロック、オブジェクト、クラウドストレージの各サービスについて、 1 つの請求書を用意しておきます。</block>
+  <block id="40729792b47d4ca2beff3d5aaa13c6e0" category="list-text">サービスと支払いの柔軟な条件を選択します。サイトごとに 12 カ月、 100TiB 、またはそれ以上を選択できます。以降は、 12 カ月間自動更新することも、月単位で更新することもできます。</block>
+  <block id="4ec4e822132124cf94b121ed6e88e49b" category="paragraph">フレックスサブスクリプションの課金は、コミット済み容量と可変バースト消費に基づいています。</block>
+  <block id="18b8a063bbf57f20dcdbb6f12a9dc0e9" category="section-title">SnapMirror デスティネーションについての請求</block>
+  <block id="73b8b41eb9fb2753d0aa2c1ae6b36a05" category="paragraph">SnapMirror デスティネーションボリュームの料金。ソースで割り当てられたパフォーマンスサービスレベル（サービスレベル）の QoS ポリシーによって決まります。ただし、ソースに QoS ポリシーが関連付けられていない場合、デスティネーションには、利用可能な最小のサービスレベルに基づいて課金されます。</block>
+  <block id="4bda389d4364c3a5f8e0002b0f1d48a6" category="section-title">FlexGroup に対する請求</block>
+  <block id="13a0b5a0cf8933d6ff04c50c4b84bac9" category="paragraph">FlexGroup については、 FlexGroup のアダプティブ QoS ポリシーに基づいて課金されます。コンスティチュエントの QoS ポリシーは考慮されません。</block>
+  <block id="c73be2f2aaeb82cecf852c49f3ea4cce" category="section-title">LUN の請求</block>
+  <block id="05741b4ec38077cef83606c70f08f335" category="paragraph">LUN の場合は、通常、 QoS ポリシーが適用されるボリュームと同じ請求パターンが適用されます。LUN に個別の QoS ポリシーが設定されている場合は、次の手順を実行します。</block>
+  <block id="cb1713b138a78b69b1922aa45131c2df" category="list-text">LUN のサイズは、その LUN に関連付けられているサービスレベルに基づいて消費されます。</block>
+  <block id="a0426b9dc757c80060e1b3657daf68d2" category="list-text">ボリュームに設定されているサービスレベルの QoS ポリシーに基づいて、ボリュームの残りのスペースがある場合はそのスペースに基づいて料金が発生します。</block>
+  <block id="1eba80d57d3138b5dae3b976f061f9d9" category="section-title">システムボリュームとルートボリューム</block>
+  <block id="076ac590232b28791043054102a0cc92" category="paragraph">システムボリュームおよびルートボリュームは、 Flex Subscription サービスの全体的な監視の一部として監視されますが、カウントまたは課金はされません。これらのボリュームの消費は、請求から除外されます。</block>
+  <block id="53a68c6a8d27bd5b379a7dc2368c5756" category="paragraph">このリリースノートでは、 NetApp Keystone Flex Subscription （ Flex サブスクリプション）サービスで導入された新機能と機能拡張、および既知の制限事項と修正について説明します。</block>
+  <block id="5c333f255c8b8fe478018b592064ef12" category="section-title">Cloud Volumes ONTAP の使用状況と課金の表示（ 2021 年 12 月 5 日）</block>
+  <block id="c3e11b13166205f01b3a91c292ed2ef8" category="paragraph">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）のお客様で、 Cloud Volumes ONTAP サブスクリプションもお持ちの場合は、 Flex サブスクリプションを使用して Cloud Volumes ONTAP の使用量を課金し、請求および消費の詳細を表示できます。Cloud Manager で Flex サブスクリプションアカウントを検出し、 Cloud Manager インターフェイスに詳細を表示できるようになりました。[ すべてのサービス ] 、 [ デジタルウォレット ] 、 [ Keystone Flex サブスクリプション *] タブをクリックすると、次のアクティビティを実行できます。</block>
+  <block id="1fe79890d855ed34bd46612c12db6061" category="list-text">Cloud Volumes ONTAP アカウントを Flex サブスクリプション ID にリンクして、課金レポートおよび容量使用状況レポート用にアカウントを関連付けます。</block>
+  <block id="3be9d287dfe7e07ebfb53a3c94eb47ad" category="paragraph">｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝ ： NetApp Keystone フレキシブルサブスクリプション（ Flex サブスクリプション）で提供される拡張機能をサポートするために、ネットアップサービスエンジンのさまざまなリリースで次の機能が導入されています。</block>
+  <block id="977c206c65138747de0f437c3e9da160" category="list-text">左側のナビゲーションペインの * 登録サービス * メニューの名前が * クラウドサービス * に変更されました。++</block>
+  <block id="60b9454b357d4028e1a44f67fe213faa" category="paragraph">｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝</block>
 </blocks>
