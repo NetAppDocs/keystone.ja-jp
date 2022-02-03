@@ -550,7 +550,6 @@
   <block id="672993dd6c7cdd1424762e0e618fd823" category="list-text">ジョブリストでジョブのステータスを確認します。</block>
   <block id="8e6fc98e081283f66ed3168150e5d498" category="list-text">ジョブが完了したら、「ユーザ」リストで共有のステータスを確認します。</block>
   <block id="a569539ebc048051428ba08b3174903c" category="summary">NetApp Service Engine の新機能</block>
-  <block id="d72649d2d9afbaa244cbf7f2572c81ea" category="doc">このリリースの NetApp Keystone Flex サブスクリプションサービスの新機能</block>
   <block id="93092acc18d3bdf5908f28cece6c30c1" category="section-title">NetApp Service Engine 2.1 で導入された機能</block>
   <block id="48d5f8cc22bf9548ea72bbe64efcd6eb" category="paragraph">このリリースの新機能には、 Flex サブスクリプション環境でのマルチテナンシーのサポート、およびアクセス頻度の低いデータを低コストのローカル階層またはクラウド階層に移動するための階層化機能が含まれています。</block>
   <block id="673e2d6c1773c639e536f87f964973bb" category="section-title">サービスプロバイダ向けの Flex サブスクリプションサービスのご紹介</block>
@@ -3112,4 +3111,5 @@
   <block id="3be9d287dfe7e07ebfb53a3c94eb47ad" category="paragraph">｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝ ： NetApp Keystone フレキシブルサブスクリプション（ Flex サブスクリプション）で提供される拡張機能をサポートするために、ネットアップサービスエンジンのさまざまなリリースで次の機能が導入されています。</block>
   <block id="977c206c65138747de0f437c3e9da160" category="list-text">左側のナビゲーションペインの * 登録サービス * メニューの名前が * クラウドサービス * に変更されました。++</block>
   <block id="60b9454b357d4028e1a44f67fe213faa" category="paragraph">｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝</block>
+  <block id="1754f916c701cd7759c35b6738e4fbc0" category="doc">このリリースの NetApp Keystone Flex サブスクリプションサービスの新機能</block>
 </blocks>
