@@ -3112,4 +3112,7 @@
   <block id="977c206c65138747de0f437c3e9da160" category="list-text">左側のナビゲーションペインの * 登録サービス * メニューの名前が * クラウドサービス * に変更されました。++</block>
   <block id="60b9454b357d4028e1a44f67fe213faa" category="paragraph">｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝</block>
   <block id="1754f916c701cd7759c35b6738e4fbc0" category="doc">このリリースの NetApp Keystone Flex サブスクリプションサービスの新機能</block>
+  <block id="c07c08a8bb12ddacd97c50e289cfeabb" category="paragraph">サブスクリプションの作成後、グラフにコミット済み容量が表示されるまでに 15 分ほど遅れが生じます。</block>
+  <block id="d56ad7d41c9c131e7177635c575214ef" category="paragraph">テナントサブスクリプションが作成され、（サブスクリプションの作成から 15 分以内に）すぐにレポートグラフがチェックされると、コミット済み容量は正しく報告されません。</block>
+  <block id="d5ef5fd8e9c00193aa18dda53d77e710" category="paragraph">サブスクリプションが作成されてから少なくとも 15 分後にレポートグラフをチェックしてください。</block>
 </blocks>
