@@ -1318,7 +1318,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-03 07:43:14 +0000">02/03/2022</time>
+    <time datetime="2022-02-15 11:22:47 +0000">02/15/2022</time>
     
   
 
@@ -1411,6 +1411,17 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">ネットアップが管理する環境では、容量レポートや請求レポートが不正確になる可能性があります</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ネットアップが管理する環境では、バックアップボリュームに LUN サイズの指標やサービスレベルが設定されていないことが原因で、 UI から生成された容量レポートや請求レポートに影響する可能性があります。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">問題を解決するために、 GSSC のサービスリクエストを提出します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>サブスクリプションの作成後、グラフにコミット済み容量が表示されるまでに 15 分ほど遅れが生じます。</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>テナントサブスクリプションが作成され、（サブスクリプションの作成から 15 分以内に）すぐにレポートグラフがチェックされると、コミット済み容量は正しく報告されません。</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>サブスクリプションが作成されてから少なくとも 15 分後にレポートグラフをチェックしてください。</p>
+</div></div></td>
 </tr>
 </tbody>
 </table>
