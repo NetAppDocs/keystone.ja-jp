@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: rn_fixed_issues.html 
+keywords: netapp, keystone, release notes, fixed issues, hot fixes 
+summary: NetApp Service Engine で解決済みの問題 
+---
+= NetApp Service Engine で解決済みの問題
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Service Engine の以前のリリースで見つかった次の問題は、 NetApp Keystone Flex サブスクリプションサービスを正常に使用するために解決されています。
+
+[cols="3*"]
+|===
+| 事象の説明 | 修正後 | バージョンで修正されました 
+
+
+| クラスタに FabricPool 以外のアグリゲートが存在した場合、ボリューム移動が自動的にトリガーされました。ボリュームやディスクに何らかの変更があると、ボリュームが別のアグリゲートに移動してしまいました。 | ボリューム移動はボリューム操作に対しては実行されません。 | NetApp Service Engine 2.2 の略 
+
+
+| ホストグループを削除すると、 NetApp Service Engine のユーザインターフェイス（ UI ）からホストグループが削除されますが、クラスタからは削除されません。 | 解決しました。 | NetApp Service Engine 2.2 の略 
+
+
+| NetApp Service Engine UI で、ディスクからホストグループをマッピング解除できましたが、クラスタからはマッピングを解除できませんでした。 | 解決しました。 | NetApp Service Engine 2.2 の略 
+
+
+| NetApp Service Engine UI からエクスポートポリシーを削除できませんでした。 | 変更したポリシーは UI から保存できます。 | NetApp Service Engine 2.2 の略 
+|===

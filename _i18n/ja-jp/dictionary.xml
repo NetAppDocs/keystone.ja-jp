@@ -3115,4 +3115,25 @@
   <block id="c07c08a8bb12ddacd97c50e289cfeabb" category="paragraph">サブスクリプションの作成後、グラフにコミット済み容量が表示されるまでに 15 分ほど遅れが生じます。</block>
   <block id="d56ad7d41c9c131e7177635c575214ef" category="paragraph">テナントサブスクリプションが作成され、（サブスクリプションの作成から 15 分以内に）すぐにレポートグラフがチェックされると、コミット済み容量は正しく報告されません。</block>
   <block id="d5ef5fd8e9c00193aa18dda53d77e710" category="paragraph">サブスクリプションが作成されてから少なくとも 15 分後にレポートグラフをチェックしてください。</block>
+  <block id="c158748a3e69a9b1c13a961e778ec66b" category="paragraph">パフォーマンスサービスレベルの変化によってボリュームが移動されることはありません</block>
+  <block id="1783b0f8371d7661f74ab43e7076b5ef" category="paragraph">同じクラスタ内の 2 つの異なるアグリゲートが 2 つのサービスレベルに使用されている場合、ボリュームのサービスレベルを別のアグリゲートに変更しても、ボリュームはもう一方のアグリゲートに移動されません。アダプティブ QoS ポリシーのみが適用されます。</block>
+  <block id="44d15e01a306125fbc9b5a504261f2c3" category="paragraph">FCP SVM を作成するには、 iSCSI のアクティブ化が必要です</block>
+  <block id="452ff3a7d441b2a105350eaeb7f00609" category="paragraph">Storage Virtual Machine （ SVM ）を作成し、 FCP サポートを有効にするには、 iSCSI インターフェイスをアクティブ化する必要があります。</block>
+  <block id="25af90aa8eda6df4dff2dd44b18198ab" category="paragraph">同じイニシエータを持つ複数のホストグループでの制限</block>
+  <block id="d5a6291a0291469140c54e77e4b9ffce" category="paragraph">同じイニシエータ名を使用して複数のホストグループを作成した場合、すべてのホストグループにディスクがマッピングされていれば、ディスクはクラスタ上の 1 つのホストグループにのみマッピングされます。</block>
+  <block id="b6727396faa1e4cf255c182ddc668fb9" category="summary">NetApp Service Engine で解決済みの問題</block>
+  <block id="33659bd1c7f876bf4e9d181ffeebe959" category="doc">NetApp Service Engine で解決済みの問題</block>
+  <block id="08742bb18ffa6199e545bb58248ee780" category="paragraph">NetApp Service Engine の以前のリリースで見つかった次の問題は、 NetApp Keystone Flex サブスクリプションサービスを正常に使用するために解決されています。</block>
+  <block id="3e6913b831218e5028d3a4532f801a65" category="cell">事象の説明</block>
+  <block id="ad7fffc52967fac2195a87d71ddfefed" category="cell">修正後</block>
+  <block id="c2d43cce4d21238bde127e51e8abf23a" category="cell">バージョンで修正されました</block>
+  <block id="31e90b75256e52a204cc966bbcfc52ec" category="cell">クラスタに FabricPool 以外のアグリゲートが存在した場合、ボリューム移動が自動的にトリガーされました。ボリュームやディスクに何らかの変更があると、ボリュームが別のアグリゲートに移動してしまいました。</block>
+  <block id="1a54cda28aa8548ea53bccf486f1fae0" category="cell">ボリューム移動はボリューム操作に対しては実行されません。</block>
+  <block id="2f7daf18759a2f708f89c67f9ea296e0" category="cell">NetApp Service Engine 2.2 の略</block>
+  <block id="5e5483d38497c131d13b217cfbe624a7" category="cell">ホストグループを削除すると、 NetApp Service Engine のユーザインターフェイス（ UI ）からホストグループが削除されますが、クラスタからは削除されません。</block>
+  <block id="af70f3681f4f3ba4f5b6940d7863a08b" category="cell">解決しました。</block>
+  <block id="1b0fa9db56937e5f35319d185505e24d" category="cell">NetApp Service Engine UI で、ディスクからホストグループをマッピング解除できましたが、クラスタからはマッピングを解除できませんでした。</block>
+  <block id="38e55e934e595693c4955be6041102a9" category="cell">NetApp Service Engine UI からエクスポートポリシーを削除できませんでした。</block>
+  <block id="a9835757eaec1d4ebc950e91ee095db7" category="cell">変更したポリシーは UI から保存できます。</block>
+  <block id="69464e68a5cdd0b54694ac92276fa1a3" category="sidebar">解決済みの問題です</block>
 </blocks>

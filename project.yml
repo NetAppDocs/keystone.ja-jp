@@ -50,6 +50,8 @@ sidebar:
     entries:
     - title: 新機能
       url: "/rn_whats_new.html"
+    - title: 解決済みの問題です
+      url: "/rn_fixed_issues.html"
     - title: 既知の問題
       url: "/rn_known_issues.html"
   - title: Flex サブスクリプション FAQ
