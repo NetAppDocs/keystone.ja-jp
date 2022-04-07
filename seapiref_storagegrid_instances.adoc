@@ -49,7 +49,7 @@ summary: Keystone StorageGRID インスタンス
 | 'admin_rest_uri | 文字列（ $URI ） | StorageGRID 管理ノードエンドポイント。 
 
 
-| '3_endpoints （エンドポイント） | 文字列（ $URI ） | StorageGRID エンドポイント。例： [`"https://s3.examplegrid.com"[]、  ] 
+| '3_endpoints （エンドポイント） | 文字列（ $URI ） | StorageGRID エンドポイント。例： [`"https://s3.examplegrid.com"[]、 "https://s3.location.company.com"`[] ] 
 
 
 | 「 GRID_NETWORK_USERNAME 」のように入力します | 文字列 | StorageGRID ユーザ名。 

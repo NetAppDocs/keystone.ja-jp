@@ -30,7 +30,7 @@ NetApp Keystone Flex サブスクリプション（ Flex サブスクリプシ�
 
 
 詳細については、 Cloud Manager のドキュメントにある次のリンクを参照してください。link:https://docs.netapp.com/us-en/occm/concept_licensing.html#keystone-flex-subscription["Keystone Flex サブスクリプション"]
-
+link:https://docs.netapp.com/us-en/occm/task_managing_licenses.html#manage-keystone-flex-subscriptions["Keystone Flex Subscriptions を管理します"]
 
 ｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝ ： NetApp Keystone フレキシブルサブスクリプション（ Flex サブスクリプション）で提供される拡張機能をサポートするために、ネットアップサービスエンジンのさまざまなリリースで次の機能が導入されています。
 

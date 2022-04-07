@@ -18,7 +18,7 @@ summary: Keystone がファイル共有を変更する
 
 NOTE: この方法を使用すると、可能な場合は共有を別のパフォーマンスレベルに移動できます。共有タイプを変更できるのは、サーバがそれぞれのサービスをサポートしている場合のみです。
 
-ファイル共有が動作状態である必要があります。ボリュームのステータスとそれらを運用するための手順については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html["ディスクを表示します"] および 
+ファイル共有が動作状態である必要があります。ボリュームのステータスとそれらを運用するための手順については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html["ディスクを表示します"] および link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states["オブジェクトの状態"]
 
 .手順
 . を表示します link:sewebiug_view_shares.html#view-shares["共有リスト"]。

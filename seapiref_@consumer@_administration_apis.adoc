@@ -18,15 +18,15 @@ summary: Keystone （コンシューマ）管理 API
 * サインインし、パスワードを設定し、認証トークンを更新します。
 * ジョブを取得してジョブの詳細を表示します。
 +
-を参照してください link:seapiref_jobs.html#retrieve-jobs["ジョブを取得します"] および 。
+を参照してください link:seapiref_jobs.html#retrieve-jobs["ジョブを取得します"] および link:seapiref_jobs.html#retrieve-a-job-by-job-id["ジョブごとの ID を取得します"]。
 
 * リージョンを読み出します。
 +
-を参照してください link:seapiref_regions.html#retrieve-regions["リージョンを読み出します"] および 。
+を参照してください link:seapiref_regions.html#retrieve-regions["リージョンを読み出します"] および link:seapiref_regions.html#retrieve-a-region-by-name["名前を使用してリージョンを取得します"]。
 
 * サービスレベルを取得します。
 +
-を参照してください link:seapiref_service_levels.html#retrieve-service-levels["サービスレベルを取得します"] および 。
+を参照してください link:seapiref_service_levels.html#retrieve-service-levels["サービスレベルを取得します"] および link:seapiref_service_levels.html#retrieve-service-levels-by-name["名前ごとにサービスレベルを取得します"]。
 
 * サブテナントを操作する。
 +
@@ -53,11 +53,11 @@ summary: Keystone （コンシューマ）管理 API
 
 * ユーザを取得します。
 +
-link:seapiref_users.html#retrieve-all-users["すべてのユーザを取得します"]、 および 。
+link:seapiref_users.html#retrieve-all-users["すべてのユーザを取得します"]、 link:seapiref_users.html#retrieve-a-user-by-id["ID を使用してユーザを取得します"]および link:seapiref_users.html#retrieve-a-user-by-user-name["ユーザ名でユーザを取得します"]。
 
 * ゾーンを取得します。
 +
-を参照してください link:seapiref_zones.html#retrieve-all-zones["すべてのゾーンを取得します"] および 
+を参照してください link:seapiref_zones.html#retrieve-all-zones["すべてのゾーンを取得します"] および link:seapiref_zones.html#retrieve-a-zone-by-name["ゾーンを名前で取得します"]
 
 
 

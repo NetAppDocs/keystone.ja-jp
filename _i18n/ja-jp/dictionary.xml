@@ -655,8 +655,6 @@
   <block id="36fb5c07f0b0b78c83b989e4caa15fcc" category="paragraph">要求本文の必須属性 : 'name</block>
   <block id="0ac8caaee0e274f9f7e62a7cb2ea8a71" category="paragraph">次の表に示すメソッドを使用して、サブテナントの ID を削除します。</block>
   <block id="a1d122241ce16ad6ba056c39a1e256fb" category="cell">ID で指定されているサブテナントを削除します。</block>
-  <block id="6f2229565e303cc23cce957bf5939451" category="summary">Keystone とオブジェクトストレージの連携</block>
-  <block id="491da0d77ad2ffda662200ba7b8bb157" category="doc">オブジェクトストレージの使用</block>
   <block id="29109dc5270edc08f080a36766a2a630" category="summary">Keystone によってホストグループが表示される</block>
   <block id="dde43dbd895f6357fc850b7fd654a02b" category="doc">ホストグループを操作する</block>
   <block id="53fbfda0d450075d52315d5b09703b67" category="paragraph">ホストグループは、ディスクへのアクセスを決定するために定義されます。ホストグループに割り当てられているイニシエータノードに基づいて、そのホストグループへのアクセスが決定されます。</block>
@@ -1074,8 +1072,6 @@
   <block id="7beff930d10499c66cc25c8911fe65dd" category="list-text">[ 完了（ Done ） ] をクリックします。共有を変更するジョブが作成されます。</block>
   <block id="4f6cfcf670602d0d3965cdfad9003301" category="paragraph">Modify share は非同期ジョブとして実行されます。可能です</block>
   <block id="c65f438b154be9ea4bf677eda0f12729" category="list-text">ジョブが完了したら、 [ 共有 ] リストで共有のステータスを確認します。</block>
-  <block id="91ddc16de769a9f97aed8824a94f4eff" category="summary">Keystone がブロックストレージで機能</block>
-  <block id="378550b5a79b735cc6584d4de45ce11c" category="doc">ブロックストレージの使用</block>
   <block id="e69a67ee29567c85d079a5da92e0021d" category="summary">Keystone によってディスクが変更される</block>
   <block id="99e386b08e85bd69bd5c2cf4790ac52c" category="paragraph">ディスク名、ホストグループマッピング、パフォーマンスサービスレベル、容量、および Snapshot ポリシーを変更できます。この方法を使用すると、ディスクを別のサービスレベルに移動できます（使用可能な場合）。</block>
   <block id="01e4e789a3c7b5698552e1195e37cb41" category="paragraph">ディスクが動作状態である必要があります。ボリュームのステータスとそれらを運用するための手順については、を参照してください <block ref="7e36d1153c26a010b4cff09ad58116d3" category="inline-link-macro-rx"></block> および <block ref="1dd0eaff8c7fecd5c80f4e2420f50d3b" category="inline-link-macro-rx"></block></block>
@@ -1166,19 +1162,8 @@
   <block id="da5d112bd273df54b63928cc644e122f" category="paragraph">イニシエータは、ホストグループの ID とイニシエータのエイリアスで削除できます。</block>
   <block id="47a6272e6bd00815d552cf2a794666db" category="paragraph">ホストグループにイニシエータを追加するときは、イニシエータがホストグループのプロトコルと一致している必要があります。iSCSI プロトコルを使用するホストグループには IQN を、 FC プロトコルを使用するホストグループには WWPN を使用する必要があります。</block>
   <block id="c9a807d15738b1059fe78763b600d98e" category="paragraph">ホストグループからイニシエータを削除すると、ホストグループのマッピング先のすべてのディスクが対象になります。</block>
-  <block id="d700018034ba1791acaf8b8f2d55cf06" category="summary">運用とサポート</block>
-  <block id="3f4323f493fa17b2a55be0cb5d3fc084" category="doc">Flex サブスクリプションの操作とサポート</block>
-  <block id="5418a29e251ddd457b45c4728c44077b" category="paragraph">使用しないで後で削除します</block>
-  <block id="4419434a1b65d14caa10786114db3112" category="paragraph">* Flex Subscription の利用状況をどのように表示しますか？ * NetApp Service Engine は、サブスクライブされているすべてのサービスに関する情報と、利用されている容量をダッシュボードに表示します。NetApp Service Engine の詳細については、を参照してください <block ref="8d35461a50e9d2cb480a76a035c5e522" category="inline-link-macro-rx"></block>。</block>
-  <block id="5a3115449a2b3065d5bb7484cfe4f999" category="paragraph">* サービスに関する問題はどのように報告すればよいですか？ * NetApp Keystone サポートには、次のようなさまざまなチャネルを通じてアクセスできます。</block>
   <block id="f65085dc4bb69a27d3e266d2c5504a2b" category="list-text">サポート E メール： mailto ： keystone.services@netapp.com[keystone.services@netapp.com^]</block>
   <block id="d0a96adfc74a1b7215d05e43eb9ac7eb" category="list-text">エスカレーションメール： mailto ： keystone.escalations@netapp.com[keystone.escalations@netapp.com^]</block>
-  <block id="00b8e318a80a143ca212b4f3b0cb449f" category="paragraph">* 新しいストレージサービスを注文できますか？ * はい、 NetApp Service Engine ポータルから新しいストレージサービスまたはストレージサービスへの拡張をリクエストできます。要求は、 NetApp Keystone 運用チームが処理してから使用可能になります。</block>
-  <block id="eff136c1ba2e8a2d6e4b14ddd6a80383" category="paragraph">* ストレージに関するコミットメントは即座に向上しますか？ * 必要な容量に応じて、容量がすでに導入されているかどうかを判断するか、追加の機器の発送と設置が必要かを判断します。</block>
-  <block id="f71fb6dbf8a02dfaed157786a5d1337e" category="paragraph">* ワークロードを階層間で移動できますか？ * はい、ユーザがワークロードの移動先の階層にサブスクライブされている場合、ワークロードを階層間で移動できます。ただし、原因によってパフォーマンスが低下する可能性があるため、上位の階層から下位の階層に移動することは推奨されません。このプロセスは、ファイル共有を編集し、サービスレベル設定を変更するだけで完了します。</block>
-  <block id="0d5e545b2de42575e5208d3abb79f68c" category="paragraph">* どのバージョンのソフトウェア（たとえば、 ONTAP ）がデフォルトとしてインストールされていますか。 * 登録されているサービス階層（ファイルサービスとブロックサービスを使用する ONTAP 、ブロック用の SANtricity 、オブジェクト用の StorageGRID など）に応じて、サポートチームはセキュリティや機能の問題なしで最新の安定版リリースをインストールします。</block>
-  <block id="f02a13196264a51fda1b26c5e2a551ec" category="paragraph">* 特定のソフトウェアバージョンを要求できますか。 * いいえNetApp Keystone は、顧客ベース全体でソフトウェアバージョンを標準化しています。</block>
-  <block id="1a5e72df744341345327e87c09268047" category="paragraph">* ソフトウェアのアップグレードに関する情報は提供されますか。 * はい。すべての保守 / アップグレード作業は、 NetApp Keystone 成功マネージャがお客様と相互に合意した時間に連絡し、スケジュールされます。</block>
   <block id="e30f63950de5eb7cabdf63338b63b720" category="summary">Keystone オブジェクトストレージ API</block>
   <block id="e714b8004e2284dd893321431bc030df" category="doc">オブジェクトストレージ API</block>
   <block id="37deb72473c94f177d40086068ef7480" category="paragraph">このセクションでは、オブジェクトストレージ、オブジェクトストレージユーザ、およびオブジェクトストレージグループを管理するための API を提供します。</block>
@@ -1474,8 +1459,6 @@
   <block id="338ff852a30204809c638053667e5bc0" category="paragraph">次の表に示す方法を使用して、ゾーンを削除します。</block>
   <block id="76bb4544baa185e4267cc26594a9e9d1" category="cell">名前で識別された単一のゾーンを削除します。最初に、ゾーン内のすべてのストレージリソースを削除する必要があります。</block>
   <block id="ad08458bea3ad21f1766baa2eae4bb9f" category="paragraph">削除に成功した場合に返す内容がありません。</block>
-  <block id="eb7dc54ae67b4113bd8f2e3cfdd3cd99" category="summary">Keystone がユーザを管理</block>
-  <block id="93e4e8b56119093f81b4aed41ceeea38" category="doc">ユーザの管理</block>
   <block id="7373680aa88b367bc7b0be53010ec82c" category="summary">Keystone とオブジェクトストレージの連携の概要</block>
   <block id="a57a35a8efe969d50a1f98ce9971fc96" category="paragraph">オブジェクトストレージには、オブジェクトストレージサービスのサブスクリプションが必要です。サブスクリプションの一部として使用可能なオブジェクトストレージサービスの場合は、ストレージを使用する前に初期化する必要があります。</block>
   <block id="7c6f436812b25d3ddbf2d6db58ada2bc" category="paragraph">オブジェクトストレージの場合、オブジェクトは S3 バケットに格納されます。S3 バケットへのアクセスは、オブジェクトストレージグループに設定された権限を使用して管理されます。オブジェクトストレージユーザには、グループメンバーシップから権限を継承する 1 つ以上のオブジェクトストレージグループのメンバーシップが付与されます。</block>
@@ -1627,21 +1610,7 @@
   <block id="aec784453871c969db30ddf8954f7b70" category="paragraph">Flex サブスクリプションには、次の利点があります。</block>
   <block id="1a8f20342523eaa8f9195dffa647161c" category="list-text">コンプライアンス、パフォーマンス、セキュリティを適切に管理できます</block>
   <block id="a0a35eef0076381c8b78bfe2cdbed28b" category="paragraph"><block ref="a0a35eef0076381c8b78bfe2cdbed28b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="161ad817030874893546af0d58614618" category="summary">Keystone とクラウドマネージャの連携</block>
-  <block id="dce9eeb81c0ba57d0b2f61915e5252c5" category="doc">Cloud Manager の使用</block>
-  <block id="db86d84f317b816ba1a698ab59703ba1" category="paragraph">NetApp Service Engine は NetApp Cloud Manager に接続できます。このセクションでは、ネットアップ管理者ユーザが次のタスクを実行する方法について説明します。</block>
-  <block id="213cfa9430289b17153b74af2bf4838c" category="list-text">Cloud Manager に接続します</block>
-  <block id="0d5eb8aed41b9ec328e17b1255fb7adc" category="list-text">Cloud Manager への接続のステータスを確認します</block>
   <block id="64cb5f10c6949d975da63108f4244697" category="paragraph">次のものが必要です。</block>
-  <block id="ed8f5a635964432920379bf2e5e8627d" category="list-text">Cloud Manager API エンドポイントの URL</block>
-  <block id="d339114e912d2c7ce09638812f77dd96" category="list-text">Cloud Manager SaaS サービスのクライアント ID</block>
-  <block id="5f448ec8d9c86c57e21f44790cfe7aa2" category="list-text">Cloud Manager SaaS サービスの更新トークン</block>
-  <block id="3cb7a7d3c577f380ab4045baaceb18dc" category="list-text">メニューから Administration &gt; OCCM Connection を選択します。</block>
-  <block id="91ff0584115ddaface4284e480ac8de4" category="list-text">OCCM API エンドポイントの URL を指定します</block>
-  <block id="05ce373a0178041c09cbd3115554885e" category="list-text">クライアント ID を入力します。</block>
-  <block id="2a10e639a91338d915c46d1dcfb06495" category="list-text">OCCM の更新トークンを入力します。</block>
-  <block id="f8666bf87bae2c9aef8090ddc6d3b590" category="inline-link"><block ref="f8666bf87bae2c9aef8090ddc6d3b590" category="inline-link-rx"></block></block>
-  <block id="e582f390ab8b6e0709976f564e66d228" category="paragraph"><block ref="e582f390ab8b6e0709976f564e66d228" category="inline-link-rx"></block></block>
   <block id="02154846d04868cd579969e490705c31" category="summary">NetApp サービスエンジン Web インターフェイスにログインします</block>
   <block id="6502fca6147310b6dade74cf980b775c" category="doc">NetApp Service Engine Web インターフェイスにログインします</block>
   <block id="61c7ff0fadf9ef207b62f81c88cd67aa" category="paragraph">NetApp Service Engine Web インターフェイスを使用するには、アカウントが必要です。アカウントには、権限を決定するために NetApp Service Engine 管理者が実行できる 1 つ以上のロールが割り当てられます。このロールによって、 NetApp Service Engine ポータルで実行できるアクティビティが決まります。</block>
@@ -1682,8 +1651,6 @@
   <block id="a124e126039367350c2bd3e2dffea7f4" category="paragraph">ログインに成功すると、 NetApp Service Engine Web インターフェイスがロードされ、 Flex Subscription ダッシュボードが表示されます。GUI の概要については、を参照してください <block ref="2f9b8af2c7d5dd961826f7a81f97b9de" category="inline-link-macro-rx"></block>。</block>
   <block id="9cca15dcee862bea12a0f1b1f2c84fe4" category="list-text">インターフェイスからログアウトするには、ユーザーアイコンをクリックし、 * サインアウト * をクリックします。</block>
   <block id="2f67801bbc64ccc68a6a7e45990d9f24" category="paragraph"><block ref="2f67801bbc64ccc68a6a7e45990d9f24" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="189883a9b3994b084f540d287e546a8e" category="summary">Keystone を開始する</block>
-  <block id="cb59b87e00d11222bfd9159d0d23836f" category="doc">はじめに</block>
   <block id="ee966310f09723c05298f5d7d7aa6f27" category="summary">Snapshot からファイル共有を作成します</block>
   <block id="298c17df37c9568ee5167ba1ad189316" category="paragraph">既存の Snapshot から新しいファイル共有を作成できます。Snapshot からクローニングされた新しいファイル共有には、 Snapshot の作成元のファイル共有と同じプロパティが含まれます。</block>
   <block id="ba791218e3e41923099db15abe057c18" category="list-text">左側のナビゲーションペインで * ファイルサービス * を選択し、 * 共有 * を選択します。</block>
@@ -1825,7 +1792,6 @@
   <block id="468c95ce8260e42060992d5c99daa33b" category="paragraph">Azure NetApp アカウントを削除するには、このメソッドを使用します。</block>
   <block id="03ec8f9354501e9c2c8a10dfba0b8819" category="list-text">リストから Azure NetApp アカウントを探し、削除アイコンをクリックします。</block>
   <block id="d1bd03dea5e50660d5be4ae12156bba8" category="list-text">削除の確認ダイアログボックスで、削除する Azure NetApp アカウントの名前を入力します。</block>
-  <block id="603f84c5ec6ba84bbd05890b124d6501" category="summary">Keystone コンシューマ API</block>
   <block id="a597fcc752926830c3e3aec481c0b755" category="summary">Keystone がサブテナントを管理する</block>
   <block id="2125e8d6093cd73490e417b762ef2aa9" category="paragraph">NetApp Service Engine を使用して、テナントとサブテナントを表示および管理できます。初期のテナンシーは、ネットアップのサポート部門がサービスプロバイダやパートナー、テナントに合わせてセットアップします。リージョン、ゾーン、およびサブスクリプションはすでにサポートによって設定されており、テナントとサブテナントをテナントの下に作成するときに使用できます。</block>
   <block id="2369c5c1246ccd710ecb61d29b2e3ff5" category="paragraph">パートナー管理者の場合は、テナントの作成、変更、削除を * Administration * &gt; * tenants * から実行できます。テナント管理者は、各自のテナントサブスクリプションとサブテナントのみを表示できます。パートナーテナンシーのテナントに対しては、ネットワークを定義することもできます。</block>
@@ -2118,10 +2084,6 @@
   <block id="d28310f59eb153f28bc11be01c1ce4ab" category="list-text">使用しているプロトコル（ NFS 、 CIFS ）</block>
   <block id="3f0c23d19cad0108dad2e160c8794205" category="list-text">CIFS サーバの名前（該当する場合）を指定します。</block>
   <block id="7851f0fd079b9408c0e43475b6a7c5ef" category="paragraph">リストの機能の使用方法の詳細については、を参照してください <block ref="06c69cf03ada5a3283b333d7ac5a7d25" category="inline-link-macro-rx"></block>。</block>
-  <block id="b9f431015005979712525d673ef8e68a" category="summary">Keystone の追加情報の入手先</block>
-  <block id="3887d417240a72ab69f6d0301efd3b2b" category="doc">追加情報の検索場所</block>
-  <block id="bc4fe2352063642d68529f2aa0ca7ca3" category="paragraph">ネットアップの製品マニュアル</block>
-  <block id="2e85fc867cab94d246e0bf6043b361cd" category="paragraph"><block ref="2e85fc867cab94d246e0bf6043b361cd" category="inline-link-rx"></block></block>
   <block id="efe1af10fee306e4da483388593432ed" category="summary">Keystone ファイルサービス API</block>
   <block id="d4645c3c664d980b7130691e0352abce" category="paragraph">ファイルサービス API を使用して、ファイルサーバとファイル共有を表示および管理できます。</block>
   <block id="47b6bb2cce100732829dd417cfe27e9d" category="paragraph">ファイル共有を作成する前に、ファイルサーバを作成してホストする必要があります。</block>
@@ -2168,7 +2130,6 @@
   <block id="6e38eaf3c64cc8f5260081b7bb3a1eb2" category="paragraph">また、応答を並べ替えたり、並べ替えたりすることもできます。</block>
   <block id="01d1f93c48d9fc7d410a036fa64ec37c" category="list-text">* Sort_by_. * 指定された属性を使用してレコードを並べ替えます。たとえば、作成日でソートするには、 Created を指定します。</block>
   <block id="5fa4c576a4973e9d5d057e34b449b0d2" category="list-text">*Order_By. * 昇順 (asc) または降順 (desc) の順序でレコードをオーダーします。</block>
-  <block id="7a59e920c74c196d0f57ba4b6a8d1185" category="summary">Keystone 管理者 API</block>
   <block id="85dac96112743e58b2685d4be2d26037" category="summary">Keystone Azure 容量プールを管理する</block>
   <block id="c8b1502f7cf0ad4e087f224a2c408756" category="doc">Azure 容量プールの管理</block>
   <block id="6cd169fe355cb205cd1b4f241e34baab" category="paragraph">このセクションでは、 Azure の容量プールを管理する方法について説明します。</block>
@@ -2284,14 +2245,6 @@
   <block id="6aabc28e97e5b07ba5874eb058e7c779" category="paragraph">Azure ボリュームを削除するには、このメソッドを使用します。</block>
   <block id="d473b43cbc289b5d22f96515d63627bd" category="list-text">リストから Azure ボリュームを探して、削除アイコンをクリックします。</block>
   <block id="b88fffaac19d5aeb6ed0d2a1b5b615d8" category="list-text">削除の確認ダイアログボックスで、削除する Azure ボリュームの名前を入力します。</block>
-  <block id="5b2f0bd4fc7bb59187f107fcb9a848fa" category="summary">Keystone サービス要求を管理する</block>
-  <block id="cbf99d0314c4530c4f7c8155643e7e2d" category="doc">サービスリクエストの管理</block>
-  <block id="57ca22f6724957bd8f72afe27628993a" category="summary">Keystone 管理ユーザの概要</block>
-  <block id="e8ff30361af2dd520948eb0660b6d477" category="paragraph">ここでは、ユーザを管理する方法について説明します。</block>
-  <block id="8c843ad1aee6e372e5633948a6640fbe" category="admonition">ユーザを管理するには、顧客管理者アクセスが必要です。</block>
-  <block id="9d83936f36f2c3a28508e6773d80030b" category="list-text">ユーザのリストを表示します。</block>
-  <block id="548af37b2544b71473c1539bb4a68df9" category="list-text">ユーザを追加します。</block>
-  <block id="1cebf46707524678b62437238f0c5bb5" category="list-text">名、姓、表示名、ユーザーがアクセス権を持つテナント、およびこれらのテナント内でのユーザーの役割など、ユーザーの詳細を変更します。</block>
   <block id="9e6a9bc413f130a4dbd0233b18e642e1" category="list-text">ユーザを削除します。</block>
   <block id="ac7d21b63f88f561c798cfcfabd678f4" category="summary">NetApp Service Engine / Self-Service Access Portal</block>
   <block id="fb7268175d0ac71e5fdf71ab277aca4b" category="doc">NetApp Service Engine / セルフサービスアクセスポータル</block>
@@ -2448,8 +2401,6 @@
   <block id="f19d5dd3a3e7b41ea53b7235d13b34ce" category="list-text">サブテナント、ゾーン、サブネットの名前、 VLAN 、およびサブネットの CIDR を指定します。ルート仕様とタグを追加することもできます。</block>
   <block id="48317d60b65cfa7212c3f635b1d1ee18" category="admonition">ルート仕様では、 * Destination * は一意で、指定された VLAN の一部である必要があります。また、複数のルートで * Metric * に同じ値を設定できます。</block>
   <block id="040baf1e68e10c200531c74cedffdcde" category="admonition">サブネットは編集または削除できません。編集できるのは、関連付けられているタグだけです。</block>
-  <block id="b268d7d0d9afd8d193fa80aa1622a161" category="summary">Keystone とファイルサービスの連携</block>
-  <block id="a5ad8b42722c291ff0a2b6ad207fa790" category="doc">ファイルサービスの使用</block>
   <block id="7fdb44c4efca9cb2f8ad3b4db2328a89" category="summary">Keystone バックアップ API</block>
   <block id="160dacdfe2b74f89864f2e85eafc1976" category="doc">バックアップ API</block>
   <block id="0d7d4c02eb916025bec65984e23e01bf" category="paragraph">バックアップ API を使用して、環境内のボリューム（ファイル共有およびディスク）の Snapshot （バックアップまたはリカバリポイント）を表示および管理することができます。</block>
@@ -2867,8 +2818,6 @@
   <block id="d900b34f4ec7d4c5aedb24b1b84b6642" category="list-text">メニューから * クラウドサービス * を選択します。</block>
   <block id="b9ff3c79bce6a74407aef38bc921b4d6" category="list-text">Google Cloud のクラウドサービスの作成ページで、サービスを作成するサブテナントを選択し、名前と GCP プロジェクト番号を追加します。</block>
   <block id="304a1797d3d8fe020002005a39cf8fd1" category="list-text">[ 作成（ Create ） ] をクリックします。作成されると、クラウドサービスページのサービス状態が「成功」に変わります。</block>
-  <block id="09d86387c57736659bbab38839c5f2da" category="summary">Keystone がクラウドサービスを管理する</block>
-  <block id="27ee5c08c2a81e9de81aff03196f5e43" category="doc">クラウドサービスの管理</block>
   <block id="ff73f07d33b95ca8cfc1150265940594" category="section-title">使用状況に対する請求はどこで確認できますか？</block>
   <block id="91c4b877df1393baf62833e39a8a1140" category="paragraph">過去 3 か月間の月額プランの合計月額料金は、ダッシュボードの * 月額料金 * ウィジェットで確認できます。詳細な請求情報を表示するには、ウィジェットをクリックするか、 * Administration * &gt; * Billing * に移動します。</block>
   <block id="6f3775f5739b5cdd88b89ba7d8a013e2" category="list-text">ダッシュボードビュー：使用状況、請求、アラート、およびサービスリクエストを監視するさまざまなツールが表示されます。</block>
@@ -3078,9 +3027,6 @@
   <block id="e59aa159238c2e5f491468dabdfd0b62" category="list-text">アップグレードとパッチ</block>
   <block id="e674e65192e6527dabaf52c23f514da4" category="section-title">ファイルサービス</block>
   <block id="73cf2790a3f92d26764722174d70cf34" category="paragraph">* サポートされているプロトコル * ： NFS 、 CIFS 、 iSCSI 、 FC</block>
-  <block id="c5ffad16a8fef3a87dd99f3ee19c48b2" category="summary">Keystone と Cloud Manager の統合</block>
-  <block id="86ab31ff62a64b275109761b712760ae" category="doc">Cloud Volumes ONTAP の使用において、 Flex サブスクリプションの利点はどのようになりますか</block>
-  <block id="12ab7d2a453cfba801dd3a48030aa11a" category="paragraph">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）サービスへのサブスクリプションは、 Cloud Volumes ONTAP の使用状況と課金のニーズを促進します。NetApp Keystone Flex サブスクリプションをお持ちで、 Cloud Volumes ONTAP サブスクリプションもお持ちの場合は、 Flex サブスクリプションを使用して Cloud Volumes ONTAP の使用量を課金し、課金と消費の詳細を表示できます。</block>
   <block id="bc9d99b4b5c353814419ac4f3a7bcbb9" category="inline-link-macro">NetApp Keystone</block>
   <block id="6365a10673e69e63960434eee08936a3" category="paragraph">NetApp Keystone Flex サブスクリプションは、 NetApp Keystone サービスの一部です。NetApp Keystone は、オンプレミスの CAPEX （設備投資）サービスを提供するポートフォリオで、 NetApp Keystone Flex Pay や NetApp Keystone Flex Subscription サービスなど、クラウドへの移行をスムーズに進めることができます。NetApp Keystone は、オンプレミスとクラウドにわたってストレージサービスを提供することで、シームレスなハイブリッドクラウドエクスペリエンスを実現します。NetApp Keystone の詳細については、を参照してください <block ref="17e1729d4a77db88a0bc2ee74a2207b1" category="inline-link-macro-rx"></block></block>
   <block id="84df3063bf7c9a845b2944da17dc7ada" category="paragraph">NetApp Keystone Flex サブスクリプションの詳細については、を参照してください <block ref="dd62aedd4673206c815c56eddc5536f2" category="inline-link-macro-rx"></block></block>
@@ -3136,4 +3082,6 @@
   <block id="38e55e934e595693c4955be6041102a9" category="cell">NetApp Service Engine UI からエクスポートポリシーを削除できませんでした。</block>
   <block id="a9835757eaec1d4ebc950e91ee095db7" category="cell">変更したポリシーは UI から保存できます。</block>
   <block id="69464e68a5cdd0b54694ac92276fa1a3" category="sidebar">解決済みの問題です</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
+  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
 </blocks>

@@ -34,7 +34,7 @@ NOTE: アドホック（スケジュールされていない）バックアッ�
 
 == バックアップオブジェクトを作成する
 
-ボリュームの Snapshot を作成するには、作成時にバックアップポリシーを定義します link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html["ファイル共有を作成します"] または 。
+ボリュームの Snapshot を作成するには、作成時にバックアップポリシーを定義します link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html["ファイル共有を作成します"] または link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_disk.html["ディスクを作成します"]。
 
 .手順
 . Enable * Backup Policy * 」を選択します。

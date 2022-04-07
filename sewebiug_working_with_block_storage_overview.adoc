@@ -19,7 +19,7 @@ summary: Keystone ブロックストレージの使用の概要
 
 ブロックストアを使用するには初期化する必要があります。ブロックストレージが使用可能で初期化されていない場合は、ディスク作成プロセスの一環としてブロックストアに最初のディスクを作成する前に初期化できます。
 
-ディスクはブロックストア上に作成されます。ディスクには、容量や関連するサービスレベルなど、設定可能な多数の属性があります。などの DP オプション link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots["Snapshot"] および  ディスクに対して有効にできます。
+ディスクはブロックストア上に作成されます。ディスクには、容量や関連するサービスレベルなど、設定可能な多数の属性があります。などの DP オプション link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots["Snapshot"] および link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["ディザスタリカバリ"] ディスクに対して有効にできます。
 
 ディスクへのアクセスはホストグループによって制御されます。ホストグループは、イニシエータのノード名で構成されます。 1 つ以上のホストグループをディスクにマッピングすることで、ディスクにアクセスできるイニシエータを定義できます。
 
