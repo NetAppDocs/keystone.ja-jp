@@ -6,6 +6,7 @@ summary: Keystone がオブジェクトストレージユーザを変更する
 ---
 = オブジェクトストレージユーザを変更する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

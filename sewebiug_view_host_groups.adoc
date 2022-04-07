@@ -6,6 +6,7 @@ summary: Keystone によってホストグループが表示される
 ---
 = ホストグループを操作する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

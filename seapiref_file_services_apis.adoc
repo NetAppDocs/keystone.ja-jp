@@ -6,6 +6,7 @@ summary: Keystone ファイルサービス API
 ---
 = ファイルサービス API
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

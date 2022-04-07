@@ -6,6 +6,7 @@ summary: Keystone がサブテナントを管理する
 ---
 = テナントとサブテナントを管理する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

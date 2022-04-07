@@ -6,6 +6,7 @@ summary: Keystone は、ファイル共有のアドホックスナップショ�
 ---
 = ファイル共有のアドホックスナップショットを作成します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

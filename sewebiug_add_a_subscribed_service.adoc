@@ -6,6 +6,7 @@ summary: Keystone がクラウドサービスを追加
 ---
 = クラウドサービスを追加
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

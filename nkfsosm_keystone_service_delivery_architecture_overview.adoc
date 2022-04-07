@@ -6,6 +6,7 @@ summary: サービス提供アーキテクチャの概要
 ---
 = Flex サブスクリプションインフラストラクチャ
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

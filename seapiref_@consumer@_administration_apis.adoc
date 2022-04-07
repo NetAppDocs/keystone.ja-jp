@@ -6,6 +6,7 @@ summary: Keystone （コンシューマ）管理 API
 ---
 = （コンシューマ）管理 API
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

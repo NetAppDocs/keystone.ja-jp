@@ -6,6 +6,7 @@ summary: Keystone が新しいファイル共有を作成
 ---
 = ファイル共有を作成します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

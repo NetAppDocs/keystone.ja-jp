@@ -6,6 +6,7 @@ summary: Keystone のレポートの処理
 ---
 = レポートを表示します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

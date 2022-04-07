@@ -6,6 +6,7 @@ summary: Keystone によってオブジェクトストレージグループと�
 ---
 = オブジェクトストレージグループとユーザを表示します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

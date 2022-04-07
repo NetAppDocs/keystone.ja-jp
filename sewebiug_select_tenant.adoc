@@ -6,6 +6,7 @@ summary: Keystone でテナントを選択
 ---
 = テナントを選択します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

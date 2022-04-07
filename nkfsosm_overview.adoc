@@ -6,6 +6,7 @@ summary: NetApp Flex サブスクリプションの概要
 ---
 = 運用モデル、役割、担当業務
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

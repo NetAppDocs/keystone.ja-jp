@@ -6,6 +6,7 @@ summary: Keystone がサービスリクエストを発行します
 ---
 = サービスリクエストを提出します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

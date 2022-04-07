@@ -6,6 +6,7 @@ summary: 請求書の詳細を表示およびダウンロードします
 ---
 = 請求を表示します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

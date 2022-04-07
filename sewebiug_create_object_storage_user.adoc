@@ -6,6 +6,7 @@ summary: Keystone オブジェクトストレージユーザを作成
 ---
 = Create Object Storage User の略
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

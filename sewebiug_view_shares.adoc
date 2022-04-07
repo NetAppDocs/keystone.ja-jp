@@ -6,6 +6,7 @@ summary: Keystone が共有を表示します
 ---
 = ファイル共有を表示します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

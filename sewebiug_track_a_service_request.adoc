@@ -6,6 +6,7 @@ summary: Keystone はサービスリクエストを追跡します
 ---
 = サービスリクエストを追跡します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone リージョン
 ---
 = リージョン
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

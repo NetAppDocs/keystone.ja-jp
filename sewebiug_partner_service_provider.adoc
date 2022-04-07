@@ -6,6 +6,7 @@ summary: ネットアップサービスエンジンパートナー、サービ�
 ---
 = サービスプロバイダと顧客の役割と運用
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

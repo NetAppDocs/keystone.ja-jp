@@ -6,6 +6,7 @@ summary: サブネットを作成および削除します
 ---
 = テナントとサブテナントのネットワーク設定を定義する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

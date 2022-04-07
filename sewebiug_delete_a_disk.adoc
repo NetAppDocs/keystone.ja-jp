@@ -6,6 +6,7 @@ summary: Keystone によってディスクが削除される
 ---
 = ディスクを削除します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

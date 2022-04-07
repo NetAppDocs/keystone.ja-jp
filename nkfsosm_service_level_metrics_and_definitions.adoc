@@ -6,6 +6,7 @@ summary: Keystone のサービスレベルの指標と定義
 ---
 = サービスレベルの指標と定義
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

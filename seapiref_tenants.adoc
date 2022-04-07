@@ -6,6 +6,7 @@ summary: Keystone テナント
 ---
 = テナント
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

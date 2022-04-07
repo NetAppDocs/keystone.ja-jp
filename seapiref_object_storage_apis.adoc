@@ -6,6 +6,7 @@ summary: Keystone オブジェクトストレージ API
 ---
 = オブジェクトストレージ API
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

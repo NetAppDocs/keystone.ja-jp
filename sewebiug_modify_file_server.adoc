@@ -6,6 +6,7 @@ summary: ファイルサーバを変更します
 ---
 = ファイルサーバを変更します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

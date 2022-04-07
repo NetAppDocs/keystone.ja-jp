@@ -6,6 +6,7 @@ summary: Keystone の階層化
 ---
 = 階層化
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

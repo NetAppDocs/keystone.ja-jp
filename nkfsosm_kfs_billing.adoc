@@ -6,6 +6,7 @@ summary: Keystone Flex サブスクリプションの課金
 ---
 = Flex サブスクリプションの課金
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

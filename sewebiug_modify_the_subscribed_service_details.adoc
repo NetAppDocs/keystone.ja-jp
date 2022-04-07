@@ -6,6 +6,7 @@ summary: Keystone がクラウドサービスの詳細を変更
 ---
 = クラウドサービスの詳細を変更します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -5,6 +5,7 @@ keywords: netapp, keystone, global, services, support, center, gssc,
 summary: ネットアップグローバルサービスおよびサポートセンター（ GSSC ） 
 ---
 = Flex サブスクリプションサービスオペレーション
+:allow-uri-read: 
 
 
 [role="lead"]

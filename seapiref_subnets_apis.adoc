@@ -6,6 +6,7 @@ summary: Keystone ネットワーク API
 ---
 = サブネット API を使用してネットワーク設定を定義します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

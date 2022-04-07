@@ -6,6 +6,7 @@ summary: Keystone Azure 容量プールを管理する
 ---
 = Azure 容量プールの管理
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

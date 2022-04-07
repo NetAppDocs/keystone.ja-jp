@@ -6,6 +6,7 @@ summary: Keystone が新しいディスクを作成
 ---
 = ディスクを作成します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

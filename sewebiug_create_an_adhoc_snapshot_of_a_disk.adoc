@@ -6,6 +6,7 @@ summary: Keystone は、ディスクのアドホックスナップショット�
 ---
 = ディスクのアドホックスナップショットを作成します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

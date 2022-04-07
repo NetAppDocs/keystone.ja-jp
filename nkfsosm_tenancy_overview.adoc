@@ -6,6 +6,7 @@ summary: NetApp Keystone フレックスサブスクリプションテナンシ�
 ---
 = Flex サブスクリプションのテナンシーとマルチテナンシー
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone バックアップ API
 ---
 = バックアップ API
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

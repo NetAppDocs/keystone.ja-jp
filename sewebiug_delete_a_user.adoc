@@ -6,6 +6,7 @@ summary: Keystone によってユーザが削除される
 ---
 = ユーザを削除します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

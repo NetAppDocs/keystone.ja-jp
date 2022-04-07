@@ -6,6 +6,7 @@ summary: Keystone ゾーン
 ---
 = ゾーン
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: NetApp サービスエンジン Web インターフェイスにログ�
 ---
 = NetApp Service Engine Web インターフェイスにログインします
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

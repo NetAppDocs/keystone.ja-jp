@@ -6,6 +6,7 @@ summary: Keystone ファイルサーバを削除する
 ---
 = ファイルサーバを削除します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

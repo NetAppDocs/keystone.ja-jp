@@ -6,6 +6,7 @@ summary: Keystone レポート API
 ---
 = レポート用 API
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

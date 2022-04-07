@@ -6,6 +6,7 @@ summary: Keystone Flex サブスクリプションのパフォーマンス
 ---
 = パフォーマンスサービスレベル
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

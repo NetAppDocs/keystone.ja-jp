@@ -6,6 +6,7 @@ summary: ネットアップサービスエンジン REST API
 ---
 = NetApp Service Engine REST API
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

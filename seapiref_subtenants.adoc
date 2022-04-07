@@ -6,6 +6,7 @@ summary: Keystone サブテナント
 ---
 = サブテナント
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

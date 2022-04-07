@@ -6,6 +6,7 @@ summary: Keystone がバケットを作成
 ---
 = バケットを作成する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone Flex サブスクリプションと Equinix
 ---
 = Equinix を基盤とする Flex サブスクリプション
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

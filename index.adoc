@@ -6,6 +6,7 @@ summary: Keystone ドキュメントポータルへようこそ。
 ---
 = NetApp Keystone Flex サブスクリプションのドキュメント
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

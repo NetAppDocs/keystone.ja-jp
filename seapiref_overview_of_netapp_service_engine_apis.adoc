@@ -6,6 +6,7 @@ summary: ネットアップサービスエンジン API の概要
 ---
 = NetApp Service Engine API の概要
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

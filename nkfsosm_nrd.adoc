@@ -6,6 +6,7 @@ summary: Keystone Flex サブスクリプションと Equinix
 ---
 = 返却不要のディスク製品です
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

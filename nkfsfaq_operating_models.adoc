@@ -6,6 +6,7 @@ summary: 動作モデル
 ---
 = 運用モデルと担当業務
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone がファイル共有を変更する
 ---
 = ファイル共有を変更する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone はユーザの詳細を変更します
 ---
 = ユーザの詳細を変更します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

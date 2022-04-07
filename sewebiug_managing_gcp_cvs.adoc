@@ -6,6 +6,7 @@ summary: Google Cloud Platform でのクラウドボリュームサブスクリ�
 ---
 = Cloud Volumes Service for GCP を管理する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

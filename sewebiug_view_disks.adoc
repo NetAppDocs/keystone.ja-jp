@@ -6,6 +6,7 @@ summary: Keystone によってディスクが表示される
 ---
 = ディスクを表示します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

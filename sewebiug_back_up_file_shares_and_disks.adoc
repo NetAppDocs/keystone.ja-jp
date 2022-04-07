@@ -6,6 +6,7 @@ summary: バックアップを作成、変更、削除したり、バックア�
 ---
 = ファイル共有とディスクをバックアップする
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

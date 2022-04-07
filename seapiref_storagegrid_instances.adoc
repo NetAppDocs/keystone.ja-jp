@@ -6,6 +6,7 @@ summary: Keystone StorageGRID インスタンス
 ---
 = StorageGRID インスタンス
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone サービスの容量の定義
 ---
 = Flex サブスクリプションサービスの容量の定義
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

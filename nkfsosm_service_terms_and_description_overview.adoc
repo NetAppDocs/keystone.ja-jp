@@ -6,6 +6,7 @@ summary: Keystone サービスの用語と概要の概要
 ---
 = Flex サブスクリプションサービスの契約条件と説明
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: サービス提供の詳細
 ---
 = Flex サブスクリプションサービスの詳細
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone ブロックストレージ API
 ---
 = ブロックストレージ API
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

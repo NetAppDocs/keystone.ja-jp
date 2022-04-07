@@ -6,6 +6,7 @@ summary: お客様が Active IQ で目にする可能性があるキーストー
 ---
 = Flex サブスクリプションのお客様は Active IQ で何を表示できますか。
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

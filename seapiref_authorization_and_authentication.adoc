@@ -6,6 +6,7 @@ summary: Keystone の承認と認証
 ---
 = 許可と認証
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

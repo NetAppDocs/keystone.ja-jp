@@ -6,6 +6,7 @@ summary: Keystone がユーザを追加
 ---
 = ユーザを追加します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

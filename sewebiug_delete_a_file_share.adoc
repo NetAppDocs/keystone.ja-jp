@@ -6,6 +6,7 @@ summary: Keystone はファイル共有を削除します
 ---
 = ファイル共有を削除します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

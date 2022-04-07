@@ -6,6 +6,7 @@ summary: ネットアップサービスエンジン Web ポータルの概要
 ---
 = NetApp Service Engine Web インターフェイス
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
