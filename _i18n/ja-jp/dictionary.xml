@@ -3030,7 +3030,6 @@
   <block id="bc9d99b4b5c353814419ac4f3a7bcbb9" category="inline-link-macro">NetApp Keystone</block>
   <block id="6365a10673e69e63960434eee08936a3" category="paragraph">NetApp Keystone Flex サブスクリプションは、 NetApp Keystone サービスの一部です。NetApp Keystone は、オンプレミスの CAPEX （設備投資）サービスを提供するポートフォリオで、 NetApp Keystone Flex Pay や NetApp Keystone Flex Subscription サービスなど、クラウドへの移行をスムーズに進めることができます。NetApp Keystone は、オンプレミスとクラウドにわたってストレージサービスを提供することで、シームレスなハイブリッドクラウドエクスペリエンスを実現します。NetApp Keystone の詳細については、を参照してください <block ref="17e1729d4a77db88a0bc2ee74a2207b1" category="inline-link-macro-rx"></block></block>
   <block id="84df3063bf7c9a845b2944da17dc7ada" category="paragraph">NetApp Keystone Flex サブスクリプションの詳細については、を参照してください <block ref="dd62aedd4673206c815c56eddc5536f2" category="inline-link-macro-rx"></block></block>
-  <block id="ac6330b2ef35ed0beec99df3fdccc9e2" category="paragraph">Flex サブスクリプションは、オンプレミスシステムでクラウドと同等のエクスペリエンスを提供し、思いどおりのクラウド接続を実現する、ストレージサービスです。* NetApp Keystone Flex Pay * - NetApp Keystone Flex Pay （フレックスペイ）は、従来のファイナンス、リース、固定 / 可変オプションなど、お客様のキャッシュフローニーズに合わせた柔軟なファイナンスオプションのポートフォリオです。* NetApp Keystone Flex サブスクリプション * - NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）は、成長に合わせて拡張できる成果ベースのサブスクリプションサービスで、オンプレミスのクラウドレベルのエクスペリエンスを実現します。</block>
   <block id="60e9d00fe6da3c4a7ff384bed342bf02" category="paragraph">Flex サブスクリプションは、成長に応じて購入できるサブスクリプションベースのサービスモデルです。運用コストの消費モデルを希望するお客様に、設備投資（ CapEx ）やリース（ CapEx ）などのシームレスなハイブリッドクラウドエクスペリエンスを提供します。予測不可能な容量の増加に対処し、複雑な調達サイクルを実施するという課題を解消することで、価値創出までの時間を短縮できます。Flex サブスクリプションを使用すると、経済性と運用をビジネスの優先事項に合わせることができます。</block>
   <block id="dc9a1eb62617a53e09590e225defee14" category="paragraph">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）を使用すると、ストレージサブスクリプションの予測可能な先行購入価格を設定できます。</block>
   <block id="b1abcf87d81cee786e5ff7efba9f8162" category="paragraph">設備投資（ CapEx ）やリースに運用コスト（ OpEx ）の消費モデルを希望する場合は、柔軟でスケーラブルな消費ニーズに合わせて、柔軟に拡張できる Flex サブスクリプションの従量課金制モデルを選択できます。</block>
@@ -3094,4 +3093,7 @@
   <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">プライバシーポリシー</block>
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="65b034376f8c6863d7282690b92e3bf9" category="paragraph">Flex サブスクリプションは、オンプレミスシステムでクラウドと同等のエクスペリエンスを提供し、思いどおりのクラウド接続を実現する、ストレージサービスです。</block>
+  <block id="e49cf55687c692a556892a0f614ce9bf" category="list-text">* NetApp Keystone Flex Pay * - NetApp Keystone Flex Pay （フレックスペイ）は、従来のファイナンス、リース、固定 / 可変オプションなど、お客様のキャッシュフローニーズに合わせた柔軟なファイナンスオプションのポートフォリオです。</block>
+  <block id="cf7ec62445091377db24ebd1c9fd2d93" category="list-text">* NetApp Keystone Flex サブスクリプション * - NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）は、成長に合わせて拡張できる成果ベースのサブスクリプションサービスで、オンプレミスのクラウドレベルのエクスペリエンスを実現します。</block>
 </blocks>
