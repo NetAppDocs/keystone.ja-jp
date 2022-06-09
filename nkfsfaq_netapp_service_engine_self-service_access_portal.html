@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/nkfsfaq_netapp_service_engine_self-service_access_portal.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/nkfsfaq_netapp_service_engine_self-service_access_portal.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/nkfsfaq_netapp_service_engine_self-service_access_portal.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/nkfsfaq_netapp_service_engine_self-service_access_portal.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/nkfsfaq_netapp_service_engine_self-service_access_portal.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/nkfsfaq_netapp_service_engine_self-service_access_portal.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/nkfsfaq_netapp_service_engine_self-service_access_portal.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/nkfsfaq_netapp_service_engine_self-service_access_portal.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/nkfsfaq_netapp_service_engine_self-service_access_portal.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/nkfsfaq_netapp_service_engine_self-service_access_portal.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/nkfsfaq_netapp_service_engine_self-service_access_portal.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/nkfsfaq_netapp_service_engine_self-service_access_portal.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/keystone/nkfsfaq_netapp_service_engine_self-service_access_portal.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/nkfsfaq_netapp_service_engine_self-service_access_portal.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/ja-jp/keystone/index.html">
         <div class="na-navbar-padding"> NetApp Keystone フレックスサブスクリプション</div>
       </a>
@@ -1395,52 +1387,61 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:16:45 +0000">04/18/2022</time>
+    <time datetime="2022-06-09 10:18:13 +0000">06/09/2022</time>
     
   
 
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
 <p>次の FAQ ：環境 NetApp Service Engine</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>NetApp Service Engineとは</p>
+</li>
+</ul>
 </div>
-</div>
-<div class="sect2">
-<h3 id="netapp-service-engine-とは">NetApp Service Engine とは</h3>
 <div class="paragraph">
 <p>NetApp Service Engine は、ネットアップが運用するモデルのセルフサービスポータルで、 NetApp Keystone Flex サブスクリプションサービスに基づいてストレージにログインしてプロビジョニングできます。また、このツールでは、サブスクリプションに対する消費レベルに関するレポートを作成し、サービスリクエストやサブスクリプションの変更を開始できます。</p>
 </div>
+<div class="paragraph">
+<p><strong>お客様が運用するモデルにはNetApp Service Engineが必要ですか？</strong></p>
 </div>
-<div class="sect2">
-<h3 id="お客様が運用するモデルには-netapp-service-engine-が必要ですか">お客様が運用するモデルには NetApp Service Engine が必要ですか。</h3>
 <div class="paragraph">
 <p>お客様が運用するモデルでは、 NetApp Service Engine が必要です。消費の詳細に関する基本的なレポートを提供し、請求情報の収集と報告を行う必要があります。</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>NetApp Service Engineはどこにインストールされていますか。*</p>
+</li>
+</ul>
 </div>
-<div class="sect2">
-<h3 id="netapp-service-engine-のインストール先">NetApp Service Engine のインストール先</h3>
 <div class="paragraph">
 <p>ネットアップが運用するモデルでは、 NetApp Service Engine はネットアップが提供するコンピューティングリソース上にローカルにインストールされます。お客様が運用するモデルでは、 NetApp Service Engine がお客様のコンピューティングリソースにインストールされている。</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>NetApp Service Engineにログインできるのは誰ですか。*</p>
+</li>
+</ul>
 </div>
-<div class="sect2">
-<h3 id="netapp-service-engine-にログインできるユーザ">NetApp Service Engine にログインできるユーザ</h3>
 <div class="paragraph">
 <p>ユーザは、 NetApp SSO または NetApp Service Engine で設定されたローカルユーザに対して認証されます。</p>
 </div>
+<div class="paragraph">
+<p><strong>アクセスはどのように制御されますか。</strong></p>
 </div>
-<div class="sect2">
-<h3 id="アクセスはどのように制御されますか">アクセスはどのように制御されますか。</h3>
 <div class="paragraph">
 <p>NetApp Service Engine にはロールベースアクセス制御（ RBAC ）が用意されており、各ユーザをロールに関連付けることで実行できるアクションを定義できます。RBAC の割り当ては、 NetApp Service Engine を使用しているお客様が行います。</p>
 </div>
+<div class="paragraph">
+<p><strong>どのようなアクセスコントロールが使用できますか。</strong></p>
 </div>
-<div class="sect2">
-<h3 id="どのようなアクセスコントロールが利用できますか">どのようなアクセスコントロールが利用できますか？</h3>
 <div class="paragraph">
 <p>次のアクセス制御を使用できます。</p>
 </div>
@@ -1460,12 +1461,11 @@
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p><strong>使用に対する請求はどこで確認できますか。</strong></p>
 </div>
-<div class="sect2">
-<h3 id="使用状況に対する請求はどこで確認できますか">使用状況に対する請求はどこで確認できますか？</h3>
 <div class="paragraph">
 <p>過去 3 か月間の月額プランの合計月額料金は、ダッシュボードの * 月額料金 * ウィジェットで確認できます。詳細な請求情報を表示するには、ウィジェットをクリックするか、 * Administration * &gt; * Billing * に移動します。</p>
-</div>
 </div>
 
     </article>
@@ -1613,4 +1613,5 @@
     </script>
     <script src='/ja-jp/keystone/js/www-ntap.js'></script>
     <script src='/ja-jp/keystone/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/keystone/js/sidebar.js'></script>
   </body></html>

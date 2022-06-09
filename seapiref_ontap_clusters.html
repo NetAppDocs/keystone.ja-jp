@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/seapiref_ontap_clusters.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/seapiref_ontap_clusters.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/seapiref_ontap_clusters.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/seapiref_ontap_clusters.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/seapiref_ontap_clusters.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/seapiref_ontap_clusters.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/seapiref_ontap_clusters.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/seapiref_ontap_clusters.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/seapiref_ontap_clusters.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/seapiref_ontap_clusters.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/seapiref_ontap_clusters.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/seapiref_ontap_clusters.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/keystone/seapiref_ontap_clusters.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/seapiref_ontap_clusters.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/ja-jp/keystone/index.html">
         <div class="na-navbar-padding"> NetApp Keystone フレックスサブスクリプション</div>
       </a>
@@ -1395,7 +1387,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:16:45 +0000">04/18/2022</time>
+    <time datetime="2022-06-09 10:18:13 +0000">06/09/2022</time>
     
   
 
@@ -1450,8 +1442,9 @@
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="ontap-クラスタの属性">ONTAP クラスタの属性</h3>
+<div class="sect1">
+<h2 id="ontap-クラスタの属性">ONTAP クラスタの属性</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>次の表に、 ONTAP クラスタの属性を示します。</p>
 </div>
@@ -1630,8 +1623,10 @@
 </tbody>
 </table>
 </div>
-<div class="sect2">
-<h3 id="すべての-ontap-クラスタを取得します">すべての ONTAP クラスタを取得します</h3>
+</div>
+<div class="sect1">
+<h2 id="すべての-ontap-クラスタを取得します">すべての ONTAP クラスタを取得します</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>すべての ONTAP クラスタまたは一部の ONTAP クラスタを取得するには、次の表に示すメソッドを使用します。</p>
 </div>
@@ -1808,8 +1803,10 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="id-を使用して-ontap-クラスタを取得します">ID を使用して ONTAP クラスタを取得します</h3>
+</div>
+<div class="sect1">
+<h2 id="id-を使用して-ontap-クラスタを取得します">ID を使用して ONTAP クラスタを取得します</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>ID を使用して ONTAP クラスタを取得するには、次の手順を実行します。</p>
 </div>
@@ -1915,8 +1912,10 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="ontap-クラスタを作成する">ONTAP クラスタを作成する</h3>
+</div>
+<div class="sect1">
+<h2 id="ontap-クラスタを作成する">ONTAP クラスタを作成する</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>次の表の API を使用して、 ONTAP クラスタを作成します。</p>
 </div>
@@ -2068,8 +2067,10 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="ontap-クラスタを変更">ONTAP クラスタを変更</h3>
+</div>
+<div class="sect1">
+<h2 id="ontap-クラスタを変更">ONTAP クラスタを変更</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>ONTAP クラスタを変更するには、次のメソッドを使用します。</p>
 </div>
@@ -2211,8 +2212,10 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="ontap-クラスタを削除する">ONTAP クラスタを削除する</h3>
+</div>
+<div class="sect1">
+<h2 id="ontap-クラスタを削除する">ONTAP クラスタを削除する</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>次の表に示す方法を使用して、 ONTAP クラスタを削除します。</p>
 </div>
@@ -2265,6 +2268,7 @@
 <div class="literalblock">
 <div class="content">
 <pre>No content for succesful delete</pre>
+</div>
 </div>
 </div>
 </div>
@@ -2414,4 +2418,5 @@
     </script>
     <script src='/ja-jp/keystone/js/www-ntap.js'></script>
     <script src='/ja-jp/keystone/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/keystone/js/sidebar.js'></script>
   </body></html>

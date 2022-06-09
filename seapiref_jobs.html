@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/ja-jp/keystone/index.html">
         <div class="na-navbar-padding"> NetApp Keystone フレックスサブスクリプション</div>
       </a>
@@ -1395,7 +1387,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:16:45 +0000">04/18/2022</time>
+    <time datetime="2022-06-09 10:18:13 +0000">06/09/2022</time>
     
   
 
@@ -1409,8 +1401,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="ジョブを取得します">ジョブを取得します</h3>
+<div class="sect1">
+<h2 id="ジョブを取得します">ジョブを取得します</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>次の表に示す方法を使用して、すべてのジョブまたはジョブのサブセットを取得します。「 tenant_id 」を指定すると、そのテナントに属するジョブだけが返されます。</p>
 </div>
@@ -1517,8 +1510,8 @@
 }</pre>
 </div>
 </div>
-<div class="sect3">
-<h4 id="ジョブ-id-でジョブを取得します">ジョブ ID でジョブを取得します</h4>
+<div class="sect2">
+<h3 id="ジョブ-id-でジョブを取得します">ジョブ ID でジョブを取得します</h3>
 <div class="paragraph">
 <p>次の表に示すメソッドを使用して、 ID 別にジョブを取得します。</p>
 </div>
@@ -1621,16 +1614,18 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="ジョブオブジェクト-api-と非同期プロセス">ジョブオブジェクト API と非同期プロセス</h3>
+</div>
+<div class="sect1">
+<h2 id="ジョブオブジェクト-api-と非同期プロセス">ジョブオブジェクト API と非同期プロセス</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>一部の API 呼び出し、特にリソースの追加や変更に使用される API 呼び出しは、他の呼び出しよりも完了に時間がかかることがあります。NetApp Service Engine は、これらの長時間実行されている要求を非同期的に処理します。</p>
 </div>
 <div class="paragraph">
 <p>非同期的に実行される API 呼び出しを行うと、 HTTP 応答コード 202 が返されます。この応答コードは、要求が正常に検証され受け入れられたものの、まだ完了していないことを示します。要求はバックグラウンドタスクとして処理され、クライアントへの最初の HTTP 応答後も引き続き実行されます。応答には、要求に対応するジョブオブジェクトと、その一意の識別子が含まれます。</p>
 </div>
-<div class="sect3">
-<h4 id="api-要求に関連付けられたジョブオブジェクトの照会">API 要求に関連付けられたジョブオブジェクトの照会</h4>
+<div class="sect2">
+<h3 id="api-要求に関連付けられたジョブオブジェクトの照会">API 要求に関連付けられたジョブオブジェクトの照会</h3>
 <div class="paragraph">
 <p>HTTP 応答で返されるジョブオブジェクトには、いくつかのプロパティが含まれています。状態プロパティを照会して、要求が正常に完了したかどうかを確認できます。ジョブオブジェクトは次のいずれかの状態になります。</p>
 </div>
@@ -1664,8 +1659,8 @@
 </ul>
 </div>
 </div>
-<div class="sect3">
-<h4 id="非同期要求の手順">非同期要求の手順</h4>
+<div class="sect2">
+<h3 id="非同期要求の手順">非同期要求の手順</h3>
 <div class="paragraph">
 <p>非同期 API 呼び出しを完了する大まかな手順を次に示します。</p>
 </div>
@@ -1687,6 +1682,7 @@
 <p>ジョブの終了状態を確認し、ジョブの結果を取得します。</p>
 </li>
 </ol>
+</div>
 </div>
 </div>
 </div>
@@ -1836,4 +1832,5 @@
     </script>
     <script src='/ja-jp/keystone/js/www-ntap.js'></script>
     <script src='/ja-jp/keystone/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/keystone/js/sidebar.js'></script>
   </body></html>

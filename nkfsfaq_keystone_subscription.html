@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/nkfsfaq_keystone_subscription.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/nkfsfaq_keystone_subscription.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/nkfsfaq_keystone_subscription.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/nkfsfaq_keystone_subscription.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/nkfsfaq_keystone_subscription.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/nkfsfaq_keystone_subscription.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/nkfsfaq_keystone_subscription.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/nkfsfaq_keystone_subscription.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/nkfsfaq_keystone_subscription.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/nkfsfaq_keystone_subscription.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/nkfsfaq_keystone_subscription.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/nkfsfaq_keystone_subscription.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/keystone/nkfsfaq_keystone_subscription.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/nkfsfaq_keystone_subscription.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/ja-jp/keystone/index.html">
         <div class="na-navbar-padding"> NetApp Keystone フレックスサブスクリプション</div>
       </a>
@@ -1395,149 +1387,97 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:16:45 +0000">04/18/2022</time>
+    <time datetime="2022-06-09 10:18:13 +0000">06/09/2022</time>
     
   
 
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
 <p>以下の質問では、 NetApp Keystone フレックスサブスクリプションサービスに関するよくあるお問い合わせをご紹介します。</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>NetApp Keystone Flexサブスクリプションの一部として提供されるものは何ですか？* NetApp Keystone Flexサブスクリプション（Flexサブスクリプション）とは、ブロック、ファイル、オブジェクトの各データサービスを対象としたサブスクリプションベースのサービスで、オンプレミスに導入して、ネットアップ、パートナー、またはお客様が運用できます。</p>
+</li>
+<li>
+<p>Flexサブスクリプションの一部として提供されるストレージサービスは何ですか。*詳細については、を参照してください <a href="nkfsosm_performance.html">"パフォーマンスサービスレベル"</a></p>
+</li>
+</ul>
 </div>
-</div>
-<div class="sect2">
-<h3 id="netapp-keystone-flex-サブスクリプションの一部として提供されるものは何ですか">NetApp Keystone Flex サブスクリプションの一部として提供されるものは何ですか。</h3>
 <div class="paragraph">
-<p>NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）は、ブロック、ファイル、オブジェクトの各データサービスを対象とするサブスクリプションベースのサービスです。オンプレミスに導入して、ネットアップ、パートナー、またはお客様が運用できます。</p>
+<p><strong>どのようなアドオンサービスがサポートされていますか？</strong> FabricPool による高度なデータ保護（バックアップとディザスタリカバリ）とハイブリッドクラウド階層化は、追加料金で選択できるアドオンサービスです。</p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="flex-サブスクリプションの一部として提供されるストレージサービスにはどのようなものがありますか">Flex サブスクリプションの一部として提供されるストレージサービスにはどのようなものがありますか。</h3>
 <div class="paragraph">
-<p>詳細については、を参照してください <a href="nkfsosm_performance.html">"パフォーマンスサービスレベル"</a></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="サポートされているアドオンサービス">サポートされているアドオンサービス</h3>
-<div class="paragraph">
-<p>高度なデータ保護（バックアップとディザスタリカバリ）と FabricPool によるハイブリッドクラウド階層化は、追加料金で選択できるアドオンサービスです。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="ネットアップはこのサービスでどのようなサービスレベルを保証していますか">ネットアップはこのサービスでどのようなサービスレベルを保証していますか？</h3>
-<div class="paragraph">
-<p>ネットアップが運用するシナリオでは、 NetApp Keystone は、プロビジョニングされるストレージでは 1TiB の IOPS を保証し、各サービスレベルでのレイテンシを保証します。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="flex-サブスクリプションのマッピング先">Flex サブスクリプションのマッピング先</h3>
-<div class="paragraph">
-<p>Flex サブスクリプションは、単一のサイトまたは単一のデータセンターにマッピングされ、さまざまなパフォーマンスサービスレベルで構成されます。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="卓越した階層化と高度な階層化のパフォーマンスレベルにはどのようなメリットがありますか">卓越した階層化と高度な階層化のパフォーマンスレベルにはどのようなメリットがありますか？</h3>
-<div class="paragraph">
-<p>階層化は、階層化の卓越したパフォーマンスレベルと階層化のプレミアムパフォーマンスレベルで実現されるため、ストレージの設置面積と関連コストを削減できます。ネットアップでは、データの 25% がホットで、残りの 75% は使用頻度やコールドデータが低く、コールドストレージに移動します。また、使用状況レポートを確認して、データへのアクセス頻度を把握したり、情報に基づいて階層化サービスを有効にしたりすることができます。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="パートナー様はネットアップから購入した容量よりも多くの容量をお客様に販売できますか">パートナー様はネットアップから購入した容量よりも多くの容量をお客様に販売できますか？</h3>
-<div class="paragraph">
-<p>テナントサブスクリプションには、パートナー様が購入した容量による制限はありません。パートナー様は、ネットアップから購入した容量よりも多くの容量をお客様に販売できます。購入済み容量を超える容量はオーバーサブスクリプションと呼ばれます。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="お客様のツールと統合するための-api-は提供されていますか">お客様のツールと統合するための API は提供されていますか？</h3>
-<div class="paragraph">
-<p>はい。 RESTful API を使用して、独自のアプリケーションに統合できます。サポート &gt; API ドキュメント * に移動して、 Flex サブスクリプションサービスの API ドキュメントを参照します。詳細については、を参照してください <a href="https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html">"Keystone Flex サブスクリプション API ガイド』を参照してください"</a>。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="バースト容量とは何ですか">バースト容量とは何ですか？</h3>
-<div class="paragraph">
-<p>コミット済み容量を最大 20% 上回っている場合は、使用量を増減できます。バースト時の使用容量は 1 日単位で測定され、使用時にのみ課金されます。たとえば、コミット済み容量が 100TiB の場合、バースト時に最大 120TiB を使用できます。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="バーストを使用する場合プレミアム料金は発生しますか">バーストを使用する場合、プレミアム料金は発生しますか？</h3>
-<div class="paragraph">
-<p>コミット済み容量の最大使用率は、コミット済み容量と同じ割合で請求されます。コミット済み容量の 20% を超える使用量は、 50% の Premium 料金で請求されます。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="バースト容量のメリットは何ですか">バースト容量のメリットは何ですか。</h3>
-<div class="paragraph">
-<p>バースト時の容量により、ストレージをオンデマンドで消費することも、長期的な利用にも柔軟に対応することができます。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="バースト時の容量はテナントにどのように割り当てられますか">バースト時の容量はテナントにどのように割り当てられますか。</h3>
-<div class="paragraph">
-<p>バースト時の容量はパートナー様に割り当てられ、要件に基づいてさらにお客様に割り当てられます。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="コミット済み容量およびバースト時の容量の使用状況はどこで確認できますか">コミット済み容量およびバースト時の容量の使用状況はどこで確認できますか。</h3>
-<div class="paragraph">
-<p>NetApp Service Engine には、コミット済み容量と比較して使用済み容量をレポートするダッシュボードが組み込まれています。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="コミット済み容量の使用率が一定の割合に達した場合に通知はありますか">コミット済み容量の使用率が一定の割合に達した場合に通知はありますか？</h3>
-<div class="paragraph">
-<p>はい。管理ツールは、 NetApp Service Engine ダッシュボードを使用して容量使用状況に関する通知を提供します。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="flex-サブスクリプションの使用状況を表示する方法を教えてください">Flex サブスクリプションの使用状況を表示する方法を教えてください。</h3>
-<div class="paragraph">
-<p>NetApp Service Engine は、ダッシュボードビューを提供し、サブスクライブされているすべてのサービスに関する情報と消費されている容量を表示します。NetApp Service Engine の詳細については、を参照してください <a href="https://docs.netapp.com/us-en/keystone/sewebiug_overview.html">"こちらをご覧ください"</a>。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="サービスに関する問題を報告するにはどうすればよいですか">サービスに関する問題を報告するにはどうすればよいですか？</h3>
-<div class="paragraph">
-<p>NetApp Keystone のサポートには、次のさまざまなチャネルからアクセスできます。</p>
+<p>*ネットアップがサービスに対してどのようなサービスレベルを保証しますか？*ネットアップが運用するシナリオでは、プロビジョニングされたストレージでNetApp Keystone が1TiBのIOPSを保証し、各サービスレベルでのレイテンシを保証します。</p>
 </div>
 <div class="ulist">
 <ul>
+<li>
+<p>Flexサブスクリプションは何にマッピングされますか？* Flexサブスクリプションは、1つのサイトまたは1つのデータセンターにマッピングされ、異なるパフォーマンスサービスレベルで構成されます。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>*階層化のパフォーマンス・レベルが極端に高い場合と階層化の場合のメリットは何ですか?階層化は&#8217;階層化のパフォーマンス・レベルが極端に高い場合に有効になり&#8217;ストレージの設置面積と関連コストを削減できますネットアップでは、データの 25% がホットで、残りの 75% は使用頻度やコールドデータが低く、コールドストレージに移動します。また、使用状況レポートを確認して、データへのアクセス頻度を把握したり、情報に基づいて階層化サービスを有効にしたりすることができます。</p>
+</div>
+<div class="paragraph">
+<p>*パートナー様はネットアップから購入した容量よりも多くの容量をお客様に販売できますか？*テナントサブスクリプションは、パートナー様が購入した容量に制限されません。パートナー様は、ネットアップから購入した容量よりも多くの容量をお客様に販売できます。購入済み容量を超える容量はオーバーサブスクリプションと呼ばれます。</p>
+</div>
+<div class="paragraph">
+<p>*お客様のツールと統合するためのAPIは提供されていますか。*はい、RESTful APIを使用して、お客様のアプリケーションに統合できます。サポート &gt; API ドキュメント * に移動して、 Flex サブスクリプションサービスの API ドキュメントを参照します。詳細については、を参照してください <a href="https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html">"Keystone Flex サブスクリプション API ガイド』を参照してください"</a>。</p>
+</div>
+<div class="paragraph">
+<p>*バースト容量とは何ですか？*コミット容量を最大20%上回る使用量を増減できます。バースト時の使用容量は 1 日単位で測定され、使用時にのみ課金されます。たとえば、コミット済み容量が 100TiB の場合、バースト時に最大 120TiB を使用できます。</p>
+</div>
+<div class="paragraph">
+<p>*バースト時にプレミアム料金が発生しますか？*バースト時の容量使用率は、コミット済み容量と同じレートで、コミット済み容量の20%を超える使用率は、50%のプレミアム料金で請求されます。</p>
+</div>
+<div class="paragraph">
+<p>*バースト容量のメリットは何ですか?*バースト容量により、長期的な契約とは異なり、ストレージをオンデマンドで柔軟に消費できます。</p>
+</div>
+<div class="paragraph">
+<p>*バースト時の容量はどのようにテナントに割り当てられますか。*バースト時の容量は、要件に基づいてさらにお客様に割り当てられるパートナー様に割り当てられます。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>NetApp Service Engineには、コミット済み容量とバースト時の使用容量を表示するためのダッシュボードが組み込まれています。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>*コミット済み容量の使用率が一定の割合に達した場合に通知が送信されますか？*はい、管理ツールはNetApp Service Engineダッシュボードから容量の使用状況に関する通知を提供します。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Flex Subscription の利用状況をどのように表示しますか？ * NetApp Service Engine は、サブスクライブされているすべてのサービスに関する情報と、利用されている容量をダッシュボードに表示します。NetApp Service Engine の詳細については、を参照してください <a href="https://docs.netapp.com/us-en/keystone/sewebiug_overview.html">"こちらをご覧ください"</a>。</p>
+</li>
+<li>
+<p>サービスに関する問題はどのように報告すればよいですか？ * NetApp Keystone サポートには、次のようなさまざまなチャネルを通じてアクセスできます。</p>
+</li>
 <li>
 <p>サポート E メール： mailto ： <a href="mailto:keystone.services@netapp.com">keystone.services@netapp.com</a>[<a href="mailto:keystone.services@netapp.com">keystone.services@netapp.com</a>^]</p>
 </li>
 <li>
 <p>エスカレーションメール： mailto ： <a href="mailto:keystone.escalations@netapp.com">keystone.escalations@netapp.com</a>[<a href="mailto:keystone.escalations@netapp.com">keystone.escalations@netapp.com</a>^]</p>
 </li>
+<li>
+<p>新しいストレージサービスを注文できますか？ * はい、 NetApp Service Engine ポータルから新しいストレージサービスまたはストレージサービスへの拡張をリクエストできます。要求は、 NetApp Keystone 運用チームが処理してから使用可能になります。</p>
+</li>
+<li>
+<p>ストレージに関するコミットメントは即座に向上しますか？ * 必要な容量に応じて、容量がすでに導入されているかどうかを判断するか、追加の機器の発送と設置が必要かを判断します。</p>
+</li>
+<li>
+<p>ワークロードを階層間で移動できますか？ * はい、ユーザがワークロードの移動先の階層にサブスクライブされている場合、ワークロードを階層間で移動できます。ただし、原因によってパフォーマンスが低下する可能性があるため、上位の階層から下位の階層に移動することは推奨されません。このプロセスは、ファイル共有を編集し、サービスレベル設定を変更するだけで完了します。</p>
+</li>
+<li>
+<p>どのバージョンのソフトウェア（たとえば、 ONTAP ）がデフォルトとしてインストールされていますか。 * 登録されているサービス階層（ファイルサービスとブロックサービスを使用する ONTAP 、ブロック用の SANtricity 、オブジェクト用の StorageGRID など）に応じて、サポートチームはセキュリティや機能の問題なしで最新の安定版リリースをインストールします。</p>
+</li>
 </ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="新しいストレージサービスを注文できますか">新しいストレージサービスを注文できますか。</h3>
-<div class="paragraph">
-<p>はい。新しいストレージサービスまたはストレージサービスへの拡張は、 NetApp Service Engine ポータルから要求できます。要求は、 NetApp Keystone 運用チームが処理してから使用可能になります。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="ストレージに関するコミットメントは即座に増えますか">ストレージに関するコミットメントは即座に増えますか？</h3>
-<div class="paragraph">
-<p>要求された容量に応じて、容量がすでに導入されているかどうか、または追加の機器の配送と設置が必要かどうかが判断されます。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="ワークロードを階層間で移動できますか">ワークロードを階層間で移動できますか。</h3>
-<div class="paragraph">
-<p>はい。ワークロードの移動先の階層にユーザがサブスクライブしている場合、ワークロードを階層間で移動できます。ただし、原因によってパフォーマンスが低下する可能性があるため、上位の階層から下位の階層に移動することは推奨されません。このプロセスは、ファイル共有を編集し、サービスレベル設定を変更するだけで完了します。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="どのソフトウェアバージョン-ontap-などがデフォルトでインストールされているか">どのソフトウェアバージョン（ ONTAP など）がデフォルトでインストールされているか。</h3>
-<div class="paragraph">
-<p>サポートチームは、サブスクライブされているサービス階層（ファイルサービスとブロックサービスを使用する ONTAP 、ブロック用の SANtricity 、オブジェクト用の StorageGRID など）に応じて、セキュリティや機能の問題なしで最新の安定版リリースをインストールします。</p>
-</div>
 </div>
 
     </article>
@@ -1685,4 +1625,5 @@
     </script>
     <script src='/ja-jp/keystone/js/www-ntap.js'></script>
     <script src='/ja-jp/keystone/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/keystone/js/sidebar.js'></script>
   </body></html>

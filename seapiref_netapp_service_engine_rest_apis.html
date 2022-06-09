@@ -17,7 +17,7 @@
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="ネットアップサービスエンジン REST API">
-  <meta name="keywords" content=" netapp, keystone, service, engine, rest, apis,"><!-- Icons -->
+  <meta name="keywords" content=" netapp, keystone, rest apis, sort, offset"><!-- Icons -->
   <link rel="icon" href="/ja-jp/keystone/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/seapiref_netapp_service_engine_rest_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/seapiref_netapp_service_engine_rest_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/seapiref_netapp_service_engine_rest_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/seapiref_netapp_service_engine_rest_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/seapiref_netapp_service_engine_rest_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/seapiref_netapp_service_engine_rest_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/seapiref_netapp_service_engine_rest_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/seapiref_netapp_service_engine_rest_apis.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/seapiref_netapp_service_engine_rest_apis.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/seapiref_netapp_service_engine_rest_apis.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/seapiref_netapp_service_engine_rest_apis.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/seapiref_netapp_service_engine_rest_apis.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/keystone/seapiref_netapp_service_engine_rest_apis.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/seapiref_netapp_service_engine_rest_apis.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/ja-jp/keystone/index.html">
         <div class="na-navbar-padding"> NetApp Keystone フレックスサブスクリプション</div>
       </a>
@@ -1395,15 +1387,13 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:16:45 +0000">04/18/2022</time>
+    <time datetime="2022-06-09 10:18:13 +0000">06/09/2022</time>
     
   
 
 
 </p>
 
-<div class="sect2">
-<h3 id="ページ付け">ページ付け</h3>
 <div class="paragraph">
 <p>多数の API 呼び出しが大量のレコードを返します。オフセット値と制限値を指定することにより ' レコード数を制限することができます</p>
 </div>
@@ -1429,7 +1419,6 @@
 <p>*Order_By. * 昇順 (asc) または降順 (desc) の順序でレコードをオーダーします。</p>
 </li>
 </ul>
-</div>
 </div>
 
     </article>
@@ -1577,4 +1566,5 @@
     </script>
     <script src='/ja-jp/keystone/js/www-ntap.js'></script>
     <script src='/ja-jp/keystone/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/keystone/js/sidebar.js'></script>
   </body></html>

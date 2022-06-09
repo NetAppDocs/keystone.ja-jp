@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/ja-jp/keystone/index.html">
         <div class="na-navbar-padding"> NetApp Keystone フレックスサブスクリプション</div>
       </a>
@@ -1395,22 +1387,19 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:16:45 +0000">04/18/2022</time>
+    <time datetime="2022-06-09 10:18:13 +0000">06/09/2022</time>
     
   
 
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
 <p>Flex サブスクリプションには、 3 つの運用モデルがあります。これらの FAQ は運用モデルに関連しています。</p>
 </div>
+<div class="paragraph">
+<p><strong>主な活動を担当するのは、どのような運用モデルですか？</strong></p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="さまざまな運用モデルと主な活動の責任者は誰ですか">さまざまな運用モデルと、主な活動の責任者は誰ですか？</h3>
 <div class="paragraph">
 <p>次の表は、ネットアップが運用する運用モデル、パートナーが運用する運用モデル、お客様が運用する運用モデルの 3 つの概要を示しています。</p>
 </div>
@@ -1532,33 +1521,32 @@
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p><strong>ネットアップが運用するモデルとは？</strong></p>
 </div>
-<div class="sect2">
-<h3 id="ネットアップが運用するモデルとは何ですか">ネットアップが運用するモデルとは何ですか？</h3>
 <div class="paragraph">
 <p>この運用モデルでは、選択したパフォーマンス階層とストレージサービスタイプに応じて、提供されたサービスにお客様がサブスクライブし、追加料金でネットアップが運用するオプションを選択できます。ネットアップでは、アーキテクチャと製品を定義し、お客様のオンプレミスにインストールを行います。ネットアップは、ストレージと IT リソースを使用して、日常的なインフラ管理業務を管理します。使用可能なストレージサービスタイプは、ファイル、ブロック（ iSCSI ）、およびオブジェクトです。Cloud Volumes Service for GCP と AWS もサポートされています。</p>
 </div>
 <div class="paragraph">
 <p>ネットアップは、パートナー様、テナントの作成と管理も行い、必要に応じてサブスクリプションを管理します。</p>
 </div>
+<div class="paragraph">
+<p><strong>パートナーが運用するモデルとは？</strong></p>
 </div>
-<div class="sect2">
-<h3 id="パートナーが運用するモデルとは何ですか">パートナーが運用するモデルとは何ですか？</h3>
 <div class="paragraph">
 <p>パートナー様またはサービスプロバイダ様の運用モデルはネットアップが運用するモデルと似ていますが、パートナー様がエンドユーザ様のサービスを運用している場合も同様です。このモデルでは、パートナーは参照される契約者です。テナントはサービスプロバイダのお客様であり、ネットアップとの請求関係はありません。お客様はテナンシーを管理します。テナントのサポート要求は、サービスプロバイダがネットアップにエスカレーションする前に最初に 3 回発行されます。</p>
 </div>
+<div class="paragraph">
+<p><strong>お客様が操作するモデルは何ですか。</strong></p>
 </div>
-<div class="sect2">
-<h3 id="お客様が運用するモデルとは何ですか">お客様が運用するモデルとは何ですか？</h3>
 <div class="paragraph">
 <p>このオペレーティングモデルを使用すると、選択したパフォーマンス階層とストレージサービスタイプに応じて、提供されるサービスをお客様がサブスクライブできるようになります。ネットアップでは、お客様のオンプレミスでアーキテクチャと製品を定義し、お客様がストレージと IT リソースを使用してインフラを管理できるようにしています。使用可能なストレージサービスタイプは、ファイル、ブロック（ iSCSI ）、およびオブジェクトです。このモデルでは、お客様が契約当事者を参照しており、これはエンドユーザまたはパートナーである場合があります。</p>
 </div>
+<div class="paragraph">
+<p><strong>装置の所有者はだれであるか。</strong></p>
 </div>
-<div class="sect2">
-<h3 id="機器の所有者">機器の所有者</h3>
 <div class="paragraph">
 <p>3 つの運用モデルすべてで、ネットアップはお客様のオンプレミスにインストールされているすべてのハードウェアとソフトウェアのタイトルを所有します。</p>
-</div>
 </div>
 
     </article>
@@ -1706,4 +1694,5 @@
     </script>
     <script src='/ja-jp/keystone/js/www-ntap.js'></script>
     <script src='/ja-jp/keystone/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/keystone/js/sidebar.js'></script>
   </body></html>

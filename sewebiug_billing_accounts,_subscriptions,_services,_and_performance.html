@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/ja-jp/keystone/index.html">
         <div class="na-navbar-padding"> NetApp Keystone フレックスサブスクリプション</div>
       </a>
@@ -1395,7 +1387,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:16:45 +0000">04/18/2022</time>
+    <time datetime="2022-06-09 10:18:13 +0000">06/09/2022</time>
     
   
 
@@ -1449,8 +1441,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="コミット済み消費済みバースト時の容量過剰な使用状況">コミット済み、消費済み、バースト時の容量、過剰な使用状況</h3>
+<div class="sect1">
+<h2 id="コミット済み消費済みバースト時の容量過剰な使用状況">コミット済み、消費済み、バースト時の容量、過剰な使用状況</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>使用済み容量は、割り当て済みの容量です（ただし必ずしも使用されているとは限りません）。コミット済み容量とは、サブスクリプションでコミットされる容量のことです。加入者には、使用量に関係なく、コミット済み容量に対して一定のレートで課金されます。</p>
 </div>
@@ -1475,7 +1468,6 @@
 </tr>
 </table>
 </div>
-</div>
 <div class="sect2">
 <h3 id="バースト使用の通知">バースト使用の通知</h3>
 <div class="paragraph">
@@ -1494,8 +1486,9 @@
 </li>
 </ul>
 </div>
-<div class="sect3">
-<h4 id="提案された変更によってバースト容量が使用される場合の通知">提案された変更によってバースト容量が使用される場合の通知</h4>
+</div>
+<div class="sect2">
+<h3 id="提案された変更によってバースト容量が使用される場合の通知">提案された変更によってバースト容量が使用される場合の通知</h3>
 <div class="paragraph">
 <p>次の図原因は、プロビジョニングの変更提案によってサブスクリプションがバーストになる場合に表示される通知の例を示しています。サブスクリプションがバーストになることを確認して続行するか、アクションを続行しないことを選択できます。</p>
 </div>
@@ -1575,8 +1568,8 @@
 </tbody>
 </table>
 </div>
-<div class="sect3">
-<h4 id="サブスクリプションがバースト状態になったときの通知">サブスクリプションがバースト状態になったときの通知</h4>
+<div class="sect2">
+<h3 id="サブスクリプションがバースト状態になったときの通知">サブスクリプションがバースト状態になったときの通知</h3>
 <div class="paragraph">
 <p>サブスクリプションがバースト状態の場合は、次の通知バナーが表示されます。この通知は、テナンシーに関するお客様管理者に表示され、確認が完了するまで表示されます。</p>
 </div>
@@ -1585,8 +1578,10 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="データ保護">データ保護</h3>
+</div>
+<div class="sect1">
+<h2 id="データ保護">データ保護</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>DP は、データのバックアップをサポートする方法、および必要に応じてデータをリカバリする方法です。</p>
 </div>
@@ -1606,8 +1601,8 @@
 </li>
 </ul>
 </div>
-<div class="sect3">
-<h4 id="snapshot">Snapshot</h4>
+<div class="sect2">
+<h3 id="snapshot">Snapshot</h3>
 <div class="paragraph">
 <p>Snapshot は、データのポイントインタイムコピーです。Snapshot をクローニングして新しいディスクを作成したり、同じ機能や類似の機能を使用して共有したりできます。</p>
 </div>
@@ -1627,8 +1622,8 @@ Snapshot は、サービスの消費容量を表します。
 </table>
 </div>
 </div>
-<div class="sect3">
-<h4 id="バックアップ">バックアップ</h4>
+<div class="sect2">
+<h3 id="バックアップ">バックアップ</h3>
 <div class="paragraph">
 <p>バックアップとは、項目のコピーを作成してレプリケートし、元のゾーンとは別のゾーンにコピーを格納することを意味します。このゾーンでは各プロトコルが有効になっており（ブロックストレージの場合のみ）、 MetroCluster 以外は有効になっています。NetApp Service Engine では、ファイルおよびブロックストレージでバックアップを実行できます（サブスクリプションには DP サービスが必要）。共有 / ディスクのバックアップは、サブスクリプションで最も低コストのパフォーマンス階層（ Standard ）にあるバックアップゾーンに保存されます。</p>
 </div>
@@ -1681,8 +1676,10 @@ Snapshot は、サービスの消費容量を表します。
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="ディザスタリカバリ">ディザスタリカバリ</h3>
+</div>
+<div class="sect1">
+<h2 id="ディザスタリカバリ">ディザスタリカバリ</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>ディザスタリカバリとは、災害発生時に通常運用時にリカバリする機能のことです。</p>
 </div>
@@ -1701,8 +1698,8 @@ Snapshot は、サービスの消費容量を表します。
 </tr>
 </table>
 </div>
-<div class="sect3">
-<h4 id="ディザスタリカバリ非同期">ディザスタリカバリ：非同期</h4>
+<div class="sect2">
+<h3 id="ディザスタリカバリ非同期">ディザスタリカバリ：非同期</h3>
 <div class="paragraph">
 <p>NetApp Service Engine は、次の機能を提供することで非同期ディザスタリカバリをサポートします。</p>
 </div>
@@ -1735,14 +1732,9 @@ Snapshot は、サービスの消費容量を表します。
 </li>
 </ul>
 </div>
-<div class="sect4">
-<h5 id="非同期のディザスタリカバリをサポートするようにファイルサーバまたはブロックストアを設定します">非同期のディザスタリカバリをサポートするようにファイルサーバまたはブロックストアを設定します</h5>
 <div class="paragraph">
 <p>ファイルサーバまたはブロックストアの作成時またはあとから、非同期のディザスタリカバリを有効にします。有効にしたディザスタリカバリを無効にすることはできず、ディザスタリカバリゾーンを変更することはできません。ディザスタリカバリスケジュールは、ディザスタリカバリロケーション（毎時、毎時 4 回、または毎日）にデータをレプリケートする頻度を指定します。</p>
 </div>
-</div>
-<div class="sect4">
-<h5 id="ファイル共有またはディスクで非同期のディザスタリカバリを有効にします">ファイル共有またはディスクで非同期のディザスタリカバリを有効にします</h5>
 <div class="paragraph">
 <p>非同期のディザスタリカバリレプリケーションを設定できるのは、親ファイルサーバまたはブロックストアが最初に非同期のディザスタリカバリ用に設定されている場合のみです。デフォルトでは、親でレプリケーションが有効になっている場合、親ホストとなるファイル共有またはディスクでレプリケーションが有効になります。特定の共有またはディスクのレプリケーションを除外するには、その共有 / ディスクのディザスタリカバリを無効にします。これらの共有 / ディスクでレプリケーションを有効または無効に切り替えることができます。</p>
 </div>
@@ -1763,9 +1755,8 @@ Snapshot は、サービスの消費容量を表します。
 </ul>
 </div>
 </div>
-</div>
-<div class="sect3">
-<h4 id="ディザスタリカバリ同期">ディザスタリカバリ—同期</h4>
+<div class="sect2">
+<h3 id="ディザスタリカバリ同期">ディザスタリカバリ—同期</h3>
 <div class="paragraph">
 <p>MetroCluster は、別々の場所または障害ドメインにある 2 つの異なるゾーン間でデータと設定を同期的にレプリケートする DP 機能です。一方のサイトで災害が発生したときは、管理者がサバイバーサイトからデータを提供できます。</p>
 </div>
@@ -1790,15 +1781,15 @@ Snapshot は、サービスの消費容量を表します。
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="データ保護使用済み容量および料金">データ保護、使用済み容量、および料金</h3>
+</div>
+<div class="sect1">
+<h2 id="データ保護使用済み容量および料金">データ保護、使用済み容量、および料金</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>このセクションの図は、 DP 料金の計算方法を示しています。</p>
 </div>
-<div class="sect3">
-<h4 id="ディザスタリカバリ-2">ディザスタリカバリ</h4>
-<div class="sect4">
-<h5 id="非同期のディザスタリカバリ">非同期のディザスタリカバリ</h5>
+<div class="sect2">
+<h3 id="非同期のディザスタリカバリ">非同期のディザスタリカバリ</h3>
 <div class="paragraph">
 <p>非同期ディザスタリカバリでは、使用量とコストは次の料金で構成されます。</p>
 </div>
@@ -1819,8 +1810,8 @@ Snapshot は、サービスの消費容量を表します。
 <p><span class="image"><img src="./media/sewebiug_image4.png" alt="エラー：グラフィックイメージがありません"></span></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="同期ディザスタリカバリ">同期ディザスタリカバリ</h5>
+<div class="sect2">
+<h3 id="同期ディザスタリカバリ">同期ディザスタリカバリ</h3>
 <div class="paragraph">
 <p>同期ディザスタリカバリでは、使用量とコストは次の料金で構成されます。</p>
 </div>
@@ -1828,9 +1819,8 @@ Snapshot は、サービスの消費容量を表します。
 <p><span class="image"><img src="./media/sewebiug_image5.png" alt="エラー：グラフィックイメージがありません"></span></p>
 </div>
 </div>
-</div>
-<div class="sect3">
-<h4 id="バックアップ-2">バックアップ</h4>
+<div class="sect2">
+<h3 id="バックアップ-2">バックアップ</h3>
 <div class="paragraph">
 <p>バックアップでは、使用量とコストは次の料金で構成されています。</p>
 </div>
@@ -1849,6 +1839,7 @@ Snapshot は、サービスの消費容量を表します。
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./media/sewebiug_image6.png" alt="エラー：グラフィックイメージがありません"></span></p>
+</div>
 </div>
 </div>
 </div>
@@ -1998,4 +1989,5 @@ Snapshot は、サービスの消費容量を表します。
     </script>
     <script src='/ja-jp/keystone/js/www-ntap.js'></script>
     <script src='/ja-jp/keystone/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/keystone/js/sidebar.js'></script>
   </body></html>

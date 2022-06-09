@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/sewebiug_working_with_reports.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/sewebiug_working_with_reports.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/sewebiug_working_with_reports.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/sewebiug_working_with_reports.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/sewebiug_working_with_reports.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/sewebiug_working_with_reports.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/sewebiug_working_with_reports.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/sewebiug_working_with_reports.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/sewebiug_working_with_reports.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/sewebiug_working_with_reports.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/sewebiug_working_with_reports.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/sewebiug_working_with_reports.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/keystone/sewebiug_working_with_reports.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/sewebiug_working_with_reports.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/ja-jp/keystone/index.html">
         <div class="na-navbar-padding"> NetApp Keystone フレックスサブスクリプション</div>
       </a>
@@ -1395,7 +1387,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:16:45 +0000">04/18/2022</time>
+    <time datetime="2022-06-09 10:18:13 +0000">06/09/2022</time>
     
   
 
@@ -1409,8 +1401,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="keystone-サブスクリプション容量使用状況レポート">Keystone サブスクリプション容量使用状況レポート</h3>
+<div class="sect1">
+<h2 id="keystone-サブスクリプション容量使用状況レポート">Keystone サブスクリプション容量使用状況レポート</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Capacity Usage for Keystone Subscriptions ページには、一定期間にわたるサブスクリプション内の各ストレージサービスの使用容量が表示されます。ネットアップ管理者は、サブスクリプション内のすべてのテナントとパートナーの容量使用状況レポートを表示できます。パートナー管理者は、 Flex サブスクリプションの使用状況に関する容量レポートを表示できます。このページのグラフィカルレポートを使用して、すべてのストレージサービスおよびアドオンデータ保護サービスの使用傾向を別々のタブで確認できます。サービスがバースト状態の場合、バナーには現在の課金サイクルで使用されているバースト容量が表示されます。</p>
 </div>
@@ -1438,8 +1431,10 @@
 </ol>
 </div>
 </div>
-<div class="sect2">
-<h3 id="テナントサブスクリプション容量使用状況レポート">テナントサブスクリプション容量使用状況レポート</h3>
+</div>
+<div class="sect1">
+<h2 id="テナントサブスクリプション容量使用状況レポート">テナントサブスクリプション容量使用状況レポート</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Capacity Usage for Tenant Subscriptions ページには、 Flex サブスクリプションでサブスクライブされたストレージサービスの各テナントの使用容量が時々表示されます。このページを使用して、ネットアップ管理者、パートナー管理者、テナント管理者、お客様管理者が特定のテナントの容量使用状況レポートを表示できます。</p>
 </div>
@@ -1479,8 +1474,10 @@
 </ol>
 </div>
 </div>
-<div class="sect2">
-<h3 id="パフォーマンスレポート">パフォーマンスレポート</h3>
+</div>
+<div class="sect1">
+<h2 id="パフォーマンスレポート">パフォーマンスレポート</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>パフォーマンスページ（次の図）には、個々のディスクまたは共有のパフォーマンスに関する情報が表示されます。次の 3 つのパフォーマンス指標に関する情報が表示されます。</p>
 </div>
@@ -1537,6 +1534,7 @@
 <p>グラフの特定のポイントにカーソルを合わせると、そのポイントに関する詳細が表示されます。</p>
 </li>
 </ul>
+</div>
 </div>
 </div>
 
@@ -1685,4 +1683,5 @@
     </script>
     <script src='/ja-jp/keystone/js/www-ntap.js'></script>
     <script src='/ja-jp/keystone/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/keystone/js/sidebar.js'></script>
   </body></html>
