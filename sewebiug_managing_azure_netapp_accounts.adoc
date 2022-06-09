@@ -29,7 +29,7 @@ NOTE: Azure NetApp アカウントを管理するには、顧客管理者アク�
 
 
 
-=== Azure NetApp アカウントのリストを表示します
+== Azure NetApp アカウントのリストを表示します
 
 Azure NetApp アカウントリストには、ログインしているユーザがアクセスできる期間中に Azure NetApp アカウントがすべて表示されます。リストを表示するには、メニューから * Administration > Azure NetApp Accounts * を選択します。
 
@@ -37,7 +37,7 @@ Azure NetApp アカウントリストには、ログインしているユーザ�
 
 
 
-=== Azure NetApp アカウントを追加します
+== Azure NetApp アカウントを追加します
 
 このセクションでは、 Azure NetApp アカウントを追加する方法について説明します。
 
@@ -60,7 +60,7 @@ Azure NetApp アカウントリストには、ログインしているユーザ�
 
 
 
-=== Azure NetApp アカウントのタグを変更します
+== Azure NetApp アカウントのタグを変更します
 
 Azure NetApp アカウントに関連付けられているタグを変更するには、このメソッドを使用します。
 
@@ -73,7 +73,7 @@ Azure NetApp アカウントに関連付けられているタグを変更する�
 
 
 
-=== Azure NetApp アカウントを削除します
+== Azure NetApp アカウントを削除します
 
 Azure NetApp アカウントを削除するには、このメソッドを使用します。
 

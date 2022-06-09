@@ -64,4 +64,4 @@ GCP のサブテナントのボリュームは、左側のナビゲーション�
 
 次のビデオでは、 Cloud Volumes Service と NetApp Service Engine を使用して GCP でボリュームを作成する方法を説明しています。
 
-video::Crq5a1zi1Vg[youtube, width=750,height=400]
+video::Crq5a1zi1Vg[youtube,width=750,height=400]

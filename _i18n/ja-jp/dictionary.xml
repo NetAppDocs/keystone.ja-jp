@@ -339,15 +339,10 @@
   <block id="713f90c3b39f5ec302eea94ea370dfb5" category="summary">動作モデル</block>
   <block id="50b8fe65928589d1dc9240987fbba099" category="doc">運用モデルと担当業務</block>
   <block id="d668e987609ce56cd4cdff0a933bd047" category="paragraph">Flex サブスクリプションには、 3 つの運用モデルがあります。これらの FAQ は運用モデルに関連しています。</block>
-  <block id="e79cecc02786a6187c528cdd9910d44e" category="section-title">さまざまな運用モデルと、主な活動の責任者は誰ですか？</block>
-  <block id="7372576bac1b28ddc28d31e41ea7e09b" category="section-title">ネットアップが運用するモデルとは何ですか？</block>
   <block id="518a259308e0c3fe0d2f9d4c06253b58" category="paragraph">この運用モデルでは、選択したパフォーマンス階層とストレージサービスタイプに応じて、提供されたサービスにお客様がサブスクライブし、追加料金でネットアップが運用するオプションを選択できます。ネットアップでは、アーキテクチャと製品を定義し、お客様のオンプレミスにインストールを行います。ネットアップは、ストレージと IT リソースを使用して、日常的なインフラ管理業務を管理します。使用可能なストレージサービスタイプは、ファイル、ブロック（ iSCSI ）、およびオブジェクトです。Cloud Volumes Service for GCP と AWS もサポートされています。</block>
   <block id="5a5aa994cefd2447961b51fe606e923c" category="paragraph">ネットアップは、パートナー様、テナントの作成と管理も行い、必要に応じてサブスクリプションを管理します。</block>
-  <block id="2d44c8845591ca1e84d35e7b40f93933" category="section-title">パートナーが運用するモデルとは何ですか？</block>
   <block id="dda2dbbc5f337b2b9d4c5e2d4e3a7a96" category="paragraph">パートナー様またはサービスプロバイダ様の運用モデルはネットアップが運用するモデルと似ていますが、パートナー様がエンドユーザ様のサービスを運用している場合も同様です。このモデルでは、パートナーは参照される契約者です。テナントはサービスプロバイダのお客様であり、ネットアップとの請求関係はありません。お客様はテナンシーを管理します。テナントのサポート要求は、サービスプロバイダがネットアップにエスカレーションする前に最初に 3 回発行されます。</block>
-  <block id="3423629b31ab53a941eb4e5227bbb13d" category="section-title">お客様が運用するモデルとは何ですか？</block>
   <block id="e420ca3aff97026d69088f19643d4222" category="paragraph">このオペレーティングモデルを使用すると、選択したパフォーマンス階層とストレージサービスタイプに応じて、提供されるサービスをお客様がサブスクライブできるようになります。ネットアップでは、お客様のオンプレミスでアーキテクチャと製品を定義し、お客様がストレージと IT リソースを使用してインフラを管理できるようにしています。使用可能なストレージサービスタイプは、ファイル、ブロック（ iSCSI ）、およびオブジェクトです。このモデルでは、お客様が契約当事者を参照しており、これはエンドユーザまたはパートナーである場合があります。</block>
-  <block id="a5448f9e69fe79711ffadab7fc45e6f8" category="section-title">機器の所有者</block>
   <block id="d786327190524a9c90e4131ef647a939" category="paragraph">3 つの運用モデルすべてで、ネットアップはお客様のオンプレミスにインストールされているすべてのハードウェアとソフトウェアのタイトルを所有します。</block>
   <block id="86d596e8967d088b834c8d852be2f7ae" category="summary">Keystone は、ファイル共有のアドホックスナップショットを作成します</block>
   <block id="79ddfbea235d8c6f69bef6a1289c1f02" category="doc">ファイル共有のアドホックスナップショットを作成します</block>
@@ -880,20 +875,7 @@
   <block id="fecb9dccd78c98c8a04ddd9aac28b3af" category="list-text">「 id` ：サービスリクエスト ID 」例： SRQ0035952014</block>
   <block id="f64d86ad0a77d0b90407860c2cf4c433" category="section-title">サービスリクエストを作成します</block>
   <block id="482aeb27cec2ee6093ee574763c7a9ec" category="paragraph">次の表に示すメソッドを使用して、サービスリクエストを作成します。</block>
-  <block id="a57f88e039b309218996266b80792e58" category="cell">tenant_id ：テナント ID 。</block>
   <block id="7f8a0fb4fe85ad8af0c7990fb7d44557" category="paragraph">要求の本文に必要な属性：必要な属性は、サービス要求のカテゴリによって異なります。次の表に、要求の本文の属性を示します。</block>
-  <block id="3adbdb3ac060038aa0e6e6c138ef9873" category="cell">カテゴリ</block>
-  <block id="b651efdb98a5d6bd2b3935d0c3f4a5e2" category="cell">必須</block>
-  <block id="787ad0b7a17de4ad6b1711bbf8d79fcb" category="cell">サブスクリプション。</block>
-  <block id="102da3147e28a4669677fece4454c61f" category="cell">「スクリュ」と「コミットメント」</block>
-  <block id="f92d949ea1f5479f6dd45574e5f59f28" category="cell">'storage-object_type''ubtenant_id ' および 'storage-object_id</block>
-  <block id="ad1ec60c9e1f10f6a9f5d9f2c5254bc6" category="cell">テクニカル</block>
-  <block id="1efcb45ce32fab1dd54282a048a8f6e3" category="cell">「 ubtenant_id 」と「 service-type 」がファイルサービスまたはブロックストレージの場合、ゾーンが必要です。</block>
-  <block id="6311ae17c1ee52b36e68aaf4ad066387" category="cell">その他</block>
-  <block id="ac10508ad70f95b289ff520585169501" category="section-title">サービスリクエストカテゴリを取得します</block>
-  <block id="a6a3bee28fe66348826c742871e5920e" category="paragraph">次の表に、指定したテナントの読み出しサービス要求のカテゴリを示します。</block>
-  <block id="ef64390758ed006361a142422376a39e" category="cell">サービスリクエストカテゴリを取得します。</block>
-  <block id="ea56ca71a57b3800165f4d81ba320151" category="cell">`tenant_id :` ( オプション ) 指定したテナントに対するサービスリクエストを返します。</block>
   <block id="0adda87f150d831017fdaf3460e96b83" category="summary">ファイルサーバを変更します</block>
   <block id="b5a62606ed28ca0efedfd8533613d4ef" category="paragraph">既存のサーバには、次の変更を加えることができます。</block>
   <block id="f68cba898870102d58f2dfed535c27a5" category="list-text">サーバ名を変更します</block>
@@ -1009,9 +991,7 @@
   <block id="36e8c53798d70dd276ec873bd9daedea" category="paragraph">プライマリボリュームの非同期ディザスタリカバリレプリケーションを有効にするには、次のものが必要です。</block>
   <block id="20a7636d7d202a8ca2df19231e59b397" category="list-text">ディザスタリカバリをサポートするための、ボリュームが配置されているファイルサーバまたはブロックストアの設定</block>
   <block id="11616f8eb46b74c6bff078f57cc68eb5" category="list-text">ファイル共有またはディスクのディザスタリカバリレプリケーションを有効または無効にします。ディザスタリカバリが設定されている場合、デフォルトでは、共有とディスクのディザスタリカバリレプリケーションが有効になります。</block>
-  <block id="1a616d944b2a6237298adf4b4e0db510" category="section-title">非同期のディザスタリカバリをサポートするようにファイルサーバまたはブロックストアを設定します</block>
   <block id="15c4b752abce956fbbf106b341d841ee" category="paragraph">ファイルサーバまたはブロックストアの作成時またはあとから、非同期のディザスタリカバリを有効にします。有効にしたディザスタリカバリを無効にすることはできず、ディザスタリカバリゾーンを変更することはできません。ディザスタリカバリスケジュールは、ディザスタリカバリロケーション（毎時、毎時 4 回、または毎日）にデータをレプリケートする頻度を指定します。</block>
-  <block id="1e53e767469d41ddc55c1ff94e72e9a6" category="section-title">ファイル共有またはディスクで非同期のディザスタリカバリを有効にします</block>
   <block id="ec9c28ece16dda721c388c1826025c31" category="paragraph">非同期のディザスタリカバリレプリケーションを設定できるのは、親ファイルサーバまたはブロックストアが最初に非同期のディザスタリカバリ用に設定されている場合のみです。デフォルトでは、親でレプリケーションが有効になっている場合、親ホストとなるファイル共有またはディスクでレプリケーションが有効になります。特定の共有またはディスクのレプリケーションを除外するには、その共有 / ディスクのディザスタリカバリを無効にします。これらの共有 / ディスクでレプリケーションを有効または無効に切り替えることができます。</block>
   <block id="7a0a70d776cf86d3de0837b534ab29ef" category="list-text">プライマリファイルサーバまたはブロックストアを削除すると、ディザスタリカバリ用にレプリケートされたコピーがすべて削除されます。</block>
   <block id="8ca9cd050d34dab0c72a2ab896f3423c" category="list-text">ディザスタリカバリゾーンは、ファイルサーバまたはブロックストアごとに 1 つだけ設定できます。</block>
@@ -1470,13 +1450,10 @@
   <block id="44aadf508c8d18b06adfde288bd6ee8f" category="list-text">オブジェクトストレージグループを作成および管理する。</block>
   <block id="93e36e4f88c3da99d57144e4f8a90d2b" category="list-text">S3 キーの作成など、オブジェクトストレージユーザを作成、管理します。</block>
   <block id="e926c4b1e2cbc184aaebed3300b65528" category="summary">NetApp Keystone の概要</block>
-  <block id="20ad3368f1c0111bba151423b888352a" category="doc">NetApp Keystone に関する FAQ</block>
   <block id="f7182ba3d28df04fc9e3174e93f4e48f" category="paragraph">以下の質問をお寄せください。 NetApp Keystone に関するよくあるお問い合わせをご確認ください。</block>
-  <block id="895b14af35ea6854d4009fe0ca2d99a9" category="section-title">NetApp Keystone とは</block>
   <block id="3771874bf7c86306e773082a180804e6" category="paragraph">NetApp Keystone は、 NetApp Keystone Flex Pay （ Flex Pay ）と NetApp Keystone Flex Subscription （ Flex Subscription ）で構成される、オンプレミスの CAPEX （設備投資）ソリューションのポートフォリオです。</block>
   <block id="dad1dbc2c04df177fc1751f2fe38a796" category="list-text">* Flex Pay ：従来のファイナンス、リース、固定 / 可変オプションなどの決済ソリューションのポートフォリオ。お客様のキャッシュフローニーズに対応します。</block>
   <block id="c2710cd486d9b2ff77e0f74a5cee084f" category="list-text">* フレックスサブスクリプション： * 従量課金制のサブスクリプションベースサービス。オンプレミスでクラウドレベルのエクスペリエンスを提供し、結果ベースのサービスオプション（ネットアップが運用）を提供します。詳細については、を参照してください <block ref="0db14f220bcc161ea430c9d9c2a995b1" category="inline-link-macro-rx"></block>。</block>
-  <block id="4180ab7c8af931cea237f1fc98665e51" category="section-title">NetApp Keystone はお客様にどのようなメリットをもたらしますか？</block>
   <block id="495428b6203b94e86f7bb39ebd14943f" category="paragraph">NetApp Keystone は、お客様がキャッシュフローとビジネスニーズを満たせるように、即応性、財務の柔軟性、財務リスクの軽減を実現する、 CAPEX とハイブリッドクラウド戦略の柱をつなぐ架け橋となります。</block>
   <block id="92924bd6e7a05a6c5f4784c329571449" category="paragraph">NetApp Keystone ブランドは、従来のファイナンス、リース、固定 / 可変オプションなどの柔軟な決済ソリューションのポートフォリオを提供しており、現金意識の高いお客様には Flex サブスクリプションを提供しています。</block>
   <block id="3bf24c0eb67771c3c758536741dd1ecb" category="list-text">* フレックス・ペイ（金融面での柔軟性、決済ソリューション）： *</block>
@@ -1492,11 +1469,8 @@
   <block id="f3e17e2700838fbe03291dba4993cb5b" category="list-text">一般的なストレージタスク（移行、機器更改、アップグレードなど）から IT リソースを再割り当て</block>
   <block id="d42a5439b90649db32832c09d880e732" category="list-text">ワークロードをクラウドに移行する前の短期的な解決策</block>
   <block id="8a0c55f43c16d42ccdb61d2fc1a0b26e" category="list-text">ワークロードをクラウドからオンプレミスに戻すことが可能</block>
-  <block id="22d8bac7bce19700db0c242175fbbb36" category="section-title">Flex サブスクリプションとは何ですか？</block>
   <block id="50132e06ede63dd88766d29a3458614d" category="paragraph">Flex サブスクリプションは、柔軟性に優れた、サブスクリプションベースの新しい購入モデルです。お客様は、リソースの管理に伴う課題を排除し、時間のかかる調達サイクルを実施することで、価値創出までの時間を短縮できます。Flex サブスクリプションを使用すると、お客様は経済性をビジネス上の優先事項に合わせることができます。詳細については、を参照してください <block ref="e54def7567bc3788d2fec2fa9a5026d4" category="inline-link-macro-rx"></block>。</block>
-  <block id="c4ffc4661f0bd5f3fd3eabc25603722a" category="section-title">オンプレミスとはどういう意味ですか？</block>
   <block id="d3b10007d7035a7c568a3955a37eed8b" category="paragraph">オンプレミスは、コロケーション施設のお客様所有のデータセンタースペースまたはお客様所有のスペースとして定義されています。設置面積、消費電力、冷却コストは、お客様の負担となります。</block>
-  <block id="ad146d70889d9752ab9ecf771d643988" category="section-title">Flex サブスクリプションサービスの利点は何ですか。</block>
   <block id="5af1ebb17edd2710a7d69e1d2bd260d5" category="paragraph">Flex サブスクリプションサービスには、次のような利点があります。</block>
   <block id="8bd95ed1921f37e6566d5e1a15654f19" category="list-text">複雑なストレージ関連タスクから IT 担当者を解放し、アプリケーション管理に集中できるようにします</block>
   <block id="948e87abc7966fff3728ef34d8d32e67" category="list-text">初期投資を削減します</block>
@@ -1669,35 +1643,20 @@
   <block id="10bc620b6bb0f1ce4ea88e07efee73a6" category="summary">サービス提供の詳細</block>
   <block id="997afc95a691698524a6c0b1a47c998b" category="doc">Flex サブスクリプションサービスの詳細</block>
   <block id="dcfcd456039c89795733b344b389f008" category="paragraph">以下の質問では、 NetApp Keystone Flex サブスクリプションサービスについてよくお問い合わせいただく質問を記載しています。</block>
-  <block id="56b1544f87c08dd0e8c7c59b1d1e1cdd" category="section-title">最小コミット済み容量</block>
   <block id="00e98aacc231867731d4db2a6b86250d" category="paragraph">NetApp Keystone フレックスサブスクリプション（ Flex サブスクリプション）の最小コミット容量は、 1 つ以上のサービス階層のサイトあたり 100TiB です。</block>
-  <block id="ebea9f7028f7d76c3f0dd5d1dfbf8d6b" category="section-title">Flex サブスクリプション契約の一般的な期間はどれくらいですか。</block>
   <block id="d83aac3c55590e08db3e10f99075aa77" category="paragraph">Flex サブスクリプションは、 12 、 24 、および 36 か月の期間を提供します。</block>
-  <block id="9772d2c3eb163e82ac0b2a6db26279a1" category="section-title">ストレージへのアクセス方法</block>
   <block id="6d1d3be3b468abe5f06f8fe18df9ecbb" category="paragraph">ネットアップが運用する（標準）モデルでは、ストレージコントローラ（ ONTAP システムマネージャまたはシステムへの管理アクセス）はネットアップが所有および管理します。ストレージの監視と管理には、 NetApp Service Engine の UI および API を使用する必要があります。ネットアップサービスエンジンの UI と API が主に課金機能に使用されるお客様管理（または Lite ）環境では、 Active IQ Unified Manager や ONTAP System Manager などのストレージコントローラにアクセスして、 ONTAP クラスタに直接アクセスできます。</block>
-  <block id="25cf226a42f4322a9f3ba3c14009c01c" category="section-title">サービスの管理方法を教えてください。</block>
   <block id="6999dbc7d78a26010127d5443d27a0bd" category="paragraph">NetApp Service Engine は、ストレージのプロビジョニングやサービス使用状況のレポートの取得に使用できるオーケストレーションおよび管理ツールです。</block>
-  <block id="dfa5d25da0b83cc41c788254af95eee0" category="section-title">サブスクリプションのコミット済み容量を増やすにはどうすればよいですか？</block>
   <block id="70be4f90cd164170af78a484759eb66c" category="paragraph">容量追加要求は、ネットアップサービスエンジン管理ツールまたは NetApp Keystone 成功マネージャから送信できます。</block>
-  <block id="2efbf1fbbce8fe7a7f1e6316c7c9296d" category="section-title">容量を増やすことで用語は延びていますか？</block>
   <block id="81ffcf182e9bafd1ef112dadd81c3f06" category="paragraph">既存の期間に追加されるのはすべて、サブスクリプションの過去 90 日間にリクエストが行われた場合を除き、既存の期間と同じ期間です。この場合、期間は少なくとも 12 カ月延長する必要があります。</block>
-  <block id="f43c2a8621b1179e1cec61cb621cead2" category="section-title">新しいサブスクリプションには、新しい年単位の期間を追加できる柔軟性がありますか。</block>
   <block id="353851e3be472d2e7deedffb8c84e9cd" category="paragraph">はい。新しいサブスクリプションでは、既存のサブスクリプションとは別に新しい条件を設定できます。</block>
-  <block id="f19b3e7365ec5d1a0a7a9b5c59224f13" category="section-title">テナントのサブスクリプション期間は、パートナーのサブスクリプション期間を超えて延長できますか？</block>
   <block id="74bf4d2ceefbc7590499b5c325cfea92" category="paragraph">テナントサブスクリプションは、パートナーの現行の Flex サブスクリプション期間を超えて延長できます。サブスクリプションが作成されると警告が表示され、使用状況レポートにも表示されます。</block>
-  <block id="fc491079d497d14569148eb853cbd243" category="section-title">同じ ONTAP クラスタで複数のサブスクリプションを混在させることはできますか。</block>
   <block id="3d96ed4e7cf96c207eb55360531e63d1" category="paragraph">いいえ。各クラスタは特定のサブスクリプションに割り当てられます。</block>
-  <block id="dcc217f9748618baebad99aab47addfd" category="section-title">監視と運用の担当者</block>
   <block id="7078b31ae5be77a7e25eb2d03d3bdadb" category="paragraph">ネットアップが実施するサービスについては、合意された期待に沿ってサービスを提供できるように、ネットアップがリモートでインフラを監視する責任があります。</block>
   <block id="faced2ebacb2b268fcaefb1ff2dfd6bc" category="paragraph">パートナーが運営するサービスについては、合意された期待に沿ってサービスが提供されるように、パートナーがインフラをリモートで監視する責任があります。</block>
   <block id="7d9cf83822ab7d2c72f16da8a358e341" category="paragraph">お客様が実施するサービスについては、インフラの監視とネットアップへの問題の報告は、顧客自身で行う</block>
-  <block id="a313cb4f572f282feb16774be9de7982" category="section-title">サービスを早期に終了した場合はどうなりますか？</block>
   <block id="a31f3e7467e53150995af65a049395c5" category="paragraph">サービスの最低契約期間は 12 カ月です。サービスを早期にキャンセルした場合は、残存価額を事前に支払う必要があります。</block>
-  <block id="dcf112dc318b9420122f0a53fe21ed45" category="section-title">最初の期間が終了した後、購入に転換する機会はありますか？</block>
-  <block id="7dbf31d33cf112c633b37c1ad90088c4" category="paragraph">いいえこの特典には、購入に切り替えるオプションは含まれていません。また、以前に購入されたネットアップ製品はこのプログラムの対象外です。</block>
-  <block id="0b5846399f2e6b14b7748017e567a036" category="section-title">特定のソフトウェアバージョンをリクエストできますか？</block>
   <block id="84243f6b8d465b834e36cf58cd48fed9" category="paragraph">いいえNetApp Keystone は、顧客ベース全体でソフトウェアバージョンを標準化しています。</block>
-  <block id="df1a5214600b52b2e71397e2ebdde540" category="section-title">ソフトウェアのアップグレードに関する情報は提供されますか？</block>
   <block id="73e02951afd28d2508077afaf5bc798f" category="paragraph">はい。すべての保守 / アップグレード作業は、 NetApp Keystone 成功マネージャがお客様と相互に合意した時間に連絡し、スケジュールされます。</block>
   <block id="51ef2e6beabfb88e0de5dcbc8aa4640a" category="summary">Keystone によってディスクが表示される</block>
   <block id="9d58782328bf029c4e013523d481162d" category="paragraph">ディスクリストには、選択したテナントに属するディスクが表示されます。リストを表示するには、メニューから * block storage &gt; Disks * を選択します。</block>
@@ -2123,7 +2082,6 @@
   <block id="0bb5849ddc549d6d9a0166d3663f0d1e" category="admonition">CIFS 共有の場合、共有パスの末尾に「 $ 」文字を追加すると、「 pathtomyiddenshare$ 」のように非表示の共有になります。</block>
   <block id="ff138ca03bebc3f223aa7473c49093cc" category="summary">ネットアップサービスエンジン REST API</block>
   <block id="f85fe16835da940dc0eded602be1d88a" category="doc">NetApp Service Engine REST API</block>
-  <block id="cbb81506a7fe3ef03f7a89c76c52131a" category="section-title">ページ付け</block>
   <block id="4bb8f28d1ae5f4c793395a1ce16ebd50" category="paragraph">多数の API 呼び出しが大量のレコードを返します。オフセット値と制限値を指定することにより ' レコード数を制限することができます</block>
   <block id="2c9821eb0bfa9053dd0b371fa82738f0" category="list-text">* 返されるレコードの数を制限します。</block>
   <block id="75100d42069de12445ab076dab1a5044" category="list-text">* オフセット。 * 最初のレコードを返す前にスキップするレコードの数。たとえば、 1 のオフセットは最初のレコードをスキップし、 2 番目のレコードから戻ります。</block>
@@ -2249,17 +2207,11 @@
   <block id="ac7d21b63f88f561c798cfcfabd678f4" category="summary">NetApp Service Engine / Self-Service Access Portal</block>
   <block id="fb7268175d0ac71e5fdf71ab277aca4b" category="doc">NetApp Service Engine / セルフサービスアクセスポータル</block>
   <block id="4836fbf45f5520deb90da1ffc3cc5d3a" category="paragraph">次の FAQ ：環境 NetApp Service Engine</block>
-  <block id="bfb968021aa3c15a51565cbc5a1befba" category="section-title">NetApp Service Engine とは</block>
   <block id="5e16440750c287c18b8d2735b4e7dce2" category="paragraph">NetApp Service Engine は、ネットアップが運用するモデルのセルフサービスポータルで、 NetApp Keystone Flex サブスクリプションサービスに基づいてストレージにログインしてプロビジョニングできます。また、このツールでは、サブスクリプションに対する消費レベルに関するレポートを作成し、サービスリクエストやサブスクリプションの変更を開始できます。</block>
-  <block id="3ced580d0f966cf9a9e85c8ba102cf71" category="section-title">お客様が運用するモデルには NetApp Service Engine が必要ですか。</block>
   <block id="a1eb2f9d0213b4b83bd94c3a7846c5fd" category="paragraph">お客様が運用するモデルでは、 NetApp Service Engine が必要です。消費の詳細に関する基本的なレポートを提供し、請求情報の収集と報告を行う必要があります。</block>
-  <block id="2830e1b8fd96958c68b6b537df47ade8" category="section-title">NetApp Service Engine のインストール先</block>
   <block id="f187b98f99dd84c9bafea152f790cf76" category="paragraph">ネットアップが運用するモデルでは、 NetApp Service Engine はネットアップが提供するコンピューティングリソース上にローカルにインストールされます。お客様が運用するモデルでは、 NetApp Service Engine がお客様のコンピューティングリソースにインストールされている。</block>
-  <block id="daf4c58bd86834d6dddba936e6ecc6c0" category="section-title">NetApp Service Engine にログインできるユーザ</block>
   <block id="2aab810ea61ea2be6fd50a111f7ed7b3" category="paragraph">ユーザは、 NetApp SSO または NetApp Service Engine で設定されたローカルユーザに対して認証されます。</block>
-  <block id="093ddb2f473e37b6da40f0e7e913a53d" category="section-title">アクセスはどのように制御されますか。</block>
   <block id="2a1113e11190f4c58504b1a6ac688c29" category="paragraph">NetApp Service Engine にはロールベースアクセス制御（ RBAC ）が用意されており、各ユーザをロールに関連付けることで実行できるアクションを定義できます。RBAC の割り当ては、 NetApp Service Engine を使用しているお客様が行います。</block>
-  <block id="d4dac52f2011c2c86664208849ba30b2" category="section-title">どのようなアクセスコントロールが利用できますか？</block>
   <block id="7a023009399c5dc5b7b99e87871f89a2" category="paragraph">次のアクセス制御を使用できます。</block>
   <block id="f7c7e4f4bf22f20e3672c098d35dd711" category="list-text">* パートナー管理者 * テナントの作成と管理、テナントのサブスクリプション管理、使用状況レポートの表示、ストレージの技術的な管理を行う権限を持つパートナー側の管理者。</block>
   <block id="2f2e521c25a605c65d92478142c6765e" category="list-text">* お客様 / テナント管理者 * サブスクリプションの変更のリクエスト、新しいユーザとサブテナントの作成、ファイル共有、ディスク、バケットの作成と表示を行う権限を持つ、お客様側の管理者。</block>
@@ -2442,46 +2394,7 @@
   <block id="f9452e95d52ebd12efeebe564007d35d" category="summary">NetApp Keystone サブスクリプション</block>
   <block id="dd476ad29752995a24a718ac007daee1" category="doc">NetApp Keystone フレックスサブスクリプションの FAQ です</block>
   <block id="17fdf54028714053b0bba12405eaecd1" category="paragraph">以下の質問では、 NetApp Keystone フレックスサブスクリプションサービスに関するよくあるお問い合わせをご紹介します。</block>
-  <block id="73f7ecfd22f46b0ca864812944c99f09" category="section-title">NetApp Keystone Flex サブスクリプションの一部として提供されるものは何ですか。</block>
-  <block id="1771982509e3d9209f34ffd1b4eaca53" category="paragraph">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）は、ブロック、ファイル、オブジェクトの各データサービスを対象とするサブスクリプションベースのサービスです。オンプレミスに導入して、ネットアップ、パートナー、またはお客様が運用できます。</block>
-  <block id="e61939fcc36e3f0f256adf22e9816969" category="section-title">Flex サブスクリプションの一部として提供されるストレージサービスにはどのようなものがありますか。</block>
-  <block id="e6df68e8257fbec40d2e98c80413136d" category="section-title">サポートされているアドオンサービス</block>
-  <block id="4d38b0e1221211e8162a34c72f8413bc" category="paragraph">高度なデータ保護（バックアップとディザスタリカバリ）と FabricPool によるハイブリッドクラウド階層化は、追加料金で選択できるアドオンサービスです。</block>
-  <block id="f6629ad264273c8be348e79ee1afafa8" category="section-title">ネットアップはこのサービスでどのようなサービスレベルを保証していますか？</block>
-  <block id="8a6dfd42d0ac82ba8881e2297f593099" category="paragraph">ネットアップが運用するシナリオでは、 NetApp Keystone は、プロビジョニングされるストレージでは 1TiB の IOPS を保証し、各サービスレベルでのレイテンシを保証します。</block>
-  <block id="78581b95ff4d4425c41531494bda5211" category="section-title">Flex サブスクリプションのマッピング先</block>
-  <block id="9b4fc2969b2c90d6baa93f8dfa36f11f" category="paragraph">Flex サブスクリプションは、単一のサイトまたは単一のデータセンターにマッピングされ、さまざまなパフォーマンスサービスレベルで構成されます。</block>
-  <block id="c0264d66e7928c21d3476b4e798b01a0" category="section-title">卓越した階層化と高度な階層化のパフォーマンスレベルにはどのようなメリットがありますか？</block>
-  <block id="0dad49754b7ea8c51c7759c604e3c2c6" category="paragraph">階層化は、階層化の卓越したパフォーマンスレベルと階層化のプレミアムパフォーマンスレベルで実現されるため、ストレージの設置面積と関連コストを削減できます。ネットアップでは、データの 25% がホットで、残りの 75% は使用頻度やコールドデータが低く、コールドストレージに移動します。また、使用状況レポートを確認して、データへのアクセス頻度を把握したり、情報に基づいて階層化サービスを有効にしたりすることができます。</block>
-  <block id="d420a7af1be236a5e734a1e6bba0de03" category="section-title">パートナー様はネットアップから購入した容量よりも多くの容量をお客様に販売できますか？</block>
-  <block id="f0bc270e3ef04141bcac07684ae4ad66" category="paragraph">テナントサブスクリプションには、パートナー様が購入した容量による制限はありません。パートナー様は、ネットアップから購入した容量よりも多くの容量をお客様に販売できます。購入済み容量を超える容量はオーバーサブスクリプションと呼ばれます。</block>
-  <block id="717c88bad9af17098aa1fefdc98396d4" category="section-title">お客様のツールと統合するための API は提供されていますか？</block>
   <block id="19dac31ef92aadf5c033c9154e144b27" category="inline-link-macro">Keystone Flex サブスクリプション API ガイド』を参照してください</block>
-  <block id="fc81ff8e28e1fadad7cbd4cb4634b04d" category="paragraph">はい。 RESTful API を使用して、独自のアプリケーションに統合できます。サポート &gt; API ドキュメント * に移動して、 Flex サブスクリプションサービスの API ドキュメントを参照します。詳細については、を参照してください <block ref="5b59c49596915ff0a388a418bca92047" category="inline-link-macro-rx"></block>。</block>
-  <block id="3484a1dcf9558d2b5b6189781e2c93e7" category="section-title">バースト容量とは何ですか？</block>
-  <block id="abf5618d5e1333eab13c92ceaf73a55e" category="paragraph">コミット済み容量を最大 20% 上回っている場合は、使用量を増減できます。バースト時の使用容量は 1 日単位で測定され、使用時にのみ課金されます。たとえば、コミット済み容量が 100TiB の場合、バースト時に最大 120TiB を使用できます。</block>
-  <block id="e4aac680b428772c98f7620e086f5e26" category="section-title">バーストを使用する場合、プレミアム料金は発生しますか？</block>
-  <block id="38c09cc92a132f967b3e77b300543718" category="paragraph">コミット済み容量の最大使用率は、コミット済み容量と同じ割合で請求されます。コミット済み容量の 20% を超える使用量は、 50% の Premium 料金で請求されます。</block>
-  <block id="93870a2fd753901b099d02a82da998b3" category="section-title">バースト容量のメリットは何ですか。</block>
-  <block id="a0e46e49bc163a72d6692ed9996ad212" category="paragraph">バースト時の容量により、ストレージをオンデマンドで消費することも、長期的な利用にも柔軟に対応することができます。</block>
-  <block id="a85ccd845093f8e54e28ce49e499da29" category="section-title">バースト時の容量はテナントにどのように割り当てられますか。</block>
-  <block id="c70d5dbeae72932fc6b8fa6039bf2fba" category="paragraph">バースト時の容量はパートナー様に割り当てられ、要件に基づいてさらにお客様に割り当てられます。</block>
-  <block id="e3761ebb5f81a7baf1e8a2c2538ef616" category="section-title">コミット済み容量およびバースト時の容量の使用状況はどこで確認できますか。</block>
-  <block id="afdd26404ad02349bc9cb62d7ef0a0cc" category="paragraph">NetApp Service Engine には、コミット済み容量と比較して使用済み容量をレポートするダッシュボードが組み込まれています。</block>
-  <block id="ad965f43328354ec9b015570fd24e980" category="section-title">コミット済み容量の使用率が一定の割合に達した場合に通知はありますか？</block>
-  <block id="e7260442255a0f97105d66c3dad4baff" category="paragraph">はい。管理ツールは、 NetApp Service Engine ダッシュボードを使用して容量使用状況に関する通知を提供します。</block>
-  <block id="b56873db48bfa7b3fc1ab1181361d247" category="section-title">Flex サブスクリプションの使用状況を表示する方法を教えてください。</block>
-  <block id="20db5ef7e42351b012d51ce4a23bc9f4" category="paragraph">NetApp Service Engine は、ダッシュボードビューを提供し、サブスクライブされているすべてのサービスに関する情報と消費されている容量を表示します。NetApp Service Engine の詳細については、を参照してください <block ref="8d35461a50e9d2cb480a76a035c5e522" category="inline-link-macro-rx"></block>。</block>
-  <block id="95ff4da1ee3d8daa27d594115a065c14" category="section-title">サービスに関する問題を報告するにはどうすればよいですか？</block>
-  <block id="c92cb788a14d61abb2a7bb5b63881591" category="paragraph">NetApp Keystone のサポートには、次のさまざまなチャネルからアクセスできます。</block>
-  <block id="dd9afe0490efda8b120f93740675d9bf" category="section-title">新しいストレージサービスを注文できますか。</block>
-  <block id="4ff5ee2c15890050cb37f8ed6f48173d" category="paragraph">はい。新しいストレージサービスまたはストレージサービスへの拡張は、 NetApp Service Engine ポータルから要求できます。要求は、 NetApp Keystone 運用チームが処理してから使用可能になります。</block>
-  <block id="6fd2ab1c8a57e25b6112773aa471db47" category="section-title">ストレージに関するコミットメントは即座に増えますか？</block>
-  <block id="76e83a78381ac0ab92f7e59cafae5aa8" category="paragraph">要求された容量に応じて、容量がすでに導入されているかどうか、または追加の機器の配送と設置が必要かどうかが判断されます。</block>
-  <block id="b53836a887bdf3d20315059a945b66b5" category="section-title">ワークロードを階層間で移動できますか。</block>
-  <block id="76f557c5004947c00c69ed100542e48d" category="paragraph">はい。ワークロードの移動先の階層にユーザがサブスクライブしている場合、ワークロードを階層間で移動できます。ただし、原因によってパフォーマンスが低下する可能性があるため、上位の階層から下位の階層に移動することは推奨されません。このプロセスは、ファイル共有を編集し、サービスレベル設定を変更するだけで完了します。</block>
-  <block id="787085c4f3beb4117a673b422a348e5f" category="section-title">どのソフトウェアバージョン（ ONTAP など）がデフォルトでインストールされているか。</block>
-  <block id="34e1c8f90cd0f76f40f57cd1bf1d557e" category="paragraph">サポートチームは、サブスクライブされているサービス階層（ファイルサービスとブロックサービスを使用する ONTAP 、ブロック用の SANtricity 、オブジェクト用の StorageGRID など）に応じて、セキュリティや機能の問題なしで最新の安定版リリースをインストールします。</block>
   <block id="319e2ff190f60a2826707dd7b65bdf7a" category="summary">Keystone が新しいディスクを作成</block>
   <block id="17db5f18ccda229fb1c66baa28fccd34" category="doc">ディスクを作成します</block>
   <block id="077ee42303f6bb5bb96991de1b5b9fad" category="paragraph">このセクションでは、ディスクの詳細を直接指定して新しいディスクを作成する方法について説明します。既存ディスクのスナップショットに基づいてディスクを作成する方法については、を参照してください <block ref="0b82bb23ff49e855b2c1ce8c6215b692" category="inline-link-macro-rx"></block>。</block>
@@ -2818,7 +2731,6 @@
   <block id="d900b34f4ec7d4c5aedb24b1b84b6642" category="list-text">メニューから * クラウドサービス * を選択します。</block>
   <block id="b9ff3c79bce6a74407aef38bc921b4d6" category="list-text">Google Cloud のクラウドサービスの作成ページで、サービスを作成するサブテナントを選択し、名前と GCP プロジェクト番号を追加します。</block>
   <block id="304a1797d3d8fe020002005a39cf8fd1" category="list-text">[ 作成（ Create ） ] をクリックします。作成されると、クラウドサービスページのサービス状態が「成功」に変わります。</block>
-  <block id="ff73f07d33b95ca8cfc1150265940594" category="section-title">使用状況に対する請求はどこで確認できますか？</block>
   <block id="91c4b877df1393baf62833e39a8a1140" category="paragraph">過去 3 か月間の月額プランの合計月額料金は、ダッシュボードの * 月額料金 * ウィジェットで確認できます。詳細な請求情報を表示するには、ウィジェットをクリックするか、 * Administration * &gt; * Billing * に移動します。</block>
   <block id="6f3775f5739b5cdd88b89ba7d8a013e2" category="list-text">ダッシュボードビュー：使用状況、請求、アラート、およびサービスリクエストを監視するさまざまなツールが表示されます。</block>
   <block id="a076faa5a9987e9b4759e761e7de52c4" category="paragraph">ダッシュボードには、 NetApp Keystone ストレージのサブスクリプションに関する情報が表示されます。これには、使用済み容量、使用状況に対する請求、最新のアラートやサービス要求などの情報が含まれます。これは、 NetApp Service Engine に初めてログインしたときのデフォルトビューです。ダッシュボードの詳細については、を参照してください <block ref="51b99950f96aebac50d3a68ee27b3fbd" category="inline-link-macro-rx"></block>。</block>
@@ -2932,8 +2844,6 @@
   <block id="29de402441037919e9b47a4ad8a12baa" category="cell">500TiB ^3^</block>
   <block id="f1dae87d14ba76423e263dc9a79acdd7" category="paragraph">次の表は、ネットアップが運用する運用モデル、パートナーが運用する運用モデル、お客様が運用する運用モデルの 3 つの概要を示しています。</block>
   <block id="10288ddd3c9dd46deaa222ee129df3fb" category="doc">米国市民サポート（ USCS ）</block>
-  <block id="b705fe2f9502ab5e1421d02eae05ad9f" category="paragraph">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）は、ネットアップのグローバルサービスおよびサポートセンター（ GSSC ）を通じて、 US Citizen Support （ USCS ）サービスを継続的に監視、サポートします。</block>
-  <block id="437e64ea2377702ad2881edf8040c7c0" category="paragraph">GSSC は、地理的に分散したチームで、さまざまなネットアップのお客様にサービスを提供しています。Flex Subscription のための USCS サービスは、 Flex Subscription サービスの監視とサポートが米国内の米国市民によって確実に提供されるようにします。システムのメンテナンスに必要なオンサイトサポートとトラブルシューティングも含まれます。</block>
   <block id="5233633b9faaa681d96ef5c43e30bea2" category="section-title">論理容量</block>
   <block id="bd1984523f235f050c7a687cbdffee96" category="paragraph">これは、お客様が Flex サブスクリプションインフラストラクチャに配置したデータです。すべての Flex サブスクリプション容量は、論理容量を参照します。たとえば、 1TiB のファイルが Flex サブスクリプションインフラに格納された場合、少なくとも 1TiB 以上の容量を購入する必要があります。</block>
   <block id="4ac938291a74f21a35352afb886d2d88" category="section-title">コミット済み容量</block>
@@ -2989,7 +2899,6 @@
   <block id="425e38b195744df5f5136ad925efc16b" category="paragraph">Flex Subscription では、パフォーマンスサービスレベルに基づいて消費量を測定します。各パフォーマンスサービスレベルは、特定のアダプティブ QoS ポリシーに関連付けられています。展開中に、加入している Flex サブスクリプションサービスの各 QoS ポリシーの詳細が通知されます。ストレージ管理処理の実行中に予期しない課金を避けるため、ボリュームには、サブスクライブしたパフォーマンスサービスレベルに従って適切な QoS ポリシーが割り当てられていることを確認してください。ONTAP の QoS ポリシーの詳細については、を参照してください <block ref="7f8846f19a6367d0efc82511d70933cd" category="inline-link-macro-rx"></block>。</block>
   <block id="c84b839ec902b06b55455b45091db81d" category="paragraph">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）で登録したすべてのサービスの月額料金を、 NetApp Service Engine のダッシュボードと請求画面で確認できます。</block>
   <block id="bb75d5742f3f8cd7ea2b3326b4ead1a8" category="paragraph">過去 1 カ月間のすべての加入済み Flex サブスクリプションの課金情報を表示できます。毎月のバースト時の容量に対する請求が強調表示されます。</block>
-  <block id="61813b3866df19ca76d72405fbac5ce9" category="paragraph">詳細については、を参照してください <block ref="eb5228f75c5e56b970f5ae0448055097" category="inline-link-macro-rx"></block></block>
   <block id="6100897489646888867118f23efef503" category="paragraph">このリリースの新機能は次のとおりです。</block>
   <block id="5238fb622db8670699adbf5b482678e6" category="list-text">ようこそ画面を表示すると、 Flex Subscription 管理者に Cloud Manager のユーザ ID と Flex Subscription のユーザ ID を関連付けるよう依頼できます。これにより、 * Keystone Flex Subscription * タブにアクセスできます。</block>
   <block id="c1a093259dea21d070b755503e96dcdf" category="list-text">オンプレミスシステムおよび Cloud Volumes ONTAP で、サブスクライブされているサービスのコミット済み容量および使用済み容量の消費データを表示します。</block>
@@ -3096,4 +3005,74 @@
   <block id="65b034376f8c6863d7282690b92e3bf9" category="paragraph">Flex サブスクリプションは、オンプレミスシステムでクラウドと同等のエクスペリエンスを提供し、思いどおりのクラウド接続を実現する、ストレージサービスです。</block>
   <block id="e49cf55687c692a556892a0f614ce9bf" category="list-text">* NetApp Keystone Flex Pay * - NetApp Keystone Flex Pay （フレックスペイ）は、従来のファイナンス、リース、固定 / 可変オプションなど、お客様のキャッシュフローニーズに合わせた柔軟なファイナンスオプションのポートフォリオです。</block>
   <block id="cf7ec62445091377db24ebd1c9fd2d93" category="list-text">* NetApp Keystone Flex サブスクリプション * - NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）は、成長に合わせて拡張できる成果ベースのサブスクリプションサービスで、オンプレミスのクラウドレベルのエクスペリエンスを実現します。</block>
+  <block id="dbfc4f71a4b957c42860a7892c3f69ce" category="doc">NetApp Keystone のよくある質問（FAQ）</block>
+  <block id="f6c9f270161fc54b8171600d1892aca1" category="paragraph">* NetApp Keystone とは?*</block>
+  <block id="06c96924e7d69a8367e454a26634c43f" category="paragraph">* NetApp Keystone はお客様にどのようなメリットをもたらしますか。*</block>
+  <block id="14f844051d2834775cfe8fc636854af6" category="paragraph">* Flexサブスクリプションとは？*</block>
+  <block id="5aed86d713fb69dbe024ac9088076e73" category="paragraph">*オンプレミスとはどういう意味ですか。*</block>
+  <block id="a75a7cee34b949b2845063d48f4f6ce7" category="paragraph">* Flexサブスクリプションサービスの利点は何ですか。*</block>
+  <block id="a3bbf620adc7e7bcc0d6001db0d7e174" category="paragraph">* NetApp Keystone Flexサブスクリプションの一部として提供されるものは何ですか？* NetApp Keystone Flexサブスクリプション（Flexサブスクリプション）とは、ブロック、ファイル、オブジェクトの各データサービスを対象としたサブスクリプションベースのサービスで、オンプレミスに導入して、ネットアップ、パートナー、またはお客様が運用できます。</block>
+  <block id="7f3c8f66eb2c4902c4723ee68d1dd702" category="paragraph">* Flexサブスクリプションの一部として提供されるストレージサービスは何ですか。*詳細については、を参照してください <block ref="eb5228f75c5e56b970f5ae0448055097" category="inline-link-macro-rx"></block></block>
+  <block id="78d9a5281ccb539856a1f4dd20094aea" category="paragraph">*どのようなアドオンサービスがサポートされていますか？* FabricPool による高度なデータ保護（バックアップとディザスタリカバリ）とハイブリッドクラウド階層化は、追加料金で選択できるアドオンサービスです。</block>
+  <block id="f51aca773a35af7c6804c9de4ec05591" category="paragraph">*ネットアップがサービスに対してどのようなサービスレベルを保証しますか？*ネットアップが運用するシナリオでは、プロビジョニングされたストレージでNetApp Keystone が1TiBのIOPSを保証し、各サービスレベルでのレイテンシを保証します。</block>
+  <block id="22fbbcf2456a5d7f160b510c7b3af3ae" category="paragraph">* Flexサブスクリプションは何にマッピングされますか？* Flexサブスクリプションは、1つのサイトまたは1つのデータセンターにマッピングされ、異なるパフォーマンスサービスレベルで構成されます。</block>
+  <block id="649571bfc7e1b8f98d07b3d829506d93" category="paragraph">*階層化のパフォーマンス・レベルが極端に高い場合と階層化の場合のメリットは何ですか?階層化は'階層化のパフォーマンス・レベルが極端に高い場合に有効になり'ストレージの設置面積と関連コストを削減できますネットアップでは、データの 25% がホットで、残りの 75% は使用頻度やコールドデータが低く、コールドストレージに移動します。また、使用状況レポートを確認して、データへのアクセス頻度を把握したり、情報に基づいて階層化サービスを有効にしたりすることができます。</block>
+  <block id="d6df6eff28ac44af1e13e275b0228621" category="paragraph">*パートナー様はネットアップから購入した容量よりも多くの容量をお客様に販売できますか？*テナントサブスクリプションは、パートナー様が購入した容量に制限されません。パートナー様は、ネットアップから購入した容量よりも多くの容量をお客様に販売できます。購入済み容量を超える容量はオーバーサブスクリプションと呼ばれます。</block>
+  <block id="1ed1cac8cc85c7270eaad5bcd4a6157f" category="paragraph">*お客様のツールと統合するためのAPIは提供されていますか。*はい、RESTful APIを使用して、お客様のアプリケーションに統合できます。サポート &gt; API ドキュメント * に移動して、 Flex サブスクリプションサービスの API ドキュメントを参照します。詳細については、を参照してください <block ref="5b59c49596915ff0a388a418bca92047" category="inline-link-macro-rx"></block>。</block>
+  <block id="c54f3024ff23dcfc42681979d3398492" category="paragraph">*バースト容量とは何ですか？*コミット容量を最大20%上回る使用量を増減できます。バースト時の使用容量は 1 日単位で測定され、使用時にのみ課金されます。たとえば、コミット済み容量が 100TiB の場合、バースト時に最大 120TiB を使用できます。</block>
+  <block id="b97f95dce25dbfc957db05f02efd82ea" category="paragraph">*バースト時にプレミアム料金が発生しますか？*バースト時の容量使用率は、コミット済み容量と同じレートで、コミット済み容量の20%を超える使用率は、50%のプレミアム料金で請求されます。</block>
+  <block id="a8ea445913e860dbecd22f3fee610a90" category="paragraph">*バースト容量のメリットは何ですか?*バースト容量により、長期的な契約とは異なり、ストレージをオンデマンドで柔軟に消費できます。</block>
+  <block id="52f1a573da07f1d12b2d222128c410e1" category="paragraph">*バースト時の容量はどのようにテナントに割り当てられますか。*バースト時の容量は、要件に基づいてさらにお客様に割り当てられるパートナー様に割り当てられます。</block>
+  <block id="921cd7d2a595c1ff2d4f7183d236e5da" category="paragraph">* NetApp Service Engineには、コミット済み容量とバースト時の使用容量を表示するためのダッシュボードが組み込まれています。</block>
+  <block id="3b7f70a118579af4a1763cf34abef2a7" category="paragraph">*コミット済み容量の使用率が一定の割合に達した場合に通知が送信されますか？*はい、管理ツールはNetApp Service Engineダッシュボードから容量の使用状況に関する通知を提供します。</block>
+  <block id="4419434a1b65d14caa10786114db3112" category="paragraph">* Flex Subscription の利用状況をどのように表示しますか？ * NetApp Service Engine は、サブスクライブされているすべてのサービスに関する情報と、利用されている容量をダッシュボードに表示します。NetApp Service Engine の詳細については、を参照してください <block ref="8d35461a50e9d2cb480a76a035c5e522" category="inline-link-macro-rx"></block>。</block>
+  <block id="5a3115449a2b3065d5bb7484cfe4f999" category="paragraph">* サービスに関する問題はどのように報告すればよいですか？ * NetApp Keystone サポートには、次のようなさまざまなチャネルを通じてアクセスできます。</block>
+  <block id="00b8e318a80a143ca212b4f3b0cb449f" category="paragraph">* 新しいストレージサービスを注文できますか？ * はい、 NetApp Service Engine ポータルから新しいストレージサービスまたはストレージサービスへの拡張をリクエストできます。要求は、 NetApp Keystone 運用チームが処理してから使用可能になります。</block>
+  <block id="eff136c1ba2e8a2d6e4b14ddd6a80383" category="paragraph">* ストレージに関するコミットメントは即座に向上しますか？ * 必要な容量に応じて、容量がすでに導入されているかどうかを判断するか、追加の機器の発送と設置が必要かを判断します。</block>
+  <block id="f71fb6dbf8a02dfaed157786a5d1337e" category="paragraph">* ワークロードを階層間で移動できますか？ * はい、ユーザがワークロードの移動先の階層にサブスクライブされている場合、ワークロードを階層間で移動できます。ただし、原因によってパフォーマンスが低下する可能性があるため、上位の階層から下位の階層に移動することは推奨されません。このプロセスは、ファイル共有を編集し、サービスレベル設定を変更するだけで完了します。</block>
+  <block id="0d5e545b2de42575e5208d3abb79f68c" category="paragraph">* どのバージョンのソフトウェア（たとえば、 ONTAP ）がデフォルトとしてインストールされていますか。 * 登録されているサービス階層（ファイルサービスとブロックサービスを使用する ONTAP 、ブロック用の SANtricity 、オブジェクト用の StorageGRID など）に応じて、サポートチームはセキュリティや機能の問題なしで最新の安定版リリースをインストールします。</block>
+  <block id="7ae9036783fb54e0a52aedfa26814f6b" category="paragraph">*主な活動を担当するのは、どのような運用モデルですか？*</block>
+  <block id="f2ac98a13f280a4eeb27bb4780175f5e" category="paragraph">*ネットアップが運用するモデルとは？*</block>
+  <block id="7dd4b2b13e8a8a109244cccfafe4b5a5" category="paragraph">*パートナーが運用するモデルとは？*</block>
+  <block id="39154db86ad669a527d87dd05e1655c5" category="paragraph">*お客様が操作するモデルは何ですか。*</block>
+  <block id="7eb973e02baa4e25734e8bed944c060a" category="paragraph">*装置の所有者はだれであるか。*</block>
+  <block id="3b4d5a194534074e4e26b153c90a2ef6" category="doc">米国市民サポート（USCS）</block>
+  <block id="90770185e7f0d93f4befd67871a81092" category="paragraph">米国市民サポート（USCS）は、NetApp Keystone サブスクリプションのアドオンサービスです。また、米国から継続的なKeystoneサービスの提供とサポートを受けることができます米国の市民土。</block>
+  <block id="0298010e49da89b748a96d3dd60c3579" category="paragraph">次のセクションを読み、このアドオンサービスに拘束されているサブスクリプションの要素を理解してください。また、NetApp Keystone 契約の条件に基づいて提供されています。脚注：disclaimer1 [ここで説明するサービスとサービスは、完全に締結されたKeystone契約の対象となり、これらに限定されます。]</block>
+  <block id="616e342ef98270057c5d3a2f3e3e7338" category="section-title">ネットアップグローバルサービスサポートセンターの監視</block>
+  <block id="c779911684ebe3ceed4035306e2997c3" category="paragraph">NetApp Global Services and Support Center（GSSC）は、お客様の製品と登録サービスの健常性を監視し、リモートサポートを提供し、Keystone Success Managerとのコラボレーションを行います。関連するKeystoneサブスクリプション注文に関連する製品を監視する担当者は、すべて米国で運用されている米国市民です土。</block>
+  <block id="b47b3a710484adb2c8cfacd64043b550" category="section-title">Keystone Success Managerの略</block>
+  <block id="42f709e8a5be1c018041912b530ca640" category="paragraph">Keystone Success Managerは米国米国で活動している市民土。担当業務は、NetApp Keystone 契約に明記されています。</block>
+  <block id="e8483ac20b1990d2362dd45e18cfb1d2" category="section-title">展開アクティビティ</block>
+  <block id="221d560cb3a4127ba5fc624a195a7f29" category="paragraph">米国では、可能な場合、オンサイトおよびリモートでの導入および設置作業を行います米国の市民土。脚注：免責事項[オンサイトでの活動に適切な担当者がいるかどうかは、Keystoneシステムが導入されている地域によって異なります。]</block>
+  <block id="cedba9b370f4f8fb7584b8a96576dbce" category="paragraph">可能な場合は、必要なオンサイトのトラブルシューティングおよびサポート活動が米国によって実施されます米国の市民土。脚注:免責事項[]</block>
+  <block id="d5711d7ae3d6e6f47fa957a95d3142aa" category="paragraph">*最小コミット容量はいくつですか。*</block>
+  <block id="fd71b73700b422e3b4675c81159656ef" category="paragraph">* Flexサブスクリプション契約の一般的な期間はどのくらいですか。*</block>
+  <block id="09d09e7b7afd8ded500977e3cee6326f" category="paragraph">*ストレージへのアクセス方法は?*</block>
+  <block id="9fa797e742e7be6391aced52fdf5093a" category="paragraph">*サービスの管理方法を教えてください。*</block>
+  <block id="f240946a05316b452971a7e9095ac4a2" category="paragraph">*月額プランの確定容量を増やすにはどうすればよいですか。*</block>
+  <block id="5d82a19ac986be3e28747ff2634e505b" category="paragraph">*容量を増やすことで期間は延長されますか。*</block>
+  <block id="b966cade5691b18bf62755c195447e05" category="paragraph">*新しい月額プランには、新しい年間契約を柔軟に追加できますか。*</block>
+  <block id="58308e954617b52ff118d3299ec8f228" category="paragraph">*テナントサブスクリプションの条件は、パートナー様のサブスクリプションの期間を超えて延長できますか。*</block>
+  <block id="74fc177e4bef1cdf2bea4ccdadd13631" category="paragraph">*同じONTAP クラスタで複数のサブスクリプションを混在させることはできますか。*</block>
+  <block id="419ac205a5a84ff5f314afba4f5edb27" category="paragraph">*誰が監視し、操作するのか。*</block>
+  <block id="393da119bc3b207bcea2f02315c388ac" category="paragraph">*サービスを早く終了するとどうなりますか。*</block>
+  <block id="b387af4e718e4b5565ce87f74234f50f" category="paragraph">*最初の言葉が完了した後で購入に転換する機会はあるか。*いいえこの特典には、購入に切り替えるオプションは含まれていません。また、以前に購入されたネットアップ製品はこのプログラムの対象外です。</block>
+  <block id="a16dc1f5755db55741d2ae801d6aa73d" category="paragraph">*特定のソフトウェアバージョンをリクエストできますか。*</block>
+  <block id="ee62bd671134498c82c2878422e9f59a" category="paragraph">*ソフトウェアのアップグレードについてお知らせしますか。*</block>
+  <block id="4b27d8b1b37284b9da0b4213e4e6675d" category="paragraph">|=|HTTPメソッド|パス|概要 |パラメータ</block>
+  <block id="9104a21e58f1a69b57c6b2ae89602908" category="paragraph">|`POST`|`/v2.1/tenants /{tenant_id }/servicests/categories ||サービスリクエストを作成します。|`tenant_id :テナントID。</block>
+  <block id="58e00570185a83ad51f69b7079961f6b" category="paragraph">|カテゴリ|必須</block>
+  <block id="4ef290f7b3c58a4e717e6cc36148b17f" category="paragraph">|Subscription|'subscription'|Disaster recovery |'storage_object_type','Subtenant object_id'|Technical |`service_type`がファイルサービスまたはブロックストレージの場合、zoneが必要です。|その他|ゾーン</block>
+  <block id="0725399a92712a8b8a9b398144b43a68" category="cell">*要求本文の例：*｛"subject"："string"、"comment"："string"、"category"："subscription"、"priority"："Normal"、"subscription"："A-S00003969"、 「commitment」：｛"SERVICE_LEVEL "：「standard」、「new_commitment」：10｝、「zone」：「au-east1-a」、「Subtenant _id」：「5d2fb0f47df00015274e3」、「storage_object_type：「fileserver」 "storage_object_id"："5d2fb0fb4f47df00015274e3"、"SERVICE_TYPE"："File Services"｝....*応答本文の例：*｛"status"：｛"user_message"："string"、"verbose_message"："string"、"code"："string"｝、"result"：｛"returned_records"：1、"records"：[｛"id"："string"、"subject"："string"、概要 ："Normal"、"Status"： 「createdDate」：「2020-05-12T03：18：25+0000」、「UpdatedDate」：「2020-05-12T03：18：25+0000」｝…==Retrieve service request categories次の表に、指定したテナントに対するRetrieve service requestカテゴリーを示します。</block>
+  <block id="b235a9ee30b02d07ff714bb1542b9b1d" category="paragraph">| HTTPメソッド|パス|概要 |パラメータ</block>
+  <block id="3cfc9b45a25da8c56ea24ecc26ed6f54" category="paragraph">|`get`|`/v2.1/tenants /{tenant_id }/servicests/categories |サービスリクエストのカテゴリを取得します。|`tenant_id :`(オプション)指定したテナントに対するサービスリクエストを返します。</block>
+  <block id="c31fc18f14b317fa271c222c8662ff0b" category="cell">要求本文の必須属性:'none`*Request本文の例:*....なし*応答本文の例：*｛"status"：｛"user_message"："OKay"。5つのレコードが返されました。"、" verbose_message "：""、"コード"：200｝、"結果"：｛" returned_records "：5、"レコード"：[｛"キー"："DR"、"値："："Disaster Recovery Failover"｝、｛"キー："、"値："Technical問題 、"、"： "バックアップリストア"｝｝</block>
+  <block id="8615a49d222eeb50c22f60e749d36d5e" category="paragraph">* NetApp Service Engineとは</block>
+  <block id="a5e1a7f3557344aca20fdd047ee9cace" category="paragraph">*お客様が運用するモデルにはNetApp Service Engineが必要ですか？*</block>
+  <block id="46eed4ec681c7ae2f6418744e02e8ba8" category="paragraph">* NetApp Service Engineはどこにインストールされていますか。*</block>
+  <block id="170e5a414316e2259d6b42a282c77c45" category="paragraph">* NetApp Service Engineにログインできるのは誰ですか。*</block>
+  <block id="109d8311a672ab956bbde63f671b0b7c" category="paragraph">*アクセスはどのように制御されますか。*</block>
+  <block id="bfc9a9f184efe2a5063de0904d04a09f" category="paragraph">*どのようなアクセスコントロールが使用できますか。*</block>
+  <block id="dc621b6e8c29275d1ab76120be6c1392" category="paragraph">*使用に対する請求はどこで確認できますか。*</block>
 </blocks>

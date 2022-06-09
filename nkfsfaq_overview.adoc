@@ -4,7 +4,7 @@ permalink: nkfsfaq_overview.html
 keywords: netapp, keystone, overview, 
 summary: NetApp Keystone の概要 
 ---
-= NetApp Keystone に関する FAQ
+= NetApp Keystone のよくある質問（FAQ）
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,9 +16,7 @@ summary: NetApp Keystone の概要
 [role="lead"]
 以下の質問をお寄せください。 NetApp Keystone に関するよくあるお問い合わせをご確認ください。
 
-
-
-=== NetApp Keystone とは
+* NetApp Keystone とは?*
 
 NetApp Keystone は、 NetApp Keystone Flex Pay （ Flex Pay ）と NetApp Keystone Flex Subscription （ Flex Subscription ）で構成される、オンプレミスの CAPEX （設備投資）ソリューションのポートフォリオです。
 
@@ -26,9 +24,7 @@ NetApp Keystone は、 NetApp Keystone Flex Pay （ Flex Pay ）と NetApp Keyst
 * * フレックスサブスクリプション： * 従量課金制のサブスクリプションベースサービス。オンプレミスでクラウドレベルのエクスペリエンスを提供し、結果ベースのサービスオプション（ネットアップが運用）を提供します。詳細については、を参照してください link:https://docs.netapp.com/us-en/keystone/index.html["こちらをご覧ください"]。
 
 
-
-
-=== NetApp Keystone はお客様にどのようなメリットをもたらしますか？
+* NetApp Keystone はお客様にどのようなメリットをもたらしますか。*
 
 NetApp Keystone は、お客様がキャッシュフローとビジネスニーズを満たせるように、即応性、財務の柔軟性、財務リスクの軽減を実現する、 CAPEX とハイブリッドクラウド戦略の柱をつなぐ架け橋となります。
 
@@ -55,21 +51,15 @@ NetApp Keystone ブランドは、従来のファイナンス、リース、固�
 
 
 
-
-
-=== Flex サブスクリプションとは何ですか？
+* Flexサブスクリプションとは？*
 
 Flex サブスクリプションは、柔軟性に優れた、サブスクリプションベースの新しい購入モデルです。お客様は、リソースの管理に伴う課題を排除し、時間のかかる調達サイクルを実施することで、価値創出までの時間を短縮できます。Flex サブスクリプションを使用すると、お客様は経済性をビジネス上の優先事項に合わせることができます。詳細については、を参照してください link:https://docs.netapp.com/us-en/keystone/index.html#netapp-keystone-flex-subscription["こちらをご覧ください"]。
 
-
-
-=== オンプレミスとはどういう意味ですか？
+*オンプレミスとはどういう意味ですか。*
 
 オンプレミスは、コロケーション施設のお客様所有のデータセンタースペースまたはお客様所有のスペースとして定義されています。設置面積、消費電力、冷却コストは、お客様の負担となります。
 
-
-
-=== Flex サブスクリプションサービスの利点は何ですか。
+* Flexサブスクリプションサービスの利点は何ですか。*
 
 Flex サブスクリプションサービスには、次のような利点があります。
 

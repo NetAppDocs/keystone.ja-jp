@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: nkfsosm_uscs.html 
-keywords: netapp, keystone, US citizen support, USCS 
-summary: Keystone Flex サブスクリプションのパフォーマンス 
+keywords: netapp, keystone, US citizen support, USCS GSSC, Keystone Success Manager, USCS support 
+summary: 米国市民サポート（ USCS ） 
 ---
-= 米国市民サポート（ USCS ）
+= 米国市民サポート（USCS）
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,6 +14,30 @@ summary: Keystone Flex サブスクリプションのパフォーマンス
 
 
 [role="lead"]
-NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）は、ネットアップのグローバルサービスおよびサポートセンター（ GSSC ）を通じて、 US Citizen Support （ USCS ）サービスを継続的に監視、サポートします。
+米国市民サポート（USCS）は、NetApp Keystone サブスクリプションのアドオンサービスです。また、米国から継続的なKeystoneサービスの提供とサポートを受けることができます米国の市民土。
 
-GSSC は、地理的に分散したチームで、さまざまなネットアップのお客様にサービスを提供しています。Flex Subscription のための USCS サービスは、 Flex Subscription サービスの監視とサポートが米国内の米国市民によって確実に提供されるようにします。システムのメンテナンスに必要なオンサイトサポートとトラブルシューティングも含まれます。
+次のセクションを読み、このアドオンサービスに拘束されているサブスクリプションの要素を理解してください。また、NetApp Keystone 契約の条件に基づいて提供されています。脚注：disclaimer1 [ここで説明するサービスとサービスは、完全に締結されたKeystone契約の対象となり、これらに限定されます。]
+
+
+
+== ネットアップグローバルサービスサポートセンターの監視
+
+NetApp Global Services and Support Center（GSSC）は、お客様の製品と登録サービスの健常性を監視し、リモートサポートを提供し、Keystone Success Managerとのコラボレーションを行います。関連するKeystoneサブスクリプション注文に関連する製品を監視する担当者は、すべて米国で運用されている米国市民です土。
+
+
+
+== Keystone Success Managerの略
+
+Keystone Success Managerは米国米国で活動している市民土。担当業務は、NetApp Keystone 契約に明記されています。
+
+
+
+== 展開アクティビティ
+
+米国では、可能な場合、オンサイトおよびリモートでの導入および設置作業を行います米国の市民土。脚注：免責事項[オンサイトでの活動に適切な担当者がいるかどうかは、Keystoneシステムが導入されている地域によって異なります。]
+
+
+
+== サポート
+
+可能な場合は、必要なオンサイトのトラブルシューティングおよびサポート活動が米国によって実施されます米国の市民土。脚注:免責事項[]

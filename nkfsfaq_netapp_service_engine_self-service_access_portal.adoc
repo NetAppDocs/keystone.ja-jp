@@ -16,39 +16,27 @@ summary: NetApp Service Engine / Self-Service Access Portal
 [role="lead"]
 次の FAQ ：環境 NetApp Service Engine
 
-
-
-=== NetApp Service Engine とは
+* NetApp Service Engineとは
 
 NetApp Service Engine は、ネットアップが運用するモデルのセルフサービスポータルで、 NetApp Keystone Flex サブスクリプションサービスに基づいてストレージにログインしてプロビジョニングできます。また、このツールでは、サブスクリプションに対する消費レベルに関するレポートを作成し、サービスリクエストやサブスクリプションの変更を開始できます。
 
-
-
-=== お客様が運用するモデルには NetApp Service Engine が必要ですか。
+*お客様が運用するモデルにはNetApp Service Engineが必要ですか？*
 
 お客様が運用するモデルでは、 NetApp Service Engine が必要です。消費の詳細に関する基本的なレポートを提供し、請求情報の収集と報告を行う必要があります。
 
-
-
-=== NetApp Service Engine のインストール先
+* NetApp Service Engineはどこにインストールされていますか。*
 
 ネットアップが運用するモデルでは、 NetApp Service Engine はネットアップが提供するコンピューティングリソース上にローカルにインストールされます。お客様が運用するモデルでは、 NetApp Service Engine がお客様のコンピューティングリソースにインストールされている。
 
-
-
-=== NetApp Service Engine にログインできるユーザ
+* NetApp Service Engineにログインできるのは誰ですか。*
 
 ユーザは、 NetApp SSO または NetApp Service Engine で設定されたローカルユーザに対して認証されます。
 
-
-
-=== アクセスはどのように制御されますか。
+*アクセスはどのように制御されますか。*
 
 NetApp Service Engine にはロールベースアクセス制御（ RBAC ）が用意されており、各ユーザをロールに関連付けることで実行できるアクションを定義できます。RBAC の割り当ては、 NetApp Service Engine を使用しているお客様が行います。
 
-
-
-=== どのようなアクセスコントロールが利用できますか？
+*どのようなアクセスコントロールが使用できますか。*
 
 次のアクセス制御を使用できます。
 
@@ -58,8 +46,6 @@ NetApp Service Engine にはロールベースアクセス制御（ RBAC ）が�
 * * ネットアップ管理者 * このユーザには、 NetApp Keystone フレックスサブスクリプションを管理するための NetApp Service Engine Web ポータルですべての機能を実行するためのフルアクセス権限と、パートナーとテナントの管理に関するすべてのアクティビティが付与されます。
 
 
-
-
-=== 使用状況に対する請求はどこで確認できますか？
+*使用に対する請求はどこで確認できますか。*
 
 過去 3 か月間の月額プランの合計月額料金は、ダッシュボードの * 月額料金 * ウィジェットで確認できます。詳細な請求情報を表示するには、ウィジェットをクリックするか、 * Administration * > * Billing * に移動します。
