@@ -16,24 +16,7 @@ summary: NetApp Service Engine の新機能
 [role="lead"]
 このリリースノートでは、 NetApp Keystone Flex Subscription （ Flex サブスクリプション）サービスで導入された新機能と機能拡張、および既知の制限事項と修正について説明します。
 
-
-
-== Cloud Volumes ONTAP の使用状況と課金の表示（ 2021 年 12 月 5 日）
-
-NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）のお客様で、 Cloud Volumes ONTAP サブスクリプションもお持ちの場合は、 Flex サブスクリプションを使用して Cloud Volumes ONTAP の使用量を課金し、請求および消費の詳細を表示できます。Cloud Manager で Flex サブスクリプションアカウントを検出し、 Cloud Manager インターフェイスに詳細を表示できるようになりました。[ すべてのサービス ] 、 [ デジタルウォレット ] 、 [ Keystone Flex サブスクリプション *] タブをクリックすると、次のアクティビティを実行できます。
-
-* ようこそ画面を表示すると、 Flex Subscription 管理者に Cloud Manager のユーザ ID と Flex Subscription のユーザ ID を関連付けるよう依頼できます。これにより、 * Keystone Flex Subscription * タブにアクセスできます。
-* オンプレミスシステムおよび Cloud Volumes ONTAP で、サブスクライブされているサービスのコミット済み容量および使用済み容量の消費データを表示します。
-* Cloud Manager アカウントに関連付けられている Flex サブスクリプションの詳細を表示します。コミット済み容量、消費済み容量、バースト時の容量などの詳細が表示されます。
-* Cloud Volumes ONTAP アカウントを Flex サブスクリプション ID にリンクして、課金レポートおよび容量使用状況レポート用にアカウントを関連付けます。
-* サブスクライブ済み Flex サブスクリプションサービスのコミット済み容量の増加または減少を要求します。
-* リンクされた Flex サブスクリプション ID を表示して、 Cloud Volumes ONTAP 消費の課金方法として使用します（リンクされた ID のみ）。
-
-
-詳細については、 Cloud Manager のドキュメントにある次のリンクを参照してください。link:https://docs.netapp.com/us-en/occm/concept_licensing.html#keystone-flex-subscription["Keystone Flex サブスクリプション"]
-link:https://docs.netapp.com/us-en/occm/task_managing_licenses.html#manage-keystone-flex-subscriptions["Keystone Flex Subscriptions を管理します"]
-
-｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝ ： NetApp Keystone フレキシブルサブスクリプション（ Flex サブスクリプション）で提供される拡張機能をサポートするために、ネットアップサービスエンジンのさまざまなリリースで次の機能が導入されています。
+NetApp Keystone Flex Subscription（Flex Subscription）を通じて提供される拡張機能をサポートするために、NetApp Service Engineのさまざまなリリースで導入された機能は次のとおりです。
 
 
 
@@ -112,7 +95,7 @@ NetApp Service Engine で、サービスプロバイダによるマルチテナ�
 
 === 階層化
 
-NetApp Keystone Flex サブスクリプションサービスに、 NetApp FabricPool テクノロジを活用した階層化機能が追加されました。使用頻度の低いデータを特定し、ネットアップのオンプレミス環境にあるコールドストレージに階層化します。階層化には、階層化の高度なパフォーマンスレベルや階層化のプレミアムなパフォーマンスレベルがあります。
+NetApp Keystone Flex サブスクリプションサービスに、 NetApp FabricPool テクノロジを活用した階層化機能が追加されました。使用頻度の低いデータを特定し、ネットアップのオンプレミス環境にあるコールドストレージに階層化します。階層化は、階層化の最上位サービスレベルまたはプレミアム階層化サービスレベルに登録することで選択できます。
 
 次の API が変更され、新しい階層化サービスレベルの属性値が追加されました。
 
@@ -123,7 +106,7 @@ NetApp Keystone Flex サブスクリプションサービスに、 NetApp Fabric
 詳細については、次のリンクを参照してください。
 
 * link:nkfsosm_tiering.html["階層化"]
-* link:nkfsosm_performance.html["パフォーマンスサービスレベル"]
+* link:nkfsosm_performance.html["サービスレベル"]
 
 
 ｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝

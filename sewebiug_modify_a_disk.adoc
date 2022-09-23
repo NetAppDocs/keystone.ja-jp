@@ -14,9 +14,9 @@ summary: Keystone によってディスクが変更される
 
 
 [role="lead"]
-ディスク名、ホストグループマッピング、パフォーマンスサービスレベル、容量、および Snapshot ポリシーを変更できます。この方法を使用すると、ディスクを別のサービスレベルに移動できます（使用可能な場合）。
+ディスク名、ホストグループマッピング、サービスレベル、容量、およびSnapshotポリシーを変更できます。この方法を使用すると、ディスクを別のサービスレベルに移動できます（使用可能な場合）。
 
-ディスクが動作状態である必要があります。ボリュームのステータスとそれらを運用するための手順については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html["ディスクを表示します"] および link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states["オブジェクトの状態"]
+ディスクが動作状態である必要があります。ボリュームのステータスとそれらを運用するための手順については、を参照してください link:sewebiug_view_disks.html["ディスクを表示します"] および link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states["オブジェクトの状態"]
 
 .手順
 . を表示します link:sewebiug_view_disks.html#view-disks["ディスクのリスト"]。
@@ -27,6 +27,6 @@ summary: Keystone によってディスクが変更される
 
 ディスクの変更は非同期ジョブとして実行されます。可能です
 
-* ジョブリストでジョブのステータスを確認します。ジョブの追跡については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。
+* ジョブリストでジョブのステータスを確認します。ジョブの追跡については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。
 * ジョブが完了したら、ディスクリストでディスクのステータスを確認します。
 

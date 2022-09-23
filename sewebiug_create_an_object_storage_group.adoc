@@ -14,15 +14,15 @@ summary: Keystone がオブジェクトストレージグループを作成す�
 
 
 [role="lead"]
-新しいオブジェクトストレージグループを作成するには、このメソッドを使用します。
+オブジェクトストレージグループを作成するには、このメソッドを使用します。
 
 .手順
-. を表示します link:sewebiug_view_a_list_of_users.html#view-a-list-of-users["ユーザリスト"]。
-. 正しいサブテナントが選択されていること、および表示にグループが表示されている（ユーザではない）ことを確認します。
+. オブジェクトストレージ>ユーザ管理>グループ*からオブジェクトストレージグループのリストを表示します。
+. 正しいサブテナントが選択されていることを確認し、「* Groups *」タブをクリックしてください。
 . [ グループの作成 *] をクリックします。
 . Create Group ダイアログボックスで、グループ名を入力します。
-. リストから S3 ポリシーを選択します。
+. リストから S3 ポリシーを選択します。S3ポリシーの詳細については、を参照してください https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy["ポリシーで権限を指定します"]。
 . [ 作成（ Create ） ] をクリックします。指定した設定でグループを作成するジョブが作成されます。
 
 
-オブジェクトストレージグループの作成は非同期ジョブとして実行されます。ジョブリストでジョブのステータスを確認できます。ジョブの追跡については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。
+オブジェクトストレージグループの作成は非同期ジョブとして実行されます。ジョブリストでジョブのステータスを確認できます。ジョブの追跡については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。

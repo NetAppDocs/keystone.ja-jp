@@ -125,7 +125,7 @@ id` ：ファイル共有の ID 。
  a| 
 `/v2.1/fileshares`
 | ファイル共有を作成できます。要求の本文に値を追加して、 ID 、名前、 Snapshot ポリシー、プロトコル、 ファイルサーバの IP タグとタグ  a| 
-`name` ：ファイル共有の名前。「 hare_path 」：ファイル共有のパス。`fileserver_id : ファイルサーバの ID 。'size_GB' ：ファイル共有のサイズ（ GB 単位）「 service_level 」： Standard 、 Premium 、 Premium-Tiering 、 Extreme 、 Extreme のいずれかのサービスレベル名を指定できます。'protocol' ：ファイル共有へのアクセスに使用されるプロトコル（ NFS 、 CIFS 、またはマルチプロトコル）「 security_style 」：セキュリティ形式（ UNIX または NTFS ）。「 export_policy` ：ファイル共有のエクスポートポリシー。
+`name` ：ファイル共有の名前。「 hare_path 」：ファイル共有のパス。`fileserver_id : ファイルサーバの ID 。`size_GB`：gibsのファイル共有のサイズ。「 service_level 」： Standard 、 Premium 、 Premium-Tiering 、 Extreme 、 Extreme のいずれかのサービスレベル名を指定できます。'protocol' ：ファイル共有へのアクセスに使用されるプロトコル（ NFS 、 CIFS 、またはマルチプロトコル）「 security_style 」：セキュリティ形式（ UNIX または NTFS ）。「 export_policy` ：ファイル共有のエクスポートポリシー。
 
 
 
@@ -152,7 +152,7 @@ id` ：ファイル共有の ID 。
  a| 
 `/v2.1/fileshares/{id}`
 | 任意のファイル共有を ID に基づいて変更できます。名前、プロトコル、 Snapshot ポリシー、バックアップポリシー、タグなど、ファイルサーバの ID と変更する値を要求の本文に追加します。  a| 
-id` ：ファイル共有の ID 。`name` ：ファイル共有の名前。'size_GB' ：ファイル共有のサイズ（ GB 単位）「 service_level 」： Standard 、 Premium 、 Premium-Tiering 、 Extreme 、 Extreme のいずれかのサービスレベル名を指定できます。'protocol' ：ファイル共有へのアクセスに使用されるプロトコル（ NFS 、 CIFS 、またはマルチプロトコル）「 export_policy` ：ファイル共有のエクスポートポリシー。
+id` ：ファイル共有の ID 。`name` ：ファイル共有の名前。`size_GB`：gibsのファイル共有のサイズ。「 service_level 」： Standard 、 Premium 、 Premium-Tiering 、 Extreme 、 Extreme のいずれかのサービスレベル名を指定できます。'protocol' ：ファイル共有へのアクセスに使用されるプロトコル（ NFS 、 CIFS 、またはマルチプロトコル）「 export_policy` ：ファイル共有のエクスポートポリシー。
 
 
 

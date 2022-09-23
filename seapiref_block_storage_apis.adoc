@@ -121,7 +121,7 @@ id` ：ディスクの ID 。
  a| 
 「 /v2.1/disks 」
 | ディスクを作成できます。要求の本文に値を追加して、サブテナント ID 、ゾーン、名前、ディスクパス、 Snapshot ポリシー、 バックアップポリシーおよびタグ。  a| 
-「 ubtenant_id 」：サブテナントの ID 。'zone' ：ゾーンの名前。`name` ：ディスクの名前。「 disk_path 」：ディスクのパス。'protocol' ：ブロック・デバイスのアクセスに使用されるストレージ・プロトコルos_type ：ホスト・オペレーティング・システムのタイプ「 hostgroup_dmappings 」：ホストグループマッピング。「 service_level 」： Standard 、 Premium 、 Premium-Tiering 、 Extreme 、 Extreme のいずれかのサービスレベル名を指定できます。[ize_GB] ：ディスクのサイズ（ GB 単位）。
+「 ubtenant_id 」：サブテナントの ID 。'zone' ：ゾーンの名前。`name` ：ディスクの名前。「 disk_path 」：ディスクのパス。'protocol' ：ブロック・デバイスのアクセスに使用されるストレージ・プロトコルos_type ：ホスト・オペレーティング・システムのタイプ「 hostgroup_dmappings 」：ホストグループマッピング。「 service_level 」： Standard 、 Premium 、 Premium-Tiering 、 Extreme 、 Extreme のいずれかのサービスレベル名を指定できます。`size_GB`：GiBs内のディスクのサイズ。
 
 
 

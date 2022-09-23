@@ -42,7 +42,6 @@
   <block id="7e0851cd4cd9c451bb0e47c589d02708" category="doc">ファイルサーバを削除します</block>
   <block id="539fdef2008e77ec30c5ba67e24c0d47" category="paragraph">* 注意： * ファイルサーバを削除すると、次の項目も削除されます。</block>
   <block id="0d473de4bb96fdf7268455666d7bea45" category="list-text">ファイルサーバに関連付けられているすべてのバックアップ</block>
-  <block id="281806ce4924bea38be89ac1665eb75e" category="list-text">ファイルサーバに関連付けられた災害復旧複製コピーサーバの削除を元に戻すことはできません。</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="section-title">作業を開始する前に</block>
   <block id="61d40c665ae573f703cc5b8ff71bdb71" category="paragraph">ファイルサーバを削除するには、先にサーバ上の共有をすべて削除する必要があります。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="section-title">手順</block>
@@ -98,10 +97,6 @@
   <block id="03f4a47830f97377a35321051685071e" category="cell">クローズしました</block>
   <block id="8c6ed17d43fdff1098f07504d08b6db2" category="cell">リクエストはクローズされました。</block>
   <block id="49160028ef392112eb613b320b874fc3" category="paragraph">サービス要求のステータスは、以下に示す NetApp Service Engine で確認することも、プロセスの一環として送信される自動 E メールのステータスに従うこともできます。</block>
-  <block id="a73b4517730ef9538f237813708636a8" category="list-text">メニューから、 [ サポート ]&gt;[ サービスリクエスト ] を選択します。[ サービスリクエスト ] リストが表示されます。</block>
-  <block id="1032ee9fabd8a51e5f49e446bb1860ff" category="paragraph"><block ref="1032ee9fabd8a51e5f49e446bb1860ff" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b419d3866799d65a9cf771b17314178b" category="list-text">リストでサービスリクエストを見つけ、ステータス列にステータスを表示します。</block>
-  <block id="d1db2690de0f7a48e902196864ba0b74" category="paragraph"><block ref="d1db2690de0f7a48e902196864ba0b74" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f569ddb7f5496c4d5a26458cb5f1dcf2" category="summary">NetApp Keystone フレックスサブスクリプションテナンシーの概要</block>
   <block id="dc05f19bc1dbd1ad1623c1ebde1aaf93" category="doc">Flex サブスクリプションのテナンシーとマルチテナンシー</block>
   <block id="22f01a1feb715725c8916d2d47ae2e77" category="paragraph">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）では、論理ストレージリソースを所有する階層エンティティとして「 * Tenant * 」および「サブテナント * 」の概念が使用されます。マルチテナンシーの概念もサポートされており、複数のテナントを 1 つのパートナーやサービスプロバイダに関連付けます。ここでは、エンティティパートナーとサービスプロバイダの両方が同じ意味で使用されています。</block>
@@ -349,9 +344,7 @@
   <block id="2d3535fbad26c9ea70e83c687280c51c" category="paragraph">このセクションでは、ファイル共有のアドホックスナップショットを作成する方法について説明します。</block>
   <block id="c871110fae62093309dc98c9c0f64df9" category="inline-link-macro">共有リスト</block>
   <block id="e4e1d77a63cd3aa6730e97c43e33e478" category="list-text">を表示します <block ref="eecd99a55268013f6ef2da8b234f1345" category="inline-link-macro-rx"></block>。</block>
-  <block id="54e69480488d6c587a033693a5ffa656" category="list-text">リストから共有を選択し、その共有の Snapshot アイコンをクリックします。（リスト内の項目の操作の詳細については、を参照してください <block ref="4a0d19ebe9aa0f2533119e3056a7b078" category="inline-link-macro-rx"></block>。</block>
   <block id="6a556e6c635602587fe7f06e8d4026b7" category="list-text">スナップショットの作成ダイアログで ' スナップショットの名前を入力し ' * 作成 * をクリックします</block>
-  <block id="dedf8dac5069ba657b1a7832116edb8d" category="paragraph">Snapshot が使用可能になるまでに数分かかることがあります。</block>
   <block id="5fd02b27b33851cac519bb7aab9ea702" category="summary">Keystone でテナントを選択</block>
   <block id="7c0cdb04ca0433fb412448041178d19f" category="doc">テナントを選択します</block>
   <block id="43639e8f38adc48b4a422a080cb873c2" category="paragraph">NetApp Service Engine Web インターフェイスを使用している場合、表示されるデータと実行するアクティビティは、選択したテナントに関連します。以下に示すように、画面の上部にテナントを表示できます。</block>
@@ -533,9 +526,6 @@
   <block id="44b0b983528d36c638cfe11e34569844" category="summary">Keystone オブジェクトストレージユーザを作成</block>
   <block id="086935e12a9a16e561e3fea09863edd0" category="doc">Create Object Storage User の略</block>
   <block id="45b69bc024321d8e2b973c0b31b40920" category="paragraph">オブジェクトストレージユーザはオブジェクトストレージグループに属しているため、ユーザを作成する前にオブジェクトストレージグループが存在している必要があります。</block>
-  <block id="31541cb47a7ea77a3d3486866a7bebd0" category="inline-link-macro">ユーザリスト</block>
-  <block id="3456598fa73e444341dca0376245fd90" category="list-text">を表示します <block ref="95ffca3db6dbf1ebc06d650a9462964d" category="inline-link-macro-rx"></block>。</block>
-  <block id="8b0e47b79c0418d88095a1bd47b09045" category="list-text">正しいサブテナントが選択されていること、および表示にユーザ（グループではない）が表示されていることを確認します。</block>
   <block id="075f5eb00ee459d6f7ae019a39e8ca62" category="list-text">[ ユーザーの作成 ] をクリックします。</block>
   <block id="24b9b702c72fbc7ba1dbdbcfb8373087" category="list-text">Create User ダイアログボックスで、次の手順を実行します。</block>
   <block id="404f3963d6ea203e96f06d29dd536fd1" category="list-text">ユーザ名を入力します。</block>
@@ -562,11 +552,9 @@
   <block id="88d1aa7a34ab02fff2690d2338ac4a65" category="inline-link-macro">テナントとサブテナントを管理する</block>
   <block id="c25ec10f452d7554efb64ee2fcb1fe87" category="inline-link-macro">テナントとサブテナントのネットワークを定義する</block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="section-title">階層化</block>
-  <block id="7b4219ec32695bc3518befa372ddf006" category="paragraph">NetApp Keystone Flex サブスクリプションサービスに、 NetApp FabricPool テクノロジを活用した階層化機能が追加されました。使用頻度の低いデータを特定し、ネットアップのオンプレミス環境にあるコールドストレージに階層化します。階層化には、階層化の高度なパフォーマンスレベルや階層化のプレミアムなパフォーマンスレベルがあります。</block>
   <block id="e63549c96b8e55ee68565f5ba8a07e7e" category="paragraph">次の API が変更され、新しい階層化サービスレベルの属性値が追加されました。</block>
   <block id="b67fd9e59c0d4417b843449739a56dde" category="list-text">ファイルサービス API</block>
   <block id="798a6e7cd9ee58fef9fc3e96d8f6dd38" category="list-text">ブロックストア API</block>
-  <block id="9dc46e9b8e8e3325a5f950ba6b189e61" category="inline-link-macro">パフォーマンスサービスレベル</block>
   <block id="cadfcc0fd90fd80d56ec3a89b8ee3c04" category="section-title">Google Cloud Platform 向け Cloud Volume サービスにも対応</block>
   <block id="6487b3f92c71573b469940fc4dcc7dae" category="paragraph">NetApp Service Engine では、既存の Azure NetApp Files サポートに加え、 Google Cloud Platform （ GCP ）向け Cloud Volume サービスをサポートできるようになりました。登録したサービスを管理し、 NetApp Service Engine から Google Cloud Volume をプロビジョニングおよび変更できるようになりました。</block>
   <block id="229edced07835d554d2a62afd9c936af" category="section-title">NetApp Service Engine の外部でプロビジョニングされたオブジェクトを管理できます</block>
@@ -615,9 +603,7 @@
   <block id="e957a37a6e61397d0ad1dd752eeac432" category="inline-link-macro">バケットリスト</block>
   <block id="1409d624fa12d109a857c057bbad2db7" category="list-text">を表示します <block ref="0288897c3c1427493cce55288f39ec55" category="inline-link-macro-rx"></block> で、バケットを作成するサブテナントを選択します。</block>
   <block id="f4687ab7882a3c0d42adf57ea9baa699" category="list-text">[ * バケットの作成 * ] をクリックします。</block>
-  <block id="d51f9a464ac0235324fddb6aa9d49d8d" category="list-text">Create Bucket （バケットの作成）ダイアログボックスで、新しいバケットの名前を入力し、 * Create * （作成）をクリックします。これにより、バケットを作成するジョブが作成されます。</block>
   <block id="85e8b5230d715e00d950ec38ae7e93fa" category="paragraph">バケットの作成は非同期ジョブとして実行されます。可能です</block>
-  <block id="5877dc247e1490bb848817ef9d900198" category="list-text">ジョブが完了したら、バケットリストでサーバのステータスを確認します。</block>
   <block id="ae32d0e1cdee4addbc95c405fceec3af" category="summary">Keystone サブテナント</block>
   <block id="b13b29a35ece2fc45564476183fbfb8a" category="paragraph">次の表に示すメソッドを使用して、サブテナントを取得、作成、変更、および削除します。</block>
   <block id="1404ccb5b980ae0ceb0244160f0261a1" category="cell">「 /v2.1/subtenants 」のようになります</block>
@@ -652,7 +638,6 @@
   <block id="a1d122241ce16ad6ba056c39a1e256fb" category="cell">ID で指定されているサブテナントを削除します。</block>
   <block id="29109dc5270edc08f080a36766a2a630" category="summary">Keystone によってホストグループが表示される</block>
   <block id="dde43dbd895f6357fc850b7fd654a02b" category="doc">ホストグループを操作する</block>
-  <block id="53fbfda0d450075d52315d5b09703b67" category="paragraph">ホストグループは、ディスクへのアクセスを決定するために定義されます。ホストグループに割り当てられているイニシエータノードに基づいて、そのホストグループへのアクセスが決定されます。</block>
   <block id="302230427f7212ee6efa66e5ac853705" category="section-title">ホストグループを表示します</block>
   <block id="5dca961b46ad55d205100890b5504f59" category="paragraph">ホスト・グループのリストを表示するには ' メニューから *block storage &gt; Host Groups * を選択します</block>
   <block id="ccec1abead73b2972415f53f2a7e3bca" category="paragraph">定義済みのホストグループが一覧表示されます。</block>
@@ -684,18 +669,15 @@
   <block id="4a44747284a03067a779d6829b89da44" category="paragraph">作成されたホストグループは、ディスクにマッピングできます。</block>
   <block id="9c21ac327685a7e70007e98ca4d2b6b2" category="section-title">ホストグループを変更します</block>
   <block id="ddc45784b4bb27c03822de8233e6bba6" category="paragraph">ホストグループを変更して、イニシエータを追加、削除、または変更できます。</block>
-  <block id="31e19de4adfcebc4a8c169d682d69ce5" category="paragraph">ホストグループを変更すると、そのホストグループにマッピングされている各ディスクのアクセスが変更されます。</block>
   <block id="cf3afc691c0a1c77742fc1e7e5f84baa" category="paragraph">イニシエータのエイリアスは変更できません。エイリアスを変更するには、グループからイニシエータを削除してから、作成し直してください。</block>
   <block id="a18b5712dface3f20bce7750886350d3" category="inline-link-macro">ホストグループ</block>
   <block id="9a07d76c5a0e3de82b33a4552c10bc5e" category="list-text">を表示します <block ref="0bea521eb505cc9bf0a2550f72dbd49b" category="inline-link-macro-rx"></block> リスト</block>
-  <block id="db438cb7b7df971147aae48cc5c75ca8" category="list-text">リストからホストグループを選択し、そのホストグループの [Edit] アイコンをクリックします。</block>
   <block id="b5410d49b64d7ea9b7432f7346a9c7e2" category="paragraph">既存のイニシエータを変更するには、リストからイニシエータを探してイニシエータの値を編集し、 * Update * をクリックします。</block>
   <block id="8aa913bec80964fddab40e3a30dcd8c2" category="paragraph">イニシエータを追加します。</block>
   <block id="17d7b34ed5d8708d1132f26fae669e3e" category="list-text">[ イニシエータの追加 ] をクリックします。</block>
   <block id="8dc544295e04832e8030c9000dfdeb19" category="list-text">エイリアスとイニシエータを指定します。</block>
   <block id="f2a42a68e067e481d094b018459ef895" category="list-text">[ 作成（ Create ） ] をクリックします。</block>
   <block id="659d86385594d523ba5ca7ae093d898f" category="paragraph">ホストグループからイニシエータを削除するには、リストでイニシエータを特定し、削除アイコンをクリックします。</block>
-  <block id="e13a15252a4dbf9779c44afe477e3343" category="list-text">[ 完了（ Done ） ] をクリックします。</block>
   <block id="a0ad6ce41a7333a8b0d6195da1224c12" category="section-title">ホストグループを削除する</block>
   <block id="f5b3f163b6170e5ad89ef366f4ad4c0b" category="paragraph">ホストグループにマッピングされたディスクがない場合は、ホストグループを削除できます。</block>
   <block id="5cc2d514b461a0eadcfb670035ebc2a4" category="list-text">リストからホストグループを選択し、そのホストグループの削除アイコンをクリックします。</block>
@@ -704,7 +686,6 @@
   <block id="0484b3e3db1923f8acd57d1771b4aed2" category="summary">Keystone ブロックストレージの使用の概要</block>
   <block id="419f5b4c51dcda57b81c0469b42f2d77" category="paragraph">ブロックストレージシステムでは、データストレージはそれぞれ一意の識別子で分割されます。NetApp Service Engine は、ブロックデータストレージをブロックストアと呼び、個々のコンポーネントをディスクと呼びます。</block>
   <block id="645a84975202e30700b572b49a5ee29d" category="inline-link-macro">ディザスタリカバリ</block>
-  <block id="0bdccece87086c3f1c43e2fd37690da4" category="paragraph">ブロックストアはサブテナントに属しており、ゾーン内に指定されています（サブテナントごとにゾーンごとに 1 つのブロックストア）。ブロックストアには、 iSCSI プロトコルまたは FC プロトコル経由のディスクへのアクセスに使用するネットワーク属性（ IP アドレスや VLAN ID など）があります。ディザスタリカバリ DP はブロックストアで有効にすることができます。詳細については、を参照してください <block ref="6e5280ca70b076218fdf37590a8a3024" category="inline-link-macro-rx"></block>。</block>
   <block id="ef27cbc1a350cce9a4d240653da0e2b7" category="paragraph">ブロックストアを使用するには初期化する必要があります。ブロックストレージが使用可能で初期化されていない場合は、ディスク作成プロセスの一環としてブロックストアに最初のディスクを作成する前に初期化できます。</block>
   <block id="9147e5e61a7b9260dec09f3a6eb3e5be" category="inline-link-macro">Snapshot</block>
   <block id="da2ebd3b1e3cc5c86919f4c7745c7a12" category="paragraph">ディスクはブロックストア上に作成されます。ディスクには、容量や関連するサービスレベルなど、設定可能な多数の属性があります。などの DP オプション <block ref="c1f0dcbbcbcd1f1c8ac788893304a8d4" category="inline-link-macro-rx"></block> および <block ref="a77c34ddf88ef814fd6a18a00bec0fb7" category="inline-link-macro-rx"></block> ディスクに対して有効にできます。</block>
@@ -728,7 +709,6 @@
   <block id="61af5d59426d1e9c60b178c39f9f8bce" category="list-text">ディスクのアドホックスナップショットを作成します</block>
   <block id="e8f221d15eb31d00b8a988529a3e2527" category="summary">Keystone がサービスリクエストを発行します</block>
   <block id="811f26bd987ce6c5ae16ef3f82a0e54b" category="doc">サービスリクエストを提出します</block>
-  <block id="f2dcdabaded22e13ec16edb510458300" category="list-text">[ 新しいサービスリクエスト ] ページで、リクエストのカテゴリと優先度を選択し、 [ 次へ ] をクリックします。</block>
   <block id="721b8bc2578cf4a3290ff3e1ae267444" category="list-text">リクエストの詳細を確認します。修正する場合は、 [ 戻る ] ボタンを使用して前のページに戻り、詳細を修正します。すべての詳細が正しい場合は、 [* 送信 ] をクリックします。</block>
   <block id="385907468665e91a15044c37c13e9d76" category="list-text">リクエストが作成されたことを示す E メールがリクエスト者に送信されます。この E メールは、要求元の NetApp Service Engine ユーザに登録されている E メールアドレスに送信されます。</block>
   <block id="742ef9f3b9cf3b40d63f3f7a076f1fc7" category="summary">Keystone サブスクリプションを管理する</block>
@@ -739,20 +719,15 @@
   <block id="91430119e6b1998db13f32fe128e8bd4" category="list-text">サブスクリプションの容量を増やします</block>
   <block id="6be4feac711de31165af4cba34fada5b" category="list-text">サブスクリプションへのサービスの追加（サービスレベルと容量の割り当て）</block>
   <block id="a975aeaab71bf656692c74b3c7391bbd" category="paragraph">サービスリクエストはサポートチームが受け取り、対応します。</block>
-  <block id="c05b09e138b5f629cc27da81326e9155" category="paragraph">サブスクライブしているデータ保護サービスと高度な保護サービスを別々のタブで表示および管理することもできます。</block>
   <block id="ee64fc5e899de234b52c1e6be0a42580" category="paragraph">拡張要件を満たすために、サブスクライブされている任意のサービスレベルのコミット済み容量を増やすことができます。</block>
   <block id="c3cc09e5904ef1c41a8e4b96fe492b7f" category="list-text">容量を増やすサブスクリプションをドロップダウンメニューから選択します。</block>
   <block id="e3cfe0459ce74221e44ecd1ac548921c" category="list-text">目的のサービスレベルの [ 容量の増加 ] をクリックします。</block>
   <block id="abc5d91daecea5085ef3a04be9b83130" category="list-text">必要な容量（ TiB ）を指定します。</block>
   <block id="2e6983625c407f999b0f355ada28466d" category="section-title">サービスをサブスクリプションに追加します</block>
   <block id="0eacfbc5d97cfe501e800487423aac77" category="paragraph">サービスをサブスクリプションに追加できます。サービスの追加には、サブスクリプションにサービスレベルを割り当て、同じサービスレベルの容量を指定します。</block>
-  <block id="fba0091d689bfc70b9d5477adedbc602" category="paragraph">サブスクリプションには、それぞれのパフォーマンスレベルが 1 つしか含まれない場合があります。たとえば、サブスクリプションに Extreme と Standard のサービスがすでに含まれている場合は、 Premium サービスまたは Block サービスを追加できます。</block>
   <block id="30dde0ec345e8f4d767c6af115c09edd" category="list-text">[ サービスの追加 ] をクリックします。</block>
-  <block id="ac10c01d8b5d36ab848b3fb8f29f13a8" category="list-text">追加するサブスクリプションサービスをドロップダウンメニューから選択し、サービスレベルにコミットする容量（ TiB ）を追加します。</block>
-  <block id="0858d2f14514c46b802b407a319301df" category="admonition">高度な階層化やプレミアム階層化に登録している場合は、既存のサブスクリプションのパフォーマンスレベルを編集し、階層化に対応したパフォーマンスレベルを選択できます。階層化対応のパフォーマンスレベルから階層化非対応のパフォーマンスレベルへの移行も可能です。</block>
   <block id="aaf3d59b93a3de488a15d1c870971b31" category="section-title">テナントサブスクリプションを管理します</block>
   <block id="5710181962e9a5023838cb235a7438db" category="paragraph">パートナー管理者の場合は、テナントサブスクリプション * &gt; * テナントサブスクリプション * からテナントサブスクリプションを作成、表示、更新できます。テナント管理者の場合、表示できるのはサブスクリプションだけです。</block>
-  <block id="2fc4feadf65c10bb39cb2dca1d6dfec9" category="section-title">テナントサブスクリプションを作成します</block>
   <block id="e7c16a52c380efb3cac5c1704324c800" category="paragraph">テナントの新しいサブスクリプションを作成できます。</block>
   <block id="b37aaef99a7196944d09738c9ab3a35e" category="list-text">[ 新規サブスクリプション ] をクリックします。</block>
   <block id="b854139f5ea445b74d2995db156891ed" category="list-text">地域、ゾーン、サブスクリプション期間、レートプラン、およびその他の詳細を指定します。テナントサブスクリプションは、選択したゾーンに基づいて Keystone サブスクリプションに割り当てられます。これは、 Keystone サブスクリプションがそれぞれゾーンに関連付けられているためです。</block>
@@ -789,12 +764,7 @@
   <block id="0f02e73a070b7c5e6af49819a14c1e59" category="summary">Keystone がファイルサーバを作成する</block>
   <block id="b87703d88dc9a8880b9d61547ad69520" category="doc">ファイルサーバを作成します</block>
   <block id="e216e6dd4e8417c59cdf8365347a68ff" category="paragraph">ファイルサーバはサブテナントに属し、ゾーン内に作成されます。サーバを作成する場合は、オプションで次の操作を実行できます。</block>
-  <block id="e984e5913268f172f36d79f463f29b8c" category="list-text">サーバのディザスタリカバリ DP を有効にします。NetApp Service Engine でのディザスタリカバリの仕組みについては、を参照してください <block ref="a77c34ddf88ef814fd6a18a00bec0fb7" category="inline-link-macro-rx"></block>。</block>
-  <block id="12d9a773a71368993af0d815cc5a2ba1" category="list-text">CIFS 対応にする。CIFS 対応のサーバの場合：</block>
-  <block id="11bb5a6fe1e3cd04469851a2d7678816" category="list-text">Active Directory ユーザ名、 Active Directory パスワード、ドメイン、 DNS サーバ、サーバ名、および 必要に応じて、 Active Directory の組織単位（ OU ）を指定します。</block>
-  <block id="150819dca91da413528afcd39b49621b" category="list-text">Active Directory のクレデンシャル（ Active Directory のユーザ名とパスワード）は、コンピュータを Active Directory ドメインに追加する権限を持つユーザには必要です。</block>
   <block id="e68501fa155e429cf0f38075317a449f" category="list-text">次の図に示すように、 Active Directory OU 構造が階層化されている場合は、 OU を最下位レベルから最上位レベルに指定します。この例では 'Melbourne OU を指定するには 'CIFS_ou' を ""cifs_ou"" に設定します ou=Melbourne, ou=CIFS".</block>
-  <block id="c7e0d953db804fc2899c3d7dfab9e722" category="paragraph"><block ref="c7e0d953db804fc2899c3d7dfab9e722" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e9e4f5bb9f23ff700d3462b74db45279" category="paragraph">サーバを作成するには、次のものがあることを確認してください。</block>
   <block id="e01ce08e5a41461d2ba70018f1d1e042" category="list-text">サーバをホストするサブテナント。</block>
   <block id="4c9f71833f1da304590e2f64c06fffd0" category="list-text">サーバが属するリージョンとゾーン。</block>
@@ -819,15 +789,11 @@
   <block id="f7f5c2465be89b32822fda34d2b011f5" category="paragraph">NFS はデフォルトでは有効になっています。使用中の NFS プロトコルが表示されます。</block>
   <block id="3531a26da3366b2d9e60057bc8026a03" category="paragraph">CIFS 対応のファイルサーバを作成する場合は、次の手順を実行します。</block>
   <block id="5c9c8ade0522fb2422d8abaecc5ea72e" category="list-text">CIFS 対応のボタンを切り替えて、 CIFS 関連のフィールドを表示します。</block>
-  <block id="dc66e07633b34e9822d7c22f2ceeee31" category="list-text">Active Directory ユーザ名、 Active Directory パスワード、ドメイン、 DNS サーバ、サーバ名、および、 必要に応じて、 Active Directory の組織単位。Active Directory のクレデンシャルは、コンピュータを Active Directory ドメインに追加する権限があるユーザのものである必要があります。</block>
   <block id="815ae3393960323ac85621ce7288df21" category="list-text">このファイルサーバ上で非同期ディザスタリカバリ DP を有効にするには、次の手順を実行</block>
   <block id="8542611fe231680a87334496bb812803" category="list-text">[Asynchronous Disaster Recovery] ボタンを切り替えて有効にします。</block>
   <block id="5daf3adc6ff4148e511c6f6e0b5b9e68" category="list-text">ディザスタリカバリのリージョンとゾーンを選択します。</block>
   <block id="2765dd9ad922f803cc154a2d62e5e768" category="list-text">ディザスタリカバリのレプリケーションスケジュールを選択します。</block>
-  <block id="534cad85076ec858423a2807a24f1331" category="list-text">同期ディザスタリカバリ DP が有効になっている場合は、同期ディザスタリカバリトグルが有効になり、無効にすることはできません。</block>
   <block id="6d2083b0fad7c68e1983451837672427" category="list-text">[ 作成（ Create ） ] をクリックします。これにより、サーバを作成するジョブが作成されます。</block>
-  <block id="5dde7b4f25d75b0885591b0a8e8c39b4" category="paragraph">Create Server は非同期ジョブとして実行されます。可能です</block>
-  <block id="d7a669d10b2d6780ac266c7cd02c54e7" category="list-text">ジョブが完了したら、サーバーリストでサーバーのステータスを確認します。</block>
   <block id="e531ea8444ef712f0ce4d2476e2fad91" category="summary">Keystone サービスリクエスト</block>
   <block id="88092a03821318ff8a1636d52fc1fbb2" category="paragraph">次の表に示すメソッドを使用して、サービス要求を作成および取得します。</block>
   <block id="790441c9befebe4d25c2cff9dd1a743e" category="cell">`/v2.1/tenants /{tenant_id }/servicests`</block>
@@ -888,8 +854,6 @@
   <block id="e8089d8ce0bab84738de6b948e132f67" category="paragraph">Modify Server は非同期ジョブとして実行されます。可能です</block>
   <block id="114bff9b52d9ef394f3e140698ea52e8" category="list-text">ジョブが完了したら、サーバーリストでサーバーのステータスを確認します。</block>
   <block id="a69d668d73ed9ea0922a525be4e0f1c3" category="summary">Keystone の概要</block>
-  <block id="1711f3f349e27f79baf2679e426c7ef7" category="paragraph">このセクションでは、 NetApp Service Engine ポータルを使用して作業を開始する方法について説明します。次のものが含まれます</block>
-  <block id="be6e8736db2969895574ed3566dd6819" category="list-text">NetApp Service Engine Web インターフェイスにログインします。</block>
   <block id="a852a6f32185c74dee9f0d17c66ba1fa" category="list-text">ユーザ名とパスワードを使用してログインします</block>
   <block id="f6650b0d4b1f443020073cc3a6d83ffa" category="list-text">NetApp SSO を使用してログインします</block>
   <block id="0d718937cc87bb249b9df582d7731ec3" category="list-text">NetApp Service Engine Web インターフェイスからログアウトします</block>
@@ -904,7 +868,6 @@
   <block id="e5eb15ca632df1aa494f209b327dbe7e" category="list-text">[Initialize Object Storage] をクリックします。</block>
   <block id="535ff16d54c5fa7c75ddf6959f11a9a9" category="list-text">Initialize Object Storage （オブジェクトストレージの初期化）ダイアログボックスで、オブジェクトストレージのクォータを選択し、 * Create * （作成）をクリックします。</block>
   <block id="7415f0fe2358bf6330318eca757e1ac6" category="paragraph"><block ref="7415f0fe2358bf6330318eca757e1ac6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7f14db3d656154c43331a7cd4850539f" category="list-text">ジョブリストを調べて、オブジェクトストレージが正常に初期化されていることを確認します。</block>
   <block id="94910016d172e289cf35b3ba94a0baca" category="summary">Keystone 請求アカウント、サブスクリプション、サービス、パフォーマンス</block>
   <block id="c5d81ec5d37a3848501137d05786d0f5" category="doc">課金アカウント、サブスクリプション、サービス、およびパフォーマンス</block>
   <block id="04cb5dc9929233e047c2ddfa62447a1c" category="paragraph">サブスクリプションストレージサービスには課金アカウントが使用されます。各課金アカウントはテナントにリンクされます。請求アカウントには、 1 つ以上の月額プランを課金できます。</block>
@@ -913,11 +876,7 @@
   <block id="e5ffa1b880c390251d23b9f6bd7fac33" category="list-text">サブスクリプションの終了日が指定された期間です</block>
   <block id="b7dac4bd150873027089e5da94dbb39b" category="list-text">サブスクリプションに関連付けられているアドオンを使用できます</block>
   <block id="4257e9a525e46c507a044e5bef7b9faf" category="admonition">複数のデータセンターにストレージが必要な場合は、データセンターごとに個別の契約が必要です。</block>
-  <block id="08a21cd55803f5b6473a2c747d526cb8" category="paragraph">ストレージサービスは、関連付けられたパフォーマンスレベルで、コミット済みストレージ容量にサブスクライブされます。NetApp Service Engine は、極端な階層化、プレミアム、プレミアム階層化、標準的なパフォーマンスレベルでファイルストレージとブロックストレージを提供し、オブジェクトのパフォーマンスサービスレベルでオブジェクトストレージを提供します。</block>
-  <block id="be2261d9090fb30195c21bab3e7d9953" category="paragraph">階層化の卓越したパフォーマンスレベルとプレミアムなパフォーマンスレベルにより、コールドデータや非アクティブデータを監視して低コストのオブジェクトストレージ階層に階層化することで、ストレージの設置面積と関連コストを削減できます。階層化ポリシーは auto に設定されており、 31 日間非アクティブだったデータはデフォルトで階層化されています。この期間は 3 日から 61 日までの任意の日数に変更できます。</block>
-  <block id="9cf4355a313433b8691e455b16ef9e32" category="paragraph">ファイルストレージ項目とブロックストレージ項目は、作成時にパフォーマンスレベルに関連付けられます。要件の変化に応じて、パフォーマンスサービスレベル間でワークロードを移動できます。卓越した階層化、プレミアム、プレミアム階層化、標準のパフォーマンスレベルは、さまざまなレベルの I/O パフォーマンス（ IOPS ）とスループット（ MBps ）を提供するため、ストレージを要件に合わせて調整できます。</block>
   <block id="2f5cb25349bfe5b9ac831c6e30173baf" category="inline-link-macro">コミット済み、消費済み、バースト時の容量、過剰な使用状況</block>
-  <block id="06d3c5b245fcae60bf6c02dc814606be" category="paragraph">バースト使用は、特定の時点までのサービスで許可されます。バースト使用は、（サブスクリプションで定義されているとおりに）別の料金で監視および課金されます。容量と使用状況の詳細については、を参照してください <block ref="30977b5dca5f56c115e7191316bc5fd6" category="inline-link-macro-rx"></block>。バックアップとディザスタリカバリをサポートする DP サービスも提供されています。</block>
   <block id="856fad7ebe17053b7a8c9466800f549c" category="paragraph">使用済み容量は、割り当て済みの容量です（ただし必ずしも使用されているとは限りません）。コミット済み容量とは、サブスクリプションでコミットされる容量のことです。加入者には、使用量に関係なく、コミット済み容量に対して一定のレートで課金されます。</block>
   <block id="3f42cabcd42e4941eeae70d0ad6b0b72" category="paragraph">バースト容量は、割り当てられたコミット済み容量を上回る容量です。</block>
   <block id="3478e1baf80f84db91e5e49ee1836fc8" category="paragraph">バースト時の容量 = 使用済み容量–コミット済み容量</block>
@@ -942,29 +901,21 @@
   <block id="fe1f710a2a8ad596f7ed976cce5e12b2" category="cell">共有 / ディスクを新しいサービスレベルに移動します。</block>
   <block id="72a0e9096fa69af48a2a89b61f82e73b" category="cell">ディザスタリカバリを有効にして、ファイルサーバ / ブロックストア上の共有 / ディスクの作成またはサイズ変更を行います。</block>
   <block id="a3e479169f3a33c0a8cbe36a49a5a9af" category="list-text">ゾーンのサービスレベルに対するコミットメントを超えています</block>
-  <block id="450931d2ede3ac1f9ca9debbcdcbdcfb" category="list-text">ゾーンの DP のコミットメントを超過しています</block>
   <block id="44c6dc0f17d551a7939e21b1cae7cdad" category="cell">デスティネーションの共有 / ディスクが自動的に作成されるため、デスティネーションゾーンのサービスレベルに対するコミットメントを超過しています。</block>
   <block id="ae91278918611796d90350de77ba6bf8" category="cell">ディザスタリカバリが有効になっているファイルサーバ / ブロックストアで、共有 / ディスクを新しいサービスレベルに移動します。</block>
-  <block id="883bcc42821c6ecf891b920094325b5f" category="list-text">ゾーンの DP のコミットメントを超過しています。</block>
   <block id="ce53260637dcdf46a9025506c4b75e08" category="cell">再配置されたデスティネーション共有 / ディスクによって、デスティネーションゾーンのサービスレベルに対するコミットメントを超過しています。</block>
   <block id="aad7c68b64cd22c6fb7f4f39424c7954" category="cell">共有 / ディスクのバックアップを有効にします。</block>
-  <block id="2123e42a9693489cbce5f2a4e164a970" category="cell">DP のコミットメントを超えています。</block>
   <block id="f66c10666ec7a209e50413842654d153" category="cell">新しいオブジェクトストアテナンシーを作成します。</block>
   <block id="8cd126f4a3ceea68c85347acd2602379" category="cell">オブジェクトの容量に対するコミットメントを超える可能性があります。</block>
   <block id="863fe0485f6bdfc1ecd58974c17dae1a" category="cell">オブジェクトストアのテナンシーのクォータを増やします</block>
   <block id="1b712656cedc4113b2801424d1cecf25" category="paragraph">サブスクリプションがバースト状態の場合は、次の通知バナーが表示されます。この通知は、テナンシーに関するお客様管理者に表示され、確認が完了するまで表示されます。</block>
   <block id="0575d4bb3c4b0c2953b19ef95b31165d" category="paragraph"><block ref="0575d4bb3c4b0c2953b19ef95b31165d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7e7397a7b79323762c61941fc0e6b5f9" category="section-title">データ保護</block>
-  <block id="c9cb02687fd3e9aa6ad70b5322fa0cef" category="paragraph">DP は、データのバックアップをサポートする方法、および必要に応じてデータをリカバリする方法です。</block>
-  <block id="1c4821714a843572d056ec5e0a443622" category="paragraph">NetApp Service Engine DP には次の機能があります。</block>
   <block id="6182b191e8f1d440f3420e614c1126de" category="list-text">ディスクと共有のスナップショット</block>
-  <block id="183a92d8cf33f246d23be23aeeffac34" category="list-text">ディスクおよび共有のバックアップ（サブスクリプションに DP サービスが含まれている必要があります）</block>
-  <block id="cf3ec92d0dace2d4d0b5e001ec5ff615" category="list-text">ディスクおよび共有のディザスタリカバリ（サブスクリプションには DP または DP Advanced サービスが必要）</block>
   <block id="9da2c8abea07b0620e54283b38639463" category="paragraph">Snapshot は、データのポイントインタイムコピーです。Snapshot をクローニングして新しいディスクを作成したり、同じ機能や類似の機能を使用して共有したりできます。</block>
   <block id="f33624f85a3d1c3ca52b90526dd92c7d" category="paragraph">Snapshot は、アドホックで作成することも、 Snapshot ポリシーの定義に従ってスケジュールに自動的に作成することもできます。Snapshot ポリシーは、 Snapshot をキャプチャするタイミングと保持する期間を決定します。</block>
   <block id="fc58f05528054519f34ed4e02b3efc04" category="admonition">Snapshot は、サービスの消費容量を表します。</block>
   <block id="1414cdc093d39dd56d0b0d20049e17fc" category="section-title">バックアップ</block>
-  <block id="debe60e3142beb5a48bce69dbd381739" category="paragraph">バックアップとは、項目のコピーを作成してレプリケートし、元のゾーンとは別のゾーンにコピーを格納することを意味します。このゾーンでは各プロトコルが有効になっており（ブロックストレージの場合のみ）、 MetroCluster 以外は有効になっています。NetApp Service Engine では、ファイルおよびブロックストレージでバックアップを実行できます（サブスクリプションには DP サービスが必要）。共有 / ディスクのバックアップは、サブスクリプションで最も低コストのパフォーマンス階層（ Standard ）にあるバックアップゾーンに保存されます。</block>
   <block id="2678f5be6e4ec5134a32df3dd7aaae4f" category="paragraph">バックアップは、新しい共有 / ディスクの作成時に設定するか、またはあとで既存の共有 / ディスクに追加できます。</block>
   <block id="fcbd19b726fdd6160dfe2ab43f285a55" category="paragraph">* 注： *</block>
   <block id="065428ecbfeb33b7e84daf0f1735a248" category="list-text">バックアップは 0 ： 00 UTC 前後の固定時間に実行されます。</block>
@@ -977,7 +928,6 @@
   <block id="afa84c30fdc11f91b0e97598a8ccfbc4" category="list-text">ディスクまたは共有のバックアップを、ゾーンが 1 つだけの NetApp Service Engine インスタンスで設定することはできません。</block>
   <block id="2875abbdb2d668a780cc0352c55e39a4" category="list-text">プライマリ共有またはディスクを削除すると、関連付けられているすべてのバックアップが削除されます。</block>
   <block id="8c93c12fbb65af8cdbba54fc85b4fe38" category="inline-link-macro">データ保護、使用容量、料金</block>
-  <block id="eaa3525bd4873929810239b6b6579d61" category="list-text">バックアップは合計消費容量に影響します。また、 DP サブスクリプションレートでバックアップにかかるコストも発生します。も参照してください <block ref="a47ae4dd88f3e58d3633165415728570" category="inline-link-macro-rx"></block>。</block>
   <block id="ec2892d9024d3fb4dfc6f3974b4a6a72" category="list-text">バックアップからのリストア：バックアップから共有またはディスクをリストアするサービス要求を生成します。</block>
   <block id="9c1a55444ca246b7668ef51e2b161113" category="paragraph">ディザスタリカバリとは、災害発生時に通常運用時にリカバリする機能のことです。</block>
   <block id="5dbb23912672dda24110971a38a6b2d7" category="paragraph">NetApp Service Engine は、非同期と同期の 2 種類のディザスタリカバリをサポートしています。</block>
@@ -986,7 +936,6 @@
   <block id="c7551cca2e64e9d70e0bd1aa35fa17a7" category="paragraph">NetApp Service Engine は、次の機能を提供することで非同期ディザスタリカバリをサポートします。</block>
   <block id="f1e5f779aa56bce965c10a7ab6c63203" category="list-text">プライマリボリュームをディザスタリカバリゾーンに非同期でレプリケートします</block>
   <block id="4d95b210be32cb590432dd9478dabbab" category="list-text">フェイルオーバー / フェイルバック（サービス要求でのみ使用可能）</block>
-  <block id="f25e8e8e07af86cf895d64ae365151a9" category="paragraph">非同期ディザスタリカバリは、ファイルストレージおよびブロックストレージで使用でき、サブスクリプションには DP サービスが必要です。</block>
   <block id="66c3ed260f83767ec6cb5bea7063940a" category="paragraph">ディザスタリカバリゾーンは、プライマリボリュームが作成されるゾーンとは異なる NetApp Service Engine 内のゾーンにする必要があります。ソースゾーンが MetroCluster に対応している場合、 MetroCluster パートナーにはなりません。共有 / ディスクのディザスタリカバリレプリカは、元の共有 / ディスクと同じパフォーマンス階層にあるディザスタリカバリゾーンに格納されます。</block>
   <block id="36e8c53798d70dd276ec873bd9daedea" category="paragraph">プライマリボリュームの非同期ディザスタリカバリレプリケーションを有効にするには、次のものが必要です。</block>
   <block id="20a7636d7d202a8ca2df19231e59b397" category="list-text">ディザスタリカバリをサポートするための、ボリュームが配置されているファイルサーバまたはブロックストアの設定</block>
@@ -995,23 +944,17 @@
   <block id="ec9c28ece16dda721c388c1826025c31" category="paragraph">非同期のディザスタリカバリレプリケーションを設定できるのは、親ファイルサーバまたはブロックストアが最初に非同期のディザスタリカバリ用に設定されている場合のみです。デフォルトでは、親でレプリケーションが有効になっている場合、親ホストとなるファイル共有またはディスクでレプリケーションが有効になります。特定の共有またはディスクのレプリケーションを除外するには、その共有 / ディスクのディザスタリカバリを無効にします。これらの共有 / ディスクでレプリケーションを有効または無効に切り替えることができます。</block>
   <block id="7a0a70d776cf86d3de0837b534ab29ef" category="list-text">プライマリファイルサーバまたはブロックストアを削除すると、ディザスタリカバリ用にレプリケートされたコピーがすべて削除されます。</block>
   <block id="8ca9cd050d34dab0c72a2ab896f3423c" category="list-text">ディザスタリカバリゾーンは、ファイルサーバまたはブロックストアごとに 1 つだけ設定できます。</block>
-  <block id="fd600e7efca7d2dff0ee5eed9fff79f2" category="list-text">ディザスタリカバリコピーは、使用済み容量の合計につながります。また、ディザスタリカバリのサブスクリプション料金も発生します。も参照してください <block ref="a47ae4dd88f3e58d3633165415728570" category="inline-link-macro-rx"></block>。</block>
   <block id="faac058c9a360482eb6ebec5ed13d6ac" category="section-title">ディザスタリカバリ—同期</block>
-  <block id="0a1a184f28bf44d79ecc75faa9c1cb2c" category="paragraph">MetroCluster は、別々の場所または障害ドメインにある 2 つの異なるゾーン間でデータと設定を同期的にレプリケートする DP 機能です。一方のサイトで災害が発生したときは、管理者がサバイバーサイトからデータを提供できます。</block>
   <block id="b5792f100bb2741e8b6c946a4e03d7e2" category="paragraph">MetroCluster で構成された NetApp Service Engine で管理されるサイトは、次の方法でファイルストレージおよびブロックストレージの同期ディザスタリカバリをサポートできます。</block>
   <block id="6b81548a0abeb8aeab129cbacd82f233" category="list-text">同期ディザスタリカバリをサポートするようにゾーンを設定できます。</block>
   <block id="67d407f7c42c73135169843a2f02b552" category="list-text">これらのゾーンで作成されたディスクまたは共有は、ディザスタリカバリゾーンに同期的にレプリケートされます。</block>
-  <block id="7bc83e7cc314b9d8518366556ff2092c" category="list-text">同期ディザスタリカバリは、同期ディザスタリカバリサブスクリプション料金で発生します。も参照してください <block ref="a47ae4dd88f3e58d3633165415728570" category="inline-link-macro-rx"></block>。</block>
   <block id="c452aedb9429b97988724fc22e9d9bcd" category="section-title">データ保護、使用済み容量、および料金</block>
-  <block id="26028acff38ab9249fca65149aa2c55d" category="paragraph">このセクションの図は、 DP 料金の計算方法を示しています。</block>
   <block id="80ecb9ec32a0f1994e07ed41ba4bc1a8" category="section-title">非同期のディザスタリカバリ</block>
   <block id="cb3ed381ced081f05218db21a6c1fd94" category="paragraph">非同期ディザスタリカバリでは、使用量とコストは次の料金で構成されます。</block>
   <block id="e4be9a6b2af2d6372fc95f51f34a5801" category="list-text">元のボリューム容量は、配置されているパフォーマンス階層で課金されます。</block>
   <block id="5ad04b2520e7e6c8e4d216fd98dad6d5" category="list-text">ディザスタリカバリコピーは、デスティネーションまたはディザスタリカバリゾーンの同じパフォーマンス階層で課金されます（ディザスタリカバリコピーは同じ階層に格納されます）。</block>
-  <block id="702c277579ece12c537572a6487c249e" category="list-text">DP サービスの料金（元のボリュームの容量に対する料金）。</block>
   <block id="6539af4a2e779040f3761a5b75e22ff6" category="paragraph"><block ref="6539af4a2e779040f3761a5b75e22ff6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="21557b177d1579d7482cba2913668884" category="section-title">同期ディザスタリカバリ</block>
-  <block id="b2419fdabc287dc270408b44d65a3ce2" category="paragraph">同期ディザスタリカバリでは、使用量とコストは次の料金で構成されます。</block>
   <block id="52b8c8170d83686335cf95f055d3f0da" category="paragraph"><block ref="52b8c8170d83686335cf95f055d3f0da" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3500ba09d0538297440ca620c9dd46bf" category="section-title">バックアップ</block>
   <block id="bf5d0983486b43f2fbc013a6b7ca87ea" category="paragraph">バックアップでは、使用量とコストは次の料金で構成されています。</block>
@@ -1020,11 +963,7 @@
   <block id="1fd286a0ef9ebb70f89e840d54118b15" category="summary">Keystone は、ユーザの S3 キーを削除します</block>
   <block id="22cf807410cd29dbc5790af789ade748" category="doc">ユーザの S3 キーを削除します</block>
   <block id="6cb2b7a45d5e350ef2b0599809b3902d" category="paragraph">ユーザの S3 キーを削除するには、このメソッドを使用します。</block>
-  <block id="f393d3f07d1733e88adb26884aa4c665" category="list-text">正しいサブテナントが選択されていること、および表示に「 Users 」（グループではない）が表示されていることを確認します。</block>
   <block id="97f1a61a826425fa5b14bcf28e62e443" category="list-text">リスト内でユーザを検索し、そのグループの [ キー ] アイコンをクリックします。</block>
-  <block id="2b6bed1ab5dc023d121deb7372f2a629" category="paragraph">リスト内の項目の操作の詳細については、を参照してください <block ref="4a0d19ebe9aa0f2533119e3056a7b078" category="inline-link-macro-rx"></block>。</block>
-  <block id="c30e88d8e89259b1b711afc39b92ba11" category="list-text">Manage S3 Keys （ S3 キーの管理）ダイアログが表示され、ユーザのキーのリストが示されます。</block>
-  <block id="7e06bfa3351dc0e3532ff0559e3d2f6f" category="list-text">キーのリストで、削除するキーを見つけ、 Delete アイコンをクリックします。</block>
   <block id="b0b8f434f881cc6dfaa079ff5f5e1b6c" category="list-text">削除操作を確定するには、 * 確認 * をクリックします。キーがユーザキーのリストから削除されます。</block>
   <block id="5b3aa46fae7e757fa7c3f917136a37d6" category="list-text">[* 閉じる ] をクリックして、 [S3 キーの管理 ] ダイアログボックスを閉じます。</block>
   <block id="d04ce80ab6bc0577ccedc997e72b254e" category="summary">NetApp Flex サブスクリプションの概要</block>
@@ -1042,10 +981,7 @@
   <block id="184f4b35a3540c0327a3178ece159d88" category="list-text">ネットアップが運用するサービスのパフォーマンスは、共通の責任がサポート対象の環境に該当することを前提としています。</block>
   <block id="84f6d3a5def8d6fdb2e670f351bd97ac" category="summary">Keystone がファイル共有を変更する</block>
   <block id="96d7785fd8b4fc6102aa2bba06ea552b" category="doc">ファイル共有を変更する</block>
-  <block id="c037be27281bba056da9ad07524116b5" category="paragraph">共有名、共有の種類（ CIFS 、 NFS 、マルチプロトコル）、サービスレベル、容量、 Snapshot ポリシー、エクスポートポリシー、アクセス制御リスト（ ACL ）、およびタグ</block>
-  <block id="ddbae29bcf08223262b9cceabb558475" category="admonition">この方法を使用すると、可能な場合は共有を別のパフォーマンスレベルに移動できます。共有タイプを変更できるのは、サーバがそれぞれのサービスをサポートしている場合のみです。</block>
   <block id="468c155b69513f80afda8950450d60a5" category="inline-link-macro">オブジェクトの状態</block>
-  <block id="88e111944c1de058d51c02261793ca82" category="paragraph">ファイル共有が動作状態である必要があります。ボリュームのステータスとそれらを運用するための手順については、を参照してください <block ref="7e36d1153c26a010b4cff09ad58116d3" category="inline-link-macro-rx"></block> および <block ref="1dd0eaff8c7fecd5c80f4e2420f50d3b" category="inline-link-macro-rx"></block></block>
   <block id="e16c520bd846a3572e0833e4e518e67e" category="list-text">リストから共有を探し、その共有の編集アイコンをクリックします。（リスト内の項目の操作の詳細については、を参照してください <block ref="4a0d19ebe9aa0f2533119e3056a7b078" category="inline-link-macro-rx"></block>）。</block>
   <block id="f670925f1b9ec90df9b7d8183ab1f485" category="inline-link-macro">新しいファイル共有を作成します</block>
   <block id="ed9bd2b11a3aa1b6606fba232016385c" category="list-text">必要に応じて変更します。フィールドの説明については、を参照してください <block ref="871a83cf50bbe93686b627abbb041e6d" category="inline-link-macro-rx"></block>。</block>
@@ -1053,8 +989,6 @@
   <block id="4f6cfcf670602d0d3965cdfad9003301" category="paragraph">Modify share は非同期ジョブとして実行されます。可能です</block>
   <block id="c65f438b154be9ea4bf677eda0f12729" category="list-text">ジョブが完了したら、 [ 共有 ] リストで共有のステータスを確認します。</block>
   <block id="e69a67ee29567c85d079a5da92e0021d" category="summary">Keystone によってディスクが変更される</block>
-  <block id="99e386b08e85bd69bd5c2cf4790ac52c" category="paragraph">ディスク名、ホストグループマッピング、パフォーマンスサービスレベル、容量、および Snapshot ポリシーを変更できます。この方法を使用すると、ディスクを別のサービスレベルに移動できます（使用可能な場合）。</block>
-  <block id="01e4e789a3c7b5698552e1195e37cb41" category="paragraph">ディスクが動作状態である必要があります。ボリュームのステータスとそれらを運用するための手順については、を参照してください <block ref="7e36d1153c26a010b4cff09ad58116d3" category="inline-link-macro-rx"></block> および <block ref="1dd0eaff8c7fecd5c80f4e2420f50d3b" category="inline-link-macro-rx"></block></block>
   <block id="896d052512c0fb4562720e6f8b2e04aa" category="list-text">リストからディスクを探し、そのディスクの Edit アイコンをクリックします。（リスト内の項目の操作の詳細については、を参照してください <block ref="4a0d19ebe9aa0f2533119e3056a7b078" category="inline-link-macro-rx"></block>）。</block>
   <block id="282dc5a10162766e4fcb566b2af92759" category="list-text">必要に応じて変更します。を参照してください <block ref="57fea650aa9c9b401ce352b97a62b02e" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="c193250886a64f4f8dceac2b04f3ce3d" category="list-text">[ 完了（ Done ） ] をクリックします。ディスクを変更するジョブが作成されます。</block>
@@ -1063,19 +997,13 @@
   <block id="fb88eb4b5d99673e45056732b275679a" category="summary">Keystone によってオブジェクトストレージグループとユーザが表示されます</block>
   <block id="5cdc9a60703b33501782736bc59bfe55" category="doc">オブジェクトストレージグループとユーザを表示します</block>
   <block id="542a28267baf12d46a137a45d18b4519" category="paragraph">User Management リストには、指定したサブテナントのオブジェクトストレージユーザおよびグループが表示されます。</block>
-  <block id="c5e91367085fa78087bf64a79eae911f" category="list-text">メニューから、オブジェクトストレージ &gt; ユーザを選択します。</block>
   <block id="4ad2f99cb9ccf769a0360a1814848446" category="list-text">必要に応じて、サブテナントドロップダウンメニューを使用して別のサブテナントを選択します。</block>
-  <block id="c9427511a341644c98eed4fb4ae8f7cd" category="list-text">ユーザとグループのリンクを使用して、ユーザとグループの表示を切り替えます。</block>
   <block id="ec5c3a103a46dd15df21ddc7b99bb845" category="list-text">Users リストには、選択したサブテナントに対して定義されているオブジェクトストレージユーザが表示されます。各ユーザについて、ユーザの名前と所属先のオブジェクトストレージグループが表示されます。</block>
-  <block id="cea8e9449f5b2e5d5a5107b0c8a83b62" category="list-text">グループリストには、選択したサブテナントに対して定義されているオブジェクトストレージグループが表示されます。グループごとに、グループ名と S3 ポリシーが表示されます。</block>
   <block id="f13001876be336c48ead8577c8d809fe" category="inline-link-macro">リストビュー</block>
-  <block id="00c6a27075fa437da3bdccfb4614844b" category="paragraph">リストの機能の使用方法の詳細については、を参照してください <block ref="06c69cf03ada5a3283b333d7ac5a7d25" category="inline-link-macro-rx"></block>。</block>
   <block id="7bc1dc2ee0a07d10009260b53f57f2d3" category="summary">Keystone サービスの容量の定義</block>
   <block id="fa9e0f651927f60e0ba9028d7f29ad6e" category="doc">Flex サブスクリプションサービスの容量の定義</block>
   <block id="9a09adadd7780fa46f83fa4c80476f50" category="paragraph">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）サービスの容量は次のとおりです。</block>
-  <block id="daec5abe68eb172b15758085f16c740e" category="list-text">容量は各パフォーマンスレベルにコミットされます。</block>
   <block id="65bdbd8437ca88c89824e2ddc621f54c" category="list-text">この期間中はコミット済み容量を減らすことはできません。</block>
-  <block id="8ff64aaef80695cc5c145b3bef4a236f" category="list-text">コミット済み容量および追加のパフォーマンスレベルは、期間中に追加できます。</block>
   <block id="aec1005ee7c9c20d1a1b0df3290a5c34" category="list-text">バースト時の容量は 20% まで、コミット済み容量と同じ速度で充電されます。</block>
   <block id="e895579d02072ebda659dbda14a17726" category="list-text">バースト時の容量がコミット容量の 20% を超えると、プレミアム料金が発生します。20% を超えるその他のバースト要件については、サポートにお問い合わせください。</block>
   <block id="8dff05024251efb5d18ddd1efa6c12ca" category="summary">Keystone ブロックストレージ API</block>
@@ -1106,7 +1034,6 @@
   <block id="d1bd1fc145b2dd4e9c7d502087eff667" category="cell">特定のディスクの詳細を取得できます。ブロックストア ID 、名前、ディスクパス、プロトコル、 Snapshot ポリシーなど、ディスクの詳細を取得します。 入力した ID に基づいてタグを作成します。</block>
   <block id="8363e9db6337aec458fad0542f86be76" category="paragraph">id` ：ディスクの ID 。</block>
   <block id="0f3a3f9d00d1528c6a81cdbd42537a5c" category="cell">ディスクを作成できます。要求の本文に値を追加して、サブテナント ID 、ゾーン、名前、ディスクパス、 Snapshot ポリシー、 バックアップポリシーおよびタグ。</block>
-  <block id="7be3b7a364383933a0a625f4986f488a" category="paragraph">「 ubtenant_id 」：サブテナントの ID 。'zone' ：ゾーンの名前。`name` ：ディスクの名前。「 disk_path 」：ディスクのパス。'protocol' ：ブロック・デバイスのアクセスに使用されるストレージ・プロトコルos_type ：ホスト・オペレーティング・システムのタイプ「 hostgroup_dmappings 」：ホストグループマッピング。「 service_level 」： Standard 、 Premium 、 Premium-Tiering 、 Extreme 、 Extreme のいずれかのサービスレベル名を指定できます。[ize_GB] ：ディスクのサイズ（ GB 単位）。</block>
   <block id="318b0905a90c6a1cffb69d4449588db7" category="paragraph">「 /v2.1/disks/{id}/`s Snapshot/{name}` 」</block>
   <block id="ba3707d372f97ea71dc77216e4e0bd18" category="cell">ディスクのスナップショットを作成できます。</block>
   <block id="ab0c5afc4b03b0877a98f18cc5ef2120" category="paragraph">id` ：ディスクの ID 。`name` ：スナップショットの名前。</block>
@@ -1364,19 +1291,10 @@
   <block id="60ba520f9d8839190b47177b0e5527c8" category="summary">Keystone によってオブジェクトストレージグループが削除される</block>
   <block id="4691d8c9f3b0d7214fca2297c340dedc" category="doc">オブジェクトストレージグループを削除する</block>
   <block id="92f47837b80964ea23a98afa644af878" category="paragraph">オブジェクトストレージグループを削除するには、このメソッドを使用します。</block>
-  <block id="4014df0eabbcdafeeaa6af15088473c1" category="inline-link-macro">グループリスト</block>
-  <block id="bcfec66a7b5deed3e3d648bf9acced29" category="list-text">表示 <block ref="ed64871e766a21bfbb9d1bd09d4d5a26" category="inline-link-macro-rx"></block>。</block>
-  <block id="a2903997a8345ed7638b30722c8f985d" category="list-text">正しいサブテナントが選択されていること、および表示にグループが表示されている（ユーザではない）ことを確認します。</block>
   <block id="45545c2b846c151b6838b1e51a45e19a" category="list-text">リスト内でグループを探し、そのグループの削除アイコンをクリックします。</block>
   <block id="6dd6917c8e34f161475893bacabd2f53" category="list-text">削除操作を確定するには、 * 確認 * をクリックします。オブジェクトストレージグループがリストから削除されます。</block>
   <block id="976f723930b9c253badf5a8e50c023b1" category="summary">Keystone がオブジェクトストレージグループを変更する</block>
   <block id="1ca4a67c83c613046d26b191b0d3d48e" category="paragraph">このメソッドを使用して、グループ名や S3 ポリシーなど、オブジェクトストレージグループの詳細を変更します。</block>
-  <block id="a3619c46f80c117c82d9b8f5ce15c791" category="inline-link-macro">グループリスト（ Groups List ）</block>
-  <block id="0fc473ae179e938ced45ce5884836388" category="list-text">を表示します <block ref="af85d4ed6b92cbdb096c6e017a65dffc" category="inline-link-macro-rx"></block>。</block>
-  <block id="9ac2bdd1605743485b172df6bc2094b6" category="list-text">リストでグループを探し、そのグループの [ 編集 ] アイコンをクリックします。</block>
-  <block id="0b980fcb28f3b186400e7da565e6c22e" category="list-text">Edit Group ダイアログボックスで、ユーザ名を入力します。</block>
-  <block id="b4dbcd371a0fc39b2fd294d848a43305" category="list-text">変更したグループを環境する S3 ポリシーを選択します。</block>
-  <block id="a42e49df2998084772a70af48af44ee7" category="list-text">[ 作成（ Create ） ] をクリックします。指定した設定でグループを変更するジョブが作成されます。</block>
   <block id="33813c62622e0653d370d8207006d045" category="summary">Keystone によってユーザが削除される</block>
   <block id="6068ec93237c9fde567e8116ebc47449" category="doc">ユーザを削除します</block>
   <block id="5077bfba3780634cc1145332d1327412" category="paragraph">ユーザを削除するには、このメソッドを使用します。</block>
@@ -1394,7 +1312,6 @@
   <block id="e1b769719ccb6a19b5da0f54a9ce124a" category="list-text">バックアップのリストア</block>
   <block id="baaf26c3cc1634b64f550cbbc10d58ed" category="list-text">ディザスタリカバリフェイルオーバー</block>
   <block id="9aa339d0e01af256fa5c2221f6d6ed40" category="list-text">NetApp Service Engine を使用したテクニカル問題</block>
-  <block id="96741ccff49069dd65f1235b247e5107" category="list-text">このセクションでは説明しないその他の問題について説明します。</block>
   <block id="8f20189d8110c58d44fe31826425eaa8" category="list-text">サービスリクエストを発行する方法</block>
   <block id="92200f42614e072053fb6e35af60b4bc" category="list-text">サービスリクエストを追跡する方法</block>
   <block id="f52d6921b11e9d5d206f0e75471ff677" category="list-text">サービスリクエストプロセス</block>
@@ -1518,15 +1435,6 @@
   <block id="ef98a90735179c8fe62a5aac899e0452" category="paragraph">次の表に示すメソッドを使用して、 StorageGRID インスタンスを ID 別に変更します。</block>
   <block id="5f4058077f6055ee438c7b5f12721218" category="cell">StorageGRID インスタンスを ID で変更します。</block>
   <block id="14b5c65d65d2ed0e7b46c6104f5dfa30" category="paragraph">要求された要求本文属性 : 'none'</block>
-  <block id="687af5982d08a7c3bbb5baa7612e8f13" category="summary">Snapshot からディスクを作成します</block>
-  <block id="ef0522dbdfebbf40eb2bbb6aebac15a7" category="paragraph">既存の Snapshot から新しいディスクを作成できます。Snapshot からクローニングされた新しいディスクには、 Snapshot の作成元のディスクと同じプロパティが適用されます。</block>
-  <block id="b1d9bdfae5e81a400d591b576d306e8f" category="list-text">左側のナビゲーションペインから *Block Storage* を選択し、 *Disks* を選択します。</block>
-  <block id="2f12441ff316d66608b4d14651896775" category="list-text">Create Disk （ディスクの作成）をクリックし、 * Clone from snapshot （スナップショットからのクローン） * を選択します。テナントのすべてのディスクが表示された * ディスクの選択 * 画面が表示されます。ディスクは、リージョン、ゾーン、およびサブテナントでフィルタできます。動作状態のディスクを選択することができます。</block>
-  <block id="b4e4dcc9b726072edd64a96c8a6316e4" category="list-text">目的のディスクの横にあるチェックボックスをオンにして、「 * 次へ * 」をクリックします。Select Snapshot * （スナップショットの選択）画面が表示され、ディスクのすべてのスナップショットが表示されます。</block>
-  <block id="f67663048995223b5a3bca2d0bebbd78" category="admonition">選択したディスクについて、 SnapCenter Service Engine の外部の 環境に作成された Snapshot がある場合、それらの Snapshot がインポートされ、選択した Snapshot のリストに表示されます。インポートされたこれらの Snapshot を選択し、そこから新しいディスクのクローンを作成できます。</block>
-  <block id="fcf40d84ad9d1429bb30cf5904e5ac09" category="paragraph">特定の Snapshot を検索するか、スケジュールタイプを選択して Snapshot をフィルタリングできます。</block>
-  <block id="eff181ad32ffb8fd98ba1eae2af717a7" category="list-text">クローンを作成するスナップショットの横にあるチェックボックスをオンにし、 * 次へ * をクリックします。新しいディスクは、選択した Snapshot のプロパティを継承します。</block>
-  <block id="617236079547eaf12e48c916ee3a5716" category="list-text">名前 * とディスクパス * を追加します。サービスレベル * の割り当てなどの他の設定を更新し、 [*Create] をクリックします。</block>
   <block id="bbef23cf84481110210f99b7dca9a92d" category="paragraph">* ディスクの作成 * は非同期ジョブとして実行されます。可能です</block>
   <block id="c136dd75ef4d76c2f5a6206073c84661" category="list-text">ジョブが完了したら、ディスクのステータスを「 * ディスク * 」リストで確認します。</block>
   <block id="25873e5c54ccb8e46d9f543841127677" category="summary">サービス提供アーキテクチャの概要</block>
@@ -1562,12 +1470,7 @@
   <block id="66fbdf11c8d11e5cf08a26480e76c41b" category="doc">ユーザの S3 キーを作成します</block>
   <block id="756ce271705621a55d77f25f42835876" category="paragraph">ユーザの S3 キーを作成するには、このメソッドを使用します。</block>
   <block id="bc00c96c9325eeb46956d01d7a76e163" category="paragraph">キーは作成後すぐにキャプチャしてください。キーの詳細を作成したあとで取得することはできません。</block>
-  <block id="fbe07702643f38615e8de7c0d9072e70" category="list-text">Manage S3 Keys （ S3 キーの管理）ダイアログボックスが表示され、ユーザのキーのリストが示されます。</block>
   <block id="8758e23e7960e73e6ab424225ab3813c" category="list-text">ユーザに既存のキーがない場合は、 * S3 キーの作成 * をクリックしてフィールドを表示し、キーを作成します。</block>
-  <block id="b2c8572e8e1a1bface03661007849304" category="list-text">キーを期限切れにする場合は、有効期限と有効期限を UTC で指定します。それ以外の場合は、これらのフィールドのデフォルト値のままにします。</block>
-  <block id="c501f05b9df7a562d8df47267a702966" category="list-text">キーを作成するには、チェックマークをクリックします。S3 Key Details （ S3 キーの詳細）ダイアログボックスが開き、アクセスキーとシークレットキーが表示されます。</block>
-  <block id="2565ea5925b3317ad199e25b57b45e88" category="list-text">詳細をユーザーに通知する準備として、アクセスキーと秘密キーの両方をコピーします。</block>
-  <block id="52bba6b924927dcc0b9f160653963951" category="paragraph">S3 の Key Details ダイアログボックスを閉じる前に、キーの詳細がキャプチャされていることを確認します。閉じた後、キーの詳細が隠され、キーを取得できなくなります。</block>
   <block id="00a06b08857b60c805bcaf007a9ddc9c" category="list-text">[* 閉じる * ] をクリックします。</block>
   <block id="edea9398bafcc918142f79d91b628f61" category="list-text">もう一度 * Close * をクリックして Manage S3 Keys ダイアログを閉じます。</block>
   <block id="e4355ea354829ede276c4aa44fe13eb2" category="summary">Keystone ドキュメントポータルへようこそ。</block>
@@ -1575,7 +1478,6 @@
   <block id="3799607edcd82b379d62cf94110a1f1a" category="paragraph"><block ref="3799607edcd82b379d62cf94110a1f1a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fdba3cae37eccb96c4307e07af690784" category="section-title">Flex サブスクリプション</block>
   <block id="fb2c4a4567f19f497aa52f4fa9fe5ad4" category="paragraph"><block ref="fb2c4a4567f19f497aa52f4fa9fe5ad4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="af401326a6f27af7fc3bb2ff21b788dc" category="paragraph">Flex サブスクリプションは、ネットアップ、パートナー、またはお客様が運用可能な、ブロック、ファイル、オブジェクトの各データタイプ用のストレージ容量を事前定義されたパフォーマンスサービスレベルで提供するサブスクリプションベースのサービスです。Flex サブスクリプションが提供する基本サービスに加えて、追加料金でアドオンサービスを選択できます。これらのサービスについては、次の図で説明します。</block>
   <block id="173cfa01f909dadb1cc7bb7d43b24a2e" category="list-text">* Data Protection Basic * サービスは、 NetApp SnapMirror と NetApp SnapVault の機能をデフォルト設定で提供します。</block>
   <block id="1ca92842b9f8718a33770baa49c236e6" category="list-text">* データ保護の詳細 * は、 NetApp MetroCluster の機能を活用して、 RPO=0 の SLA を提供します。</block>
   <block id="02573cfb14818a9b260f4e31c28e893e" category="admonition">Flex Subscription では、バックアップ操作に SnapVault テクノロジを使用し、ディザスタリカバリに SnapMirror を使用してデータをリモートでレプリケートします。アプリケーションのフェイルオーバーとリストアは自動的に行われません。</block>
@@ -1599,9 +1501,7 @@
   <block id="bf733d8a933c1601697f364223fc7ecb" category="cell">にアクセスします</block>
   <block id="cd179e66f0cac36f71df9d05a926dd0d" category="cell">パートナー管理者 / アカウント所有者</block>
   <block id="c2e2fce3a995f59900d7afbbe58683f5" category="inline-link-macro">リンクをクリックしてください</block>
-  <block id="9137eb08618eaa70f67d25c92564f6ee" category="cell">テナントとそのサブスクリプションを管理するすべてのタスクを実行できます。詳細については、を参照してください <block ref="e2cb732c8d5ec3f0b630f3b0e66fd3db" category="inline-link-macro-rx"></block>。</block>
   <block id="8c932f4b25b6b6a60a35564fa075f3d3" category="cell">お客様 / テナント管理者</block>
-  <block id="ec58dc667cdf001ad2eee1740a681056" category="cell">お客様やテナントの管理者は、サブテナントの管理に関連するすべての操作を実行できます。詳細については、を参照してください <block ref="e2cb732c8d5ec3f0b630f3b0e66fd3db" category="inline-link-macro-rx"></block>。</block>
   <block id="062e892cc19c04dde512b97ac8c0daa2" category="cell">ネットアップ管理者（読み取り）</block>
   <block id="2eca39b4683fcf76619ce1d4a93bf9ee" category="cell">すべてのコンポーネントに対する読み取り専用アクセス。</block>
   <block id="150de5f6f748e3153b4c658113417651" category="cell">ネットアップ管理者</block>
@@ -1610,14 +1510,11 @@
   <block id="2bb4cbf1256e8a6a37285f059766e415" category="list-text">NetApp Service Engine Web インターフェイスのユーザ名とパスワード</block>
   <block id="c63762405cc3abcb62a695f3a23339b0" category="list-text">NetApp Service Engine ポータルへの URL</block>
   <block id="488469c0d75135f7c78adae8a72c1e8a" category="list-text">Web ブラウザ</block>
-  <block id="e2e473f1846afad5c889437c379e6dc0" category="list-text">Web ブラウザで、 NetApp Service Engine ポータルの URL にアクセスします。ログインページが表示されます。</block>
   <block id="f8262bc7f71fe7cc6293c9b6dddedfc6" category="list-text">「 * ローカルユーザーサインイン * 」を選択します。</block>
-  <block id="5770e2e433e3acedf1bbe15badd701a8" category="list-text">NetApp Keystone へのログインページで、ユーザー名とパスワードを入力し、 * ログイン * をクリックします。</block>
   <block id="6c5a8015b36b917a66218b675eea92c2" category="inline-link-macro">NetApp Service Engine Web インターフェイスの概要</block>
   <block id="2e6df03be779eb981ba140f1f8b1e783" category="list-text">ログインに成功すると、 NetApp Service Engine Web インターフェイスがロードされ、ダッシュボードで開きます。GUI の概要については、を参照してください <block ref="2f9b8af2c7d5dd961826f7a81f97b9de" category="inline-link-macro-rx"></block>。</block>
   <block id="4c7f66e3f198b33e7bcbe1797fbd60f8" category="admonition">ログインに成功してもダッシュボードが表示されない場合は、 NetApp Service Engine ポータルの管理者に問い合わせて、 NetApp Service Engine ポータルアカウントに正しいロールが割り当てられていることを確認してください。</block>
   <block id="f4aa92e74e4f074569a506d6a8fff8df" category="paragraph">NetApp SSO でログインするには、次のものが必要です。</block>
-  <block id="80f50d39fceb948a9e3d572982868795" category="list-text">NetApp SSO アカウント。アカウントはネットアップサポートサイトで申請できます。ログイン画面で、 * Create NetApp SSO account * を選択して次の手順を実行します。</block>
   <block id="dbafe9c960cbba19c353325bc02bcab4" category="list-text">NetApp Service Engine ポータルへの URL 。</block>
   <block id="17aceb7e9c24a70688626b92436e14f0" category="list-text">Web ブラウザ。</block>
   <block id="9fc5f7aaf9e92662c4bcaccbd7573128" category="list-text">NetApp SSO を選択します。</block>
@@ -1625,14 +1522,7 @@
   <block id="a124e126039367350c2bd3e2dffea7f4" category="paragraph">ログインに成功すると、 NetApp Service Engine Web インターフェイスがロードされ、 Flex Subscription ダッシュボードが表示されます。GUI の概要については、を参照してください <block ref="2f9b8af2c7d5dd961826f7a81f97b9de" category="inline-link-macro-rx"></block>。</block>
   <block id="9cca15dcee862bea12a0f1b1f2c84fe4" category="list-text">インターフェイスからログアウトするには、ユーザーアイコンをクリックし、 * サインアウト * をクリックします。</block>
   <block id="2f67801bbc64ccc68a6a7e45990d9f24" category="paragraph"><block ref="2f67801bbc64ccc68a6a7e45990d9f24" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ee966310f09723c05298f5d7d7aa6f27" category="summary">Snapshot からファイル共有を作成します</block>
-  <block id="298c17df37c9568ee5167ba1ad189316" category="paragraph">既存の Snapshot から新しいファイル共有を作成できます。Snapshot からクローニングされた新しいファイル共有には、 Snapshot の作成元のファイル共有と同じプロパティが含まれます。</block>
   <block id="ba791218e3e41923099db15abe057c18" category="list-text">左側のナビゲーションペインで * ファイルサービス * を選択し、 * 共有 * を選択します。</block>
-  <block id="176bb6beb0437ca5de2e3106aa55ebc5" category="list-text">Create Share （共有の作成） * をクリックし、 * Clone from snapshot （スナップショットからのクローン） * を選択しますテナントのすべてのファイル共有が表示された * 共有の選択 * 画面が表示されます。ファイル共有は、リージョン、ゾーン、およびサブテナントでフィルタできます。動作状態の任意のファイル共有を選択できます。</block>
-  <block id="ca7f98cdc8f658e2b3a6a84f43fdc689" category="list-text">目的のファイル共有の横にあるチェックボックスをオンにし、 * Next * （次へ）をクリックします。Select Snapshot * （スナップショットの選択）画面が開き、ファイル共有のすべてのスナップショットが表示されます。</block>
-  <block id="48f97c1b6230094e74163fccfef5de16" category="admonition">選択したファイル共有の SnapCenter 環境に NetApp Service Engine 以外の場所に作成された Snapshot がある場合、それらの Snapshot がインポートされ、選択した Snapshot のリストに表示されます。インポートされたこれらの Snapshot を選択し、そこから新しいファイル共有のクローンを作成できます。</block>
-  <block id="e63a7810ce3ddcb554adeae7407cc780" category="list-text">クローンを作成するスナップショットの横にあるチェックボックスをオンにし、 * 次へ * をクリックします。新しいファイル共有には、選択した Snapshot のプロパティが継承されます。</block>
-  <block id="28e56d37d84600977d376fe03d5a6a37" category="list-text">名前 * と * 共有パス * を追加します。サービスレベル * の割り当てなどの他の設定を更新し、 [*Create] をクリックします。</block>
   <block id="3f715514a2bfe764cac754c65809be90" category="list-text">CIFS タイプの共有の場合のみ：ホスト名で共有を使用できるようにするには、ドメイン管理者が DNS レコードを CIFS サーバ名および IP アドレスで更新する必要があります。それ以外の場合、共有には IP アドレスを使用してのみアクセスできます。例：</block>
   <block id="81e66a6a07c55ae34d0633cec26d4dde" category="inline-link">\\ ホスト名 \ 共有</block>
   <block id="bddff121a2ac5d1b426065e566d9ee96" category="inline-link">\\ IP \ 共有</block>
@@ -1661,8 +1551,6 @@
   <block id="51ef2e6beabfb88e0de5dcbc8aa4640a" category="summary">Keystone によってディスクが表示される</block>
   <block id="9d58782328bf029c4e013523d481162d" category="paragraph">ディスクリストには、選択したテナントに属するディスクが表示されます。リストを表示するには、メニューから * block storage &gt; Disks * を選択します。</block>
   <block id="8c180861c0e670fead0665dd33764c3d" category="paragraph">既存の環境にすでに含まれていて、 NetApp Service Engine で設定されている Storage VM に属するディスクは、この画面で確認し、 NetApp Keystone Flex Subscription （ Flex サブスクリプション）サービスの一部として管理することもできます。NetApp Service Engine 以外でプロビジョニングされたディスクは定期的にインポートされ、該当するステータスコードがこのページに表示されます。</block>
-  <block id="999bcf1c94889915b315debc991b8d7b" category="paragraph">インポートしたディスクが NetApp Service Engine の許容可能な標準規格に準拠している場合、つまり、ディスクを動作可能にするために必要なすべてのパラメータが使用可能であれば、ディスクは「 Operational 」ステータスでインポートされ、 NetApp Service Engine から直接管理できます。ただし、一部のディスクは NetApp Service Engine 上の既存のディスクと同じ標準に含まれていない場合があります。インポート後、これらのディスクは「 Imported 」または「 Non-Standard 」ステータスで分類されます。ディスクのステータスおよびステータスを稼働させるための手順については、を参照してください <block ref="1dd0eaff8c7fecd5c80f4e2420f50d3b" category="inline-link-macro-rx"></block></block>
-  <block id="88860339fbef1254b1a14f5bd1d1c340" category="paragraph">ディスクリストで、単純な情報を表示します。リストの機能の使用方法の詳細については、を参照してください <block ref="06c69cf03ada5a3283b333d7ac5a7d25" category="inline-link-macro-rx"></block>。</block>
   <block id="fa3fe91daa4ed2920f22f461a9aebefa" category="list-text">ディスク名</block>
   <block id="25961c60eb320541411905573dd71445" category="list-text">ディスクへのパス</block>
   <block id="f308e6ca453d47a2876df6eae740d8f8" category="list-text">ディスクサイズ</block>
@@ -1672,9 +1560,7 @@
   <block id="f79ceb6944e4a954bbdb246738b70a0a" category="list-text">動作状態</block>
   <block id="30ae80a1161063653836f6dae6c58e38" category="summary">Keystone は、ディスクのアドホックスナップショットを作成します</block>
   <block id="d2bb0b688299d8e8ffd5a27eda65d5e6" category="paragraph">ここでは、ディスクのアドホックスナップショットを作成する方法について説明します。</block>
-  <block id="ff1672cea74e04083898fc607ea0cb03" category="list-text">リストからディスクを探し、そのディスクの Snapshot アイコンをクリックします。（リスト内の項目の操作の詳細については、を参照してください <block ref="52762e1c21e70b201ce4b2db09bd46e5" category="inline-link-macro-rx"></block>）。</block>
   <block id="25cad0e222a2727c5f173dc7c86c6430" category="list-text">スナップショットの作成（ Create Snapshot ）ダイアログボックスで、スナップショットの名前を入力し、 * 作成 * （ Create * ）をクリックします。</block>
-  <block id="2a9c6c6899ce9c4042a26caaa3889f7d" category="paragraph">Snapshot が使用可能になるまでに数分かかることがあります。</block>
   <block id="96147ac53c0d3221812e42683ea8a855" category="summary">Keystone の承認と認証</block>
   <block id="975484d67dbc4f44b1c0dffaa43d5eb1" category="doc">許可と認証</block>
   <block id="75d525a2c680cb5adceafaa6d19b7b29" category="paragraph">NetApp Service Engine REST API には、問題 HTTP 要求を実行できる任意の Web ブラウザまたはプログラミングプラットフォームを使用してアクセスできます。NetApp Service Engine は、基本的な HTTP 認証メカニズムに加えて、 Java Web Token （ JWT ）ベアラ認証をサポートしています。API を呼び出す前に、ユーザを認証する必要があります。</block>
@@ -1769,8 +1655,6 @@
   <block id="f748cdecc7002e854af01b7f1d36ebb1" category="paragraph">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）データ保護サービスは、データをバックアップし、必要に応じて回復できます。使用可能なデータ保護サービスは次のとおりです。</block>
   <block id="7da490627b0929eb399424269ef46d7f" category="list-text">ディスクおよび共有のバックアップ（サブスクリプションの一部としてデータ保護サービスが必要）</block>
   <block id="b0609401d759c5156292bcededa3ee06" category="list-text">ディスクおよび共有のディザスタリカバリ（サブスクリプションの一部としてデータ保護サービスが必要）</block>
-  <block id="e54199d839aec4367252780290236e17" category="admonition">バックアップサービスとディザスタリカバリサービスはアドオンサービスとして提供され、 Snapshot は基本的なストレージサービスの一部として提供される。</block>
-  <block id="f8f0d91ade238084163c368750f7e560" category="cell">Single Region Snapshots （基本的なストレージサービスの一部として利用可能）</block>
   <block id="53b8c0793d8e01e805f7baa48301f0cb" category="cell">マルチリージョンバックアップ（データ保護アドオン）</block>
   <block id="096f97b9f45eb7df5614230380360723" category="cell">複数リージョンのディザスタリカバリ（データ保護アドオン）</block>
   <block id="f9468c81b3d59ac0030570c4f58e95f1" category="cell">ユースケース</block>
@@ -1779,7 +1663,6 @@
   <block id="85e4dd429192e345faa9e2c70c1916f6" category="cell">インフラの損失や障害が原因でプライマリボリュームのデータが完全に失われるリスクを、目標復旧時間とともに軽減します</block>
   <block id="51359e8b51c63b87d50cb1bab73380e2" category="cell">ポリシー</block>
   <block id="4c2814b8dac284c19012ca2d1822b5b3" category="cell">毎時、毎日、毎週、毎月</block>
-  <block id="1c9afea4ef71092614eba4f4a54ff7f8" category="cell">1 時間、 1 日、 1 週間、および 1 カ月単位の Snapshot に基づいて保持するバックアップの数</block>
   <block id="8a1e150d4dfb13fe97a51f4e6116b23b" category="cell">1 時間、 4 時間、毎日</block>
   <block id="99571eecaa5c5d622bb0d1f855752d5f" category="cell">トポロジ</block>
   <block id="425853ef2dd1e19d65e025514191b39e" category="cell">ソースのみ</block>
@@ -1795,7 +1678,6 @@
   <block id="b16b9ef52e6b1a201cdcba5b837adb92" category="paragraph">サービスプロバイダ管理者はマルチテナント環境で、 NetApp Service Engine の Web UI を使用して、独自のサブスクリプションを使用しているお客様のプロビジョニング、レポート作成、課金、および管理を実行できます。次の機能を実行できます。</block>
   <block id="fa5f81fd8a440d0b18d8557e443b5223" category="list-text">Flex Subscription サービスの一部として登録およびプロビジョニングされているストレージを表示します。</block>
   <block id="9da712668a551d8e5fdbd73337cd80e9" category="admonition">サービスとして提供される容量は、ネットアップから購入するよりも多くなります（オーバーサブスクリプション）。テナントサブスクリプションは現在の Flex サブスクリプション期間を超えて延長できますが、サブスクリプションの作成時およびダッシュボード / レポートに警告が表示されます。</block>
-  <block id="deda34113a7d7ce4c37163eeb99d80f2" category="list-text">ゾーン、リージョンの作成、表示、変更、および削除 テナント、サブテナント、ユーザ</block>
   <block id="2befb03c928f132c86b633802db5294b" category="list-text">Flex サブスクリプションサービスで複数のテナントを管理およびホストします。テナントサブスクリプションを作成および管理し、独自の Flex サブスクリプションの詳細を表示します。</block>
   <block id="a47825ecf819dc90fda84d0c3b11b153" category="admonition">テナントサブスクリプションは、対応するゾーンと Keystone Flex Subscriptions に基づいて作成できます。これらは、 Flex サブスクリプションのサブスクライブ容量に基づいて提供されるサービスレベルに従って作成されます。</block>
   <block id="cde8354acfa3ed018e57ee58a3437455" category="list-text">テナント用に各ストレージタイプをプロビジョニングするためのネットワーク要件を確認したら、ファイルサーバまたはブロックストアを作成し、ブロック、ファイル、およびオブジェクトストレージを初期化します。</block>
@@ -1807,22 +1689,14 @@
   <block id="9f47971c2f904282c6112c7fae666665" category="section-title">顧客 / テナント管理者として実行できるアクティビティ</block>
   <block id="c5345358b99b46f0a70b33dbe9576e81" category="paragraph">テナント管理者は、自分のテナンシーのサブスクリプションの詳細を表示したり、サブテナントに対する管理タスクを実行したりできます。次の操作を実行できます。</block>
   <block id="ac88fcccfde285ecb59b73859bcec157" category="list-text">テナントサブスクリプションサービスに登録され、プロビジョニングされたストレージを表示します。</block>
-  <block id="ff765d3ff80f356ea55032314e29568e" category="list-text">テナントサブスクリプションサービスで複数のサブテナントとユーザを管理およびホストする。</block>
-  <block id="4a1c9085c04469de8b32328241d6f65d" category="list-text">ゾーン、リージョン、テナンシー、およびサブネットを表示します。</block>
-  <block id="6e6abd2dbfbfbba739327cec43772d66" category="list-text">ファイルサーバを表示し、ファイル共有、ディスク、およびバケットを作成する。</block>
-  <block id="f67da1c38596a28ef3abe3fed17d089a" category="list-text">テナントとサブテナントのレポートを作成して、テナントとサブテナントに登録またはプロビジョニングされているストレージの消費データのみを表示します。</block>
-  <block id="857a3fc93421e14268be55190cd9a8c8" category="list-text">サービスプロバイダのサービスリクエストツール内でサービスリクエストを発行および更新します。</block>
   <block id="4079122a50a5a352183468bbaa01d8dd" category="admonition">追加のサブスクリプションの場合は、サービスリクエストツールを利用できます。</block>
   <block id="c77b594e66d073f4be45258af2ebdba0" category="summary">Keystone が新しいファイル共有を作成</block>
   <block id="5cc9eae69d2b1c144936d7ff5494d2b5" category="doc">ファイル共有を作成します</block>
-  <block id="fbbefb1be1017a424ca4e62e9df7439e" category="inline-link-macro">Snapshot から共有を作成します</block>
-  <block id="c55457198f00338e13690d82fa0d33ff" category="paragraph">このセクションでは、共有の詳細を直接指定して新しい共有を作成する方法について説明します。既存の共有の Snapshot に基づいて新しい共有を作成する手順については、を参照してください <block ref="341a263447364b521767ca6e7573b4ed" category="inline-link-macro-rx"></block>。</block>
   <block id="8db4df87e08b019579007500bb9fc300" category="list-text">共有はファイルサーバ上に作成されます。新しいファイル共有を作成するには、ファイルサーバが存在し、動作状態である必要があります。</block>
   <block id="1f196547bfaef7212e9c0eec75312d52" category="list-text">CIFS または NFS ファイル共有を作成するには、それぞれのサービスに対してサーバを有効にする必要があります。マルチプロトコルのファイル共有の場合は、サーバが CIFS と NFS の両方のサービスをサポートしている必要があります。</block>
   <block id="c54f0aba27df50e49cee2c735072e426" category="list-text">共有の非同期ディザスタリカバリオプションを有効にするには、非同期ディザスタリカバリが有効になっているサーバ上に共有を作成する必要があります。詳細については、を参照してください <block ref="a77c34ddf88ef814fd6a18a00bec0fb7" category="inline-link-macro-rx"></block>。</block>
   <block id="8ab0e8562b63a657a012a4fa511b0df6" category="list-text">共有の同期ディザスタリカバリを有効にするには、 MetroCluster 対応のゾーンに共有を作成します。</block>
   <block id="3ec53411254d84e584db2fb5cfff0b48" category="list-text">バックアップポリシーを定義して、スケジュールに従ってファイル共有のバックアップをキャプチャすることができます。詳細については、を参照してください <block ref="e05dcb26181a31e8f290bf1deef1bc37" category="inline-link-macro-rx"></block>。</block>
-  <block id="668d6071a5f02cf4d7b03c66d38f4a05" category="list-text">Snapshot ポリシーを定義して、スケジュールに従ってファイル共有の Snapshot をキャプチャすることができます。詳細については、を参照してください <block ref="c1f0dcbbcbcd1f1c8ac788893304a8d4" category="inline-link-macro-rx"></block>。</block>
   <block id="f5455c2377de48bae6f16c3cc467fe70" category="list-text">[ ファイルサービス ] 、 [ 共有 ] の順にクリックします。</block>
   <block id="362e43d35380d580dc47a4a47d51688a" category="list-text">[ 共有の作成 *] をクリックします。</block>
   <block id="bac686712716c2a8121433c1b980d4ee" category="list-text">[ 共有の作成 ] ダイアログボックスで、 [ 新しい共有の作成 ] を選択します。</block>
@@ -1839,19 +1713,11 @@
   <block id="f71f0959ca52eded5cc31e5cb2006d26" category="cell">共有をホストするファイルサーバを選択します。ファイルサーバのリストは、選択したリージョン、ゾーン、および共有タイプによって異なります。</block>
   <block id="5d4eed453fc4bdbbfcfb8af4661c2dbf" category="cell">セキュリティ形式</block>
   <block id="78c84da81749ed8f001b3e31e04db2d4" category="cell">ファイル共有に適用できるセキュリティ形式を選択します。このリストは、選択した共有タイプに基づいて自動的に入力されます。</block>
-  <block id="2af3493dc2490ea3d6815ee5c4af30aa" category="list-text">パフォーマンスサービスレベルを選択してください。選択したサービスレベルに基づいて、 IOPS とスループットの上限が表示されます。</block>
-  <block id="26283967e0fd58211a1eb8c29428deaf" category="admonition">オプションを選択して、そのレベルのパフォーマンスの詳細（最大 / 想定 IOPS / スループット）を表示します。ニーズに最も適したサービスレベルを選択します。</block>
   <block id="fc01918fedc280f220912ded5e2cb9a7" category="list-text">ファイル共有の容量を指定します。</block>
   <block id="4f7d25c5c6d4aeddd18d27531841ed6e" category="admonition">指定した容量によって消費済み容量がバーストになった場合（すでにバースト状態の場合はさらにバースト状態になっている場合）は、 NetApp Service Engine に警告が表示され、容量バーの色が変わります。容量チェックは、テナンシー内のすべてのサブスクリプションの総容量に対して実行されます。</block>
   <block id="85c067abe14bc508f25275e8cac45dc4" category="list-text">基盤となるファイルサーバで非同期ディザスタリカバリが有効になっている場合、新しい共有に対して非同期ディザスタリカバリレプリケーションが自動的に有効になります。非同期ディザスタリカバリレプリケーションから共有を除外する場合は、 [Asynchronous Disaster Recovery] ボタンを切り替えて無効にします。</block>
   <block id="b0e1384398cc0b8b2fe3f7a337590175" category="list-text">MetroCluster が有効になっているゾーンに共有を作成している場合は、同期ディザスタリカバリボタンが自動的に有効になり、無効にすることはできません。共有は、同期ディザスタリカバリ切り替えの下のパネルに表示されているゾーンにレプリケートされます。</block>
-  <block id="7296e3c59136a2e6d4e8e99fd3d9cf71" category="list-text">このファイル共有に Snapshot が必要な場合は、次の手順を実行します。</block>
   <block id="78936de5655136ed5b9ad23a83445da3" category="list-text">Snapshot ポリシーを有効にするかどうかを切り替え、 Snapshot ポリシーのフィールドを表示します。</block>
-  <block id="de4ec7b31f42984d9a5754398d02c83d" category="list-text">Snapshot を作成するタイミングを指定します。</block>
-  <block id="1594e7a9a81a227b2bf872284b7db32e" category="list-text">* 毎時。 * Snapshot を作成する分（時間）と保持する時間単位 Snapshot の数を指定します。</block>
-  <block id="5f701f76b8d7811867dae7dbda94263c" category="list-text">* 毎日。 * Snapshot を保持する日単位 Snapshot の数（時間と分）を指定します。Snapshot を 1 日に作成する必要がある時間を複数指定する場合は、カンマで区切って指定できます。例： 5 、 10 、 15 、 など。</block>
-  <block id="9bb02efe527bdf18d56f0ea68b04d2a0" category="list-text">* 週単位 * Snapshot を作成するタイミング（曜日、時間、分）と保持する週単位 Snapshot の数を指定します。</block>
-  <block id="676f69d4302c54af0e7704d2a1682283" category="list-text">* 月次。 * Snapshot を作成するタイミング（日にち、時間、分）と保持する月単位 Snapshot の数を指定します。</block>
   <block id="0f36bc4447a054a6ee3db1baecb08d20" category="list-text">このファイル共有のバックアップを有効にするには、次の手順を実行</block>
   <block id="d2b9e5c0ec7d83306b5bbc78b92956b2" category="list-text">[ バックアップポリシー ] フィールドと [ バックアップポリシー ] フィールドを有効にするかどうかを切り替えます。</block>
   <block id="38d28b7b9b8613a36f3b3961c5d11d9e" category="list-text">バックアップゾーンを指定します。</block>
@@ -1871,7 +1737,6 @@
   <block id="fc889be2a57a8d8f42c838632382c8b2" category="summary">Keystone のレポートの処理</block>
   <block id="dafbc590b12f062c36c2aa85f50af973" category="paragraph">NetApp Keystone フレックスサブスクリプションの使用状況およびテナントの使用状況に関する容量レポートとパフォーマンスレポートを作成できます。</block>
   <block id="3c00f75ae9df654587444dd48c9c9d28" category="section-title">Keystone サブスクリプション容量使用状況レポート</block>
-  <block id="1bce7866d6006486b8f977f92d42847f" category="paragraph">Capacity Usage for Keystone Subscriptions ページには、一定期間にわたるサブスクリプション内の各ストレージサービスの使用容量が表示されます。ネットアップ管理者は、サブスクリプション内のすべてのテナントとパートナーの容量使用状況レポートを表示できます。パートナー管理者は、 Flex サブスクリプションの使用状況に関する容量レポートを表示できます。このページのグラフィカルレポートを使用して、すべてのストレージサービスおよびアドオンデータ保護サービスの使用傾向を別々のタブで確認できます。サービスがバースト状態の場合、バナーには現在の課金サイクルで使用されているバースト容量が表示されます。</block>
   <block id="c28e93c47e98f33d0df99a351e91e439" category="paragraph"><block ref="c28e93c47e98f33d0df99a351e91e439" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d8849b0da5f9fe49a159d88dedd6ae5f" category="paragraph">[Capacity Usage for Keystone Subscriptions] ページを表示するには、メニューから [*Reports] &gt; [Keystone Usage*] を選択します。</block>
   <block id="d416faf28a81196ca783d5d5f9c31560" category="paragraph">サービスの容量の使用状況を表示するには、次の手順を実行します。</block>
@@ -1881,10 +1746,8 @@
   <block id="4b57217fab908dfebf6397733f6990c6" category="section-title">テナントサブスクリプション容量使用状況レポート</block>
   <block id="b0358e653dab977a4aa369b80b762b4b" category="paragraph">Capacity Usage for Tenant Subscriptions ページには、 Flex サブスクリプションでサブスクライブされたストレージサービスの各テナントの使用容量が時々表示されます。このページを使用して、ネットアップ管理者、パートナー管理者、テナント管理者、お客様管理者が特定のテナントの容量使用状況レポートを表示できます。</block>
   <block id="aa4266103f12e434c37accf81a420528" category="admonition">テナント管理者の場合、ページは「 Capacity Usage 」と表示されます。</block>
-  <block id="3f033a8bc97ed9eee168ee38abee2a91" category="paragraph">このページのグラフィカルレポートを使用して、すべてのストレージサービスのトレンドと、データ保護などのアドオンサービスのトレンドを別々のタブで確認できます。サービスがバースト状態の場合、バナーには現在の課金サイクルで使用されているバースト容量が表示されます。</block>
   <block id="f7d6b7e1da577f9887233efcc83582a0" category="paragraph">Capacity Usage for Tenant Subscriptions ページを表示するには、メニューから * Reports &gt; Tenant Usage / Capacity Usage * を選択します。</block>
   <block id="2239c3f13d7bb4ae01394edf50e45043" category="paragraph">テナントの容量使用状況を表示するには、次の手順を実行します。</block>
-  <block id="bf757393ee48aa789339cee47e4d2d22" category="list-text">[ サブスクリプション ] ドロップダウンリストから、サービスを含むサブスクリプション番号を選択します。</block>
   <block id="c15dff73fc7e8c310ca40df5c628bb0e" category="list-text">ベースサービスレベルまたはデータ保護サービスの使用容量をそれぞれのタブで選択して確認できます。デフォルトでは、サービスレベルビューが表示されます。</block>
   <block id="78cf0cc097f5e4cd99607d42852c01e6" category="section-title">パフォーマンスレポート</block>
   <block id="b307d074fbc113dff53e96b4a59b17a0" category="paragraph">パフォーマンスページ（次の図）には、個々のディスクまたは共有のパフォーマンスに関する情報が表示されます。次の 3 つのパフォーマンス指標に関する情報が表示されます。</block>
@@ -1968,40 +1831,19 @@
   <block id="8c880fe54cae171fa97132f8c5e82297" category="section-title">冷却</block>
   <block id="e49c1cb86b679c35d94b37728ee6dfb6" category="paragraph">ネットアップでは、最終的な構成と要件に基づいて、冷却要件の仕様（実効 BTU 、最大 BTU ）を提供しています。</block>
   <block id="a5fa5746370b608090b994a97b49e98b" category="section-title">ネットワーキング</block>
-  <block id="033aea8feb96b593bcfe0d568fd5782b" category="paragraph">お客様の要件や使用しているストレージコントローラに応じて、ネットアップはお客様のサイトで 10Gb 、 40GB 、および 100GB の接続を提供できます。</block>
   <block id="8769d35d5981adce65e2968f1fafd3e4" category="paragraph">ネットアップが提供する Flex サブスクリプションインフラデバイスにのみ必要なトランシーバを提供します。お客様のデバイスに必要なトランシーバを支給し、ネットアップが提供する Flex サブスクリプションインフラデバイスにケーブル接続する必要があります。</block>
   <block id="0c0791c8f17636d874aea16efd7e8ed2" category="summary">バックアップを作成、変更、削除したり、バックアップからリストアしたりできます</block>
   <block id="e6fc5d742fb314760c15319f57c10b66" category="doc">ファイル共有とディスクをバックアップする</block>
-  <block id="d5c88c8ef49bc3b4d7c15ca9db22ae64" category="paragraph">環境で作成されたボリューム（ファイル共有およびディスク）の Snapshot （バックアップまたはリカバリポイント）を表示および管理して、プライマリファイル共有およびディスクの複数のコピーをリモートで保持できます。</block>
-  <block id="0566cb15388c158a45e9ab74db9ba190" category="paragraph">レプリケートされたファイル共有と異なるゾーンのディスクは、各クラスタの専用のバックアップ Storage VM （ Storage Virtual Machine （ SVM ）に格納されます。バックアップは、異なるゾーンにある 2 つの独立した ONTAP クラスタ間で実行できます。NetApp Service Engine でサポートされる標準のバックアップポリシーは次のとおりです。</block>
   <block id="b1876aaaefa6fe06edb228974b736742" category="list-text">アドホック</block>
   <block id="c512b685438f41daa7386329a3b8f8d3" category="list-text">毎日</block>
   <block id="6c25e6a6da95b3d583c6ec4c3f82ed4d" category="list-text">毎週</block>
   <block id="9030e39f00132d583da4122532e509e9" category="list-text">毎月</block>
   <block id="801418460dd7ff544d44c93f2ca1106b" category="inline-link-macro">サービスリクエストを提出します</block>
-  <block id="ecd242fda0569865c9d53baff518ff03" category="paragraph">NetApp Service Engine でサポートされている標準のバックアップポリシーに従っていないボリュームを使用することは可能です <block ref="e37ceb28c45a47909eddea846ff49620" category="inline-link-macro-rx"></block> 問題を固定する * 非標準ボリューム * カテゴリ。</block>
-  <block id="71a894272ba63934076edbd1c77cb3fa" category="admonition">アドホック（スケジュールされていない）バックアップは、 GUI または API を使用していつでも手動で実行できます。</block>
-  <block id="51e7bf9a9bfe9a10e2140a304406dc5c" category="paragraph">ファイル共有およびディスクに対して作成された Snapshot のリストは、「 * Backups * 」ページに表示できます。バックアップは選択したテナントに基づいて表示されます。</block>
-  <block id="3b831f55c9143f1b5cb37a93b8ee1673" category="section-title">バックアップオブジェクトを作成する</block>
   <block id="6db39557a4b297506ad4d09c194d4428" category="inline-link-macro">ファイル共有を作成します</block>
   <block id="0bf2cdd911508e029b083d29f0a5b1b0" category="inline-link-macro">ディスクを作成します</block>
-  <block id="4685c96d6b54e31343b4fb5af5e02168" category="paragraph">ボリュームの Snapshot を作成するには、作成時にバックアップポリシーを定義します <block ref="40dd92abaf00c3696d356c13faf65e59" category="inline-link-macro-rx"></block> または <block ref="aa2514445a50daa0bcd2961b6eeeb4ba" category="inline-link-macro-rx"></block>。</block>
   <block id="4a301354fd3e67146b05bf4c0213a524" category="list-text">Enable * Backup Policy * 」を選択します。</block>
   <block id="2d79d0946ebf423bdce47cdbcbe3289a" category="list-text">バックアップゾーンと、アドホック、毎日、毎週、または毎月のいずれかの単位で作成するバックアップの数を指定します。</block>
-  <block id="39aaf9a09816c44ef7d09bc9b29f445f" category="admonition">既存のファイル共有またはディスクのバックアップポリシーを編集して、バックアップを作成またはスケジュール設定することもできます。</block>
-  <block id="7d416d1610b5140f26de7d96470e40b5" category="section-title">バックアップオブジェクトを変更する</block>
   <block id="ff725475ecd544efd6edeb0a29f3b051" category="paragraph">ファイル共有またはディスクの選択したバックアップオブジェクトに対して、バックアップを無効にするか、ソースからバックアップオブジェクトの接続を解除して、孤立したバックアップにすることができます。ソースとの SnapMirror 関係を解除します。アドホック、毎日、毎週、または毎月のいずれかの単位で作成されるバックアップの数を変更することもできます。</block>
-  <block id="69e33f9b42f29bd2e15a2898a4d79204" category="list-text">リストでバックアップを見つけ、そのオブジェクトの行の最後にある編集アイコンをクリックします。</block>
-  <block id="62100a7829b290eb9c850900c9e4c6b1" category="list-text">必要に応じて、バックアップのソースおよび各タイプのバックアップの数を変更します。ソースボリュームとの SnapMirror 関係を解除するには、バックアップのソースを「 * None （ orphaned ）」に変更します。ソースボリュームが削除された場合でも、バックアップは孤立したバックアップとして保持されます。バックアップオブジェクトの状態が変化し、ソースボリュームのステータス（孤立または削除）が同じリストのソースボリューム名に追加されます。オブジェクトの状態については、を参照してください <block ref="07db4fd703f5abbcf7e28d1aea64d264" category="inline-link-macro-rx"></block></block>
-  <block id="d9bce07771139a773dfd41742dae2265" category="list-text">[ 完了（ Done ） ] をクリックします。Snapshot が変更されます。ソースとの SnapMirror 関係を解除した場合、つまり、バックアップオブジェクトが孤立した場合は、「 * Backups * 」タブのソース名は「削除済み」と表示されます。</block>
-  <block id="5967285923bb13f8722f1f497d2d87df" category="admonition">また、ボリュームの * バックアップポリシー * を無効にすることにより、ソースボリュームとの SnapMirror 関係を解除することもできます。</block>
-  <block id="de76a034b02382ba26fa8b0ca87455ea" category="section-title">バックアップオブジェクトを削除する</block>
-  <block id="47457818aefd9dd3aaad6bb829410345" category="paragraph">未使用のバックアップボリュームを削除してストレージスペースを増やします。</block>
-  <block id="2c9f13eb11fd01cba126537eb24184e9" category="list-text">リストでバックアップを見つけ、そのオブジェクトの行の最後にある削除アイコンをクリックします。</block>
-  <block id="17805b2e8dbc3769268ce84ac4ebaf2a" category="list-text">Confirm Delete * （削除の確認）ダイアログボックスで、バックアップオブジェクトを削除することを確認するためのバックアップ名（ソースボリューム名）を入力します。</block>
-  <block id="6a6dba4059cbfb6c365ea27c4766405e" category="admonition">バックアップを削除すると、そのバックアップのすべてのリカバリポイントが削除されます。また、プライマリファイル共有またはディスクを削除した場合でも、バックアップは孤立したバックアップとして保持され、リストアのためのすべてのリカバリポイントが含まれます。削除されたソースのバックアップ・ボリュームおよびリカバリ・ポイントを削除するには、 [*Backups] タブからバックアップ・オブジェクトを明示的に削除する必要があります。</block>
-  <block id="cc246bead7d06808781c69caf49f5a06" category="section-title">バックアップのリストア</block>
-  <block id="7d0a77154a85974a52d444bfe7585f91" category="paragraph">可能です <block ref="e37ceb28c45a47909eddea846ff49620" category="inline-link-macro-rx"></block> 特定のリカバリポイントからファイル共有またはディスクをリストアする場合。</block>
   <block id="1c028b83c509706e33189a511d88161c" category="list-text">左側のナビゲーションペインで * support * を選択し、 * Service Requests * を選択します。</block>
   <block id="558e74572a55dd0584a34d57d1931cb2" category="list-text">[ 新しいサービスリクエスト ] をクリックします。</block>
   <block id="4e5f2e10189244198cf8c389b7a45599" category="list-text">サービスリクエストのカテゴリとして「 * バックアップリストア * 」を選択します。</block>
@@ -2069,14 +1911,12 @@
   <block id="6553abd67741ef5838fc0023aaf3615f" category="cell">特定のファイル共有の詳細を取得できます。ID 、名前、 Snapshot ポリシー、プロトコル、ファイルサーバの IP など、ファイル共有の詳細を取得します。 入力した ID に基づいてタグを作成します。</block>
   <block id="2a5ff174f20666e38177f30bbbf52df9" category="paragraph">id` ：ファイル共有の ID 。</block>
   <block id="a43e7f2866500fb09988a026b172c003" category="cell">ファイル共有を作成できます。要求の本文に値を追加して、 ID 、名前、 Snapshot ポリシー、プロトコル、 ファイルサーバの IP タグとタグ</block>
-  <block id="5a77eaffb26a87d168aa5d6e60d62640" category="paragraph">`name` ：ファイル共有の名前。「 hare_path 」：ファイル共有のパス。`fileserver_id : ファイルサーバの ID 。'size_GB' ：ファイル共有のサイズ（ GB 単位）「 service_level 」： Standard 、 Premium 、 Premium-Tiering 、 Extreme 、 Extreme のいずれかのサービスレベル名を指定できます。'protocol' ：ファイル共有へのアクセスに使用されるプロトコル（ NFS 、 CIFS 、またはマルチプロトコル）「 security_style 」：セキュリティ形式（ UNIX または NTFS ）。「 export_policy` ：ファイル共有のエクスポートポリシー。</block>
   <block id="6b4589dd1f673dd20c554e4629271cfc" category="paragraph">`/v2.1/fileshares/{id}/```Snapshot/{name}`</block>
   <block id="0ab985e0989bbd29c8c64750d5a37f3e" category="cell">ファイル共有の Snapshot を作成できます。</block>
   <block id="a5f0604810f259d4335f82cc9c98f684" category="paragraph">id` ：ファイル共有の ID 。`name` ：スナップショットの名前。</block>
   <block id="fbf2f6a6616c79d6acebb10e89e8d366" category="paragraph">`/v2.1/fileshares/{id}/`tags`</block>
   <block id="d06a73ba1fe59938f19091d068d767bf" category="cell">ファイル共有のタグは、作成または置換できます。ファイル共有の ID とタグの値を、要求の本文に「 key ： value pair 」の形式で追加します。</block>
   <block id="e228717fed12c512ebc56920046732e5" category="cell">任意のファイル共有を ID に基づいて変更できます。名前、プロトコル、 Snapshot ポリシー、バックアップポリシー、タグなど、ファイルサーバの ID と変更する値を要求の本文に追加します。</block>
-  <block id="2cc0cccb3249750330e90729ba60e5c3" category="paragraph">id` ：ファイル共有の ID 。`name` ：ファイル共有の名前。'size_GB' ：ファイル共有のサイズ（ GB 単位）「 service_level 」： Standard 、 Premium 、 Premium-Tiering 、 Extreme 、 Extreme のいずれかのサービスレベル名を指定できます。'protocol' ：ファイル共有へのアクセスに使用されるプロトコル（ NFS 、 CIFS 、またはマルチプロトコル）「 export_policy` ：ファイル共有のエクスポートポリシー。</block>
   <block id="05c4332128a79c0d23538f5a46334433" category="cell">任意のファイル共有を ID で削除できます。</block>
   <block id="11685ea3b6cc30adb6eae859895cca3c" category="cell">ファイル共有の ID および Snapshot 名に基づいて、ファイル共有の任意の Snapshot を削除できます。</block>
   <block id="0bb5849ddc549d6d9a0166d3663f0d1e" category="admonition">CIFS 共有の場合、共有パスの末尾に「 $ 」文字を追加すると、「 pathtomyiddenshare$ 」のように非表示の共有になります。</block>
@@ -2119,9 +1959,6 @@
   <block id="9a4f480d8a363d2e1a887848ac25f500" category="summary">Keystone ファイルサービスの使用の概要</block>
   <block id="ae5865954998f77611c9b7eca56ea522" category="paragraph">このセクションでは、ファイルサーバおよび NFS / CIFS ファイル共有の管理方法について説明します。ファイルサーバおよび共有に関する情報を表示したり、ファイルを作成、変更、削除したりできます。</block>
   <block id="410c98fcb0c5c3d90c0e8a60a9dcc645" category="summary">Keystone Flex サブスクリプションのパフォーマンス</block>
-  <block id="eb47920f375e65c94fc36335aede0f2d" category="paragraph">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）は、事前定義されたパフォーマンスレベルで容量を提供します。</block>
-  <block id="418852be623b3dd4f2d4b388a8087e02" category="paragraph">各パフォーマンスサービスレベルは、 I/O 密度によって定義されます。これは、パフォーマンス（ 1 秒あたりの入出力処理数（ IOPS ））と使用済みストレージ（ TiB あたりの格納データ）の比率で、単位は IOPS/ TiB です。</block>
-  <block id="cfac68d8ffc92c1c9c46b9d5150bd845" category="paragraph">Flex サブスクリプションサービスで管理される各ボリュームは、パフォーマンスサービスレベルに関連付けられます。各ボリュームで使用されるすべての I/O 処理と使用済みストレージは、ボリュームの I/O 密度の計算に考慮されます。</block>
   <block id="89c3a4001bb90f26ff84b68cb534b8ee" category="paragraph">ボリュームレベルでの I/O 密度の計算結果は、過去 1 週間のピーク I/O 密度を示すようにレポートされます。ピークパフォーマンスは 1 時間間隔で決定されます。ボリュームごとの I/O 密度レポートは、各サービスレベルの準拠状況を判断するために毎月生成されます。</block>
   <block id="e84417b811d892cfabeb4dbee529c832" category="summary">Google Cloud Platform でのクラウドボリュームサブスクリプションの管理</block>
   <block id="d2b2c18fa0ca629c1ca61a9d48a4cb2b" category="doc">Cloud Volumes Service for GCP を管理する</block>
@@ -2283,10 +2120,7 @@
   <block id="b7cd4ce52333c49bf2ebe2e81d7443af" category="summary">Keystone ビューのバケット</block>
   <block id="d83d0c54783ef948cc85a1a9d70fff8d" category="doc">バケットを表示します</block>
   <block id="dabc991a3e5b3e5e1b1dd7c66b4f6af4" category="paragraph">バケットリストには、選択したサブテナントの既存のバケットが表示されます。</block>
-  <block id="da3f8669f6a7639d621bf42e3afe1870" category="list-text">リストを表示するには、メニューからオブジェクトストレージ &gt; バケットを選択します。</block>
   <block id="f558e5e5755f7a5de96e9cfc5b309d21" category="paragraph">各バケットの単純な情報が表示されます。次に例を示します。</block>
-  <block id="1218caa99c5210e89e89f6c92b0512c2" category="list-text">作成日</block>
-  <block id="c64518704ce0c0d5501a45763f464276" category="list-text">使用方法</block>
   <block id="d0985fb638fff3338e67dfcac77005d9" category="summary">Keystone リージョン</block>
   <block id="7f0db89e1681884d3f307a466da352bb" category="paragraph">次の表に示すメソッドを使用して、リージョンを作成、変更、および削除します。リージョンを取得できる API については、（コンシューマ）管理 API を参照してください。</block>
   <block id="4dd736fe610a2ff179d8e0b7dcd1a34f" category="cell">「 /v2.1/regions 」と入力します</block>
@@ -2318,17 +2152,13 @@
   <block id="ae37ab418ebda45f836a244d0907daa0" category="cell">名前で識別された 1 つのリージョンを削除します。最初に、リージョン内のすべてのゾーンを削除する必要があります。</block>
   <block id="40354f7e00cd787df40570710076cedf" category="cell">Name (string) ` ：リージョンの名前。</block>
   <block id="2b1eac122dc9fcff6b6ff126ea055f08" category="summary">Keystone がオブジェクトストレージグループを作成する</block>
-  <block id="02cdea300670fae8df4e5787f5a48a55" category="paragraph">新しいオブジェクトストレージグループを作成するには、このメソッドを使用します。</block>
   <block id="5f42b8d2367f44e7e55a3119fd3efca6" category="list-text">[ グループの作成 *] をクリックします。</block>
   <block id="5dbc4cf9626a1f4328c17b6a4b0da0c0" category="list-text">Create Group ダイアログボックスで、グループ名を入力します。</block>
-  <block id="b7550b952e401430e6631ab63cf05bf6" category="list-text">リストから S3 ポリシーを選択します。</block>
   <block id="d7a5226827a61d632eecd4b9dc607e3d" category="list-text">[ 作成（ Create ） ] をクリックします。指定した設定でグループを作成するジョブが作成されます。</block>
-  <block id="4f61923a7d0d0fa7d7ecaabb1d92de2e" category="paragraph">オブジェクトストレージグループの作成は非同期ジョブとして実行されます。ジョブリストでジョブのステータスを確認できます。ジョブの追跡については、を参照してください <block ref="745d0848b61028851eb2c98800bc0654" category="inline-link-macro-rx"></block>。</block>
   <block id="9acc902d21500513ac0509fb07109ca2" category="summary">サブネットを作成および削除します</block>
   <block id="5ab6c625ae9e9658d23c23fa36eed108" category="doc">テナントとサブテナントのネットワーク設定を定義する</block>
   <block id="a0c08319cd36a9682e2dbdbcc3c9230d" category="paragraph">サービスプロバイダまたはパートナー管理者は、テナントのサブスクリプションゾーンに基づいてテナントのネットワーク設定を定義し、各ネットワーク設定に VLAN を割り当てることができます。また、同じゾーンおよびテナンシーに属する各 VLAN のサブネットを作成し、そのテナンシーのサブテナントに割り当てることもできます。</block>
   <block id="2a65beb9c728aafed55f0b839d38fe86" category="paragraph">事前設定されたテナントネットワークでサブネットを作成する必要があります。サブテナントまたはエンドユーザがファイルサーバまたはブロックストアをプロビジョニングする場合は、サブネットが必要です。ファイル Storage VM とブロック Storage VM は ONTAP の IPspace によって所有され、ファイルおよびブロック Storage Engine のサブテナントによって所有されます。サブテナントレベルでネットワークの境界を定義すると、 NetApp Service Engine のサブテナントは、そのゾーンの 1 つの ONTAP IPspace にマッピングされます。これにより、リスクが解消され、 2 つの個別のサブテナントが同じ VLAN ID を選択して同じ IPspace で終了することがなくなります。</block>
-  <block id="10cbcb2bc0ee488720578114eb2cb967" category="list-text">各ゾーンに複数のサブネットを作成できます。テナンシー内のゾーンごとに、 VLAN のリストが割り当てられています。これらすべての使用可能な VLAN について、対応するサブネットを作成できます。サブネットと VLAN の間には 1 対 1 のマッピングがあります。一方、 1 つのゾーンとサブネット間に 1 つの対多数のマッピングがあります。</block>
   <block id="29a6f95d7ccf31d10c80b92995feff38" category="list-text">1 つのテナントに、ゾーン内の使用可能な VLAN ごとに 1 つずつ、複数のサブネットを設定できます。ゾーンごとに 1 つのネットワーク構成の下に表示されます。</block>
   <block id="bd3e7d93da4d11861fe61e2fa8a8c953" category="list-text">各ネットワークサブネットに設定できる VLAN は 1 つだけです。各ネットワーク構成には、使用可能な VLAN のリストが表示されます。</block>
   <block id="c9fa2709091032a8f669a7e5fb105dce" category="list-text">サブテナントのゾーンと VLAN の組み合わせに対して作成できるサブネットは 1 つだけです。</block>
@@ -2336,11 +2166,8 @@
   <block id="80fa4a1626c6b944210901bc9107e3dd" category="section-title">テナントのネットワーク設定を定義する</block>
   <block id="600a2d3036bcf278466c97ee59040321" category="paragraph">パートナー管理者は、テナントごとにネットワーク設定を作成できます。設定可能な一意の VLAN プールは、要件に基づいて各テナントに割り当てることができます。テナントが削除されると、関連付けられている VLAN がテナント VLAN プールに解放されます。</block>
   <block id="1c951839f5b6577f61ffdb81ad0c2966" category="list-text">テナントが作成されていることを確認します</block>
-  <block id="032f5fcccb2540660554e2617fbc9fae" category="list-text">ゾーン、 VLAN 、およびポートオーバーライドの設定を理解しておく必要があります</block>
   <block id="b5a62af61e90de7477c2962a4417b10e" category="list-text">* Administration * &gt; * tenants * から、必要なテナントを選択します。</block>
   <block id="25d77a4ca80d7a827240817660e76ac2" category="list-text">ネットワークアイコンをクリックします。テナントのネットワーク構成のリストが表示されます。</block>
-  <block id="e93884a4e7d6e8e34281d245be17c08d" category="list-text">[ ネットワークの作成 *] をクリックします。必要に応じて、ゾーン、 VLAN 、およびポートオーバーライドを指定します。</block>
-  <block id="b56571833d818c4b4d441e2916560296" category="admonition">ポートの上書きは、ゾーンの設定時にサポートチームによって設定されます。ポートの上書きを指定しない場合、ネットワークはデフォルトポートを使用し、そのテナント用の IPspace に新しい VLAN を作成します。</block>
   <block id="7d9d276673347af6329e003d710a723c" category="list-text">[ 作成（ Create ） ] をクリックします。テナント用の新しいネットワーク構成がネットワーク画面に表示されます。</block>
   <block id="90314b034f8ee25ea72aa4f182bad043" category="paragraph">ゾーンのネットワーク設定が作成されている場合は、新しい VLAN をネットワーク設定に割り当てることしかできません。[*+*] アイコンをクリックして、 VLAN およびポートオーバーライドの詳細を追加します。[ 更新（ Update ） ] をクリックします。</block>
   <block id="d307682904302d385f9673a8d96b0d7a" category="section-title">サブテナント用のサブネットを作成します</block>
@@ -2355,7 +2182,6 @@
   <block id="040baf1e68e10c200531c74cedffdcde" category="admonition">サブネットは編集または削除できません。編集できるのは、関連付けられているタグだけです。</block>
   <block id="7fdb44c4efca9cb2f8ad3b4db2328a89" category="summary">Keystone バックアップ API</block>
   <block id="160dacdfe2b74f89864f2e85eafc1976" category="doc">バックアップ API</block>
-  <block id="0d7d4c02eb916025bec65984e23e01bf" category="paragraph">バックアップ API を使用して、環境内のボリューム（ファイル共有およびディスク）の Snapshot （バックアップまたはリカバリポイント）を表示および管理することができます。</block>
   <block id="5da935d2552edc90c56bdb2e23aa859f" category="paragraph">「 /v2.1/backups</block>
   <block id="1c5fc969414d7c2c6acb3feae34feb73" category="cell">テナント内のサブテナント用に作成されたすべてのボリュームのすべてのバックアップオブジェクトの詳細を取得できます。バックアップポリシー、ゾーン、タグなど、ソースボリュームとバックアップオブジェクトの詳細を取得します。</block>
   <block id="8b90939232e61860c624f39aa1eb4024" category="paragraph">`/v2.1/backups/{id}`</block>
@@ -2397,7 +2223,6 @@
   <block id="19dac31ef92aadf5c033c9154e144b27" category="inline-link-macro">Keystone Flex サブスクリプション API ガイド』を参照してください</block>
   <block id="319e2ff190f60a2826707dd7b65bdf7a" category="summary">Keystone が新しいディスクを作成</block>
   <block id="17db5f18ccda229fb1c66baa28fccd34" category="doc">ディスクを作成します</block>
-  <block id="077ee42303f6bb5bb96991de1b5b9fad" category="paragraph">このセクションでは、ディスクの詳細を直接指定して新しいディスクを作成する方法について説明します。既存ディスクのスナップショットに基づいてディスクを作成する方法については、を参照してください <block ref="0b82bb23ff49e855b2c1ce8c6215b692" category="inline-link-macro-rx"></block>。</block>
   <block id="4029563d115fc8cba882b6f5387ef1ba" category="list-text">使用可能なブロックストレージが初期化されていない場合は、ディスクを作成する前にブロックストレージを初期化するように求められます。ブロックストアを初期化するには、次のものが必要です。</block>
   <block id="03eb09ec7f9c134351b949c733a1f40e" category="list-text">ブロックストアのサブネット。ネットワーク環境に慣れていない場合は、 IT 部門に問い合わせて関連する値を確認してください。</block>
   <block id="f9e6f649ef21158df70ecc853fd68bd6" category="list-text">使用するプロトコル。デフォルトでは、ブロックストアで iSCSI サービスが有効になっています。指定したゾーンのサブテナントのブロックストレージサービス（ iSCSI ）を初期化するために、サブネットがすでに作成されていることを確認してください。インフラで FCP サービスが許可されている場合は、オプションで有効にすることができます。</block>
@@ -2432,14 +2257,8 @@
   <block id="6921240390fcb7d1a82fb7b37fc6ec14" category="list-text">ホストグループの名前を指定します。</block>
   <block id="55fb90be7af95d28805d429c84ecc199" category="list-text">[ 作成（ Create ） ] をクリックします。ホストグループが作成され、作成が完了するとメッセージが表示されます。</block>
   <block id="8c582e58c8d97b2f6658020de8670bab" category="list-text">新しく作成したホスト・グループをディスクにマッピングするには '[ ホストグループ ] フィールドに移動して選択します</block>
-  <block id="301784d4479810d4586f7f92217f2257" category="list-text">パフォーマンスサービスレベルを選択してください。</block>
   <block id="bce62eb79cb10fb9baef267642ccfc57" category="list-text">ディスクの容量を指定します。</block>
-  <block id="92d490fc486171d6e13645bd9d17b47e" category="list-text">このディスクに Snapshot が必要な場合：</block>
   <block id="12b0a93c73c00533ffa73dbcd3d3430c" category="list-text">Snapshot ポリシーのフィールドを表示するための Snapshot ポリシーの有効化に切り替えます。</block>
-  <block id="2e062d22d42c88e627af25ea8d94eac0" category="list-text">* 毎時。 * Snapshot を作成する分（時間）と保持する時間単位 Snapshot の数を指定します。</block>
-  <block id="a7ec1a713ff43e60cf9c6f1d3018e119" category="list-text">* 毎日。 * Snapshot を作成するタイミング（時間と分）と保持する 1 時間ごとの Snapshot 数を指定します。Snapshot を 1 日に作成する必要がある時間を複数指定する場合は、カンマで区切って指定できます。例： 5 、 10 、 15 、 など。</block>
-  <block id="8869ba772e4211eb6517d3e10fe40f17" category="list-text">* 週単位。 * Snapshot を作成するタイミング（曜日、時間、分）と保持する週単位 Snapshot の数を指定します。</block>
-  <block id="029bb8985aba6d2cfd51d70b7434adbf" category="list-text">* 月次。 * Snapshot を作成するタイミング（日にち、時間、分）と保持する月単位 Snapshot の数を指定します。</block>
   <block id="c0aef1a6358da165458e5272e89dfca3" category="list-text">基盤となるブロックストアで非同期ディザスタリカバリが有効になっている場合、新しいディスクに対して非同期ディザスタリカバリレプリケーションが自動的に有効になります。非同期ディザスタリカバリレプリケーションからディスクを除外する場合は、非同期ディザスタリカバリを無効にするように非同期ディザスタリカバリの切り替えを切り替えます。</block>
   <block id="f9a2c2bfc2b9e37f5e6b7c9a065465a0" category="list-text">MetroCluster が有効なゾーンにディスクが作成されている場合は、同期ディザスタリカバリボタンが有効になり、無効にすることはできません。ディスクは、 [Synchronous Disaster Recovery] パネルに表示されているゾーンに複製されます。</block>
   <block id="ece9fdd3547a42c2a334a7c6d26bf7e0" category="list-text">このディスクのバックアップを有効にするには、次の手順を</block>
@@ -2506,11 +2325,8 @@
   <block id="4c81f84de3c6cf1b71adecb694feb770" category="doc">Flex サブスクリプションサービスの契約条件と説明</block>
   <block id="1cbddcf2fa8e22cb8595706c00cc4371" category="list-text">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）は、 1 年以上 3 年までご利用いただけます。当初の期間終了後は、毎年更新が可能です。容量は 1TiB まで増やすことができます。</block>
   <block id="9597eb938e2fba159aa254b3a95e6efb" category="list-text">サイトあたりの最小容量は 100TB で、各サイトに 1 つ以上のクラスタを配置して最小容量要件を満たすことができます。パートナーが運用するモデルでは、お客様、サイト、サービスレベルに応じて、柔軟な最小値を持つサブスクリプションが作成されます。</block>
-  <block id="f38f3f039ea7e782f292fcc9c833f8cc" category="list-text">100TiB 容量は、 1 つのパフォーマンスレベルまたはレベルの組み合わせで構成できます。</block>
   <block id="be9709b8de891bed2cb58977708e499e" category="list-text">テナントサブスクリプションは、パートナー様がサブスクライブしているサービスレベルに限定されます。</block>
   <block id="87f73c8129d1f6a0026c085c19c37ee7" category="list-text">各サイトで使用できるバースト容量は 20% です。バースト使用量は、その課金期間に限り課金されます。20% を超えるバースト要件が必要な場合は、サポートにお問い合わせください。</block>
-  <block id="a47a3cb7ad9378252f33837be77823db" category="list-text">コミット済み容量またはパフォーマンスレベルは、契約期間中は変更できません。</block>
-  <block id="decb099f0e323bfbd0236b90e0df7d20" category="list-text">容量を増やしたり、期間内にパフォーマンスレベルを上げたりすることは可能ですが、より高いパフォーマンスレベルから低いレベルに移行することはできません。</block>
   <block id="958d7b0fc729753fa46342b2a5b0fdb4" category="list-text">期間の過去 90 日間に変更リクエストがあった場合、お客様は少なくとも 1 年間サービスを更新する必要があります。</block>
   <block id="6baf7bb4c3a662abfd85e87f87fc45c3" category="summary">ネットアップサービスエンジン Web インターフェイスの概要</block>
   <block id="03ff7aa314c102c91de1cacb464b1cb6" category="paragraph">次の図は、 NetApp Service Engine Web インターフェイスの例です。次のコンポーネントで構成されます。</block>
@@ -2598,14 +2414,9 @@
   <block id="5e882fd775ece5229e9443d707f62a00" category="cell">ID で指定されたテナントを削除します。</block>
   <block id="388342d6d3429bc104039c1fe69fb5dc" category="summary">Keystone がオブジェクトストレージユーザを変更する</block>
   <block id="d77f9ec7a91a670f3a5f8ac78f412f66" category="paragraph">ユーザ名やユーザが割り当てられているグループなど、オブジェクトストレージユーザの詳細を変更するには、このメソッドを使用します。</block>
-  <block id="fc39ceb014f53dd561c76f22c7f3aa15" category="list-text">リスト内でユーザを探し、そのグループの [Edit] アイコンをクリックします。</block>
-  <block id="ac42e3f82a32b7287b8ad6e42ffd4657" category="list-text">Edit User ダイアログボックスで、次の操作を行います。</block>
-  <block id="914419765826daef952f5e99d9010aae" category="list-text">ユーザが属するオブジェクトストレージグループを選択します。</block>
-  <block id="da814ae2cb3467d18b1937b19fa38f10" category="list-text">[ 更新（ Update ） ] をクリックします。指定した設定でユーザーを作成するジョブが作成されます。</block>
   <block id="2cc86b2232035ca76bdff5455e3131d7" category="sidebar">NetApp Keystone フレックスサブスクリプション</block>
   <block id="d5d344bd3a97832ad0170ec3175aa230" category="sidebar">サービス利用規約と概要</block>
   <block id="a872a8a274ed3a6109fbbf9f9123e4af" category="sidebar">サービス容量の定義</block>
-  <block id="145b79de40b1feea046331090ababb5a" category="sidebar">パフォーマンスサービスレベル</block>
   <block id="f1a6c6c231e8d9c62635b2a2d1978c05" category="sidebar">運用モデルと担当業務</block>
   <block id="e47f584bdec2639ea8ddd7a6ab227555" category="sidebar">テナンシーとマルチテナンシー</block>
   <block id="456d0deba6a86c9585590550c797502d" category="sidebar">処理</block>
@@ -2624,9 +2435,6 @@
   <block id="145d95205a14e251671b34c73807092e" category="sidebar">Snapshot からファイル共有を作成します</block>
   <block id="cf073e83f3900e4116bf15fa47e252a1" category="sidebar">Snapshot からディスクを作成します</block>
   <block id="9aa8ff5deefebf063dcc15ad6c56e6f2" category="sidebar">オブジェクトストレージの操作</block>
-  <block id="1783e449724614e360999417e8b10901" category="sidebar">Azure NetApp Files の管理</block>
-  <block id="17bcffb3afe645d6c1ca30ac89fadb75" category="sidebar">『 Managing Cloud Volumes Service for Google Cloud Platform 』を参照してください</block>
-  <block id="2b3328083f206d967cbcd7831dc1e1b2" category="sidebar">バックアップの操作</block>
   <block id="392f879ce1556a027a681fc630ec5e9b" category="sidebar">サブスクリプションを管理します</block>
   <block id="ed001245cece01e549906767ccb61caf" category="sidebar">サービスリクエストを管理します</block>
   <block id="cb908d51290ce904e6e2d0b3000a6b5c" category="sidebar">テナントとサブテナントを管理します</block>
@@ -2667,11 +2475,8 @@
   <block id="a43ab2a03163297cf69e7df55101858b" category="section-title">［ 新しいアラート ］ 画面</block>
   <block id="2ae145e579555cbdc76abe246b780993" category="inline-link-macro">アラートを作成および管理します</block>
   <block id="41e171bf0ff077a4168d47bccb4e4cb6" category="section-title">強化されたユーザーインターフェイス</block>
-  <block id="711953faa9bb8cc628e913011d0e5b33" category="paragraph">[Service Requests] 画面では、自分のサポートチームまたは NetApp GSSC が担当する新しいサービスリクエストを発行できます。</block>
-  <block id="0db330634d2013b5c1d235072b61db84" category="paragraph">ダッシュボードの * サービスリクエスト * ウィジェットで、最新のサービスリクエストの概要を優先度と作成時間でソートして表示できます。また、 [ サービスリクエスト ] 画面に移動して、環境内で発生したすべてのサービスリクエストの詳細を検索して表示することもできます。</block>
   <block id="51eb35cbb4e3a4cefea470dcb9610124" category="paragraph">新しいサービスリクエストを作成するには、次の手順に従います。</block>
   <block id="9187ea14b0030339be001019f5b66e57" category="list-text">メニューから *support &gt; Service Requests * を選択し、 * New Service Request * をクリックします。</block>
-  <block id="1bacea68b531028513d23df48579f200" category="list-text">[ 詳細 ] 画面のフィールドは、選択したカテゴリに応じて変わります。必要な詳細情報を入力します。「 * 次へ * 」をクリックします。</block>
   <block id="563d16503074b1783f0c64fc34fa990c" category="list-text">サービスリクエストが作成され、 ［ サービスリクエスト ］ 画面に表示されます。新しくオープンしたサービスリクエストのステータスは「 New 」です。</block>
   <block id="57c38af73404a7e13785e8f986b2da22" category="paragraph">アラートは、環境内の重要なイベントに関する情報を共有するために、自動でトリガーされるか手動で作成されるメッセージです。</block>
   <block id="3f09a903d787fca86c90e74203656523" category="paragraph">ストレージをプロビジョニングすると、次の場合に自動アラートがトリガーされます。</block>
@@ -2696,13 +2501,8 @@
   <block id="58a63b8f702f92fd3245851e54a6c44c" category="admonition">サブスクリプションのいずれかが年間請求された場合、請求書には実際の月次請求書金額ではなく、比例配分された金額が反映されます。</block>
   <block id="2b09ac5055682c23d8ba4e6a14e9f967" category="paragraph">テーブル内のデータを月でソートして、任意の月のすべてのストレージサブスクリプションのリストを表示できます。</block>
   <block id="9688bae6343916e20e0218a59bd2f60d" category="list-text">メニューから * Administration * &gt; * Billing * を選択します。</block>
-  <block id="817f3b83b5cf8d6998d86253d328cfa8" category="admonition">また、ダッシュボードの「月額料金 * 」ウィジェットの右上にある矢印またはウィジェットの任意のバーをクリックして、「請求」ページを表示することもできます。選択した月のすべての月額プランが表示されます。</block>
-  <block id="8e694bf2e1747edf7543b2e2df0bf434" category="list-text">必要に応じて、月を表すバーにカーソルを合わせると詳細が表示されます。</block>
   <block id="2f5581d8cc6f970e6c70eac91215546f" category="list-text">表に表示されている任意の月を選択します。その月のすべてのサブスクリプションと、関連付けられた課金がテーブルに表示されます。料金は、コミット済み容量とバースト使用量に応じて分割されます。</block>
-  <block id="fe3173f25be041d3c6b308be02a46d9c" category="paragraph">ダッシュボードには、 NetApp Keystone ストレージサブスクリプションの概要が表示されます。使用済み容量、使用状況に対する請求、最新のアラートとサービス要求に関する情報が表示されます。</block>
   <block id="f9ed75da3555257ca938c77e189c07a4" category="paragraph">ダッシュボードには、以下のウィジェットの重要な情報が表示されます。各ウィジェットをクリックすると、詳細な分析が可能です。</block>
-  <block id="af0bb0722f05fcc5cad936bc276df6a9" category="list-text">* 容量利用率： * Keystone Flex Subscription 、 Keystone Flex Utility 、クラウドサービスなど、サブスクライブするサービスの容量利用率が表示されます。バーグラフにカーソルを合わせると、使用済み容量の内訳が表示されます。コミット済み容量と使用済み容量、およびバースト時の容量を表示して、サブスクリプションに容量を追加する必要があるかどうかを判断できます。棒グラフをクリックすると、サブスクライブしたサービスのすべてのサブスクリプションが新しいポップアップで表示されます。このポップアップのサブスクリプショングラフをクリックすると、サービスレベルごとの使用容量の内訳が表示されます。必要に応じて、データ保護や高度な保護など、アドオンサービスの利用容量を確認することもできます。</block>
-  <block id="33c8c200b16895b7c3c094f7a7212c8e" category="list-text">* 月額料金（請求）： * すべての月額プランの合計月額料金が表示されます。過去 3 か月間の請求詳細を表示できます。グラフにカーソルを合わせると、コミット済みの使用状況とバースト時の使用状況に応じて料金が分割されて表示されます。サブスクリプションサービスのサブスクリプションが複数ある場合は、 1 か月の棒グラフをクリックすると、 [ 請求 ] 画面にサブスクリプションリストが表示されます。課金の詳細については、を参照してください <block ref="ff5019e651b45dce6edea337a584798f" category="inline-link-macro-rx"></block>。</block>
   <block id="fb994140e833b58c3ba599dee0fa679b" category="list-text">* アラート：ステータス、メッセージ、作成日時など、最新のアラートの概要が表示されます。アラートの詳細については、を参照してください <block ref="0496064ad24390fb53c5f07bbecacf07" category="inline-link-macro-rx"></block>。</block>
   <block id="c0def6fc0af1233163f1454da45f3c7d" category="list-text">* サービスリクエスト： * 最新のサービスリクエストのサマリーが、優先度と作成日時でソートされて表示されます。サービスリクエストの詳細については、を参照してください <block ref="afc02109994a487037ec15ea835679fe" category="inline-link-macro-rx"></block>。</block>
   <block id="d783979237c7ea92de545879f7a32381" category="inline-image-macro">NSE ダッシュボード -1</block>
@@ -2711,9 +2511,7 @@
   <block id="094bd937ff6187998d5dba676a812eff" category="paragraph"><block ref="094bd937ff6187998d5dba676a812eff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ad4d1829005dd03f7cf9ab881abe5ea6" category="section-title">マルチテナンシーのサービスプロバイダのダッシュボードビュー</block>
   <block id="fa88a38bcd21fdecbef74c2036b327e0" category="paragraph">マルチテナント環境のパートナー管理者の場合は、ダッシュボードに、 NetApp Keystone 向けにサブスクライブされているすべてのサービスの概要が表示されます。容量利用率や課金の詳細などのウィジェットデータは、ネットアップとのサブスクリプションや課金関係を表します。</block>
-  <block id="f177e1a19970ff5e25307154c24a4391" category="paragraph">右上から特定のテナントを選択して、各テナントの容量利用率を表示することもできます。容量利用率ウィジェットのデータは選択したテナントのデータ使用量を表し、他のすべてのウィジェットのデータは一定のままでストレージサブスクリプションを表します。</block>
   <block id="089e685563941e94026d37cb86934aed" category="section-title">マルチテナンシー内のテナント用のダッシュボードビュー</block>
-  <block id="130df011efb540e36544c1adf704710b" category="paragraph">マルチテナント環境でテナント管理者として使用している場合は、テナントの容量利用率、最新のアラート、サービス要求を表示し、ウィジェットをクリックして詳細を確認できます。請求先の詳細については、サービスプロバイダにお問い合わせください。</block>
   <block id="615bcb1a7f65784ea979b216e8a51154" category="summary">Keystone がクラウドサービスを削除</block>
   <block id="83f9c0fb0871c4b2f47270c917a7214c" category="list-text">リストからクラウドサービスを探し、削除アイコンをクリックします。</block>
   <block id="df0de48df3265aa36019bc064c118aad" category="list-text">削除の確認ダイアログボックスで、削除するクラウドサービスの名前を入力します。</block>
@@ -2735,7 +2533,6 @@
   <block id="6f3775f5739b5cdd88b89ba7d8a013e2" category="list-text">ダッシュボードビュー：使用状況、請求、アラート、およびサービスリクエストを監視するさまざまなツールが表示されます。</block>
   <block id="a076faa5a9987e9b4759e761e7de52c4" category="paragraph">ダッシュボードには、 NetApp Keystone ストレージのサブスクリプションに関する情報が表示されます。これには、使用済み容量、使用状況に対する請求、最新のアラートやサービス要求などの情報が含まれます。これは、 NetApp Service Engine に初めてログインしたときのデフォルトビューです。ダッシュボードの詳細については、を参照してください <block ref="51b99950f96aebac50d3a68ee27b3fbd" category="inline-link-macro-rx"></block>。</block>
   <block id="9fb2c96c2b07eeb85651af0dd0232553" category="sidebar">クラウドサービスを管理します</block>
-  <block id="60961ff996ca5668ec37fbe666117adc" category="sidebar">クラウドサービスの管理</block>
   <block id="e38bf2476e8d2e225da1a053aacfd12c" category="sidebar">管理タスクを実行</block>
   <block id="1d02064d5ee1a5a4a8455f06dacb6b1f" category="sidebar">アラートを表示および管理します</block>
   <block id="19197d26752453b6361c93a735d6e619" category="paragraph">NetApp Service Engine ダッシュボードが再設計され、次の新しいコンポーネントが追加されました。</block>
@@ -2757,7 +2554,6 @@
   <block id="a5e64bd5bd172a87e39299de9ee21453" category="list-text"><block ref="a5e64bd5bd172a87e39299de9ee21453" category="inline-link-macro-rx"></block></block>
   <block id="c99a33ad99ce532b267aaef154dd9886" category="paragraph">詳細については、次のリンクを参照してください。</block>
   <block id="4488ca7c1dbfbc3a4a5cb0de9a5f943b" category="list-text"><block ref="4488ca7c1dbfbc3a4a5cb0de9a5f943b" category="inline-link-macro-rx"></block></block>
-  <block id="eb5228f75c5e56b970f5ae0448055097" category="list-text"><block ref="eb5228f75c5e56b970f5ae0448055097" category="inline-link-macro-rx"></block></block>
   <block id="833ec058716a58e38798e5c8dcd487e0" category="paragraph">CIFS （ SMB ）またはマルチプロトコルの共有でユーザアクセスを制限する ACL を指定できるようになりました。ACL に追加する Active Directory （ AD ）の設定に基づいて Windows ユーザまたはグループを指定できます。<block ref="4f9563ddfe8454a11d948aaea717447e" category="inline-link-macro-rx"></block>。</block>
   <block id="1aef2aae8b02201584ba967122cd80e3" category="paragraph">原因 a サブスクリプションをバースト状態にするために、提示されたプロビジョニングの変更を表示する通知。ユーザーは、サブスクリプションをバーストにするか、アクションを続行しないかを選択して、続行することを選択できます。<block ref="bbf9ee2ac4df7c9ff5c7967b0be97837" category="inline-link-macro-rx"></block>。</block>
   <block id="1313d08838ac189999a3b07cec8af7a8" category="paragraph">通知バナーは、サブスクリプションがバースト状態のときに表示されます。<block ref="bbf9ee2ac4df7c9ff5c7967b0be97837" category="inline-link-macro-rx"></block>。</block>
@@ -2791,8 +2587,6 @@
   <block id="dbba74e6f62c29e1dea79d870e9f4b53" category="list-text">ウィジェットで「 * View Details * 」をクリックすると、「 * Keystone - Capacity Utilization * 」ダッシュボードが表示されます。Keystone - 容量利用率 * ダッシュボードでは、サービスレベル、データ保護、高度なデータ保護サービスなど、サブスクライブされたサービスごとに容量と使用状況のデータの内訳と分析を行うことができます。ダッシュボードには、過去 1 、 7 、 30 日間の使用済み容量、コミット済み容量、バースト時の容量のグラフも表示され、平均発生率は現在の請求期間に基づいて計算され、分割されます。</block>
   <block id="29cb371773858a73b7aca64ff6f208f4" category="inline-link-macro">NetApp Keystone フレックスサブスクリプションを使用して容量利用率を表示します</block>
   <block id="fc533fceebb994e8ef6bbeba15951fd9" category="paragraph">詳細については、を参照してください <block ref="30eccfcef2e1a5c7fe1b095bf8a3af1d" category="inline-link-macro-rx"></block>。</block>
-  <block id="a47468120853c1eae9253fff2798d8d6" category="paragraph">次の表に、パフォーマンスサービスレベルを示します。</block>
-  <block id="ae14ae08bc11163da49596ed847fb224" category="section-title">異なるストレージタイプのパフォーマンスサービスレベル</block>
   <block id="28307c52fb9de3f0b2b26086b89eb8f3" category="paragraph">ファイル、ブロック、オブジェクトストレージのサービスレベルを次に示します。</block>
   <block id="079bbc110741f438dfb37f32218c4c21" category="cell">* サービスレベル *</block>
   <block id="cdf0cc519fabc4c14999e89090d33dc1" category="cell">* エクストリーム *</block>
@@ -2824,7 +2618,6 @@
   <block id="6b2c7dcd56a1cb15a3943cec9cbc288a" category="cell">15TiB ^2^</block>
   <block id="2d46634ee64919ed31d1417b57f21934" category="cell">25TiB ^2^</block>
   <block id="7d7a1cbef5663cabe63cfb0d8ca01cb8" category="cell">50TiB ^2^</block>
-  <block id="b7a050dc1a51cdc992245ce9afb75060" category="admonition">^1 ^1 年以上の期間、および 100TiB 以上の容量。ネットアップから直接販売されるファイル共有とブロックのパフォーマンスサービスレベルを組み合わせた場合に必要です。^2^ チャネル主導の販売機会用に選択された各サービス階層ごとに、最低 1 年間の契約期間と最小規定容量。</block>
   <block id="4f0550f066ae72bb8c24fc3f59c323bf" category="section-title">ブロックストレージ</block>
   <block id="8e634bafd4732f9f05a35ceb5ed54902" category="paragraph">* サポートされているプロトコル * ： FC 、 iSCSI</block>
   <block id="2f569257101cf136a49d983584bfc44f" category="cell">HPC</block>
@@ -2836,7 +2629,6 @@
   <block id="f369b2981da1e28bb1901ae50eeb877a" category="cell">0.5 ミリ秒未満</block>
   <block id="bf9224ad67754b6fee4e952851b35d3e" category="cell">100TiB ^3^</block>
   <block id="2378ad2afb80cd0122c6f07757ca1321" category="cell">300TiB ^3^</block>
-  <block id="377805c2057aec33fb79fbe701c063df" category="admonition">^1 ^1 年以上の期間、および 100TiB 以上の容量。ネットアップから直接販売されるファイル共有とブロックのパフォーマンスサービスレベルを組み合わせた場合に必要です。^2^ チャネル主導の販売機会用に選択されたサービス階層ごとの最低 1 年間の契約期間と最小規定容量。^3^ いずれかの Opportunity タイプに対して選択されたサービス階層ごとの最低 1 年間の期間と最小指定容量。</block>
   <block id="670aaecb1a526fbed439dad3ec353a96" category="section-title">オブジェクトストレージ</block>
   <block id="58d801506333ab644845942779162cbc" category="paragraph">* サポートされるプロトコル * ： S3</block>
   <block id="497031794414a552435f90151ac3b54b" category="cell">オブジェクト</block>
@@ -2858,7 +2650,6 @@
   <block id="baa2535c212bf9bc56456d99bd550a50" category="list-text">Flex サブスクリプションサービスは、コミット済み容量を 20% 超過した容量を提供します。</block>
   <block id="abda4117b1311f6ae0b218aeba00fae6" category="list-text">バースト時の容量は柔軟に消費でき、 1 日あたりの平均消費量に基づいて課金されます。</block>
   <block id="94c94961a24325da0518d106d0d1d12a" category="section-title">使用済み / プロビジョニング済み容量</block>
-  <block id="c7c21d5830d05e2332e2cd7f088bc8f2" category="paragraph">使用済み容量は、サービスで現在使用されているストレージの容量（ TiB ）です。Flex Subscription サービスは、特定のパフォーマンスサービスレベルのすべてのボリュームのプロビジョニング済みサイズ（使用済みの論理容量または物理容量ではないサイズ）の合計を、そのパフォーマンスサービスレベルの使用済み容量とみなすようにします。これには、次のもの</block>
   <block id="6fc8b176a9bd3f331984e2de9b5dbfab" category="list-text">ボリュームの作成、変更、削除、または自動拡張によってプロビジョニングされた容量。</block>
   <block id="202ac47fdd80de7d80018d24cb661fc9" category="list-text">Snapshot コピーとクローン：</block>
   <block id="b33c6009150f806349f79306b0821192" category="admonition">プロビジョニングされた容量に格納されているデータの量、またはディスクに実際に書き込まれたデータの量は考慮されません。</block>
@@ -2877,7 +2668,6 @@
   <block id="9e202767c699b7d57f29d8b3accf6986" category="paragraph">コミット済み容量とは、関係者（ネットアップ / パートナー様とお客様）が合意した 1 回のサブスクリプションでの各種サービスの容量を指します。この容量は、 Flex サブスクリプションの注文ごとに記載され、実際の消費量にかかわらず請求されます。</block>
   <block id="5fbe036f95448b0530984b414281a72c" category="paragraph">ネットアップは、 Flex Subscription サービスの導入の一環として、サービスの消費状況を継続的に監視し、測定します。5 分ごとに消費レコードが生成され、サブスクリプションの現在の消費容量が詳細に表示されます。これらのレコードは、請求書および使用状況レポートを生成するために請求期間にわたって集計されます。</block>
   <block id="8a73a45becb1972a998dc8490856f730" category="section-title">バースト消費に基づく請求</block>
-  <block id="a18664da3cba5476325ba94c20fa3bc5" category="paragraph">使用済み容量が特定のパフォーマンスサービスレベルのコミット済み容量を超えると、バースト消費量が記録され、それに応じて料金が適用されます。このプロセスは、生成される消費レコードごとに実行されます。したがって、バースト消費量は、オーバー消費容量の量と時間の両方を、コミット済み容量の上に反映したものです。</block>
   <block id="dfd0252d57910ac70c5c31013436bba6" category="section-title">請求スケジュール</block>
   <block id="95fcf55819b9f32cb4e634458cebf99f" category="paragraph">Flex サブスクリプションサービスは、月単位および年単位で課金されます。</block>
   <block id="4984e08f464a2069cf4e4d2bc61ffe7e" category="paragraph">請求書は毎月送付されます。サービスが利用可能になった月については、請求書が翌月に送付されます。たとえば、 1 月に使用したサービスの請求書は、 2 月初めに送付されます。この請求書には、コミット済み容量の料金と、該当する場合はバースト時の使用料が含まれます。</block>
@@ -2888,7 +2678,6 @@
   <block id="0e3a3dc0c3eeb16df240b7eafc4a840c" category="paragraph">ONTAP でボリュームがクローニングされている場合に、データのバックアップとリストアに使用すると、追加の支払いなしでクローンを引き続き使用できます。ただし、ビジネスで他の目的に使用されていたクローンボリュームには、広範囲の期間料金がかかります。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">次の点に注意してください。</block>
   <block id="9ecca21c579121ef7bd72dc9d12e518a" category="list-text">クローンボリュームの消費は、クローンの作成から 24 時間以内には考慮されないため、この間に料金は発生しません。</block>
-  <block id="5972bac7ea2a43507764cae1c13256a0" category="list-text">新しいデータがボリュームに書き込まれない場合、 Standard および Value Performance サービスレベルのクローンボリュームの消費は考慮されません。たとえば、バックアップとリストアのユースケースでは、クローンボリュームのデータのバックアップやリストアによって、クローンボリューム自体のデータが変更されることはなく、消費とはみなされません。</block>
   <block id="cded8c4b6c98886d10fcb9c2503ce0a4" category="section-title">MetroCluster の請求</block>
   <block id="bbfb635eb9c4f9ded36f5d58bec8cb65" category="paragraph">高度なデータ保護： NetApp MetroCluster を使用して、物理的に分離された 2 つのクラスタ間でデータをミラーリングしますMetroCluster のミラーされたアグリゲートでは、データが各クラスタに 1 回ずつ、 2 回書き込まれます。Flex サブスクリプションサービスでは、各サイドで個別に消費量が課金されるため、 2 つの同一の消費レコードが生成されます。ONTAP System Manager （ System Manager ）または Active IQ Unified Manager （ Unified Manager ）を使用してクラスタを監視する場合は、これらのツールの使用量とフレックスサブスクリプションの使用量が一致しないことがあります。System Manager と Unified Manager では、ミラーリングされた（リモートの）クラスタにボリュームが報告されません。報告される消費指標の半分は、フレックスサブスクリプションサービスから報告されます。</block>
   <block id="334e2bb51a2bf6027b7173d5c357308a" category="paragraph">たとえば、サイト A とサイト B は MetroCluster 構成にセットアップされます。サイト A に 10TB のボリュームを作成すると、サイト B には同一の 10TB ボリュームが作成されますFlex サブスクリプションでは、ボリュームが区別され、各サイトに 10TB の追加消費が記録されるため、合計で 20TB が増加します。System Manager と Unified Manager で、サイト A に作成された 10TB のボリュームが報告されます</block>
@@ -2896,19 +2685,10 @@
   <block id="480da42f59e7a8b523d40d52ba830cb8" category="paragraph">ボリュームを移動する際に、 ONTAP によって一時（ TMP ）ボリュームが作成されることがあります。これらの一時ボリュームは一時的なものであり、これらのボリュームの消費量は課金対象として測定されません。</block>
   <block id="f3fd1171857d8ea7abb7920fd1fd0c55" category="section-title">課金およびアダプティブ QoS ポリシー</block>
   <block id="bff19ffadab3b2c0f2336fe90bfd9be9" category="inline-link-macro">QoS の概要を使用してスループットを保証</block>
-  <block id="425e38b195744df5f5136ad925efc16b" category="paragraph">Flex Subscription では、パフォーマンスサービスレベルに基づいて消費量を測定します。各パフォーマンスサービスレベルは、特定のアダプティブ QoS ポリシーに関連付けられています。展開中に、加入している Flex サブスクリプションサービスの各 QoS ポリシーの詳細が通知されます。ストレージ管理処理の実行中に予期しない課金を避けるため、ボリュームには、サブスクライブしたパフォーマンスサービスレベルに従って適切な QoS ポリシーが割り当てられていることを確認してください。ONTAP の QoS ポリシーの詳細については、を参照してください <block ref="7f8846f19a6367d0efc82511d70933cd" category="inline-link-macro-rx"></block>。</block>
   <block id="c84b839ec902b06b55455b45091db81d" category="paragraph">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）で登録したすべてのサービスの月額料金を、 NetApp Service Engine のダッシュボードと請求画面で確認できます。</block>
   <block id="bb75d5742f3f8cd7ea2b3326b4ead1a8" category="paragraph">過去 1 カ月間のすべての加入済み Flex サブスクリプションの課金情報を表示できます。毎月のバースト時の容量に対する請求が強調表示されます。</block>
   <block id="6100897489646888867118f23efef503" category="paragraph">このリリースの新機能は次のとおりです。</block>
-  <block id="5238fb622db8670699adbf5b482678e6" category="list-text">ようこそ画面を表示すると、 Flex Subscription 管理者に Cloud Manager のユーザ ID と Flex Subscription のユーザ ID を関連付けるよう依頼できます。これにより、 * Keystone Flex Subscription * タブにアクセスできます。</block>
-  <block id="c1a093259dea21d070b755503e96dcdf" category="list-text">オンプレミスシステムおよび Cloud Volumes ONTAP で、サブスクライブされているサービスのコミット済み容量および使用済み容量の消費データを表示します。</block>
-  <block id="85d3d7bdabae93d4846321bc050d6645" category="list-text">Cloud Manager アカウントに関連付けられている Flex サブスクリプションの詳細を表示します。コミット済み容量、消費済み容量、バースト時の容量などの詳細が表示されます。</block>
-  <block id="88f141f3566ea09da3443b01f7f089fb" category="list-text">サブスクライブ済み Flex サブスクリプションサービスのコミット済み容量の増加または減少を要求します。</block>
-  <block id="b20b42d4f6cb65fa8e788ec44f8341a5" category="list-text">リンクされた Flex サブスクリプション ID を表示して、 Cloud Volumes ONTAP 消費の課金方法として使用します（リンクされた ID のみ）。</block>
   <block id="a47bcecd4f4a1f89ad4e82bca88975ab" category="inline-link-macro">Keystone Flex サブスクリプション</block>
-  <block id="46172ce69f0d69dc6b2a28ea9573950b" category="inline-link-macro">Keystone Flex Subscriptions を管理します</block>
-  <block id="dd8bfc39d1b97c46fd88e0e7b3533909" category="paragraph">詳細については、 Cloud Manager のドキュメントにある次のリンクを参照してください。<block ref="4f790696e8e1be6ca66a4737e5e654e6" category="inline-link-macro-rx"></block>
-<block ref="1e99115c1a8b1bdb052bb8f16835e10f" category="inline-link-macro-rx"></block></block>
   <block id="44f95b8178b2bd2c0cde2f2b9c0f84c8" category="section-title">NetApp Service Engine 2.0.1 で導入された機能</block>
   <block id="d2f339d731af47b666b5930ce1c2a0ec" category="section-title">NetApp Service Engine 2.0 で導入された機能</block>
   <block id="780c462e85ba4399a5d42e88f69a15ca" category="sidebar">課金</block>
@@ -2949,27 +2729,20 @@
   <block id="40729792b47d4ca2beff3d5aaa13c6e0" category="list-text">サービスと支払いの柔軟な条件を選択します。サイトごとに 12 カ月、 100TiB 、またはそれ以上を選択できます。以降は、 12 カ月間自動更新することも、月単位で更新することもできます。</block>
   <block id="4ec4e822132124cf94b121ed6e88e49b" category="paragraph">フレックスサブスクリプションの課金は、コミット済み容量と可変バースト消費に基づいています。</block>
   <block id="18b8a063bbf57f20dcdbb6f12a9dc0e9" category="section-title">SnapMirror デスティネーションについての請求</block>
-  <block id="73b8b41eb9fb2753d0aa2c1ae6b36a05" category="paragraph">SnapMirror デスティネーションボリュームの料金。ソースで割り当てられたパフォーマンスサービスレベル（サービスレベル）の QoS ポリシーによって決まります。ただし、ソースに QoS ポリシーが関連付けられていない場合、デスティネーションには、利用可能な最小のサービスレベルに基づいて課金されます。</block>
   <block id="4bda389d4364c3a5f8e0002b0f1d48a6" category="section-title">FlexGroup に対する請求</block>
   <block id="13a0b5a0cf8933d6ff04c50c4b84bac9" category="paragraph">FlexGroup については、 FlexGroup のアダプティブ QoS ポリシーに基づいて課金されます。コンスティチュエントの QoS ポリシーは考慮されません。</block>
   <block id="c73be2f2aaeb82cecf852c49f3ea4cce" category="section-title">LUN の請求</block>
   <block id="05741b4ec38077cef83606c70f08f335" category="paragraph">LUN の場合は、通常、 QoS ポリシーが適用されるボリュームと同じ請求パターンが適用されます。LUN に個別の QoS ポリシーが設定されている場合は、次の手順を実行します。</block>
   <block id="cb1713b138a78b69b1922aa45131c2df" category="list-text">LUN のサイズは、その LUN に関連付けられているサービスレベルに基づいて消費されます。</block>
   <block id="a0426b9dc757c80060e1b3657daf68d2" category="list-text">ボリュームに設定されているサービスレベルの QoS ポリシーに基づいて、ボリュームの残りのスペースがある場合はそのスペースに基づいて料金が発生します。</block>
-  <block id="1eba80d57d3138b5dae3b976f061f9d9" category="section-title">システムボリュームとルートボリューム</block>
   <block id="076ac590232b28791043054102a0cc92" category="paragraph">システムボリュームおよびルートボリュームは、 Flex Subscription サービスの全体的な監視の一部として監視されますが、カウントまたは課金はされません。これらのボリュームの消費は、請求から除外されます。</block>
   <block id="53a68c6a8d27bd5b379a7dc2368c5756" category="paragraph">このリリースノートでは、 NetApp Keystone Flex Subscription （ Flex サブスクリプション）サービスで導入された新機能と機能拡張、および既知の制限事項と修正について説明します。</block>
-  <block id="5c333f255c8b8fe478018b592064ef12" category="section-title">Cloud Volumes ONTAP の使用状況と課金の表示（ 2021 年 12 月 5 日）</block>
-  <block id="c3e11b13166205f01b3a91c292ed2ef8" category="paragraph">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）のお客様で、 Cloud Volumes ONTAP サブスクリプションもお持ちの場合は、 Flex サブスクリプションを使用して Cloud Volumes ONTAP の使用量を課金し、請求および消費の詳細を表示できます。Cloud Manager で Flex サブスクリプションアカウントを検出し、 Cloud Manager インターフェイスに詳細を表示できるようになりました。[ すべてのサービス ] 、 [ デジタルウォレット ] 、 [ Keystone Flex サブスクリプション *] タブをクリックすると、次のアクティビティを実行できます。</block>
-  <block id="1fe79890d855ed34bd46612c12db6061" category="list-text">Cloud Volumes ONTAP アカウントを Flex サブスクリプション ID にリンクして、課金レポートおよび容量使用状況レポート用にアカウントを関連付けます。</block>
-  <block id="3be9d287dfe7e07ebfb53a3c94eb47ad" category="paragraph">｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝ ： NetApp Keystone フレキシブルサブスクリプション（ Flex サブスクリプション）で提供される拡張機能をサポートするために、ネットアップサービスエンジンのさまざまなリリースで次の機能が導入されています。</block>
   <block id="977c206c65138747de0f437c3e9da160" category="list-text">左側のナビゲーションペインの * 登録サービス * メニューの名前が * クラウドサービス * に変更されました。++</block>
   <block id="60b9454b357d4028e1a44f67fe213faa" category="paragraph">｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝</block>
   <block id="1754f916c701cd7759c35b6738e4fbc0" category="doc">このリリースの NetApp Keystone Flex サブスクリプションサービスの新機能</block>
   <block id="c07c08a8bb12ddacd97c50e289cfeabb" category="paragraph">サブスクリプションの作成後、グラフにコミット済み容量が表示されるまでに 15 分ほど遅れが生じます。</block>
   <block id="d56ad7d41c9c131e7177635c575214ef" category="paragraph">テナントサブスクリプションが作成され、（サブスクリプションの作成から 15 分以内に）すぐにレポートグラフがチェックされると、コミット済み容量は正しく報告されません。</block>
   <block id="d5ef5fd8e9c00193aa18dda53d77e710" category="paragraph">サブスクリプションが作成されてから少なくとも 15 分後にレポートグラフをチェックしてください。</block>
-  <block id="c158748a3e69a9b1c13a961e778ec66b" category="paragraph">パフォーマンスサービスレベルの変化によってボリュームが移動されることはありません</block>
   <block id="1783b0f8371d7661f74ab43e7076b5ef" category="paragraph">同じクラスタ内の 2 つの異なるアグリゲートが 2 つのサービスレベルに使用されている場合、ボリュームのサービスレベルを別のアグリゲートに変更しても、ボリュームはもう一方のアグリゲートに移動されません。アダプティブ QoS ポリシーのみが適用されます。</block>
   <block id="44d15e01a306125fbc9b5a504261f2c3" category="paragraph">FCP SVM を作成するには、 iSCSI のアクティブ化が必要です</block>
   <block id="452ff3a7d441b2a105350eaeb7f00609" category="paragraph">Storage Virtual Machine （ SVM ）を作成し、 FCP サポートを有効にするには、 iSCSI インターフェイスをアクティブ化する必要があります。</block>
@@ -3012,11 +2785,8 @@
   <block id="5aed86d713fb69dbe024ac9088076e73" category="paragraph">*オンプレミスとはどういう意味ですか。*</block>
   <block id="a75a7cee34b949b2845063d48f4f6ce7" category="paragraph">* Flexサブスクリプションサービスの利点は何ですか。*</block>
   <block id="a3bbf620adc7e7bcc0d6001db0d7e174" category="paragraph">* NetApp Keystone Flexサブスクリプションの一部として提供されるものは何ですか？* NetApp Keystone Flexサブスクリプション（Flexサブスクリプション）とは、ブロック、ファイル、オブジェクトの各データサービスを対象としたサブスクリプションベースのサービスで、オンプレミスに導入して、ネットアップ、パートナー、またはお客様が運用できます。</block>
-  <block id="7f3c8f66eb2c4902c4723ee68d1dd702" category="paragraph">* Flexサブスクリプションの一部として提供されるストレージサービスは何ですか。*詳細については、を参照してください <block ref="eb5228f75c5e56b970f5ae0448055097" category="inline-link-macro-rx"></block></block>
   <block id="78d9a5281ccb539856a1f4dd20094aea" category="paragraph">*どのようなアドオンサービスがサポートされていますか？* FabricPool による高度なデータ保護（バックアップとディザスタリカバリ）とハイブリッドクラウド階層化は、追加料金で選択できるアドオンサービスです。</block>
   <block id="f51aca773a35af7c6804c9de4ec05591" category="paragraph">*ネットアップがサービスに対してどのようなサービスレベルを保証しますか？*ネットアップが運用するシナリオでは、プロビジョニングされたストレージでNetApp Keystone が1TiBのIOPSを保証し、各サービスレベルでのレイテンシを保証します。</block>
-  <block id="22fbbcf2456a5d7f160b510c7b3af3ae" category="paragraph">* Flexサブスクリプションは何にマッピングされますか？* Flexサブスクリプションは、1つのサイトまたは1つのデータセンターにマッピングされ、異なるパフォーマンスサービスレベルで構成されます。</block>
-  <block id="649571bfc7e1b8f98d07b3d829506d93" category="paragraph">*階層化のパフォーマンス・レベルが極端に高い場合と階層化の場合のメリットは何ですか?階層化は'階層化のパフォーマンス・レベルが極端に高い場合に有効になり'ストレージの設置面積と関連コストを削減できますネットアップでは、データの 25% がホットで、残りの 75% は使用頻度やコールドデータが低く、コールドストレージに移動します。また、使用状況レポートを確認して、データへのアクセス頻度を把握したり、情報に基づいて階層化サービスを有効にしたりすることができます。</block>
   <block id="d6df6eff28ac44af1e13e275b0228621" category="paragraph">*パートナー様はネットアップから購入した容量よりも多くの容量をお客様に販売できますか？*テナントサブスクリプションは、パートナー様が購入した容量に制限されません。パートナー様は、ネットアップから購入した容量よりも多くの容量をお客様に販売できます。購入済み容量を超える容量はオーバーサブスクリプションと呼ばれます。</block>
   <block id="1ed1cac8cc85c7270eaad5bcd4a6157f" category="paragraph">*お客様のツールと統合するためのAPIは提供されていますか。*はい、RESTful APIを使用して、お客様のアプリケーションに統合できます。サポート &gt; API ドキュメント * に移動して、 Flex サブスクリプションサービスの API ドキュメントを参照します。詳細については、を参照してください <block ref="5b59c49596915ff0a388a418bca92047" category="inline-link-macro-rx"></block>。</block>
   <block id="c54f3024ff23dcfc42681979d3398492" category="paragraph">*バースト容量とは何ですか？*コミット容量を最大20%上回る使用量を増減できます。バースト時の使用容量は 1 日単位で測定され、使用時にのみ課金されます。たとえば、コミット済み容量が 100TiB の場合、バースト時に最大 120TiB を使用できます。</block>
@@ -3075,4 +2845,289 @@
   <block id="109d8311a672ab956bbde63f671b0b7c" category="paragraph">*アクセスはどのように制御されますか。*</block>
   <block id="bfc9a9f184efe2a5063de0904d04a09f" category="paragraph">*どのようなアクセスコントロールが使用できますか。*</block>
   <block id="dc621b6e8c29275d1ab76120be6c1392" category="paragraph">*使用に対する請求はどこで確認できますか。*</block>
+  <block id="0580b428b8b89191dd146196120083eb" category="paragraph">*購読は相互に共存できるか。*</block>
+  <block id="e3cfe7f33d12e36089266e1a92e5b364" category="paragraph">いいえ、サブスクリプション条件は互いに独立しています。</block>
+  <block id="b3784fbd5fbd14cdb7c0951f67184db5" category="paragraph">*既存のサブスクリプションにバックアップストレージを追加できますか。*</block>
+  <block id="290bc1780871dbb1423d35daee26da77" category="paragraph">バックアップのユースケースでは、StandardサービスレベルまたはValueサービスレベルなど、既存または新規のサービスレベルのサブスクリプションに容量を追加できます。既存のサブスクリプションの期間は変更されません。ただし、注意すべき点が1つあります。つまり、サブスクリプション期間の過去90日以内（サブスクリプションが終了する90日前）に容量を追加する場合は、少なくとも1年間はサブスクリプションも更新する必要があります。</block>
+  <block id="6c53919ff0d940777e3a5355a7d94094" category="list-text">ジョブリストを調べて、オブジェクトストレージが正常に初期化されていることを確認します。詳細については、を参照してください <block ref="08ab40cd728ae5bfe16832c715077c4e" category="inline-link-macro-rx"></block>。</block>
+  <block id="ddde080f14140ee00decb283845220d5" category="cell">テナントとそのサブスクリプションを管理するすべてのタスクを実行できます。詳細については、を参照してください <block ref="f78e6cb66cb6a39b449a96220ff74114" category="inline-link-macro-rx"></block>。</block>
+  <block id="3d3808a406e801b1d588b2675afa860f" category="cell">お客様やテナントの管理者は、サブテナントの管理に関連するすべての操作を実行できます。詳細については、を参照してください <block ref="1aa83b769be8d8ae51e2893f933a4da8" category="inline-link-macro-rx"></block>。</block>
+  <block id="7c6a71a785177471946c9cdbe943b35c" category="list-text">Web ブラウザで、 NetApp Service Engine ポータルの URL にアクセスします。ログインページが表示されます。</block>
+  <block id="2ba717ee51760eb50cf2395fafc0ec65" category="list-text">NetApp Service Engineへのログインページで、ユーザ名とパスワードを入力し、*ログイン*をクリックします。</block>
+  <block id="c794cc715ac13b65252e49ee2c678436" category="list-text">NetApp SSO アカウント。NetApp Support Site でアカウントを要求できます。ログイン画面で、「*ネットアップSSOアカウントの作成」を選択し、次の手順を実行します。</block>
+  <block id="198851d87f26efc044266d58b4977aaf" category="doc">オブジェクトストレージグループおよびユーザを表示します</block>
+  <block id="6aa4e60518dba90fc318768cced14553" category="list-text">メニューから* object storage &gt; User Management *を選択します。</block>
+  <block id="6508d92d59e4349d8fb5ee10e84881e9" category="list-text">[*Users*]タブと[*Groups]タブを使用して、ユーザとグループの表示を切り替えます。</block>
+  <block id="4cc0ba636011fd91df08096a9dbb52a5" category="inline-link">バケットとグループのアクセスポリシー</block>
+  <block id="13caf6a32ef96ae50bfe8ec41166c57e" category="list-text">グループリストには、選択したサブテナントに対して定義されているオブジェクトストレージグループが表示されます。グループ名と、そのグループに割り当てられているS3ポリシーが表示されます。バケットグループとS3ポリシーについては、を参照してください<block ref="f533a5b48cc3e6b5ffb9cab6aaa82eb6" category="inline-link-rx"></block>。</block>
+  <block id="3f2328096477e3b7d81c6ef9f54f1066" category="paragraph">リストの機能の使用方法の詳細については、を参照してください <block ref="a61f12a3491d544119bfe19d47b5cc08" category="inline-link-macro-rx"></block>。</block>
+  <block id="2a44f87120793370292710522b0a27c5" category="paragraph">このセクションでは、 NetApp Service Engine ポータルを使用して作業を開始する方法について説明します。</block>
+  <block id="9febd0fa5fe3a71523d678a7c8e9f1fa" category="admonition">NetApp Service Engineポータルでは、サポートチームが設定したサブスクリプションの設定に基づいて、地域やゾーンなどの一部の情報が自動的に入力されていることを確認できます。</block>
+  <block id="a73d4f90a085724bdd6b33749a15aa50" category="paragraph">このポータルでアクティビティを開始するには、次の手順に従います。</block>
+  <block id="a2f9e46ef6c1070478e1ea801a01acd3" category="list-text">NetApp Service Engine Webインターフェイスにログインします。</block>
+  <block id="346afb1f775b2be7f65cdd131cfda084" category="list-text">NetApp SSOを使用してログインする方法については、を参照してください <block ref="b856bcfd75b6dd0d7852d724d68f7736" category="inline-link-macro-rx"></block></block>
+  <block id="ac541006b40d84d41cec02f38a235dcd" category="list-text">テナントを選択します。ダッシュボードが表示されます。詳細については、を参照してください <block ref="51b99950f96aebac50d3a68ee27b3fbd" category="inline-link-macro-rx"></block></block>
+  <block id="b57c5857df27cc64fb5d595da8ffd751" category="paragraph">NetApp Service Engine Webインターフェイスの概要については、を参照してください <block ref="df293938f0aee0093b3fd1ecb520ab05" category="inline-link-macro-rx"></block></block>
+  <block id="5aa8679ac0f16a7378830768b91def26" category="paragraph">サービスリクエストを使用すると、GSSCチームと一緒に問題 を発行して、問題 を解決し、表示するステータスを更新できます。</block>
+  <block id="a3ac7cbbd83b225effe71bfc671bb929" category="admonition">[サポート]&gt;[サービスリクエスト*]メニューは、パートナー管理者のみが表示できます。パートナー管理者は、選択したテナントに対するサービス要求の一覧をダッシュボードに表示することもできます。テナント管理者の場合、ネットアップサポートにサービス要求を送信することはできません。</block>
+  <block id="571440db77639ab1a914f3efb7b861d7" category="paragraph">ワークフローはで <block ref="2adeebff5cc76037744cec149db1546d" category="inline-link-macro-rx"></block></block>
+  <block id="df058b919beee8b3a9aafbec290b866b" category="list-text">非標準ボリューム：Flexサブスクリプションにインポートされるボリュームは、NetApp Service Engine上の既存のディスクおよびファイル共有と同じ標準を共有します。インポート後 ' これらのディスクとファイル共有は非標準ステータスで分類されますステータスを標準のステータスに変更するサービスリクエストを発行します。</block>
+  <block id="9111918b9255f26f010ab636c932d79e" category="list-text">このリストに含まれていないその他の問題 。</block>
+  <block id="a1dad3427fe66a2d356b0c33c504ca73" category="paragraph">このセクションのその他のトピックでは、次の点について説明します。</block>
+  <block id="6997369c1687522b4cf15d694195da1a" category="paragraph">既存のスナップショットから新しいディスクを作成できます。Snapshotからクローニングされた新しいディスクには、Snapshotの作成元のディスクと同じプロパティが割り当てられます。</block>
+  <block id="54c83990c66d60d258fd9cb32e4039b4" category="list-text">左側のナビゲーションペインから *Block Storage* を選択し、 *Disks* を選択します。テナンシーに対応する既存のディスクのリストが表示されます。</block>
+  <block id="d96b1a215cb40bb0345ebc1f2fefd85a" category="list-text">Create Disk （ディスクの作成）をクリックし、 * Clone from snapshot （スナップショットからのクローン） * を選択します。または、スナップショットのクローン作成に使用するディスクがわかっている場合は、ディスクを探してその横にあるコピーボタンをクリックします。ディスクは動作状態である必要があります。テナントのすべてのディスクを含む* Create Disk from Snapshot *（スナップショットからディスクを作成）画面が表示されます。ディスクは、リージョン、ゾーン、およびサブテナントでフィルタできます。動作状態のディスクを選択することができます。オブジェクトの状態については、を参照してください <block ref="5e32ddb0b2ee6eb1a1baab0807d7f57d" category="inline-link-macro-rx"></block></block>
+  <block id="718d316e4bc27e41e86d5a5f4d304fcf" category="list-text">目的のディスクの横にあるチェックボックスをオンにして、「 * 次へ * 」をクリックします。ディスクのスナップショットが表示されます。</block>
+  <block id="68535e6b95a2979d96018ca3546b4c22" category="admonition">選択したディスクについて、SnapCenter Service Engineの外部の環境で作成されたSnapshotがある場合、それらのSnapshotがインポートされ、選択したSnapshotのリストに表示されます。これらのインポートされたSnapshotを選択し、そこから新しいディスクのクローンを作成できます。</block>
+  <block id="9ea16edd58eb3cafa6943e33e379e216" category="paragraph">特定のSnapshotを検索するか、スケジュールタイプを選択してSnapshotをフィルタリングできます。</block>
+  <block id="52066d0bc9eb52184e32fa7c6c69e724" category="list-text">クローンを作成するスナップショットの横にあるチェックボックスをオンにし、* Next *（次へ）をクリックします。新しいディスクは、選択したスナップショットのプロパティを継承します。</block>
+  <block id="92a71a4bf4aa16eefa65788bc19074aa" category="list-text">名前 * とディスクパス * を追加します。サービスレベル * の割り当てなどの他の設定を更新し、 [*Create] をクリックします。ニーズに最も適したサービスレベルを選択します。.終了後</block>
+  <block id="e185a2e8bb4bff12715c93a0f9152abe" category="list-text">ジョブリストでジョブのステータスを確認します。ジョブの追跡については、を参照してください <block ref="368a1d704bdc9ee6ea14e4516dfa810f" category="inline-link-macro-rx"></block>。</block>
+  <block id="6d334cd2f8ad0d4bee6be8b87c161536" category="list-text">オブジェクトストレージユーザを表示します <block ref="66c6e9c4626cdbf640f3b53d94f25c63" category="inline-link-macro-rx"></block>。</block>
+  <block id="5b24f621d2c5529d9de19c530d25386b" category="list-text">正しいサブテナントが選択されていることを確認し、「* users *」タブをクリックします。</block>
+  <block id="1f2d6525ebb9e69db041e713ef033586" category="list-text">リスト内でユーザを検索し、そのグループのキーアイコンをクリックします。</block>
+  <block id="dbaaeab9e672655870ffc9fa5fe7c16b" category="paragraph">リスト内の項目の操作の詳細については、を参照してください <block ref="a61f12a3491d544119bfe19d47b5cc08" category="inline-link-macro-rx"></block>。</block>
+  <block id="aae29fa4a7f13bf64ce22af144320e87" category="inline-link">ポリシーで権限を指定します</block>
+  <block id="e67466de05712e6490e8c93350f439a6" category="list-text">Manage S3 Keys *ダイアログボックスに、ユーザのキーのリストが表示されます。キーの詳細については、を参照してください<block ref="ddaba7313b89f71a659e8f4e1bc37488" category="inline-link-rx"></block>。</block>
+  <block id="cf90034bfcfb8992786af14eecbd3c95" category="list-text">キーを期限切れにする場合は、有効期限と有効期限を UTC で指定します。それ以外の場合は、これらのフィールドにデフォルト値をそのまま使用します。</block>
+  <block id="4f13e742af97bf988fd1adca65dd1d25" category="list-text">キーを作成するには、チェックマークをクリックします。S3 Key Details *ダイアログボックスが表示され、アクセスキーとシークレットキーが表示されます。</block>
+  <block id="90d30d6521db2d29ace6dc1ca28b2e75" category="list-text">アクセスキーと秘密キーの両方をコピーし、ユーザーに詳細を通知します。</block>
+  <block id="1512fa78a4c53f4c222d02fd68b146db" category="paragraph">S3 Key Details *（S3キーの詳細*）ダイアログボックスを閉じる前に、キーの詳細が記録されていることを確認します。閉じた後、キーの詳細が隠され、キーを取得できなくなります。</block>
+  <block id="07151bee06dd2a6f6efe8c0eb20ff928" category="paragraph">共有名、サービスレベル、容量、Snapshotポリシー、エクスポートポリシーを変更できます。 ファイル共有内のAccess Control List（ACL；アクセス制御リスト）およびタグ</block>
+  <block id="f13936079d5f64cabefb8136cb14c59b" category="admonition">この方法を使用すると、共有を別のサービスレベルに移動できます（可能な場合）。共有タイプを変更できるのは、サーバがそれぞれのサービスをサポートしている場合のみです。</block>
+  <block id="4cdb5fa02cd86a05dcaaadd741f350e9" category="paragraph">ファイル共有が動作状態である必要があります。ボリュームのステータスとそれらを運用するための手順については、を参照してください <block ref="329f996c576e28aa296dc49edeef71e7" category="inline-link-macro-rx"></block> および <block ref="5e32ddb0b2ee6eb1a1baab0807d7f57d" category="inline-link-macro-rx"></block></block>
+  <block id="1e7ae5f230c349b0d37c2d28c0a630db" category="paragraph">ホストグループは、ディスクへのアクセスを決定するために定義されます。ホストグループに割り当てられているイニシエータノードに基づいて、そのホストグループへのアクセスが決定されます。ホストグループを作成する際にイニシエータを追加できます。</block>
+  <block id="8bf4a89637b88a17fe1be4dad5d23488" category="list-title">次の点に注意してください。</block>
+  <block id="e9a8384b76847e02ea9eb3b15adef6a3" category="list-text">ホストグループが動作していない場合は、ホストグループを編集できません。また、編集ペンアイコンがこれらのグループに対して無効になっている場合は編集できません。</block>
+  <block id="a2ee4c0694efba6ff14aeb624652be2c" category="list-text">ホストグループを変更すると、ホストグループにマッピングされている各ディスクのアクセスが変更されます。</block>
+  <block id="4cdf7c93c5637cf0b21b1501834ae244" category="list-text">リストでホストグループを探し、行の末尾までスクロールして、そのホストグループのEditアイコン（ペンアイコン）をクリックします。</block>
+  <block id="479ae5edaaa0e0e7f7d443dc597b3725" category="paragraph">このセクションでは、ディスクの詳細を直接指定して新しいディスクを作成する方法について説明します。既存ディスクのスナップショットに基づいてディスクを作成する方法については、を参照してください <block ref="471ead9e8cc0845a2e4733e8474d4381" category="inline-link-macro-rx"></block>。</block>
+  <block id="aaa2a456d2b0ee8dcbe6d54b5aab09e4" category="list-text">サービスレベルを選択します。</block>
+  <block id="1921ba34bad67de8b98dfa58a43918f6" category="admonition">オプションを選択して、そのサービスレベルのパフォーマンスの詳細（ピーク/想定IOPS /スループット）を表示します。ニーズに最も適したサービスレベルを選択します。</block>
+  <block id="01622ea2e6ecb3044a5fdad11a37f1b4" category="list-text">このディスクにSnapshotが必要な場合：</block>
+  <block id="dc1e6744caa2433ba20c278ccfbdbf55" category="list-text">Snapshotを作成するタイミングを指定します。</block>
+  <block id="1e135408ec7679181f1480da0599625d" category="list-text">*毎時。*スナップショットを作成する分（時間単位）と保持する時間単位Snapshotの数を指定します。</block>
+  <block id="0e8c706929d26eb18be3333e7ae59ac3" category="list-text">*毎日。* Snapshotを作成するタイミング（時間と分）と保持する1時間あたりのSnapshot数を指定します。Snapshotを1日に作成する必要がある時間を複数指定する場合は、カンマで区切って指定できます。例：5、10、15、 など。</block>
+  <block id="8348032cd6c2680262fc058d2d5c1750" category="list-text">*週単位。* Snapshotを作成するタイミング（曜日、時間、分）と保持する週単位Snapshotの数を指定します。</block>
+  <block id="4ba44c9003dbfdedd8cd9f0e06bd0348" category="list-text">*月次。*スナップショットを作成するタイミング（日にち、時間、分）と、保持する月単位Snapshotの数を指定します。</block>
+  <block id="4f71c5f044ccf460d84a38a185b21a3c" category="list-text">テナント、サブテナントの作成、表示、変更、削除 ユーザの権限が必要です。</block>
+  <block id="e060dc507e49d9a3bbf820fbe0cb9750" category="list-text">サブスクリプションのゾーンとリージョンを表示します。</block>
+  <block id="c4812789be6d5627f9548ff1c7268308" category="list-text">テナントのサブテナントを管理および編集できます。</block>
+  <block id="7335ff2753081014130e7efe5d476c51" category="list-text">ゾーン、リージョン、サブテナント、およびサブネットを表示します。</block>
+  <block id="3d0ede0ece7757fecf8ee6f1f189455e" category="list-text">サービスプロバイダによって作成されたファイルサーバを表示します。</block>
+  <block id="75772ee1d3a1f0a0d4023186a1d42e03" category="list-text">ファイル共有、ディスク、およびバケットを作成し、サービスレベルを割り当てます。</block>
+  <block id="1da19e564e6234025d33274e4bf6c86b" category="list-text">テナントおよびサブテナントのレポートを* Reports &gt; Capacity Utilization *で表示し、テナントおよびサブテナントに登録またはプロビジョニングされているストレージの消費データのみを表示します。</block>
+  <block id="b21bcdcc70e3486ce61f6918359621f8" category="list-text">テナントおよびサブテナントのレポートを* Reports &gt; Performance *で表示し、各登録サービスおよびアドオンサービス（データ保護および高度な保護）のテナントのパフォーマンスとサービスコンプライアンスを表示します。</block>
+  <block id="57589106be28b5324e344c02a84d1248" category="paragraph">オブジェクトストレージグループを作成するには、このメソッドを使用します。</block>
+  <block id="15bc76902d4ca575cfcf09624b0909c2" category="list-text">オブジェクトストレージ&gt;ユーザ管理&gt;グループ*からオブジェクトストレージグループのリストを表示します。</block>
+  <block id="96c8050f0d67c893c12d725cb29189a2" category="list-text">正しいサブテナントが選択されていることを確認し、「* Groups *」タブをクリックしてください。</block>
+  <block id="6ce1785e716d1589932993264df00b43" category="list-text">リストから S3 ポリシーを選択します。S3ポリシーの詳細については、を参照してください<block ref="ddaba7313b89f71a659e8f4e1bc37488" category="inline-link-rx"></block>。</block>
+  <block id="0011a2b07dda9a0bc5d1b0499e8b32a1" category="paragraph">オブジェクトストレージグループの作成は非同期ジョブとして実行されます。ジョブリストでジョブのステータスを確認できます。ジョブの追跡については、を参照してください <block ref="368a1d704bdc9ee6ea14e4516dfa810f" category="inline-link-macro-rx"></block>。</block>
+  <block id="dfe04b78797bd9efb6487f2a8657d1db" category="inline-link-macro">データ保護とデータ保護の詳細</block>
+  <block id="dab3fbed1879168b2120dd56536c82d9" category="paragraph">サブスクライブしているデータ保護サービスと高度な保護サービスを別々のタブで表示および管理することもできます。詳細については、を参照してください <block ref="780f711d9cc4c3b144e390eecf4e3c67" category="inline-link-macro-rx"></block>。</block>
+  <block id="4362040aa34f946652e2e1fb49db6949" category="list-text">[*確認*]をクリックします。[ Keystoneサブスクリプションの管理]ページに戻ります。</block>
+  <block id="ac3f30c2dd04ee7f322762e41b9c4763" category="list-text">[Submit Changes] をクリックします。GSSCのサービスリクエストが作成され、容量が増加します。サービスリクエストの進捗状況は、メッセージに表示されたSR番号で確認および追跡できます。トラッキングの詳細については、を参照してください <block ref="eef536a2ee52c93166224b1795fd5131" category="inline-link-macro-rx"></block>。</block>
+  <block id="df39bcd55472727f7512b52cbe91d5e3" category="paragraph">各サブスクリプションには、各サービスレベルのいずれかを設定できます。たとえば、サブスクリプションにExtremeサービスとStandardサービスがすでに含まれている場合は、PremiumサービスまたはBlockサービスを追加できます。</block>
+  <block id="3eebf754a44e99e90b260214e9d9a4b5" category="list-text">サブスクリプションに追加するサービスレベルをドロップダウンメニューから選択します。</block>
+  <block id="0453382f4b59ee23ceca1d42c95549ef" category="list-text">通知依頼を設定するサービス・レベルをドロップダウン・メニューから選択し（例：「エクストリーム階層化」）'サービス・レベルにコミットする容量（TiB）を追加します</block>
+  <block id="9776fe3a80b7f01727450395190af9bb" category="list-text">[* 確認 *] をクリックします。Manage Keystone Subscriptionsページに戻ります。</block>
+  <block id="42fee1961981b5ce385c2172e14d8b54" category="list-text">[Submit Changes] をクリックします。GSSCのサービスリクエストが作成され、サービスレベルがサブスクリプションに割り当てられます。サービスリクエストの進捗状況は、メッセージに表示されたSR番号で確認および追跡できます。</block>
+  <block id="8c4a7396f24674af1573b6084b8158de" category="paragraph">トラッキングの詳細については、を参照してください <block ref="eef536a2ee52c93166224b1795fd5131" category="inline-link-macro-rx"></block>。</block>
+  <block id="0ebbe4efe4592b11787a98f0bb0187fc" category="section-title">テナントサブスクリプションを作成および編集します</block>
+  <block id="15d78575deb28d3f42b0ca34112d14b0" category="paragraph">パートナー管理者は、テナントサブスクリプションを編集できます。サブスクリプションに新しいサービスレベルを追加したり、追加済みのサービスレベルの容量を編集したりできます。新しいサービスレベルを追加するには、次の手順を実行します。</block>
+  <block id="9d113f3ad4ea7a6b30a46d774ea6b737" category="list-text">[+]アイコンをクリックして'編集するサブスクリプションを選択します</block>
+  <block id="6c2729ddddb76bd7239ab56c6f96a835" category="list-text">[サブスクリプションへの新しいサービスレベルの追加*]ページで、新しいサービスレベルを選択し、必要な容量を追加します。サービスレベルがすでに追加されている場合は、追加または削除することはできません。</block>
+  <block id="99e60a4d8fd85ae9b160fc4b8b7a095e" category="paragraph">また、購読のタグアイコンをクリックしてタグを追加することもできます。</block>
+  <block id="68903242eda85f8b0d6f53a88ed92aef" category="paragraph">サブスクリプションにすでに割り当てられているサービスレベルにサブスクライブ済み容量を編集するには、次の手順を実行します。</block>
+  <block id="5b32ddeff6d4935621c3e0953e798be4" category="list-text">をクリックして'編集するサブスクリプションを展開しますそのためには'V'アイコンをクリックしますそのサブスクリプションのサービスレベルが表示されます。</block>
+  <block id="6d3ff32582752608287312830d4659fb" category="list-text">それぞれのペン編集アイコンをクリックして、編集するサービスレベルを選択します。</block>
+  <block id="979434ec7a1a3f5e4fcecd9592c9e0e8" category="list-text">TiBの容量を増減して、料金プランを変更します。</block>
+  <block id="9450f6b7991a26a9d5985688fdac77da" category="paragraph">サービスレベルの変化によってボリュームが移動されることはありません</block>
+  <block id="87fd5dd33eacc16921f80dba26992fa6" category="list-text">オブジェクトストレージ&gt;ユーザ管理&gt;ユーザ*と移動します。</block>
+  <block id="7dc8da1a6ebae4afb4e48fb1d615289b" category="list-text">ジョブリストでジョブのステータスを確認します。詳細については、を参照してください <block ref="08ab40cd728ae5bfe16832c715077c4e" category="inline-link-macro-rx"></block>。</block>
+  <block id="dbf96a989bd6eca2938c302f48c35ed2" category="list-text">オブジェクトストレージグループを表示します <block ref="66c6e9c4626cdbf640f3b53d94f25c63" category="inline-link-macro-rx"></block>。</block>
+  <block id="c154608c9f8ffdbfa792be4ac72ad31e" category="list-text">リスト内でグループを探し、そのグループの編集アイコンをクリックします。</block>
+  <block id="7b8976587358fc91a72592b5e7270f4d" category="list-text">* Edit Group *ダイアログボックスで、グループに適用できるS3ポリシーを変更します。S3ポリシーの詳細については、を参照してください<block ref="ddaba7313b89f71a659e8f4e1bc37488" category="inline-link-rx"></block>。</block>
+  <block id="6410d38a9298f59a077c000aa024bfb0" category="list-text">必要に応じて、ポリシーステートメントを追加できます。</block>
+  <block id="4d4415939431a14b856ee445db13105b" category="list-text">[ 更新（ Update ） ] をクリックします。指定した設定でグループを変更するジョブが作成されます。ジョブの追跡については、を参照してください <block ref="368a1d704bdc9ee6ea14e4516dfa810f" category="inline-link-macro-rx"></block>。</block>
+  <block id="7ecbe334528b181155de20af95026880" category="list-text">100TiBの容量は、1つのサービスレベルまたはレベルの組み合わせで構成できます。</block>
+  <block id="2a825026966e8ca57394766cdfe5eee4" category="list-text">契約期間中にコミット済み容量またはサービスレベルを変更することはできません。</block>
+  <block id="20e593670f6809902551ba2c79907117" category="list-text">容量を増やしたり、期間内に上位のサービスレベルに変更したりすることはできますが、上位のサービスレベルから下位レベルに移行することはできません。</block>
+  <block id="0704c116940f03a6b019dbeb4c62c8e7" category="paragraph">お客様の要件や使用しているストレージコントローラに応じて、ネットアップはお客様のサイトで10 GIB、40 GIB、および100 GIBの接続を提供できます。</block>
+  <block id="c3000abac8572261622b53e9847c718e" category="list-text">リストから共有を選択し、その共有のSnapshotアイコンをクリックします。（リスト内の項目の操作の詳細については、を参照してください <block ref="4a0d19ebe9aa0f2533119e3056a7b078" category="inline-link-macro-rx"></block>。</block>
+  <block id="aeab146e7622ea8540b2746c27388efe" category="inline-link-macro">Snapshotからファイル共有を作成します</block>
+  <block id="d715ed6766b6043e15747ab29d60f44d" category="paragraph">Snapshot が使用可能になるまでに数分かかることがあります。可能な場合は、このSnapshotをクローニングして別の共有を作成できます。詳細については、を参照してください <block ref="c364c802e134689126f9fbe7204037eb" category="inline-link-macro-rx"></block>。</block>
+  <block id="81d516a0b57ebe1f3cbb112b80f3c329" category="paragraph">ディスク名、ホストグループマッピング、サービスレベル、容量、およびSnapshotポリシーを変更できます。この方法を使用すると、ディスクを別のサービスレベルに移動できます（使用可能な場合）。</block>
+  <block id="b953c318e559be9015759e524882d7d3" category="paragraph">ディスクが動作状態である必要があります。ボリュームのステータスとそれらを運用するための手順については、を参照してください <block ref="329f996c576e28aa296dc49edeef71e7" category="inline-link-macro-rx"></block> および <block ref="5e32ddb0b2ee6eb1a1baab0807d7f57d" category="inline-link-macro-rx"></block></block>
+  <block id="8e053e7cbeb985eeb3b0bf942766c360" category="paragraph">バックアップポリシーを定義して、環境内にボリューム（ファイル共有およびディスク）のバックアップを作成したり、プライマリボリュームの複数のコピーをリモートで保持したりできます。</block>
+  <block id="5a0871e27c73823e6a234a5e781a2736" category="admonition">ボリュームのバックアップポリシーを作成または編集すると、システムにバックアップが自動的に作成されます。NetApp Service Engineインターフェイスからバックアップを作成することはできません。バックアップAPIを使用して、ボリュームのバックアップを作成および管理できます。</block>
+  <block id="7e307b338560ffdc24bff161d1c49b0e" category="inline-link-macro">バックアップAPI</block>
+  <block id="e4ec49125165d99f15399e555902da9d" category="paragraph">詳細については、を参照してください <block ref="5c5c623bc6c74764de3d52df952bfa79" category="inline-link-macro-rx"></block></block>
+  <block id="bca276363610c0bffe5c57ea00642f65" category="paragraph">ソースボリュームのバックアップは、Flexサブスクリプションで有効になっているNetApp SnapMirrorテクノロジを使用して有効にします。詳細については、を参照してください <block ref="c7da18b22eff9eb9642a66b86be34489" category="inline-link-macro-rx"></block>。</block>
+  <block id="6bcd57380cee14b76c728521f156a2e2" category="paragraph">ボリュームを作成または編集するときは、ボリュームのバックアップスケジュールを定義します。バックアップは意図した間隔で作成され、デスティネーションシステムに格納されます。バックアップが機能するためには、デスティネーション環境との間にSnapMirror関係を確立する必要があります。レプリケートされたファイル共有と異なるゾーンのディスクは、各クラスタの専用のバックアップ Storage VM （ Storage Virtual Machine （ SVM ）に格納されます。バックアップは、異なるゾーンにある 2 つの独立した ONTAP クラスタ間で実行できます。</block>
+  <block id="13bdfe1817da9faec749493a15270cee" category="paragraph">NetApp Service Engine でサポートされる標準のバックアップポリシーは次のとおりです。</block>
+  <block id="80f4a01cfa25bd0b6cfaa17ab79a347b" category="paragraph">バックエンドで作成されるバックアップの場合'ボリュームは運用可能な状態にある必要がありますオブジェクトの状態の詳細については、「動作」（バックアップのソースオブジェクト）を参照してください。 <block ref="f657019918c506bf557a3b998908ab12" category="inline-link-macro-rx"></block>。</block>
+  <block id="7b57fdd289de9abf72b0b0d91b9cfc64" category="paragraph">NetApp Service Engine でサポートされている標準のバックアップポリシーに従っていないボリュームを使用することは可能です <block ref="820a42e890838f30485ca3dc6fc5d4bc" category="inline-link-macro-rx"></block> 問題を固定する * 非標準ボリューム * カテゴリ。</block>
+  <block id="800033f6a6a4cd07b1f3dd3855871f01" category="paragraph">ファイル共有およびディスクに対して作成されたバックアップのリストは、「* Backups *」ページに表示できます。バックアップは選択したテナントに基づいて表示されます。</block>
+  <block id="9b547d6d564a3c524ba7de9cb76e1787" category="section-title">バックアップポリシーまたはスケジュールを編集する</block>
+  <block id="29b0fb2638796dbe9b65622e6e2766d3" category="paragraph">ファイル共有およびディスクを作成または編集するときに、それらのバックアップポリシーを定義できます。バックアップは、指定されたポリシーに基づいてバックエンドで作成されます。詳細については、を参照してください <block ref="e96ed8ae76725ff94791bdd06014c2c0" category="inline-link-macro-rx"></block> または <block ref="fa6fbe260d0612efac963dd809cbae12" category="inline-link-macro-rx"></block>。</block>
+  <block id="80e7dba60f9c97bf6b38e934937c96bd" category="admonition">既存のファイル共有またはディスクのバックアップポリシーを編集して、バックアップをスケジュールすることもできます。</block>
+  <block id="770aa50ac5112e366e80ac5fa6f27bfc" category="section-title">バックアップのソースを変更または切断します</block>
+  <block id="37f98854031deb060affba1f810ad3df" category="list-text">左側のナビゲーションペインで、*バックアップ*をクリックします。環境内のすべてのオブジェクトに対して作成されたバックアップのリストを表示できます。</block>
+  <block id="9d239cad785350e30c5400a957e7f775" category="list-text">リストでバックアップを探し（ボリューム名で検索）、行の末尾にある編集アイコンをクリックします。</block>
+  <block id="302d6b176bf15f658ee95cbabb641331" category="list-text">必要に応じて、バックアップのソースおよび各タイプのバックアップの数を変更します。ソースボリュームとの SnapMirror 関係を解除するには、バックアップのソースを「 * None （ orphaned ）」に変更します。ソースボリュームが削除された場合でも、バックアップは孤立したバックアップとして保持されます。バックアップオブジェクトの状態が変化し、ソースボリュームのステータス（孤立または削除）が同じリストのソースボリューム名に追加されます。オブジェクトの状態については、を参照してください <block ref="259bb3e032661eb6f9c7234bd1ac43c6" category="inline-link-macro-rx"></block></block>
+  <block id="0120794f55d7a30bc06113805912c310" category="list-text">[ 完了（ Done ） ] をクリックします。Snapshotが変更されます。ソースとの SnapMirror 関係を解除した場合、つまり、バックアップオブジェクトが孤立した場合は、「 * Backups * 」タブのソース名は「削除済み」と表示されます。</block>
+  <block id="dbbc25d21704e91182cec2239bac0267" category="admonition">Create Share/Edit ShareおよびCreate Disk/Edit Disk画面で、ボリュームの* Backup Policy *を無効にして、ソースボリュームとのSnapMirror関係を解除することもできます。</block>
+  <block id="2840e9bb75234be6d8d9f8e55463ddf7" category="section-title">バックアップとリストアのサポートを依頼</block>
+  <block id="80cfb5bc639d5c76a137cc98c4e6c357" category="paragraph">可能です <block ref="820a42e890838f30485ca3dc6fc5d4bc" category="inline-link-macro-rx"></block> 特定のリカバリポイントからファイル共有またはディスクをリストアする場合。</block>
+  <block id="750bcedb8daf15ce7ed1219baa69fa67" category="section-title">バックアップオブジェクトを削除する</block>
+  <block id="5003aa09f688688be86d017679dc812b" category="paragraph">未使用のバックアップボリュームを削除すると、ストレージスペースが増えます。削除されたソースのバックアップボリュームとリカバリポイントを削除するには、バックアップAPIを使用する必要があります。</block>
+  <block id="f8e801910d08eb6a2c3d7670a260db9b" category="admonition">バックアップを削除すると、そのバックアップのすべてのリカバリポイントが削除されます。また、プライマリファイル共有またはディスクを削除した場合でも、バックアップは孤立したバックアップとして保持され、リストアのためのすべてのリカバリポイントが含まれます。</block>
+  <block id="89e1d0986f1c10da01bcfc55a3823668" category="paragraph">[Service Requests]画面では、またはテナントのサブスクリプションのパートナー管理者として新しいサービス要求を発行し、自分のサポートチームまたはNetApp GSSCに送信できます。</block>
+  <block id="4877919c887d65caa45cf7b4bd8108e5" category="paragraph">パートナー管理者は、ダッシュボードの* Service Requests *ウィジェットでテナントの最新のサービス要求の概要を優先度と作成時間でソートして表示できます。また、 [ サービスリクエスト ] 画面に移動して、環境内で発生したすべてのサービスリクエストの詳細を検索して表示することもできます。</block>
+  <block id="67119bf1f5852126beab2d4bb0c6af4e" category="list-text">[ 新しいサービスリクエスト ] ページで、リクエストのカテゴリと優先度を選択し、 [ 次へ ] をクリックします。[*詳細*（* Details *）]画面が表示されます。</block>
+  <block id="62d6b0a7b34dc7c5fb09c6f99d4dcbef" category="admonition">詳細画面のフィールドは、選択したカテゴリに応じて変わります。この画面では、選択したサービスリクエストのカテゴリに関連する詳細情報を入力する必要があります。</block>
+  <block id="77a90a232896a2082107960e5109e526" category="list-text">必要な詳細情報を入力します。「 * 次へ * 」をクリックします。</block>
+  <block id="f4d415a146854d849bb99a675a8294fd" category="paragraph">「 ubtenant_id 」：サブテナントの ID 。'zone' ：ゾーンの名前。`name` ：ディスクの名前。「 disk_path 」：ディスクのパス。'protocol' ：ブロック・デバイスのアクセスに使用されるストレージ・プロトコルos_type ：ホスト・オペレーティング・システムのタイプ「 hostgroup_dmappings 」：ホストグループマッピング。「 service_level 」： Standard 、 Premium 、 Premium-Tiering 、 Extreme 、 Extreme のいずれかのサービスレベル名を指定できます。`size_GB`：GiBs内のディスクのサイズ。</block>
+  <block id="f0a98503f7025814de673358cbfc2ebc" category="inline-link-macro">FabricPool 使用のための課金</block>
+  <block id="ea5f2a3107ef6a292b858bed2431fd2d" category="paragraph">課金については、を参照してください <block ref="6bfa617ca63af4eb1b55b6cf1d8469f3" category="inline-link-macro-rx"></block>。</block>
+  <block id="168c963ebe528df2d070c44e9d3bf469" category="paragraph">ブロックストアはサブテナントに属しており、ゾーン内に指定されています（サブテナントごとにゾーンごとに 1 つのブロックストア）。ブロックストアには、 iSCSI プロトコルまたは FC プロトコル経由のディスクへのアクセスに使用するネットワーク属性（ IP アドレスや VLAN ID など）があります。ディザスタリカバリ DP はブロックストアで有効にすることができます。詳細については、を参照してください <block ref="a77c34ddf88ef814fd6a18a00bec0fb7" category="inline-link-macro-rx"></block>。</block>
+  <block id="b79aba71b8fc051b32b93009c3e95741" category="paragraph">既存のSnapshotから新しいファイル共有を作成できます。Snapshotからクローニングされた新しいファイル共有には、Snapshotの作成元のファイル共有と同じプロパティが含まれます。</block>
+  <block id="c5c80478bcac2d6949a65b6378900387" category="list-text">Create Share （共有の作成） * をクリックし、 * Clone from snapshot （スナップショットからのクローン） * を選択しますまたは、スナップショットをクローニングに使用する共有がわかっている場合は、ファイル共有を探してその横にあるコピーボタンをクリックします。共有は動作状態である必要があります。オブジェクトの状態については、を参照してください <block ref="5e32ddb0b2ee6eb1a1baab0807d7f57d" category="inline-link-macro-rx"></block>。テナントのすべてのファイル共有を含む* Create Share from Snapshot *（スナップショットからの共有の作成）画面が表示されます。ファイル共有は、リージョン、ゾーン、およびサブテナントでフィルタできます。動作状態の任意のファイル共有を選択できます。</block>
+  <block id="4211f65b2983c573058450f592fcb1ae" category="list-text">目的のファイル共有の横にあるチェックボックスをオンにし、 * Next * （次へ）をクリックします。ファイル共有のSnapshotが表示されます。</block>
+  <block id="201a10b44105a7f46600bd19700a5b0b" category="admonition">選択したファイル共有について、SnapCenter Service Engine以外の環境で作成されたSnapshotがある場合、それらのSnapshotがインポートされ、選択したSnapshotのリストに表示されます。インポートしたこれらのSnapshotを選択し、そこから新しいファイル共有のクローンを作成できます。</block>
+  <block id="675fcd36774818dbea836dc02cf4d0d6" category="list-text">クローンを作成するスナップショットの横にあるチェックボックスをオンにし、* Next *（次へ）をクリックします。新しいファイル共有には、選択したSnapshotのプロパティが継承されます。</block>
+  <block id="278530798aa56115669d57d1e3fa9073" category="list-text">名前 * と * 共有パス * を追加します。サービスレベル * の割り当てなどの他の設定を更新し、 [*Create] をクリックします。ニーズに最も適したサービスレベルを選択します。</block>
+  <block id="775c0cf773e692f5b5aff6da7ff3a805" category="paragraph">NetApp Keystone Flexサブスクリプション（Flexサブスクリプション）は、事前定義されたサービスレベルまたはパフォーマンスサービスレベルで容量を提供します。</block>
+  <block id="fda90827f7dc62058d02279d98e89377" category="paragraph">各サービスレベル（サービスレベル）は、I/O密度によって定義されます。これは、パフォーマンス（1秒あたりの入出力処理数（IOPS））と使用済みストレージ（TiB分の格納データ）の比率で、単位はIOPS/ TiBです。</block>
+  <block id="7cb1e7ec7bd37f6e4d6191d590b40dfe" category="paragraph">Flexサブスクリプションサービスで管理される各ボリュームは、サービスレベルに関連付けられています。各ボリュームで使用されるすべての I/O 処理と使用済みストレージは、ボリュームの I/O 密度の計算に考慮されます。</block>
+  <block id="c369a24416627121068456b8b8aad586" category="paragraph">次の表に、サービスレベルを示します。</block>
+  <block id="9298a8df81bc0591b45113097c6a4118" category="section-title">異なるストレージタイプのサービスレベル</block>
+  <block id="18cf673c6b162cc27313691486836fca" category="admonition">^1 ^ NetApp Direct Opportunityに必要なファイル共有レベルとブロックサービスレベルを組み合わせた場合、1年以上の期間と100TiB以上の最小容量。^2^ チャネル主導の販売機会用に選択された各サービス階層ごとに、最低 1 年間の契約期間と最小規定容量。</block>
+  <block id="c3010f4da438652aab9b42654d086f8d" category="admonition">^1 ^ NetApp Direct Opportunityに必要なファイル共有レベルとブロックサービスレベルを組み合わせた場合、1年以上の期間と100TiB以上の最小容量。^2^ チャネル主導の販売機会用に選択されたサービス階層ごとの最低 1 年間の契約期間と最小規定容量。^3^ いずれかの Opportunity タイプに対して選択されたサービス階層ごとの最低 1 年間の期間と最小指定容量。</block>
+  <block id="abafef4130ed8938c3153ad43e1ac52e" category="paragraph">NetApp Service Engineのユーザインターフェイスの複数の画面から、サービスレベルをサブスクリプションに割り当てることができます。詳細については、を参照してください</block>
+  <block id="1e40687eaf73dde4f163672091e3ee28" category="paragraph">** <block ref="3a337ffb28bf0d116cc65c4b009401e6" category="inline-link-macro-rx"></block></block>
+  <block id="39cd3f32af1f6142ceceefd9378ef437" category="list-text">ファイルサーバに関連付けられた、ディザスタリカバリでレプリケートされたすべてのコピー。サーバの削除を元に戻すことはできません。</block>
+  <block id="a189c66e23fd7e79d1bebf594d16fb15" category="paragraph">消費容量が所定のサービスレベルのコミット済み容量を超えると、バースト消費量が記録され、それに応じて課金が適用されます。このプロセスは、生成される消費レコードごとに実行されます。したがって、バースト消費量は、オーバー消費容量の量と時間の両方を、コミット済み容量の上に反映したものです。</block>
+  <block id="e0450cba6f565299b1277f655c94fa25" category="paragraph">サブスクリプションの有効化の最初の60日間に積み立てたバースト消費量は記録されますが、Flexサブスクリプションの請求書には課金されません。この猶予期間により、ストレージを適切なアダプティブQuality of Service（AQoS；サービス品質）設定で構成し、適切に監視および課金できるようになります。ストレージを正しく構成すると、予期しないバースト料金を回避できます。初期猶予期間60日後に発生したバースト使用量は、次の請求書に請求されます。この猶予期間は、既存のサブスクリプションの変更や更新には影響しません。</block>
+  <block id="17165dfb97a3399066f5846aed0c4af9" category="list-text">新しいデータがボリュームに書き込まれない場合、StandardサービスレベルとValueサービスレベルのクローンボリュームの消費は考慮されません。たとえば、バックアップとリストアのユースケースでは、クローンボリュームのデータのバックアップやリストアによって、クローンボリューム自体のデータが変更されることはなく、消費とはみなされません。</block>
+  <block id="acb570f757ab2e0dcfc93bbc6bebff34" category="paragraph">Flexサブスクリプションは、サービスレベルに基づいて消費量を測定します。各サービスレベルは、特定のアダプティブQoSポリシーに関連付けられます。展開中に、加入している Flex サブスクリプションサービスの各 QoS ポリシーの詳細が通知されます。ストレージ管理処理中に、予期しない課金を避けるために、ボリュームにサブスクライブしたサービスレベルに従って適切なQoSポリシーが割り当てられていることを確認します。ONTAP の QoS ポリシーの詳細については、を参照してください <block ref="7f8846f19a6367d0efc82511d70933cd" category="inline-link-macro-rx"></block>。</block>
+  <block id="822d70344d224e2e68e8dcf4ec044c3c" category="paragraph">SnapMirrorデスティネーションボリュームの料金。ソースで割り当てられたサービスレベルのQoSポリシーに従って決まります。ただし、ソースに QoS ポリシーが関連付けられていない場合、デスティネーションには、利用可能な最小のサービスレベルに基づいて課金されます。</block>
+  <block id="cde520829ff4c329d0a877769052c136" category="paragraph">データがKeystoneシステムからONTAP Simple Storage Service（S3）オブジェクトストレージまたはNetApp StorageGRID に階層化されると、ホット階層（Keystoneシステム）で消費される容量は階層化されたデータの量によって減り、結果的な課金に影響します。これは、ONTAP S3ストレージとStorageGRID システムのどちらがKeystoneサブスクリプションの対象になっているかに関係なく適用されます。</block>
+  <block id="eb71f31c80be60d1b83c15a9023c5aa0" category="paragraph">データをサードパーティのオブジェクトストレージに階層化する場合は、Keystone Success Managerにお問い合わせください。</block>
+  <block id="742eeba5dde6c1c0f5b7c867d0ee4115" category="paragraph">FabricPool テクノロジをKeystoneサブスクリプションで使用する方法については、を参照してください <block ref="4488ca7c1dbfbc3a4a5cb0de9a5f943b" category="inline-link-macro-rx"></block>。</block>
+  <block id="49e55f1469134d874d5c920897870fab" category="section-title">システムボリュームとルートボリュームの料金</block>
+  <block id="6a1836144168f39941f392b695d13d99" category="paragraph"><block ref="6a1836144168f39941f392b695d13d99" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd5fb265e740e897efd97ec6db65e09f" category="paragraph">パートナー管理者は、選択したサブテナントの月単位の課金内訳を表示できます。</block>
+  <block id="7405166a7ce32802615fd74dd60f9ac4" category="admonition">また、ダッシュボードの「* Costs To Date *」ウィジェットの右上隅にある矢印またはウィジェットの1カ月を表す任意のバーをクリックして、「請求」ページを表示することもできます。選択した月のすべての月額プランが表示されます。</block>
+  <block id="37c88707e5f04d4dd1d96b217e3b8f6b" category="list-text">必要に応じて、月を表す棒グラフにカーソルを合わせると、詳細が表示されます。</block>
+  <block id="cf20fa9ddb17ee6e867a13f6b12fb817" category="paragraph">課金の詳細については、を参照してください <block ref="d823bdbe3ab2a5d92501c2ec4317d1f7" category="inline-link-macro-rx"></block></block>
+  <block id="5d42f6e307c32ba43678d41bfad8cc97" category="paragraph">ダッシュボードには、 NetApp Keystone ストレージサブスクリプションの概要が表示されます。使用済み容量、使用状況に対する請求、最新のアラート、およびサービス要求に関する情報が表示されます。</block>
+  <block id="e7c1f62e5048c2f9f6ff272552cf9c88" category="list-text">* 容量利用率： * Keystone Flex Subscription 、 Keystone Flex Utility 、クラウドサービスなど、サブスクライブするサービスの容量利用率が表示されます。棒グラフをクリックすると、各サービスレベルの使用率の内訳グラフが表示されます。データ保護や高度な保護など、各サービスレベルおよびアドオンサービスについて、未使用、消費済み、バーストの使用状況を確認できます。サブスクリプションに容量を追加する必要があるかどうか、または別のサービスレベルを選択する必要があるかどうかを特定するのに役立ちます。</block>
+  <block id="c36cfca401a5add27dc780e9de983e41" category="list-text">*現在までのコスト（請求）：*このセクションは、パートナー管理者の権限に基づいて提供されます。すべての月額プランの合計月額料金が表示されます。過去4か月間の請求詳細を表示できます。グラフにカーソルを合わせると、コミット済みの使用状況とバースト時の使用状況に応じて料金が分割されて表示されます。サブスクリプションサービスのサブスクリプションが複数ある場合は、 1 か月の棒グラフをクリックすると、 [ 請求 ] 画面にサブスクリプションリストが表示されます。課金の詳細については、を参照してください <block ref="ff5019e651b45dce6edea337a584798f" category="inline-link-macro-rx"></block>。</block>
+  <block id="2edc01fa0cababe83981ffabed4438a7" category="paragraph">右上から特定のテナントを選択して、各テナントの容量利用率を表示することもできます。容量利用率およびアラートウィジェットのデータは、選択したテナントのデータ使用量とアラートメッセージの設定を表します。一方、他のウィジェットのデータは一定で、ストレージサブスクリプションを表します。</block>
+  <block id="8f7b38b24a6641d05d91c2c1fec9bc26" category="paragraph">マルチテナント環境のテナント管理者は、環境に設定されている容量利用率やアラートを表示できます。各ウィジェットをクリックしていき、詳細を確認します。請求先の詳細については、サービスプロバイダにお問い合わせください。</block>
+  <block id="5e4631059cd88370a28a74ba7f45c7b3" category="list-text">容量は各サービスレベルにコミットされます。</block>
+  <block id="c6eb79bc54b68ec5e0cc19ef77aaf577" category="list-text">コミット済み容量および追加のサービスレベルは、期間中に追加できます。</block>
+  <block id="b7a31258533a3cf2b2f2fb992f0bfbe9" category="paragraph">使用済み容量は、サービスで現在使用されているストレージの容量（ TiB ）です。Flex Subscriptionサービスでは、特定のサービスレベルのすべてのボリュームのプロビジョニング済みサイズ（使用済みの論理容量または物理容量ではないサイズ）の合計が、そのサービスレベルの使用済み容量とみなされます。これには、次のもの</block>
+  <block id="6c4042dc443dec08ae243ea5ea442891" category="list-text">各ゾーンに複数のサブネットを作成できます。テナンシー内のゾーンごとに、 VLAN のリストが割り当てられています。これらすべての使用可能な VLAN について、対応するサブネットを作成できます。サブネットと VLAN の間には 1 対 1 のマッピングがあります。一方、サブネットとゾーンの間には1対多のマッピングがあります。</block>
+  <block id="e08a3b25a34118efdefa3a1edaa6eccf" category="list-text">ゾーン、VLAN、サブネットCIDR、ポートオーバーライドの設定を確認しておく必要があります</block>
+  <block id="0b59742ede85b3ac1476e79dfe9d7ffd" category="list-text">[ ネットワークの作成 *] をクリックします。必要に応じて、ゾーン、 VLAN 、およびポートオーバーライドを指定します。ポートオーバーライドが定義されている場合は、ドロップダウンから割り当てられたポートを選択します。そのテナントのすべてのネットワーク接続で、このポートはデフォルトポートではなく使用されます。</block>
+  <block id="b8e827c0152493781825b242975d6c40" category="admonition">ポートの上書きは、ゾーンの設定時にサポートチームによって設定されます。ポートの上書きを指定しない場合、ネットワークはデフォルトポートを使用し、そのテナント用に新しいVLANを作成します。</block>
+  <block id="2bdef957e1a7465023d8192c1e686bb3" category="list-text">メニューから* Support &gt; Service requests *を選択します。リストは、デフォルトの優先度「緊急」に基づいてフィルタリングされます。</block>
+  <block id="845fffd2b8888545a9ed124886ea1e8c" category="list-text">必要な優先度とステータスを選択して、サービスリクエストのリストを表示します。</block>
+  <block id="5a589d66c965f9372a354d1f3cdb0432" category="list-text">リストでサービスリクエストを見つけ、ステータスを[ステータス]列に表示します。</block>
+  <block id="02906cdb13370b573b988475d53d8ee0" category="list-text">Create Bucketダイアログボックスで、新しいバケットの名前とリージョンを入力します。</block>
+  <block id="027731e3845ffc59d88ab7606bd72e51" category="list-text">[ 作成（ Create ） ] をクリックします。これにより、バケットを作成するジョブが作成されます。</block>
+  <block id="35596c7bfb8bc52ad55a54a01f5ceec3" category="list-text">ジョブが完了したら、バケットリストでサーバのステータスを確認します。詳細については、を参照してください <block ref="08ab40cd728ae5bfe16832c715077c4e" category="inline-link-macro-rx"></block>。</block>
+  <block id="dc944b7331a18309c1a114300ebc3a09" category="inline-link-macro">Snapshotから共有を作成します</block>
+  <block id="d146e107531d3fc15b267b7b455173b6" category="paragraph">このセクションでは、共有の詳細を直接指定して新しい共有を作成する方法について説明します。既存の共有のSnapshotに基づいて新しい共有を作成する手順については、を参照してください <block ref="b28ea6b79b2f3efaa9ec1026e9ce8a3d" category="inline-link-macro-rx"></block>。</block>
+  <block id="1f8f57002aec566571816a8c7bcc858f" category="list-text">Snapshotポリシーを定義して、スケジュールに従ってファイル共有のSnapshotをキャプチャできます。詳細については、を参照してください <block ref="c1f0dcbbcbcd1f1c8ac788893304a8d4" category="inline-link-macro-rx"></block>。</block>
+  <block id="73bba8e3924209258078797f0bd65b15" category="list-text">サービスレベルを選択します。選択したサービスレベルに基づいて、 IOPS とスループットの上限が表示されます。</block>
+  <block id="9bfca2b22950588e2cdfd85ab9d055c9" category="list-text">このファイル共有にSnapshotが必要な場合は、次の手順を実行します。</block>
+  <block id="e80987beb08eb0b73f203d10e530112d" category="list-text">*毎時。*スナップショットを作成する分（時間単位）と保持する時間単位Snapshotの数を指定します。</block>
+  <block id="074901aa9935464121eb60ac62753ef6" category="list-text">*毎日。*スナップショットを作成する時刻（時間と分）を、保持する日単位Snapshotの数で指定します。Snapshotを1日に作成する必要がある時間を複数指定する場合は、カンマで区切って指定できます。例：5、10、15、 など。</block>
+  <block id="acffcba1bb1e8a0e9284e49f01f8eea9" category="list-text">*週単位。* Snapshotを作成する日時（曜日、時間、分）と、保持する週単位Snapshotの数を指定します。</block>
+  <block id="f304fa4708995eb0a05a06fefd0fd77b" category="list-text">保持するバックアップのタイプごとに、日単位、週単位、月単位の数を指定します。詳細については、を参照してください <block ref="73271519b35549db6517dd8a6d50b58e" category="inline-link-macro-rx"></block>。</block>
+  <block id="e498a9e1d785f741cd1e139a1013de8d" category="list-text">リストからディスクを探し、そのディスクのスナップショットアイコンをクリックします。（リスト内の項目の操作の詳細については、を参照してください <block ref="52762e1c21e70b201ce4b2db09bd46e5" category="inline-link-macro-rx"></block>）。</block>
+  <block id="faca791a72cc10c7d158748b3fc36324" category="paragraph">Snapshot が使用可能になるまでに数分かかることがあります。可能な場合は、このSnapshotをクローニングして別のディスクを作成できます。詳細については、を参照してください <block ref="a027f217b2a6dd3ee53451144340339e" category="inline-link-macro-rx"></block>。</block>
+  <block id="7c19f0fb885d470df120f8153802763b" category="paragraph">NetApp Keystone Flex Subscription（Flex Subscription）を通じて提供される拡張機能をサポートするために、NetApp Service Engineのさまざまなリリースで導入された機能は次のとおりです。</block>
+  <block id="67dcfbb1b00e382a9abd2aebd9355c84" category="paragraph">NetApp Keystone Flex サブスクリプションサービスに、 NetApp FabricPool テクノロジを活用した階層化機能が追加されました。使用頻度の低いデータを特定し、ネットアップのオンプレミス環境にあるコールドストレージに階層化します。階層化は、階層化の最上位サービスレベルまたはプレミアム階層化サービスレベルに登録することで選択できます。</block>
+  <block id="f1367cc0a2a732000842d078d27637d4" category="inline-link-macro">サービスレベル</block>
+  <block id="d02be4f3728f97b85c9e1ba3a5e00b9b" category="list-text"><block ref="d02be4f3728f97b85c9e1ba3a5e00b9b" category="inline-link-macro-rx"></block></block>
+  <block id="72b8adb2d65763d0d016194a98746bbb" category="paragraph">インポートしたディスクが NetApp Service Engine の許容可能な標準規格に準拠している場合、つまり、ディスクを動作可能にするために必要なすべてのパラメータが使用可能であれば、ディスクは「 Operational 」ステータスでインポートされ、 NetApp Service Engine から直接管理できます。ただし、一部のディスクは NetApp Service Engine 上の既存のディスクと同じ標準に含まれていない場合があります。インポート後、これらのディスクは「 Imported 」または「 Non-Standard 」ステータスで分類されます。ディスクのステータスおよびステータスを稼働させるための手順については、を参照してください <block ref="5e32ddb0b2ee6eb1a1baab0807d7f57d" category="inline-link-macro-rx"></block></block>
+  <block id="2d93581e06fa8876780c8fd43fd26464" category="paragraph">ディスクリストで、単純な情報を表示します。リストの機能の使用方法の詳細については、を参照してください <block ref="a61f12a3491d544119bfe19d47b5cc08" category="inline-link-macro-rx"></block>。</block>
+  <block id="4d8fcfa50b8d3dc31f0726a686a3de75" category="paragraph">バックアップAPIを使用して、環境内のボリューム（ファイル共有とディスク）のバックアップまたはリカバリポイントを表示および管理することができます。</block>
+  <block id="19dbc698af02f300022c166b89892888" category="paragraph">`name` ：ファイル共有の名前。「 hare_path 」：ファイル共有のパス。`fileserver_id : ファイルサーバの ID 。`size_GB`：gibsのファイル共有のサイズ。「 service_level 」： Standard 、 Premium 、 Premium-Tiering 、 Extreme 、 Extreme のいずれかのサービスレベル名を指定できます。'protocol' ：ファイル共有へのアクセスに使用されるプロトコル（ NFS 、 CIFS 、またはマルチプロトコル）「 security_style 」：セキュリティ形式（ UNIX または NTFS ）。「 export_policy` ：ファイル共有のエクスポートポリシー。</block>
+  <block id="740f501b1102bb991f506fc070b69b62" category="paragraph">id` ：ファイル共有の ID 。`name` ：ファイル共有の名前。`size_GB`：gibsのファイル共有のサイズ。「 service_level 」： Standard 、 Premium 、 Premium-Tiering 、 Extreme 、 Extreme のいずれかのサービスレベル名を指定できます。'protocol' ：ファイル共有へのアクセスに使用されるプロトコル（ NFS 、 CIFS 、またはマルチプロトコル）「 export_policy` ：ファイル共有のエクスポートポリシー。</block>
+  <block id="0ae4f649cb638a44103ed30a5e14cef6" category="list-text">Manage S3 Keys *ダイアログに、ユーザのキーのリストが表示されます。</block>
+  <block id="c07cfd1794ff312f24f76453c87f14a6" category="list-text">キーのリストで、削除するキーを見つけ、* Delete *アイコンをクリックします。</block>
+  <block id="c0cef8704079ac9d0a8d333c712e81e7" category="paragraph">ストレージサービスは、関連付けられたサービスレベルで、コミット済みストレージ容量にサブスクライブされます。NetApp Service Engineは、極端な階層化、プレミアム、プレミアム階層化、標準的なサービスレベルでファイルストレージとブロックストレージを提供し、またオブジェクトサービスレベルでオブジェクトストレージを提供します。</block>
+  <block id="beed3ed2a3622ebedadc1bce021a0a99" category="paragraph">階層化の卓越したサービスレベルとプレミアムなサービスレベルにより、コールドデータや非アクティブデータを監視して低コストのオブジェクトストレージ階層に階層化することで、ストレージの設置面積と関連コストを削減できます。階層化ポリシーは auto に設定されており、 31 日間非アクティブだったデータはデフォルトで階層化されています。</block>
+  <block id="3d4d1fc7bf36f420fa99c6f26575b46b" category="inline-link-macro">サービスレベル</block>
+  <block id="d031812ce034af3641d09a4021b0da54" category="paragraph">詳細については、を参照してください <block ref="497abe66362dea38708241c65bc89fa5" category="inline-link-macro-rx"></block>。</block>
+  <block id="89c9290084360b94aa7d480c8588eb8f" category="paragraph">ファイルおよびブロックストレージ項目が作成されると、サービスレベルに関連付けられます。要件の変化に応じて、サービスレベル間でワークロードを移動できます。卓越した階層化、プレミアム、プレミアム階層化、標準のサービスレベルは、さまざまなレベルのI/Oパフォーマンス（IOPS）とスループット（MBps）を提供するため、ストレージを要件に合わせて調整できます。</block>
+  <block id="e911bcc5173ca0894b6dda6da2bdc300" category="paragraph">階層化サービスについては、を参照してください <block ref="94c6f91dc11f09fa14ef2a1ab015d86b" category="inline-link-macro-rx"></block>。</block>
+  <block id="5d4907201ddbff03615305532b2cddb4" category="paragraph">バースト使用は、特定の時点までのサービスで許可されます。バースト使用は、（サブスクリプションで定義されているとおりに）別の料金で監視および課金されます。容量と使用状況の詳細については、を参照してください <block ref="2f87ccdc18878c679c9bc7ba5fe93305" category="inline-link-macro-rx"></block>。バックアップとディザスタリカバリをサポートするデータ保護サービスも提供されています。</block>
+  <block id="c6adba6217951ed0e1a8ae3a9a50e632" category="paragraph">詳細については、を参照してください</block>
+  <block id="77c31cb6f366fee2554a50788c64aadb" category="list-text"><block ref="77c31cb6f366fee2554a50788c64aadb" category="inline-link-rx"></block></block>
+  <block id="a2ddb4431dcf2a898d386c1f3b82c926" category="inline-link">ファイルサービス</block>
+  <block id="4e55f2b2dc7fadbfeab16b1c329eb9b9" category="list-text"><block ref="4e55f2b2dc7fadbfeab16b1c329eb9b9" category="inline-link-rx"></block></block>
+  <block id="85450ff0b80b6adb3c3ce5f738b79764" category="list-text"><block ref="85450ff0b80b6adb3c3ce5f738b79764" category="inline-link-rx"></block></block>
+  <block id="119be031ef4485d20c7683d291d0e9f6" category="inline-link">MetroCluster のドキュメント</block>
+  <block id="7ab4abf41de6d19de426375d57467f74" category="list-text"><block ref="7ab4abf41de6d19de426375d57467f74" category="inline-link-rx"></block></block>
+  <block id="5c0178adca796c95e44bf57340ccb9a6" category="list-text">ゾーンのデータ保護サービスに対するコミットメントを超えています</block>
+  <block id="10b183cb0f66d629a1220515b8bde592" category="list-text">ゾーンのデータ保護サービスに対するコミットメントを超えています。</block>
+  <block id="faee2c8e1167c37eb8137ff6d755cccb" category="cell">データ保護サービスに対するコミットメントを超えています。</block>
+  <block id="917e18378785f13487328819efa30f4f" category="paragraph">データ保護サービスとは、データのバックアップをサポートする方法と、必要に応じてデータをリカバリする方法を指します。</block>
+  <block id="94fab4b6d20e72c710b4dc92fdca1e8c" category="paragraph">NetApp Service Engineデータ保護サービスには、次の機能があります。</block>
+  <block id="c1feb6521ae42cd94cde4c528fa434ed" category="list-text">ディスクおよび共有のバックアップ（サブスクリプションの一部としてデータ保護サービスが必要）</block>
+  <block id="d45ea98ac0a65345f1dd94e65bb42a2a" category="list-text">ディスクおよび共有のディザスタリカバリ（サブスクリプションの一部としてData ProtectionまたはData Protection Advancedサービスが必要）</block>
+  <block id="6ceb0ddf0588a800d3609a1d6b11aa58" category="paragraph">バックアップとは、項目のコピーを作成してレプリケートし、元のゾーンとは別のゾーンにコピーを格納することを意味します。このゾーンでは各プロトコルが有効になっており（ブロックストレージの場合のみ）、 MetroCluster 以外は有効になっています。NetApp Service Engineでは、ファイルおよびブロックストレージでバックアップを実行できます（サブスクリプションにData Protectionサービスが必要）。共有 / ディスクのバックアップは、サブスクリプションで最も低コストのパフォーマンス階層（ Standard ）にあるバックアップゾーンに保存されます。</block>
+  <block id="f224ae50705a8eb518b8440ac9431b25" category="list-text">バックアップは合計消費容量に影響します。また、データ保護のサブスクリプション料金でバックアップにかかるコストも発生します。も参照してください <block ref="d8aa712671d5c6776c74e6424ca3a097" category="inline-link-macro-rx"></block>。</block>
+  <block id="69bcfb52aefab6f4be3aa7f37a3f0a77" category="paragraph">非同期のディザスタリカバリは、ファイルストレージとブロックストレージで利用でき、サブスクリプションにはデータ保護サービスが必要です。</block>
+  <block id="91d2b86f168e4314f617407b7033bd53" category="list-text">ディザスタリカバリコピーは、使用済み容量の合計につながります。また、ディザスタリカバリのサブスクリプション料金も発生します。も参照してください <block ref="d8aa712671d5c6776c74e6424ca3a097" category="inline-link-macro-rx"></block>。</block>
+  <block id="be630f9484e58240547de19490ba3bce" category="paragraph">MetroCluster は、別々の場所または障害ドメインに存在する2つの異なるゾーン間でデータと設定を同期的に複製するデータ保護機能です。一方のサイトで災害が発生したときは、管理者がサバイバーサイトからデータを提供できます。</block>
+  <block id="9c0a832783463bbbb05660067ef53922" category="list-text">同期ディザスタリカバリは、同期ディザスタリカバリサブスクリプション料金で発生します。も参照してください <block ref="d8aa712671d5c6776c74e6424ca3a097" category="inline-link-macro-rx"></block>。</block>
+  <block id="f0cf0de0e58b8e756eb56dddb27b7554" category="paragraph">このセクションの図は、データ保護料金の計算方法を示しています。</block>
+  <block id="49397b4ebb08764dcb02d0daef7ed910" category="list-text">データ保護サービス料金（元のボリュームの容量に対する料金）。</block>
+  <block id="2084542f3c28bddda24a9c6902f325e2" category="paragraph">同期ディザスタリカバリでは、使用量とコストは次の要素で構成されます。</block>
+  <block id="dc3f4e9988faa1da0926e2e92f5261bb" category="list-text">レプリケートされたコピーは、デスティネーション（ソースと同じ）の同じパフォーマンス階層で料金が発生します。</block>
+  <block id="1a7d3740cc266eca0374f4a70ee95ad8" category="list-text">データ保護：高度なサービス料金。</block>
+  <block id="5fe52caf721206b098580cb92dcb36f7" category="paragraph">参照APIの場合は、NetApp Service Engine Webインターフェイスにログインし、*左ナビゲーションペイン&gt;サポート&gt; APIドキュメント*からSwaggerインターフェイスを表示できます。</block>
+  <block id="66a0cc207bda8d47685024829c340964" category="paragraph">* Flexサブスクリプションの一部として提供されるストレージサービスは何ですか。*詳細については、を参照してください <block ref="2d7ae50d49b6f40472431f1209fdcf6f" category="inline-link-macro-rx"></block></block>
+  <block id="d763cfba66b1ebf8cb2086744098068d" category="paragraph">* Flexサブスクリプションは何にマッピングされますか？* Flexサブスクリプションは、1つのサイトまたは1つのデータセンターにマッピングされ、異なるサービスレベルで構成されます。</block>
+  <block id="d3867d58510e8dc8e1f07c8ccef6849c" category="paragraph">*階層化サービス・レベルの高度な階層化とプレミアム階層化のメリットは何ですか*階層化は'階層化とプレミアム階層化のサービス・レベルで有効化されており'ストレージの設置面積と関連コストを削減できますネットアップでは、データの 25% がホットで、残りの 75% は使用頻度やコールドデータが低く、コールドストレージに移動します。また、使用状況レポートを確認して、データへのアクセス頻度を把握したり、情報に基づいて階層化サービスを有効にしたりすることができます。</block>
+  <block id="91d3cce2afd7a0a49cdd35f6ecd03319" category="list-text">サーバの非同期ディザスタリカバリデータ保護を有効にします。NetApp Service Engine でのディザスタリカバリの仕組みについては、を参照してください <block ref="a77c34ddf88ef814fd6a18a00bec0fb7" category="inline-link-macro-rx"></block>。</block>
+  <block id="a3a3295c8ca71cbdbd8a6b7229c6e380" category="list-text">同期ディザスタリカバリデータ保護のサブスクリプションがある場合、この機能はデフォルトで有効になります。</block>
+  <block id="319d8bdfe774ee2725dd60c484f69915" category="list-text">CIFS 対応にする。NFSサービスはデフォルトで有効になっています。</block>
+  <block id="c905f5db0577e6e647ed0c7f81c2849e" category="list-text">CIFSサーバの場合は、Active Directoryのクレデンシャル、DNSサーバ、サーバ名を確認し、必要に応じてActive Directoryの組織単位（OU）を確認しておく必要があります。Active Directory のクレデンシャルは、コンピュータを Active Directory ドメインに追加する権限があるユーザのものである必要があります。</block>
+  <block id="460e9362f4cab8c9be8f760e6a0dfbf4" category="paragraph"><block ref="c7e0d953db804fc2899c3d7dfab9e722" category="inline-image-macro-rx" type="image"></block>.手順</block>
+  <block id="f81ba4d3d20f8f43a4e0606b73abc8af" category="list-text">ドメイン名、DNSサーバIP、サーバ名を追加し、必要に応じてActive Directoryの組織単位の名前を追加します。</block>
+  <block id="d8d146845f60f1b46e9a66d89f33fb23" category="admonition">同期ディザスタリカバリデータ保護のサブスクリプションを作成している場合、この機能はゾーンに対して自動的にアクティブ化され、同期ディザスタリカバリ（Synchronous Disaster Recovery）トグルボタンがデフォルトで有効になります。このボタンは無効にできません。</block>
+  <block id="993bcf2759df9f59acf3f5c0f23121ba" category="list-text">必要に応じて、タグと値を追加できます。</block>
+  <block id="6e8954a7c4cfcf1082a0a2d82fb50808" category="admonition">CIFS対応のサーバを作成する場合は、入力したドメイン名（FQDN）にActive Directoryユーザ名とActive Directoryパスワードを入力し、*確認*をクリックする必要があります。</block>
+  <block id="8240b24ccc41973db8acd6d12cfb4f39" category="paragraph">サーバの作成は非同期ジョブとして実行されます。可能です</block>
+  <block id="5f230dce554a2eea512cf6ad0f2aec04" category="list-text">ジョブが完了したら、の[サーバー]リストでサーバーのステータスを確認します</block>
+  <block id="5b710f992e8961de5ec796dc23d97e2a" category="paragraph">Flexサブスクリプションは、事前定義されたパフォーマンスサービスレベル（サービスレベル）で、ネットアップ、パートナー、またはお客様がオンプレミスに導入して運用できるブロックデータ、ファイルデータ、オブジェクトデータの種類に対して、ストレージ容量を提供するサブスクリプションベースのサービスです。Flex サブスクリプションが提供する基本サービスに加えて、追加料金でアドオンサービスを選択できます。これらのサービスについては、次の図で説明します。</block>
+  <block id="8a153aa7d7f3e04524a8ba26c82b5715" category="admonition">バックアップサービスとディザスタリカバリサービスはアドオンサービスとして提供され、スナップショットは基本的なストレージサービスの一部として提供される。</block>
+  <block id="bc1bf94ffed46e88b5723954ed7d8ed3" category="cell">単一リージョンのSnapshot（基本的なストレージサービスの一部として利用可能）</block>
+  <block id="a68082b73ad5e36bea07f138e957fef2" category="cell">毎時、日次、週次、および月単位のSnapshotに基づいて保持するバックアップの数</block>
+  <block id="d65f8cd5dcce368ab1e4e1c317fa36db" category="list-text">リスト内でユーザを検索し、そのユーザの編集アイコンをクリックします。</block>
+  <block id="ea1458948853c05d7afdd2d8493a5bd7" category="list-text">ユーザー編集（Edit User）*ダイアログボックスで、ユーザーのオブジェクトストレージグループを変更します。</block>
+  <block id="d29061be317f608ea8a5842ec8713b79" category="list-text">[ 更新（ Update ） ] をクリックします。これにより、ユーザーのグループを更新するジョブが作成されます。ジョブの追跡については、を参照してください <block ref="368a1d704bdc9ee6ea14e4516dfa810f" category="inline-link-macro-rx"></block>。</block>
+  <block id="665858ebca91aa26802a3a86bee3458f" category="paragraph">Capacity Usage for Keystone Subscriptionsページには、一定期間にわたるサブスクリプション内の各ストレージサービスレベルの使用容量が表示されます。ネットアップ管理者は、サブスクリプション内のすべてのテナントとパートナーの容量使用状況レポートを表示できます。パートナー管理者は、加入している各サービスレベルについて、Flexサブスクリプションの使用状況に関する容量レポートを表示できます。</block>
+  <block id="a042d1063a6b211be7ada8ceec871888" category="paragraph">このページのグラフィカルレポートを使用して、すべてのサービスレベルおよびアドオンデータ保護サービスの使用傾向を別々のタブで確認できます。サービスがバースト状態の場合、バナーには現在の課金サイクルで使用されているバースト容量が表示されます。</block>
+  <block id="47231d0aa304965e78b23d4e17fde44e" category="paragraph">このページのグラフィカルレポートを使用して、すべてのストレージサービスのトレンドと、データ保護や高度な保護などのアドオンサービスを別々のタブで確認できます。サービスがバースト状態の場合、バナーには現在の課金サイクルで使用されているバースト容量が表示されます。</block>
+  <block id="8d773f3c00141970609401182079d7d0" category="list-text">リストを表示するには、メニューから* Object Storage &gt; Bucket*を選択します。</block>
+  <block id="6f6cb72d544962fa333e2e34ce64f719" category="list-text">サイズ</block>
+  <block id="c8308b1eba7ba926a61b8fd802194386" category="list-text">オブジェクト</block>
+  <block id="a2a8d61c91e599b9767a25a53af35534" category="list-text">アクション（バケットの削除など）</block>
+  <block id="2a96a4cfac487b5cc41e8fd4506c4230" category="sidebar">パフォーマンスサービスレベルまたはサービスレベル</block>
+  <block id="469b359223644ae76f8489201eaba251" category="sidebar">Azure NetApp Files を管理します</block>
+  <block id="1b0a895ad5dbae078e4d9e0514db2461" category="sidebar">Azure NetAppアカウントを管理</block>
+  <block id="5397c058f4d19f86cf260de9d12c163e" category="sidebar">Azure容量プールを管理します</block>
+  <block id="3367785c4c24c46720a1f71a3ba620db" category="sidebar">Azureボリュームを管理する</block>
+  <block id="12c44922182533b1b7bb4417b61b95ec" category="sidebar">Cloud Volumes Service for Google Cloud Platformを管理します</block>
+  <block id="8f827fcb6054a7882181161868caf231" category="sidebar">ボリュームをバックアップします</block>
 </blocks>

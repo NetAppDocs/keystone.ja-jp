@@ -16,6 +16,8 @@ summary: Keystone の承認と認証
 [role="lead"]
 NetApp Service Engine REST API には、問題 HTTP 要求を実行できる任意の Web ブラウザまたはプログラミングプラットフォームを使用してアクセスできます。NetApp Service Engine は、基本的な HTTP 認証メカニズムに加えて、 Java Web Token （ JWT ）ベアラ認証をサポートしています。API を呼び出す前に、ユーザを認証する必要があります。
 
+参照APIの場合は、NetApp Service Engine Webインターフェイスにログインし、*左ナビゲーションペイン>サポート> APIドキュメント*からSwaggerインターフェイスを表示できます。
+
 
 
 == HTTP ステータスコード

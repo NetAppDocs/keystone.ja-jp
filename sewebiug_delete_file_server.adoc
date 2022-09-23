@@ -17,7 +17,7 @@ summary: Keystone ファイルサーバを削除する
 * 注意： * ファイルサーバを削除すると、次の項目も削除されます。
 
 * ファイルサーバに関連付けられているすべてのバックアップ
-* ファイルサーバに関連付けられた災害復旧複製コピーサーバの削除を元に戻すことはできません。
+* ファイルサーバに関連付けられた、ディザスタリカバリでレプリケートされたすべてのコピー。サーバの削除を元に戻すことはできません。
 
 
 ファイルサーバを削除するには、先にサーバ上の共有をすべて削除する必要があります。
@@ -36,7 +36,7 @@ image:sewebiug_image21.png["エラー：グラフィックイメージがあり�
 * CIFS 対応のファイルサーバを削除しても、 Active Directory コンピュータオブジェクトは削除されません。Active Directory 管理者に、削除したファイルサーバのコンピュータオブジェクトを手動で Active Directory から削除するよう依頼します。
 * Delete Server は非同期ジョブとして実行されます。可能です
 +
-** ジョブリストでジョブのステータスを確認します。ジョブの追跡については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。
+** ジョブリストでジョブのステータスを確認します。ジョブの追跡については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。
 ** ジョブが完了したら、サーバーがサーバーリストから削除されていることを確認します。
 
 

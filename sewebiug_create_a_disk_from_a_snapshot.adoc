@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: sewebiug_create_a_disk_from_a_snapshot.html 
-keywords: netapp, keystone, create, disk, Snapshot 
+keywords: netapp, keystone, create, disk, snapshot 
 summary: Snapshot からディスクを作成します 
 ---
 = Snapshot からディスクを作成します
@@ -14,25 +14,25 @@ summary: Snapshot からディスクを作成します
 
 
 [role="lead"]
-既存の Snapshot から新しいディスクを作成できます。Snapshot からクローニングされた新しいディスクには、 Snapshot の作成元のディスクと同じプロパティが適用されます。
+既存のスナップショットから新しいディスクを作成できます。Snapshotからクローニングされた新しいディスクには、Snapshotの作成元のディスクと同じプロパティが割り当てられます。
 
 .手順
-. 左側のナビゲーションペインから *Block Storage* を選択し、 *Disks* を選択します。
-. Create Disk （ディスクの作成）をクリックし、 * Clone from snapshot （スナップショットからのクローン） * を選択します。テナントのすべてのディスクが表示された * ディスクの選択 * 画面が表示されます。ディスクは、リージョン、ゾーン、およびサブテナントでフィルタできます。動作状態のディスクを選択することができます。
-. 目的のディスクの横にあるチェックボックスをオンにして、「 * 次へ * 」をクリックします。Select Snapshot * （スナップショットの選択）画面が表示され、ディスクのすべてのスナップショットが表示されます。
+. 左側のナビゲーションペインから *Block Storage* を選択し、 *Disks* を選択します。テナンシーに対応する既存のディスクのリストが表示されます。
+. Create Disk （ディスクの作成）をクリックし、 * Clone from snapshot （スナップショットからのクローン） * を選択します。または、スナップショットのクローン作成に使用するディスクがわかっている場合は、ディスクを探してその横にあるコピーボタンをクリックします。ディスクは動作状態である必要があります。テナントのすべてのディスクを含む* Create Disk from Snapshot *（スナップショットからディスクを作成）画面が表示されます。ディスクは、リージョン、ゾーン、およびサブテナントでフィルタできます。動作状態のディスクを選択することができます。オブジェクトの状態については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states["オブジェクトの状態"]
+. 目的のディスクの横にあるチェックボックスをオンにして、「 * 次へ * 」をクリックします。ディスクのスナップショットが表示されます。
 +
 
-NOTE: 選択したディスクについて、 SnapCenter Service Engine の外部の 環境に作成された Snapshot がある場合、それらの Snapshot がインポートされ、選択した Snapshot のリストに表示されます。インポートされたこれらの Snapshot を選択し、そこから新しいディスクのクローンを作成できます。
+NOTE: 選択したディスクについて、SnapCenter Service Engineの外部の環境で作成されたSnapshotがある場合、それらのSnapshotがインポートされ、選択したSnapshotのリストに表示されます。これらのインポートされたSnapshotを選択し、そこから新しいディスクのクローンを作成できます。
 
 +
-特定の Snapshot を検索するか、スケジュールタイプを選択して Snapshot をフィルタリングできます。
+特定のSnapshotを検索するか、スケジュールタイプを選択してSnapshotをフィルタリングできます。
 
-. クローンを作成するスナップショットの横にあるチェックボックスをオンにし、 * 次へ * をクリックします。新しいディスクは、選択した Snapshot のプロパティを継承します。
-. 名前 * とディスクパス * を追加します。サービスレベル * の割り当てなどの他の設定を更新し、 [*Create] をクリックします。
+. クローンを作成するスナップショットの横にあるチェックボックスをオンにし、* Next *（次へ）をクリックします。新しいディスクは、選択したスナップショットのプロパティを継承します。
+. 名前 * とディスクパス * を追加します。サービスレベル * の割り当てなどの他の設定を更新し、 [*Create] をクリックします。ニーズに最も適したサービスレベルを選択します。.終了後
 
 
 * ディスクの作成 * は非同期ジョブとして実行されます。可能です
 
-* ジョブリストでジョブのステータスを確認します。ジョブの追跡については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。
+* ジョブリストでジョブのステータスを確認します。ジョブの追跡については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。
 * ジョブが完了したら、ディスクのステータスを「 * ディスク * 」リストで確認します。
 

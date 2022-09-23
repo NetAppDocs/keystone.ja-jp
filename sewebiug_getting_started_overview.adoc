@@ -14,15 +14,20 @@ summary: Keystone の概要
 
 
 [role="lead"]
-このセクションでは、 NetApp Service Engine ポータルを使用して作業を開始する方法について説明します。次のものが含まれます
+このセクションでは、 NetApp Service Engine ポータルを使用して作業を開始する方法について説明します。
 
-* NetApp Service Engine Web インターフェイスにログインします。
+
+NOTE: NetApp Service Engineポータルでは、サポートチームが設定したサブスクリプションの設定に基づいて、地域やゾーンなどの一部の情報が自動的に入力されていることを確認できます。
+
+このポータルでアクティビティを開始するには、次の手順に従います。
+
+* NetApp Service Engine Webインターフェイスにログインします。
 +
 ** ユーザ名とパスワードを使用してログインします
-** NetApp SSO を使用してログインします
-** NetApp Service Engine Web インターフェイスからログアウトします
+** NetApp SSOを使用してログインする方法については、を参照してください link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html["NetApp Service Engine Web インターフェイスにログインします"]
 
 
-* テナントを選択します
-* NetApp Service Engine Web インターフェイスの概要
+* テナントを選択します。ダッシュボードが表示されます。詳細については、を参照してください link:sewebiug_dashboard.html["Flex サブスクリプションダッシュボードを表示します"]
 
+
+NetApp Service Engine Webインターフェイスの概要については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html["NetApp Service Engine Web インターフェイスの概要"]

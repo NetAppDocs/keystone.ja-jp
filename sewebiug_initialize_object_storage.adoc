@@ -29,5 +29,5 @@ image:sewebiug_image31.png["エラー：グラフィックイメージがあり�
 +
 image:sewebiug_image32.png["エラー：グラフィックイメージがありません"]
 
-. ジョブリストを調べて、オブジェクトストレージが正常に初期化されていることを確認します。
+. ジョブリストを調べて、オブジェクトストレージが正常に初期化されていることを確認します。詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["ジョブおよびジョブステータスインジケータ"]。
 

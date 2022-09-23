@@ -18,8 +18,8 @@ summary: Keystone は、ファイル共有のアドホックスナップショ�
 
 .手順
 . を表示します link:sewebiug_view_shares.html#view-shares["共有リスト"]。
-. リストから共有を選択し、その共有の Snapshot アイコンをクリックします。（リスト内の項目の操作の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["リストビューアクションをリスト表示します"]。
+. リストから共有を選択し、その共有のSnapshotアイコンをクリックします。（リスト内の項目の操作の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["リストビューアクションをリスト表示します"]。
 . スナップショットの作成ダイアログで ' スナップショットの名前を入力し ' * 作成 * をクリックします
 
 
-Snapshot が使用可能になるまでに数分かかることがあります。
+Snapshot が使用可能になるまでに数分かかることがあります。可能な場合は、このSnapshotをクローニングして別の共有を作成できます。詳細については、を参照してください link:sewebiug_create_file_share_from_snapshot.html["Snapshotからファイル共有を作成します"]。

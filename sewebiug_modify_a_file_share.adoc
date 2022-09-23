@@ -14,12 +14,12 @@ summary: Keystone がファイル共有を変更する
 
 
 [role="lead"]
-共有名、共有の種類（ CIFS 、 NFS 、マルチプロトコル）、サービスレベル、容量、 Snapshot ポリシー、エクスポートポリシー、アクセス制御リスト（ ACL ）、およびタグ
+共有名、サービスレベル、容量、Snapshotポリシー、エクスポートポリシーを変更できます。 ファイル共有内のAccess Control List（ACL；アクセス制御リスト）およびタグ
 
 
-NOTE: この方法を使用すると、可能な場合は共有を別のパフォーマンスレベルに移動できます。共有タイプを変更できるのは、サーバがそれぞれのサービスをサポートしている場合のみです。
+NOTE: この方法を使用すると、共有を別のサービスレベルに移動できます（可能な場合）。共有タイプを変更できるのは、サーバがそれぞれのサービスをサポートしている場合のみです。
 
-ファイル共有が動作状態である必要があります。ボリュームのステータスとそれらを運用するための手順については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html["ディスクを表示します"] および link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states["オブジェクトの状態"]
+ファイル共有が動作状態である必要があります。ボリュームのステータスとそれらを運用するための手順については、を参照してください link:sewebiug_view_disks.html["ディスクを表示します"] および link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states["オブジェクトの状態"]
 
 .手順
 . を表示します link:sewebiug_view_shares.html#view-shares["共有リスト"]。
@@ -30,6 +30,6 @@ NOTE: この方法を使用すると、可能な場合は共有を別のパフ�
 
 Modify share は非同期ジョブとして実行されます。可能です
 
-* ジョブリストでジョブのステータスを確認します。ジョブの追跡については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。
+* ジョブリストでジョブのステータスを確認します。ジョブの追跡については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。
 * ジョブが完了したら、 [ 共有 ] リストで共有のステータスを確認します。
 

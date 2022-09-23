@@ -30,3 +30,5 @@ NetApp Keystone Flex サブスクリプションサービスには、使用頻�
 * ボリュームのバックアップを階層化サービスレベルで有効または無効にします。
 * ボリュームのディザスタリカバリを階層化サービスレベルで有効または無効にします。
 
+
+課金については、を参照してください link:nkfsosm_kfs_billing.html#billing-for-fabricpool-usage["FabricPool 使用のための課金"]。

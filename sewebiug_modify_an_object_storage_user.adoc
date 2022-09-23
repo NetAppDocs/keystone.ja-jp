@@ -17,17 +17,12 @@ summary: Keystone がオブジェクトストレージユーザを変更する
 ユーザ名やユーザが割り当てられているグループなど、オブジェクトストレージユーザの詳細を変更するには、このメソッドを使用します。
 
 .手順
-. を表示します link:sewebiug_view_a_list_of_users.html#view-a-list-of-users["ユーザリスト"]。
-. 正しいサブテナントが選択されていること、および表示に「 Users 」（グループではない）が表示されていることを確認します。
-. リスト内でユーザを探し、そのグループの [Edit] アイコンをクリックします。
+. オブジェクトストレージユーザを表示します link:sewebiug_view_the_object_storage_group_and_users.html["オブジェクトストレージグループおよびユーザを表示します"]。
+. 正しいサブテナントが選択されていることを確認し、「* users *」タブをクリックします。
+. リスト内でユーザを検索し、そのユーザの編集アイコンをクリックします。
 +
-リスト内の項目の操作の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["リストビューアクションをリスト表示します"]。
+リスト内の項目の操作の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["リストビューアクションをリスト表示します"]。
 
-. Edit User ダイアログボックスで、次の操作を行います。
-+
-.. ユーザ名を入力します。
-.. ユーザが属するオブジェクトストレージグループを選択します。
-
-
-. [ 更新（ Update ） ] をクリックします。指定した設定でユーザーを作成するジョブが作成されます。
+. ユーザー編集（Edit User）*ダイアログボックスで、ユーザーのオブジェクトストレージグループを変更します。
+. [ 更新（ Update ） ] をクリックします。これにより、ユーザーのグループを更新するジョブが作成されます。ジョブの追跡については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。
 

@@ -18,7 +18,7 @@ sidebar:
       entries:
       - title: サービス容量の定義
         url: "/nkfsosm_keystone_service_capacity_definitions.html"
-      - title: パフォーマンスサービスレベル
+      - title: パフォーマンスサービスレベルまたはサービスレベル
         url: "/nkfsosm_performance.html"
       - title: サービスレベルの指標と定義
         url: "/nkfsosm_service_level_metrics_and_definitions.html"
@@ -154,7 +154,7 @@ sidebar:
         url: "/sewebiug_delete_an_s3_key_for_a_user.html"
     - title: クラウドサービスを管理します
       entries:
-      - title: クラウドサービスの管理
+      - title: クラウドサービスを管理します
         entries:
         - title: 概要
           url: "/sewebiug_managing_subscribed_services_overview.html"
@@ -166,19 +166,19 @@ sidebar:
           url: "/sewebiug_modify_the_subscribed_service_details.html"
         - title: サブスクライブしたサービスを削除します
           url: "/sewebiug_delete_a_subscribed_service.html"
-      - title: Azure NetApp Files の管理
+      - title: Azure NetApp Files を管理します
         entries:
-        - title: Azure NetApp アカウントの管理
+        - title: Azure NetAppアカウントを管理
           url: "/sewebiug_managing_azure_netapp_accounts.html"
-        - title: Azure 容量プールの管理
+        - title: Azure容量プールを管理します
           url: "/sewebiug_managing_azure_capacity_pools.html"
-        - title: Azure ボリュームの管理
+        - title: Azureボリュームを管理する
           url: "/sewebiug_managing_azure_volumes.html"
-      - title: "『 Managing Cloud Volumes Service for Google Cloud Platform 』を参照してください"
+      - title: Cloud Volumes Service for Google Cloud Platformを管理します
         url: "/sewebiug_managing_gcp_cvs.html"
     - title: レポートを表示します
       url: "/sewebiug_working_with_reports.html"
-    - title: バックアップの操作
+    - title: ボリュームをバックアップします
       url: "/sewebiug_back_up_file_shares_and_disks.html"
     - title: サブスクリプションを管理します
       url: "/sewebiug_managing_subscriptions.html"

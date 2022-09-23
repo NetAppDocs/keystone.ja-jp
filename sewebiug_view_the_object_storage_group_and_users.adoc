@@ -4,7 +4,7 @@ permalink: sewebiug_view_the_object_storage_group_and_users.html
 keywords: netapp, keystone, view, object, storage, group, users, 
 summary: Keystone によってオブジェクトストレージグループとユーザが表示されます 
 ---
-= オブジェクトストレージグループとユーザを表示します
+= オブジェクトストレージグループおよびユーザを表示します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -17,14 +17,14 @@ summary: Keystone によってオブジェクトストレージグループと�
 User Management リストには、指定したサブテナントのオブジェクトストレージユーザおよびグループが表示されます。
 
 .手順
-. メニューから、オブジェクトストレージ > ユーザを選択します。
+. メニューから* object storage > User Management *を選択します。
 . 必要に応じて、サブテナントドロップダウンメニューを使用して別のサブテナントを選択します。
-. ユーザとグループのリンクを使用して、ユーザとグループの表示を切り替えます。
+. [*Users*]タブと[*Groups]タブを使用して、ユーザとグループの表示を切り替えます。
 +
 ** Users リストには、選択したサブテナントに対して定義されているオブジェクトストレージユーザが表示されます。各ユーザについて、ユーザの名前と所属先のオブジェクトストレージグループが表示されます。
-** グループリストには、選択したサブテナントに対して定義されているオブジェクトストレージグループが表示されます。グループごとに、グループ名と S3 ポリシーが表示されます。
+** グループリストには、選択したサブテナントに対して定義されているオブジェクトストレージグループが表示されます。グループ名と、そのグループに割り当てられているS3ポリシーが表示されます。バケットグループとS3ポリシーについては、を参照してください https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#access-policy-overview["バケットとグループのアクセスポリシー"]。
 +
-リストの機能の使用方法の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["リストビュー"]。
+リストの機能の使用方法の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["リストビューアクションをリスト表示します"]。
 
 
 

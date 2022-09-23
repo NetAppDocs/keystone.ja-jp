@@ -17,14 +17,14 @@ summary: Keystone は、ユーザの S3 キーを削除します
 ユーザの S3 キーを削除するには、このメソッドを使用します。
 
 .手順
-. を表示します link:sewebiug_view_a_list_of_users.html#view-a-list-of-users["ユーザリスト"]。
-. 正しいサブテナントが選択されていること、および表示に「 Users 」（グループではない）が表示されていることを確認します。
+. オブジェクトストレージユーザを表示します link:sewebiug_view_the_object_storage_group_and_users.html["オブジェクトストレージグループおよびユーザを表示します"]。
+. 正しいサブテナントが選択されていることを確認し、「* users *」タブをクリックします。
 . リスト内でユーザを検索し、そのグループの [ キー ] アイコンをクリックします。
 +
-リスト内の項目の操作の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["リストビューアクションをリスト表示します"]。
+リスト内の項目の操作の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["リストビューアクションをリスト表示します"]。
 
-. Manage S3 Keys （ S3 キーの管理）ダイアログが表示され、ユーザのキーのリストが示されます。
-. キーのリストで、削除するキーを見つけ、 Delete アイコンをクリックします。
+. Manage S3 Keys *ダイアログに、ユーザのキーのリストが表示されます。
+. キーのリストで、削除するキーを見つけ、* Delete *アイコンをクリックします。
 . 削除操作を確定するには、 * 確認 * をクリックします。キーがユーザキーのリストから削除されます。
 . [* 閉じる ] をクリックして、 [S3 キーの管理 ] ダイアログボックスを閉じます。
 

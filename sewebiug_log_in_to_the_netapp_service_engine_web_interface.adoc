@@ -35,10 +35,10 @@ NetApp Service Engine 管理者に、 NetApp Service Engine インスタンス�
 | ロール | にアクセスします 
 
 
-| パートナー管理者 / アカウント所有者 | テナントとそのサブスクリプションを管理するすべてのタスクを実行できます。詳細については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html["リンクをクリックしてください"]。 
+| パートナー管理者 / アカウント所有者 | テナントとそのサブスクリプションを管理するすべてのタスクを実行できます。詳細については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html#activities-that-you-can-perform-as-a-service-provider-administrator["リンクをクリックしてください"]。 
 
 
-| お客様 / テナント管理者 | お客様やテナントの管理者は、サブテナントの管理に関連するすべての操作を実行できます。詳細については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html["リンクをクリックしてください"]。 
+| お客様 / テナント管理者 | お客様やテナントの管理者は、サブテナントの管理に関連するすべての操作を実行できます。詳細については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html#activities-that-you-can-perform-as-a-customertenant-administrator["リンクをクリックしてください"]。 
 
 
 | ネットアップ管理者（読み取り） | すべてのコンポーネントに対する読み取り専用アクセス。 
@@ -60,7 +60,7 @@ NetApp Service Engine 管理者に、 NetApp Service Engine インスタンス�
 .手順
 . Web ブラウザで、 NetApp Service Engine ポータルの URL にアクセスします。ログインページが表示されます。
 . 「 * ローカルユーザーサインイン * 」を選択します。
-. NetApp Keystone へのログインページで、ユーザー名とパスワードを入力し、 * ログイン * をクリックします。
+. NetApp Service Engineへのログインページで、ユーザ名とパスワードを入力し、*ログイン*をクリックします。
 . ログインに成功すると、 NetApp Service Engine Web インターフェイスがロードされ、ダッシュボードで開きます。GUI の概要については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["NetApp Service Engine Web インターフェイスの概要"]。
 
 
@@ -73,7 +73,7 @@ NOTE: ログインに成功してもダッシュボードが表示されない�
 
 NetApp SSO でログインするには、次のものが必要です。
 
-* NetApp SSO アカウント。アカウントはネットアップサポートサイトで申請できます。ログイン画面で、 * Create NetApp SSO account * を選択して次の手順を実行します。
+* NetApp SSO アカウント。NetApp Support Site でアカウントを要求できます。ログイン画面で、「*ネットアップSSOアカウントの作成」を選択し、次の手順を実行します。
 * NetApp Service Engine ポータルへの URL 。
 * Web ブラウザ。
 

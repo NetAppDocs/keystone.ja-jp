@@ -18,8 +18,8 @@ summary: Keystone は、ディスクのアドホックスナップショット�
 
 .手順
 . を表示します link:sewebiug_view_disks.html#view-disks["ディスクのリスト"]。
-. リストからディスクを探し、そのディスクの Snapshot アイコンをクリックします。（リスト内の項目の操作の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview#list-view["リストビューアクションをリスト表示します"]）。
+. リストからディスクを探し、そのディスクのスナップショットアイコンをクリックします。（リスト内の項目の操作の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview#list-view["リストビューアクションをリスト表示します"]）。
 . スナップショットの作成（ Create Snapshot ）ダイアログボックスで、スナップショットの名前を入力し、 * 作成 * （ Create * ）をクリックします。
 
 
-Snapshot が使用可能になるまでに数分かかることがあります。
+Snapshot が使用可能になるまでに数分かかることがあります。可能な場合は、このSnapshotをクローニングして別のディスクを作成できます。詳細については、を参照してください link:sewebiug_create_a_disk_from_a_snapshot.html["Snapshot からディスクを作成します"]。
