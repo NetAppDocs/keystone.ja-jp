@@ -188,7 +188,6 @@
   <block id="fc4c528ae40d23f09280dab99194a955" category="cell">「 name 」</block>
   <block id="8bc48e5f4724775e4f4601a4e4ed2687" category="cell">Cloud Volumes Service インスタンスの名前。</block>
   <block id="5df5e1234496b4f4567b25a4b7b26ba3" category="cell">'cc_working _env'</block>
-  <block id="2fa447a56e54e8572e7ecaf28e975e80" category="cell">Cloud Manager 内の作業環境名。</block>
   <block id="c67906f7bee9799974a4de606d2420e2" category="cell">'cc_client_id</block>
   <block id="2e83a5722e857f87078cabdc3cda5f38" category="cell">Auth0 サービス ID 。</block>
   <block id="f00a35e02aec20c8d9cf536f9dd3bf33" category="cell">'cc_refresh_ctoken</block>
@@ -200,7 +199,6 @@
   <block id="fdfeff0c0589d5ab72dc570db74d59a7" category="cell">'cc_credentials_id</block>
   <block id="05daf3080cc6bf51d9a7488838b0650f" category="cell">Cloud Centra 作業環境の ID 。</block>
   <block id="bca25748ae9ad08875b859cc2005f825" category="cell">「 azure_client_id 」です</block>
-  <block id="8c39fc45872124f630a477f8a9db2747" category="cell">アプリケーション（クライアント） ID 。Cloud Manager が Azure Active Directory での認証に使用する Active Directory サービスプリンシパルの ID 。</block>
   <block id="4e293b85fede02c268e93ef73f188710" category="cell">「 azure_client_secret 」というプロンプトが表示されます</block>
   <block id="222fdbc61ee44a202596354abd406a32" category="cell">サービスプリンシパルアプリケーションのクライアントシークレットの値。</block>
   <block id="476995152e4de0614e55d1be3004b494" category="cell">「 azure_ttenant_id 」です</block>
@@ -1922,7 +1920,6 @@
   <block id="0bb5849ddc549d6d9a0166d3663f0d1e" category="admonition">CIFS 共有の場合、共有パスの末尾に「 $ 」文字を追加すると、「 pathtomyiddenshare$ 」のように非表示の共有になります。</block>
   <block id="ff138ca03bebc3f223aa7473c49093cc" category="summary">ネットアップサービスエンジン REST API</block>
   <block id="f85fe16835da940dc0eded602be1d88a" category="doc">NetApp Service Engine REST API</block>
-  <block id="4bb8f28d1ae5f4c793395a1ce16ebd50" category="paragraph">多数の API 呼び出しが大量のレコードを返します。オフセット値と制限値を指定することにより ' レコード数を制限することができます</block>
   <block id="2c9821eb0bfa9053dd0b371fa82738f0" category="list-text">* 返されるレコードの数を制限します。</block>
   <block id="75100d42069de12445ab076dab1a5044" category="list-text">* オフセット。 * 最初のレコードを返す前にスキップするレコードの数。たとえば、 1 のオフセットは最初のレコードをスキップし、 2 番目のレコードから戻ります。</block>
   <block id="6e38eaf3c64cc8f5260081b7bb3a1eb2" category="paragraph">また、応答を並べ替えたり、並べ替えたりすることもできます。</block>
@@ -1968,7 +1965,6 @@
   <block id="6be9adc0bb5eb38197744a6ba6770654" category="list-text">サブテナントが Google Cloud サービスに登録されている。</block>
   <block id="b22f259a7845cf612bcf5a7d485a6137" category="list-text">加入者のサービスアカウントの JSON ファイルが必要です。 Google Cloud インスタンスに関連付けられている GCP プロジェクト番号を確認しておきます。</block>
   <block id="b3ae8c33b08587c2b6be6031629d0de3" category="inline-link">Cloud Volumes Service for Google Cloud をセットアップします</block>
-  <block id="084cafb5240ee412a1336b10f1e95d54" category="list-text">Cloud Volumes Service for GCP がすでに Cloud Manager でサポートチームによって設定されていることを確認します。詳細については、を参照してください<block ref="1956ecad31d7ae695fe28eacaf067e5e" category="inline-link-rx"></block>。</block>
   <block id="300a306a4df8277005591f8c37dca4ad" category="list-text">[ * 作成 ] をクリックし、 [* Google Cloud * ] をクリックします。</block>
   <block id="d3e4adc8f56c48d2cb91db12131aa538" category="list-text">Google Cloud Credentials セクションで、サービスアカウントのクレデンシャルを指定して JSON ファイルをアップロードします。</block>
   <block id="fc5127bbf11e334554718f2fe100b9f3" category="list-text">必要に応じて、サービスにタグを追加します。</block>
@@ -2323,7 +2319,6 @@
   <block id="2ac1902f80e6b8be72c8f424ff8e1895" category="cell">ID で識別されたユーザを削除します。</block>
   <block id="08adb405703760d625a89d2f8489e280" category="summary">Keystone サービスの用語と概要の概要</block>
   <block id="4c81f84de3c6cf1b71adecb694feb770" category="doc">Flex サブスクリプションサービスの契約条件と説明</block>
-  <block id="1cbddcf2fa8e22cb8595706c00cc4371" category="list-text">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）は、 1 年以上 3 年までご利用いただけます。当初の期間終了後は、毎年更新が可能です。容量は 1TiB まで増やすことができます。</block>
   <block id="9597eb938e2fba159aa254b3a95e6efb" category="list-text">サイトあたりの最小容量は 100TB で、各サイトに 1 つ以上のクラスタを配置して最小容量要件を満たすことができます。パートナーが運用するモデルでは、お客様、サイト、サービスレベルに応じて、柔軟な最小値を持つサブスクリプションが作成されます。</block>
   <block id="be9709b8de891bed2cb58977708e499e" category="list-text">テナントサブスクリプションは、パートナー様がサブスクライブしているサービスレベルに限定されます。</block>
   <block id="87f73c8129d1f6a0026c085c19c37ee7" category="list-text">各サイトで使用できるバースト容量は 20% です。バースト使用量は、その課金期間に限り課金されます。20% を超えるバースト要件が必要な場合は、サポートにお問い合わせください。</block>
@@ -2830,14 +2825,6 @@
   <block id="b387af4e718e4b5565ce87f74234f50f" category="paragraph">*最初の言葉が完了した後で購入に転換する機会はあるか。*いいえこの特典には、購入に切り替えるオプションは含まれていません。また、以前に購入されたネットアップ製品はこのプログラムの対象外です。</block>
   <block id="a16dc1f5755db55741d2ae801d6aa73d" category="paragraph">*特定のソフトウェアバージョンをリクエストできますか。*</block>
   <block id="ee62bd671134498c82c2878422e9f59a" category="paragraph">*ソフトウェアのアップグレードについてお知らせしますか。*</block>
-  <block id="4b27d8b1b37284b9da0b4213e4e6675d" category="paragraph">|=|HTTPメソッド|パス|概要 |パラメータ</block>
-  <block id="9104a21e58f1a69b57c6b2ae89602908" category="paragraph">|`POST`|`/v2.1/tenants /{tenant_id }/servicests/categories ||サービスリクエストを作成します。|`tenant_id :テナントID。</block>
-  <block id="58e00570185a83ad51f69b7079961f6b" category="paragraph">|カテゴリ|必須</block>
-  <block id="4ef290f7b3c58a4e717e6cc36148b17f" category="paragraph">|Subscription|'subscription'|Disaster recovery |'storage_object_type','Subtenant object_id'|Technical |`service_type`がファイルサービスまたはブロックストレージの場合、zoneが必要です。|その他|ゾーン</block>
-  <block id="0725399a92712a8b8a9b398144b43a68" category="cell">*要求本文の例：*｛"subject"："string"、"comment"："string"、"category"："subscription"、"priority"："Normal"、"subscription"："A-S00003969"、 「commitment」：｛"SERVICE_LEVEL "：「standard」、「new_commitment」：10｝、「zone」：「au-east1-a」、「Subtenant _id」：「5d2fb0f47df00015274e3」、「storage_object_type：「fileserver」 "storage_object_id"："5d2fb0fb4f47df00015274e3"、"SERVICE_TYPE"："File Services"｝....*応答本文の例：*｛"status"：｛"user_message"："string"、"verbose_message"："string"、"code"："string"｝、"result"：｛"returned_records"：1、"records"：[｛"id"："string"、"subject"："string"、概要 ："Normal"、"Status"： 「createdDate」：「2020-05-12T03：18：25+0000」、「UpdatedDate」：「2020-05-12T03：18：25+0000」｝…==Retrieve service request categories次の表に、指定したテナントに対するRetrieve service requestカテゴリーを示します。</block>
-  <block id="b235a9ee30b02d07ff714bb1542b9b1d" category="paragraph">| HTTPメソッド|パス|概要 |パラメータ</block>
-  <block id="3cfc9b45a25da8c56ea24ecc26ed6f54" category="paragraph">|`get`|`/v2.1/tenants /{tenant_id }/servicests/categories |サービスリクエストのカテゴリを取得します。|`tenant_id :`(オプション)指定したテナントに対するサービスリクエストを返します。</block>
-  <block id="c31fc18f14b317fa271c222c8662ff0b" category="cell">要求本文の必須属性:'none`*Request本文の例:*....なし*応答本文の例：*｛"status"：｛"user_message"："OKay"。5つのレコードが返されました。"、" verbose_message "：""、"コード"：200｝、"結果"：｛" returned_records "：5、"レコード"：[｛"キー"："DR"、"値："："Disaster Recovery Failover"｝、｛"キー："、"値："Technical問題 、"、"： "バックアップリストア"｝｝</block>
   <block id="8615a49d222eeb50c22f60e749d36d5e" category="paragraph">* NetApp Service Engineとは</block>
   <block id="a5e1a7f3557344aca20fdd047ee9cace" category="paragraph">*お客様が運用するモデルにはNetApp Service Engineが必要ですか？*</block>
   <block id="46eed4ec681c7ae2f6418744e02e8ba8" category="paragraph">* NetApp Service Engineはどこにインストールされていますか。*</block>
@@ -3130,4 +3117,25 @@
   <block id="3367785c4c24c46720a1f71a3ba620db" category="sidebar">Azureボリュームを管理する</block>
   <block id="12c44922182533b1b7bb4417b61b95ec" category="sidebar">Cloud Volumes Service for Google Cloud Platformを管理します</block>
   <block id="8f827fcb6054a7882181161868caf231" category="sidebar">ボリュームをバックアップします</block>
+  <block id="a57f88e039b309218996266b80792e58" category="cell"><block ref="3854361464b9a2c3832c47bd39cddf54" prefix="" category="inline-code"></block>：テナントの識別子。</block>
+  <block id="3adbdb3ac060038aa0e6e6c138ef9873" category="cell">カテゴリ</block>
+  <block id="b651efdb98a5d6bd2b3935d0c3f4a5e2" category="cell">必須</block>
+  <block id="787ad0b7a17de4ad6b1711bbf8d79fcb" category="cell">サブスクリプション。</block>
+  <block id="102da3147e28a4669677fece4454c61f" category="cell"><block ref="b48b13e73a6ac2a86dc54425dd24d9ff" prefix="" category="inline-code"></block> および<block ref="e4586172850ecb0954a632168fa0151a" prefix=" " category="inline-code"></block></block>
+  <block id="f92d949ea1f5479f6dd45574e5f59f28" category="cell"><block ref="2aae5dbec169c641bc991a21bba7ded3" prefix="" category="inline-code"></block>、<block ref="f5d285f3c30970bcfcb9cf6292e5948c" prefix=" " category="inline-code"></block>および<block ref="d8ebad67e49e38d52183df8396039c53" prefix=" " category="inline-code"></block></block>
+  <block id="ad1ec60c9e1f10f6a9f5d9f2c5254bc6" category="cell">テクニカル</block>
+  <block id="1efcb45ce32fab1dd54282a048a8f6e3" category="cell"><block ref="f5d285f3c30970bcfcb9cf6292e5948c" prefix="" category="inline-code"></block> および<block ref="f43697a993f56955e3f9e353b3b1f210" prefix=" " category="inline-code"></block>状況<block ref="f43697a993f56955e3f9e353b3b1f210" prefix=" " category="inline-code"></block> はファイルサービスまたはブロックストレージです。ゾーンは必須です。</block>
+  <block id="6311ae17c1ee52b36e68aaf4ad066387" category="cell">その他</block>
+  <block id="ac10508ad70f95b289ff520585169501" category="section-title">サービスリクエストカテゴリを取得します</block>
+  <block id="a6a3bee28fe66348826c742871e5920e" category="paragraph">次の表に、指定したテナントの読み出しサービス要求のカテゴリを示します。</block>
+  <block id="ef64390758ed006361a142422376a39e" category="cell">サービスリクエストカテゴリを取得します。</block>
+  <block id="ea56ca71a57b3800165f4d81ba320151" category="cell"><block ref="e1e0f0ad1318adbdd4cfa12016e5d06c" prefix="" category="inline-code"></block> （オプション）指定したテナントのサービス要求を返します。</block>
+  <block id="fecdea178a71ffb2ee93ddcad3d9e020" category="paragraph">多数の API 呼び出しが大量のレコードを返します。を指定することで、レコード数を制限できます<block ref="7a86c157ee9713c34fbd7a1ee40f0c5a" prefix=" " category="inline-code"></block> および<block ref="aa9f73eea60a006820d0f8768bc8a3fc" prefix=" " category="inline-code"></block> 値。</block>
+  <block id="e50d94eefbc2c17580b0e1711fe9e9e7" category="paragraph">制限値は次のとおりです。</block>
+  <block id="d2860166293af0668ceaf6fdcb9f2694" category="paragraph">ユーザを作成して特定のグループに追加し、オブジェクトストレージへのアクセスを割り当てることができます。</block>
+  <block id="496e90ab3704e4ca4304b45b9f12bbd6" category="list-text">Cloud Volumes Service for GCPがBlueXPで既に構成されていることをサポートチームが確認します。詳細については、を参照してください<block ref="1956ecad31d7ae695fe28eacaf067e5e" category="inline-link-rx"></block>。</block>
+  <block id="2755dc789d3f5fb4106ccd91690ecf5a" category="cell">BlueXP内の作業環境名</block>
+  <block id="d717179901a081426cfa25f7009d2d04" category="cell">アプリケーション（クライアント） ID 。BlueXPがAzure Active Directoryでの認証に使用できるActive DirectoryサービスプリンシパルのID。</block>
+  <block id="a7aef034348bc38d9b7f16020d181733" category="paragraph">NetApp Keystone Flexサブスクリプション（Flexサブスクリプション）には、以下のサービス規約と説明が記載されています。</block>
+  <block id="0493ca6a55a3d28e65cc473a5710b470" category="list-text">Flexサブスクリプションは、最低1年間、最長3年間ご利用いただけます。当初の期間終了後は、毎年更新が可能です。容量は 1TiB まで増やすことができます。</block>
 </blocks>

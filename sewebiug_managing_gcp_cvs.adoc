@@ -29,7 +29,7 @@ NOTE: テナントとサブテナントの Cloud Volumes Service アカウント
 
 * サブテナントが Google Cloud サービスに登録されている。
 * 加入者のサービスアカウントの JSON ファイルが必要です。 Google Cloud インスタンスに関連付けられている GCP プロジェクト番号を確認しておきます。
-* Cloud Volumes Service for GCP がすでに Cloud Manager でサポートチームによって設定されていることを確認します。詳細については、を参照してください https://docs.netapp.com/us-en/occm/task_setup_cvs_gcp.html["Cloud Volumes Service for Google Cloud をセットアップします"]。
+* Cloud Volumes Service for GCPがBlueXPで既に構成されていることをサポートチームが確認します。詳細については、を参照してください https://docs.netapp.com/us-en/occm/task_setup_cvs_gcp.html["Cloud Volumes Service for Google Cloud をセットアップします"]。
 
 
 .手順

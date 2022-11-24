@@ -79,7 +79,7 @@ Cloud Volume サービスへのサブスクリプションは、 NetApp Service 
 | 「 name 」 | 文字列 | Cloud Volumes Service インスタンスの名前。 
 
 
-| 'cc_working _env' | 文字列 | Cloud Manager 内の作業環境名。 
+| 'cc_working _env' | 文字列 | BlueXP内の作業環境名 
 
 
 | 'cc_client_id | 文字列 | Auth0 サービス ID 。 
@@ -97,7 +97,7 @@ Cloud Volume サービスへのサブスクリプションは、 NetApp Service 
 | 'cc_credentials_id | 文字列 | Cloud Centra 作業環境の ID 。 
 
 
-| 「 azure_client_id 」です | 文字列 | アプリケーション（クライアント） ID 。Cloud Manager が Azure Active Directory での認証に使用する Active Directory サービスプリンシパルの ID 。 
+| 「 azure_client_id 」です | 文字列 | アプリケーション（クライアント） ID 。BlueXPがAzure Active Directoryでの認証に使用できるActive DirectoryサービスプリンシパルのID。 
 
 
 | 「 azure_client_secret 」というプロンプトが表示されます | 文字列 | サービスプリンシパルアプリケーションのクライアントシークレットの値。 
