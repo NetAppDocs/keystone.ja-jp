@@ -22,4 +22,5 @@ summary: Keystone は、ディスクのアドホックスナップショット�
 . スナップショットの作成（ Create Snapshot ）ダイアログボックスで、スナップショットの名前を入力し、 * 作成 * （ Create * ）をクリックします。
 
 
+.完了後
 Snapshot が使用可能になるまでに数分かかることがあります。可能な場合は、このSnapshotをクローニングして別のディスクを作成できます。詳細については、を参照してください link:sewebiug_create_a_disk_from_a_snapshot.html["Snapshot からディスクを作成します"]。

@@ -32,6 +32,7 @@ image:sewebiug_image25.png["エラー：グラフィックイメージがあり�
 . [* 確認 *] をクリックします。共有を削除するジョブが作成されます。
 
 
+.完了後
 共有の削除は非同期ジョブとして実行されます。可能です
 
 * ジョブリストでジョブのステータスを確認します。ジョブの追跡については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。

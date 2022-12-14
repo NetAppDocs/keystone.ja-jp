@@ -22,4 +22,5 @@ summary: Keystone は、ファイル共有のアドホックスナップショ�
 . スナップショットの作成ダイアログで ' スナップショットの名前を入力し ' * 作成 * をクリックします
 
 
+.完了後
 Snapshot が使用可能になるまでに数分かかることがあります。可能な場合は、このSnapshotをクローニングして別の共有を作成できます。詳細については、を参照してください link:sewebiug_create_file_share_from_snapshot.html["Snapshotからファイル共有を作成します"]。

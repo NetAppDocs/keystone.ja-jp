@@ -3138,4 +3138,10 @@
   <block id="d717179901a081426cfa25f7009d2d04" category="cell">アプリケーション（クライアント） ID 。BlueXPがAzure Active Directoryでの認証に使用できるActive DirectoryサービスプリンシパルのID。</block>
   <block id="a7aef034348bc38d9b7f16020d181733" category="paragraph">NetApp Keystone Flexサブスクリプション（Flexサブスクリプション）には、以下のサービス規約と説明が記載されています。</block>
   <block id="0493ca6a55a3d28e65cc473a5710b470" category="list-text">Flexサブスクリプションは、最低1年間、最長3年間ご利用いただけます。当初の期間終了後は、毎年更新が可能です。容量は 1TiB まで増やすことができます。</block>
+  <block id="b1fb6edb6a9cd7a76214562e75ef8390" category="paragraph-title">使用容量の計測</block>
+  <block id="7f5043ec0394d759e4ce437fc8c9cd52" category="paragraph-title">月単位の課金</block>
+  <block id="51ebf10290dc90afa947ed3f3696db87" category="paragraph-title">年間請求額</block>
+  <block id="6f79e617449041abacad9b220d0cdd03" category="paragraph-title">バースト課金の猶予期間</block>
+  <block id="1a616d944b2a6237298adf4b4e0db510" category="paragraph-title">非同期のディザスタリカバリをサポートするようにファイルサーバまたはブロックストアを設定します</block>
+  <block id="1e53e767469d41ddc55c1ff94e72e9a6" category="paragraph-title">ファイル共有またはディスクで非同期のディザスタリカバリを有効にします</block>
 </blocks>

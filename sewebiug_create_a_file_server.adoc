@@ -21,6 +21,7 @@ summary: Keystone がファイルサーバを作成する
 * CIFS 対応にする。NFSサービスはデフォルトで有効になっています。
 
 
+.作業を開始する前に
 サーバを作成するには、次のものがあることを確認してください。
 
 * サーバをホストするサブテナント。
@@ -89,6 +90,7 @@ NOTE: 同期ディザスタリカバリデータ保護のサブスクリプシ�
 
 NOTE: CIFS対応のサーバを作成する場合は、入力したドメイン名（FQDN）にActive Directoryユーザ名とActive Directoryパスワードを入力し、*確認*をクリックする必要があります。
 
+.完了後
 サーバの作成は非同期ジョブとして実行されます。可能です
 
 * ジョブリストでジョブのステータスを確認します。ジョブの追跡については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。

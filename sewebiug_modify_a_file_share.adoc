@@ -19,6 +19,7 @@ summary: Keystone がファイル共有を変更する
 
 NOTE: この方法を使用すると、共有を別のサービスレベルに移動できます（可能な場合）。共有タイプを変更できるのは、サーバがそれぞれのサービスをサポートしている場合のみです。
 
+.作業を開始する前に
 ファイル共有が動作状態である必要があります。ボリュームのステータスとそれらを運用するための手順については、を参照してください link:sewebiug_view_disks.html["ディスクを表示します"] および link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states["オブジェクトの状態"]
 
 .手順
@@ -28,6 +29,7 @@ NOTE: この方法を使用すると、共有を別のサービスレベルに�
 . [ 完了（ Done ） ] をクリックします。共有を変更するジョブが作成されます。
 
 
+.完了後
 Modify share は非同期ジョブとして実行されます。可能です
 
 * ジョブリストでジョブのステータスを確認します。ジョブの追跡については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。

@@ -31,6 +31,7 @@ NOTE: 非同期ディザスタリカバリがすでに有効になっている�
 . [ 完了（ Done ） ] をクリックします。これにより、サーバを変更するジョブが作成されます。
 
 
+.完了後
 Modify Server は非同期ジョブとして実行されます。可能です
 
 * ジョブリストでジョブのステータスを確認します。ジョブの追跡については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。
