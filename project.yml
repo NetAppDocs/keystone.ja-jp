@@ -17,7 +17,7 @@ sidebar:
       entries:
       - title: サービス容量の定義
         url: "/nkfsosm_keystone_service_capacity_definitions.html"
-      - title: パフォーマンスサービスレベルまたはサービスレベル
+      - title: Flexサブスクリプションのサービスレベル
         url: "/nkfsosm_performance.html"
       - title: サービスレベルの指標と定義
         url: "/nkfsosm_service_level_metrics_and_definitions.html"
@@ -43,8 +43,11 @@ sidebar:
       url: "/nkfsosm_site_requirements.html"
     - title: 処理
       url: "/nkfsosm_netapp_global_services_and_support_center_@gssc@.html"
-    - title: Flex サブスクリプションと Active IQ
+    - title: FlexサブスクリプションとActive IQ デジタルアドバイザ
       url: "/nkfsosm-keystone-and-aiq.html"
+      entries:
+      - title: Active IQ デジタルアドバイザからレポートを表示および生成します
+        url: "/aiq-keystone-details.html"
   - title: リリースノート
     entries:
     - title: 新機能

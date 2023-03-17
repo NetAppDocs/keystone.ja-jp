@@ -504,7 +504,6 @@
   <block id="63e1807e1af53e793c61f4822e068969" category="paragraph">次の表に示すメソッドを使用して、 ID 別にサービスレベルを削除します。</block>
   <block id="0ab58fa7eaafb012e33e459f2b152593" category="cell">ID で識別されたサービスレベルを削除します。</block>
   <block id="30c740c15df6835e786c16943f13c878" category="summary">Keystone のサービスレベルの指標と定義</block>
-  <block id="5b28c1e596f24c136b5eb202ade03b6f" category="doc">サービスレベルの指標と定義</block>
   <block id="bd3e3fa30e712c1d806acc88cecbed18" category="paragraph">NetApp Keystone Flex Subscription （ Flex サブスクリプション）サービスでは、次の用語と定義が使用されます。</block>
   <block id="fccdf4385eaed208ed2da98088a58040" category="list-text">* GiB 、 TiB 、 PiB 。 * 1024 バイトをベースとしたデータストレージ容量の測定値（ 1GiB = 1024^3^ バイト、 1TiB = 1024^4^ バイト、 1PiB = 1024^5^ バイト）。</block>
   <block id="fdd7161b237f60b8f4481babf5f0254a" category="list-text">* IOPS/ TiB 。 * アプリケーションが要求した 1 秒あたりのプロトコル処理数を、割り当てられたボリュームの論理サイズで割った値です。</block>
@@ -1976,7 +1975,6 @@
   <block id="c255734de720d66c0c72eafba01042a7" category="list-text">ボリュームを作成するサブテナントを選択します。</block>
   <block id="401c8b82211468039719631c9be4f363" category="list-text">リージョンとネットワークを選択します。このリストは、 GCP のサブテナントの Cloud Volumes Service アカウントに基づいてフィルタリングされます。</block>
   <block id="1027be2ec13d0a5c51b04348a001394d" category="list-text">ボリュームの名前を追加します。</block>
-  <block id="009cb2fa973a63420fb9c3e6d19e6bf7" category="list-text">適切なサービスレベルを選択します。</block>
   <block id="42ecabf130bec289f7d0a1d1d0f32de7" category="list-text">作成トークンとしてボリュームのファイルパスを入力します。</block>
   <block id="789713868a6149107b3da72729b9ea14" category="list-text">ボリュームクォータをバイト単位で割り当てます。</block>
   <block id="2527ce275aacdb527aaf9b12e9515877" category="list-text">必要に応じて、ボリュームのタグを追加します。</block>
@@ -2357,7 +2355,6 @@
   <block id="e9c80bfaff45d429248172e90bf4cf17" category="list-text">* 削除中です。 * オブジェクトは削除され、処理中です。</block>
   <block id="942b6d4c89e3eda89bf1fc3fdbb422bb" category="list-text">* キューに追加されました。 * オブジェクトはキューに登録されており、処理中です。</block>
   <block id="c6c8c040e27193ed150428f0ad7c3c1c" category="list-text">* インポートした * NetApp サービスエンジン外でプロビジョニングされたオブジェクトは、 NetApp Keystone フレックスサブスクリプション（ Flex サブスクリプション）の条件を満たしていない場合、このステータスでインポートされます。</block>
-  <block id="3929849d264a990dc00723acaab40f6d" category="admonition">このステータスは、通常、オブジェクトに QoS ポリシーが適用されていないことを意味します。したがって、 NetApp Service Engine を使用して Flex サブスクリプションの一部として管理することはできません。編集ペンを使用してオブジェクトを変更し、適切なサービスレベルを割り当てることができます。これにより、そのオブジェクトのステータスが運用可能に変わります。</block>
   <block id="a14e6fa33d61dda2c98b6ecf326fcf81" category="list-text">* 非標準。 * NetApp Service Engine の外部でプロビジョニングされたオブジェクトは、 NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）の条件を満たしていない場合、このステータスでインポートされます。</block>
   <block id="77c9210b10afdcdea17f78b57f8021f3" category="admonition">通常、このステータスは、オブジェクトが Flex サブスクリプションの一部として NetApp Service Engine で管理する必要のある 1 つ以上の条件を満たしていないことを意味します。可能です <block ref="e37ceb28c45a47909eddea846ff49620" category="inline-link-macro-rx"></block> NetApp Service Engine ポータルを通じて標準化され、管理され、サポートチームが運用できるようにするため。</block>
   <block id="ea3d509a94dc5e437bbb8bc394f84950" category="list-text">* サポートに連絡してください。 * この状態は、プロビジョニングまたは変更タスクが完全に完了しない場合に発生します。この状態の項目については、問題に対応するサポートリクエストを発行してください。</block>
@@ -2571,17 +2568,8 @@
   <block id="cfaa375bf6c7f9fcc1bc04d4f30c9154" category="cell">ネットアップ</block>
   <block id="244f78a4e039400f39e0eb94595bdc02" category="cell"><block ref="244f78a4e039400f39e0eb94595bdc02" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7feb8545e008b64a43a24668068761be" category="summary">お客様が Active IQ で目にする可能性があるキーストーン</block>
-  <block id="262343e94e4c53e68a3899e4036dbba5" category="doc">Flex サブスクリプションのお客様は Active IQ で何を表示できますか。</block>
-  <block id="902acbb4ec533e7ef722d0120abac953" category="paragraph">NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）サービスに登録している場合は、 Active IQ デジタルアドバイザダッシュボードに使用状況レポートとグラフを表示できます。</block>
-  <block id="8aec6a2bcfb78af1fffa4f2c52dfe49d" category="inline-link-macro">Active IQ デジタルアドバイザのドキュメント</block>
-  <block id="5b312d01bd3eecc97ac2f41e3e4ddf39" category="paragraph">Active IQ デジタルアドバイザの詳細については、を参照してください <block ref="8ea1c0730bcdf181af831ad867c5fa88" category="inline-link-macro-rx"></block></block>
-  <block id="2b1092032299ace7c3847b060eb7665f" category="paragraph">サイトに NetApp Service Engine がデフォルトでインストールされている場合、 Active IQ デジタルアドバイザに加えて、 NetApp Service Engine インターフェイスを使用して消費グラフを表示できます。ただし、お客様が管理する環境では、 NetApp Service Engine インターフェイスにアクセスすることはできません。また、容量チャートと使用状況レポートは、 Active IQ デジタルアドバイザダッシュボードでのみ表示できます。お客様が管理する環境については、を参照してください <block ref="6c1babef94ecdfe13ce1038b7eabf5ab" category="inline-link-macro-rx"></block></block>
   <block id="e444f8631d85c8cbe1bb61d4d60f630f" category="paragraph">サイトからの指標データの収集間隔は 5 分です。</block>
-  <block id="2844749536976db1a7dcb3cac896aadb" category="paragraph">お客様は、 Flex サブスクリプションサービスに加入している場合、 Active IQ デジタルアドバイザーに関する次の情報を表示できます。</block>
-  <block id="69e4ec00604265b757632eda3f1e383b" category="list-text">* Keystone Flex サブスクリプション * ウィジェット： Active IQ デジタルアドバイザにログインしている場合は、購入した Flex サブスクリプションサービスの容量使用状況をまとめた「 * Keystone Flex サブスクリプション * 」ウィジェットが表示されます。</block>
-  <block id="dbba74e6f62c29e1dea79d870e9f4b53" category="list-text">ウィジェットで「 * View Details * 」をクリックすると、「 * Keystone - Capacity Utilization * 」ダッシュボードが表示されます。Keystone - 容量利用率 * ダッシュボードでは、サービスレベル、データ保護、高度なデータ保護サービスなど、サブスクライブされたサービスごとに容量と使用状況のデータの内訳と分析を行うことができます。ダッシュボードには、過去 1 、 7 、 30 日間の使用済み容量、コミット済み容量、バースト時の容量のグラフも表示され、平均発生率は現在の請求期間に基づいて計算され、分割されます。</block>
   <block id="29cb371773858a73b7aca64ff6f208f4" category="inline-link-macro">NetApp Keystone フレックスサブスクリプションを使用して容量利用率を表示します</block>
-  <block id="fc533fceebb994e8ef6bbeba15951fd9" category="paragraph">詳細については、を参照してください <block ref="30eccfcef2e1a5c7fe1b095bf8a3af1d" category="inline-link-macro-rx"></block>。</block>
   <block id="28307c52fb9de3f0b2b26086b89eb8f3" category="paragraph">ファイル、ブロック、オブジェクトストレージのサービスレベルを次に示します。</block>
   <block id="079bbc110741f438dfb37f32218c4c21" category="cell">* サービスレベル *</block>
   <block id="cdf0cc519fabc4c14999e89090d33dc1" category="cell">* エクストリーム *</block>
@@ -2690,7 +2678,6 @@
   <block id="e0860a8634b1f9ca0dc00aba7d58c748" category="sidebar">返却不要ディスクではありません</block>
   <block id="0e0fe605239796a7018441e65fa28979" category="sidebar">米国市民サポート</block>
   <block id="c2c19492d8278f541b461dfa6849c504" category="sidebar">Flex サブスクリプションおよび Equinix</block>
-  <block id="6b9cddec4dacfc2b279a47aff83fcc02" category="sidebar">Flex サブスクリプションと Active IQ</block>
   <block id="faf37da472ffd232f9810c360b4c1f18" category="paragraph">インストールと関連タスク</block>
   <block id="349838fb1d851d3e2014b9fe39203275" category="list-text">をインストールします</block>
   <block id="f1206f9fadc5ce41694f69129aecac26" category="list-text">設定</block>
@@ -2795,7 +2782,6 @@
   <block id="00b8e318a80a143ca212b4f3b0cb449f" category="paragraph">* 新しいストレージサービスを注文できますか？ * はい、 NetApp Service Engine ポータルから新しいストレージサービスまたはストレージサービスへの拡張をリクエストできます。要求は、 NetApp Keystone 運用チームが処理してから使用可能になります。</block>
   <block id="eff136c1ba2e8a2d6e4b14ddd6a80383" category="paragraph">* ストレージに関するコミットメントは即座に向上しますか？ * 必要な容量に応じて、容量がすでに導入されているかどうかを判断するか、追加の機器の発送と設置が必要かを判断します。</block>
   <block id="f71fb6dbf8a02dfaed157786a5d1337e" category="paragraph">* ワークロードを階層間で移動できますか？ * はい、ユーザがワークロードの移動先の階層にサブスクライブされている場合、ワークロードを階層間で移動できます。ただし、原因によってパフォーマンスが低下する可能性があるため、上位の階層から下位の階層に移動することは推奨されません。このプロセスは、ファイル共有を編集し、サービスレベル設定を変更するだけで完了します。</block>
-  <block id="0d5e545b2de42575e5208d3abb79f68c" category="paragraph">* どのバージョンのソフトウェア（たとえば、 ONTAP ）がデフォルトとしてインストールされていますか。 * 登録されているサービス階層（ファイルサービスとブロックサービスを使用する ONTAP 、ブロック用の SANtricity 、オブジェクト用の StorageGRID など）に応じて、サポートチームはセキュリティや機能の問題なしで最新の安定版リリースをインストールします。</block>
   <block id="7ae9036783fb54e0a52aedfa26814f6b" category="paragraph">*主な活動を担当するのは、どのような運用モデルですか？*</block>
   <block id="f2ac98a13f280a4eeb27bb4780175f5e" category="paragraph">*ネットアップが運用するモデルとは？*</block>
   <block id="7dd4b2b13e8a8a109244cccfafe4b5a5" category="paragraph">*パートナーが運用するモデルとは？*</block>
@@ -2985,15 +2971,11 @@
   <block id="201a10b44105a7f46600bd19700a5b0b" category="admonition">選択したファイル共有について、SnapCenter Service Engine以外の環境で作成されたSnapshotがある場合、それらのSnapshotがインポートされ、選択したSnapshotのリストに表示されます。インポートしたこれらのSnapshotを選択し、そこから新しいファイル共有のクローンを作成できます。</block>
   <block id="675fcd36774818dbea836dc02cf4d0d6" category="list-text">クローンを作成するスナップショットの横にあるチェックボックスをオンにし、* Next *（次へ）をクリックします。新しいファイル共有には、選択したSnapshotのプロパティが継承されます。</block>
   <block id="278530798aa56115669d57d1e3fa9073" category="list-text">名前 * と * 共有パス * を追加します。サービスレベル * の割り当てなどの他の設定を更新し、 [*Create] をクリックします。ニーズに最も適したサービスレベルを選択します。</block>
-  <block id="775c0cf773e692f5b5aff6da7ff3a805" category="paragraph">NetApp Keystone Flexサブスクリプション（Flexサブスクリプション）は、事前定義されたサービスレベルまたはパフォーマンスサービスレベルで容量を提供します。</block>
-  <block id="fda90827f7dc62058d02279d98e89377" category="paragraph">各サービスレベル（サービスレベル）は、I/O密度によって定義されます。これは、パフォーマンス（1秒あたりの入出力処理数（IOPS））と使用済みストレージ（TiB分の格納データ）の比率で、単位はIOPS/ TiBです。</block>
   <block id="7cb1e7ec7bd37f6e4d6191d590b40dfe" category="paragraph">Flexサブスクリプションサービスで管理される各ボリュームは、サービスレベルに関連付けられています。各ボリュームで使用されるすべての I/O 処理と使用済みストレージは、ボリュームの I/O 密度の計算に考慮されます。</block>
   <block id="c369a24416627121068456b8b8aad586" category="paragraph">次の表に、サービスレベルを示します。</block>
   <block id="9298a8df81bc0591b45113097c6a4118" category="section-title">異なるストレージタイプのサービスレベル</block>
   <block id="18cf673c6b162cc27313691486836fca" category="admonition">^1 ^ NetApp Direct Opportunityに必要なファイル共有レベルとブロックサービスレベルを組み合わせた場合、1年以上の期間と100TiB以上の最小容量。^2^ チャネル主導の販売機会用に選択された各サービス階層ごとに、最低 1 年間の契約期間と最小規定容量。</block>
   <block id="c3010f4da438652aab9b42654d086f8d" category="admonition">^1 ^ NetApp Direct Opportunityに必要なファイル共有レベルとブロックサービスレベルを組み合わせた場合、1年以上の期間と100TiB以上の最小容量。^2^ チャネル主導の販売機会用に選択されたサービス階層ごとの最低 1 年間の契約期間と最小規定容量。^3^ いずれかの Opportunity タイプに対して選択されたサービス階層ごとの最低 1 年間の期間と最小指定容量。</block>
-  <block id="abafef4130ed8938c3153ad43e1ac52e" category="paragraph">NetApp Service Engineのユーザインターフェイスの複数の画面から、サービスレベルをサブスクリプションに割り当てることができます。詳細については、を参照してください</block>
-  <block id="1e40687eaf73dde4f163672091e3ee28" category="paragraph">** <block ref="3a337ffb28bf0d116cc65c4b009401e6" category="inline-link-macro-rx"></block></block>
   <block id="39cd3f32af1f6142ceceefd9378ef437" category="list-text">ファイルサーバに関連付けられた、ディザスタリカバリでレプリケートされたすべてのコピー。サーバの削除を元に戻すことはできません。</block>
   <block id="a189c66e23fd7e79d1bebf594d16fb15" category="paragraph">消費容量が所定のサービスレベルのコミット済み容量を超えると、バースト消費量が記録され、それに応じて課金が適用されます。このプロセスは、生成される消費レコードごとに実行されます。したがって、バースト消費量は、オーバー消費容量の量と時間の両方を、コミット済み容量の上に反映したものです。</block>
   <block id="e0450cba6f565299b1277f655c94fa25" category="paragraph">サブスクリプションの有効化の最初の60日間に積み立てたバースト消費量は記録されますが、Flexサブスクリプションの請求書には課金されません。この猶予期間により、ストレージを適切なアダプティブQuality of Service（AQoS；サービス品質）設定で構成し、適切に監視および課金できるようになります。ストレージを正しく構成すると、予期しないバースト料金を回避できます。初期猶予期間60日後に発生したバースト使用量は、次の請求書に請求されます。この猶予期間は、既存のサブスクリプションの変更や更新には影響しません。</block>
@@ -3110,7 +3092,6 @@
   <block id="6f6cb72d544962fa333e2e34ce64f719" category="list-text">サイズ</block>
   <block id="c8308b1eba7ba926a61b8fd802194386" category="list-text">オブジェクト</block>
   <block id="a2a8d61c91e599b9767a25a53af35534" category="list-text">アクション（バケットの削除など）</block>
-  <block id="2a96a4cfac487b5cc41e8fd4506c4230" category="sidebar">パフォーマンスサービスレベルまたはサービスレベル</block>
   <block id="469b359223644ae76f8489201eaba251" category="sidebar">Azure NetApp Files を管理します</block>
   <block id="1b0a895ad5dbae078e4d9e0514db2461" category="sidebar">Azure NetAppアカウントを管理</block>
   <block id="5397c058f4d19f86cf260de9d12c163e" category="sidebar">Azure容量プールを管理します</block>
@@ -3144,4 +3125,105 @@
   <block id="6f79e617449041abacad9b220d0cdd03" category="paragraph-title">バースト課金の猶予期間</block>
   <block id="1a616d944b2a6237298adf4b4e0db510" category="paragraph-title">非同期のディザスタリカバリをサポートするようにファイルサーバまたはブロックストアを設定します</block>
   <block id="1e53e767469d41ddc55c1ff94e72e9a6" category="paragraph-title">ファイル共有またはディスクで非同期のディザスタリカバリを有効にします</block>
+  <block id="66c777f6bba3f375b5c9f563b51df61b" category="list-text">適切なサービスレベルを選択します。</block>
+  <block id="89fb8980c16c92d28af72e0579cfac9c" category="summary">Keystoneサブスクリプションレポートとグラフ</block>
+  <block id="8d0df828e022d4082415c7c86746be9f" category="doc">Flexサブスクリプション向けのDigital Advisorダッシュボードとレポート機能</block>
+  <block id="1aa4a8544fc94c7ce0ff8c9bc46bb523" category="paragraph">Active IQ デジタルアドバイザ（デジタルアドバイザ）ダッシュボードでは、NetApp Keystone サブスクリプションに関連する使用状況を監視し、レポートを生成できます。Keystoneサービスにサブスクライブすると、Digital Advisorダッシュボードの* Keystone Subscriptions *ウィジェットでサブスクリプションと使用量の詳細を確認できます。</block>
+  <block id="936acd8bca51b1c47ce51ce5d9e45134" category="admonition">ここで入手できる情報は、ONTAP とStorageGRID の両方を環境 に掲載しています。例外は関連するセクションで指摘されています。</block>
+  <block id="b5d0947d6bc5e70f868d560d859163f5" category="inline-link">NetApp Keystone サブスクリプションを使用して容量利用率を表示します</block>
+  <block id="90022a4ed9f097be4671116b6b5b7754" category="paragraph">[Keystone Digital Advisor]ウィジェットの詳細については、を参照してください<block ref="553d5c0a148912943ee201440d3b98c5" category="inline-link-rx"></block>。</block>
+  <block id="af23688fe47e4923ebd83f7238688630" category="paragraph">詳細を表示するには、次の手順を実行します。</block>
+  <block id="e84dede1181b53e24bdf1d55508b83bf" category="list-text">Digital Advisorで、ウィジェットの*[詳細を表示]*をクリックして、* Keystoneサブスクリプション*ページにボリュームに関する使用状況の詳細とアラートを表示します。または、左側のナビゲーションペインで*[全般]&gt;[Keystoneサブスクリプション]*に移動します。</block>
+  <block id="b49a48b1a3504debfe7fedab8ad4086d" category="paragraph">サブスクリプションの詳細、各サービスレベルの使用状況グラフ、ボリュームの詳細が、* Keystoneサブスクリプション*画面の別 々 のタブに表示されます。</block>
+  <block id="3e7fbf68bb6fb2a1a061e9b1a50441d9" category="inline-link">サービスレベルの指標と定義</block>
+  <block id="1cc53c243cc7aca8f5ccf3f64e634b22" category="admonition">Keystoneサブスクリプションの容量消費は、ダッシュボードとレポートのTiBに小数点以下2桁まで表示されます。使用量が0.01TiB未満の場合は、と表示されます<block ref="cfcd208495d565ef66e7dff9f98764da" prefix=" " category="inline-code"></block> または<block ref="31c2db4909d0d3638d380d92c0a194e0" prefix=" " category="inline-code"></block>。その他の使用指標については、を参照してください<block ref="98a30cfc42e5138070cb8b3bae486e43" category="inline-link-rx"></block>。Keystoneで使用されるさまざまな容量については、を参照してください<block ref="138642b64e1fce198a03042cd762c1d6" category="inline-link-rx"></block>。</block>
+  <block id="b3c0ed0e576799a24c9e0fda06bee006" category="section-title">サブスクリプションの詳細を表示します</block>
+  <block id="b5d0d2658bdd7db17a2251c2d1fa6edb" category="paragraph">アカウント名のすべてのサブスクリプションは、[*Subscription Details*]タブで確認できます。</block>
+  <block id="3134c27d858b331bf91068bcd770722c" category="paragraph"><block ref="3134c27d858b331bf91068bcd770722c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="60d8073bb007efeabf44bc4eea759210" category="paragraph">各サブスクリプション番号について、次の情報が表示されます。</block>
+  <block id="8e43124ddee77b223f1e720973e147e7" category="list-text">*サブスクリプション番号*：ネットアップが割り当てたKeystoneサブスクリプションのサブスクリプション番号。</block>
+  <block id="f06c1648cc175308e5d0425681e31f63" category="list-text">*トラッキングID*：登録の有効化時に割り当てられたトラッキングID。これは、サブスクリプションとサイトごとに一意のIDで、サブスクリプションの追跡に使用されます。</block>
+  <block id="3644820829d44e327e43dd95769b1686" category="list-text">*請求期間*：月、四半期、年など、サブスクリプションの請求期間。</block>
+  <block id="58ddac2ef16530986372a556eb9e6b7a" category="list-text">*開始日*：サブスクリプションの開始日。</block>
+  <block id="b8905d711198e80b0e2927dff32cfd11" category="list-text">*終了日*：サブスクリプションの終了日。この日付に基づいて、有効期限が近づいているサブスクリプションに関する情報メッセージが表示される場合があります。</block>
+  <block id="83adb6d347afacf7d560a4bb6f74dfa1" category="list-text">*使用状況*：サブスクリプションの使用量または使用率が高すぎることを示します。消費レコードの数を最も高くする場合は、この列でリストをソートできます。</block>
+  <block id="87620cf1d6b63757e4ea27dcc44a9358" category="list-text"><block ref="5d188bf7f39558255a337fa21a17a0b0" category="inline-image-macro-rx" type="image"></block>：このアイコンをクリックすると* Subscription Time Series *タブが開き、このサブスクリプションに含まれる各サービスレベルの使用履歴データが表示されます。</block>
+  <block id="dc73bcb00aeb285be26cfd179924fe9e" category="paragraph">サブスクリプションレコードの下矢印をクリックすると、詳細が表示されます。サービスレベル名、コミット済み容量、消費済み容量、使用可能容量、現在のバースト使用量および蓄積バースト使用量などの詳細は、TiBで表示されます。高消費量を記録した特定のサービスレベルが強調表示されます。ボリュームに対して生成された警告とアラートも表示されます。</block>
+  <block id="706b251feaacce4536ad626d12e0cdb3" category="paragraph">Keystoneストレージサービスと関連するサービスレベルについては、を参照してください<block ref="36a3b3cce1fbb3bc12a00ec01f92dfcb" category="inline-link-rx"></block>。</block>
+  <block id="736d5b3313fce2ba2126ffff61a7ec29" category="paragraph">各サブスクリプションの使用状況を確認するには、次の使用状況インジケータを参照してください。</block>
+  <block id="3aaeea3f20263addb794c645bdef9c16" category="paragraph"><block ref="3aaeea3f20263addb794c645bdef9c16" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="88fa71f0a6e0dfedbb46d91cc0b37a50" category="paragraph-title">インデックス</block>
+  <block id="cf6ffa83aadbdcc3058434f093ea54ec" category="paragraph"><block ref="56a93b6a2a3614c3aeb1b9851c5e43f2" category="inline-image-macro-rx" type="image"></block>：サービスレベルのコミット済み容量に照らして、使用容量は記録されません<block ref="bb7f7720d1162aeddd650a9a9446141b" category="inline-image-macro-rx" type="image"></block>：コミット済み容量の80%以内で、通常消費量が発生します<block ref="7646cb232eca2204ee8b299f2fdebfb4" category="inline-image-macro-rx" type="image"></block>：最大消費量。つまり、使用量がコミット済み容量の100%以上に達しようとしています。*Consumed *列には、コミット済み容量の80%を超える消費量を示すインジケータが表示されます<block ref="2acc4efd0d7d55d52fc790f88116c2e0" category="inline-image-macro-rx" type="image"></block>：消費量がバースト制限内にあります。バースト消費量とは、サービスレベルの100%のコミット済み容量を超え、120 %などの合意されたバースト使用制限の範囲内である消費量のことです<block ref="9dd31109acddbedcca8dcf80e09eebda" category="inline-image-macro-rx" type="image"></block>：指定されたバースト制限を超過した消費量を示します</block>
+  <block id="6258cb1a842831f15b22f87325717f37" category="section-title">履歴サブスクリプションデータを表示します</block>
+  <block id="a514224616890dbac3dede8f0d533add" category="paragraph">[*Subscription Time Series*]タブには、特定の期間のサブスクリプションの履歴データが表示されます。縦のグラフには、選択した期間の使用状況の詳細と、レポートを比較して生成するための適切なインジケータが表示されます。</block>
+  <block id="c46ba64e2bab36ac2ede95ae5f0692dc" category="list-text">[* Subscription Time Series*（サブスクリプションタイムシリーズ*）]タブをクリックします。</block>
+  <block id="a49bb8de1f373a2c0821dd3715e2473c" category="list-text">詳細を表示するサブスクリプションを選択します。デフォルトでは、アカウント名の最初のサブスクリプションが選択されています。</block>
+  <block id="9ff2c2d2ffe68a2a0862d38fe356318c" category="list-text">[開始日*（From Date）]および[終了日*（* To Date）]フィールドのカレンダーアイコンから時間範囲を選択します。デフォルトの時間範囲は、請求期間の開始日から現在の日付までです。</block>
+  <block id="22dcf7d0676ff8f536ed431a7b672de7" category="list-text">[ * 詳細の表示 * ] をクリックします。選択した期間に基づいて、各サービスレベルのサブスクリプションの消費履歴データが表示されます。グラフにカーソルを合わせると、そのデータポイントでのコミット済み容量、消費容量、バースト、バースト制限データを基準にした使用量の内訳が表示されます。</block>
+  <block id="4ace5fc4007e7d1732831506700b3e06" category="paragraph"><block ref="4ace5fc4007e7d1732831506700b3e06" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="35070e1c588eb56d935a4877ffdfdb10" category="paragraph">次の詳細が表示されます。</block>
+  <block id="8cdd8d8e55dfdcaf50118c634169eaf7" category="list-text">*サブスクリプションの詳細*：サブスクリプションの開始日と終了日、および請求期間（四半期、毎年など）。</block>
+  <block id="12ed0205cd7410bc01e15e4b8a285019" category="list-text">*使用状況グラフ*：棒グラフには、日付範囲におけるサービスレベル名とそのサービスレベルに対する消費容量が表示されます。収集の日時がグラフの下部に表示されます。</block>
+  <block id="a0844c086d0417165bb56c154e3ddbcc" category="admonition">クエリの日付範囲に基づいて、使用状況グラフは30のデータポイントの範囲で表示されます。</block>
+  <block id="3a6ef8ff534dc5701b3936464bf23441" category="paragraph">棒グラフの次の色は、サービスレベルで定義された消費容量を示します。</block>
+  <block id="19e499aa450e552c41a06bb0742085d6" category="list-text">緑：80%以内。</block>
+  <block id="744f7cb6bd1aa9077ff244891a651e80" category="list-text">オレンジ：80%～100%。</block>
+  <block id="c3b2392317dad26eb62ae53f36697f5e" category="list-text">赤：バースト時の使用状況（合意済みのバースト制限に対するコミット済み容量の100%）</block>
+  <block id="7673426e4a1c3cc1b97d1f96f8bd076a" category="list-text">紫：バースト制限の上、または<block ref="a9793d8430f5962bfc6384a1d9f6d19b" prefix=" " category="inline-code"></block>。</block>
+  <block id="4bd2482822c2e802c391dac7e891d9b1" category="list-text">Gray：_暫定的な使用状況_-その期間の正確なデータが利用できず、以前のデータ収集ポイントで利用可能なデータに置き換えられた場合に記録されます。</block>
+  <block id="e87913116d2be6cac8be4e9b2fdf61e4" category="list-text">*現在の消費容量*：サービスレベルに定義されている消費容量（TiB）を示します。このフィールドでは、特定の色を使用して使用します。</block>
+  <block id="500993209cab49c52b98999c19742b12" category="list-text">グレー：なし。</block>
+  <block id="3cc6f4aa3b6f7beebb36ba03d0894c83" category="list-text">緑：コミット済み容量の80%以内</block>
+  <block id="33ac206d1e2d75015388a71d724255eb" category="list-text">オレンジ：コミット済み容量の80%を超える消費量。</block>
+  <block id="6294dd4382e993530f7872de2d246655" category="list-text">* Current Burst *：定義されたバースト制限内またはそれ以上の消費容量を示すインジケータ。合意されたバースト制限内の使用量（コミット済み容量を20%超過した場合など）は、バースト制限内に収まります。それ以上の使用量は、バースト制限を超えた使用量とみなされます。このフィールドでは、特定の色を使用して使用します。</block>
+  <block id="b19e15743d3257f81d946a8133069a26" category="list-text">赤：バースト。</block>
+  <block id="8cb9900bd09a496f0e4b2e4220549b55" category="list-text">紫：バースト制限を超えています。</block>
+  <block id="2ace5c82683c2f75d293a1427df222e4" category="list-text">* Accrued Burst *：現在の請求期間の月単位で計算された、発生したバーストの使用量または消費容量を示すインジケータ。蓄積されたバースト使用量は、サービスレベルのコミット済み容量と消費済み容量に基づいて計算されます。<block ref="0664f1d332f0bb3aa9231cb5f4fb3bca" prefix=" " category="inline-code"></block>。</block>
+  <block id="393e226f044ba6b817b81de6d94e7276" category="admonition">[Current Consumed]、[Current Burst]、[Accrued Burst]の各指標は、サブスクリプションの課金期間に関する消費量を決定し、クエリの日付範囲には基づいていません。</block>
+  <block id="b99a21b99fb9e230b533835afc100672" category="section-title">システムの詳細を表示します</block>
+  <block id="819abf779095094c4f296a2f1911a333" category="paragraph">[システムの詳細]*タブでは、ONTAP でボリュームの使用状況やその他の詳細を確認できます。StorageGRID の場合、オブジェクトストレージ環境でのノードとその個 々 の使用状況が表示されます。</block>
+  <block id="7fdbc37a63f55a7bf94c4f7eee9fbbb6" category="example-title">&lt;strong&gt; ONTAPボリュームの詳細&lt;/strong&gt;</block>
+  <block id="6f7e564e5f841331ad117d7eb3b3ae10" category="paragraph">ONTAP の場合、*[システムの詳細]*タブには、Keystoneサブスクリプションで管理されるストレージ環境内のボリュームについて、使用容量、ボリュームタイプ、クラスタ、アグリゲート、サービスレベルなどの情報が表示されます。</block>
+  <block id="d2c1241be04ae4d70013755a80c6cbd2" category="list-text">[システムの詳細]*タブをクリックします。</block>
+  <block id="ccdbd07a063ad5631511d37c5d2f5a36" category="list-text">サブスクリプション番号を選択します。デフォルトでは、使用可能な最初のサブスクリプション番号が選択されています。</block>
+  <block id="881fb88f30cf9ba2d57147ddfb898685" category="paragraph">ボリュームの詳細が表示されます。列見出しの横にある情報アイコンにマウスを合わせると、列をスクロールして詳細を確認できます。列でソートしたり、リストをフィルタして特定の情報を表示したりできます。個 々 のノードシリアル番号をコピーするには、*ノードシリアルのコピー*ボタンをクリックします。</block>
+  <block id="2ebe85ca38ab100590dc16fd81d18da1" category="paragraph"><block ref="2ebe85ca38ab100590dc16fd81d18da1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8b315ff987c2e0cfd5650f23e5464623" category="example-title">&lt;strong&gt; StorageGRIDノードと消費の詳細&lt;/strong&gt;</block>
+  <block id="b3e33e1c1964ee47822698a5c69ad576" category="paragraph">StorageGRID の場合、オブジェクトストレージ環境内のノードの論理使用量が表示されます。</block>
+  <block id="4305e9b17980561df3c63a75f32b2075" category="list-text">サブスクリプション番号を選択します。デフォルトでは、使用可能な最初のサブスクリプション番号が選択されています。サブスクリプション番号を選択すると、オブジェクトストレージの詳細のリンクが有効になります。</block>
+  <block id="1690678f16ffa10ab1e26e44aa686db5" category="paragraph"><block ref="1690678f16ffa10ab1e26e44aa686db5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4be9bcf02510758e3d80494ef37c15b0" category="list-text">リンクをクリックすると、各ノードのノード名と論理使用量の詳細が表示されます。</block>
+  <block id="47e40976658c073c0e6048f08d9a27c6" category="paragraph"><block ref="47e40976658c073c0e6048f08d9a27c6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7ecd0726b721e17d74d280fdd93e49f8" category="section-title">レポートを生成します</block>
+  <block id="4fdff89d4e1cb0e4a41e6c52ac0eca05" category="paragraph">各タブの*[Download CSV]*ボタンをクリックすると、サブスクリプションの詳細、特定の期間の使用履歴データ、およびシステムの詳細に関するレポートを生成して表示できます。 <block ref="f865f0dd5bea740b7e77dd6862c1f366" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="03051fbd458dd7625e7969d74dd74735" category="paragraph">詳細はCSV形式で生成され、あとで使用できるように保存できます。</block>
+  <block id="e14d9b45f9f7753ca5842f57c89f2f92" category="paragraph">[サブスクリプション時系列]タブでは、クエリの日付範囲のデフォルトの30データポイント、または日次レポートのレポートをダウンロードするオプションが表示されます。</block>
+  <block id="d5b4a5bc607e49724b373b44e10a1b6d" category="paragraph"><block ref="d5b4a5bc607e49724b373b44e10a1b6d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3f564a49686a18ae09da9597e6538840" category="paragraph">[サブスクリプションタイムシリーズ*]タブのサンプルレポート。グラフデータが変換されます。</block>
+  <block id="0a5468723ee164f4220a0538b1ff32b4" category="paragraph"><block ref="0a5468723ee164f4220a0538b1ff32b4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="428c58ec1c2902ea6bff31e38cae88ff" category="section-title">アラートを表示します</block>
+  <block id="c71fcee7f813aa85774b9114dfba4ef1" category="paragraph">ダッシュボードのアラートは警告メッセージを送信するため、ストレージ環境で発生している問題を把握することができます。</block>
+  <block id="903961eaa166cc0c38b735276961eb0c" category="paragraph">アラートには次の2種類があります。</block>
+  <block id="7a0a61d280e201148fcd091f8167d88f" category="list-text">*情報*:サブスクリプションがまもなく終了するなどの問題については、情報アラートを表示できます。情報アイコンにカーソルを合わせると、問題 の詳細が表示されます。</block>
+  <block id="d08b54ee187c7327910bae3997812ee1" category="list-text">*警告*：非順守などの問題は警告として表示されます。たとえば、管理対象クラスタにアダプティブQoS（AQoS）ポリシーが適用されていないボリュームがある場合、警告メッセージが表示されます。警告メッセージのリンクをクリックすると、* System Details *タブに非準拠ボリュームのリストが表示されます。</block>
+  <block id="77561a56c28ac9cccc7140baff66eefa" category="paragraph">AQoSポリシーの詳細については、を参照してください<block ref="eb9e151d2a405494b16ec028c9292f15" category="inline-link-rx"></block>。</block>
+  <block id="2f79ebd4f32cabd1114c688445ebf53e" category="paragraph"><block ref="2f79ebd4f32cabd1114c688445ebf53e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a8e64b58beb4844a89f1dc662bd47837" category="paragraph">これらの注意および警告メッセージの詳細については、ネットアップサポートにお問い合わせください。詳細については、を参照してください<block ref="a434e165bb861f31d95108a8980bc76d" category="inline-link-rx"></block>。</block>
+  <block id="f5db195a7ff1968e337408920b956125" category="paragraph">NetApp Keystone Flexサブスクリプション（Flexサブスクリプション）は、事前定義されたパフォーマンスサービスレベル（サービスレベル）で容量を提供します。</block>
+  <block id="4c351868537e82b27bc0dc0ae18a7633" category="paragraph">各サービスレベルは、I/O密度によって定義されます。これは、パフォーマンス（1秒あたりの入出力処理数（IOPS））と使用済みストレージ（TiBあたりの格納データ）の比率で、単位はIOPS/ TiBです。</block>
+  <block id="c42f8376955b2ed929e56dac3d7fa30e" category="paragraph">NetApp Service Engineのユーザインターフェイスの複数の画面から、サービスレベルをサブスクリプションに割り当てることができます。詳細については、を参照してください <block ref="3a337ffb28bf0d116cc65c4b009401e6" category="inline-link-macro-rx"></block>。</block>
+  <block id="80501b8cb950ef7173fcd14a0b645162" category="doc">Flexサブスクリプションのお客様はActive IQ デジタルアドバイザで何を表示できますか？</block>
+  <block id="10a5d15772da49e32e43a900f71621ce" category="paragraph">NetApp Keystone Flexサブスクリプション（Flexサブスクリプション）サービスにサブスクライブしている場合は、Active IQ デジタルアドバイザ（デジタルアドバイザ）ダッシュボードで使用状況レポートとグラフを表示できます。</block>
+  <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link-macro">Digital Advisorのドキュメント</block>
+  <block id="199941fcffe1cc10f1d78276fb963281" category="paragraph">Digital Advisorの詳細については、を参照してください <block ref="6ddd16d015a7ae88cd6e808110d98222" category="inline-link-macro-rx"></block>。</block>
+  <block id="4990a96b0c95260b0d9f8cfea8027323" category="paragraph">サイトにNetApp Service Engineがデフォルトでインストールされている場合は、Digital Advisorに加えてNetApp Service Engineのインターフェイスから消費グラフを表示できます。ただし、お客様が管理する環境では、NetApp Service Engineインターフェイスにはアクセスできず、容量グラフや使用状況レポートはDigital Advisorダッシュボードからのみ表示できます。お客様が管理する環境については、を参照してください<block ref="c3e9ea2899321a2aa6e747d59ecbded6" category="inline-link-rx"></block></block>
+  <block id="e26e1d65695e28b374df5ca908c92139" category="paragraph">お客様がFlexサブスクリプションサービスにサブスクライブしている場合は、Digital Advisorで次の情報を確認できます。</block>
+  <block id="763ef308610fa0c0e4819b7d32e376db" category="list-text">* Keystone Flex Subscription *ウィジェット：Digital Advisorにログインしている場合は、* Keystone Flex Subscription *ウィジェットが表示され、購入したFlexサブスクリプションサービスに対する使用容量がまとめられます。</block>
+  <block id="25a073100ab530af78a4207498fddc80" category="paragraph">詳細については、を参照してください <block ref="261ab361347f64f3209b06735747fe46" category="inline-link-macro-rx"></block>。</block>
+  <block id="c8248eedf8c02ace20c31385d67a0f1e" category="paragraph">[Keystone Subscriptions]*タブの詳細については、_Digital AdvisorのダッシュボードとFlexサブスクリプションのレポートを参照してください。</block>
+  <block id="efc03cbbb4d0230d7feb269ad27e9cef" category="admonition">このステータスは、通常、オブジェクトに QoS ポリシーが適用されていないことを意味します。したがって、 NetApp Service Engine を使用して Flex サブスクリプションの一部として管理することはできません。編集ペンを使用してオブジェクトを修正し、適切なサービスレベルを割り当てることができます。これにより、そのオブジェクトのステータスが運用可能に変わります。</block>
+  <block id="d7b031f9c8084a9ac68f816f54b2be3b" category="paragraph">*デフォルトでインストールされるソフトウェアバージョン（ONTAP など）は何ですか？*サブスクリプションしているサービスレベル（ファイルサービスとブロックサービスを使用するONTAP 、ブロックサービス用SANtricity 、オブジェクト用StorageGRID など）に応じて、サポートチームが最新の安定版リリースをインストールします。セキュリティや機能の問題は発生しません。</block>
+  <block id="596c605317cc14ada22698b4c013fd32" category="sidebar">Flexサブスクリプションのサービスレベル</block>
+  <block id="8629d433b3c29320111a02fbc3cc079b" category="sidebar">FlexサブスクリプションとActive IQ デジタルアドバイザ</block>
+  <block id="63d539af1a31e2f3e8acd3fdd788eac6" category="sidebar">Active IQ デジタルアドバイザからレポートを表示および生成します</block>
 </blocks>

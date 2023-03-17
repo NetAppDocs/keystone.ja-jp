@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: nkfsosm-keystone-and-aiq.html 
-keywords: netapp, keystone, aiq keystone customers, Active IQ and keystone 
+keywords: netapp, keystone, aiq keystone customers, Active IQ, Digital Advisor 
 summary: お客様が Active IQ で目にする可能性があるキーストーン 
 ---
-= Flex サブスクリプションのお客様は Active IQ で何を表示できますか。
+= Flexサブスクリプションのお客様はActive IQ デジタルアドバイザで何を表示できますか？
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,18 +14,19 @@ summary: お客様が Active IQ で目にする可能性があるキーストー
 
 
 [role="lead"]
-NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）サービスに登録している場合は、 Active IQ デジタルアドバイザダッシュボードに使用状況レポートとグラフを表示できます。
+NetApp Keystone Flexサブスクリプション（Flexサブスクリプション）サービスにサブスクライブしている場合は、Active IQ デジタルアドバイザ（デジタルアドバイザ）ダッシュボードで使用状況レポートとグラフを表示できます。
 
-Active IQ デジタルアドバイザの詳細については、を参照してください link:https://docs.netapp.com/us-en/active-iq/index.html["Active IQ デジタルアドバイザのドキュメント"]
+Digital Advisorの詳細については、を参照してください link:https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisorのドキュメント"]。
 
-サイトに NetApp Service Engine がデフォルトでインストールされている場合、 Active IQ デジタルアドバイザに加えて、 NetApp Service Engine インターフェイスを使用して消費グラフを表示できます。ただし、お客様が管理する環境では、 NetApp Service Engine インターフェイスにアクセスすることはできません。また、容量チャートと使用状況レポートは、 Active IQ デジタルアドバイザダッシュボードでのみ表示できます。お客様が管理する環境については、を参照してください link:nkfsosm_overview.html["運用モデル、役割、担当業務"]
+サイトにNetApp Service Engineがデフォルトでインストールされている場合は、Digital Advisorに加えてNetApp Service Engineのインターフェイスから消費グラフを表示できます。ただし、お客様が管理する環境では、NetApp Service Engineインターフェイスにはアクセスできず、容量グラフや使用状況レポートはDigital Advisorダッシュボードからのみ表示できます。お客様が管理する環境については、を参照してください https://docs.netapp.com/us-en/keystone/nkfsosm_overview.html["運用モデル、役割、担当業務"]
 
 サイトからの指標データの収集間隔は 5 分です。
 
-お客様は、 Flex サブスクリプションサービスに加入している場合、 Active IQ デジタルアドバイザーに関する次の情報を表示できます。
+お客様がFlexサブスクリプションサービスにサブスクライブしている場合は、Digital Advisorで次の情報を確認できます。
 
-* * Keystone Flex サブスクリプション * ウィジェット： Active IQ デジタルアドバイザにログインしている場合は、購入した Flex サブスクリプションサービスの容量使用状況をまとめた「 * Keystone Flex サブスクリプション * 」ウィジェットが表示されます。
-* ウィジェットで「 * View Details * 」をクリックすると、「 * Keystone - Capacity Utilization * 」ダッシュボードが表示されます。Keystone - 容量利用率 * ダッシュボードでは、サービスレベル、データ保護、高度なデータ保護サービスなど、サブスクライブされたサービスごとに容量と使用状況のデータの内訳と分析を行うことができます。ダッシュボードには、過去 1 、 7 、 30 日間の使用済み容量、コミット済み容量、バースト時の容量のグラフも表示され、平均発生率は現在の請求期間に基づいて計算され、分割されます。
+* * Keystone Flex Subscription *ウィジェット：Digital Advisorにログインしている場合は、* Keystone Flex Subscription *ウィジェットが表示され、購入したFlexサブスクリプションサービスに対する使用容量がまとめられます。
 
 
-詳細については、を参照してください link:https://docs.netapp.com/us-en/active-iq/task_view_keystone_capacity_utilization.html["NetApp Keystone フレックスサブスクリプションを使用して容量利用率を表示します"]。
+詳細については、を参照してください link:https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["NetApp Keystone フレックスサブスクリプションを使用して容量利用率を表示します"]。
+
+[Keystone Subscriptions]*タブの詳細については、_Digital AdvisorのダッシュボードとFlexサブスクリプションのレポートを参照してください。
