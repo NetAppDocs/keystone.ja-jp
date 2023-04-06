@@ -16,7 +16,7 @@ summary: Keystone が共有を表示します
 [role="lead"]
 * Shares * リストに、選択したテナントに属するファイル共有が表示されます。リストを表示するには、メニューから * file services > Shares * を選択します。
 
-既存の環境にすでに含まれていて、 NetApp Service Engine で設定されている Storage VM に属するファイル共有は、この画面でも確認でき、 NetApp Keystone Flex Subscription （ Flex サブスクリプション）サービスの一部として管理できます。NetApp Service Engine 以外でプロビジョニングされたファイル共有は定期的にインポートされ、該当するステータスコードがこのページに表示されます。
+既存の環境にすでに含まれており、NetApp Service Engineで設定されているStorage VMに属するファイル共有は、この画面に表示して、NetApp Keystone サブスクリプションサービスの一部として管理することもできます。NetApp Service Engine 以外でプロビジョニングされたファイル共有は定期的にインポートされ、該当するステータスコードがこのページに表示されます。
 
 インポートしたファイル共有が NetApp Service Engine の許容可能な標準規格に準拠している場合、共有を動作可能にするために必要なすべてのパラメータが使用可能になります。インポートされたファイル共有は「 Operational 」ステータスで NetApp Service Engine から直接管理できます。ただし、一部の共有は NetApp Service Engine 上の既存の共有と同じ標準に含まれていない場合があります。インポート後、これらのファイル共有は「 Imported 」または「 Non-Standard 」ステータスで分類されます。ボリュームのステータスとそれらを運用するための手順については、を参照してください link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states["オブジェクトの状態"]
 

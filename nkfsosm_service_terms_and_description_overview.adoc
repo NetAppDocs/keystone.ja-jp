@@ -4,7 +4,7 @@ permalink: nkfsosm_service_terms_and_description_overview.html
 keywords: netapp, keystone, service, terms, description, overview, 
 summary: Keystone サービスの用語と概要の概要 
 ---
-= Flex サブスクリプションサービスの契約条件と説明
+= Keystoneのサービス条件と説明
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: Keystone サービスの用語と概要の概要
 
 
 [role="lead"]
-NetApp Keystone Flexサブスクリプション（Flexサブスクリプション）には、以下のサービス規約と説明が記載されています。
+NetApp Keystone には、次のサービス条件と説明が記載されています。
 
-* Flexサブスクリプションは、最低1年間、最長3年間ご利用いただけます。当初の期間終了後は、毎年更新が可能です。容量は 1TiB まで増やすことができます。
+* Keystoneサービスは、最低1年から最長3年間利用できます。当初の期間終了後は、毎年更新が可能です。容量は 1TiB まで増やすことができます。
 * サイトあたりの最小容量は 100TB で、各サイトに 1 つ以上のクラスタを配置して最小容量要件を満たすことができます。パートナーが運用するモデルでは、お客様、サイト、サービスレベルに応じて、柔軟な最小値を持つサブスクリプションが作成されます。
 * 100TiBの容量は、1つのサービスレベルまたはレベルの組み合わせで構成できます。
 * テナントサブスクリプションは、パートナー様がサブスクライブしているサービスレベルに限定されます。

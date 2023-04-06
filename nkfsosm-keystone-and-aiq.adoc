@@ -4,7 +4,7 @@ permalink: nkfsosm-keystone-and-aiq.html
 keywords: netapp, keystone, aiq keystone customers, Active IQ, Digital Advisor 
 summary: お客様が Active IQ で目にする可能性があるキーストーン 
 ---
-= Flexサブスクリプションのお客様はActive IQ デジタルアドバイザで何を表示できますか？
+= Keystoneのお客様はActive IQ デジタルアドバイザにどのような情報を表示できますか？
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,19 +14,10 @@ summary: お客様が Active IQ で目にする可能性があるキーストー
 
 
 [role="lead"]
-NetApp Keystone Flexサブスクリプション（Flexサブスクリプション）サービスにサブスクライブしている場合は、Active IQ デジタルアドバイザ（デジタルアドバイザ）ダッシュボードで使用状況レポートとグラフを表示できます。
+NetApp Keystone サービスに登録している場合は、Active IQ デジタルアドバイザ（デジタルアドバイザ）ダッシュボードで使用状況レポートとグラフを表示できます。
+
+Digital Advisorにログインすると、* Keystoneサブスクリプション*ウィジェットが表示され、購入したKeystoneサービスに対する使用容量がまとめられます。
 
 Digital Advisorの詳細については、を参照してください link:https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisorのドキュメント"]。
 
-サイトにNetApp Service Engineがデフォルトでインストールされている場合は、Digital Advisorに加えてNetApp Service Engineのインターフェイスから消費グラフを表示できます。ただし、お客様が管理する環境では、NetApp Service Engineインターフェイスにはアクセスできず、容量グラフや使用状況レポートはDigital Advisorダッシュボードからのみ表示できます。お客様が管理する環境については、を参照してください https://docs.netapp.com/us-en/keystone/nkfsosm_overview.html["運用モデル、役割、担当業務"]
-
-サイトからの指標データの収集間隔は 5 分です。
-
-お客様がFlexサブスクリプションサービスにサブスクライブしている場合は、Digital Advisorで次の情報を確認できます。
-
-* * Keystone Flex Subscription *ウィジェット：Digital Advisorにログインしている場合は、* Keystone Flex Subscription *ウィジェットが表示され、購入したFlexサブスクリプションサービスに対する使用容量がまとめられます。
-
-
-詳細については、を参照してください link:https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["NetApp Keystone フレックスサブスクリプションを使用して容量利用率を表示します"]。
-
-[Keystone Subscriptions]*タブの詳細については、_Digital AdvisorのダッシュボードとFlexサブスクリプションのレポートを参照してください。
+[Keystoneサブスクリプション]*タブの詳細については、_Digital AdvisorのダッシュボードとKeystone _のレポートを参照してください。

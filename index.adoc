@@ -4,7 +4,7 @@ permalink: index.html
 keywords: netapp, keystone, service, offering, 
 summary: Keystone ドキュメントポータルへようこそ。 
 ---
-= NetApp Keystone Flex サブスクリプションのドキュメント
+= NetApp Keystone のドキュメント
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -13,42 +13,36 @@ summary: Keystone ドキュメントポータルへようこそ。
 :imagesdir: ./media/
 
 
-NetApp Keystone Flex サブスクリプションは、 NetApp Keystone サービスの一部です。NetApp Keystone は、オンプレミスの CAPEX （設備投資）サービスを提供するポートフォリオで、 NetApp Keystone Flex Pay や NetApp Keystone Flex Subscription サービスなど、クラウドへの移行をスムーズに進めることができます。NetApp Keystone は、オンプレミスとクラウドにわたってストレージサービスを提供することで、シームレスなハイブリッドクラウドエクスペリエンスを実現します。NetApp Keystone の詳細については、を参照してください link:https://www.netapp.com/services/subscriptions/keystone/["NetApp Keystone"]
+NetApp Keystone は、クラウドへの移行をスムーズに実現するための、オンプレミスの設備投資（CAPEX）オプションのポートフォリオです。NetApp Keystone は、オンプレミスとクラウドにわたってストレージサービスを提供することで、シームレスなハイブリッドクラウドエクスペリエンスを実現します。NetApp Keystone の詳細については、を参照してください link:https://www.netapp.com/services/subscriptions/keystone/["NetApp Keystone"]
 
-NetApp Keystone Flex サブスクリプションの詳細については、を参照してください link:https://www.netapp.com/services/subscriptions/keystone/flex-subscription["Keystone Flex サブスクリプション"]
+NetApp Keystone の詳細については、を参照してください https://www.netapp.com/services/keystone/["NetApp Keystone"]。
 
-Flex サブスクリプションは、オンプレミスシステムでクラウドと同等のエクスペリエンスを提供し、思いどおりのクラウド接続を実現する、ストレージサービスです。
-
-* * NetApp Keystone Flex Pay * - NetApp Keystone Flex Pay （フレックスペイ）は、従来のファイナンス、リース、固定 / 可変オプションなど、お客様のキャッシュフローニーズに合わせた柔軟なファイナンスオプションのポートフォリオです。
-* * NetApp Keystone Flex サブスクリプション * - NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）は、成長に合わせて拡張できる成果ベースのサブスクリプションサービスで、オンプレミスのクラウドレベルのエクスペリエンスを実現します。
-
-
-image:nkfsosm_image1.png["エラー：グラフィックイメージがありません"]
+Keystoneは、オンプレミスシステムにクラウドと同等のエクスペリエンスを提供し、クラウドへの接続を自由に利用できるストレージサービスです。
 
 
 
-== Flex サブスクリプション
+== Keystone
 
-Flex サブスクリプションは、成長に応じて購入できるサブスクリプションベースのサービスモデルです。運用コストの消費モデルを希望するお客様に、設備投資（ CapEx ）やリース（ CapEx ）などのシームレスなハイブリッドクラウドエクスペリエンスを提供します。予測不可能な容量の増加に対処し、複雑な調達サイクルを実施するという課題を解消することで、価値創出までの時間を短縮できます。Flex サブスクリプションを使用すると、経済性と運用をビジネスの優先事項に合わせることができます。
+Keystoneは、CAPEX（設備投資）やリースよりもOPEX（運用コスト）消費モデルを希望するお客様に、シームレスなハイブリッドクラウドエクスペリエンスを提供する、従量課金制のサブスクリプションベースのサービスモデルです。予測不可能な容量の増加に対処し、複雑な調達サイクルを実施するという課題を解消することで、価値創出までの時間を短縮できます。Keystoneを使用すると、お客様は経済性と運用性をビジネスの優先事項に合わせることができます。
 
 image:nkfsosm_image2.png["エラー：グラフィックイメージがありません"]
 
-Flexサブスクリプションは、事前定義されたパフォーマンスサービスレベル（サービスレベル）で、ネットアップ、パートナー、またはお客様がオンプレミスに導入して運用できるブロックデータ、ファイルデータ、オブジェクトデータの種類に対して、ストレージ容量を提供するサブスクリプションベースのサービスです。Flex サブスクリプションが提供する基本サービスに加えて、追加料金でアドオンサービスを選択できます。これらのサービスについては、次の図で説明します。
+Keystoneはサブスクリプションベースのサービスで、事前に定義されたパフォーマンスサービスレベル（サービスレベル）でストレージ容量を提供します。ブロック、ファイル、オブジェクトのデータタイプはオンプレミスに導入でき、ネットアップ、パートナー、またはお客様が運用できます。Keystoneが提供する基本サービスに加えて、アドオンサービスを追加料金で選択できます。これらのサービスについては、次の図で説明します。
 
 * * Data Protection Basic * サービスは、 NetApp SnapMirror と NetApp SnapVault の機能をデフォルト設定で提供します。
 * * データ保護の詳細 * は、 NetApp MetroCluster の機能を活用して、 RPO=0 の SLA を提供します。
 
 
 
-NOTE: Flex Subscription では、バックアップ操作に SnapVault テクノロジを使用し、ディザスタリカバリに SnapMirror を使用してデータをリモートでレプリケートします。アプリケーションのフェイルオーバーとリストアは自動的に行われません。
+NOTE: Keystoneでは、バックアップ処理にSnapVault テクノロジを使用し、ディザスタリカバリにSnapMirrorを使用してデータをリモートでレプリケートします。アプリケーションのフェイルオーバーとリストアが自動的に行われることはありません。
 
 image:nkfsosm_image3.png["エラー：グラフィックイメージがありません"]
 
 
 
-=== Flex サブスクリプションの利点
+=== Keystoneのメリット
 
-Flex サブスクリプションには、次の利点があります。
+Keystoneには次のようなメリットがあります。
 
 * 複雑なストレージ関連タスクから IT 担当者を解放し、アプリケーション管理に集中できるようにします
 * 初期投資を削減します

@@ -26,7 +26,7 @@ summary: ネットアップサービスエンジン Web インターフェイス
 * * NetApp のロゴ。 * これをクリックすると、いつでもダッシュボードビューに戻ります。
 * * テナント。 * 現在選択されているテナントが表示されます。テナントを変更する手順については、を参照してください link:sewebiug_select_tenant.html["テナントを選択します"]。
 * * ジョブ。 * クリックすると、最新のプロビジョニングジョブのステータスが表示されます。アイコンの色が変わり、設定ジョブのステータスが表示されます。詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["ジョブおよびジョブステータスインジケータ"]。
-* * ユーザーログイン。 * 現在ログインしているユーザーの名前を表示します。サインアウトするには、このアイコンをクリックします。詳細については、を参照してください link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-out-of-the-netapp-service-engine-web-interface["NetApp Service Engine Web インターフェイスからログアウトします"]。
+* *ユーザーログイン。*現在ログインしているユーザーのnKeystoneNameを表示します。サインアウトするには、このアイコンをクリックします。詳細については、を参照してください link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-out-of-the-netapp-service-engine-web-interface["NetApp Service Engine Web インターフェイスからログアウトします"]。
 
 
 image:sewebiug_image9_dashboard1.png["NSE ダッシュボード -1"]
@@ -37,7 +37,7 @@ image:sewebiug_image9_dashboard2.png["NSE ダッシュボード -2"]
 
 == ダッシュボードビュー
 
-ダッシュボードには、 NetApp Keystone ストレージのサブスクリプションに関する情報が表示されます。これには、使用済み容量、使用状況に対する請求、最新のアラートやサービス要求などの情報が含まれます。これは、 NetApp Service Engine に初めてログインしたときのデフォルトビューです。ダッシュボードの詳細については、を参照してください link:sewebiug_dashboard.html["Flex サブスクリプションダッシュボードを表示します"]。
+ダッシュボードには、 NetApp Keystone ストレージのサブスクリプションに関する情報が表示されます。これには、使用済み容量、使用状況に対する請求、最新のアラートやサービス要求などの情報が含まれます。これは、 NetApp Service Engine に初めてログインしたときのデフォルトビューです。ダッシュボードの詳細については、を参照してください link:sewebiug_dashboard.html["Keystoneダッシュボードを表示する"]。
 
 
 
@@ -88,15 +88,15 @@ image:sewebiug_image9_dashboard2.png["NSE ダッシュボード -2"]
 * * 運用中。 * は、ストレージ・リソースが正しくプロビジョニング / 変更されており、オンラインかつ機能可能であることを示します。
 * * 削除中です。 * オブジェクトは削除され、処理中です。
 * * キューに追加されました。 * オブジェクトはキューに登録されており、処理中です。
-* * インポートした * NetApp サービスエンジン外でプロビジョニングされたオブジェクトは、 NetApp Keystone フレックスサブスクリプション（ Flex サブスクリプション）の条件を満たしていない場合、このステータスでインポートされます。
+* *インポート済み* NetApp Service Engineの外部でプロビジョニングされたオブジェクトは、NetApp Keystone サブスクリプションの条件を満たしていない場合、このステータスでインポートされます。
 +
 
-NOTE: このステータスは、通常、オブジェクトに QoS ポリシーが適用されていないことを意味します。したがって、 NetApp Service Engine を使用して Flex サブスクリプションの一部として管理することはできません。編集ペンを使用してオブジェクトを修正し、適切なサービスレベルを割り当てることができます。これにより、そのオブジェクトのステータスが運用可能に変わります。
+NOTE: 通常このステータスは、オブジェクトにQoSポリシーが適用されていないため、Keystoneサブスクリプションの一部としてNetApp Service Engineで管理できないことを意味します。編集ペンを使用してオブジェクトを修正し、適切なサービスレベルを割り当てることができます。これにより、そのオブジェクトのステータスが運用可能に変わります。
 
-* * 非標準。 * NetApp Service Engine の外部でプロビジョニングされたオブジェクトは、 NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）の条件を満たしていない場合、このステータスでインポートされます。
+* *非標準。* NetApp Service Engineの外部でプロビジョニングされたオブジェクトは、NetApp Keystone サブスクリプションの条件を満たしていない場合、このステータスでインポートされます。
 +
 
-NOTE: 通常、このステータスは、オブジェクトが Flex サブスクリプションの一部として NetApp Service Engine で管理する必要のある 1 つ以上の条件を満たしていないことを意味します。可能です link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html["サービスリクエストを提出します"] NetApp Service Engine ポータルを通じて標準化され、管理され、サポートチームが運用できるようにするため。
+NOTE: 通常、このステータスは、Keystoneサブスクリプションの一部としてNetApp Service Engineで管理する条件がオブジェクトに1つ以上ないことを意味します。可能です link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html["サービスリクエストを提出します"] NetApp Service Engine ポータルを通じて標準化され、管理され、サポートチームが運用できるようにするため。
 
 * * サポートに連絡してください。 * この状態は、プロビジョニングまたは変更タスクが完全に完了しない場合に発生します。この状態の項目については、問題に対応するサポートリクエストを発行してください。
 * * 動作（バックアップのソースオブジェクト）。 * ステータスは次のいずれかになります。

@@ -4,7 +4,7 @@ permalink: nkfsosm_keystone_service_delivery_architecture_overview.html
 keywords: netapp, keystone, service, delivery, architecture, overview, 
 summary: サービス提供アーキテクチャの概要 
 ---
-= Flex サブスクリプションインフラストラクチャ
+= Keystoneインフラ
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: サービス提供アーキテクチャの概要
 
 
 [role="lead"]
-このセクションでは、ネットアップおよびお客様が運用する環境向けの NetApp Keystone Flex Subscription （ Flex サブスクリプション）インフラアーキテクチャおよび管理アプリケーションについて説明します。
+ここでは、ネットアップ環境とお客様環境のNetApp Keystone インフラアーキテクチャと管理アプリケーションについて説明します。
 
-Flex サブスクリプションのインフラアーキテクチャ、設計、テクノロジの選択、コンポーネント製品は、ネットアップのみが提供します。ネットアップは、次の処理を実行する権利を留保します。
+Keystoneインフラのアーキテクチャ、設計、テクノロジの選択、コンポーネント製品は、ネットアップのみが提供します。ネットアップは、次の処理を実行する権利を留保します。
 
 * 製品の選択、代替、または転用。
 * 適切であると判断された場合は、新しいテクノロジで製品を更新します
@@ -24,11 +24,11 @@ Flex サブスクリプションのインフラアーキテクチャ、設計、
 * サービス要件に合わせてアーキテクチャ、テクノロジ、製品を変更できます。
 
 
-Flex サブスクリプションインフラストラクチャには、複数のコンポーネントが含まれています。
+Keystoneインフラは、次の複数のコンポーネントで構成されます。
 
 * NetApp Service Engine のユーザインターフェイス（ Web ポータル）。
 * NetApp Service Engine API による統合：
-* ストレージコントローラを含む Flex サブスクリプションインフラ
+* ストレージコントローラを含むKeystoneインフラ
 * OpsRamp 、 Active IQ 、 Active IQ Unified Manager などのサービスを管理および運用するツール
 
 
@@ -40,7 +40,7 @@ image:nkfsosm_image8.png["エラー：グラフィックイメージがありま
 
 == NetApp Service Engine の略
 
-NetApp Service Engine Web ポータルを使用すると、ネットアップ、パートナー、またはお客様が運用するモデルで、 Flex Subscription サービスを管理および監視できます。ポータルには次の機能があります。
+NetApp Service Engine Webポータルを使用して、ネットアップ、パートナー、またはお客様が運用するモデルでKeystoneサービスを管理および監視できます。ポータルには次の機能があります。
 
 * 監視とストレージのシンプルなプロビジョニングをサポートするグラフィカルインターフェイス（ NetApp Service Engine Web インターフェイス）。
 * より高度なセットアップ操作やストレージ管理操作を可能にする一連の NetApp Service Engine REST API 。

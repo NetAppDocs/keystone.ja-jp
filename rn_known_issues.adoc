@@ -14,7 +14,7 @@ summary: NetApp Service Engine の既知の問題
 
 
 [role="lead"]
-以下の既知の問題が NetApp Service Engine で報告されています。ストレージを Flex サブスクリプションの一部としてプロビジョニングまたは使用する場合、これらの問題が発生することがあります。
+以下の既知の問題が NetApp Service Engine で報告されています。これらの問題は、Keystoneサブスクリプションの一部としてストレージをプロビジョニングまたは使用するときに発生する可能性があります。
 
 [cols="3*"]
 |===

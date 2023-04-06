@@ -9,7 +9,7 @@ settings:
   langs: ja-jp,us-en,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr
 sidebar:
   entries:
-  - title: NetApp Keystone フレックスサブスクリプション
+  - title: NetApp Keystone サービス
     url: "/index.html"
     entries:
     - title: サービス利用規約と概要
@@ -17,7 +17,7 @@ sidebar:
       entries:
       - title: サービス容量の定義
         url: "/nkfsosm_keystone_service_capacity_definitions.html"
-      - title: Flexサブスクリプションのサービスレベル
+      - title: Keystoneのサービスレベル
         url: "/nkfsosm_performance.html"
       - title: サービスレベルの指標と定義
         url: "/nkfsosm_service_level_metrics_and_definitions.html"
@@ -31,19 +31,19 @@ sidebar:
         url: "/nkfsosm_nrd.html"
       - title: 米国市民サポート
         url: "/nkfsosm_uscs.html"
-      - title: Flex サブスクリプションおよび Equinix
+      - title: KeystoneとEquinixを提供
         url: "/nkfsosm_equinix.html"
     - title: 運用モデルと担当業務
       url: "/nkfsosm_overview.html"
     - title: テナンシーとマルチテナンシー
       url: "/nkfsosm_tenancy_overview.html"
-    - title: Flex サブスクリプションインフラストラクチャ
+    - title: Keystoneインフラ
       url: "/nkfsosm_keystone_service_delivery_architecture_overview.html"
     - title: サイト要件
       url: "/nkfsosm_site_requirements.html"
     - title: 処理
       url: "/nkfsosm_netapp_global_services_and_support_center_@gssc@.html"
-    - title: FlexサブスクリプションとActive IQ デジタルアドバイザ
+    - title: KeystoneとActive IQ デジタルアドバイザ
       url: "/nkfsosm-keystone-and-aiq.html"
       entries:
       - title: Active IQ デジタルアドバイザからレポートを表示および生成します
@@ -56,10 +56,10 @@ sidebar:
       url: "/rn_fixed_issues.html"
     - title: 既知の問題
       url: "/rn_known_issues.html"
-  - title: Flex サブスクリプション FAQ
+  - title: Keystoneサブスクリプションに関するFAQ
     url: "/nkfsfaq_overview.html"
     entries:
-    - title: Flex サブスクリプション
+    - title: Keystoneサブスクリプション
       url: "/nkfsfaq_keystone_subscription.html"
     - title: サービス提供の詳細
       url: "/nkfsfaq_service_offer_details.html"
@@ -84,7 +84,7 @@ sidebar:
         url: "/sewebiug_select_tenant.html"
       - title: NetApp Service Engine Web インターフェイスを表示します
         url: "/sewebiug_netapp_service_engine_web_interface_overview.html"
-    - title: Flex サブスクリプションダッシュボードを表示します
+    - title: Keystoneサブスクリプションのダッシュボードを表示します
       url: "/sewebiug_dashboard.html"
     - title: 請求を表示します
       url: "/sewebiug_billing.html"

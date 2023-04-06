@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: nkfsosm_equinix.html 
 keywords: netapp, keystone, Equinix 
-summary: Keystone Flex サブスクリプションと Equinix 
+summary: Keystone Keystone KeystoneサービスとEquinix 
 ---
-= Equinix を基盤とする Flex サブスクリプション
+= Equinixを基盤とするKeystoneサービス
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,8 +14,8 @@ summary: Keystone Flex サブスクリプションと Equinix
 
 
 [role="lead"]
-ネットアップは、 Equinix データセンターで NetApp Keystone フレックスサブスクリプション（ Flex Subscription ）をホストする Equinix とパートナー関係を結び、パートナー様向けに Unified 解決策を提供しています。
+ネットアップは、EquinixデータセンターでNetApp Keystone サービスをホストするためにEquinixとパートナー関係を結び、ユニファイド解決策 を確実に提供しています。
 
-Equinix が提供する Flex サブスクリプションは、標準の Flex サブスクリプションサービスから変更されていません。
+Equinixを基盤とするKeystoneサービスは、Keystoneの標準的なサービスから変更されていません。
 
-Flex サブスクリプションの標準サービスに加えて、 Flex サブスクリプション機器をホストする Equinix データセンターを選択する必要があります。
+Keystoneの標準的なサービスに加えて、Keystone機器をホストするEquinixデータセンターを選択する必要があります。

@@ -44,7 +44,7 @@ NetApp Service Engine 管理者に、 NetApp Service Engine インスタンス�
 | ネットアップ管理者（読み取り） | すべてのコンポーネントに対する読み取り専用アクセス。 
 
 
-| ネットアップ管理者 | NetApp Keystone Flex サブスクリプションを管理するための NetApp Service Engine Web ポータルですべての機能を実行するためのフルアクセスおよび権限、およびパートナーとテナントの管理に対するすべてのアクティビティ。 
+| ネットアップ管理者 | NetApp Keystone サブスクリプションサービスの管理、およびパートナーとテナントの管理のためのすべてのアクティビティを行うための、NetApp Service Engine Webポータルのすべての機能を実行するためのフルアクセスと権限。 
 |===
 
 
@@ -83,7 +83,7 @@ NetApp SSO でログインするには、次のものが必要です。
 . NetApp SSO を選択します。
 . SSO ログインページで、ユーザー名とパスワードを入力し、 * サインイン * をクリックします。
 +
-ログインに成功すると、 NetApp Service Engine Web インターフェイスがロードされ、 Flex Subscription ダッシュボードが表示されます。GUI の概要については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["NetApp Service Engine Web インターフェイスの概要"]。
+ログインに成功すると、NetApp Service Engine Webインターフェイスがロードされ、Keystoneサブスクリプションサービスのダッシュボードが表示されます。GUI の概要については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["NetApp Service Engine Web インターフェイスの概要"]。
 
 
 

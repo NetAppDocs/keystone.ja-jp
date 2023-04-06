@@ -4,7 +4,7 @@ permalink: aiq-keystone-details.html
 keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports 
 summary: Keystoneサブスクリプションレポートとグラフ 
 ---
-= Flexサブスクリプション向けのDigital Advisorダッシュボードとレポート機能
+= Keystone向けのDigital Advisorダッシュボードとレポート作成
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -24,13 +24,14 @@ NOTE: ここで入手できる情報は、ONTAP とStorageGRID の両方を環�
 詳細を表示するには、次の手順を実行します。
 
 .手順
-. Digital Advisorで、ウィジェットの*[詳細を表示]*をクリックして、* Keystoneサブスクリプション*ページにボリュームに関する使用状況の詳細とアラートを表示します。または、左側のナビゲーションペインで*[全般]>[Keystoneサブスクリプション]*に移動します。
+. Digital Advisorにログインします。Keystoneサブスクリプション*ウィジェットが表示され、購入したKeystoneサービスに対する使用容量が表示されます。
+. [Keystoneサブスクリプション]*ウィジェットで*[詳細を表示]*をクリックし、*[Keystoneサブスクリプション]*ページにボリュームに関する使用状況の詳細とアラートを表示します。または、左側のナビゲーションペインで*[全般]>[Keystoneサブスクリプション]*に移動します。
 
 
 サブスクリプションの詳細、各サービスレベルの使用状況グラフ、ボリュームの詳細が、* Keystoneサブスクリプション*画面の別 々 のタブに表示されます。
 
 
-NOTE: Keystoneサブスクリプションの容量消費は、ダッシュボードとレポートのTiBに小数点以下2桁まで表示されます。使用量が0.01TiB未満の場合は、と表示されます `0` または `No Usage`。その他の使用指標については、を参照してください https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["サービスレベルの指標と定義"]。Keystoneで使用されるさまざまな容量については、を参照してください https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Flex サブスクリプションサービスの容量の定義"]。
+NOTE: Keystoneサブスクリプションの容量消費は、ダッシュボードとレポートのTiBに小数点以下2桁まで表示されます。使用量が0.01TiB未満の場合は、と表示されます `0` または `No Usage`。その他の使用指標については、を参照してください https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["サービスレベルの指標と定義"]。Keystoneで使用されるさまざまな容量については、を参照してください https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Keystone サービスの容量の定義"]。
 
 
 

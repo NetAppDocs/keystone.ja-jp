@@ -1,26 +1,21 @@
----
-sidebar: sidebar 
-permalink: nkfsosm_keystone_service_capacity_definitions.html 
-keywords: netapp, keystone, service, capacity, definitions, burst, committed capacity, consumed capacity, billed capacity 
-summary: Keystone サービスの容量の定義 
----
-= Flex サブスクリプションサービスの容量の定義
-:hardbreaks:
+= Keystone サービスの容量の定義
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
+
+--definitionsサイドバー：sidebar permalink：nkfsosm_keystone_service_capacity_definitions.html keywords：netapp、keystone、service、capacity、definitions、 バースト、コミット済み容量、消費容量、課金対象容量の概要：Keystoneサービス容量の定義--
+
+
+
+= Keystone サービスの容量の定義
 
 [role="lead"]
-NetApp Keystone Flex サブスクリプション（ Flex サブスクリプション）サービスの容量は次のとおりです。
+NetApp Keystone サービスの容量は次のとおりです。
 
 
 
 == 論理容量
 
-これは、お客様が Flex サブスクリプションインフラストラクチャに配置したデータです。すべての Flex サブスクリプション容量は、論理容量を参照します。たとえば、 1TiB のファイルが Flex サブスクリプションインフラに格納された場合、少なくとも 1TiB 以上の容量を購入する必要があります。
+これは、お客様がKeystoneインフラに配置したデータです。Keystoneのすべての容量は論理容量を表します。たとえば、1TiBのファイルがKeystoneインフラに格納された場合、少なくとも1TiB以上の容量を購入する必要があります。
 
 
 
@@ -50,7 +45,7 @@ NetApp Keystone Flex サブスクリプション（ Flex サブスクリプシ�
 
 コミット済み容量を超えている論理容量です。次の点に注意してください。
 
-* Flex サブスクリプションサービスは、コミット済み容量を 20% 超過した容量を提供します。
+* Keystoneサービスは、コミット済み容量を20%超える容量を提供します。
 * バースト時の容量は柔軟に消費でき、 1 日あたりの平均消費量に基づいて課金されます。
 * バースト時の容量は 20% まで、コミット済み容量と同じ速度で充電されます。
 * バースト時の容量がコミット容量の 20% を超えると、プレミアム料金が発生します。20% を超えるその他のバースト要件については、サポートにお問い合わせください。
@@ -60,7 +55,7 @@ NetApp Keystone Flex サブスクリプション（ Flex サブスクリプシ�
 
 == 使用済み / プロビジョニング済み容量
 
-使用済み容量は、サービスで現在使用されているストレージの容量（ TiB ）です。Flex Subscriptionサービスでは、特定のサービスレベルのすべてのボリュームのプロビジョニング済みサイズ（使用済みの論理容量または物理容量ではないサイズ）の合計が、そのサービスレベルの使用済み容量とみなされます。これには、次のもの
+使用済み容量は、サービスで現在使用されているストレージの容量（ TiB ）です。Keystoneサービスでは、特定のサービスレベルですべてのボリュームのプロビジョニング済みサイズの合計（使用済み論理容量や物理容量ではない）が、そのサービスレベルの消費容量とみなされます。これには、次のもの
 
 * ボリュームの作成、変更、削除、または自動拡張によってプロビジョニングされた容量。
 * Snapshot コピーとクローン：
@@ -76,4 +71,4 @@ NOTE: プロビジョニングされた容量に格納されているデータ�
 
 月次請求 = （コミット済み容量 [TiB ] * コミット率 [TiB / TiB ] ） + （日単位の平均プロビジョニングバースト容量 [TiB ] * バーストレート [TiB / TiB ] ）月単位の課金には、コミット済み容量に基づく最小料金が含まれます。
 
-月単位の請求額は、日単位の平均バースト容量の消費量に基づいて、最小料金を超えます。課金の詳細については、を参照してください link:nkfsosm_kfs_billing.html["Flex サブスクリプションの課金"]。
+月単位の請求額は、日単位の平均バースト容量の消費量に基づいて、最小料金を超えます。課金の詳細については、を参照してください link:nkfsosm_kfs_billing.html["Keystoneの課金"]。
