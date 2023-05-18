@@ -25,7 +25,7 @@ summary: Keystone によってユーザの S3 キーが作成される
 +
 リスト内の項目の操作の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["リストビューアクションをリスト表示します"]。
 
-. Manage S3 Keys *ダイアログボックスに、ユーザのキーのリストが表示されます。キーの詳細については、を参照してください https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy["ポリシーで権限を指定します"]。
+. Manage S3 Keys *ダイアログボックスに、ユーザのキーのリストが表示されます。キーの詳細については、を参照してください https://["ポリシーで権限を指定します"]。
 . ユーザに既存のキーがない場合は、 * S3 キーの作成 * をクリックしてフィールドを表示し、キーを作成します。
 . キーを期限切れにする場合は、有効期限と有効期限を UTC で指定します。それ以外の場合は、これらのフィールドにデフォルト値をそのまま使用します。
 . キーを作成するには、チェックマークをクリックします。S3 Key Details *ダイアログボックスが表示され、アクセスキーとシークレットキーが表示されます。

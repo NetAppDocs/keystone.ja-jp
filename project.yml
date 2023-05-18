@@ -21,6 +21,8 @@ sidebar:
         url: "/nkfsosm_performance.html"
       - title: サービスレベルの指標と定義
         url: "/nkfsosm_service_level_metrics_and_definitions.html"
+      - title: KeystoneのアダプティブQuality of Service（QoS；サービス品質
+        url: "/aqos-kfs.html"
       - title: 課金
         url: "/nkfsosm_kfs_billing.html"
       - title: データ保護

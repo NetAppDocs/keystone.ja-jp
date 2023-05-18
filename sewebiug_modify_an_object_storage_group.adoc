@@ -23,7 +23,7 @@ summary: Keystone がオブジェクトストレージグループを変更す�
 +
 リスト内の項目の操作の詳細については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["リストビューアクションをリスト表示します"]。
 
-. * Edit Group *ダイアログボックスで、グループに適用できるS3ポリシーを変更します。S3ポリシーの詳細については、を参照してください https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy["ポリシーで権限を指定します"]。
+. * Edit Group *ダイアログボックスで、グループに適用できるS3ポリシーを変更します。S3ポリシーの詳細については、を参照してください https://["ポリシーで権限を指定します"]。
 . 必要に応じて、ポリシーステートメントを追加できます。
 . [ 更新（ Update ） ] をクリックします。指定した設定でグループを変更するジョブが作成されます。ジョブの追跡については、を参照してください link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["こちらをご覧ください"]。
 

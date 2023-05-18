@@ -34,7 +34,7 @@ Keystoneインフラは、次の複数のコンポーネントで構成されま
 
 NetApp Keystone と Active IQ の統合の詳細については、を参照してください link:https://docs.netapp.com/us-en/active-iq/["Active IQ デジタルアドバイザのドキュメント"]
 
-image:nkfsosm_image8.png["エラー：グラフィックイメージがありません"]
+image:nkfsosm_image8.png["KSインフラ"]
 
 
 
@@ -46,7 +46,7 @@ NetApp Service Engine Webポータルを使用して、ネットアップ、パ�
 * より高度なセットアップ操作やストレージ管理操作を可能にする一連の NetApp Service Engine REST API 。
 
 
-image:nkfsosm_image9.png["エラー：グラフィックイメージがありません"]
+image:nkfsosm_image9.png["KSアーキテクチャ"]
 
 NetApp Service Engine ポータルは、お客様が次のタスクを実行できる単一のインターフェイスです。
 

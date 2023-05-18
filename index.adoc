@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: index.html 
 keywords: netapp, keystone, service, offering, 
-summary: Keystone ドキュメントポータルへようこそ。 
+summary: NetApp Keystone は、オンプレミスとクラウドの両方のデータストレージサービスを1つのサブスクリプションで提供する、従量課金制のストレージサービスです。複数のクラウドにストレージコストを再割り当てできます。 
 ---
 = NetApp Keystone のドキュメント
 :hardbreaks:
@@ -15,7 +15,7 @@ summary: Keystone ドキュメントポータルへようこそ。
 
 NetApp Keystone は、クラウドへの移行をスムーズに実現するための、オンプレミスの設備投資（CAPEX）オプションのポートフォリオです。NetApp Keystone は、オンプレミスとクラウドにわたってストレージサービスを提供することで、シームレスなハイブリッドクラウドエクスペリエンスを実現します。NetApp Keystone の詳細については、を参照してください link:https://www.netapp.com/services/subscriptions/keystone/["NetApp Keystone"]
 
-NetApp Keystone の詳細については、を参照してください https://www.netapp.com/services/keystone/["NetApp Keystone"]。
+NetApp Keystone の詳細については、を参照してください https://["NetApp Keystone"]。
 
 Keystoneは、オンプレミスシステムにクラウドと同等のエクスペリエンスを提供し、クラウドへの接続を自由に利用できるストレージサービスです。
 
@@ -25,7 +25,7 @@ Keystoneは、オンプレミスシステムにクラウドと同等のエクス
 
 Keystoneは、CAPEX（設備投資）やリースよりもOPEX（運用コスト）消費モデルを希望するお客様に、シームレスなハイブリッドクラウドエクスペリエンスを提供する、従量課金制のサブスクリプションベースのサービスモデルです。予測不可能な容量の増加に対処し、複雑な調達サイクルを実施するという課題を解消することで、価値創出までの時間を短縮できます。Keystoneを使用すると、お客様は経済性と運用性をビジネスの優先事項に合わせることができます。
 
-image:nkfsosm_image2.png["エラー：グラフィックイメージがありません"]
+image:nkfsosm_image2.png["キーストーンアーチ"]
 
 Keystoneはサブスクリプションベースのサービスで、事前に定義されたパフォーマンスサービスレベル（サービスレベル）でストレージ容量を提供します。ブロック、ファイル、オブジェクトのデータタイプはオンプレミスに導入でき、ネットアップ、パートナー、またはお客様が運用できます。Keystoneが提供する基本サービスに加えて、アドオンサービスを追加料金で選択できます。これらのサービスについては、次の図で説明します。
 
@@ -36,7 +36,7 @@ Keystoneはサブスクリプションベースのサービスで、事前に定
 
 NOTE: Keystoneでは、バックアップ処理にSnapVault テクノロジを使用し、ディザスタリカバリにSnapMirrorを使用してデータをリモートでレプリケートします。アプリケーションのフェイルオーバーとリストアが自動的に行われることはありません。
 
-image:nkfsosm_image3.png["エラー：グラフィックイメージがありません"]
+image:nkfsosm_image3.png["Keystoneサービス"]
 
 
 
@@ -53,4 +53,4 @@ Keystoneには次のようなメリットがあります。
 * コンプライアンス、パフォーマンス、セキュリティを適切に管理できます
 
 
-image:nkfsosm_image4.png["エラー：グラフィックイメージがありません"]
+image:nkfsosm_image4.png["メリット"]

@@ -40,10 +40,10 @@ NOTE: 複数のデータセンターにストレージが必要な場合は、�
 
 詳細については、を参照してください
 
-* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_block_storage_overview.html["ブロックストレージ"]
-* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_file_services_overview.html["ファイルサービス"]
-* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_object_storage_overview.html["オブジェクトストレージ"]
-* https://docs.netapp.com/us-en/ontap-metrocluster/index.html["MetroCluster のドキュメント"]
+* https://["ブロックストレージ"]
+* https://["ファイルサービス"]
+* https://["オブジェクトストレージ"]
+* https://["MetroCluster のドキュメント"]
 
 
 

@@ -18,7 +18,7 @@ summary: NetApp Keystone の概要
 
 * NetApp Keystone とは?*
 
-NetApp Keystone は、オンプレミスの設備投資（CAPEX）オプションのポートフォリオです。詳細については、を参照してください https://www.netapp.com/services/keystone/["NetApp Keystone"]。
+NetApp Keystone は、オンプレミスの設備投資（CAPEX）オプションのポートフォリオです。詳細については、を参照してください https://["NetApp Keystone"]。
 
 * NetApp Keystone はお客様にどのようなメリットをもたらしますか。*
 

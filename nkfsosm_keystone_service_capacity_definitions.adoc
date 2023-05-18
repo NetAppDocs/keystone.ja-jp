@@ -1,12 +1,17 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_keystone_service_capacity_definitions.html 
+keywords: netapp, keystone, service, capacity, definitions, burst, committed capacity, consumed capacity, billed capacity 
+summary: Keystone サービスの容量の定義 
+---
 = Keystone サービスの容量の定義
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
-
---definitionsサイドバー：sidebar permalink：nkfsosm_keystone_service_capacity_definitions.html keywords：netapp、keystone、service、capacity、definitions、 バースト、コミット済み容量、消費容量、課金対象容量の概要：Keystoneサービス容量の定義--
-
-
-
-= Keystone サービスの容量の定義
 
 [role="lead"]
 NetApp Keystone サービスの容量は次のとおりです。
