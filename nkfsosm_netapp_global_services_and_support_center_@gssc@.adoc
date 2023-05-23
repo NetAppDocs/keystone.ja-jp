@@ -27,9 +27,9 @@ NetApp Keystone Keystoneサービスは、ネットアップグローバルサ�
 
 以下の情報を使用して、サポートチームに連絡することもできます。
 
-* グローバルサービス担当者：https://[]
+* グローバルサービス担当者：https://www.netapp.com/us/contact-us/support.aspx[]
 * エスカレーションが必要なオープンケース / チケットをお持ちの場合は、次のいずれかのアドレスに電子メールを送信してください： Keystone.services@netapp.com Keystone.escalations@netapp.com
-* ネットアップでは、クラウドベースのリモートゲートウェイ解決策である OpsRamp を使用して、トラブルシューティングのために NetApp Keystone 環境をプロアクティブに監視し、接続します。OpsRamp の詳細については、を参照してください https://[]。
+* ネットアップでは、クラウドベースのリモートゲートウェイ解決策である OpsRamp を使用して、トラブルシューティングのために NetApp Keystone 環境をプロアクティブに監視し、接続します。OpsRamp の詳細については、を参照してください https://www.opsramp.com/#[]。
 
 
 
@@ -37,6 +37,6 @@ NOTE: パートナーが運用するモデルでは、テナントおよびサ�
 
 このドキュメントに記載されている情報の詳細については、以下のドキュメントや Web サイトを参照してください。
 
-* NetApp Keystonehttps://["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
-* ネットアップの製品マニュアルhttps://["https://docs.netapp.com"^]
+* NetApp Keystonehttps://www.netapp.com/us/solutions/keystone/index.aspx["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
+* ネットアップの製品マニュアルhttps://docs.netapp.com["https://docs.netapp.com"^]
 

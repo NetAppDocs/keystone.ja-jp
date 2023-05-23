@@ -21,7 +21,7 @@ summary: Keystone がオブジェクトストレージグループを作成す�
 . 正しいサブテナントが選択されていることを確認し、「* Groups *」タブをクリックしてください。
 . [ グループの作成 *] をクリックします。
 . Create Group ダイアログボックスで、グループ名を入力します。
-. リストから S3 ポリシーを選択します。S3ポリシーの詳細については、を参照してください https://["ポリシーで権限を指定します"]。
+. リストから S3 ポリシーを選択します。S3ポリシーの詳細については、を参照してください https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy["ポリシーで権限を指定します"]。
 . [ 作成（ Create ） ] をクリックします。指定した設定でグループを作成するジョブが作成されます。
 
 

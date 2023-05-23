@@ -3281,4 +3281,6 @@
   <block id="2fdc90e57385ab614099e9145cde6b8e" category="paragraph"><block ref="2fdc90e57385ab614099e9145cde6b8e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="be10ab795d4b4daf77ddb3146f1aac29" category="inline-image-macro">課金チャート</block>
   <block id="72bd452fe460a2000d8537f422c4b81d" category="paragraph"><block ref="72bd452fe460a2000d8537f422c4b81d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="779b97a34eb91d859eaec88fd66360be" category="paragraph">[Subscription Time Series]タブには、特定の期間のKeystoneサブスクリプションの履歴データが表示されます。縦のグラフには、選択した期間の使用状況の詳細と、レポートを比較して生成するための適切なインジケータが表示されます。</block>
+  <block id="abc995760236584824b9e9fb494224ef" category="admonition">最適なパフォーマンスとユーザーエクスペリエンスを実現するには、クエリの日付範囲を3カ月以内に制限します。</block>
 </blocks>

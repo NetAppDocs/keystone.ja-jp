@@ -14,13 +14,13 @@ summary: KeystoneアダプティブQoS（AQoS）
 
 
 [role="lead"]
-ストレージQuality of Service（QoS；サービス品質）は、アプリケーションのパフォーマンスが安定し、予測可能な安定したものになるようにするための重要なテクノロジです。QoSを設定しないと、複数のシステムのブート用など、特定のワークロードが一定期間リソースのほとんどまたはすべてを消費し、他のワークロードに影響する可能性があります。QoSの詳細については、を参照してください https://["QoS の概要を使用してスループットを保証"^]。
+ストレージQuality of Service（QoS；サービス品質）は、アプリケーションのパフォーマンスが安定し、予測可能な安定したものになるようにするための重要なテクノロジです。QoSを設定しないと、複数のシステムのブート用など、特定のワークロードが一定期間リソースのほとんどまたはすべてを消費し、他のワークロードに影響する可能性があります。QoSの詳細については、を参照してください https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["QoS の概要を使用してスループットを保証"^]。
 
 
 
 == アダプティブ QoS
 
-アダプティブQoS（AQoS）は、ボリュームサイズに基づいてTiBあたりのIOPSを動的に維持するためにKeystoneサービスで使用されます。AQoSポリシーの詳細については、を参照してください https://["アダプティブ QoS について"^]。
+アダプティブQoS（AQoS）は、ボリュームサイズに基づいてTiBあたりのIOPSを動的に維持するためにKeystoneサービスで使用されます。AQoSポリシーの詳細については、を参照してください https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["アダプティブ QoS について"^]。
 
 KeystoneにはAQoSポリシーが用意されており、クラスタの本番環境への移行後に設定できます。システムで作成済みで使用可能な正しいAQoSポリシーにすべてのボリュームが関連付けられていることを確認する必要があります。
 

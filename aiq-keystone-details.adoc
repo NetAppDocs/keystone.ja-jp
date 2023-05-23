@@ -19,7 +19,7 @@ Active IQ デジタルアドバイザ（デジタルアドバイザ）ダッシ�
 
 NOTE: ここで入手できる情報は、ONTAP とStorageGRID の両方を環境 に掲載しています。例外は関連するセクションで指摘されています。
 
-[Keystone Digital Advisor]ウィジェットの詳細については、を参照してください https://["NetApp Keystone サブスクリプションを使用して容量利用率を表示します"^]。
+[Keystone Digital Advisor]ウィジェットの詳細については、を参照してください https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["NetApp Keystone サブスクリプションを使用して容量利用率を表示します"^]。
 
 詳細を表示するには、次の手順を実行します。
 
@@ -31,7 +31,7 @@ NOTE: ここで入手できる情報は、ONTAP とStorageGRID の両方を環�
 サブスクリプションの詳細、各サービスレベルの使用状況グラフ、ボリュームの詳細が、* Keystoneサブスクリプション*画面の別 々 のタブに表示されます。
 
 
-NOTE: Keystoneサブスクリプションの容量消費は、ダッシュボードとレポートのTiBに小数点以下2桁まで表示されます。使用量が0.01TiB未満の場合は、と表示されます `0` または `No Usage`。その他の使用指標については、を参照してください https://["サービスレベルの指標と定義"]。Keystoneで使用されるさまざまな容量については、を参照してください https://["Keystone サービスの容量の定義"]。
+NOTE: Keystoneサブスクリプションの容量消費は、ダッシュボードとレポートのTiBに小数点以下2桁まで表示されます。使用量が0.01TiB未満の場合は、と表示されます `0` または `No Usage`。その他の使用指標については、を参照してください https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["サービスレベルの指標と定義"]。Keystoneで使用されるさまざまな容量については、を参照してください https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Keystone サービスの容量の定義"]。
 
 
 
@@ -57,7 +57,7 @@ image:aiq-ks-dtls.png["[サブスクリプションの詳細]タブ"]
 
 NOTE: 高消費量を記録した特定のサービスレベルが強調表示されます。ボリュームに対して生成された警告やアラートを確認することもできます。
 
-Keystoneストレージサービスと関連するサービスレベルについては、を参照してください https://["サービスレベル"]。
+Keystoneストレージサービスと関連するサービスレベルについては、を参照してください https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html["サービスレベル"]。
 
 各サブスクリプションの使用状況を確認するには、次の使用状況インジケータを参照してください。
 
@@ -72,12 +72,16 @@ image:icon-grey.png["をクリックします。"]：サービスレベルのコ
 
 == 履歴サブスクリプションデータを表示します
 
-a514224616890dbac3dede8f0d533add
+[Subscription Time Series]タブには、特定の期間のKeystoneサブスクリプションの履歴データが表示されます。縦のグラフには、選択した期間の使用状況の詳細と、レポートを比較して生成するための適切なインジケータが表示されます。
 
 .手順
 . [* Subscription Time Series*（サブスクリプションタイムシリーズ*）]タブをクリックします。
 . 詳細を表示するサブスクリプションを選択します。デフォルトでは、アカウント名の最初のサブスクリプションが選択されています。
 . [開始日*（From Date）]および[終了日*（* To Date）]フィールドのカレンダーアイコンから時間範囲を選択します。デフォルトの時間範囲は、請求期間の開始日から現在の日付までです。
++
+
+NOTE: 最適なパフォーマンスとユーザーエクスペリエンスを実現するには、クエリの日付範囲を3カ月以内に制限します。
+
 . [ * 詳細の表示 * ] をクリックします。選択した期間に基づいて、各サービスレベルのサブスクリプションの消費履歴データが表示されます。グラフにカーソルを合わせると、そのデータ収集ポイントでのコミット済み容量、消費容量、バースト、バースト制限データを基準にした使用量の内訳が表示されます。
 
 
@@ -131,7 +135,7 @@ NOTE: [Current Consumed]、[Current Burst]、[Accrued Burst]の各指標は、�
 ====
 データ保護（DP）サービスに登録している場合は、MetroCluster のプライマリサイトとミラーサイトに基づいて消費データの内訳を*[サブスクリプションタイムシリーズ]*タブで確認できます。
 
-データ保護の詳細については、を参照してください https://["データ保護"]。
+データ保護の詳細については、を参照してください https://docs.netapp.com/us-en/keystone/nkfsosm_data_protection.html["データ保護"]。
 
 ONTAP ストレージ環境内のクラスタがMetroCluster セットアップで構成されている場合は、Keystoneサブスクリプションの消費データが同じ時系列グラフに分割されて、基本のサービスレベルのプライマリサイトとミラーサイトでの消費量が表示されます。
 
@@ -162,7 +166,7 @@ image:mcc-chart-mirror.png["MCCミラー"]
 
 image:dp-mir.png["MCCミラーベース"]
 
-MetroCluster によるデータの保護方法については、を参照してください https://["MetroCluster のデータ保護とディザスタリカバリについて理解する"^]。
+MetroCluster によるデータの保護方法については、を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html["MetroCluster のデータ保護とディザスタリカバリについて理解する"^]。
 
 ====
 
@@ -236,10 +240,10 @@ image:report.png["サンプルを報告します"]
 * *情報*:サブスクリプションがまもなく終了するなどの問題については、情報アラートを表示できます。情報アイコンにカーソルを合わせると、問題 の詳細が表示されます。
 * *警告*：非順守などの問題は警告として表示されます。たとえば、管理対象クラスタにアダプティブQoS（AQoS）ポリシーが適用されていないボリュームがある場合、警告メッセージが表示されます。警告メッセージのリンクをクリックすると、* System Details *タブに非準拠ボリュームのリストが表示されます。
 +
-AQoSポリシーの詳細については、を参照してください https://["課金およびアダプティブ QoS ポリシー"]。
+AQoSポリシーの詳細については、を参照してください https://docs.netapp.com/us-en/keystone/nkfsosm_kfs_billing.html#billing-and-adaptive-qos-policies["課金およびアダプティブ QoS ポリシー"]。
 
 
 
 image:alert-aiq.png["アラート"]
 
-これらの注意および警告メッセージの詳細については、ネットアップサポートにお問い合わせください。詳細については、を参照してください https://["サービスリクエストを提出します"]。
+これらの注意および警告メッセージの詳細については、ネットアップサポートにお問い合わせください。詳細については、を参照してください https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html["サービスリクエストを提出します"]。
