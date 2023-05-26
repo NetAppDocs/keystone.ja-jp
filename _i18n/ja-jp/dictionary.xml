@@ -2940,7 +2940,6 @@
   <block id="f06c1648cc175308e5d0425681e31f63" category="list-text">*トラッキングID*：登録の有効化時に割り当てられたトラッキングID。これは、サブスクリプションとサイトごとに一意のIDで、サブスクリプションの追跡に使用されます。</block>
   <block id="3644820829d44e327e43dd95769b1686" category="list-text">*請求期間*：月、四半期、年など、サブスクリプションの請求期間。</block>
   <block id="58ddac2ef16530986372a556eb9e6b7a" category="list-text">*開始日*：サブスクリプションの開始日。</block>
-  <block id="b8905d711198e80b0e2927dff32cfd11" category="list-text">*終了日*：サブスクリプションの終了日。この日付に基づいて、有効期限が近づいているサブスクリプションに関する情報メッセージが表示される場合があります。</block>
   <block id="83adb6d347afacf7d560a4bb6f74dfa1" category="list-text">*使用状況*：サブスクリプションの使用量または使用率が高すぎることを示します。消費レコードの数を最も高くする場合は、この列でリストをソートできます。</block>
   <block id="706b251feaacce4536ad626d12e0cdb3" category="paragraph">Keystoneストレージサービスと関連するサービスレベルについては、を参照してください<block ref="36a3b3cce1fbb3bc12a00ec01f92dfcb" category="inline-link-rx"></block>。</block>
   <block id="736d5b3313fce2ba2126ffff61a7ec29" category="paragraph">各サブスクリプションの使用状況を確認するには、次の使用状況インジケータを参照してください。</block>
@@ -2990,7 +2989,6 @@
   <block id="199941fcffe1cc10f1d78276fb963281" category="paragraph">Digital Advisorの詳細については、を参照してください <block ref="6ddd16d015a7ae88cd6e808110d98222" category="inline-link-macro-rx"></block>。</block>
   <block id="d7b031f9c8084a9ac68f816f54b2be3b" category="paragraph">*デフォルトでインストールされるソフトウェアバージョン（ONTAP など）は何ですか？*サブスクリプションしているサービスレベル（ファイルサービスとブロックサービスを使用するONTAP 、ブロックサービス用SANtricity 、オブジェクト用StorageGRID など）に応じて、サポートチームが最新の安定版リリースをインストールします。セキュリティや機能の問題は発生しません。</block>
   <block id="63d539af1a31e2f3e8acd3fdd788eac6" category="sidebar">Active IQ デジタルアドバイザからレポートを表示および生成します</block>
-  <block id="fcdba6ace545174b3125451ecdd38a60" category="admonition">棒グラフの上にマウスを置くと、_Provisional usage_dataが表示されます。その期間の正確なデータが使用できない場合に記録される使用量で、以前のデータ収集ポイントで使用可能なデータに置き換えられます。</block>
   <block id="bad6d4d49543b42a93697517b551920a" category="paragraph">ファイルサーバ API を使用して、ファイルサーバを表示および管理できます。ファイルサーバの詳細については、を参照してください <block ref="b7c7173b32246b86fba34bb5faef1e28" category="inline-link-macro-rx"></block>。</block>
   <block id="6e7c483cdb01e24565496a3900e28fec" category="paragraph">NetApp Keystone は、オンプレミスの設備投資（CAPEX）オプションのポートフォリオです。詳細については、を参照してください<block ref="fd61a890a707ca05d29be95e1bcac169" category="inline-link-rx"></block>。</block>
   <block id="b56dfcbdbeaf347744e50267854b6402" category="paragraph">NetApp Keystone ブランドは、従来のファイナンス、リース、固定/変動オプションを含む柔軟な支払いソリューションのポートフォリオを、資金を重視するお客様向けに、Keystoneサービスに加えて提供しています。</block>
@@ -3283,4 +3281,6 @@
   <block id="72bd452fe460a2000d8537f422c4b81d" category="paragraph"><block ref="72bd452fe460a2000d8537f422c4b81d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="779b97a34eb91d859eaec88fd66360be" category="paragraph">[Subscription Time Series]タブには、特定の期間のKeystoneサブスクリプションの履歴データが表示されます。縦のグラフには、選択した期間の使用状況の詳細と、レポートを比較して生成するための適切なインジケータが表示されます。</block>
   <block id="abc995760236584824b9e9fb494224ef" category="admonition">最適なパフォーマンスとユーザーエクスペリエンスを実現するには、クエリの日付範囲を3カ月以内に制限します。</block>
+  <block id="e34cff1dbe58bcff4567c9224e5370c6" category="list-text">*終了日*：サブスクリプションの終了日。日付が空白の場合は、サブスクリプションに終了日がなく、自動的に更新されます。この日付に基づいて、有効期限が近づいている、または自動更新ポリシーが適用されているサブスクリプションに関する情報メッセージが表示される場合があります。</block>
+  <block id="85701aafc47f53d769db3988637e595c" category="admonition">空のグラフは、そのデータ収集ポイントで使用可能なデータが環境になかったことを示します。</block>
 </blocks>
