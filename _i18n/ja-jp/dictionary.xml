@@ -3229,9 +3229,6 @@
   <block id="3a6fffe4877ca42144b232cb74b25c92" category="admonition">高消費量を記録した特定のサービスレベルが強調表示されます。ボリュームに対して生成された警告やアラートを確認することもできます。</block>
   <block id="bd21190449b7e88db48fa0f580a8f666" category="inline-image-macro">アイコン</block>
   <block id="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="paragraph"><block ref="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="47ad2f3b9648e3f48662d8605e8e8bdb" category="paragraph"><block ref="c86f468c0d26a49f12de126ed6868cbe" category="inline-image-macro-rx" type="image"></block>
-<block ref="c86f468c0d26a49f12de126ed6868cbe" category="inline-image-macro-rx" type="image"></block>
-<block ref="21452eeae7e892826e6a3f9830c7e20b" category="inline-image-macro-rx" type="image"></block>：サービスレベルのコミット済み容量に照らして、使用容量は記録されません<block ref="6e54d61599459e1ccb3438749a59c870" category="inline-image-macro-rx" type="image"></block>：コミット済み容量の80%以内で、通常消費量が発生します<block ref="c64624b3993be4529190ae7782933292" category="inline-image-macro-rx" type="image"></block>：最大消費量。つまり、使用量がコミット済み容量の100%以上に達しようとしています。*Consumed *列には、コミット済み容量の80%を超える消費量を示すインジケータが表示されます<block ref="d028059f11eb3bdde55947b1358873ff" category="inline-image-macro-rx" type="image"></block>：消費量がバースト制限内にあります。バースト消費量とは、サービスレベルの100%のコミット済み容量を超え、120 %などの合意されたバースト使用制限の範囲内である消費量のことです<block ref="8428f2683e402ce0337d14cf475231ce" category="inline-image-macro-rx" type="image"></block>：指定されたバースト制限を超過した消費量を示します</block>
   <block id="f4cba785ff76b826ab5119954c5eab69" category="list-text">[ * 詳細の表示 * ] をクリックします。選択した期間に基づいて、各サービスレベルのサブスクリプションの消費履歴データが表示されます。グラフにカーソルを合わせると、そのデータ収集ポイントでのコミット済み容量、消費容量、バースト、バースト制限データを基準にした使用量の内訳が表示されます。</block>
   <block id="8d516947750194a36d55831e643c9530" category="inline-image-macro">履歴データ</block>
   <block id="75c2cedbc79380dcf4efe56be06dec27" category="paragraph"><block ref="75c2cedbc79380dcf4efe56be06dec27" category="inline-image-macro-rx" type="image"></block></block>
@@ -3283,4 +3280,9 @@
   <block id="abc995760236584824b9e9fb494224ef" category="admonition">最適なパフォーマンスとユーザーエクスペリエンスを実現するには、クエリの日付範囲を3カ月以内に制限します。</block>
   <block id="e34cff1dbe58bcff4567c9224e5370c6" category="list-text">*終了日*：サブスクリプションの終了日。日付が空白の場合は、サブスクリプションに終了日がなく、自動的に更新されます。この日付に基づいて、有効期限が近づいている、または自動更新ポリシーが適用されているサブスクリプションに関する情報メッセージが表示される場合があります。</block>
   <block id="85701aafc47f53d769db3988637e595c" category="admonition">空のグラフは、そのデータ収集ポイントで使用可能なデータが環境になかったことを示します。</block>
+  <block id="2e4921125672d7122b9c21478a168883" category="paragraph"><block ref="21452eeae7e892826e6a3f9830c7e20b" category="inline-image-macro-rx" type="image"></block>：サービスレベルのコミット済み容量に照らして、使用容量は記録されません
+<block ref="6e54d61599459e1ccb3438749a59c870" category="inline-image-macro-rx" type="image"></block>：コミット済み容量の80%以内で、通常消費量が発生します
+<block ref="c64624b3993be4529190ae7782933292" category="inline-image-macro-rx" type="image"></block>：最大消費量。つまり、使用量がコミット済み容量の100%以上に達しようとしています。*Consumed *列には、コミット済み容量の80%を超える消費量を示すインジケータが表示されます
+<block ref="d028059f11eb3bdde55947b1358873ff" category="inline-image-macro-rx" type="image"></block>：消費量がバースト制限内にあります。バースト消費量とは、サービスレベルの100%のコミット済み容量を超え、120 %などの合意されたバースト使用制限の範囲内である消費量のことです
+<block ref="8428f2683e402ce0337d14cf475231ce" category="inline-image-macro-rx" type="image"></block>：指定されたバースト制限を超過した消費量を示します</block>
 </blocks>
