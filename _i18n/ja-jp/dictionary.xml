@@ -2967,11 +2967,9 @@
   <block id="393e226f044ba6b817b81de6d94e7276" category="admonition">[Current Consumed]、[Current Burst]、[Accrued Burst]の各指標は、サブスクリプションの課金期間に関する消費量を決定し、クエリの日付範囲には基づいていません。</block>
   <block id="b99a21b99fb9e230b533835afc100672" category="section-title">システムの詳細を表示します</block>
   <block id="819abf779095094c4f296a2f1911a333" category="paragraph">[システムの詳細]*タブでは、ONTAP でボリュームの使用状況やその他の詳細を確認できます。StorageGRID の場合、オブジェクトストレージ環境でのノードとその個 々 の使用状況が表示されます。</block>
-  <block id="7fdbc37a63f55a7bf94c4f7eee9fbbb6" category="example-title">&lt;strong&gt; ONTAPボリュームの詳細&lt;/strong&gt;</block>
   <block id="6f7e564e5f841331ad117d7eb3b3ae10" category="paragraph">ONTAP の場合、*[システムの詳細]*タブには、Keystoneサブスクリプションで管理されるストレージ環境内のボリュームについて、使用容量、ボリュームタイプ、クラスタ、アグリゲート、サービスレベルなどの情報が表示されます。</block>
   <block id="d2c1241be04ae4d70013755a80c6cbd2" category="list-text">[システムの詳細]*タブをクリックします。</block>
   <block id="ccdbd07a063ad5631511d37c5d2f5a36" category="list-text">サブスクリプション番号を選択します。デフォルトでは、使用可能な最初のサブスクリプション番号が選択されています。</block>
-  <block id="8b315ff987c2e0cfd5650f23e5464623" category="example-title">&lt;strong&gt; StorageGRIDノードと消費の詳細&lt;/strong&gt;</block>
   <block id="b3e33e1c1964ee47822698a5c69ad576" category="paragraph">StorageGRID の場合、オブジェクトストレージ環境内のノードの論理使用量が表示されます。</block>
   <block id="4305e9b17980561df3c63a75f32b2075" category="list-text">サブスクリプション番号を選択します。デフォルトでは、使用可能な最初のサブスクリプション番号が選択されています。サブスクリプション番号を選択すると、オブジェクトストレージの詳細のリンクが有効になります。</block>
   <block id="4be9bcf02510758e3d80494ef37c15b0" category="list-text">リンクをクリックすると、各ノードのノード名と論理使用量の詳細が表示されます。</block>
@@ -3180,7 +3178,6 @@
   <block id="3cc7e158f8699d90d955763d4ad3a6bb" category="paragraph"><block ref="3cc7e158f8699d90d955763d4ad3a6bb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="978c8164dc991cb5252f85067c6fdbe4" category="inline-image-macro">テナンシーアーチ</block>
   <block id="5cee2df0715294af225b93a062c0b3bf" category="paragraph"><block ref="5cee2df0715294af225b93a062c0b3bf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ce0a3714c71298667d65ee297b12efd2" category="paragraph">Keystoneは、事前定義されたパフォーマンスサービスレベル（サービスレベル）で、サブスクリプションベースでデータストレージ容量を提供します。Keystoneサービスで管理される各ボリュームはサービスレベルに関連付けられます。</block>
   <block id="f93af6ea2aaeafbfa26e3fe0954ccc1a" category="paragraph">各サービスレベルは、I/O密度（IOPS/TiB/ボリューム）で定義されます。パフォーマンス（1秒あたりの入出力操作[IOPS]）と割り当て済みストレージ容量（TiB）の比率で、ボリュームあたりの平均レイテンシでのIOPS/TiBです。</block>
   <block id="0d2770e6697ff41e6cac5eec9a3d728b" category="paragraph">ボリュームのI/O密度は1時間ごとに計算され、ピークI/O密度が報告されます。ボリュームのI/O密度レポートは毎月生成されます。</block>
   <block id="26ee386c417635b5c1e5d8ffd5bbb0bd" category="paragraph">ここでは、ファイル、ブロック、オブジェクトのストレージタイプのサービスレベルを示します。</block>
@@ -3233,13 +3230,10 @@
   <block id="8d516947750194a36d55831e643c9530" category="inline-image-macro">履歴データ</block>
   <block id="75c2cedbc79380dcf4efe56be06dec27" category="paragraph"><block ref="75c2cedbc79380dcf4efe56be06dec27" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e8f49e2b6da7339d918b4030b299167c" category="admonition">クエリの日付範囲に基づいて、使用状況グラフは30のデータ収集ポイントの範囲で表示されます。</block>
-  <block id="9c559d13aa46e64e5c1b49a0e0a1432e" category="example-title">&lt;strong&gt; のData Protection &lt;/strong&gt; の詳細</block>
-  <block id="cdd4bd25f20c449a0963f56aa74dcbab" category="paragraph">データ保護（DP）サービスに登録している場合は、MetroCluster のプライマリサイトとミラーサイトに基づいて消費データの内訳を*[サブスクリプションタイムシリーズ]*タブで確認できます。</block>
   <block id="087f6b1f88be44a104173a6f203b90b1" category="paragraph">データ保護の詳細については、を参照してください<block ref="4f245631ed62c18d2a1d6d25320b34f1" category="inline-link-rx"></block>。</block>
   <block id="04db5afbef84567f5c1ef044a2971b66" category="paragraph">ONTAP ストレージ環境内のクラスタがMetroCluster セットアップで構成されている場合は、Keystoneサブスクリプションの消費データが同じ時系列グラフに分割されて、基本のサービスレベルのプライマリサイトとミラーサイトでの消費量が表示されます。</block>
   <block id="281d16d13e34f7444117e4fa04008cd2" category="admonition">消費棒グラフは、基本サービスレベルに対してのみ分割されます。DPサービスレベルの場合、この分離は表示されません。</block>
   <block id="e1d364a7f674f544c03d16d5e011a4cd" category="paragraph-title">データ保護サービスレベル</block>
-  <block id="d1bb5be7c1d9696a6692a5707b28c8a6" category="paragraph">DPサービスレベルの場合は、総消費量が分割され、各サイトの使用量が別のサブスクリプション（プライマリサイト用とミラーサイト用）に反映されて課金されます。そのため、* Subscription Time Series *タブでプライマリサイトのサブスクリプション番号を選択すると、DPサービスレベルの消費グラフにはプライマリサイトの個別の消費の詳細のみが表示されます。MetroCluster 構成の各サイトはソースおよびミラーとして機能するため、各サイトでの合計消費量には、そのサイトに作成されたソースボリュームとミラーボリュームが含まれます。</block>
   <block id="c3c3060e985c56412fb0189a9c010a6d" category="paragraph-title">基本サービスレベル</block>
   <block id="2da97e4dcd0aded3c38f66cbf8f9886b" category="paragraph">ただし、基本のサービスレベルについては、プライマリサイトとミラーサイトで各ボリュームのプロビジョニング済み料金が設定されるため、プライマリサイトとミラーサイトでの使用量に応じて同じ棒グラフが分割されます。</block>
   <block id="65626369a820db5271fac7f41d059e93" category="paragraph-title">プライマリサブスクリプションで表示される内容</block>
@@ -3285,4 +3279,15 @@
 <block ref="c64624b3993be4529190ae7782933292" category="inline-image-macro-rx" type="image"></block>：最大消費量。つまり、使用量がコミット済み容量の100%以上に達しようとしています。*Consumed *列には、コミット済み容量の80%を超える消費量を示すインジケータが表示されます
 <block ref="d028059f11eb3bdde55947b1358873ff" category="inline-image-macro-rx" type="image"></block>：消費量がバースト制限内にあります。バースト消費量とは、サービスレベルの100%のコミット済み容量を超え、120 %などの合意されたバースト使用制限の範囲内である消費量のことです
 <block ref="8428f2683e402ce0337d14cf475231ce" category="inline-image-macro-rx" type="image"></block>：指定されたバースト制限を超過した消費量を示します</block>
+  <block id="f57aa475ec783bf5f654ae84fb0b5e09" category="paragraph">Keystoneは、事前定義されたパフォーマンスサービスレベル（サービスレベル）またはサブスクリプションベースのレートプランでデータストレージ容量を提供します。Keystoneサービスで管理される各ボリュームはサービスレベルに関連付けられます。</block>
+  <block id="463e83e0e081379ee2766e73b3eecd12" category="inline-link">データ保護の詳細</block>
+  <block id="03c5694e908728e2ac20cf09a2828523" category="admonition">サブスクリプションにデータ保護サービスレベルまたはレートプランが割り当てられている場合は、ツールチップを使用してMetroClusterセットアップでパートナーサブスクリプションの追跡IDを確認できます。MetroCluster構成のパートナーサブスクリプション別の詳細な消費状況を表示する方法については、を参照してください<block ref="79d54d9bd1527f09da2a1c650bb1ebe9" category="inline-link-rx"></block>。</block>
+  <block id="29005d0d658d65418d353d36b2bb6f04" category="inline-link">Keystone STaaSのドキュメント</block>
+  <block id="5d37c3b0ff8e3607561838b8a2c41ce6" category="list-text">*使用タイプ*：複数のKeystone（バージョン1）またはKeystone STaaS（バージョン2）サブスクリプションに登録済みの場合があります。サービスレベルのレートプランルールは、2つのサブスクリプションタイプで異なる場合があります。この列の値を見ると、使用タイプがプロビジョニング済みの使用量と論理的な使用量のどちらに基づいて課金されているかがわかります<block ref="6654c734ccab8f440ff0825eb443dc7f" prefix=" " category="inline-code"></block> または<block ref="1b267619c4812cc46ee281747884ca50" prefix=" " category="inline-code"></block>。Keystone STaaSの詳細については、を参照してください<block ref="6e40e8ebb5f38b7cc6ad272c1589745e" category="inline-link-rx"></block>。</block>
+  <block id="936ccdb97115e9f35a11d35e3d5b5cad" category="example-title">ここをクリックしてください</block>
+  <block id="0897cfec13f189dd654fd1a11a3ccb31" category="paragraph">データ保護（DP）サービスにサブスクライブしている場合は、MetroClusterパートナーサイトに従って消費データの内訳を*サブスクリプション時系列*タブで確認できます。</block>
+  <block id="ea477a5ac64777287c5e9f0ffda4e1ca" category="paragraph">DPサービスレベルでは、総消費量が分割され、各パートナーサイトでの使用量が別 々 のサブスクリプション（プライマリサイト用とミラーサイト用）に反映されて課金されます。そのため、* Subscription Time Series *タブでプライマリサイトのサブスクリプション番号を選択すると、DPサービスレベルの消費グラフにはプライマリサイトの個別の消費の詳細のみが表示されます。MetroCluster構成の各パートナーサイトがソースおよびミラーとして機能するため、各サイトでの合計消費量には、そのサイトに作成されたソースボリュームとミラーボリュームが含まれます。</block>
+  <block id="382af8e8b2bf82c4df59a255786526a2" category="section-title">ONTAPボリュームの詳細</block>
+  <block id="fc33c921eada2f71b3a548355734f006" category="section-title">StorageGRIDノードと消費の詳細</block>
+  <block id="248ee1b5c36074ad26f09b9a95a55dca" category="admonition">単一のサービスレベルプランまたはレートプランにサブスクライブしている場合、非準拠ボリュームのアラートは表示されません。</block>
 </blocks>
