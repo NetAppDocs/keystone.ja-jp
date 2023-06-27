@@ -24,6 +24,8 @@ NetApp Keystone データ保護サービスでは、データをバックアッ�
 
 NOTE: バックアップサービスとディザスタリカバリサービスはアドオンサービスとして提供され、スナップショットは基本的なストレージサービスの一部として提供される。
 
+データ保護サービスにサブスクライブしている場合は、サブスクリプションに特定のサービスレベルが割り当てられます（_Data-Protect Extreme_、_Data-Protect Premium_など）。詳細については、を参照してください https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html#additional-details-for-data-protection["データ保護の詳細"]
+
 |===
 |  | 単一リージョンのSnapshot（基本的なストレージサービスの一部として利用可能） | マルチリージョンバックアップ（データ保護アドオン） | 複数リージョンのディザスタリカバリ（データ保護アドオン） 
 

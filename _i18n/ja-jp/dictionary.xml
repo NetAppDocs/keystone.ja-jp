@@ -1566,7 +1566,6 @@
   <block id="026ad4d2c920d702727bf108e70e14e0" category="list-text">「 * サブテナントを作成 * 」をクリックします。</block>
   <block id="dd76b59dc803b207d74caa8c5e5203c7" category="list-text">名前とコードを追加します。サブテナントを表すコードは、 NetApp Service Engine インスタンス内で一意で、小文字で構成されている必要があります。</block>
   <block id="9203a50eb24a9f4c5c58c57c9f3da40e" category="admonition">既存のサブテナントの名前は変更のみ可能です。また、ストレージコンポーネントが関連付けられているサブテナントは削除できません。</block>
-  <block id="21a1e68164f738b8be1dae11d5a694b3" category="doc">データ保護</block>
   <block id="7da490627b0929eb399424269ef46d7f" category="list-text">ディスクおよび共有のバックアップ（サブスクリプションの一部としてデータ保護サービスが必要）</block>
   <block id="b0609401d759c5156292bcededa3ee06" category="list-text">ディスクおよび共有のディザスタリカバリ（サブスクリプションの一部としてデータ保護サービスが必要）</block>
   <block id="53b8c0793d8e01e805f7baa48301f0cb" category="cell">マルチリージョンバックアップ（データ保護アドオン）</block>
@@ -3037,7 +3036,6 @@
   <block id="56db599b367f1290318fb4abdd42ed2b" category="doc">Keystone向けのDigital Advisorダッシュボードとレポート作成</block>
   <block id="34c39bccff9d0d20e19cce35894ae174" category="list-text">Digital Advisorにログインします。Keystoneサブスクリプション*ウィジェットが表示され、購入したKeystoneサービスに対する使用容量が表示されます。</block>
   <block id="d896c0f2329a0638824e70e536ea67ae" category="list-text">[Keystoneサブスクリプション]*ウィジェットで*[詳細を表示]*をクリックし、*[Keystoneサブスクリプション]*ページにボリュームに関する使用状況の詳細とアラートを表示します。または、左側のナビゲーションペインで*[全般]&gt;[Keystoneサブスクリプション]*に移動します。</block>
-  <block id="e2ffb27c2aa47f644ded27f116869dc8" category="admonition">Keystoneサブスクリプションの容量消費は、ダッシュボードとレポートのTiBに小数点以下2桁まで表示されます。使用量が0.01TiB未満の場合は、と表示されます<block ref="cfcd208495d565ef66e7dff9f98764da" prefix=" " category="inline-code"></block> または<block ref="31c2db4909d0d3638d380d92c0a194e0" prefix=" " category="inline-code"></block>。その他の使用指標については、を参照してください<block ref="98a30cfc42e5138070cb8b3bae486e43" category="inline-link-rx"></block>。Keystoneで使用されるさまざまな容量については、を参照してください<block ref="8838b1277b7691fb50f3e6bca15d5781" category="inline-link-rx"></block>。</block>
   <block id="5ce1e0f4461b25c4ab605e7e1107117a" category="paragraph">NetApp Service Engine Webポータルでは、NetApp Keystone サービスを管理および監視できます。ポータルは、次のコンポーネントで構成されています。</block>
   <block id="0d77f7db2828214c8d1ad32c5f8b881f" category="paragraph">テナントには、顧客、パートナー、または請求先のエンティティを指定できます。テナントは、Keystoneサブスクリプションサービスのサブスクリプション（または複数のサブスクリプション）を保持します。</block>
   <block id="f087729432bd756193396b1e0365c0c9" category="doc">NetApp Service EngineでKeystoneダッシュボードを確認できます</block>
@@ -3180,7 +3178,6 @@
   <block id="5cee2df0715294af225b93a062c0b3bf" category="paragraph"><block ref="5cee2df0715294af225b93a062c0b3bf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f93af6ea2aaeafbfa26e3fe0954ccc1a" category="paragraph">各サービスレベルは、I/O密度（IOPS/TiB/ボリューム）で定義されます。パフォーマンス（1秒あたりの入出力操作[IOPS]）と割り当て済みストレージ容量（TiB）の比率で、ボリュームあたりの平均レイテンシでのIOPS/TiBです。</block>
   <block id="0d2770e6697ff41e6cac5eec9a3d728b" category="paragraph">ボリュームのI/O密度は1時間ごとに計算され、ピークI/O密度が報告されます。ボリュームのI/O密度レポートは毎月生成されます。</block>
-  <block id="26ee386c417635b5c1e5d8ffd5bbb0bd" category="paragraph">ここでは、ファイル、ブロック、オブジェクトのストレージタイプのサービスレベルを示します。</block>
   <block id="8edf08839950862fe56f04959fd3f87b" category="section-title">ファイルストレージのサービスレベル</block>
   <block id="10fde21ab3bcb7083e8e5bed1ca3af80" category="cell">*ボリュームあたりの割り当て済み論理容量（TiB）あたりの最大IOPS *</block>
   <block id="0402a8a3b6eb168a997a74fb30635a37" category="cell">*ターゲットIOPS/ボリュームあたりの割り当て済み論理TiB数*</block>
@@ -3188,7 +3185,6 @@
   <block id="61871926ab208323c9981229029b2c82" category="cell">*平均レイテンシー*</block>
   <block id="d6b228a8ed209a51c109dc08e1f357ce" category="cell">*ブロックサイズ*</block>
   <block id="bf79e80bcc6c0a1ed97c7270c5aa6360" category="section-title">ファイルストレージのサービスレベルの詳細</block>
-  <block id="c4701e06633afc0b1161fbc6049cc803" category="paragraph">サービスレベルのメトリックは、次の条件によって異なります。</block>
   <block id="210b39d4b6b8c3231fc8e5027adff975" category="list-text">ファイルストレージとブロックストレージのサービスレベルはONTAP 9.7以降をサポートします。</block>
   <block id="02007b308c5bfea2eb09b0fa9b7f04d5" category="list-text">サービスレベルのIOPS/TiB/ボリューム、MBPS/TiB/ボリューム、およびレイテンシの値は、ボリュームに格納されている論理データの量、32KBのブロックサイズ、およびランダムなI/O処理の70%と30%の書き込みI/O処理に基づきます。</block>
   <block id="1ce7cadb42fda63031710acdb1e36d13" category="list-text">実際のIOPS/TiB/ボリュームとMBPS/TiB/ボリュームは、実際のブロックサイズまたは想定されるブロックサイズ、システムワークロードの同時実行数、または入出力処理によって変わります。</block>
@@ -3230,30 +3226,22 @@
   <block id="8d516947750194a36d55831e643c9530" category="inline-image-macro">履歴データ</block>
   <block id="75c2cedbc79380dcf4efe56be06dec27" category="paragraph"><block ref="75c2cedbc79380dcf4efe56be06dec27" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e8f49e2b6da7339d918b4030b299167c" category="admonition">クエリの日付範囲に基づいて、使用状況グラフは30のデータ収集ポイントの範囲で表示されます。</block>
-  <block id="087f6b1f88be44a104173a6f203b90b1" category="paragraph">データ保護の詳細については、を参照してください<block ref="4f245631ed62c18d2a1d6d25320b34f1" category="inline-link-rx"></block>。</block>
   <block id="04db5afbef84567f5c1ef044a2971b66" category="paragraph">ONTAP ストレージ環境内のクラスタがMetroCluster セットアップで構成されている場合は、Keystoneサブスクリプションの消費データが同じ時系列グラフに分割されて、基本のサービスレベルのプライマリサイトとミラーサイトでの消費量が表示されます。</block>
-  <block id="281d16d13e34f7444117e4fa04008cd2" category="admonition">消費棒グラフは、基本サービスレベルに対してのみ分割されます。DPサービスレベルの場合、この分離は表示されません。</block>
   <block id="e1d364a7f674f544c03d16d5e011a4cd" category="paragraph-title">データ保護サービスレベル</block>
   <block id="c3c3060e985c56412fb0189a9c010a6d" category="paragraph-title">基本サービスレベル</block>
-  <block id="2da97e4dcd0aded3c38f66cbf8f9886b" category="paragraph">ただし、基本のサービスレベルについては、プライマリサイトとミラーサイトで各ボリュームのプロビジョニング済み料金が設定されるため、プライマリサイトとミラーサイトでの使用量に応じて同じ棒グラフが分割されます。</block>
   <block id="65626369a820db5271fac7f41d059e93" category="paragraph-title">プライマリサブスクリプションで表示される内容</block>
-  <block id="d8476da72783640883a9e5629643666c" category="paragraph">次の図は、サービスレベル_Extreme_Serviceとプライマリサブスクリプション番号のグラフを示しています。同じ時系列チャートは、プライマリサイトに使用されるカラーコードのより明るい色合いでミラーサイトの消費をマークします。マウスにカーソルを合わせると、プライマリサイトとミラーサイトの消費量の内訳（TiB）がそれぞれ1.02TiBと1.05TiBで表示されます。</block>
   <block id="7cbd40b0470c3f0ea1063db9202530ff" category="inline-image-macro">MCCプライマリ</block>
   <block id="69ee7237e9b9f659b4b0f2cee316a662" category="paragraph"><block ref="69ee7237e9b9f659b4b0f2cee316a662" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="691f3f8af0331dffbbb99f55392f1b1d" category="paragraph">サービスレベル_Data-Protect Extreme_Serviceの場合、グラフは次のように表示されます。</block>
   <block id="4bb0adac0644b7c8396196d410d47909" category="inline-image-macro">MCCプライマリベース</block>
   <block id="2788c6179b3412862ccb0aa51af8fb00" category="paragraph"><block ref="2788c6179b3412862ccb0aa51af8fb00" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cd9124dc0715967bbbd4e31ad8a6f35d" category="paragraph-title">セカンダリ（ミラーサイト）サブスクリプションで表示される情報</block>
-  <block id="780f5e670e2c04a97e27a55ce4e5fe77" category="paragraph">セカンダリサブスクリプションを確認すると、同じデータ収集ポイントでの_Extreme_serviceレベルの棒グラフが逆になり、プライマリサイトとミラーサイトでの消費量の内訳がそれぞれ1.05TiBと1.02TiBになっていることがわかります。</block>
   <block id="ff58d4e2d2a69e5e91f9509907ba3bd1" category="inline-image-macro">MCCミラー</block>
   <block id="292d6b6f6df888f5de022ad6bebc7e52" category="paragraph"><block ref="292d6b6f6df888f5de022ad6bebc7e52" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="096ba4c1255ddf7f6a7f129dc338ad4d" category="paragraph">サービスレベル_Data-Protect Extreme_Serviceの場合、同じ収集ポイントで次のようなグラフが表示されます。</block>
   <block id="ab682f0abbe8b97aaec76b435ca52575" category="inline-image-macro">MCCミラーベース</block>
   <block id="32b6695c9f1befd719e0c7b2c28dfea1" category="paragraph"><block ref="32b6695c9f1befd719e0c7b2c28dfea1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="48d59ef93e565c1c62d4604f7ddf6561" category="inline-link">MetroCluster のデータ保護とディザスタリカバリについて理解する</block>
   <block id="11faa60292999fe44e704021ce9a5657" category="paragraph">MetroCluster によるデータの保護方法については、を参照してください<block ref="f22c59fda71318ed939c4a5a7c90b447" category="inline-link-rx"></block>。</block>
   <block id="793c1a98e090ba1b0f167e3a8b0c5b37" category="paragraph">ボリュームの詳細が表示されます。列見出しの横にある情報アイコンにマウスを合わせると、列をスクロールして詳細を確認できます。列でソートしたり、リストをフィルタして特定の情報を表示したりできます。</block>
-  <block id="6857abe02d1e9615946756081a1a8169" category="admonition">データ保護サービスの場合は、MetroCluster 構成内のボリュームがプライマリボリュームかミラーボリュームかを示す列が表示されます。個 々 のノードシリアル番号をコピーするには、*ノードシリアルのコピー*ボタンをクリックします。</block>
   <block id="0bb9d5f8cc89f1784aecd52a98b80f07" category="inline-image-macro">[System details]タブ</block>
   <block id="8b672bec07d1efa43e526f4981ffb4e7" category="paragraph"><block ref="8b672bec07d1efa43e526f4981ffb4e7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4f42ad6a3c3832d3bf584971680c1ebb" category="inline-image-macro">SGシステムの詳細</block>
@@ -3280,14 +3268,28 @@
 <block ref="d028059f11eb3bdde55947b1358873ff" category="inline-image-macro-rx" type="image"></block>：消費量がバースト制限内にあります。バースト消費量とは、サービスレベルの100%のコミット済み容量を超え、120 %などの合意されたバースト使用制限の範囲内である消費量のことです
 <block ref="8428f2683e402ce0337d14cf475231ce" category="inline-image-macro-rx" type="image"></block>：指定されたバースト制限を超過した消費量を示します</block>
   <block id="f57aa475ec783bf5f654ae84fb0b5e09" category="paragraph">Keystoneは、事前定義されたパフォーマンスサービスレベル（サービスレベル）またはサブスクリプションベースのレートプランでデータストレージ容量を提供します。Keystoneサービスで管理される各ボリュームはサービスレベルに関連付けられます。</block>
-  <block id="463e83e0e081379ee2766e73b3eecd12" category="inline-link">データ保護の詳細</block>
-  <block id="03c5694e908728e2ac20cf09a2828523" category="admonition">サブスクリプションにデータ保護サービスレベルまたはレートプランが割り当てられている場合は、ツールチップを使用してMetroClusterセットアップでパートナーサブスクリプションの追跡IDを確認できます。MetroCluster構成のパートナーサブスクリプション別の詳細な消費状況を表示する方法については、を参照してください<block ref="79d54d9bd1527f09da2a1c650bb1ebe9" category="inline-link-rx"></block>。</block>
   <block id="29005d0d658d65418d353d36b2bb6f04" category="inline-link">Keystone STaaSのドキュメント</block>
   <block id="5d37c3b0ff8e3607561838b8a2c41ce6" category="list-text">*使用タイプ*：複数のKeystone（バージョン1）またはKeystone STaaS（バージョン2）サブスクリプションに登録済みの場合があります。サービスレベルのレートプランルールは、2つのサブスクリプションタイプで異なる場合があります。この列の値を見ると、使用タイプがプロビジョニング済みの使用量と論理的な使用量のどちらに基づいて課金されているかがわかります<block ref="6654c734ccab8f440ff0825eb443dc7f" prefix=" " category="inline-code"></block> または<block ref="1b267619c4812cc46ee281747884ca50" prefix=" " category="inline-code"></block>。Keystone STaaSの詳細については、を参照してください<block ref="6e40e8ebb5f38b7cc6ad272c1589745e" category="inline-link-rx"></block>。</block>
   <block id="936ccdb97115e9f35a11d35e3d5b5cad" category="example-title">ここをクリックしてください</block>
-  <block id="0897cfec13f189dd654fd1a11a3ccb31" category="paragraph">データ保護（DP）サービスにサブスクライブしている場合は、MetroClusterパートナーサイトに従って消費データの内訳を*サブスクリプション時系列*タブで確認できます。</block>
-  <block id="ea477a5ac64777287c5e9f0ffda4e1ca" category="paragraph">DPサービスレベルでは、総消費量が分割され、各パートナーサイトでの使用量が別 々 のサブスクリプション（プライマリサイト用とミラーサイト用）に反映されて課金されます。そのため、* Subscription Time Series *タブでプライマリサイトのサブスクリプション番号を選択すると、DPサービスレベルの消費グラフにはプライマリサイトの個別の消費の詳細のみが表示されます。MetroCluster構成の各パートナーサイトがソースおよびミラーとして機能するため、各サイトでの合計消費量には、そのサイトに作成されたソースボリュームとミラーボリュームが含まれます。</block>
   <block id="382af8e8b2bf82c4df59a255786526a2" category="section-title">ONTAPボリュームの詳細</block>
   <block id="fc33c921eada2f71b3a548355734f006" category="section-title">StorageGRIDノードと消費の詳細</block>
   <block id="248ee1b5c36074ad26f09b9a95a55dca" category="admonition">単一のサービスレベルプランまたはレートプランにサブスクライブしている場合、非準拠ボリュームのアラートは表示されません。</block>
+  <block id="807b74f4408b0522944c11fa3c943faa" category="inline-link">データ保護の詳細</block>
+  <block id="22af05fccc86b1f0d7872faea8c654a4" category="paragraph">データ保護サービスにサブスクライブしている場合は、サブスクリプションに特定のサービスレベルが割り当てられます（_Data-Protect Extreme_、_Data-Protect Premium_など）。詳細については、を参照してください<block ref="ea85780aae2041c315d8d2c95c2ef380" category="inline-link-rx"></block></block>
+  <block id="1929ab48c05126f8a997e319160674e8" category="admonition">Keystoneサブスクリプションの容量消費量は、ダッシュボードとレポートにTiB単位で表示され、小数点以下2桁に四捨五入されます。使用量が0.01TiB未満の場合は、と表示されます<block ref="cfcd208495d565ef66e7dff9f98764da" prefix=" " category="inline-code"></block> または<block ref="31c2db4909d0d3638d380d92c0a194e0" prefix=" " category="inline-code"></block>。その他の使用指標については、を参照してください<block ref="98a30cfc42e5138070cb8b3bae486e43" category="inline-link-rx"></block>。Keystoneで使用されるさまざまな容量については、を参照してください<block ref="8838b1277b7691fb50f3e6bca15d5781" category="inline-link-rx"></block>。</block>
+  <block id="8640c6867f9a397cb1e15b5dc86f5663" category="admonition">サブスクリプションにデータ保護サービスレベルまたはレートプランが割り当てられている場合は、ツールチップを使用してMetroClusterセットアップでパートナーサブスクリプションの追跡IDを確認できます。MetroCluster構成のパートナーサブスクリプション別の詳細な消費状況を表示する方法については、を参照してください<block ref="ea85780aae2041c315d8d2c95c2ef380" category="inline-link-rx"></block>。</block>
+  <block id="8e357471a27451528c5b9baff9e6ce0c" category="paragraph">データ保護サービスに登録している場合は、*[サブスクリプション時系列]*タブでMetroClusterパートナーサイトの消費データの内訳を確認できます。</block>
+  <block id="1e082e4448eecee03f6bd4c2605a41bc" category="paragraph">データ保護の詳細については、を参照してください<block ref="88c192a22c75988714ca0d6a3ba44ff9" category="inline-link-rx"></block>。</block>
+  <block id="e6b09591607b38dfa571b28e166b8e42" category="admonition">消費棒グラフは、基本サービスレベルに対してのみ分割されます。データ保護サービスレベルでは、この境界は表示されません。</block>
+  <block id="a5ee6c11183b804a6d34deec216a083c" category="paragraph">データ保護サービスレベルでは、総消費量がパートナーサイト間で分割され、各パートナーサイトでの使用量が別 々 のサブスクリプション（プライマリサイト用とミラーサイト用）に反映されて課金されます。そのため、* Subscription Time Series *タブでプライマリサイトのサブスクリプション番号を選択すると、DPサービスレベルの消費グラフにはプライマリサイトの個別の消費の詳細のみが表示されます。MetroCluster構成の各パートナーサイトがソースおよびミラーとして機能するため、各サイトでの合計消費量には、そのサイトに作成されたソースボリュームとミラーボリュームが含まれます。</block>
+  <block id="dc22a90e0f32f2a7c39774489ee8fb79" category="admonition">[サブスクリプションの詳細]タブのサブスクリプションのタッキングIDの横にあるツールチップは、MetroClusterセットアップでパートナーサブスクリプションを識別するのに役立ちます。</block>
+  <block id="fe1654f1038a98c579f04107a47b091b" category="paragraph">基本のサービスレベルの場合、各ボリュームはプライマリサイトとミラーサイトでプロビジョニング済みとして課金されるため、プライマリサイトとミラーサイトでの使用量に応じて同じ棒グラフが分割されます。</block>
+  <block id="6f66763d1fa17a342e4bfd7244527ffb" category="paragraph">次の図は、_Extreme_service level（基本サービスレベル）とプライマリサブスクリプション番号のグラフを示しています。同じ時系列チャートは、プライマリサイトに使用されるカラーコードのより明るい色合いでミラーサイトの消費をマークします。マウスにカーソルを合わせると、プライマリサイトとミラーサイトの消費量の内訳（TiB）がそれぞれ1.02TiBと1.05TiBで表示されます。</block>
+  <block id="574ca73665514e03da64e46fb1e82604" category="paragraph">_Data-Protect Extreme_service level（データ保護サービスレベル）のグラフは次のように表示されます。</block>
+  <block id="de7e96b640e5109ff5e8bcbb7abf5849" category="paragraph">セカンダリサブスクリプションを確認すると、パートナーサイトと同じデータ収集ポイントの_Extreme_service level（基本のサービスレベル）の棒グラフが反転し、プライマリサイトとミラーサイトでの消費量の内訳がそれぞれ1.05TiBと1.02TiBであることがわかります。</block>
+  <block id="b8ed9b54db3e7d83dd75eae7e5078691" category="paragraph">_Data-Protect Extreme_service level（データ保護サービスレベル）の場合、パートナーサイトと同じ収集ポイントに次のようなグラフが表示されます。</block>
+  <block id="1e77eca1979c6beac412146f5d5e17fe" category="admonition">データ保護サービスの場合は、ボリュームがMetroCluster構成のプライマリボリュームかミラーボリュームかを示す列が表示されます。個 々 のノードシリアル番号をコピーするには、*ノードシリアルのコピー*ボタンをクリックします。</block>
+  <block id="a124cd9706a171f6aa398360fb7ee547" category="paragraph">サービスレベルは、ストレージ環境、およびストレージと消費のニーズに基づいて選択します。基本サービスレベルは、デフォルトで設定されています。特定のサービスを選択した場合は、他のサービスレベルも追加で利用できます。たとえば、データ保護サービスの場合、_Data-Protect &lt;base-service-level&gt;_サービスレベルがサブスクリプションに割り当てられます。</block>
+  <block id="12e64e130cc4e82cf93d846901ed35da" category="paragraph">ここには、ファイル、ブロック、オブジェクトの各ストレージタイプの基本サービスレベルを示します。</block>
+  <block id="6839a21037309515ac19670a2a6b09fe" category="paragraph">基本のサービスレベルメトリックは、次の条件によって異なります。</block>
 </blocks>
