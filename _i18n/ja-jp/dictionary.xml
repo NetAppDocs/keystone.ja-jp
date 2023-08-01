@@ -2929,11 +2929,8 @@
   <block id="936acd8bca51b1c47ce51ce5d9e45134" category="admonition">ここで入手できる情報は、ONTAP とStorageGRID の両方を環境 に掲載しています。例外は関連するセクションで指摘されています。</block>
   <block id="b5d0947d6bc5e70f868d560d859163f5" category="inline-link">NetApp Keystone サブスクリプションを使用して容量利用率を表示します</block>
   <block id="90022a4ed9f097be4671116b6b5b7754" category="paragraph">[Keystone Digital Advisor]ウィジェットの詳細については、を参照してください<block ref="553d5c0a148912943ee201440d3b98c5" category="inline-link-rx"></block>。</block>
-  <block id="af23688fe47e4923ebd83f7238688630" category="paragraph">詳細を表示するには、次の手順を実行します。</block>
-  <block id="b49a48b1a3504debfe7fedab8ad4086d" category="paragraph">サブスクリプションの詳細、各サービスレベルの使用状況グラフ、ボリュームの詳細が、* Keystoneサブスクリプション*画面の別 々 のタブに表示されます。</block>
   <block id="3e7fbf68bb6fb2a1a061e9b1a50441d9" category="inline-link">サービスレベルの指標と定義</block>
   <block id="b3c0ed0e576799a24c9e0fda06bee006" category="section-title">サブスクリプションの詳細を表示します</block>
-  <block id="b5d0d2658bdd7db17a2251c2d1fa6edb" category="paragraph">アカウント名のすべてのサブスクリプションは、[*Subscription Details*]タブで確認できます。</block>
   <block id="60d8073bb007efeabf44bc4eea759210" category="paragraph">各サブスクリプション番号について、次の情報が表示されます。</block>
   <block id="8e43124ddee77b223f1e720973e147e7" category="list-text">*サブスクリプション番号*：ネットアップが割り当てたKeystoneサブスクリプションのサブスクリプション番号。</block>
   <block id="f06c1648cc175308e5d0425681e31f63" category="list-text">*トラッキングID*：登録の有効化時に割り当てられたトラッキングID。これは、サブスクリプションとサイトごとに一意のIDで、サブスクリプションの追跡に使用されます。</block>
@@ -2941,10 +2938,8 @@
   <block id="58ddac2ef16530986372a556eb9e6b7a" category="list-text">*開始日*：サブスクリプションの開始日。</block>
   <block id="83adb6d347afacf7d560a4bb6f74dfa1" category="list-text">*使用状況*：サブスクリプションの使用量または使用率が高すぎることを示します。消費レコードの数を最も高くする場合は、この列でリストをソートできます。</block>
   <block id="706b251feaacce4536ad626d12e0cdb3" category="paragraph">Keystoneストレージサービスと関連するサービスレベルについては、を参照してください<block ref="36a3b3cce1fbb3bc12a00ec01f92dfcb" category="inline-link-rx"></block>。</block>
-  <block id="736d5b3313fce2ba2126ffff61a7ec29" category="paragraph">各サブスクリプションの使用状況を確認するには、次の使用状況インジケータを参照してください。</block>
   <block id="88fa71f0a6e0dfedbb46d91cc0b37a50" category="paragraph-title">インデックス</block>
   <block id="6258cb1a842831f15b22f87325717f37" category="section-title">履歴サブスクリプションデータを表示します</block>
-  <block id="c46ba64e2bab36ac2ede95ae5f0692dc" category="list-text">[* Subscription Time Series*（サブスクリプションタイムシリーズ*）]タブをクリックします。</block>
   <block id="a49bb8de1f373a2c0821dd3715e2473c" category="list-text">詳細を表示するサブスクリプションを選択します。デフォルトでは、アカウント名の最初のサブスクリプションが選択されています。</block>
   <block id="9ff2c2d2ffe68a2a0862d38fe356318c" category="list-text">[開始日*（From Date）]および[終了日*（* To Date）]フィールドのカレンダーアイコンから時間範囲を選択します。デフォルトの時間範囲は、請求期間の開始日から現在の日付までです。</block>
   <block id="35070e1c588eb56d935a4877ffdfdb10" category="paragraph">次の詳細が表示されます。</block>
@@ -2974,7 +2969,6 @@
   <block id="4be9bcf02510758e3d80494ef37c15b0" category="list-text">リンクをクリックすると、各ノードのノード名と論理使用量の詳細が表示されます。</block>
   <block id="7ecd0726b721e17d74d280fdd93e49f8" category="section-title">レポートを生成します</block>
   <block id="03051fbd458dd7625e7969d74dd74735" category="paragraph">詳細はCSV形式で生成され、あとで使用できるように保存できます。</block>
-  <block id="3f564a49686a18ae09da9597e6538840" category="paragraph">[サブスクリプションタイムシリーズ*]タブのサンプルレポート。グラフデータが変換されます。</block>
   <block id="428c58ec1c2902ea6bff31e38cae88ff" category="section-title">アラートを表示します</block>
   <block id="c71fcee7f813aa85774b9114dfba4ef1" category="paragraph">ダッシュボードのアラートは警告メッセージを送信するため、ストレージ環境で発生している問題を把握することができます。</block>
   <block id="903961eaa166cc0c38b735276961eb0c" category="paragraph">アラートには次の2種類があります。</block>
@@ -3035,7 +3029,6 @@
   <block id="535fdb1ab2c166c0c63a26bfd6b8a4dd" category="paragraph">Keystoneには次のようなメリットがあります。</block>
   <block id="56db599b367f1290318fb4abdd42ed2b" category="doc">Keystone向けのDigital Advisorダッシュボードとレポート作成</block>
   <block id="34c39bccff9d0d20e19cce35894ae174" category="list-text">Digital Advisorにログインします。Keystoneサブスクリプション*ウィジェットが表示され、購入したKeystoneサービスに対する使用容量が表示されます。</block>
-  <block id="d896c0f2329a0638824e70e536ea67ae" category="list-text">[Keystoneサブスクリプション]*ウィジェットで*[詳細を表示]*をクリックし、*[Keystoneサブスクリプション]*ページにボリュームに関する使用状況の詳細とアラートを表示します。または、左側のナビゲーションペインで*[全般]&gt;[Keystoneサブスクリプション]*に移動します。</block>
   <block id="5ce1e0f4461b25c4ab605e7e1107117a" category="paragraph">NetApp Service Engine Webポータルでは、NetApp Keystone サービスを管理および監視できます。ポータルは、次のコンポーネントで構成されています。</block>
   <block id="0d77f7db2828214c8d1ad32c5f8b881f" category="paragraph">テナントには、顧客、パートナー、または請求先のエンティティを指定できます。テナントは、Keystoneサブスクリプションサービスのサブスクリプション（または複数のサブスクリプション）を保持します。</block>
   <block id="f087729432bd756193396b1e0365c0c9" category="doc">NetApp Service EngineでKeystoneダッシュボードを確認できます</block>
@@ -3149,7 +3142,6 @@
   <block id="a3297beb0c913ab1ce7de0647b5264d0" category="sidebar">KeystoneとActive IQ デジタルアドバイザ</block>
   <block id="c06919229cadbe5cd8d5d386238c994e" category="sidebar">Keystoneサブスクリプションに関するFAQ</block>
   <block id="6e0ffc28497d27ad3c6bea6ff91952d8" category="sidebar">Keystoneサブスクリプション</block>
-  <block id="01f997e2a423afa5cbbc884d9826beb8" category="sidebar">Keystoneサブスクリプションのダッシュボードを表示します</block>
   <block id="918d1cd98a55c119d7e4e81b3cfac0f8" category="summary">KeystoneアダプティブQoS（AQoS）</block>
   <block id="2cc739ab414b782a0ba5a2dafc3c878f" category="doc">KeystoneのアダプティブQuality of Service（QoS；サービス品質</block>
   <block id="5f558fad18c536fde918f6d8470c0f4c" category="paragraph">ストレージQuality of Service（QoS；サービス品質）は、アプリケーションのパフォーマンスが安定し、予測可能な安定したものになるようにするための重要なテクノロジです。QoSを設定しないと、複数のシステムのブート用など、特定のワークロードが一定期間リソースのほとんどまたはすべてを消費し、他のワークロードに影響する可能性があります。QoSの詳細については、を参照してください<block ref="3c8d0a20452a1fdd8de7e683059a52bc" category="inline-link-rx"></block>。</block>
@@ -3217,9 +3209,6 @@
   <block id="41220b85d8467c5822466b54e2f77fdf" category="inline-image-macro">[サブスクリプションの詳細]タブ</block>
   <block id="3863c999fd2904d6bd45c5fac0637857" category="paragraph"><block ref="3863c999fd2904d6bd45c5fac0637857" category="inline-image-macro-rx" type="image"></block></block>
   <block id="baec6461b0d69dde1b861aefbe375d8a" category="inline-image-macro">をクリックします。</block>
-  <block id="465b53bf56fb8c088ea55a58377aec59" category="list-text"><block ref="435e416487181a998706b8fd7ece7b01" category="inline-image-macro-rx" type="image"></block>：このアイコンをクリックすると* Subscription Time Series *タブが開き、このサブスクリプションに含まれる各サービスレベルの使用履歴データが表示されます。</block>
-  <block id="0e25c249c47d5b9cd3933dea0b0e9bfb" category="paragraph">サブスクリプションレコードの下矢印をクリックすると、詳細が表示されます。サービスレベル名、コミット済み容量、消費済み容量、使用可能容量、現在のバースト使用量および蓄積バースト使用量などの詳細は、TiBで表示されます。</block>
-  <block id="3a6fffe4877ca42144b232cb74b25c92" category="admonition">高消費量を記録した特定のサービスレベルが強調表示されます。ボリュームに対して生成された警告やアラートを確認することもできます。</block>
   <block id="bd21190449b7e88db48fa0f580a8f666" category="inline-image-macro">アイコン</block>
   <block id="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="paragraph"><block ref="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f4cba785ff76b826ab5119954c5eab69" category="list-text">[ * 詳細の表示 * ] をクリックします。選択した期間に基づいて、各サービスレベルのサブスクリプションの消費履歴データが表示されます。グラフにカーソルを合わせると、そのデータ収集ポイントでのコミット済み容量、消費容量、バースト、バースト制限データを基準にした使用量の内訳が表示されます。</block>
@@ -3250,7 +3239,6 @@
   <block id="95d8d7b4f026ffa4ad680a1e5997be51" category="paragraph"><block ref="95d8d7b4f026ffa4ad680a1e5997be51" category="inline-image-macro-rx" type="image"></block></block>
   <block id="26b4aee602cdc66122bb6d728f867b41" category="inline-image-macro">[Download Reports]アイコン</block>
   <block id="0f3423da50b7d7441392096dd6c78fac" category="paragraph">各タブの*[Download CSV]*ボタンをクリックすると、サブスクリプションの詳細、特定の期間の使用履歴データ、およびシステムの詳細に関するレポートを生成して表示できます。 <block ref="785382ed2a85b4539c4016da106c0215" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="71a1fbaca678e13a8273c81f0c6acf72" category="paragraph">[サブスクリプションタイムシリーズ]タブでは、クエリの日付範囲のデフォルトの30データ収集ポイント、または日次レポートのレポートをダウンロードするオプションが表示されます。</block>
   <block id="69d93398ad0e22b2ac431db7ec005308" category="inline-image-macro">サンプルを報告します</block>
   <block id="ae36f6805d5f090b092ed6be03fa8820" category="paragraph"><block ref="ae36f6805d5f090b092ed6be03fa8820" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7df8a07436fa2a6fa44c6c89de1dc353" category="paragraph"><block ref="7df8a07436fa2a6fa44c6c89de1dc353" category="inline-image-macro-rx" type="image"></block></block>
@@ -3258,7 +3246,6 @@
   <block id="2fdc90e57385ab614099e9145cde6b8e" category="paragraph"><block ref="2fdc90e57385ab614099e9145cde6b8e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="be10ab795d4b4daf77ddb3146f1aac29" category="inline-image-macro">課金チャート</block>
   <block id="72bd452fe460a2000d8537f422c4b81d" category="paragraph"><block ref="72bd452fe460a2000d8537f422c4b81d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="779b97a34eb91d859eaec88fd66360be" category="paragraph">[Subscription Time Series]タブには、特定の期間のKeystoneサブスクリプションの履歴データが表示されます。縦のグラフには、選択した期間の使用状況の詳細と、レポートを比較して生成するための適切なインジケータが表示されます。</block>
   <block id="abc995760236584824b9e9fb494224ef" category="admonition">最適なパフォーマンスとユーザーエクスペリエンスを実現するには、クエリの日付範囲を3カ月以内に制限します。</block>
   <block id="e34cff1dbe58bcff4567c9224e5370c6" category="list-text">*終了日*：サブスクリプションの終了日。日付が空白の場合は、サブスクリプションに終了日がなく、自動的に更新されます。この日付に基づいて、有効期限が近づいている、または自動更新ポリシーが適用されているサブスクリプションに関する情報メッセージが表示される場合があります。</block>
   <block id="85701aafc47f53d769db3988637e595c" category="admonition">空のグラフは、そのデータ収集ポイントで使用可能なデータが環境になかったことを示します。</block>
@@ -3270,7 +3257,6 @@
   <block id="f57aa475ec783bf5f654ae84fb0b5e09" category="paragraph">Keystoneは、事前定義されたパフォーマンスサービスレベル（サービスレベル）またはサブスクリプションベースのレートプランでデータストレージ容量を提供します。Keystoneサービスで管理される各ボリュームはサービスレベルに関連付けられます。</block>
   <block id="29005d0d658d65418d353d36b2bb6f04" category="inline-link">Keystone STaaSのドキュメント</block>
   <block id="5d37c3b0ff8e3607561838b8a2c41ce6" category="list-text">*使用タイプ*：複数のKeystone（バージョン1）またはKeystone STaaS（バージョン2）サブスクリプションに登録済みの場合があります。サービスレベルのレートプランルールは、2つのサブスクリプションタイプで異なる場合があります。この列の値を見ると、使用タイプがプロビジョニング済みの使用量と論理的な使用量のどちらに基づいて課金されているかがわかります<block ref="6654c734ccab8f440ff0825eb443dc7f" prefix=" " category="inline-code"></block> または<block ref="1b267619c4812cc46ee281747884ca50" prefix=" " category="inline-code"></block>。Keystone STaaSの詳細については、を参照してください<block ref="6e40e8ebb5f38b7cc6ad272c1589745e" category="inline-link-rx"></block>。</block>
-  <block id="936ccdb97115e9f35a11d35e3d5b5cad" category="example-title">ここをクリックしてください</block>
   <block id="382af8e8b2bf82c4df59a255786526a2" category="section-title">ONTAPボリュームの詳細</block>
   <block id="fc33c921eada2f71b3a548355734f006" category="section-title">StorageGRIDノードと消費の詳細</block>
   <block id="248ee1b5c36074ad26f09b9a95a55dca" category="admonition">単一のサービスレベルプランまたはレートプランにサブスクライブしている場合、非準拠ボリュームのアラートは表示されません。</block>
@@ -3278,10 +3264,8 @@
   <block id="22af05fccc86b1f0d7872faea8c654a4" category="paragraph">データ保護サービスにサブスクライブしている場合は、サブスクリプションに特定のサービスレベルが割り当てられます（_Data-Protect Extreme_、_Data-Protect Premium_など）。詳細については、を参照してください<block ref="ea85780aae2041c315d8d2c95c2ef380" category="inline-link-rx"></block></block>
   <block id="1929ab48c05126f8a997e319160674e8" category="admonition">Keystoneサブスクリプションの容量消費量は、ダッシュボードとレポートにTiB単位で表示され、小数点以下2桁に四捨五入されます。使用量が0.01TiB未満の場合は、と表示されます<block ref="cfcd208495d565ef66e7dff9f98764da" prefix=" " category="inline-code"></block> または<block ref="31c2db4909d0d3638d380d92c0a194e0" prefix=" " category="inline-code"></block>。その他の使用指標については、を参照してください<block ref="98a30cfc42e5138070cb8b3bae486e43" category="inline-link-rx"></block>。Keystoneで使用されるさまざまな容量については、を参照してください<block ref="8838b1277b7691fb50f3e6bca15d5781" category="inline-link-rx"></block>。</block>
   <block id="8640c6867f9a397cb1e15b5dc86f5663" category="admonition">サブスクリプションにデータ保護サービスレベルまたはレートプランが割り当てられている場合は、ツールチップを使用してMetroClusterセットアップでパートナーサブスクリプションの追跡IDを確認できます。MetroCluster構成のパートナーサブスクリプション別の詳細な消費状況を表示する方法については、を参照してください<block ref="ea85780aae2041c315d8d2c95c2ef380" category="inline-link-rx"></block>。</block>
-  <block id="8e357471a27451528c5b9baff9e6ce0c" category="paragraph">データ保護サービスに登録している場合は、*[サブスクリプション時系列]*タブでMetroClusterパートナーサイトの消費データの内訳を確認できます。</block>
   <block id="1e082e4448eecee03f6bd4c2605a41bc" category="paragraph">データ保護の詳細については、を参照してください<block ref="88c192a22c75988714ca0d6a3ba44ff9" category="inline-link-rx"></block>。</block>
   <block id="e6b09591607b38dfa571b28e166b8e42" category="admonition">消費棒グラフは、基本サービスレベルに対してのみ分割されます。データ保護サービスレベルでは、この境界は表示されません。</block>
-  <block id="a5ee6c11183b804a6d34deec216a083c" category="paragraph">データ保護サービスレベルでは、総消費量がパートナーサイト間で分割され、各パートナーサイトでの使用量が別 々 のサブスクリプション（プライマリサイト用とミラーサイト用）に反映されて課金されます。そのため、* Subscription Time Series *タブでプライマリサイトのサブスクリプション番号を選択すると、DPサービスレベルの消費グラフにはプライマリサイトの個別の消費の詳細のみが表示されます。MetroCluster構成の各パートナーサイトがソースおよびミラーとして機能するため、各サイトでの合計消費量には、そのサイトに作成されたソースボリュームとミラーボリュームが含まれます。</block>
   <block id="dc22a90e0f32f2a7c39774489ee8fb79" category="admonition">[サブスクリプションの詳細]タブのサブスクリプションのタッキングIDの横にあるツールチップは、MetroClusterセットアップでパートナーサブスクリプションを識別するのに役立ちます。</block>
   <block id="fe1654f1038a98c579f04107a47b091b" category="paragraph">基本のサービスレベルの場合、各ボリュームはプライマリサイトとミラーサイトでプロビジョニング済みとして課金されるため、プライマリサイトとミラーサイトでの使用量に応じて同じ棒グラフが分割されます。</block>
   <block id="6f66763d1fa17a342e4bfd7244527ffb" category="paragraph">次の図は、_Extreme_service level（基本サービスレベル）とプライマリサブスクリプション番号のグラフを示しています。同じ時系列チャートは、プライマリサイトに使用されるカラーコードのより明るい色合いでミラーサイトの消費をマークします。マウスにカーソルを合わせると、プライマリサイトとミラーサイトの消費量の内訳（TiB）がそれぞれ1.02TiBと1.05TiBで表示されます。</block>
@@ -3292,4 +3276,25 @@
   <block id="a124cd9706a171f6aa398360fb7ee547" category="paragraph">サービスレベルは、ストレージ環境、およびストレージと消費のニーズに基づいて選択します。基本サービスレベルは、デフォルトで設定されています。特定のサービスを選択した場合は、他のサービスレベルも追加で利用できます。たとえば、データ保護サービスの場合、_Data-Protect &lt;base-service-level&gt;_サービスレベルがサブスクリプションに割り当てられます。</block>
   <block id="12e64e130cc4e82cf93d846901ed35da" category="paragraph">ここには、ファイル、ブロック、オブジェクトの各ストレージタイプの基本サービスレベルを示します。</block>
   <block id="6839a21037309515ac19670a2a6b09fe" category="paragraph">基本のサービスレベルメトリックは、次の条件によって異なります。</block>
+  <block id="42bb1b11612744ae96538087e8d89e64" category="paragraph">Keystoneサブスクリプションと使用量の詳細を表示するには、次の手順を実行します。</block>
+  <block id="0e36e4920a72685c5bf66bc9dcc92631" category="list-text">[Keystoneサブスクリプション]*ウィジェットで*[詳細を表示]*をクリックし、*[Keystoneサブスクリプション]*ページにボリュームに関する使用状況の詳細とアラートを表示します。または、左側のナビゲーションペインで*[全般]&gt;[Keystoneサブスクリプション]*に移動します。
+サブスクリプションの詳細、各サービスレベルの使用状況グラフ、ボリュームの詳細が、* Keystoneサブスクリプション*画面の別 々 のタブに表示されます。</block>
+  <block id="97bc392a54093706b77166ffad5ea0d0" category="section-title">すべてのサブスクリプションを表示します</block>
+  <block id="2fe8aaafbfc1675fe82744032b0d0cf7" category="paragraph">[すべてのサブスクリプション]タブで、すべてのサブスクリプションのリストを表示できます。</block>
+  <block id="6af07443bb9ad7040cdd401c709ccbab" category="inline-image-macro">[すべてのサブスクリプション]タブのイメージ</block>
+  <block id="1026961b348768f00fe99c6335970163" category="paragraph"><block ref="1026961b348768f00fe99c6335970163" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0217421b29817efbd12b8a6b40478e08" category="list-text"><block ref="f5416884a5e4dfec0dfa2f3734568648" category="inline-image-macro-rx" type="image"></block>：サブスクリプションのこのアイコンをクリックすると、[サブスクリプションの詳細]タブが開き、そのサブスクリプションの詳細が表示されます。</block>
+  <block id="327f95562dd791a77e81a667b1df9fa2" category="list-text"><block ref="435e416487181a998706b8fd7ece7b01" category="inline-image-macro-rx" type="image"></block>：このアイコンをクリックすると、[Time Series]タブが開き、このサブスクリプションに含まれる各サービスレベルの使用履歴データが表示されます。
+各サブスクリプションの使用状況を確認するには、次の使用状況インジケータを参照してください。</block>
+  <block id="8ef32aa104ea3562916b70b4b76567dc" category="paragraph">サブスクリプションの詳細を確認するには、*サブスクリプションの詳細*タブをクリックし、必要なサブスクリプション番号を選択します。</block>
+  <block id="5c5d0bc72c60ee286bac97972345b3e3" category="paragraph">サービスレベル名、コミット済み容量、消費済み容量、使用可能容量、現在のバースト使用量および蓄積バースト使用量などの詳細は、TiBで表示されます。</block>
+  <block id="6d3602bc1499d37d6352a07745fe82a3" category="inline-image-macro">情報アイコン</block>
+  <block id="d99c74aa854c016d1663a41aa2c66269" category="admonition">。 <block ref="41cd2369ab2f394456f5dd45b77d6e7d" category="inline-image-macro-rx" type="image"></block> 各列の横にあるアイコンには、その列に関する包括的な情報が表示されます。高消費量を記録した特定のサービスレベルが強調表示されます。ボリュームに対して生成された警告やアラートを確認することもできます。</block>
+  <block id="83528b1e6d4213feabc83b2181314b13" category="paragraph">[タイムシリーズ]タブには、特定の期間のKeystoneサブスクリプションの履歴データが表示されます。縦のグラフには、選択した期間の使用状況の詳細と、レポートを比較して生成するための適切なインジケータが表示されます。</block>
+  <block id="132388a6a35c7d25ea2062b8273f7f26" category="list-text">[時系列]タブをクリックします。</block>
+  <block id="8344f7a6b8dcdb4c4ccdda87c123a728" category="paragraph">データ保護サービスに登録している場合は、*[タイムシリーズ]*タブでMetroClusterパートナーサイトの消費データの内訳を確認できます。</block>
+  <block id="4795287a6f8c3961f5253f7ecd3113a8" category="paragraph">データ保護サービスレベルでは、総消費量がパートナーサイト間で分割され、各パートナーサイトでの使用量が別 々 のサブスクリプション（プライマリサイト用とミラーサイト用）に反映されて課金されます。そのため、*[Time Series]*タブでプライマリサイトのサブスクリプション番号を選択すると、DPサービスレベルの消費グラフにはプライマリサイトの個別の消費の詳細のみが表示されます。MetroCluster構成の各パートナーサイトがソースおよびミラーとして機能するため、各サイトでの合計消費量には、そのサイトに作成されたソースボリュームとミラーボリュームが含まれます。</block>
+  <block id="af81edf5bcc17eaccb12af11d8027e2a" category="paragraph">[タイムシリーズ]タブでは、クエリの日付範囲のデフォルトの30データ収集ポイント、または日次レポートのレポートをダウンロードするオプションが表示されます。</block>
+  <block id="1ab7bb685c5a04401573e75118c580cb" category="paragraph">グラフデータが変換される*時系列*タブのサンプルレポート：</block>
+  <block id="c0bce484f13c952e32f78691687f5ae8" category="sidebar">Keystoneサブスクリプションダッシュボードを表示</block>
 </blocks>
