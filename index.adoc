@@ -15,8 +15,6 @@ summary: NetApp Keystone は、オンプレミスとクラウドの両方のデ�
 
 NetApp Keystone は、クラウドへの移行をスムーズに実現するための、オンプレミスの設備投資（CAPEX）オプションのポートフォリオです。NetApp Keystone は、オンプレミスとクラウドにわたってストレージサービスを提供することで、シームレスなハイブリッドクラウドエクスペリエンスを実現します。NetApp Keystone の詳細については、を参照してください link:https://www.netapp.com/services/subscriptions/keystone/["NetApp Keystone"]
 
-NetApp Keystone の詳細については、を参照してください https://www.netapp.com/services/keystone/["NetApp Keystone"]。
-
 Keystoneは、オンプレミスシステムにクラウドと同等のエクスペリエンスを提供し、クラウドへの接続を自由に利用できるストレージサービスです。
 
 
@@ -54,3 +52,5 @@ Keystoneには次のようなメリットがあります。
 
 
 image:nkfsosm_image4.png["メリット"]
+
+Keystoneサービスは、NetApp KeystoneのSTaaSサービスとは異なります。NetApp Keystone STaaSの詳細については、「https://docs.netapp.com/us-en/keystone-staas/index.html[Keystone STaaS」を参照してください。
