@@ -30,8 +30,6 @@ Keystone請求は、コミット済み容量と可変バースト消費に基づ
 
 ▽コミット済み容量およびバースト時の使用容量については、を参照してください。△ link:nkfsosm_keystone_service_capacity_definitions.html["Keystone サービスの容量の定義"]。
 
-課金情報の詳細を表示する方法については、を参照してください link:sewebiug_billing.html["請求を表示します"]。
-
 
 
 == コミット済み容量に基づく請求

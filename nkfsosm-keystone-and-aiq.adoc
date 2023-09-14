@@ -47,6 +47,8 @@ TIP: [サブスクリプション]*リンクをクリックすると、[サブ�
 
 
 
+image:db-card.png["スラリーなし"]
+
 Digital Advisorの詳細については、を参照してください link:https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisorのドキュメント"]。
 
 [Keystoneサブスクリプション]*タブの詳細については、_Digital AdvisorのダッシュボードとKeystone _のレポートを参照してください。

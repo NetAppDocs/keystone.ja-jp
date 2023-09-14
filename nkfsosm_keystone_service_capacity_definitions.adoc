@@ -41,7 +41,7 @@ NetApp Keystone サービスの容量は次のとおりです。
 
 * コミット済み容量を削減することはできません
 * 12 カ月間延長する場合を除き、コミット済み容量はサブスクリプションの有効期限の 90 日前に増やすことはできません。
-* コミット済み容量の変更は、 NetApp Service Engine インターフェイスまたは Keystone Success Manager を通じて要求できます。変更の要求については、を参照してください link:sewebiug_raise_a_service_request.html["サービスリクエストを提出します"]。
+* コミット済み容量の変更は、Keystone Success Managerを通じて申請できます。
 
 
 

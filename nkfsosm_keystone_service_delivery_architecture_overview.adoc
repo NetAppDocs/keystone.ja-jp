@@ -26,36 +26,10 @@ Keystoneインフラのアーキテクチャ、設計、テクノロジの選択
 
 Keystoneインフラは、次の複数のコンポーネントで構成されます。
 
-* NetApp Service Engine のユーザインターフェイス（ Web ポータル）。
-* NetApp Service Engine API による統合：
 * ストレージコントローラを含むKeystoneインフラ
-* OpsRamp 、 Active IQ 、 Active IQ Unified Manager などのサービスを管理および運用するツール
+* OpsRamp、Active IQデジタルアドバイザ、Active IQ Unified Managerなど、サービスを管理、運用するためのツール
 
 
 NetApp Keystone と Active IQ の統合の詳細については、を参照してください link:https://docs.netapp.com/us-en/active-iq/["Active IQ デジタルアドバイザのドキュメント"]
 
 image:nkfsosm_image8.png["KSインフラ"]
-
-
-
-== NetApp Service Engine の略
-
-NetApp Service Engine Webポータルを使用して、ネットアップ、パートナー、またはお客様が運用するモデルでKeystoneサービスを管理および監視できます。ポータルには次の機能があります。
-
-* 監視とストレージのシンプルなプロビジョニングをサポートするグラフィカルインターフェイス（ NetApp Service Engine Web インターフェイス）。
-* より高度なセットアップ操作やストレージ管理操作を可能にする一連の NetApp Service Engine REST API 。
-
-
-image:nkfsosm_image9.png["KSアーキテクチャ"]
-
-NetApp Service Engine ポータルは、お客様が次のタスクを実行できる単一のインターフェイスです。
-
-* サブスクリプションダッシュボード：サブスクライブ済み容量のステータスと消費済み容量を表示します。
-* ストレージのプロビジョニングNFS / CIFS ファイル共有、 FC / iSCSI ディスク、 S3 バケットを作成するワークフロー
-* データ保護プロビジョニングされたファイル共有またはディスクに Snapshot を作成し、バックアップポリシーまたはデータレプリケーションを設定します。
-* レポートファイル共有とディスクのインベントリを表示したり、さまざまなサービスレベルに対する容量使用率の傾向を確認したりできます。
-* サブスクリプションを管理します。既存のサブスクリプションまたは新しいサービスの追加容量をポータルから注文します。
-* サービスリクエストまたはサポート問題を送信し、そのステータスを表示します
-
-
-NetApp Service Engine の全機能は、ネットアップが運用するモデルでのみ利用できます。お客様向けまたはパートナー様向けのモデルでは、 NetApp Service Engine 機能はレポートとサブスクリプションの管理に限定されます。
