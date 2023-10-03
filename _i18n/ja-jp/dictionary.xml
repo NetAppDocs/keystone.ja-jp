@@ -335,7 +335,6 @@
   <block id="ff6306dccf086261b36fc9764ec0a69c" category="section-title">クローニングされたボリュームに対する請求</block>
   <block id="0e3a3dc0c3eeb16df240b7eafc4a840c" category="paragraph">ONTAP でボリュームがクローニングされている場合に、データのバックアップとリストアに使用すると、追加の支払いなしでクローンを引き続き使用できます。ただし、ビジネスで他の目的に使用されていたクローンボリュームには、広範囲の期間料金がかかります。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">次の点に注意してください。</block>
-  <block id="9ecca21c579121ef7bd72dc9d12e518a" category="list-text">クローンボリュームの消費は、クローンの作成から 24 時間以内には考慮されないため、この間に料金は発生しません。</block>
   <block id="cded8c4b6c98886d10fcb9c2503ce0a4" category="section-title">MetroCluster の請求</block>
   <block id="ba4c22a98feebac558bbaac68b704e09" category="section-title">一時ボリュームについての請求</block>
   <block id="480da42f59e7a8b523d40d52ba830cb8" category="paragraph">ボリュームを移動する際に、 ONTAP によって一時（ TMP ）ボリュームが作成されることがあります。これらの一時ボリュームは一時的なものであり、これらのボリュームの消費量は課金対象として測定されません。</block>
@@ -463,7 +462,6 @@
   <block id="f0a98503f7025814de673358cbfc2ebc" category="inline-link-macro">FabricPool 使用のための課金</block>
   <block id="ea5f2a3107ef6a292b858bed2431fd2d" category="paragraph">課金については、を参照してください <block ref="6bfa617ca63af4eb1b55b6cf1d8469f3" category="inline-link-macro-rx"></block>。</block>
   <block id="a189c66e23fd7e79d1bebf594d16fb15" category="paragraph">消費容量が所定のサービスレベルのコミット済み容量を超えると、バースト消費量が記録され、それに応じて課金が適用されます。このプロセスは、生成される消費レコードごとに実行されます。したがって、バースト消費量は、オーバー消費容量の量と時間の両方を、コミット済み容量の上に反映したものです。</block>
-  <block id="17165dfb97a3399066f5846aed0c4af9" category="list-text">新しいデータがボリュームに書き込まれない場合、StandardサービスレベルとValueサービスレベルのクローンボリュームの消費は考慮されません。たとえば、バックアップとリストアのユースケースでは、クローンボリュームのデータのバックアップやリストアによって、クローンボリューム自体のデータが変更されることはなく、消費とはみなされません。</block>
   <block id="822d70344d224e2e68e8dcf4ec044c3c" category="paragraph">SnapMirrorデスティネーションボリュームの料金。ソースで割り当てられたサービスレベルのQoSポリシーに従って決まります。ただし、ソースに QoS ポリシーが関連付けられていない場合、デスティネーションには、利用可能な最小のサービスレベルに基づいて課金されます。</block>
   <block id="cde520829ff4c329d0a877769052c136" category="paragraph">データがKeystoneシステムからONTAP Simple Storage Service（S3）オブジェクトストレージまたはNetApp StorageGRID に階層化されると、ホット階層（Keystoneシステム）で消費される容量は階層化されたデータの量によって減り、結果的な課金に影響します。これは、ONTAP S3ストレージとStorageGRID システムのどちらがKeystoneサブスクリプションの対象になっているかに関係なく適用されます。</block>
   <block id="eb71f31c80be60d1b83c15a9023c5aa0" category="paragraph">データをサードパーティのオブジェクトストレージに階層化する場合は、Keystone Success Managerにお問い合わせください。</block>
@@ -610,7 +608,6 @@
   <block id="1506e8c7e13ed05e538e60e10a3477b1" category="paragraph">Keystone請求は、コミット済み容量と可変バースト消費に基づいて行われます。</block>
   <block id="1ff2df6e8089d3512e911414c676a7f3" category="paragraph">▽コミット済み容量およびバースト時の使用容量については、を参照してください。△ <block ref="540abd097156d3d90f0e80c5419e5bbd" category="inline-link-macro-rx"></block>。</block>
   <block id="93aa15f9790e71bb597ff6890e152fec" category="paragraph">コミット済み容量とは、関係者（ネットアップ / パートナー様とお客様）が合意した 1 回のサブスクリプションでの各種サービスの容量を指します。この容量は、Keystoneの注文ごとに記載され、実際の消費量にかかわらず請求されます。</block>
-  <block id="64e874f787e16bb9b53261356f2214cb" category="paragraph">Keystoneサービスの導入の一環として、ネットアップはサービスの利用状況を継続的に監視し、測定します。5 分ごとに消費レコードが生成され、サブスクリプションの現在の消費容量が詳細に表示されます。これらのレコードは、請求書および使用状況レポートを生成するために請求期間にわたって集計されます。</block>
   <block id="43a5ebf4acc8e67d9f252d84c9db5e28" category="paragraph">Keystoneサービスは、月単位と年単位で課金されます。</block>
   <block id="295067c36f2198f1e7c354cad560fee0" category="paragraph">サブスクリプションのアクティブ化から60日間は、発生したバースト消費量は記録されますが、Keystoneサービスの請求書には課金されません。この猶予期間により、ストレージを適切なアダプティブQuality of Service（AQoS；サービス品質）設定で構成し、適切に監視および課金できるようになります。ストレージを正しく構成すると、予期しないバースト料金を回避できます。初期猶予期間60日後に発生したバースト使用量は、次の請求書に請求されます。この猶予期間は、既存のサブスクリプションの変更や更新には影響しません。</block>
   <block id="bb6903e39254cc1a8d4ee2116c8e91e1" category="section-title">Keystone請求のその他のシナリオ</block>
@@ -856,4 +853,40 @@ Active IQデジタルアドバイザは、サブスクライブされている�
   <block id="44c12892899f5e7bf5392fa79a9bec09" category="paragraph">*新しいストレージサービスを注文できますか？*
 はい。新しいストレージサービスまたはストレージサービスへの拡張は、KSMから要求できます。要求は、 NetApp Keystone 運用チームが処理してから使用可能になります。</block>
   <block id="5ca214ff5f0a53028e6d59319fa58c02" category="list-text">OpsRamp、Active IQデジタルアドバイザ、Active IQ Unified Managerなど、サービスを管理、運用するためのツール</block>
+  <block id="24cba01226edf9c3d3a2a54ff2dcb01b" category="section-title">ONTAPボリュームのパフォーマンスの表示</block>
+  <block id="3b53297f45bd7b71fc7268ad58677e21" category="paragraph">Keystoneサブスクリプションで管理されているONTAPボリュームのパフォーマンスの詳細を確認するには、*[パフォーマンス]*タブをクリックします。</block>
+  <block id="0fb53446c9ba4fb31807c3858dd35fc5" category="paragraph">このタブは、ONTAPボリュームのパフォーマンス指標を表示するために使用できない場合があります。このタブの表示については、サポートにお問い合わせください。</block>
+  <block id="6e72d1d005343795162600a4ae63ec11" category="list-text">[パフォーマンス]*タブをクリックします。</block>
+  <block id="f1addfc8f24f051397cc85f6926bf8ed" category="list-text">サブスクリプション番号を選択します。デフォルトでは、最初のサブスクリプション番号が選択されています。</block>
+  <block id="f642e4642652119f9ec47a2dc27c51ff" category="list-text">リストから必要なボリューム名を選択します。</block>
+  <block id="52dc465dcb6a1292788d1d65f181d28c" category="inline-image-macro">グラフアイコン</block>
+  <block id="c3663dd8e997e8e07f88f594ea89534a" category="paragraph">または、 <block ref="813df7a1965c665b3db93a22dec39701" category="inline-image-macro-rx" type="image"></block> アイコンをクリックONTAPして、[ボリューム]*タブに移動します。</block>
+  <block id="748946393eca5431e5760647d605462b" category="list-text">クエリの日付範囲を選択します。日付範囲には、月の初め、サブスクリプションの開始日から現在の日付、またはサブスクリプションの終了日を指定できます。</block>
+  <block id="c811676c9572fd69b7211c6d89a274c7" category="paragraph">取得される詳細は、各サービスレベルのサービスレベル目標に基づいて決まります。たとえば、ピークIOPS、最大スループット、ターゲットレイテンシなどの指標は、サービスレベルの個 々 の設定によって決まります。設定の詳細については、を参照してください。<block ref="36a3b3cce1fbb3bc12a00ec01f92dfcb" category="inline-link-rx"></block>。</block>
+  <block id="8145d7f98eef781aeba1bf4e2ed3d8a0" category="admonition">[SLO Reference Line]*チェックボックスを選択すると、IOPS、スループット、レイテンシのグラフがサービスレベルのサービスレベル目標に基づいて表示されます。それ以外の場合は、実際の数値で表示されます。</block>
+  <block id="1c9f2c60f5b1a2cf540da5ecfcf8f343" category="paragraph">水平グラフには、5分間隔の平均パフォーマンスデータがクエリの日付範囲に従って表示されます。グラフをスクロールして特定のデータポイントにカーソルを合わせると、収集したデータにさらにドリルダウンできます。</block>
+  <block id="be7199993fdc167e8dadd6faa046275c" category="paragraph">以降のセクションでは、サブスクリプション番号、ボリューム名、選択した日付範囲の組み合わせに基づいてパフォーマンス指標を表示および比較できます。詳細は、ボリュームに割り当てられているサービスレベルに応じて表示されます。クラスタ名とボリュームタイプ（ボリュームに割り当てられている読み取り権限と書き込み権限）を確認できます。ボリュームに関連する警告メッセージも表示されます。</block>
+  <block id="4f1b175c93064365bb72c5f847f7bbd0" category="section-title">IOPS/TiB</block>
+  <block id="a0746619a848c7d48f648ce50934b43d" category="paragraph">このセクションには、クエリの日付範囲に基づいて、ボリューム内のワークロードの入出力グラフが表示されます。サービスレベルの最大IOPSと現在のIOPS（クエリの日付範囲ではなく過去5分間）が、その期間の最小IOPS、最大IOPS、平均IOPS（IOPS/TiB）とともに表示されます。</block>
+  <block id="39b7678a1c994ad158e2003e86860ff2" category="inline-image-macro">グラフの[IOPS]セクション</block>
+  <block id="6eef5220ce0ee019d4add6ef8f2212e8" category="paragraph"><block ref="6eef5220ce0ee019d4add6ef8f2212e8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="35484398406e066f146becbf5ade9a1f" category="section-title">スループット（MBps / TiB）</block>
+  <block id="da4fa7ec69d7af1bb610207a3c277040" category="paragraph">このセクションには、クエリの日付範囲に基づいて、ボリューム内のワークロードのスループットグラフが表示されます。サービスレベルの最大スループット（SLO Max）と現在のスループット（クエリの日付範囲ではなく過去5分間）が、その時間範囲の最小スループット、最大スループット、平均スループット（MBPS/TiB）とともに表示されます。</block>
+  <block id="7f753ebf99003e3a50de147adbf5688c" category="inline-image-macro">スループットグラフ</block>
+  <block id="ded93b2a5ebed6aba8869fc052419dbb" category="paragraph"><block ref="ded93b2a5ebed6aba8869fc052419dbb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="561523f74b83ed5c17b02cb73ff8a80e" category="section-title">レイテンシ（ミリ秒）</block>
+  <block id="e2ca784e5909e7dac9c413d2bf636dac" category="paragraph">このセクションには、クエリの日付範囲に基づいて、ボリューム内のワークロードのレイテンシグラフが表示されます。サービスレベル（SLOターゲット）の最大レイテンシと現在のレイテンシ（クエリの日付範囲ではなく過去5分間）が、その時間範囲の最小、最大、平均レイテンシ（ミリ秒）とともに表示されます。</block>
+  <block id="edf72d8b9161ba73ea48bf2e68fe9aed" category="paragraph">このグラフの色は次のとおりです。</block>
+  <block id="81989d847dc8278048053c5d03a4bea2" category="list-text">水色：_レイテンシ_。Keystoneサービス以外のレイテンシを含む実際のレイテンシ。これには、ネットワークとクライアントの間で発生するレイテンシなど、追加のレイテンシが含まれる場合があります。</block>
+  <block id="4c8726ebb2509982ab96801bddd96ce9" category="list-text">濃い青：_有効なレイテンシ_。実効レイテンシとは、SLAに関してお客様のKeystoneサービスにのみ適用されるレイテンシのことです。</block>
+  <block id="ff4b5372ded8ea29de7805373e0a5338" category="inline-image-macro">パフォーマンスグラフ</block>
+  <block id="f00c097e03b4ce4a62527a13752de77d" category="paragraph"><block ref="f00c097e03b4ce4a62527a13752de77d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b8e154beb0e4292a33a0a1882f0e5a11" category="section-title">使用済み論理容量（TiB）</block>
+  <block id="72870aad377aa9744011edff931cfbe7" category="paragraph">このセクションには、ボリュームのプロビジョニング済み容量と使用済み論理容量が表示されます。現在の使用済み論理容量（クエリの日付範囲ではなく過去5分間）と、その期間の使用量の最小値、最大値、平均値がTiB単位で表示されます。このグラフでは、グレーの領域がコミット済み容量、黄色のグラフが論理的な使用状況を示しています。</block>
+  <block id="55501f4ad85eceeadd5249ad583111f6" category="inline-image-macro">使用済み論理容量のグラフ</block>
+  <block id="5d511ef587684e994c938c0e19441988" category="paragraph"><block ref="5d511ef587684e994c938c0e19441988" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="99f9f3f7fd3897f360e290d6916cfe33" category="paragraph">Keystoneサービスの導入の一環として、ネットアップはサービスの利用状況を継続的に監視し、測定します。5分に1回以上、サブスクリプションで現在消費されている容量の詳細を示す消費レコードがシステムによって生成されます。これらのレコードは、請求書および使用状況レポートを生成するために請求期間にわたって集計されます。</block>
+  <block id="308838aa7669887098042a1899ce59bc" category="list-text">クローンボリュームは、サイズが親ボリュームの10%（親ボリュームで使用されている物理容量に対するクローンボリュームで使用されている物理容量）未満であれば充電されません。</block>
+  <block id="80a3381e7f0324d1481403cc81d8b605" category="list-text">クローニングされたボリュームには24時間の猶予期間はなく、クローンのサイズのみが考慮されます。</block>
+  <block id="5e46e614581cd458f9521294062d3783" category="list-text">クローンボリュームが親の物理サイズの10%を超えると、クローンは標準ボリューム（使用済み論理容量）として課金されます。</block>
 </blocks>
