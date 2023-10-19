@@ -885,7 +885,6 @@ Active IQデジタルアドバイザは、サブスクライブされている�
   <block id="9a1db55a20b384661303cf6789a6fed8" category="list-text">[ * 詳細の表示 * ] をクリックします。選択した期間に基づいて、各サービスレベルのサブスクリプションの消費履歴データが表示されます。</block>
   <block id="5c0d50dc2c715b658984931c688519eb" category="paragraph">棒グラフには、その日付範囲について、サービスレベル名とそのサービスレベルに対する消費容量が表示されます。収集の日時がグラフの下部に表示されます。クエリの日付範囲に基づいて、使用状況グラフは30のデータ収集ポイントの範囲で表示されます。グラフにカーソルを合わせると、そのデータ収集ポイントでのコミット済み容量、消費容量、バースト、バースト制限データを基準にした使用量の内訳が表示されます。</block>
   <block id="f8eaf321d70fdf3e9d097bb407d56130" category="paragraph">棒グラフの以下の色は、サービスレベルで定義された消費容量を示します。グラフ全体で月単位のデータが縦線で区切られています。</block>
-  <block id="4bc2af7993e31ca7b54c80a630603236" category="paragraph">切り替えボタン*[Show Current Usage]*をクリックすると、サブスクリプションの課金期間に関する現在の消費量とバースト使用量を確認できます。これらはクエリの日付範囲に基づいていません。</block>
   <block id="a122d7ff9fbb0694ecb095cdf8f27baa" category="section-title">バースト履歴データの表示</block>
   <block id="7f4aafd34e1281a2bb7098e5b06084bd" category="paragraph">[Accrued Burst]オプションを選択した場合は、デフォルトで、過去12カ月間の月単位のバースト使用量データが表示されます。過去30カ月までの日付範囲で照会できます。</block>
   <block id="75ddfeb3beb9d2a265ac2ce3b66ef050" category="admonition">累積バースト使用量または消費容量は、現在の請求期間の月単位で計算されます。累積バースト使用量は、サービスレベルのコミット済み容量と消費容量に基づいて次の式で計算されます。<block ref="0664f1d332f0bb3aa9231cb5f4fb3bca" prefix=" " category="inline-code"></block>。</block>
@@ -895,4 +894,6 @@ Active IQデジタルアドバイザは、サブスクライブされている�
   <block id="efca37f4dc4125775aa5043cc3e4ba6c" category="list-text">クエリの日付範囲を選択します。日付範囲には、月の初め、サブスクリプションの開始日から現在の日付、またはサブスクリプションの終了日を指定できます。将来の日付は選択できません。</block>
   <block id="0116cc33ffc94de41f0b9cda437db400" category="paragraph">*新しいストレージサービスを注文できますか？*
 はい。新しいストレージサービスまたはストレージサービスへの拡張は、KSMを通じて要求できます。要求は、 NetApp Keystone 運用チームが処理してから使用可能になります。</block>
+  <block id="4c81eafa216c925957e13d302baa98d5" category="paragraph">切り替えボタン*[Show Current Usage]*をクリックすると、現在の課金期間の消費量、バースト使用量、発生バーストデータを確認できます。これらの詳細は、クエリの日付範囲に基づいていません。</block>
+  <block id="6b7dfe5a7e219d1bb1b0d4dec89d1cb1" category="list-text">* Accrued Burst *：現在の請求期間の月単位で計算された、発生したバーストの使用量または消費容量を示すインジケータ。蓄積されたバースト使用量は、サービスレベルのコミット済み容量と消費済み容量に基づいて計算されます。<block ref="0664f1d332f0bb3aa9231cb5f4fb3bca" prefix=" " category="inline-code"></block>。</block>
 </blocks>
