@@ -30,6 +30,6 @@ Keystoneインフラは、次の複数のコンポーネントで構成されま
 * OpsRamp、Active IQデジタルアドバイザ、Active IQ Unified Managerなど、サービスを管理、運用するためのツール
 
 
-NetApp Keystone と Active IQ の統合の詳細については、を参照してください link:https://docs.netapp.com/us-en/active-iq/["Active IQ デジタルアドバイザのドキュメント"]
+NetApp Keystone と Active IQ の統合の詳細については、を参照してください link:https://docs.netapp.com/us-en/active-iq/["Active IQ デジタルアドバイザのドキュメント"^]
 
 image:nkfsosm_image8.png["KSインフラ"]

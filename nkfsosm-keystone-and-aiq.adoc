@@ -16,6 +16,10 @@ summary: お客様が Active IQ で目にする可能性があるキーストー
 [role="lead"]
 NetApp Keystoneサービスにサブスクライブしている場合は、Active IQデジタルアドバイザ（デジタルアドバイザ）ダッシュボードの* Keystoneサブスクリプション*ウィジェットでサブスクリプションの概要を確認できます。
 
+Keystoneサブスクリプションの詳細を検索するには、お客様名または複数のお客様を含む監視リスト名で検索します。Keystoneサブスクリプションを監視リストで検索する方法については、を参照してください。 https://docs.netapp.com/us-en/keystone/nkfsosm-keystone-and-aiq.html#search-by-using-keystone-watchlists["Keystone監視リストを使用して検索"]。
+
+Digital Advisorは、*[Switch to old/new dashboard]*ボタンを使用して、サブスクリプションデータと使用状況に関するさまざまなレベルのインサイトを提供する統合ダッシュボードを提供します。
+
 Digital Advisorは、*[Switch to old/new dashboard]*ボタンを使用して、サブスクリプションデータと使用状況に関するさまざまなレベルのインサイトを提供する統合ダッシュボードを提供します。
 
 .デフォルト（古い）ダッシュボード
@@ -49,6 +53,27 @@ TIP: [サブスクリプション]*リンクをクリックすると、[サブ�
 
 image:db-card.png["スラリーなし"]
 
-Digital Advisorの詳細については、を参照してください link:https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisorのドキュメント"]。
+Digital Advisorの詳細については、を参照してください link:https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisorのドキュメント"^]。
 
 [Keystoneサブスクリプション]*タブの詳細については、_Digital AdvisorのダッシュボードとKeystone _のレポートを参照してください。
+
+
+
+== Keystone監視リストを使用して検索
+
+監視リストは、Active IQデジタルアドバイザ（デジタルアドバイザ）の機能です。詳細については、を参照してください https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["監視リストがわかります"^]。監視リストの作成については、を参照してください。 https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["監視リストを作成します"^]。
+
+Keystoneでは、監視リストを作成し、監視リストを検索して複数のお客様のサブスクリプションの詳細を確認できます。Keystoneをご利用のお客様向けの監視リストを作成するには、次の手順を実行します。
+
+. [Create Watchlist]*画面で、Keystone監視リストの名前を入力します。
+. [システムの追加方法]フィールドで*[カテゴリ]*を選択します。*[Choose Category]*フィールドでは、デフォルトで[Customer]*が選択されています。
+. 必要な顧客を名前で検索して追加します。詳細を表示する権限がある顧客のみを追加できます。
+. 監視リストを作成 * をクリックします。Digital Advisor画面に、新しい監視リストのデータが表示されます。
+
+
+Digital Advisor画面の監視リストで検索すると、* Keystone Subscriptions *ウィジェットの* Subscriptions *ドロップダウンリストにお客様とそのサブスクリプションが表示されます。
+
+
+TIP: [Keystone Subscriptions]*ウィジェットで_new_dashboardを表示している場合は、*[Switch to Old Dashboard]*をクリックしてリストを表示します。
+
+image:watchlist.png["[watchlist]画面"]
