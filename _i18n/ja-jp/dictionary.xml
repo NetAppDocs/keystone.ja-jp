@@ -856,16 +856,12 @@ Active IQデジタルアドバイザは、サブスクライブされている�
   <block id="80a3381e7f0324d1481403cc81d8b605" category="list-text">クローニングされたボリュームには24時間の猶予期間はなく、クローンのサイズのみが考慮されます。</block>
   <block id="5e46e614581cd458f9521294062d3783" category="list-text">クローンボリュームが親の物理サイズの10%を超えると、クローンは標準ボリューム（使用済み論理容量）として課金されます。</block>
   <block id="bc175ffde055d74266df92b003372145" category="paragraph">利用率指標の詳細については、を参照してください。<block ref="98a30cfc42e5138070cb8b3bae486e43" category="inline-link-rx"></block>。Keystoneで使用されるさまざまな容量については、を参照してください<block ref="8838b1277b7691fb50f3e6bca15d5781" category="inline-link-rx"></block>。</block>
-  <block id="ef67282c9adc01fdca335af4d78a2c4b" category="list-text">履歴データを表示して容量の使用状況のトレンドを分析する場合は、*[容量のトレンド]*を選択します。過去のバースト使用量データを表示し、請求済みの使用量を請求書に従って分析する場合は、* Accrued Burst *を選択します。</block>
   <block id="856c97744d50a2803c2f50202219de2d" category="section-title">容量のトレンドを表示</block>
   <block id="b7d541aea481ae26f60f1033b3cab726" category="paragraph">[Capacity Trend]*オプションを選択した場合は、次の手順を実行します。</block>
   <block id="f4c8dae91522d3ec93e26aff56248527" category="list-text">[開始日*（From Date）]および[終了日*（* To Date）]フィールドのカレンダーアイコンから時間範囲を選択します。クエリの日付範囲を選択します。日付範囲には、月の初め、サブスクリプションの開始日から現在の日付、またはサブスクリプションの終了日を指定できます。将来の日付は選択できません。</block>
   <block id="9a1db55a20b384661303cf6789a6fed8" category="list-text">[ * 詳細の表示 * ] をクリックします。選択した期間に基づいて、各サービスレベルのサブスクリプションの消費履歴データが表示されます。</block>
   <block id="5c0d50dc2c715b658984931c688519eb" category="paragraph">棒グラフには、その日付範囲について、サービスレベル名とそのサービスレベルに対する消費容量が表示されます。収集の日時がグラフの下部に表示されます。クエリの日付範囲に基づいて、使用状況グラフは30のデータ収集ポイントの範囲で表示されます。グラフにカーソルを合わせると、そのデータ収集ポイントでのコミット済み容量、消費容量、バースト、バースト制限データを基準にした使用量の内訳が表示されます。</block>
   <block id="f8eaf321d70fdf3e9d097bb407d56130" category="paragraph">棒グラフの以下の色は、サービスレベルで定義された消費容量を示します。グラフ全体で月単位のデータが縦線で区切られています。</block>
-  <block id="a122d7ff9fbb0694ecb095cdf8f27baa" category="section-title">バースト履歴データの表示</block>
-  <block id="7f4aafd34e1281a2bb7098e5b06084bd" category="paragraph">[Accrued Burst]オプションを選択した場合は、デフォルトで、過去12カ月間の月単位のバースト使用量データが表示されます。過去30カ月までの日付範囲で照会できます。</block>
-  <block id="75ddfeb3beb9d2a265ac2ce3b66ef050" category="admonition">累積バースト使用量または消費容量は、現在の請求期間の月単位で計算されます。累積バースト使用量は、サービスレベルのコミット済み容量と消費容量に基づいて次の式で計算されます。<block ref="0664f1d332f0bb3aa9231cb5f4fb3bca" prefix=" " category="inline-code"></block>。</block>
   <block id="952c204f277570032cf6454e003c63da" category="inline-image-macro">[Accrued burst usage]グラフ</block>
   <block id="b9e135b5bcd23b0beff424e32497e77c" category="paragraph"><block ref="b9e135b5bcd23b0beff424e32497e77c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="36234decc68306d26e71012f98474aa1" category="paragraph">この機能は、プレビューのみのモードで使用できます。この機能の詳細については、KSMにお問い合わせください。</block>
@@ -919,4 +915,8 @@ ONTAP の QoS ポリシーの詳細については、を参照してください
   <block id="53ee52defbf70af2e9afed973e812462" category="paragraph">NetApp Keystoneは、クラウドへの移行を実現するための、オンプレミスの設備投資（CAPEX）オプションのポートフォリオです。NetApp Keystone は、オンプレミスとクラウドにわたってストレージサービスを提供することで、シームレスなハイブリッドクラウドエクスペリエンスを実現します。
 NetApp Keystone の詳細については、を参照してください <block ref="17e1729d4a77db88a0bc2ee74a2207b1" category="inline-link-macro-rx"></block></block>
   <block id="073ad031fe3412f290d7e3ed4beeb9b4" category="paragraph">Keystoneサービスは、NetApp KeystoneのSTaaSサービスとは異なります。NetApp Keystone STaaSの詳細については、https://docs.netapp.com/us-en/keystone-staas/index.html[Keystone STaaS ^]を参照してください。</block>
+  <block id="989f69001ddcc32301bcbd805f65e578" category="list-text">履歴データを表示して容量の使用状況のトレンドを分析する場合は、*[容量のトレンド]*を選択します。請求書が生成されたバースト使用量の履歴データを表示する場合は、* Invoiced Accrued Burst *を選択します。このデータを使用して、請求書に従って請求された使用量を分析できます。</block>
+  <block id="b01022ea67a6b913d57f7194fcc72d9d" category="section-title">請求済みバースト容量の表示</block>
+  <block id="db0ef40224829d8428d6c42004012b26" category="paragraph">[Invoiced Accrued Burst]オプションを選択した場合、デフォルトでは、過去12カ月間の月単位のバースト使用量データが表示されます。過去30カ月までの日付範囲で照会できます。請求されたデータの棒グラフが表示され、使用量がまだ請求されていない場合は、その月の_Pending_が表示されます。</block>
+  <block id="393673167b0e2f5fe79a42f45c884852" category="admonition">課金される累積バースト使用量は、サービスレベルのコミット済み容量と消費容量に基づいて、課金期間ごとに計算されます。</block>
 </blocks>
