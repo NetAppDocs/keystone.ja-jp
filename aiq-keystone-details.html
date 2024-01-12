@@ -1,0 +1,1926 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head class="at-element-marker">
+  <title>Keystone向けのDigital Advisorダッシュボードとレポート作成</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Keystone向けのDigital Advisorダッシュボードとレポート作成" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/ja-jp/keystone/aiq-keystone-details.html" />
+	<meta property="og:description" content="Keystoneサブスクリプションレポートとグラフ" />
+  <meta property="og:image" content="https://docs.netapp.com/ja-jp/keystone/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Keystoneサブスクリプションレポートとグラフ">
+  <meta name="keywords" content=" keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports, MetroCluster, StorageGRID, consumption details, AIQ DA"><!-- Icons -->
+  <link rel="icon" href="/ja-jp/keystone/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/ja-jp/keystone/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/ja-jp/keystone/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/ja-jp/keystone/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/ja-jp/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/keystone/aiq-keystone-details.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ja-jp/keystone/js/na-search.js'></script><script src='/ja-jp/keystone/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/ja-jp/keystone/js/custom-dropdown.js'></script>
+  <script src='/ja-jp/keystone/js/FileSaver.min.js'></script>
+  <script src='/ja-jp/keystone/js/jszip-utils.min.js'></script>
+  <script src='/ja-jp/keystone/js/jszip.min.js'></script><script src='/ja-jp/keystone/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/ja-jp/keystone/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/ja/">
+                <image id="ie-header-logo" src="/ja-jp/keystone/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/ja/support-and-training/documentation/">ドキュメント</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/ja-jp/keystone/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">日本語</span>
+                    <img src="/ja-jp/keystone/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/ja-jp/keystone/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/ja-jp/keystone/aiq-keystone-details.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/keystone/aiq-keystone-details.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/keystone/aiq-keystone-details.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/keystone/aiq-keystone-details.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/keystone/aiq-keystone-details.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/keystone/aiq-keystone-details.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/keystone/aiq-keystone-details.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/keystone/aiq-keystone-details.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/ja-jp/keystone/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">すべてのNetApp</span>
+                    <img src="/ja-jp/keystone/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/ja-jp/keystone/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/ja/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">サポート</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb-ja.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">ナレッジ ベース</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">トレーニング</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/ja-jp/keystone/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/ja-jp/keystone/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">すべてのドキュメント</a>
+    </li>
+    
+    
+
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/ja-jp/keystone/">-->
+      Keystone
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/ja-jp/keystone/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/ja-jp/keystone/search.html" 
+        data-type="widget"
+        data-placeholder="ドキュメントを検索"
+        data-no-results-found="{query}に一致する結果は見つかりませんでした"
+        data-did-you-mean="{suggestion}で検索しています。"
+        data-no-results-found-did-you-mean="{query}に一致する結果は見つかりませんでした。{suggestion}で検索しますか？"
+        data-results-found="{hitCount}件の結果が見つかりました"
+        data-error-message="エラーが発生しました。もう一度お試しください。"
+        data-error-reset="検索をリセット"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp Keystone サービス"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ja-jp/keystone/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/keystone/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/keystone/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> NetApp Keystone サービス</div>-->
+         NetApp Keystone サービス
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="サービス利用規約と概要"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_service_terms_and_description_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/keystone/nkfsosm_service_terms_and_description_overview.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/keystone/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/keystone/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> サービス利用規約と概要</div>-->
+         サービス利用規約と概要
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="サービス容量の定義"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_keystone_service_capacity_definitions.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/keystone/nkfsosm_keystone_service_capacity_definitions.html">
+        サービス容量の定義
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystoneのサービスレベル"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_performance.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/keystone/nkfsosm_performance.html">
+        Keystoneのサービスレベル
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="サービスレベルの指標と定義"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_service_level_metrics_and_definitions.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/keystone/nkfsosm_service_level_metrics_and_definitions.html">
+        サービスレベルの指標と定義
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="KeystoneのアダプティブQuality of Service（QoS；サービス品質"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/aqos-kfs.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/keystone/aqos-kfs.html">
+        KeystoneのアダプティブQuality of Service（QoS；サービス品質
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="課金"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_kfs_billing.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/keystone/nkfsosm_kfs_billing.html">
+        課金
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="データ保護"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_data_protection.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/keystone/nkfsosm_data_protection.html">
+        データ保護
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="階層化"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_tiering.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/keystone/nkfsosm_tiering.html">
+        階層化
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="返却不要ディスクではありません"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_nrd.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/keystone/nkfsosm_nrd.html">
+        返却不要ディスクではありません
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="米国市民サポート"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_uscs.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/keystone/nkfsosm_uscs.html">
+        米国市民サポート
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="KeystoneとEquinixを提供"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_equinix.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/keystone/nkfsosm_equinix.html">
+        KeystoneとEquinixを提供
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="運用モデルと担当業務"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/keystone/nkfsosm_overview.html">
+        運用モデルと担当業務
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="テナンシーとマルチテナンシー"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_tenancy_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/keystone/nkfsosm_tenancy_overview.html">
+        テナンシーとマルチテナンシー
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystoneインフラ"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_keystone_service_delivery_architecture_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/keystone/nkfsosm_keystone_service_delivery_architecture_overview.html">
+        Keystoneインフラ
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="サイト要件"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_site_requirements.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/keystone/nkfsosm_site_requirements.html">
+        サイト要件
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="処理"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_netapp_global_services_and_support_center_@gssc@.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/keystone/nkfsosm_netapp_global_services_and_support_center_@gssc@.html">
+        処理
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="KeystoneとActive IQ デジタルアドバイザ"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm-keystone-and-aiq.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/keystone/nkfsosm-keystone-and-aiq.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/keystone/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/keystone/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> KeystoneとActive IQ デジタルアドバイザ</div>-->
+         KeystoneとActive IQ デジタルアドバイザ
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Active IQ デジタルアドバイザからレポートを表示および生成します"
+      data-li-level="3#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/aiq-keystone-details.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/keystone/aiq-keystone-details.html">
+        Active IQ デジタルアドバイザからレポートを表示および生成します
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="リリースノート"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/keystone/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/keystone/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> リリースノート</div>-->
+         リリースノート
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="新機能"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/rn_whats_new.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/keystone/rn_whats_new.html">
+        新機能
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="解決済みの問題です"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/rn_fixed_issues.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/keystone/rn_fixed_issues.html">
+        解決済みの問題です
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="既知の問題"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/rn_known_issues.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/keystone/rn_known_issues.html">
+        既知の問題
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystoneサブスクリプションに関するFAQ"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsfaq_overview.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ja-jp/keystone/nkfsfaq_overview.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/keystone/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/keystone/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Keystoneサブスクリプションに関するFAQ</div>-->
+         Keystoneサブスクリプションに関するFAQ
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystoneサブスクリプション"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsfaq_keystone_subscription.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/keystone/nkfsfaq_keystone_subscription.html">
+        Keystoneサブスクリプション
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="サービス提供の詳細"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsfaq_service_offer_details.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/keystone/nkfsfaq_service_offer_details.html">
+        サービス提供の詳細
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="動作モデル"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsfaq_operating_models.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/keystone/nkfsfaq_operating_models.html">
+        動作モデル
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="法的通知"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ja-jp/keystone/legal-notices.html">
+        法的通知
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/ja-jp/keystone"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/ja-jp/keystone"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/ja-jp/keystone/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 日本語は機械翻訳による参考訳です。内容に矛盾や不一致があった場合には、英語の内容が優先されます。 </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">Keystone向けのDigital Advisorダッシュボードとレポート作成</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2024-01-12 07:16:27 +0000">01/12/2024</time>
+        
+    
+    
+        <span>共同作成者
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/ja-jp/keystone/images/discuss-sm.svg" alt="" class="github-icon" />変更を提案</span>
+        <img src="/ja-jp/keystone/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/ja-jp/keystone/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/keystone.ja-jp/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/ja-jp/keystone/aiq-keystone-details.html&page-title=Keystone向けのDigital Advisorダッシュボードとレポート作成" class="page-nav-contribute-link" role="button">ドキュメントの変更をリクエスト</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/keystone/blob/main/aiq-keystone-details.adoc" class="page-nav-contribute-link" role="button">このページを編集</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >フィードバックを送るには</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/ja-jp/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/ja-jp/keystone/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/ja-jp/keystone/pdfs/fullsite-sidebar/NetApp_Keystone_のドキュメント.pdf" >
+                    <img src="/ja-jp/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>このドキュメント ページのPDF</a>
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/keystone/pdfs/sidebar/NetApp_Keystone_サービス.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>
+            NetApp Keystone サービス
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/keystone/pdfs/sidebar/サービス利用規約と概要.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>
+            サービス利用規約と概要
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/keystone/pdfs/sidebar/KeystoneとActive_IQ_デジタルアドバイザ.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>
+            KeystoneとActive IQ デジタルアドバイザ
+          </a>
+          
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/keystone/pdfs/sidebar/リリースノート.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>
+            リリースノート
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/keystone/pdfs/sidebar/Keystoneサブスクリプションに関するFAQ.pdf" 
+            
+          >
+            <img src="/ja-jp/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Keystoneサブスクリプションに関するFAQ
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/ja-jp/keystone/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>PDF版ドキュメントのセット<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>Active IQ デジタルアドバイザ（デジタルアドバイザ）ダッシュボードでは、NetApp Keystone サブスクリプションに関連する使用状況を監視し、レポートを生成できます。Keystoneサービスにサブスクライブすると、Digital Advisorダッシュボードの* Keystone Subscriptions *ウィジェットでサブスクリプションと使用量の詳細を確認できます。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="メモ">
+</td>
+<td class="content">
+ここで入手できる情報は、ONTAP とStorageGRID の両方を環境 に掲載しています。例外は関連するセクションで指摘されています。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>[Keystone Digital Advisor]ウィジェットの詳細については、を参照してください <a href="https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html" target="_blank" rel="noopener">"NetApp Keystone サブスクリプションを使用して容量利用率を表示します"</a>。</p>
+</div>
+<div class="paragraph">
+<p>Keystoneサブスクリプションと使用量の詳細を表示するには、次の手順を実行します。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>Digital Advisorにログインします。Keystoneサブスクリプション*ウィジェットが表示され、購入したKeystoneサービスに対する使用容量が表示されます。</p>
+</li>
+<li>
+<p><strong class="Keystoneサブスクリプション">ウィジェットで</strong>[詳細を表示]<strong>をクリックし、</strong>[Keystoneサブスクリプション]<strong>ページにボリュームに関する使用状況の詳細とアラートを表示します。または、左側のナビゲーションペインで</strong>[全般]&gt;[Keystoneサブスクリプション]<strong>に移動します。<br>
+サブスクリプションの詳細、各サービスレベルの使用状況グラフ、ボリュームの詳細が、</strong> Keystoneサブスクリプション*画面の別 々 のタブに表示されます。</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="メモ">
+</td>
+<td class="content">
+Keystoneサブスクリプションの容量消費量は、ダッシュボードとレポートにTiB単位で表示され、小数点以下2桁に四捨五入されます。使用量が0.01TiB未満の場合は、と表示されます <code>0</code> または <code>No Usage</code>。これらの画面のデータは、UTC時間（サーバのタイムゾーン）で表示されます。クエリの日付を入力すると、自動的にUTC時間であると見なされます。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>利用率指標の詳細については、を参照してください。 <a href="https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html">"サービスレベルの指標と定義"</a>。Keystoneで使用されるさまざまな容量については、を参照してください <a href="https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html">"Keystone サービスの容量の定義"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="サブスクリプション">サブスクリプション</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>サブスクリプションのリストは、*サブスクリプション*タブで表示できます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/all-subs.png" alt="&quot;[すべてのサブスクリプション"></span>タブのイメージ"]</p>
+</div>
+<div class="paragraph">
+<p>次の情報が表示されます。一部のフィールドや列では、情報や警告アイコン、およびデータに関する追加情報を表示するツールチップが表示される場合があります。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>サブスクリプション番号</strong>：ネットアップが割り当てたKeystoneサブスクリプションのサブスクリプション番号。</p>
+</li>
+<li>
+<p><strong>トラッキングID</strong>：登録の有効化時に割り当てられたトラッキングID。これは、サブスクリプションとサイトごとに一意のIDで、サブスクリプションの追跡に使用されます。</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/tip.svg" alt="ヒント">
+</td>
+<td class="content">
+サブスクリプションにデータ保護サービスレベルまたはレートプランが割り当てられている場合は、ツールチップを使用してMetroClusterセットアップでパートナーサブスクリプションの追跡IDを確認できます。MetroCluster構成のパートナーサブスクリプション別の詳細な消費状況を表示する方法については、を参照してください <a href="https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html#reference-charts-for-data-protection">"データ保護のリファレンスチャート"</a>。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p><strong>使用タイプ</strong>：複数のKeystone（バージョン1）またはKeystone STaaS（バージョン2）サブスクリプションに登録済みの場合があります。サービスレベルのレートプランルールは、2つのサブスクリプションタイプで異なる場合があります。この列の値を見ると、使用タイプがプロビジョニング済みの使用量と論理的な使用量のどちらに基づいて課金されているかがわかります <code>v1</code> または <code>v2</code>。Keystone STaaSの詳細については、を参照してください <a href="https://docs.netapp.com/us-en/keystone-staas/index.html" target="_blank" rel="noopener">"Keystone STaaSのドキュメント"</a>。</p>
+</li>
+<li>
+<p><strong>請求期間</strong>：月、四半期、年など、サブスクリプションの請求期間。</p>
+</li>
+<li>
+<p><strong>開始日</strong>：サブスクリプションの開始日。</p>
+</li>
+<li>
+<p><strong>終了日</strong>：サブスクリプションの終了日。毎月自動的に更新される月額課金制のサブスクリプションをお持ちの場合は、 <code>Month-on-month</code> 終了日の代わりに。この日付に基づいて、有効期限が近づいている、または自動更新ポリシーが適用されているサブスクリプションに関する情報メッセージが表示される場合があります。</p>
+</li>
+<li>
+<p><strong>使用状況</strong>：サブスクリプションの使用量または使用率が高すぎることを示します。消費レコードの数を最も高くする場合は、この列でリストをソートできます。</p>
+</li>
+<li>
+<p><span class="image"><img src="./media/subs-dtls-icon.png" alt="をクリックします。"></span>:サブスクリプションのこのアイコンをクリックすると、[現在の使用状況]タブが開き、そのサブスクリプションの詳細が表示されます。</p>
+</li>
+<li>
+<p><span class="image"><img src="./media/aiq-ks-time-icon.png" alt="をクリックします。"></span>：このアイコンをクリックすると、* Capacity Trend *タブが開き、このサブスクリプションに含まれる各サービスレベルの使用履歴データを確認できます。<br>
+各サブスクリプションの使用状況を確認するには、次の使用状況インジケータを参照してください。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/usage-indicator.png" alt="アイコン"></span></p>
+</div>
+<div class="paragraph">
+<div class="title">インデックス</div>
+<p><span class="image"><img src="./media/icon-grey.png" alt="をクリックします。"></span>：サービスレベルのコミット済み容量に照らして、使用容量は記録されません<br>
+<span class="image"><img src="./media/icon-green.png" alt="をクリックします。"></span>：コミット済み容量の80%以内で、通常消費量が発生します<br>
+<span class="image"><img src="./media/icon-amber.png" alt="をクリックします。"></span>：最大消費量。つまり、使用量がコミット済み容量の100%以上に達しようとしています。*Consumed *列には、コミット済み容量の80%を超える消費量を示すインジケータが表示されます<br>
+<span class="image"><img src="./media/icon-red.png" alt="をクリックします。"></span>：消費量がバースト制限内にあります。バースト消費量とは、サービスレベルの100%のコミット済み容量を超え、120 %などの合意されたバースト使用制限の範囲内である消費量のことです<br>
+<span class="image"><img src="./media/icon-purple.png" alt="をクリックします。"></span>：指定されたバースト制限を超過した消費量を示します</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="現在の使用状況">現在の使用状況</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>サブスクリプションの詳細を確認するには、*現在の使用状況*タブをクリックし、必要なサブスクリプション番号を選択します。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/aiq-ks-dtls.png" alt="&quot;[Current Usage"></span>タブ"]</p>
+</div>
+<div class="paragraph">
+<p>サービスレベル名、コミット済み容量、消費済み容量、使用可能容量、現在のバースト使用量および蓄積バースト使用量などの詳細は、TiBで表示されます。</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/tip.svg" alt="ヒント">
+</td>
+<td class="content">
+。 <span class="image"><img src="./media/icon-info.png" alt="情報アイコン"></span> 各列の横にあるアイコンには、その列に関する包括的な情報が表示されます。高消費量を記録した特定のサービスレベルが強調表示されます。ボリュームに対して生成された警告やアラートを確認することもできます。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Keystoneストレージサービスと関連するサービスレベルについては、を参照してください <a href="https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html">"サービスレベル"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="容量のトレンド">容量のトレンド</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>[容量のトレンド]*タブには、特定の期間のKeystoneサブスクリプションの履歴データが表示されます。縦のグラフには、選択した期間の使用状況の詳細と、レポートを比較して生成するための適切なインジケータが表示されます。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>[Capacity Trend]*タブをクリックします。</p>
+</li>
+<li>
+<p>詳細を表示するサブスクリプションを選択します。デフォルトでは、アカウント名の最初のサブスクリプションが選択されています。</p>
+</li>
+<li>
+<p>履歴データを表示して容量の使用状況のトレンドを分析する場合は、<strong>[容量のトレンド]*を選択します。請求書が生成されたバースト使用量の履歴データを表示する場合は、</strong> Invoiced Accrued Burst *を選択します。このデータを使用して、請求書に従って請求された使用量を分析できます。</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="容量のトレンドを表示">容量のトレンドを表示</h3>
+<details>
+<summary class="title">詳細はこちら。</summary>
+<div class="content">
+<div class="paragraph">
+<p>[Capacity Trend]*オプションを選択した場合は、次の手順を実行します。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>[開始日*（From Date）]および[終了日*（* To Date）]フィールドのカレンダーアイコンから時間範囲を選択します。クエリの日付範囲を選択します。日付範囲には、月の初め、サブスクリプションの開始日から現在の日付、またはサブスクリプションの終了日を指定できます。将来の日付は選択できません。</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/tip.svg" alt="ヒント">
+</td>
+<td class="content">
+最適なパフォーマンスとユーザーエクスペリエンスを実現するには、クエリの日付範囲を3カ月に制限します。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>[ * 詳細の表示 * ] をクリックします。選択した期間に基づいて、各サービスレベルのサブスクリプションの消費履歴データが表示されます。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>棒グラフには、その日付範囲について、サービスレベル名とそのサービスレベルに対する消費容量が表示されます。収集の日時がグラフの下部に表示されます。クエリの日付範囲に基づいて、使用状況グラフは30のデータ収集ポイントの範囲で表示されます。グラフにカーソルを合わせると、そのデータ収集ポイントでのコミット済み容量、消費容量、バースト、バースト制限データを基準にした使用量の内訳が表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/aiq-ks-subtime-2.png" alt="履歴データ"></span></p>
+</div>
+<div class="paragraph">
+<p>棒グラフの以下の色は、サービスレベルで定義された消費容量を示します。グラフ全体で月単位のデータが縦線で区切られています。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>緑：80%以内。</p>
+</li>
+<li>
+<p>オレンジ：80%～100%。</p>
+</li>
+<li>
+<p>赤：バースト時の使用状況（合意済みのバースト制限に対するコミット済み容量の100%）</p>
+</li>
+<li>
+<p>紫：バースト制限の上、または <code>Above Limit</code>。</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="メモ">
+</td>
+<td class="content">
+空のグラフは、そのデータ収集ポイントで使用可能なデータが環境になかったことを示します。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>切り替えボタン*[Show Current Usage]*をクリックすると、現在の課金期間の消費量、バースト使用量、発生バーストデータを確認できます。これらの詳細は、クエリの日付範囲に基づいていません。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>現在の消費容量</strong>：サービスレベルに定義されている消費容量（TiB）を示します。このフィールドは特定の色を使用します。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>色なし：バーストまたはそれ以上のバースト使用量。</p>
+</li>
+<li>
+<p>グレー：使用できません。</p>
+</li>
+<li>
+<p>緑：コミット済み容量の80%以内</p>
+</li>
+<li>
+<p>オレンジ：バースト容量にコミットされたの80%。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>* Current Burst *：定義されたバースト制限内またはそれ以上の消費容量を示すインジケータ。合意されたバースト制限内の使用量（コミット済み容量を20%超過した場合など）は、バースト制限内に収まります。それ以上の使用量は、バースト制限を超えた使用量とみなされます。このフィールドには特定の色が表示されます。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>色なし：バースト使用量はありません。</p>
+</li>
+<li>
+<p>赤：バースト使用量。</p>
+</li>
+<li>
+<p>紫：バースト制限を超えています。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>* Accrued Burst *：現在の請求期間の月単位で計算された、発生したバーストの使用量または消費容量を示すインジケータ。蓄積されたバースト使用量は、サービスレベルのコミット済み容量と消費済み容量に基づいて計算されます。 <code>(consumed - committed)/365.25/12</code>。</p>
+</li>
+</ul>
+</div>
+</div>
+</details>
+</div>
+<div class="sect2">
+<h3 id="請求済みバースト容量の表示">請求済みバースト容量の表示</h3>
+<details>
+<summary class="title">詳細はこちら。</summary>
+<div class="content">
+<div class="paragraph">
+<p>[Invoiced Accrued Burst]オプションを選択した場合、デフォルトでは、過去12カ月間の月単位のバースト使用量データが表示されます。過去30カ月までの日付範囲で照会できます。請求されたデータの棒グラフが表示され、使用量がまだ請求されていない場合は、その月の_Pending_が表示されます。</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/tip.svg" alt="ヒント">
+</td>
+<td class="content">
+課金される累積バースト使用量は、サービスレベルのコミット済み容量と消費容量に基づいて、課金期間ごとに計算されます。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/accr-burst.png" alt="&quot;[Accrued burst usage"></span>グラフ"]</p>
+</div>
+<div class="paragraph">
+<p>この機能は、プレビューのみのモードで使用できます。この機能の詳細については、KSMにお問い合わせください。</p>
+</div>
+</div>
+</details>
+</div>
+<div class="sect2">
+<h3 id="データ保護のリファレンスチャート">データ保護のリファレンスチャート</h3>
+<details>
+<summary class="title">詳細はこちら。</summary>
+<div class="content">
+<div class="paragraph">
+<p>データ保護サービスをサブスクライブしている場合は、*[容量のトレンド]*タブでMetroClusterパートナーサイトの消費データの内訳を確認できます。</p>
+</div>
+<div class="paragraph">
+<p>データ保護の詳細については、を参照してください <a href="https://docs.netapp.com/us-en/keystone/nkfsosm_data_protection.html">"データ保護"</a>。</p>
+</div>
+<div class="paragraph">
+<p>ONTAPストレージ環境内のクラスタがMetroClusterセットアップで構成されている場合は、Keystoneサブスクリプションの消費データが同じ履歴データチャートに分割されて、基本のサービスレベルのプライマリサイトとミラーサイトでの消費量が表示されます。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="メモ">
+</td>
+<td class="content">
+消費棒グラフは、基本サービスレベルに対してのみ分割されます。データ保護サービスレベルでは、この境界は表示されません。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<div class="title">データ保護サービスレベル</div>
+<p>データ保護サービスレベルでは、総消費量がパートナーサイト間で分割され、各パートナーサイトでの使用量が別 々 のサブスクリプション（プライマリサイト用とミラーサイト用）に反映されて課金されます。そのため、* Capacity Trend *タブでプライマリサイトのサブスクリプション番号を選択すると、DPサービスレベルの消費グラフにはプライマリサイトの個別の消費の詳細のみが表示されます。MetroCluster構成の各パートナーサイトがソースおよびミラーとして機能するため、各サイトでの合計消費量には、そのサイトに作成されたソースボリュームとミラーボリュームが含まれます。</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/tip.svg" alt="ヒント">
+</td>
+<td class="content">
+[現在の使用状況]タブのサブスクリプションのタッキングIDの横にあるツールチップは、MetroClusterセットアップでパートナーサブスクリプションを識別するのに役立ちます。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<div class="title">基本サービスレベル</div>
+<p>基本のサービスレベルの場合、各ボリュームはプライマリサイトとミラーサイトでプロビジョニング済みとして課金されるため、プライマリサイトとミラーサイトでの使用量に応じて同じ棒グラフが分割されます。</p>
+</div>
+<div class="paragraph">
+<div class="title">プライマリサブスクリプションで表示される内容</div>
+<p>次の図は、_Extreme_service level（基本サービスレベル）とプライマリサブスクリプション番号のグラフを示しています。同じ履歴データチャートは、プライマリサイトに使用されるカラーコードのより明るい色合いでミラーサイトの消費をマークします。マウスにカーソルを合わせると、プライマリサイトとミラーサイトの消費量の内訳（TiB）がそれぞれ1.02TiBと1.05TiBで表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/mcc-chart.png" alt="MCCプライマリ"></span></p>
+</div>
+<div class="paragraph">
+<p>_Data-Protect Extreme_service level（データ保護サービスレベル）のグラフは次のように表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/dp-src.png" alt="MCCプライマリベース"></span></p>
+</div>
+<div class="paragraph">
+<div class="title">セカンダリ（ミラーサイト）サブスクリプションで表示される情報</div>
+<p>セカンダリサブスクリプションを確認すると、パートナーサイトと同じデータ収集ポイントの_Extreme_service level（基本のサービスレベル）の棒グラフが反転し、プライマリサイトとミラーサイトでの消費量の内訳がそれぞれ1.05TiBと1.02TiBであることがわかります。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/mcc-chart-mirror.png" alt="MCCミラー"></span></p>
+</div>
+<div class="paragraph">
+<p>_Data-Protect Extreme_service level（データ保護サービスレベル）の場合、パートナーサイトと同じ収集ポイントに次のようなグラフが表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/dp-mir.png" alt="MCCミラーベース"></span></p>
+</div>
+<div class="paragraph">
+<p>MetroCluster によるデータの保護方法については、を参照してください <a href="https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html" target="_blank" rel="noopener">"MetroCluster のデータ保護とディザスタリカバリについて理解する"</a>。</p>
+</div>
+</div>
+</details>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ボリュームとオブジェクト">ボリュームとオブジェクト</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>[ボリュームとオブジェクト]*タブでは、ONTAPでボリュームの使用状況やその他の詳細を確認できます。StorageGRID の場合、オブジェクトストレージ環境でのノードとその個 々 の使用状況が表示されます。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="メモ">
+</td>
+<td class="content">
+このタブの名前は、サイトでの導入の種類によって異なります。ボリュームとオブジェクトストレージの両方がある場合は、<strong>[ボリュームとオブジェクト]*タブが表示されます。ストレージ環境にボリュームしかない場合は、名前が</strong> Volumes <strong>に変わります。オブジェクトストレージの場合のみ、</strong>[オブジェクト]*タブが表示されます。
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="ontapボリュームの詳細の表示">ONTAPボリュームの詳細の表示</h3>
+<details>
+<summary class="title">詳細はこちら。</summary>
+<div class="content">
+<div class="paragraph">
+<p>ONTAPの場合、*[ボリューム]*タブには、Keystoneサブスクリプションで管理されるストレージ環境内のボリュームの、使用容量、ボリュームタイプ、クラスタ、アグリゲート、サービスレベルなどの情報が表示されます。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>[* Volumes （ボリューム） ] タブをクリックします</p>
+</li>
+<li>
+<p>サブスクリプション番号を選択します。デフォルトでは、使用可能な最初のサブスクリプション番号が選択されています。</p>
+<div class="paragraph">
+<p>ボリュームの詳細が表示されます。列見出しの横にある情報アイコンにマウスを合わせると、列をスクロールして詳細を確認できます。列でソートしたり、リストをフィルタして特定の情報を表示したりできます。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="メモ">
+</td>
+<td class="content">
+データ保護サービスの場合は、ボリュームがMetroCluster構成のプライマリボリュームかミラーボリュームかを示す列が表示されます。個 々 のノードシリアル番号をコピーするには、*ノードシリアルのコピー*ボタンをクリックします。
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/aiq-ks-sysdtls.png" alt="&quot;[ボリュームとオブジェクト"></span>タブ"]</p>
+</div>
+</div>
+</details>
+</div>
+<div class="sect2">
+<h3 id="storagegridのノードと使用状況を表示">StorageGRIDのノードと使用状況を表示</h3>
+<details>
+<summary class="title">詳細はこちら。</summary>
+<div class="content">
+<div class="paragraph">
+<p>StorageGRIDの場合、オブジェクトストレージのノードの論理使用量が表示されます。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>[オブジェクト]タブをクリックします。</p>
+</li>
+<li>
+<p>サブスクリプション番号を選択します。デフォルトでは、使用可能な最初のサブスクリプション番号が選択されています。サブスクリプション番号を選択すると、オブジェクトストレージの詳細のリンクが有効になります。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/sg-link.png" alt="SGオブジェクト"></span></p>
+</div>
+</li>
+<li>
+<p>リンクをクリックすると、各ノードのノード名と論理使用量の詳細が表示されます。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/sg-link-2.png" alt="SGポップアップ"></span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</details>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="パフォーマンス">パフォーマンス</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>*[パフォーマンス]*タブでは、Keystoneサブスクリプションで管理されているONTAPボリュームのパフォーマンス指標を表示できます。</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/tip.svg" alt="ヒント">
+</td>
+<td class="content">
+このタブはオプションで使用できます。このタブの表示については、サポートにお問い合わせください。
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>[パフォーマンス]*タブをクリックします。</p>
+</li>
+<li>
+<p>サブスクリプション番号を選択します。デフォルトでは、最初のサブスクリプション番号が選択されています。</p>
+</li>
+<li>
+<p>リストから必要なボリューム名を選択します。</p>
+<div class="paragraph">
+<p>または、 <span class="image"><img src="./media/aiq-ks-time-icon.png" alt="グラフアイコン"></span> アイコンをクリックONTAPして、[ボリューム]*タブに移動します。</p>
+</div>
+</li>
+<li>
+<p>クエリの日付範囲を選択します。日付範囲には、月の初め、サブスクリプションの開始日から現在の日付、またはサブスクリプションの終了日を指定できます。将来の日付は選択できません。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>取得される詳細は、各サービスレベルのサービスレベル目標に基づいて決まります。たとえば、ピークIOPS、最大スループット、ターゲットレイテンシなどの指標は、サービスレベルの個 々 の設定によって決まります。設定の詳細については、を参照してください。 <a href="https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html">"サービスレベル"</a>。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="メモ">
+</td>
+<td class="content">
+[SLO Reference Line]*チェックボックスを選択すると、IOPS、スループット、レイテンシのグラフがサービスレベルのサービスレベル目標に基づいて表示されます。それ以外の場合は、実際の数値で表示されます。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>水平グラフには、5分間隔の平均パフォーマンスデータがクエリの日付範囲に従って表示されます。グラフをスクロールして特定のデータポイントにカーソルを合わせると、収集したデータにさらにドリルダウンできます。</p>
+</div>
+<div class="paragraph">
+<p>以降のセクションでは、サブスクリプション番号、ボリューム名、選択した日付範囲の組み合わせに基づいてパフォーマンス指標を表示および比較できます。詳細は、ボリュームに割り当てられているサービスレベルに応じて表示されます。クラスタ名とボリュームタイプ（ボリュームに割り当てられている読み取り権限と書き込み権限）を確認できます。ボリュームに関連する警告メッセージも表示されます。</p>
+</div>
+<div class="sect2">
+<h3 id="iopstib">IOPS/TiB</h3>
+<div class="paragraph">
+<p>このセクションには、クエリの日付範囲に基づいて、ボリューム内のワークロードの入出力グラフが表示されます。サービスレベルの最大IOPSと現在のIOPS（クエリの日付範囲ではなく過去5分間）が、その期間の最小IOPS、最大IOPS、平均IOPS（IOPS/TiB）とともに表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/perf-iops.png" alt="&quot;グラフの[IOPS"></span>セクション"]</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="スループットmbps-tib">スループット（MBps / TiB）</h3>
+<div class="paragraph">
+<p>このセクションには、クエリの日付範囲に基づいて、ボリューム内のワークロードのスループットグラフが表示されます。サービスレベルの最大スループット（SLO Max）と現在のスループット（クエリの日付範囲ではなく過去5分間）が、その時間範囲の最小スループット、最大スループット、平均スループット（MBPS/TiB）とともに表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/perf-thr.png" alt="スループットグラフ"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="レイテンシミリ秒">レイテンシ（ミリ秒）</h3>
+<div class="paragraph">
+<p>このセクションには、クエリの日付範囲に基づいて、ボリューム内のワークロードのレイテンシグラフが表示されます。サービスレベル（SLOターゲット）の最大レイテンシと現在のレイテンシ（クエリの日付範囲ではなく過去5分間）が、その時間範囲の最小、最大、平均レイテンシ（ミリ秒）とともに表示されます。</p>
+</div>
+<div class="paragraph">
+<p>このグラフの色は次のとおりです。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>水色：<em>レイテンシ</em>。Keystoneサービス以外のレイテンシを含む実際のレイテンシ。これには、ネットワークとクライアントの間で発生するレイテンシなど、追加のレイテンシが含まれる場合があります。</p>
+</li>
+<li>
+<p>濃い青：<em>有効なレイテンシ</em>。実効レイテンシとは、SLAに関してお客様のKeystoneサービスにのみ適用されるレイテンシのことです。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/perf-lat.png" alt="パフォーマンスグラフ"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="使用済み論理容量tib">使用済み論理容量（TiB）</h3>
+<div class="paragraph">
+<p>このセクションには、ボリュームのプロビジョニング済み容量と使用済み論理容量が表示されます。現在の使用済み論理容量（クエリの日付範囲ではなく過去5分間）と、その期間の使用量の最小値、最大値、平均値がTiB単位で表示されます。このグラフでは、グレーの領域がコミット済み容量、黄色のグラフが論理的な使用状況を示しています。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/perf-log-usd.png" alt="使用済み論理容量のグラフ"></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="レポートを生成します">レポートを生成します</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>各タブの*[Download CSV]*ボタンをクリックすると、サブスクリプションの詳細、期間内の使用履歴データ、ボリュームの詳細に関するレポートを生成して表示できます。 <span class="image"><img src="./media/download-icon.png" alt="&quot;[Download Reports"></span>アイコン"]</p>
+</div>
+<div class="paragraph">
+<p>詳細はCSV形式で生成され、あとで使用できるように保存できます。</p>
+</div>
+<div class="paragraph">
+<p>[Capacity Trend]*タブでは、クエリの日付範囲のデフォルトの30データ収集ポイント、または日次レポートのレポートをダウンロードできます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/aiq-report-dnld.png" alt="サンプルを報告します"></span></p>
+</div>
+<div class="paragraph">
+<p>グラフデータが変換される* Capacity Trend *タブのサンプルレポート：</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/report.png" alt="サンプルを報告します"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="アラートを表示します">アラートを表示します</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ダッシュボードのアラートは警告メッセージを送信するため、ストレージ環境で発生している問題を把握することができます。</p>
+</div>
+<div class="paragraph">
+<p>アラートには次の2種類があります。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>情報</strong>:サブスクリプションがまもなく終了するなどの問題については、情報アラートを表示できます。情報アイコンにカーソルを合わせると、問題 の詳細が表示されます。</p>
+</li>
+<li>
+<p><strong>警告</strong>：非順守などの問題は警告として表示されます。たとえば、管理対象クラスタにアダプティブQoS（AQoS）ポリシーが適用されていないボリュームがある場合、警告メッセージが表示されます。警告メッセージのリンクをクリックすると、*[ボリューム]*タブに準拠していないボリュームのリストが表示されます。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="メモ">
+</td>
+<td class="content">
+単一のサービスレベルプランまたはレートプランにサブスクライブしている場合、非準拠ボリュームのアラートは表示されません。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>AQoSポリシーの詳細については、を参照してください <a href="https://docs.netapp.com/us-en/keystone/nkfsosm_kfs_billing.html#billing-and-adaptive-qos-policies">"課金およびアダプティブ QoS ポリシー"</a>。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/alert-aiq.png" alt="アラート"></span></p>
+</div>
+<div class="paragraph">
+<p>これらの注意および警告メッセージの詳細については、ネットアップサポートにお問い合わせください。</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/ja-jp/keystone/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/ja-jp/keystone/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">このページ</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">ご利用規約</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">プライバシー ポリシー</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">クッキー ポリシー</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">クッキーの設定</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">このページに関するフィードバックをお寄せください</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/ja-jp/keystone/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/ja-jp/keystone/js/prism.js'></script>
+      <script type="text/javascript" src='/ja-jp/keystone/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/ja-jp/keystone/js/ie-tabbed-blocks.js'></script>
+    <script src='/ja-jp/keystone/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
